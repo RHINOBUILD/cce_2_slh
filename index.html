@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full bg-slate-50">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCE 2.0 - Centro de Capacitación y Enseñanza | Saint Luke's Hospitals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sl: {
+                            navy: '#002B49',
+                            blue: '#004B87',
+                            lightBlue: '#0072CE',
+                            teal: '#00A3E0',
+                            mint: '#00C896',
+                            gold: '#C5A059',
+                            softGray: '#F4F7F9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #printable-certificate, #printable-certificate * {
+                visibility: visible;
+            }
+            #printable-certificate {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none !important;
+                border: none !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+        
+        /* Custom Scrollbars */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        .cert-border {
+            border: 12px solid #004B87;
+            outline: 2px solid #C5A059;
+            outline-offset: -8px;
+        }
+    </style>
+</head>
+<body class="h-full flex flex-col font-sans text-slate-800 antialiased selection:bg-sl-lightBlue selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <header class="no-print sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <!-- Logo & Brand -->
+                <div class="flex items-center space-x-3 cursor-pointer" onclick="navigateTo('dashboard')">
+                    <div class="w-12 h-12 bg-gradient-to-tr from-sl-navy to-sl-blue rounded-xl flex items-center justify-center text-white shadow-md shadow-blue-900/10">
+                        <i class="fa-solid fa-hospital-user text-2xl text-sl-mint"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center space-x-2">
+                            <span class="font-bold text-xl tracking-tight text-sl-navy">CCE <span class="text-sl-gold text-lg">2.0</span></span>
+                            <span class="bg-sl-softGray text-sl-blue text-xs font-semibold px-2 py-0.5 rounded border border-blue-100">SAINT LUKE'S</span>
+                        </div>
+                        <p class="text-xs text-slate-500 font-medium">Centro de Capacitación y Enseñanza</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                    <button id="nav-dashboard" onclick="navigateTo('dashboard')" class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold text-sl-blue bg-blue-50 transition-all flex items-center space-x-2">
+                        <i class="fa-solid fa-chart-pie text-xs"></i>
+                        <span>Inicio</span>
+                    </button>
+                    <button id="nav-catalog" onclick="navigateTo('catalog')" class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-sl-blue hover:bg-slate-50 transition-all flex items-center space-x-2">
+                        <i class="fa-solid fa-book-open text-xs"></i>
+                        <span>Catálogo</span>
+                    </button>
+                    <button id="nav-certificates" onclick="navigateTo('certificates')" class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-sl-blue hover:bg-slate-50 transition-all flex items-center space-x-2">
+                        <i class="fa-solid fa-award text-xs"></i>
+                        <span>Mis Certificados</span>
+                    </button>
+                </nav>
+
+                <!-- User Profile & Quick Info -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="text-right border-r border-slate-200 pr-4">
+                        <p id="user-display-name" class="text-sm font-bold text-slate-800 leading-tight">Dr. Alejandro Morales</p>
+                        <p class="text-xs text-slate-500 font-medium">Cuerpo Médico - Urgencias</p>
+                    </div>
+                    <div class="relative group cursor-pointer" onclick="openProfileModal()">
+                        <div class="w-10 h-10 rounded-full bg-sl-blue text-white flex items-center justify-center font-bold text-sm shadow-sm ring-2 ring-blue-100">
+                            <span id="user-avatar-initials">AM</span>
+                        </div>
+                        <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-white rounded-full"></span>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button onclick="toggleMobileMenu()" class="p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <button onclick="navigateTo('dashboard'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50">
+                <i class="fa-solid fa-chart-pie w-6"></i> Inicio
+            </button>
+            <button onclick="navigateTo('catalog'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50">
+                <i class="fa-solid fa-book-open w-6"></i> Catálogo de Cursos
+            </button>
+            <button onclick="navigateTo('certificates'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50">
+                <i class="fa-solid fa-award w-6"></i> Mis Certificados
+            </button>
+            <div class="pt-2 border-t border-slate-200">
+                <div class="flex items-center px-3 py-2" onclick="openProfileModal()">
+                    <div class="w-8 h-8 rounded-full bg-sl-blue text-white flex items-center justify-center font-bold text-xs mr-3">
+                        <span id="user-avatar-initials-mobile">AM</span>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold text-slate-800" id="user-display-name-mobile">Dr. Alejandro Morales</p>
+                        <p class="text-xs text-slate-500">Cuerpo Médico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT VIEW CONTAINER -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- VIEW 1: DASHBOARD -->
+        <section id="view-dashboard" class="space-y-8">
+            <!-- Welcome Banner -->
+            <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-sl-navy via-sl-blue to-sl-lightBlue p-6 sm:p-8 text-white shadow-xl">
+                <div class="relative z-10 max-w-2xl">
+                    <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-sl-mint mb-4 border border-white/10">
+                        <i class="fa-solid fa-sparkles"></i>
+                        <span>Acreditación Institucional 2026-2027</span>
+                    </div>
+                    <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight">
+                        ¡Bienvenido de nuevo, <span id="welcome-user-name">Dr. Alejandro</span>!
+                    </h1>
+                    <p class="mt-2 text-blue-100 text-sm sm:text-base leading-relaxed">
+                        Continúa desarrollando tus competencias clínicas y normativas. Mantén al día tus Metas Internacionales de Seguridad del Paciente (MISP).
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <button onclick="navigateTo('catalog')" class="bg-sl-gold hover:bg-yellow-600 text-slate-900 font-bold px-5 py-2.5 rounded-xl text-sm transition-all shadow-lg hover:shadow-yellow-500/20 flex items-center space-x-2">
+                            <span>Explorar Catálogo</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Decorative Hospital Pattern BG -->
+                <div class="absolute -right-10 -bottom-10 opacity-10 text-white pointer-events-none">
+                    <i class="fa-solid fa-hospital text-[260px]"></i>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Inscritos</p>
+                            <h3 id="stat-enrolled" class="text-2xl sm:text-3xl font-extrabold text-slate-800 mt-1">4</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 text-sl-blue flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-book text-sl-blue"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Completados</p>
+                            <h3 id="stat-completed" class="text-2xl sm:text-3xl font-extrabold text-slate-800 mt-1">1</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Horas CCE</p>
+                            <h3 id="stat-hours" class="text-2xl sm:text-3xl font-extrabold text-slate-800 mt-1">18 hrs</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Constancias</p>
+                            <h3 id="stat-certs" class="text-2xl sm:text-3xl font-extrabold text-slate-800 mt-1">1</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-file-certificate"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Banner -->
+            <div class="bg-gradient-to-r from-blue-900 to-sl-navy text-white rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center justify-between gap-6">
+                <div class="space-y-2 text-center lg:text-left">
+                    <span class="bg-sl-gold/20 text-sl-gold border border-sl-gold/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Prioridad Obligatoria</span>
+                    <h3 class="text-xl sm:text-2xl font-bold">AESP 1: Identificación Correcta del Paciente</h3>
+                    <p class="text-slate-300 text-sm max-w-xl">Aprende y homologa el protocolo de doble identificador y verificación en los procesos asistenciales del hospital.</p>
+                </div>
+                <button onclick="openCourseViewer('c1')" class="bg-white text-sl-navy hover:bg-slate-100 font-bold px-6 py-3 rounded-xl text-sm transition-all whitespace-nowrap shadow">
+                    Ir al Curso Destacado
+                </button>
+            </div>
+
+            <!-- Continue Learning Section -->
+            <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-xl font-bold text-slate-800">Continuar Capacitación</h2>
+                    <button onclick="navigateTo('catalog')" class="text-sm font-semibold text-sl-blue hover:underline">Ver todos</button>
+                </div>
+
+                <div id="dashboard-active-courses" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Dynamic rendering via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW 2: COURSE CATALOG -->
+        <section id="view-catalog" class="hidden space-y-6">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div>
+                    <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Catálogo de Capacitaciones</h1>
+                    <p class="text-slate-500 text-sm mt-1">Cursos normativos, clínicos y administrativos para Saint Luke's Hospitals.</p>
+                </div>
+                
+                <!-- Search Box -->
+                <div class="relative w-full md:w-80">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="catalog-search" oninput="filterCatalog()" placeholder="Buscar curso o tema..." class="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-sl-blue/20 focus:border-sl-blue transition-all">
+                </div>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="flex items-center space-x-2 overflow-x-auto pb-2 scrollbar-none">
+                <button onclick="filterCategory('all')" class="cat-pill active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-sl-blue text-white shadow-sm transition-all">
+                    Todos los Cursos
+                </button>
+                <button onclick="filterCategory('Medica')" class="cat-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition-all">
+                    Área Médica
+                </button>
+                <button onclick="filterCategory('Enfermeria')" class="cat-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition-all">
+                    Enfermería
+                </button>
+                <button onclick="filterCategory('Calidad')" class="cat-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition-all">
+                    Calidad y Seguridad
+                </button>
+                <button onclick="filterCategory('Administrativa')" class="cat-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition-all">
+                    Administrativa
+                </button>
+            </div>
+
+            <!-- Catalog Grid -->
+            <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Dynamic Course Cards Rendering -->
+            </div>
+        </section>
+
+        <!-- VIEW 3: COURSE PLAYER / VISOR -->
+        <section id="view-course-player" class="hidden space-y-6">
+            <!-- Back to Catalog -->
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+                <button onclick="navigateTo('catalog')" class="text-sm font-semibold text-slate-600 hover:text-sl-blue flex items-center space-x-2">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span>Volver al Catálogo</span>
+                </button>
+                <span id="player-course-category" class="bg-blue-100 text-sl-blue font-bold text-xs px-3 py-1 rounded-full uppercase">Calidad y Seguridad</span>
+            </div>
+
+            <!-- Course Title & Main Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Left/Center Column: Player & Content -->
+                <div class="lg:col-span-2 space-y-6">
+                    <!-- Video/Demo Screen Frame -->
+                    <div class="bg-slate-900 rounded-2xl overflow-hidden shadow-xl aspect-video relative flex flex-col justify-between p-6 text-white border border-slate-800">
+                        <div class="flex justify-between items-center z-10">
+                            <span id="player-lesson-badge" class="bg-white/20 backdrop-blur-md text-xs font-semibold px-3 py-1 rounded-full">Módulo 1 • Lección 1</span>
+                            <span class="text-xs text-slate-300"><i class="fa-regular fa-clock mr-1"></i> Duración: 15 min</span>
+                        </div>
+
+                        <!-- Simulated Interactive Video Area -->
+                        <div class="text-center my-auto space-y-3 z-10 px-4">
+                            <div class="w-16 h-16 bg-sl-blue/80 text-white rounded-full flex items-center justify-center mx-auto text-2xl shadow-lg ring-4 ring-white/10 hover:scale-105 transition-all cursor-pointer" onclick="playLessonVideo()">
+                                <i class="fa-solid fa-play ml-1"></i>
+                            </div>
+                            <h2 id="player-lesson-title" class="text-xl sm:text-2xl font-bold">Introducción y Doble Identificador de Paciente</h2>
+                            <p class="text-xs sm:text-sm text-slate-300 max-w-md mx-auto">Video interactivo de capacitación clínica para personal operativo de Saint Luke's Hospitals.</p>
+                        </div>
+
+                        <div class="w-full bg-white/10 rounded-full h-1.5 overflow-hidden z-10">
+                            <div id="video-progress-bar" class="bg-sl-mint h-full w-2/3 transition-all"></div>
+                        </div>
+
+                        <!-- Subtle BG Medical Icon Pattern -->
+                        <div class="absolute inset-0 opacity-5 flex items-center justify-center pointer-events-none">
+                            <i class="fa-solid fa-hospital-user text-[200px]"></i>
+                        </div>
+                    </div>
+
+                    <!-- Lesson Notes & Resources -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+                        <h3 class="text-lg font-bold text-slate-800 flex items-center space-x-2">
+                            <i class="fa-solid fa-file-lines text-sl-blue"></i>
+                            <span>Resumen del Módulo</span>
+                        </h3>
+                        <div id="player-lesson-content" class="text-sm text-slate-600 leading-relaxed space-y-3">
+                            <p>La correcta identificación del paciente es el primer paso fundamental para garantizar la seguridad asistencial y prevenir errores médicos en transfusiones, administración de medicamentos, tomas de muestras y procedimientos quirúrgicos.</p>
+                            <p class="font-semibold text-slate-800">Lineamientos Obligatorios en Saint Luke's Hospitals:</p>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Nombre completo del paciente (sin abreviaturas).</li>
+                                <li>Fecha de nacimiento (DD/MM/AAAA) o Número de Expediente Clínico.</li>
+                                <li>Verificación activa con la pulsera física de identificación antes de cualquier procedimiento.</li>
+                            </ul>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-3">
+                            <a href="#" onclick="alert('Descargando Guía Rápida MISP-1 en PDF...')" class="inline-flex items-center space-x-2 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 px-3 py-2 rounded-lg transition-all">
+                                <i class="fa-solid fa-file-pdf text-red-500 text-sm"></i>
+                                <span>Guía_Protocolo_AESP1.pdf</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Action Buttons -->
+                    <div class="flex items-center justify-between pt-2">
+                        <button id="btn-prev-lesson" onclick="prevLesson()" class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold rounded-xl text-sm transition-all flex items-center space-x-2">
+                            <i class="fa-solid fa-arrow-left text-xs"></i>
+                            <span>Anterior</span>
+                        </button>
+
+                        <button id="btn-next-lesson" onclick="nextLesson()" class="px-5 py-2.5 bg-sl-blue hover:bg-sl-navy text-white font-semibold rounded-xl text-sm transition-all shadow-md flex items-center space-x-2">
+                            <span>Siguiente Lección</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+
+                        <button id="btn-start-quiz" onclick="startCourseQuiz()" class="hidden px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl text-sm transition-all shadow-md flex items-center space-x-2">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                            <span>Realizar Evaluación Final</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column: Course Playlist Modules -->
+                <div class="space-y-6">
+                    <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-4">
+                        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                            <h3 class="font-bold text-slate-800">Contenido del Curso</h3>
+                            <span id="player-progress-percentage" class="text-xs font-extrabold text-sl-blue bg-blue-50 px-2.5 py-1 rounded-full">60% Completado</span>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                            <div id="player-course-progress-bar" class="bg-sl-mint h-full w-3/5 transition-all"></div>
+                        </div>
+
+                        <!-- Playlist Accordion -->
+                        <div id="player-playlist" class="space-y-2 pt-2">
+                            <!-- Dynamic Lesson List -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW 4: QUIZ / EVALUATION MODULE -->
+        <section id="view-quiz" class="hidden max-w-3xl mx-auto space-y-6">
+            <!-- Quiz Header Card -->
+            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div>
+                    <span class="text-xs font-bold text-sl-blue uppercase tracking-wider">Evaluación Oficial</span>
+                    <h2 id="quiz-course-title" class="text-xl font-bold text-slate-900 mt-1">AESP 1: Identificación Correcta del Paciente</h2>
+                    <p class="text-xs text-slate-500 mt-1">Aprobación mínima requerida: <span class="font-bold text-slate-700">80%</span></p>
+                </div>
+                <div class="flex items-center space-x-3 bg-amber-50 border border-amber-200 text-amber-800 px-4 py-2 rounded-xl">
+                    <i class="fa-regular fa-clock text-lg"></i>
+                    <div>
+                        <p class="text-[10px] uppercase font-bold text-amber-600">Tiempo Restante</p>
+                        <p id="quiz-timer" class="text-lg font-mono font-bold leading-tight">10:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Questions Card -->
+            <div id="quiz-container" class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-md space-y-6">
+                <!-- Question Progress -->
+                <div class="flex justify-between items-center text-xs font-semibold text-slate-500">
+                    <span id="quiz-question-counter">Pregunta 1 de 3</span>
+                    <span id="quiz-category-tag" class="bg-slate-100 px-2 py-1 rounded">Normativa CCE</span>
+                </div>
+
+                <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                    <div id="quiz-step-progress" class="bg-sl-blue h-full w-1/3 transition-all"></div>
+                </div>
+
+                <!-- Current Question Title -->
+                <h3 id="quiz-question-text" class="text-lg font-bold text-slate-800 leading-snug">
+                    ¿Cuáles son los dos identificadores obligatorios que deben utilizarse en Saint Luke's Hospitals antes de cualquier procedimiento?
+                </h3>
+
+                <!-- Multiple Choice Options -->
+                <div id="quiz-options-list" class="space-y-3 pt-2">
+                    <!-- Rendered dynamically -->
+                </div>
+
+                <!-- Feedback Callout -->
+                <div id="quiz-feedback" class="hidden p-4 rounded-xl text-sm font-medium"></div>
+
+                <!-- Quiz Navigation Buttons -->
+                <div class="flex justify-between items-center pt-4 border-t border-slate-100">
+                    <button id="btn-quiz-prev" onclick="prevQuizQuestion()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-semibold rounded-xl transition-all">
+                        Anterior
+                    </button>
+                    <button id="btn-quiz-next" onclick="nextQuizQuestion()" class="px-6 py-2 bg-sl-blue hover:bg-sl-navy text-white text-sm font-semibold rounded-xl transition-all shadow">
+                        Siguiente
+                    </button>
+                    <button id="btn-quiz-submit" onclick="submitQuiz()" class="hidden px-6 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-xl transition-all shadow">
+                        Finalizar Evaluación
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quiz Results Modal View (Hidden by default) -->
+            <div id="quiz-results-card" class="hidden bg-white rounded-2xl p-8 border border-slate-200 shadow-xl text-center space-y-6">
+                <div id="quiz-result-icon" class="w-20 h-20 mx-auto rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-4xl">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+
+                <div>
+                    <h2 id="quiz-result-title" class="text-2xl font-extrabold text-slate-900">¡Evaluación Aprobada!</h2>
+                    <p id="quiz-result-subtitle" class="text-sm text-slate-500 mt-1">Has demostrado el dominio suficiente en los lineamientos institucionales.</p>
+                </div>
+
+                <div class="inline-flex items-center justify-center space-x-6 bg-slate-50 border border-slate-200 px-6 py-4 rounded-2xl">
+                    <div>
+                        <p class="text-xs text-slate-400 font-semibold uppercase">Calificación</p>
+                        <p id="quiz-final-score" class="text-3xl font-black text-sl-blue">100%</p>
+                    </div>
+                    <div class="h-8 w-px bg-slate-200"></div>
+                    <div>
+                        <p class="text-xs text-slate-400 font-semibold uppercase">Estatus</p>
+                        <p id="quiz-final-status" class="text-sm font-bold text-emerald-600 uppercase">Aprobado</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row justify-center gap-3 pt-4">
+                    <button onclick="navigateTo('certificates')" id="btn-view-certificate-action" class="px-6 py-3 bg-sl-gold hover:bg-yellow-600 text-slate-900 font-bold text-sm rounded-xl transition-all shadow-md flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Ver mi Constancia Oficial</span>
+                    </button>
+                    <button onclick="navigateTo('dashboard')" class="px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm rounded-xl transition-all">
+                        Volver al Inicio
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW 5: CERTIFICATES & DIPLOMAS -->
+        <section id="view-certificates" class="hidden space-y-8">
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Mis Constancias y Diplomas</h1>
+                <p class="text-slate-500 text-sm mt-1">Descarga y verifica tus certificados institucionales acreditados por el CCE.</p>
+            </div>
+
+            <!-- Certificates List -->
+            <div id="certificates-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Dynamic insertion -->
+            </div>
+
+            <!-- Printable Certificate Display Container -->
+            <div id="certificate-preview-wrapper" class="hidden pt-6 border-t border-slate-200">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-bold text-slate-800">Vista Previa del Documento Oficial</h3>
+                    <button onclick="printCertificate()" class="no-print bg-sl-blue hover:bg-sl-navy text-white font-bold px-4 py-2 rounded-xl text-sm transition-all shadow flex items-center space-x-2">
+                        <i class="fa-solid fa-print"></i>
+                        <span>Imprimir / Guardar en PDF</span>
+                    </button>
+                </div>
+
+                <!-- DIPLOMA OFFICIAL CANVAS -->
+                <div id="printable-certificate" class="cert-border bg-white p-8 sm:p-12 rounded-lg shadow-2xl relative max-w-4xl mx-auto text-center space-y-6 my-4 border-slate-300">
+                    <!-- Watermark Logo Overlay -->
+                    <div class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+                        <i class="fa-solid fa-hospital-user text-[320px] text-sl-navy"></i>
+                    </div>
+
+                    <!-- Header Logos -->
+                    <div class="flex justify-between items-center border-b border-slate-200 pb-6">
+                        <div class="text-left">
+                            <h2 class="text-xl font-extrabold text-sl-navy tracking-tight">SAINT LUKE'S HOSPITALS</h2>
+                            <p class="text-xs text-slate-500 font-semibold tracking-wider">SISTEMA DE SALUD & CALIDAD ASISTENCIAL</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-xs font-bold text-sl-gold border border-sl-gold px-3 py-1 rounded uppercase">CCE 2.0 ACREDITADO</span>
+                        </div>
+                    </div>
+
+                    <!-- Title Body -->
+                    <div class="space-y-3 pt-4">
+                        <p class="text-xs uppercase font-bold text-slate-400 tracking-widest">EL CENTRO DE CAPACITACIÓN Y ENSEÑANZA OTORGA LA PRESENTE</p>
+                        <h1 class="font-serif text-3xl sm:text-5xl font-bold text-sl-navy italic">Constancia de Acreditación</h1>
+                        <p class="text-sm text-slate-500 italic">A:</p>
+                        <p id="cert-user-fullname" class="text-2xl sm:text-3xl font-extrabold text-slate-800 border-b-2 border-sl-gold inline-block pb-1 px-8">
+                            Dr. Alejandro Morales
+                        </p>
+                    </div>
+
+                    <p class="text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed pt-2">
+                        Por haber concluido y aprobado satisfactoriamente la capacitación teórico-práctica en el curso institucional:
+                    </p>
+
+                    <h3 id="cert-course-title" class="text-xl font-bold text-sl-blue uppercase tracking-wide px-4">
+                        AESP 1: IDENTIFICACIÓN CORRECTA DEL PACIENTE
+                    </h3>
+
+                    <div class="flex justify-center space-x-8 text-xs text-slate-500 pt-2">
+                        <p>Duración: <span id="cert-hours" class="font-bold text-slate-800">4 Horas Académicas</span></p>
+                        <p>Fecha de Emisión: <span id="cert-date" class="font-bold text-slate-800">22 de Septiembre, 2026</span></p>
+                    </div>
+
+                    <!-- Signatures Section -->
+                    <div class="grid grid-cols-2 gap-8 pt-12 max-w-xl mx-auto">
+                        <div class="border-t border-slate-400 pt-2 text-center">
+                            <p class="font-bold text-xs text-slate-800">Dra. Carmen Valencia</p>
+                            <p class="text-[10px] text-slate-500">Dirección Médica & CCE</p>
+                        </div>
+                        <div class="border-t border-slate-400 pt-2 text-center">
+                            <p class="font-bold text-xs text-slate-800">Lic. Roberto Garza</p>
+                            <p class="text-[10px] text-slate-500">Coordinación de Calidad Hospitalaria</p>
+                        </div>
+                    </div>
+
+                    <!-- Footer Verification -->
+                    <div class="border-t border-slate-200 pt-4 flex flex-col sm:flex-row justify-between items-center text-[10px] text-slate-400 gap-2">
+                        <p>Folio Digital de Verificación: <span id="cert-folio" class="font-mono font-bold text-slate-600">SLH-CCE-2026-9812</span></p>
+                        <p>Documento oficial emitido bajo el protocolo rhinobuild.org/cce</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PROFILE EDIT MODAL -->
+    <div id="modal-profile" class="hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
+            <div class="flex justify-between items-center border-b border-slate-100 pb-3">
+                <h3 class="font-bold text-lg text-slate-800">Perfil de Usuario</h3>
+                <button onclick="closeProfileModal()" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+            
+            <div class="space-y-3">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-600 mb-1">Nombre Completo (para certificados)</label>
+                    <input type="text" id="input-profile-name" value="Dr. Alejandro Morales" class="w-full px-3 py-2 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-sl-blue/20">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-600 mb-1">Especialidad / Departamento</label>
+                    <input type="text" id="input-profile-dept" value="Cuerpo Médico - Urgencias" class="w-full px-3 py-2 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-sl-blue/20">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-600 mb-1">Correo Institucional</label>
+                    <input type="email" value="amorales@saintlukeshospitals.com" disabled class="w-full px-3 py-2 bg-slate-100 border border-slate-200 rounded-xl text-sm text-slate-500">
+                </div>
+            </div>
+
+            <div class="pt-4 flex justify-end space-x-3">
+                <button onclick="closeProfileModal()" class="px-4 py-2 text-xs font-semibold text-slate-600 hover:bg-slate-100 rounded-xl">Cancelar</button>
+                <button onclick="saveUserProfile()" class="px-4 py-2 text-xs font-bold text-white bg-sl-blue hover:bg-sl-navy rounded-xl shadow">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="no-print bg-white border-t border-slate-200 py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center sm:flex sm:justify-between sm:text-left text-xs text-slate-500 space-y-2 sm:space-y-0">
+            <p>© 2026 Saint Luke's Hospitals. Centro de Capacitación y Enseñanza (CCE 2.0).</p>
+            <p>Plataforma alojada en <span class="font-semibold text-slate-700">rhinobuild.org / GitHub Pages</span></p>
+        </div>
+    </footer>
+
+    <script>
+        // =========================================================================
+        // DATA MODEL & INITIAL STATE (LOCALSTORAGE SUPPORT)
+        // =========================================================================
+        
+        const COURSES_DATA = [
+            {
+                id: 'c1',
+                title: 'AESP 1: Identificación Correcta del Paciente',
+                category: 'Calidad',
+                categoryLabel: 'Calidad y Seguridad',
+                hours: 4,
+                level: 'Obligatorio',
+                badgeBg: 'bg-red-50 text-red-600 border-red-200',
+                description: 'Protocolos estandarizados de doble identificador en atención clínica ambulatoria y hospitalización.',
+                lessons: [
+                    { id: 'l1', title: 'Introducción al Protocolo de Doble Identificador', duration: '10 min', content: 'Uso de Nombre completo y Fecha de Nacimiento en Saint Luke\'s Hospitals. Cero abreviaturas.' },
+                    { id: 'l2', title: 'Verificación Activa en Medicamentos y Muestras', duration: '15 min', content: 'Procedimiento directo al pie de cama con la pulsera física de identificación del paciente.' },
+                    { id: 'l3', title: 'Casos Especiales: Pacientes Inconscientes o Neonatos', duration: '15 min', content: 'Protocolo de identificación para recién nacidos y pacientes no comunicativos en urgencias.' }
+                ],
+                quiz: [
+                    {
+                        question: '¿Cuáles son los dos identificadores obligatorios en Saint Luke\'s Hospitals?',
+                        options: ['Número de cama y Nombre', 'Nombre Completo y Fecha de Nacimiento', 'Diagnóstico y Nombre', 'Número de Folio y Especialidad'],
+                        answer: 1
+                    },
+                    {
+                        question: '¿Cuándo debe realizarse la verificación de los identificadores?',
+                        options: ['Solo al ingresar al hospital', 'Antes de administrar medicamentos, tomar muestras o realizar estudios', 'Únicamente antes de cirugías', 'Al momento del alta médica'],
+                        answer: 1
+                    }
+                ]
+            },
+            {
+                id: 'c2',
+                title: 'AESP 2: Comunicación Efectiva en Salud',
+                category: 'Calidad',
+                categoryLabel: 'Calidad y Seguridad',
+                hours: 3,
+                level: 'Intermedio',
+                badgeBg: 'bg-blue-50 text-sl-blue border-blue-200',
+                description: 'Implementación del modelo SBAR (Escalar, Situación, Antecedentes, Evaluación y Recomendar) en órdenes verbales.',
+                lessons: [
+                    { id: 'l1', title: 'Estructura del Modelo SBAR', duration: '12 min', content: 'Técnica estandarizada para la transferencia de información clínica crítica entre personal de salud.' },
+                    { id: 'l2', title: 'Proceso de Escuchar - Escribir - Leer - Confirmar', duration: '18 min', content: 'Protocolo para la recepción de indicaciones telefónicas y verbales en áreas críticas.' }
+                ],
+                quiz: [
+                    {
+                        question: '¿Qué significan las siglas de la técnica SBAR/SAER?',
+                        options: ['Situación, Antecedentes, Evaluación, Recomendación', 'Seguridad, Biología, Atención, Riesgo', 'Síntomas, Bitácora, Análisis, Resultado', 'Sistema, Base, Archivo, Registro'],
+                        answer: 0
+                    }
+                ]
+            },
+            {
+                id: 'c3',
+                title: 'Soporte Vital Básico (BLS) para Salud',
+                category: 'Medica',
+                categoryLabel: 'Área Médica',
+                hours: 6,
+                level: 'Avanzado',
+                badgeBg: 'bg-emerald-50 text-emerald-600 border-emerald-200',
+                description: 'Reanimación cardiopulmonar de alta calidad y uso del desfibrilador externo automático (DEA).',
+                lessons: [
+                    { id: 'l1', title: 'Cadena de Supervivencia Intrahospitalaria', duration: '20 min', content: 'Reconocimiento temprano de paro cardíaco y activación del Código Azul.' },
+                    { id: 'l2', title: 'Compresiones Torácicas y Ventilaciones', duration: '25 min', content: 'Frecuencia y profundidad de compresiones acordes a las guías internacionales vigentes.' }
+                ],
+                quiz: [
+                    {
+                        question: '¿Cuál es la frecuencia de compresión recomendada en RCP para adultos?',
+                        options: ['60-80 compresiones por minuto', '100-120 compresiones por minuto', '140-160 compresiones por minuto', '80-90 compresiones por minuto'],
+                        answer: 1
+                    }
+                ]
+            },
+            {
+                id: 'c4',
+                title: 'Manejo Seguro de Medicamentos de Alto Riesgo',
+                category: 'Enfermeria',
+                categoryLabel: 'Enfermería',
+                hours: 5,
+                level: 'Avanzado',
+                badgeBg: 'bg-purple-50 text-purple-600 border-purple-200',
+                description: 'Almacenamiento, semaforización y doble verificación de electrolitos concentrados e insulinas.',
+                lessons: [
+                    { id: 'l1', title: 'Clasificación de Medicamentos LASA y Electrolitos', duration: '15 min', content: 'Prevención de errores por similitud fonética o visual en envases farmacéuticos.' }
+                ],
+                quiz: [
+                    {
+                        question: '¿Cómo deben identificarse físicamente los electrolitos concentrados?',
+                        options: ['Sin etiqueta especial', 'Con semaforización y alerta visual de alto riesgo', 'Guardados en el cajón general', 'Con cinta adhesiva transparente'],
+                        answer: 1
+                    }
+                ]
+            }
+        ];
+
+        // State object
+        let state = {
+            user: {
+                name: 'Dr. Alejandro Morales',
+                dept: 'Cuerpo Médico - Urgencias'
+            },
+            // Store course progress: { courseId: { currentLessonIndex: 0, completed: false, score: 0 } }
+            progress: {
+                'c1': { currentLessonIndex: 0, completed: true, score: 100 },
+                'c2': { currentLessonIndex: 0, completed: false, score: 0 }
+            },
+            activeCourseId: null,
+            activeLessonIndex: 0,
+            activeQuizIndex: 0,
+            quizUserAnswers: [],
+            quizTimerInterval: null
+        };
+
+        // Initialize state from LocalStorage if exists
+        function initStorage() {
+            const savedUser = localStorage.getItem('cce_user');
+            const savedProgress = localStorage.getItem('cce_progress');
+            if (savedUser) state.user = JSON.parse(savedUser);
+            if (savedProgress) state.progress = JSON.parse(savedProgress);
+            updateUserUI();
+        }
+
+        function saveState() {
+            localStorage.setItem('cce_user', JSON.stringify(state.user));
+            localStorage.setItem('cce_progress', JSON.stringify(state.progress));
+            updateDashboardStats();
+        }
+
+        // =========================================================================
+        // NAVIGATION & VIEW SWITCHING
+        // =========================================================================
+
+        function navigateTo(viewName) {
+            // Hide all views
+            const views = ['dashboard', 'catalog', 'course-player', 'quiz', 'certificates'];
+            views.forEach(v => {
+                const el = document.getElementById(`view-${v}`);
+                if (el) el.classList.add('hidden');
+            });
+
+            // Show selected view
+            const target = document.getElementById(`view-${viewName}`);
+            if (target) target.classList.remove('hidden');
+
+            // Update nav button highlights
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('text-sl-blue', 'bg-blue-50');
+                btn.classList.add('text-slate-600');
+            });
+
+            const activeBtn = document.getElementById(`nav-${viewName}`);
+            if (activeBtn) {
+                activeBtn.classList.add('text-sl-blue', 'bg-blue-50');
+                activeBtn.classList.remove('text-slate-600');
+            }
+
+            // Trigger view specific re-renders
+            if (viewName === 'dashboard') renderDashboard();
+            if (viewName === 'catalog') renderCatalog();
+            if (viewName === 'certificates') renderCertificates();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // =========================================================================
+        // USER PROFILE MANAGING
+        // =========================================================================
+
+        function updateUserUI() {
+            document.getElementById('user-display-name').textContent = state.user.name;
+            document.getElementById('user-display-name-mobile').textContent = state.user.name;
+            document.getElementById('welcome-user-name').textContent = state.user.name.split(' ')[0] + ' ' + (state.user.name.split(' ')[1] || '');
+            
+            // Initials
+            const initials = state.user.name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+            document.getElementById('user-avatar-initials').textContent = initials;
+            document.getElementById('user-avatar-initials-mobile').textContent = initials;
+            document.getElementById('cert-user-fullname').textContent = state.user.name;
+        }
+
+        function openProfileModal() {
+            document.getElementById('input-profile-name').value = state.user.name;
+            document.getElementById('input-profile-dept').value = state.user.dept;
+            document.getElementById('modal-profile').classList.remove('hidden');
+        }
+
+        function closeProfileModal() {
+            document.getElementById('modal-profile').classList.add('hidden');
+        }
+
+        function saveUserProfile() {
+            const name = document.getElementById('input-profile-name').value.trim();
+            const dept = document.getElementById('input-profile-dept').value.trim();
+            if (name) state.user.name = name;
+            if (dept) state.user.dept = dept;
+            saveState();
+            updateUserUI();
+            closeProfileModal();
+        }
+
+        // =========================================================================
+        // DASHBOARD RENDER LOGIC
+        // =========================================================================
+
+        function updateDashboardStats() {
+            const enrolledCount = Object.keys(state.progress).length;
+            let completedCount = 0;
+            let hoursCount = 0;
+
+            Object.keys(state.progress).forEach(cid => {
+                if (state.progress[cid].completed) {
+                    completedCount++;
+                    const c = COURSES_DATA.find(x => x.id === cid);
+                    if (c) hoursCount += c.hours;
+                }
+            });
+
+            document.getElementById('stat-enrolled').textContent = enrolledCount;
+            document.getElementById('stat-completed').textContent = completedCount;
+            document.getElementById('stat-hours').textContent = hoursCount + ' hrs';
+            document.getElementById('stat-certs').textContent = completedCount;
+        }
+
+        function renderDashboard() {
+            updateDashboardStats();
+            const activeContainer = document.getElementById('dashboard-active-courses');
+            activeContainer.innerHTML = '';
+
+            // Render active/in-progress courses
+            const courseKeys = Object.keys(state.progress);
+            courseKeys.forEach(cid => {
+                const course = COURSES_DATA.find(c => c.id === cid);
+                if (!course) return;
+
+                const p = state.progress[cid];
+                const totalLessons = course.lessons.length;
+                const completedPct = p.completed ? 100 : Math.round((p.currentLessonIndex / totalLessons) * 100);
+
+                const cardHtml = `
+                    <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-bold uppercase px-2.5 py-1 rounded-full border ${course.badgeBg}">${course.categoryLabel}</span>
+                                <span class="text-xs font-semibold text-slate-400"><i class="fa-regular fa-clock mr-1"></i>${course.hours} hrs</span>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-base leading-snug">${course.title}</h3>
+                            <p class="text-xs text-slate-500 line-clamp-2">${course.description}</p>
+                        </div>
+
+                        <div class="pt-4 mt-4 border-t border-slate-100 space-y-3">
+                            <div class="flex justify-between text-xs font-semibold">
+                                <span class="text-slate-500">Progreso</span>
+                                <span class="${p.completed ? 'text-emerald-600' : 'text-sl-blue'} font-extrabold">${completedPct}%</span>
+                            </div>
+                            <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                                <div class="bg-sl-mint h-full transition-all" style="width: ${completedPct}%"></div>
+                            </div>
+                            <button onclick="openCourseViewer('${course.id}')" class="w-full py-2.5 bg-slate-50 hover:bg-sl-blue hover:text-white text-sl-blue font-bold text-xs rounded-xl transition-all border border-blue-100 flex items-center justify-center space-x-1">
+                                <span>${p.completed ? 'Repasar Curso' : 'Continuar Módulo'}</span>
+                                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                activeContainer.innerHTML += cardHtml;
+            });
+        }
+
+        // =========================================================================
+        // CATALOG RENDER & FILTERING LOGIC
+        // =========================================================================
+
+        let currentCategoryFilter = 'all';
+
+        function renderCatalog() {
+            const grid = document.getElementById('catalog-grid');
+            grid.innerHTML = '';
+
+            const searchTerm = document.getElementById('catalog-search').value.toLowerCase();
+
+            COURSES_DATA.forEach(course => {
+                // Category Filter
+                if (currentCategoryFilter !== 'all' && course.category !== currentCategoryFilter) return;
+
+                // Search Filter
+                if (searchTerm && !course.title.toLowerCase().includes(searchTerm) && !course.description.toLowerCase().includes(searchTerm)) return;
+
+                const isEnrolled = state.progress[course.id] !== undefined;
+                const isCompleted = isEnrolled && state.progress[course.id].completed;
+
+                const card = `
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-start">
+                                <span class="text-xs font-bold uppercase px-3 py-1 rounded-full border ${course.badgeBg}">${course.categoryLabel}</span>
+                                <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-layer-group mr-1"></i>${course.level}</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug">${course.title}</h3>
+                                <p class="text-xs text-slate-500 mt-2 leading-relaxed">${course.description}</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+                            <div class="text-xs text-slate-500">
+                                <i class="fa-regular fa-clock text-sl-blue mr-1"></i> ${course.hours} Horas
+                            </div>
+                            ${
+                                isCompleted ?
+                                `<button onclick="openCourseViewer('${course.id}')" class="px-4 py-2 bg-emerald-50 text-emerald-600 font-bold text-xs rounded-xl border border-emerald-200 flex items-center space-x-1">
+                                    <i class="fa-solid fa-circle-check"></i> <span>Completado</span>
+                                 </button>` :
+                                isEnrolled ?
+                                `<button onclick="openCourseViewer('${course.id}')" class="px-4 py-2 bg-sl-blue hover:bg-sl-navy text-white font-bold text-xs rounded-xl transition-all shadow">
+                                    Continuar
+                                 </button>` :
+                                `<button onclick="enrollAndOpen('${course.id}')" class="px-4 py-2 bg-slate-900 hover:bg-sl-blue text-white font-bold text-xs rounded-xl transition-all shadow">
+                                    Inscribirme
+                                 </button>`
+                            }
+                        </div>
+                    </div>
+                `;
+                grid.innerHTML += card;
+            });
+        }
+
+        function filterCategory(cat) {
+            currentCategoryFilter = cat;
+            document.querySelectorAll('.cat-pill').forEach(btn => {
+                btn.classList.remove('bg-sl-blue', 'text-white');
+                btn.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+            });
+            event.currentTarget.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+            event.currentTarget.classList.add('bg-sl-blue', 'text-white');
+            renderCatalog();
+        }
+
+        function filterCatalog() {
+            renderCatalog();
+        }
+
+        function enrollAndOpen(courseId) {
+            if (!state.progress[courseId]) {
+                state.progress[courseId] = { currentLessonIndex: 0, completed: false, score: 0 };
+                saveState();
+            }
+            openCourseViewer(courseId);
+        }
+
+        // =========================================================================
+        // COURSE PLAYER LOGIC
+        // =========================================================================
+
+        function openCourseViewer(courseId) {
+            state.activeCourseId = courseId;
+            if (!state.progress[courseId]) {
+                state.progress[courseId] = { currentLessonIndex: 0, completed: false, score: 0 };
+                saveState();
+            }
+
+            state.activeLessonIndex = state.progress[courseId].currentLessonIndex || 0;
+            navigateTo('course-player');
+            renderPlayerContent();
+        }
+
+        function renderPlayerContent() {
+            const course = COURSES_DATA.find(c => c.id === state.activeCourseId);
+            if (!course) return;
+
+            document.getElementById('player-course-category').textContent = course.categoryLabel;
+            
+            const currentLesson = course.lessons[state.activeLessonIndex];
+            document.getElementById('player-lesson-badge').textContent = `Módulo 1 • Lección ${state.activeLessonIndex + 1} de ${course.lessons.length}`;
+            document.getElementById('player-lesson-title').textContent = currentLesson.title;
+            document.getElementById('player-lesson-content').innerHTML = `
+                <p class="text-slate-700 font-medium">${currentLesson.content}</p>
+                <p class="text-xs text-slate-500 pt-2">Esta lección forma parte de la norma de capacitación continua de Saint Luke's Hospitals.</p>
+            `;
+
+            // Render Playlist
+            const playlistContainer = document.getElementById('player-playlist');
+            playlistContainer.innerHTML = '';
+
+            course.lessons.forEach((l, idx) => {
+                const isActive = idx === state.activeLessonIndex;
+                const isPassed = idx < state.activeLessonIndex || state.progress[course.id].completed;
+
+                playlistContainer.innerHTML += `
+                    <div onclick="selectLesson(${idx})" class="p-3 rounded-xl border ${isActive ? 'bg-blue-50 border-sl-blue' : 'bg-slate-50 border-slate-100 hover:bg-slate-100'} transition-all cursor-pointer flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded-full ${isPassed ? 'bg-emerald-500 text-white' : isActive ? 'bg-sl-blue text-white' : 'bg-slate-200 text-slate-500'} flex items-center justify-center text-xs font-bold">
+                                ${isPassed ? '<i class="fa-solid fa-check"></i>' : idx + 1}
+                            </div>
+                            <span class="text-xs font-semibold ${isActive ? 'text-sl-blue' : 'text-slate-700'}">${l.title}</span>
+                        </div>
+                        <span class="text-[10px] text-slate-400 font-medium">${l.duration}</span>
+                    </div>
+                `;
+            });
+
+            // Progress percent
+            const total = course.lessons.length;
+            const pct = state.progress[course.id].completed ? 100 : Math.round(((state.activeLessonIndex + 1) / total) * 100);
+            document.getElementById('player-progress-percentage').textContent = `${pct}% Completado`;
+            document.getElementById('player-course-progress-bar').style.width = `${pct}%`;
+
+            // Button States
+            const btnPrev = document.getElementById('btn-prev-lesson');
+            const btnNext = document.getElementById('btn-next-lesson');
+            const btnQuiz = document.getElementById('btn-start-quiz');
+
+            if (state.activeLessonIndex === 0) {
+                btnPrev.classList.add('opacity-50', 'pointer-events-none');
+            } else {
+                btnPrev.classList.remove('opacity-50', 'pointer-events-none');
+            }
+
+            if (state.activeLessonIndex === total - 1) {
+                btnNext.classList.add('hidden');
+                btnQuiz.classList.remove('hidden');
+            } else {
+                btnNext.classList.remove('hidden');
+                btnQuiz.classList.add('hidden');
+            }
+        }
+
+        function selectLesson(idx) {
+            state.activeLessonIndex = idx;
+            state.progress[state.activeCourseId].currentLessonIndex = idx;
+            saveState();
+            renderPlayerContent();
+        }
+
+        function prevLesson() {
+            if (state.activeLessonIndex > 0) {
+                selectLesson(state.activeLessonIndex - 1);
+            }
+        }
+
+        function nextLesson() {
+            const course = COURSES_DATA.find(c => c.id === state.activeCourseId);
+            if (state.activeLessonIndex < course.lessons.length - 1) {
+                selectLesson(state.activeLessonIndex + 1);
+            }
+        }
+
+        function playLessonVideo() {
+            const bar = document.getElementById('video-progress-bar');
+            bar.style.width = '0%';
+            setTimeout(() => bar.style.width = '100%', 100);
+        }
+
+        // =========================================================================
+        // QUIZ & EVALUATION LOGIC
+        // =========================================================================
+
+        function startCourseQuiz() {
+            const course = COURSES_DATA.find(c => c.id === state.activeCourseId);
+            if (!course || !course.quiz) return;
+
+            state.activeQuizIndex = 0;
+            state.quizUserAnswers = new Array(course.quiz.length).fill(null);
+            
+            document.getElementById('quiz-course-title').textContent = course.title;
+            document.getElementById('quiz-container').classList.remove('hidden');
+            document.getElementById('quiz-results-card').classList.add('hidden');
+
+            navigateTo('quiz');
+            renderQuizQuestion();
+            startQuizTimer();
+        }
+
+        function startQuizTimer() {
+            clearInterval(state.quizTimerInterval);
+            let duration = 600; // 10 mins
+            const timerDisplay = document.getElementById('quiz-timer');
+
+            state.quizTimerInterval = setInterval(() => {
+                const mins = Math.floor(duration / 60);
+                const secs = duration % 60;
+                timerDisplay.textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+                if (--duration < 0) {
+                    clearInterval(state.quizTimerInterval);
+                    submitQuiz();
+                }
+            }, 1000);
+        }
+
+        function renderQuizQuestion() {
+            const course = COURSES_DATA.find(c => c.id === state.activeCourseId);
+            const q = course.quiz[state.activeQuizIndex];
+
+            document.getElementById('quiz-question-counter').textContent = `Pregunta ${state.activeQuizIndex + 1} de ${course.quiz.length}`;
+            document.getElementById('quiz-question-text').textContent = q.question;
+            document.getElementById('quiz-step-progress').style.width = `${((state.activeQuizIndex + 1) / course.quiz.length) * 100}%`;
+
+            const optionsContainer = document.getElementById('quiz-options-list');
+            optionsContainer.innerHTML = '';
+
+            q.options.forEach((opt, optIdx) => {
+                const isSelected = state.quizUserAnswers[state.activeQuizIndex] === optIdx;
+                optionsContainer.innerHTML += `
+                    <button onclick="selectQuizOption(${optIdx})" class="w-full text-left p-4 rounded-xl border ${isSelected ? 'border-sl-blue bg-blue-50 ring-2 ring-sl-blue/20' : 'border-slate-200 hover:bg-slate-50'} transition-all flex items-center justify-between">
+                        <span class="text-sm font-semibold ${isSelected ? 'text-sl-blue' : 'text-slate-700'}">${opt}</span>
+                        <div class="w-5 h-5 rounded-full border ${isSelected ? 'border-sl-blue bg-sl-blue text-white' : 'border-slate-300'} flex items-center justify-center text-xs">
+                            ${isSelected ? '<i class="fa-solid fa-check"></i>' : ''}
+                        </div>
+                    </button>
+                `;
+            });
+
+            // Button States
+            const btnPrev = document.getElementById('btn-quiz-prev');
+            const btnNext = document.getElementById('btn-quiz-next');
+            const btnSubmit = document.getElementById('btn-quiz-submit');
+
+            btnPrev.style.visibility = state.activeQuizIndex === 0 ? 'hidden' : 'visible';
+
+            if (state.activeQuizIndex === course.quiz.length - 1) {
+                btnNext.classList.add('hidden');
+                btnSubmit.classList.remove('hidden');
+            } else {
+                btnNext.classList.remove('hidden');
+                btnSubmit.classList.add('hidden');
+            }
+        }
+
+        function selectQuizOption(optIndex) {
+            state.quizUserAnswers[state.activeQuizIndex] = optIndex;
+            renderQuizQuestion();
+        }
+
+        function prevQuizQuestion() {
+            if (state.activeQuizIndex > 0) {
+                state.activeQuizIndex--;
+                renderQuizQuestion();
+            }
+        }
+
+        function nextQuizQuestion() {
+            const course = COURSES_DATA.find(c => c.id === state.activeCourseId);
+            if (state.activeQuizIndex < course.quiz.length - 1) {
+                state.activeQuizIndex++;
+                renderQuizQuestion();
+            }
+        }
+
+        function submitQuiz() {
+            clearInterval(state.quizTimerInterval);
+            const course = COURSES_DATA.find(c => c.id === state.activeCourseId);
+            
+            let correctCount = 0;
+            course.quiz.forEach((q, idx) => {
+                if (state.quizUserAnswers[idx] === q.answer) {
+                    correctCount++;
+                }
+            });
+
+            const score = Math.round((correctCount / course.quiz.length) * 100);
+            const isPassed = score >= 80;
+
+            // Save Progress
+            state.progress[state.activeCourseId] = {
+                currentLessonIndex: course.lessons.length - 1,
+                completed: isPassed,
+                score: score
+            };
+            saveState();
+
+            // Display Results Card
+            document.getElementById('quiz-container').classList.add('hidden');
+            const resCard = document.getElementById('quiz-results-card');
+            resCard.classList.remove('hidden');
+
+            document.getElementById('quiz-final-score').textContent = `${score}%`;
+            
+            if (isPassed) {
+                document.getElementById('quiz-result-icon').className = 'w-20 h-20 mx-auto rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-4xl';
+                document.getElementById('quiz-result-icon').innerHTML = '<i class="fa-solid fa-trophy"></i>';
+                document.getElementById('quiz-result-title').textContent = '¡Evaluación Aprobada!';
+                document.getElementById('quiz-result-subtitle').textContent = 'Acreditación completada con éxito. Tu diploma oficial ya está disponible.';
+                document.getElementById('quiz-final-status').textContent = 'Aprobado';
+                document.getElementById('quiz-final-status').className = 'text-sm font-bold text-emerald-600 uppercase';
+                document.getElementById('btn-view-certificate-action').classList.remove('hidden');
+            } else {
+                document.getElementById('quiz-result-icon').className = 'w-20 h-20 mx-auto rounded-full bg-red-100 text-red-600 flex items-center justify-center text-4xl';
+                document.getElementById('quiz-result-icon').innerHTML = '<i class="fa-solid fa-xmark"></i>';
+                document.getElementById('quiz-result-title').textContent = 'Puntaje Insuficiente';
+                document.getElementById('quiz-result-subtitle').textContent = 'Se requiere un mínimo de 80% de aciertos. Por favor repasa las lecciones e intenta de nuevo.';
+                document.getElementById('quiz-final-status').textContent = 'No Aprobado';
+                document.getElementById('quiz-final-status').className = 'text-sm font-bold text-red-600 uppercase';
+                document.getElementById('btn-view-certificate-action').classList.add('hidden');
+            }
+        }
+
+        // =========================================================================
+        // CERTIFICATES & DIPLOMAS LOGIC
+        // =========================================================================
+
+        function renderCertificates() {
+            const list = document.getElementById('certificates-list');
+            list.innerHTML = '';
+
+            let hasCerts = false;
+
+            Object.keys(state.progress).forEach(cid => {
+                if (state.progress[cid].completed) {
+                    hasCerts = true;
+                    const course = COURSES_DATA.find(c => c.id === cid);
+                    
+                    list.innerHTML += `
+                        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="bg-sl-gold/10 text-sl-gold font-bold text-xs px-2.5 py-1 rounded-md uppercase border border-sl-gold/20">Acreditado</span>
+                                <i class="fa-solid fa-certificate text-sl-gold text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-base leading-snug">${course.title}</h3>
+                            <p class="text-xs text-slate-500">Calificación obtenida: <span class="font-bold text-emerald-600">${state.progress[cid].score}%</span></p>
+                            
+                            <button onclick="previewCertificate('${cid}')" class="w-full py-2.5 bg-sl-blue hover:bg-sl-navy text-white font-bold text-xs rounded-xl transition-all shadow flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-eye"></i>
+                                <span>Ver Constancia Oficial</span>
+                            </button>
+                        </div>
+                    `;
+                }
+            });
+
+            if (!hasCerts) {
+                list.innerHTML = `
+                    <div class="col-span-full bg-white rounded-2xl p-8 border border-slate-200 text-center space-y-3">
+                        <i class="fa-solid fa-award text-4xl text-slate-300"></i>
+                        <h3 class="font-bold text-slate-700">No tienes certificados emitidos aún</h3>
+                        <p class="text-xs text-slate-500">Completa y aprueba las evaluaciones finales de tus cursos para generar tus constancias con acreditación hospitalaria.</p>
+                        <button onclick="navigateTo('catalog')" class="px-4 py-2 bg-sl-blue text-white font-bold text-xs rounded-xl shadow">Explorar Catálogo</button>
+                    </div>
+                `;
+            }
+        }
+
+        function previewCertificate(courseId) {
+            const course = COURSES_DATA.find(c => c.id === courseId);
+            if (!course) return;
+
+            document.getElementById('certificate-preview-wrapper').classList.remove('hidden');
+            document.getElementById('cert-user-fullname').textContent = state.user.name;
+            document.getElementById('cert-course-title').textContent = course.title;
+            document.getElementById('cert-hours').textContent = `${course.hours} Horas Académicas`;
+            
+            // Generate pseudo folio
+            const folio = `SLH-CCE-2026-${Math.floor(1000 + Math.random() * 9000)}`;
+            document.getElementById('cert-folio').textContent = folio;
+
+            // Scroll down smoothly
+            document.getElementById('certificate-preview-wrapper').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function printCertificate() {
+            window.print();
+        }
+
+        // =========================================================================
+        // APP INITIALIZATION
+        // =========================================================================
+
+        window.onload = function() {
+            initStorage();
+            navigateTo('dashboard');
+        };
+    </script>
+</body>
+</html>
