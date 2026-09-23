@@ -1,230 +1,1425 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="h-full bg-slate-50">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0d2d4a">
-<title>SLH · Control de Cobertura de Puestos</title>
-<meta name="description" content="Portal institucional para solicitar, autorizar y dar seguimiento a coberturas de puestos de Grupo Saint Luke's Hospitals.">
-<style>
-:root{
-  --navy:#0d2d4a; --navy2:#163d61; --blue:#2e75b6; --sky:#33aec4;
-  --orange:#e8792e; --cream:#f7f8fa; --ink:#162330; --muted:#667585;
-  --line:#dfe6ec; --white:#fff; --green:#1e7a46;
-  --shadow:0 18px 50px rgba(13,45,74,.12);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.55}
-a{text-decoration:none;color:inherit}
-.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
-.topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(223,230,236,.85)}
-.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:flex;align-items:center;gap:12px}
-.logo{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;display:grid;place-items:center;font-weight:800;box-shadow:0 8px 20px rgba(13,45,74,.18)}
-.brand strong{display:block;color:var(--navy);font-size:15px}
-.brand small{display:block;color:var(--muted);font-size:11px}
-.navlinks{display:flex;gap:22px;align-items:center;font-size:13px;font-weight:700;color:#4d5e6d}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:12px;padding:13px 20px;font-weight:800;cursor:pointer;transition:.2s}
-.btn:hover{transform:translateY(-1px)}
-.btn-primary{background:linear-gradient(135deg,var(--orange),#f59a4d);color:#fff;box-shadow:0 10px 25px rgba(232,121,46,.24)}
-.btn-outline{border:1px solid #cbd8e2;background:#fff;color:var(--navy)}
-.hero{background:
- radial-gradient(circle at 80% 20%,rgba(51,174,196,.25),transparent 30%),
- linear-gradient(135deg,#09243c 0%,#123d62 58%,#205e86 100%);color:#fff;padding:84px 0 74px;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.18);font-size:12px;font-weight:800;letter-spacing:.35px}
-.hero h1{font-size:clamp(38px,5vw,64px);line-height:1.03;margin:20px 0 20px;letter-spacing:-1.8px}
-.hero h1 span{color:#83d8e6}
-.hero p{font-size:18px;max-width:700px;color:#dbe8f2;margin:0 0 30px}
-.actions{display:flex;gap:12px;flex-wrap:wrap}
-.hero .btn-outline{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.25);color:#fff}
-.preview{background:#fff;border-radius:22px;padding:18px;box-shadow:0 30px 80px rgba(0,0,0,.28);transform:rotate(1deg)}
-.preview-head{height:50px;border-radius:13px;background:linear-gradient(135deg,var(--navy),var(--blue));display:flex;align-items:center;padding:0 14px;color:#fff;font-size:12px;font-weight:700}
-.dots{display:flex;gap:5px;margin-right:10px}.dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.55)}
-.preview-body{padding:17px 5px 3px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
-.stat{background:#f4f7fa;border:1px solid #e5ebf0;border-radius:12px;padding:12px}.stat b{display:block;color:var(--navy);font-size:20px}.stat span{font-size:9px;color:var(--muted);font-weight:700}
-.row{height:38px;border-bottom:1px solid #edf1f4;display:grid;grid-template-columns:1.2fr 1fr .8fr;align-items:center;gap:8px;font-size:9px;color:#64717c}
-.badge{justify-self:start;background:#e8f4ed;color:var(--green);padding:4px 7px;border-radius:99px;font-weight:800}
-section{padding:76px 0}
-.section-title{text-align:center;max-width:760px;margin:0 auto 42px}
-.section-title small{color:var(--orange);font-weight:900;letter-spacing:1px;text-transform:uppercase}
-.section-title h2{font-size:34px;color:var(--navy);margin:8px 0 12px}
-.section-title p{color:var(--muted);margin:0}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px;box-shadow:0 8px 25px rgba(20,50,75,.04)}
-.icon{width:44px;height:44px;border-radius:12px;background:#eaf3f9;color:var(--blue);display:grid;place-items:center;font-size:21px;font-weight:900;margin-bottom:16px}
-.card h3{margin:0 0 8px;color:var(--navy);font-size:17px}.card p{margin:0;color:var(--muted);font-size:14px}
-.steps{background:#fff}
-.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;position:relative}
-.step{position:relative;padding:22px 18px;background:#f8fafb;border:1px solid var(--line);border-radius:16px}
-.num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:900;margin-bottom:13px}
-.step h3{font-size:14px;margin:0 0 7px;color:var(--navy)}.step p{font-size:12px;color:var(--muted);margin:0}
-.roles{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.role{border-top:4px solid var(--blue)}
-.role ul{padding-left:18px;margin:12px 0 0;color:var(--muted);font-size:13px}
-.help{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:start}
-.notice{background:linear-gradient(145deg,var(--navy),var(--navy2));color:#fff;border-radius:20px;padding:30px;box-shadow:var(--shadow)}
-.notice h3{font-size:24px;margin:0 0 10px}.notice p{color:#d7e4ee;font-size:14px}
-.notice .mini{font-size:12px;border-top:1px solid rgba(255,255,255,.16);padding-top:16px;margin-top:20px}
-.faq details{background:#fff;border:1px solid var(--line);border-radius:13px;padding:17px 19px;margin-bottom:10px}
-.faq summary{cursor:pointer;font-weight:800;color:var(--navy)}
-.faq p{color:var(--muted);font-size:13px;margin:10px 0 0}
-.cta{padding-top:20px}
-.cta-box{background:linear-gradient(135deg,#eaf4fa,#f8fbfd);border:1px solid #d6e5ef;border-radius:22px;padding:40px;text-align:center}
-.cta-box h2{color:var(--navy);font-size:30px;margin:0 0 10px}.cta-box p{color:var(--muted);margin:0 auto 22px;max-width:650px}
-footer{padding:32px 0 40px;text-align:center;color:#7c8995;font-size:12px}
-footer strong{color:var(--navy)}
-.madeby{margin:24px auto 0;display:flex;flex-direction:column;align-items:center;gap:8px}
-.madeby span{font-size:11px;font-weight:700;color:#8a96a1;text-transform:uppercase;letter-spacing:1.4px}
-.madeby img{width:min(210px,58vw);height:auto;mix-blend-mode:multiply}
-@media(max-width:900px){.hero-grid,.help{grid-template-columns:1fr}.preview{max-width:620px}.cards,.roles{grid-template-columns:1fr 1fr}.timeline{grid-template-columns:1fr 1fr}.navlinks a:not(.btn){display:none}}
-@media(max-width:620px){.wrap{width:min(100% - 26px,1180px)}.hero{padding:58px 0}.hero h1{font-size:39px}.hero p{font-size:16px}.cards,.roles,.timeline{grid-template-columns:1fr}.actions .btn{width:100%}.nav .btn{padding:11px 13px;font-size:12px}.brand small{display:none}.section-title h2{font-size:28px}.cta-box{padding:28px 20px}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCE 2.0 - Centro de Capacitación y Enseñanza | Saint Luke's Hospitals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sl: {
+                            navy: '#002B49',
+                            blue: '#004B87',
+                            lightBlue: '#0072CE',
+                            teal: '#00A3E0',
+                            mint: '#00C896',
+                            gold: '#C5A059',
+                            softGray: '#F4F7F9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Certificado institucional */
+        .certificado-container {
+            width: 800px;
+            max-width: 100%;
+            min-height: 560px;
+            padding: 40px;
+            border: 10px solid #003366;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            position: relative;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        .certificado-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .logo-institucion, .logo-cce {
+            max-height: 60px;
+            max-width: 220px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .titulo-hospital {
+            color: #003366;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        .subtitulo-cce {
+            color: #555;
+            font-size: 16px;
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+
+        .texto-otorga, .texto-id, .texto-descripcion, .texto-fecha {
+            color: #475569;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .nombre-participante {
+            color: #1a1a1a;
+            font-size: 28px;
+            font-weight: 700;
+            border-bottom: 2px solid #d4af37;
+            display: inline-block;
+            padding: 0 25px 5px;
+            margin: 15px 0 5px;
+        }
+
+        .nombre-curso {
+            color: #003366;
+            font-size: 22px;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .certificado-firmas {
+            display: flex;
+            justify-content: space-around;
+            gap: 35px;
+            margin-top: 50px;
+        }
+
+        .firma-box { width: 250px; }
+        .linea-firma { border-top: 1px solid #333; margin-bottom: 8px; }
+        .nombre-firmante { font-weight: bold; font-size: 14px; margin: 0; }
+        .cargo-firmante { font-size: 12px; color: #666; margin: 2px 0 0; }
+
+        @page { size: landscape; margin: 0; }
+
+        @media print {
+            body * { visibility: hidden; }
+            #certificado-template, #certificado-template * { visibility: visible; }
+            #certificado-template {
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%);
+                width: 800px;
+                max-width: none;
+                min-height: 560px;
+                margin: 0;
+                box-shadow: none !important;
+            }
+            .no-print { display: none !important; }
+        }
+        
+        /* Custom Scrollbars */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        .cert-border {
+            border: 12px solid #004B87;
+            outline: 2px solid #C5A059;
+            outline-offset: -8px;
+        }
+    </style>
 </head>
-<body>
-<header class="topbar">
-  <div class="wrap nav">
-    <a class="brand" href="#inicio">
-      <div class="logo">SLH</div>
-      <div><strong>Grupo Saint Luke's Hospitals</strong><small>Capital Humano · Control de Cobertura</small></div>
-    </a>
-    <nav class="navlinks">
-      <a href="#plataforma">Plataforma</a>
-      <a href="#como-usar">Cómo usarla</a>
-      <a href="#roles">Roles</a>
-      <a href="#ayuda">Ayuda</a>
-      <a class="btn btn-primary" data-platform href="#">Abrir plataforma →</a>
-    </nav>
-  </div>
-</header>
+<body class="h-full flex flex-col font-sans text-slate-800 antialiased selection:bg-sl-lightBlue selection:text-white">
 
-<main id="inicio">
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow">● HERRAMIENTA INSTITUCIONAL DE CAPITAL HUMANO</span>
-      <h1>Control de <span>Cobertura de Puestos</span></h1>
-      <p>Una plataforma centralizada para registrar solicitudes de personal, revisar necesidades de cobertura, gestionar autorizaciones y dar seguimiento al proceso de reclutamiento hasta su cierre.</p>
-      <div class="actions">
-        <a class="btn btn-primary" data-platform href="#">Ingresar a la plataforma →</a>
-        <a class="btn btn-outline" href="#como-usar">Ver instrucciones</a>
-      </div>
-    </div>
-    <div class="preview" aria-label="Vista previa ilustrativa de la plataforma">
-      <div class="preview-head"><span class="dots"><i></i><i></i><i></i></span> SLH · Control de Cobertura</div>
-      <div class="preview-body">
-        <div class="stats">
-          <div class="stat"><b>12</b><span>SOLICITUDES</span></div>
-          <div class="stat"><b>4</b><span>EN RECLUTAMIENTO</span></div>
-          <div class="stat"><b>6</b><span>CUBIERTAS</span></div>
+    <!-- NAVIGATION BAR -->
+    <header class="no-print sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <!-- Logo & Brand -->
+                <div class="flex items-center space-x-3 cursor-pointer" onclick="navigateTo('dashboard')">
+                    <div class="w-12 h-12 bg-gradient-to-tr from-sl-navy to-sl-blue rounded-xl flex items-center justify-center text-white shadow-md shadow-blue-900/10">
+                        <i class="fa-solid fa-hospital-user text-2xl text-sl-mint"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center space-x-2">
+                            <span class="font-bold text-xl tracking-tight text-sl-navy">CCE <span class="text-sl-gold text-lg">2.0</span></span>
+                            <span class="bg-sl-softGray text-sl-blue text-xs font-semibold px-2 py-0.5 rounded border border-blue-100">SAINT LUKE'S</span>
+                        </div>
+                        <p class="text-xs text-slate-500 font-medium">Centro de Capacitación y Enseñanza</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                    <button id="nav-dashboard" onclick="navigateTo('dashboard')" class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold text-sl-blue bg-blue-50 transition-all flex items-center space-x-2">
+                        <i class="fa-solid fa-chart-pie text-xs"></i>
+                        <span>Inicio</span>
+                    </button>
+                    <button id="nav-catalog" onclick="navigateTo('catalog')" class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-sl-blue hover:bg-slate-50 transition-all flex items-center space-x-2">
+                        <i class="fa-solid fa-book-open text-xs"></i>
+                        <span>Catálogo</span>
+                    </button>
+                    <button id="nav-certificates" onclick="navigateTo('certificates')" class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold text-slate-600 hover:text-sl-blue hover:bg-slate-50 transition-all flex items-center space-x-2">
+                        <i class="fa-solid fa-award text-xs"></i>
+                        <span>Mis Certificados</span>
+                    </button>
+                </nav>
+
+                <!-- User Profile & Quick Info -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="text-right border-r border-slate-200 pr-4">
+                        <p id="user-display-name" class="text-sm font-bold text-slate-800 leading-tight">Dr. Alejandro Morales</p>
+                        <p class="text-xs text-slate-500 font-medium">Cuerpo Médico - Urgencias</p>
+                    </div>
+                    <div class="relative group cursor-pointer" onclick="openProfileModal()">
+                        <div class="w-10 h-10 rounded-full bg-sl-blue text-white flex items-center justify-center font-bold text-sm shadow-sm ring-2 ring-blue-100">
+                            <span id="user-avatar-initials">AM</span>
+                        </div>
+                        <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-white rounded-full"></span>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button onclick="toggleMobileMenu()" class="p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="row"><b>SLH-2026-001</b><span>Enfermero General</span><span class="badge">Autorizada</span></div>
-        <div class="row"><b>SLH-2026-002</b><span>Paramédico</span><span class="badge">En proceso</span></div>
-        <div class="row"><b>SLH-2026-003</b><span>Aux. Farmacia</span><span class="badge">Cubierta</span></div>
-        <div class="row"><b>SLH-2026-004</b><span>Químico</span><span class="badge">Autorizada</span></div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="plataforma">
-  <div class="wrap">
-    <div class="section-title">
-      <small>Objetivo</small>
-      <h2>Un solo flujo para todo el proceso de cobertura</h2>
-      <p>La plataforma sustituye seguimientos dispersos por un registro institucional con folio, responsables, autorización y trazabilidad.</p>
-    </div>
-    <div class="cards">
-      <article class="card"><div class="icon">01</div><h3>Solicitudes centralizadas</h3><p>Registra sede, área, puesto, cantidad, prioridad, fecha requerida, horario, motivo y requisitos de la cobertura.</p></article>
-      <article class="card"><div class="icon">02</div><h3>Autorización y seguimiento</h3><p>Capital Humano y Dirección General pueden revisar el requerimiento y mantener actualizado su estado.</p></article>
-      <article class="card"><div class="icon">03</div><h3>Trazabilidad institucional</h3><p>Cada movimiento conserva folio, fecha, usuario, correo, comentarios y estado para facilitar el control y la consulta.</p></article>
-    </div>
-  </div>
-</section>
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <button onclick="navigateTo('dashboard'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50">
+                <i class="fa-solid fa-chart-pie w-6"></i> Inicio
+            </button>
+            <button onclick="navigateTo('catalog'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50">
+                <i class="fa-solid fa-book-open w-6"></i> Catálogo de Cursos
+            </button>
+            <button onclick="navigateTo('certificates'); toggleMobileMenu()" class="w-full text-left px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-50">
+                <i class="fa-solid fa-award w-6"></i> Mis Certificados
+            </button>
+            <div class="pt-2 border-t border-slate-200">
+                <div class="flex items-center px-3 py-2" onclick="openProfileModal()">
+                    <div class="w-8 h-8 rounded-full bg-sl-blue text-white flex items-center justify-center font-bold text-xs mr-3">
+                        <span id="user-avatar-initials-mobile">AM</span>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold text-slate-800" id="user-display-name-mobile">Dr. Alejandro Morales</p>
+                        <p class="text-xs text-slate-500">Cuerpo Médico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<section class="steps" id="como-usar">
-  <div class="wrap">
-    <div class="section-title">
-      <small>Guía rápida</small>
-      <h2>¿Cómo utilizar la plataforma?</h2>
-      <p>El proceso está diseñado para que cada participante intervenga únicamente en la etapa que le corresponde.</p>
-    </div>
-    <div class="timeline">
-      <article class="step"><div class="num">1</div><h3>Ingresa con tu cuenta institucional</h3><p>Utiliza tu cuenta de Google del dominio saintlukeshospitals.com para acceder.</p></article>
-      <article class="step"><div class="num">2</div><h3>Registra la solicitud</h3><p>Completa todos los campos obligatorios y explica claramente la necesidad de cobertura.</p></article>
-      <article class="step"><div class="num">3</div><h3>Revisión de Capital Humano</h3><p>RH valida la información y canaliza la solicitud para autorización cuando corresponda.</p></article>
-      <article class="step"><div class="num">4</div><h3>Autorización</h3><p>Dirección General registra la resolución y los comentarios relacionados con la solicitud.</p></article>
-      <article class="step"><div class="num">5</div><h3>Reclutamiento y cierre</h3><p>RH actualiza el avance hasta registrar la cobertura del puesto o el cierre del requerimiento.</p></article>
-    </div>
-  </div>
-</section>
+    <!-- MAIN CONTENT VIEW CONTAINER -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
-<section id="roles">
-  <div class="wrap">
-    <div class="section-title">
-      <small>Accesos</small>
-      <h2>Funciones según el perfil del usuario</h2>
-      <p>Los permisos se asignan desde la administración del sistema para proteger la información y separar responsabilidades.</p>
+        <!-- VIEW 1: DASHBOARD -->
+        <section id="view-dashboard" class="space-y-8">
+            <!-- Welcome Banner -->
+            <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-sl-navy via-sl-blue to-sl-lightBlue p-6 sm:p-8 text-white shadow-xl">
+                <div class="relative z-10 max-w-2xl">
+                    <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold text-sl-mint mb-4 border border-white/10">
+                        <i class="fa-solid fa-sparkles"></i>
+                        <span>Acreditación Institucional 2026-2027</span>
+                    </div>
+                    <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight">
+                        ¡Bienvenido de nuevo, <span id="welcome-user-name">Dr. Alejandro</span>!
+                    </h1>
+                    <p class="mt-2 text-blue-100 text-sm sm:text-base leading-relaxed">
+                        Continúa desarrollando tus competencias clínicas y normativas. Mantén al día tus Metas Internacionales de Seguridad del Paciente (MISP).
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <button onclick="navigateTo('catalog')" class="bg-sl-gold hover:bg-yellow-600 text-slate-900 font-bold px-5 py-2.5 rounded-xl text-sm transition-all shadow-lg hover:shadow-yellow-500/20 flex items-center space-x-2">
+                            <span>Explorar Catálogo</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Decorative Hospital Pattern BG -->
+                <div class="absolute -right-10 -bottom-10 opacity-10 text-white pointer-events-none">
+                    <i class="fa-solid fa-hospital text-[260px]"></i>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Inscritos</p>
+                            <h3 id="stat-enrolled" class="text-2xl sm:text-3xl font-extrabold text-slate-800 mt-1">4</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 text-sl-blue flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-book text-sl-blue"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Completados</p>
+                            <h3 id="stat-completed" class="text-2xl sm:text-3xl font-extrabold text-slate-800 mt-1">1</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Horas CCE</p>
+                            <h3 id="stat-hours" class="text-2xl sm:text-3xl font-extrabold text-slate-800 mt-1">18 hrs</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Constancias</p>
+                            <h3 id="stat-certs" class="text-2xl sm:text-3xl font-extrabold text-slate-800 mt-1">1</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-file-certificate"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Banner -->
+            <div class="bg-gradient-to-r from-blue-900 to-sl-navy text-white rounded-2xl p-6 shadow-md flex flex-col lg:flex-row items-center justify-between gap-6">
+                <div class="space-y-2 text-center lg:text-left">
+                    <span class="bg-sl-gold/20 text-sl-gold border border-sl-gold/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Prioridad Obligatoria</span>
+                    <h3 class="text-xl sm:text-2xl font-bold">AESP 1: Identificación Correcta del Paciente</h3>
+                    <p class="text-slate-300 text-sm max-w-xl">Aprende y homologa el protocolo de doble identificador y verificación en los procesos asistenciales del hospital.</p>
+                </div>
+                <button onclick="openCourseViewer('c1')" class="bg-white text-sl-navy hover:bg-slate-100 font-bold px-6 py-3 rounded-xl text-sm transition-all whitespace-nowrap shadow">
+                    Ir al Curso Destacado
+                </button>
+            </div>
+
+            <!-- Continue Learning Section -->
+            <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-xl font-bold text-slate-800">Continuar Capacitación</h2>
+                    <button onclick="navigateTo('catalog')" class="text-sm font-semibold text-sl-blue hover:underline">Ver todos</button>
+                </div>
+
+                <div id="dashboard-active-courses" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Dynamic rendering via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW 2: COURSE CATALOG -->
+        <section id="view-catalog" class="hidden space-y-6">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div>
+                    <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Catálogo de Capacitaciones</h1>
+                    <p class="text-slate-500 text-sm mt-1">Cursos normativos, clínicos y administrativos para Saint Luke's Hospitals.</p>
+                </div>
+                
+                <!-- Search Box -->
+                <div class="relative w-full md:w-80">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="catalog-search" oninput="filterCatalog()" placeholder="Buscar curso o tema..." class="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-sl-blue/20 focus:border-sl-blue transition-all">
+                </div>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="flex items-center space-x-2 overflow-x-auto pb-2 scrollbar-none">
+                <button onclick="filterCategory('all')" class="cat-pill active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-sl-blue text-white shadow-sm transition-all">
+                    Todos los Cursos
+                </button>
+                <button onclick="filterCategory('Medica')" class="cat-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition-all">
+                    Área Médica
+                </button>
+                <button onclick="filterCategory('Enfermeria')" class="cat-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition-all">
+                    Enfermería
+                </button>
+                <button onclick="filterCategory('Calidad')" class="cat-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition-all">
+                    Calidad y Seguridad
+                </button>
+                <button onclick="filterCategory('Administrativa')" class="cat-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition-all">
+                    Administrativa
+                </button>
+            </div>
+
+            <!-- Catalog Grid -->
+            <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Dynamic Course Cards Rendering -->
+            </div>
+        </section>
+
+        <!-- VIEW 3: COURSE PLAYER / VISOR -->
+        <section id="view-course-player" class="hidden space-y-6">
+            <!-- Back to Catalog -->
+            <div class="flex items-center justify-between border-b border-slate-200 pb-4">
+                <button onclick="navigateTo('catalog')" class="text-sm font-semibold text-slate-600 hover:text-sl-blue flex items-center space-x-2">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span>Volver al Catálogo</span>
+                </button>
+                <span id="player-course-category" class="bg-blue-100 text-sl-blue font-bold text-xs px-3 py-1 rounded-full uppercase">Calidad y Seguridad</span>
+            </div>
+
+            <!-- Course Title & Main Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Left/Center Column: Player & Content -->
+                <div class="lg:col-span-2 space-y-6">
+                    <!-- Video/Demo Screen Frame -->
+                    <div class="bg-slate-900 rounded-2xl overflow-hidden shadow-xl aspect-video relative flex flex-col justify-between p-6 text-white border border-slate-800">
+                        <div class="flex justify-between items-center z-10">
+                            <span id="player-lesson-badge" class="bg-white/20 backdrop-blur-md text-xs font-semibold px-3 py-1 rounded-full">Módulo 1 • Lección 1</span>
+                            <span class="text-xs text-slate-300"><i class="fa-regular fa-clock mr-1"></i> Duración: 15 min</span>
+                        </div>
+
+                        <!-- Simulated Interactive Video Area -->
+                        <div class="text-center my-auto space-y-3 z-10 px-4">
+                            <div class="w-16 h-16 bg-sl-blue/80 text-white rounded-full flex items-center justify-center mx-auto text-2xl shadow-lg ring-4 ring-white/10 hover:scale-105 transition-all cursor-pointer" onclick="playLessonVideo()">
+                                <i class="fa-solid fa-play ml-1"></i>
+                            </div>
+                            <h2 id="player-lesson-title" class="text-xl sm:text-2xl font-bold">Introducción y Doble Identificador de Paciente</h2>
+                            <p class="text-xs sm:text-sm text-slate-300 max-w-md mx-auto">Video interactivo de capacitación clínica para personal operativo de Saint Luke's Hospitals.</p>
+                        </div>
+
+                        <div class="w-full bg-white/10 rounded-full h-1.5 overflow-hidden z-10">
+                            <div id="video-progress-bar" class="bg-sl-mint h-full w-2/3 transition-all"></div>
+                        </div>
+
+                        <!-- Subtle BG Medical Icon Pattern -->
+                        <div class="absolute inset-0 opacity-5 flex items-center justify-center pointer-events-none">
+                            <i class="fa-solid fa-hospital-user text-[200px]"></i>
+                        </div>
+                    </div>
+
+                    <!-- Lesson Notes & Resources -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+                        <h3 class="text-lg font-bold text-slate-800 flex items-center space-x-2">
+                            <i class="fa-solid fa-file-lines text-sl-blue"></i>
+                            <span>Resumen del Módulo</span>
+                        </h3>
+                        <div id="player-lesson-content" class="text-sm text-slate-600 leading-relaxed space-y-3">
+                            <p>La correcta identificación del paciente es el primer paso fundamental para garantizar la seguridad asistencial y prevenir errores médicos en transfusiones, administración de medicamentos, tomas de muestras y procedimientos quirúrgicos.</p>
+                            <p class="font-semibold text-slate-800">Lineamientos Obligatorios en Saint Luke's Hospitals:</p>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Nombre completo del paciente (sin abreviaturas).</li>
+                                <li>Fecha de nacimiento (DD/MM/AAAA) o Número de Expediente Clínico.</li>
+                                <li>Verificación activa con la pulsera física de identificación antes de cualquier procedimiento.</li>
+                            </ul>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-3">
+                            <a href="#" onclick="alert('Descargando Guía Rápida MISP-1 en PDF...')" class="inline-flex items-center space-x-2 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 px-3 py-2 rounded-lg transition-all">
+                                <i class="fa-solid fa-file-pdf text-red-500 text-sm"></i>
+                                <span>Guía_Protocolo_AESP1.pdf</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Action Buttons -->
+                    <div class="flex items-center justify-between pt-2">
+                        <button id="btn-prev-lesson" onclick="prevLesson()" class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold rounded-xl text-sm transition-all flex items-center space-x-2">
+                            <i class="fa-solid fa-arrow-left text-xs"></i>
+                            <span>Anterior</span>
+                        </button>
+
+                        <button id="btn-next-lesson" onclick="nextLesson()" class="px-5 py-2.5 bg-sl-blue hover:bg-sl-navy text-white font-semibold rounded-xl text-sm transition-all shadow-md flex items-center space-x-2">
+                            <span>Siguiente Lección</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+
+                        <button id="btn-start-quiz" onclick="startCourseQuiz()" class="hidden px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl text-sm transition-all shadow-md flex items-center space-x-2">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                            <span>Realizar Evaluación Final</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column: Course Playlist Modules -->
+                <div class="space-y-6">
+                    <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-4">
+                        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                            <h3 class="font-bold text-slate-800">Contenido del Curso</h3>
+                            <span id="player-progress-percentage" class="text-xs font-extrabold text-sl-blue bg-blue-50 px-2.5 py-1 rounded-full">60% Completado</span>
+                        </div>
+
+                        <!-- Progress Bar -->
+                        <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                            <div id="player-course-progress-bar" class="bg-sl-mint h-full w-3/5 transition-all"></div>
+                        </div>
+
+                        <!-- Playlist Accordion -->
+                        <div id="player-playlist" class="space-y-2 pt-2">
+                            <!-- Dynamic Lesson List -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW 4: QUIZ / EVALUATION MODULE -->
+        <section id="view-quiz" class="hidden max-w-3xl mx-auto space-y-6">
+            <!-- Quiz Header Card -->
+            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div>
+                    <span class="text-xs font-bold text-sl-blue uppercase tracking-wider">Evaluación Oficial</span>
+                    <h2 id="quiz-course-title" class="text-xl font-bold text-slate-900 mt-1">AESP 1: Identificación Correcta del Paciente</h2>
+                    <p class="text-xs text-slate-500 mt-1">Aprobación mínima requerida: <span class="font-bold text-slate-700">80%</span></p>
+                </div>
+                <div class="flex items-center space-x-3 bg-amber-50 border border-amber-200 text-amber-800 px-4 py-2 rounded-xl">
+                    <i class="fa-regular fa-clock text-lg"></i>
+                    <div>
+                        <p class="text-[10px] uppercase font-bold text-amber-600">Tiempo Restante</p>
+                        <p id="quiz-timer" class="text-lg font-mono font-bold leading-tight">10:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Questions Card -->
+            <div id="quiz-container" class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-md space-y-6">
+                <!-- Question Progress -->
+                <div class="flex justify-between items-center text-xs font-semibold text-slate-500">
+                    <span id="quiz-question-counter">Pregunta 1 de 3</span>
+                    <span id="quiz-category-tag" class="bg-slate-100 px-2 py-1 rounded">Normativa CCE</span>
+                </div>
+
+                <div class="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
+                    <div id="quiz-step-progress" class="bg-sl-blue h-full w-1/3 transition-all"></div>
+                </div>
+
+                <!-- Current Question Title -->
+                <h3 id="quiz-question-text" class="text-lg font-bold text-slate-800 leading-snug">
+                    ¿Cuáles son los dos identificadores obligatorios que deben utilizarse en Saint Luke's Hospitals antes de cualquier procedimiento?
+                </h3>
+
+                <!-- Multiple Choice Options -->
+                <div id="quiz-options-list" class="space-y-3 pt-2">
+                    <!-- Rendered dynamically -->
+                </div>
+
+                <!-- Feedback Callout -->
+                <div id="quiz-feedback" class="hidden p-4 rounded-xl text-sm font-medium"></div>
+
+                <!-- Quiz Navigation Buttons -->
+                <div class="flex justify-between items-center pt-4 border-t border-slate-100">
+                    <button id="btn-quiz-prev" onclick="prevQuizQuestion()" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-semibold rounded-xl transition-all">
+                        Anterior
+                    </button>
+                    <button id="btn-quiz-next" onclick="nextQuizQuestion()" class="px-6 py-2 bg-sl-blue hover:bg-sl-navy text-white text-sm font-semibold rounded-xl transition-all shadow">
+                        Siguiente
+                    </button>
+                    <button id="btn-quiz-submit" onclick="submitQuiz()" class="hidden px-6 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-xl transition-all shadow">
+                        Finalizar Evaluación
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quiz Results Modal View (Hidden by default) -->
+            <div id="quiz-results-card" class="hidden bg-white rounded-2xl p-8 border border-slate-200 shadow-xl text-center space-y-6">
+                <div id="quiz-result-icon" class="w-20 h-20 mx-auto rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-4xl">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+
+                <div>
+                    <h2 id="quiz-result-title" class="text-2xl font-extrabold text-slate-900">¡Evaluación Aprobada!</h2>
+                    <p id="quiz-result-subtitle" class="text-sm text-slate-500 mt-1">Has demostrado el dominio suficiente en los lineamientos institucionales.</p>
+                </div>
+
+                <div class="inline-flex items-center justify-center space-x-6 bg-slate-50 border border-slate-200 px-6 py-4 rounded-2xl">
+                    <div>
+                        <p class="text-xs text-slate-400 font-semibold uppercase">Calificación</p>
+                        <p id="quiz-final-score" class="text-3xl font-black text-sl-blue">100%</p>
+                    </div>
+                    <div class="h-8 w-px bg-slate-200"></div>
+                    <div>
+                        <p class="text-xs text-slate-400 font-semibold uppercase">Estatus</p>
+                        <p id="quiz-final-status" class="text-sm font-bold text-emerald-600 uppercase">Aprobado</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row justify-center gap-3 pt-4">
+                    <button onclick="navigateTo('certificates')" id="btn-view-certificate-action" class="px-6 py-3 bg-sl-gold hover:bg-yellow-600 text-slate-900 font-bold text-sm rounded-xl transition-all shadow-md flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Ver mi Constancia Oficial</span>
+                    </button>
+                    <button onclick="navigateTo('dashboard')" class="px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm rounded-xl transition-all">
+                        Volver al Inicio
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIEW 5: CERTIFICATES & DIPLOMAS -->
+        <section id="view-certificates" class="hidden space-y-8">
+            <div>
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Mis Constancias y Diplomas</h1>
+                <p class="text-slate-500 text-sm mt-1">Descarga y verifica tus certificados institucionales acreditados por el CCE.</p>
+            </div>
+
+            <!-- Certificates List -->
+            <div id="certificates-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Dynamic insertion -->
+            </div>
+
+            <!-- Printable Certificate Display Container -->
+            <div id="certificate-preview-wrapper" class="hidden pt-6 border-t border-slate-200">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-bold text-slate-800">Vista Previa del Documento Oficial</h3>
+                    <button onclick="printCertificate()" class="no-print bg-sl-blue hover:bg-sl-navy text-white font-bold px-4 py-2 rounded-xl text-sm transition-all shadow flex items-center space-x-2">
+                        <i class="fa-solid fa-print"></i>
+                        <span>Imprimir / Guardar en PDF</span>
+                    </button>
+                </div>
+
+                <div id="certificado-template" class="certificado-container shadow-2xl">
+                    <div class="certificado-header">
+                        <img src="https://capacitacion.rhinobuild.org/assets/logo-hospital.png" alt="Logo Institucional" class="logo-institucion">
+                        <img src="https://capacitacion.rhinobuild.org/assets/logo-cce.png" alt="Logo CCE" class="logo-cce">
+                    </div>
+
+                    <div class="certificado-body">
+                        <h1 class="titulo-hospital">SAINT LUKE'S HOSPITALS</h1>
+                        <h3 class="subtitulo-cce">Centro de Capacitación y Enseñanza</h3>
+                        <p class="texto-otorga">Otorga la presente constancia a:</p>
+                        <h2 id="cert-nombre-usuario" class="nombre-participante">[Nombre del Colaborador]</h2>
+                        <p class="texto-id">ID de Empleado: <span id="cert-id-usuario">[ID]</span></p>
+                        <p class="texto-descripcion">Por haber concluido y aprobado satisfactoriamente el curso de capacitación:</p>
+                        <h3 id="cert-nombre-curso" class="nombre-curso">[Nombre del Curso]</h3>
+                        <p class="texto-fecha">Expedido el <span id="cert-fecha">[Fecha de Emisión]</span></p>
+                    </div>
+
+                    <div class="certificado-firmas">
+                        <div class="firma-box">
+                            <div class="linea-firma"></div>
+                            <p class="nombre-firmante">Dr. Alejandro Morales</p>
+                            <p class="cargo-firmante">Director Médico</p>
+                        </div>
+                        <div class="firma-box">
+                            <div class="linea-firma"></div>
+                            <p class="nombre-firmante">Lic. María Fernández</p>
+                            <p class="cargo-firmante">Directora de Recursos Humanos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PROFILE EDIT MODAL -->
+    <div id="modal-profile" class="hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
+            <div class="flex justify-between items-center border-b border-slate-100 pb-3">
+                <h3 class="font-bold text-lg text-slate-800">Perfil de Usuario</h3>
+                <button onclick="closeProfileModal()" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+            
+            <div class="space-y-3">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-600 mb-1">Nombre Completo (para certificados)</label>
+                    <input type="text" id="input-profile-name" value="Dr. Alejandro Morales" class="w-full px-3 py-2 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-sl-blue/20">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-600 mb-1">Número de empleado</label>
+                    <input type="text" id="input-profile-employee-number" placeholder="Ej. 1024" class="w-full px-3 py-2 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-sl-blue/20">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-600 mb-1">Especialidad / Departamento</label>
+                    <input type="text" id="input-profile-dept" value="Cuerpo Médico - Urgencias" class="w-full px-3 py-2 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-sl-blue/20">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-600 mb-1">Correo Institucional</label>
+                    <input type="email" value="amorales@saintlukeshospitals.com" disabled class="w-full px-3 py-2 bg-slate-100 border border-slate-200 rounded-xl text-sm text-slate-500">
+                </div>
+            </div>
+
+            <div class="pt-4 flex justify-end space-x-3">
+                <button onclick="closeProfileModal()" class="px-4 py-2 text-xs font-semibold text-slate-600 hover:bg-slate-100 rounded-xl">Cancelar</button>
+                <button onclick="saveUserProfile()" class="px-4 py-2 text-xs font-bold text-white bg-sl-blue hover:bg-sl-navy rounded-xl shadow">Guardar Cambios</button>
+            </div>
+        </div>
     </div>
-    <div class="roles">
-      <article class="card role"><div class="icon">S</div><h3>Solicitante</h3><p>Jefaturas y responsables que requieren una cobertura.</p><ul><li>Crear solicitudes.</li><li>Consultar sus propios folios.</li><li>Revisar el estado del requerimiento.</li></ul></article>
-      <article class="card role"><div class="icon">RH</div><h3>Capital Humano</h3><p>Administración operativa del proceso de cobertura.</p><ul><li>Revisar solicitudes.</li><li>Gestionar seguimiento.</li><li>Actualizar reclutamiento y cobertura.</li></ul></article>
-      <article class="card role"><div class="icon">DG</div><h3>Dirección General</h3><p>Perfil para resolución de solicitudes que requieren autorización.</p><ul><li>Consultar requerimientos.</li><li>Autorizar o no autorizar.</li><li>Registrar comentarios de resolución.</li></ul></article>
-    </div>
-  </div>
-</section>
 
-<section id="ayuda">
-  <div class="wrap help">
-    <aside class="notice">
-      <h3>Antes de comenzar</h3>
-      <p>Verifica que hayas iniciado sesión en Google con tu cuenta institucional. La plataforma está diseñada para el uso interno de Grupo Saint Luke's Hospitals.</p>
-      <div class="mini"><b>Recomendación:</b> registra una solicitud por cada puesto o necesidad de cobertura para conservar folios y seguimiento independientes.</div>
-    </aside>
-    <div class="faq">
-      <details open><summary>¿Qué información debo tener antes de solicitar una cobertura?</summary><p>Sede, área, puesto solicitado, número de posiciones, tipo de cobertura, prioridad, fecha requerida, horario y una justificación clara.</p></details>
-      <details><summary>¿Cómo sé si mi solicitud fue autorizada?</summary><p>Consulta el folio dentro de la plataforma. El estado se actualizará conforme avance la revisión, autorización y reclutamiento.</p></details>
-      <details><summary>¿Puedo ver solicitudes de otros usuarios?</summary><p>Los usuarios con perfil Solicitante están orientados a consultar sus propios registros. Los perfiles administrativos disponen de vistas de acuerdo con sus permisos.</p></details>
-      <details><summary>¿Qué hago si detecto información incorrecta?</summary><p>Comunícate con Capital Humano indicando el folio de la solicitud para que pueda revisarse el registro y conservar la trazabilidad del cambio.</p></details>
-    </div>
-  </div>
-</section>
+    <!-- FOOTER -->
+    <footer class="no-print bg-white border-t border-slate-200 py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center sm:flex sm:justify-between sm:text-left text-xs text-slate-500 space-y-2 sm:space-y-0">
+            <p>© 2026 Saint Luke's Hospitals. Centro de Capacitación y Enseñanza (CCE 2.0).</p>
+            <p>Plataforma alojada en <span class="font-semibold text-slate-700">rhinobuild.org / GitHub Pages</span></p>
+        </div>
+    </footer>
 
-<section class="cta">
-  <div class="wrap">
-    <div class="cta-box">
-      <h2>¿Listo para registrar una cobertura?</h2>
-      <p>Ingresa a la herramienta institucional y conserva todo el proceso en un mismo expediente digital.</p>
-      <a class="btn btn-primary" data-platform href="#">Abrir Control de Cobertura →</a>
-    </div>
-  </div>
-</section>
-</main>
+    <script>
+        // URL del Web App de Google Apps Script que registra las evaluaciones.
+        const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxOLI2GC_r9W4vtf9O8zkKC8kwTIMOIm_K3N0jTgRb0ONTD6VknGkQh-0qLuBf3alF7/exec";
 
-<footer>
-  <div class="wrap"><strong>Grupo Saint Luke's Hospitals</strong> · Capital Humano<br>Portal informativo del Sistema de Control de Cobertura de Puestos.<div class="madeby"><span>Hecho por</span><img src="data:image/jpeg;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/8QAAv/aAAwDAQACAAMAAAAh88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888xiCf888888888888888888888888888888888888888888888888888888888888888888888888848Qjgw+u288k188888888888888888888888888888888888888888888888888888888888888888/lJ88xftX8M+gsWU8888888888888888888888888888888888888888888888888888888888888882t988oU86ByI/GU3U888888888888888888888888888888888888888888888888888888888888883Yy889l887HX89m7p88888d88888888888888888888888888888888888888888888888888888888wk/B98u888spc8qtIa88887s8uTvj68o287jdD1Cf84Tf459z+8sDDl28zf8AOtO81I/fPOowwPvPPPPOr/Kf9Ev/ADzzxR/3enz9XrDz07ytX6sd+13yz/UNQr/TmL2xlY8N7zq4lXEPbz9ekJ1dTzy1W7OvTzzzxnrzn+/7XzzzxX2n05GcPw7KO3z9fzl/b1jfx90JwL2j9LZ9TzzmnrjzjskJTz9P0J19TzzkfzywLzzzzzhX3/8ANuQw30+/L8pIcSJHlJW8vrkN8956w2/9bcCW4uCg/wDfPPv/AC0bCy/P7ytfgJXdzzy0fzzlDzzzzzz2P/8A+09tD3//ANOFvHPaDk0HPLxfNU/KdfKVvY/Clvdz7flvOREPP/LK/KU/JlKQnSlPPPV/OLp/PPPPPPPPM903G3f+vPXrdePPBuPfPK1/KZd6VfKAtavIlvCe1XOeMwH+hUJ5/wChNztfwJ2OMBTlLL2R/wA8888888888e/SW7N88+9YPbx42888/u888fe/8tscM/e988sd8vvM8898s+d88uft8tMcc888/s8Oc8888888888884K3e9V888sftqaAc88888888888888888888888888888888888888888888888888888888888888886nW9/Y88888sOvd888888888888888888888888888888888888888888888888888888888888888887mXq5+/8888888888888888888888888888888888888888888888888888888888888888888888888/8Afbf/ADzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzTzzzjjzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzTTzzzz/xAAC/9oADAMBAAIAAwAAABDTzzzzzzzzzzzzzzzzzzzzzzxzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzhzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzy+VnTzzzjzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzziYcFQz5PHzzTfzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz/5b/wAmW9d8oz7mN0888888888888888888888888888888888888888888888888888888888888888jkf880c8683QZR0j/8APPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPL/v/PLNPPLoHfMN+cvPPPPNPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPMFupd+t3PPPDnvJSBqfPPPKavKe35evDnfOm9zXvX/KjV+PLh+/Ngx6/alfvOfNn/FVvPP8A3ELvzzzzzE/zj7fl3zzzxfmyVYz3SdDzwfyko1mT6Xfzv7/jSvz/APfUWdVFI3RotU17CV865+7/AHFPPLHX+dNvPPPLmvPPvZd/PPPHKet39LWuH+QqvLa/O1N1dOd3t/XP9fpc7fBvPPef68Pby89/Kqav93FPPKKfPEv/ADzzzz5TL74p+TTH9f5nwrjkpz8Azbzni72L/wB2/wCPn8HFz9iDwPlPPI7ga/8Ap2vLXz6m/wDX0c88s588iu8888888E++62w+X0++mux8kfcNV0c85Ia/d88/8qX/AGNHzepDrtm/OzmLaPOHHGkfK/Pq35dPPPLfPh//ADzzzzzz7jLI/wC66++Mv+/8088Hv8885v8AKqfXF/Kz33XP1fCvluOqgxPcl3l59aWHfFa/9zG9ruLTL5vvPPPPPPPPPPDfXjOpPPGdqPxzgHfPPP8A7yzz853z8zzx33zyyx/x+3x7yzzx7/zx12zz8xzzzzy6zz1zzzzzzzzzzzzzhn365fzzyy31GKhzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzv8n/AOO88888+ddM88888888888888888888888888888888888888888888888888888888888888888v3Tkidd8888888888888888888888888888888888888888888888888888888888888888888888888988s/8APPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPNPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPLPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPNPPPNNPPPMOPPPPPMMMPPPMPPPPPPNPPPPONPPPMMPPPMMPPPPPPPPPPPMPPPMNOPPPPPMMPPPOOPPPPP/EADYRAAIBAwEECAQGAgMBAAAAAAECAwAEETEQEiEzExQyQVFScXIgImGBI0JDYJGhMFM0UIBz/9oACAECAQE/AP8A3WkTv2VJpLMZG+/HwFNDBuEYAA76ktXUZX5l/ZaWsrcSN0fWsW0Wp32p7qRuCDdFZ6vHvNxk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" alt="RHINOBUILD"></div></div>
-</footer>
+        function registrarEvaluacion(nombre, numeroEmpleado, curso, calificacion, estado) {
+            const payload = {
+                nombre: nombre,
+                numeroEmpleado: numeroEmpleado,
+                curso: curso,
+                calificacion: calificacion,
+                estado: estado
+            };
 
-<script>
-/*
-  CONFIGURACIÓN:
-  Cuando publiques la aplicación web de Apps Script, pega la URL terminada en /exec
-  entre las comillas de PLATFORM_URL. No necesitas modificar nada más.
-*/
-const PLATFORM_URL = "https://script.google.com/a/macros/saintlukeshospitals.com/s/AKfycbxxbZqwMX2SHoLi29etAapQ35vxS2nE2Uadxc9VJC_jBccWvSjhxBg11kvkEG1PEULp/exec";
+            return fetch(WEBHOOK_URL, {
+                method: "POST",
+                mode: "no-cors", // Requerido para peticiones desde dominios externos a Apps Script
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(() => {
+                console.log("Calificación registrada con éxito en Google Sheets.");
+            })
+            .catch((error) => {
+                console.error("Error al registrar en Google Sheets:", error);
+            });
+        }
 
-document.querySelectorAll("[data-platform]").forEach(link => {
-  link.addEventListener("click", e => {
-    e.preventDefault();
-    if (!PLATFORM_URL || PLATFORM_URL.includes("PEGA_AQUI")) {
-      alert("La página de inicio ya está lista. Falta configurar la URL pública de la plataforma en la constante PLATFORM_URL.");
-      return;
-    }
-    window.location.href = PLATFORM_URL;
-  });
-});
-</script>
+        // =========================================================================
+        // DATA MODEL & INITIAL STATE (LOCALSTORAGE SUPPORT)
+        // =========================================================================
+        
+        const COURSES_DATA = [
+            {
+                id: 'c1',
+                title: 'AESP 1: Identificación Correcta del Paciente',
+                category: 'Calidad',
+                categoryLabel: 'Calidad y Seguridad',
+                hours: 4,
+                level: 'Obligatorio',
+                badgeBg: 'bg-red-50 text-red-600 border-red-200',
+                description: 'Protocolos estandarizados de doble identificador en atención clínica ambulatoria y hospitalización.',
+                lessons: [
+                    { id: 'l1', title: 'Introducción al Protocolo de Doble Identificador', duration: '10 min', content: 'Uso de Nombre completo y Fecha de Nacimiento en Saint Luke\'s Hospitals. Cero abreviaturas.' },
+                    { id: 'l2', title: 'Verificación Activa en Medicamentos y Muestras', duration: '15 min', content: 'Procedimiento directo al pie de cama con la pulsera física de identificación del paciente.' },
+                    { id: 'l3', title: 'Casos Especiales: Pacientes Inconscientes o Neonatos', duration: '15 min', content: 'Protocolo de identificación para recién nacidos y pacientes no comunicativos en urgencias.' }
+                ],
+                quiz: [
+                    {
+                        question: '¿Cuáles son los dos identificadores obligatorios en Saint Luke\'s Hospitals?',
+                        options: ['Número de cama y Nombre', 'Nombre Completo y Fecha de Nacimiento', 'Diagnóstico y Nombre', 'Número de Folio y Especialidad'],
+                        answer: 1
+                    },
+                    {
+                        question: '¿Cuándo debe realizarse la verificación de los identificadores?',
+                        options: ['Solo al ingresar al hospital', 'Antes de administrar medicamentos, tomar muestras o realizar estudios', 'Únicamente antes de cirugías', 'Al momento del alta médica'],
+                        answer: 1
+                    }
+                ]
+            },
+            {
+                id: 'c2',
+                title: 'AESP 2: Comunicación Efectiva en Salud',
+                category: 'Calidad',
+                categoryLabel: 'Calidad y Seguridad',
+                hours: 3,
+                level: 'Intermedio',
+                badgeBg: 'bg-blue-50 text-sl-blue border-blue-200',
+                description: 'Implementación del modelo SBAR (Escalar, Situación, Antecedentes, Evaluación y Recomendar) en órdenes verbales.',
+                lessons: [
+                    { id: 'l1', title: 'Estructura del Modelo SBAR', duration: '12 min', content: 'Técnica estandarizada para la transferencia de información clínica crítica entre personal de salud.' },
+                    { id: 'l2', title: 'Proceso de Escuchar - Escribir - Leer - Confirmar', duration: '18 min', content: 'Protocolo para la recepción de indicaciones telefónicas y verbales en áreas críticas.' }
+                ],
+                quiz: [
+                    {
+                        question: '¿Qué significan las siglas de la técnica SBAR/SAER?',
+                        options: ['Situación, Antecedentes, Evaluación, Recomendación', 'Seguridad, Biología, Atención, Riesgo', 'Síntomas, Bitácora, Análisis, Resultado', 'Sistema, Base, Archivo, Registro'],
+                        answer: 0
+                    }
+                ]
+            },
+            {
+                id: 'c3',
+                title: 'Soporte Vital Básico (BLS) para Salud',
+                category: 'Medica',
+                categoryLabel: 'Área Médica',
+                hours: 6,
+                level: 'Avanzado',
+                badgeBg: 'bg-emerald-50 text-emerald-600 border-emerald-200',
+                description: 'Reanimación cardiopulmonar de alta calidad y uso del desfibrilador externo automático (DEA).',
+                lessons: [
+                    { id: 'l1', title: 'Cadena de Supervivencia Intrahospitalaria', duration: '20 min', content: 'Reconocimiento temprano de paro cardíaco y activación del Código Azul.' },
+                    { id: 'l2', title: 'Compresiones Torácicas y Ventilaciones', duration: '25 min', content: 'Frecuencia y profundidad de compresiones acordes a las guías internacionales vigentes.' }
+                ],
+                quiz: [
+                    {
+                        question: '¿Cuál es la frecuencia de compresión recomendada en RCP para adultos?',
+                        options: ['60-80 compresiones por minuto', '100-120 compresiones por minuto', '140-160 compresiones por minuto', '80-90 compresiones por minuto'],
+                        answer: 1
+                    }
+                ]
+            },
+            {
+                id: 'c4',
+                title: 'Manejo Seguro de Medicamentos de Alto Riesgo',
+                category: 'Enfermeria',
+                categoryLabel: 'Enfermería',
+                hours: 5,
+                level: 'Avanzado',
+                badgeBg: 'bg-purple-50 text-purple-600 border-purple-200',
+                description: 'Almacenamiento, semaforización y doble verificación de electrolitos concentrados e insulinas.',
+                lessons: [
+                    { id: 'l1', title: 'Clasificación de Medicamentos LASA y Electrolitos', duration: '15 min', content: 'Prevención de errores por similitud fonética o visual en envases farmacéuticos.' }
+                ],
+                quiz: [
+                    {
+                        question: '¿Cómo deben identificarse físicamente los electrolitos concentrados?',
+                        options: ['Sin etiqueta especial', 'Con semaforización y alerta visual de alto riesgo', 'Guardados en el cajón general', 'Con cinta adhesiva transparente'],
+                        answer: 1
+                    }
+                ]
+            }
+        ];
+
+        // State object
+        let state = {
+            user: {
+                name: 'Dr. Alejandro Morales',
+                employeeNumber: '',
+                dept: 'Cuerpo Médico - Urgencias'
+            },
+            // Store course progress: { courseId: { currentLessonIndex: 0, completed: false, score: 0 } }
+            progress: {
+                'c1': { currentLessonIndex: 0, completed: true, score: 100 },
+                'c2': { currentLessonIndex: 0, completed: false, score: 0 }
+            },
+            activeCourseId: null,
+            activeLessonIndex: 0,
+            activeQuizIndex: 0,
+            quizUserAnswers: [],
+            quizSubmitted: false,
+            quizTimerInterval: null
+        };
+
+        // Initialize state from LocalStorage if exists
+        function initStorage() {
+            const savedUser = localStorage.getItem('cce_user');
+            const savedProgress = localStorage.getItem('cce_progress');
+            if (savedUser) state.user = JSON.parse(savedUser);
+            if (savedProgress) state.progress = JSON.parse(savedProgress);
+            updateUserUI();
+        }
+
+        function saveState() {
+            localStorage.setItem('cce_user', JSON.stringify(state.user));
+            localStorage.setItem('cce_progress', JSON.stringify(state.progress));
+            updateDashboardStats();
+        }
+
+        // =========================================================================
+        // NAVIGATION & VIEW SWITCHING
+        // =========================================================================
+
+        function navigateTo(viewName) {
+            // Hide all views
+            const views = ['dashboard', 'catalog', 'course-player', 'quiz', 'certificates'];
+            views.forEach(v => {
+                const el = document.getElementById(`view-${v}`);
+                if (el) el.classList.add('hidden');
+            });
+
+            // Show selected view
+            const target = document.getElementById(`view-${viewName}`);
+            if (target) target.classList.remove('hidden');
+
+            // Update nav button highlights
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('text-sl-blue', 'bg-blue-50');
+                btn.classList.add('text-slate-600');
+            });
+
+            const activeBtn = document.getElementById(`nav-${viewName}`);
+            if (activeBtn) {
+                activeBtn.classList.add('text-sl-blue', 'bg-blue-50');
+                activeBtn.classList.remove('text-slate-600');
+            }
+
+            // Trigger view specific re-renders
+            if (viewName === 'dashboard') renderDashboard();
+            if (viewName === 'catalog') renderCatalog();
+            if (viewName === 'certificates') renderCertificates();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // =========================================================================
+        // USER PROFILE MANAGING
+        // =========================================================================
+
+        function updateUserUI() {
+            document.getElementById('user-display-name').textContent = state.user.name;
+            document.getElementById('user-display-name-mobile').textContent = state.user.name;
+            document.getElementById('welcome-user-name').textContent = state.user.name.split(' ')[0] + ' ' + (state.user.name.split(' ')[1] || '');
+            
+            // Initials
+            const initials = state.user.name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+            document.getElementById('user-avatar-initials').textContent = initials;
+            document.getElementById('user-avatar-initials-mobile').textContent = initials;
+            document.getElementById('cert-nombre-usuario').textContent = state.user.name;
+        }
+
+        function openProfileModal() {
+            document.getElementById('input-profile-name').value = state.user.name;
+            document.getElementById('input-profile-employee-number').value = state.user.employeeNumber || '';
+            document.getElementById('input-profile-dept').value = state.user.dept;
+            document.getElementById('modal-profile').classList.remove('hidden');
+        }
+
+        function closeProfileModal() {
+            document.getElementById('modal-profile').classList.add('hidden');
+        }
+
+        function saveUserProfile() {
+            const name = document.getElementById('input-profile-name').value.trim();
+            const employeeNumber = document.getElementById('input-profile-employee-number').value.trim();
+            const dept = document.getElementById('input-profile-dept').value.trim();
+            if (name) state.user.name = name;
+            state.user.employeeNumber = employeeNumber;
+            if (dept) state.user.dept = dept;
+            saveState();
+            updateUserUI();
+            closeProfileModal();
+        }
+
+        // =========================================================================
+        // DASHBOARD RENDER LOGIC
+        // =========================================================================
+
+        function updateDashboardStats() {
+            const enrolledCount = Object.keys(state.progress).length;
+            let completedCount = 0;
+            let hoursCount = 0;
+
+            Object.keys(state.progress).forEach(cid => {
+                if (state.progress[cid].completed) {
+                    completedCount++;
+                    const c = COURSES_DATA.find(x => x.id === cid);
+                    if (c) hoursCount += c.hours;
+                }
+            });
+
+            document.getElementById('stat-enrolled').textContent = enrolledCount;
+            document.getElementById('stat-completed').textContent = completedCount;
+            document.getElementById('stat-hours').textContent = hoursCount + ' hrs';
+            document.getElementById('stat-certs').textContent = completedCount;
+        }
+
+        function renderDashboard() {
+            updateDashboardStats();
+            const activeContainer = document.getElementById('dashboard-active-courses');
+            activeContainer.innerHTML = '';
+
+            // Render active/in-progress courses
+            const courseKeys = Object.keys(state.progress);
+            courseKeys.forEach(cid => {
+                const course = COURSES_DATA.find(c => c.id === cid);
+                if (!course) return;
+
+                const p = state.progress[cid];
+                const totalLessons = course.lessons.length;
+                const completedPct = p.completed ? 100 : Math.round((p.currentLessonIndex / totalLessons) * 100);
+
+                const cardHtml = `
+                    <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-bold uppercase px-2.5 py-1 rounded-full border ${course.badgeBg}">${course.categoryLabel}</span>
+                                <span class="text-xs font-semibold text-slate-400"><i class="fa-regular fa-clock mr-1"></i>${course.hours} hrs</span>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-base leading-snug">${course.title}</h3>
+                            <p class="text-xs text-slate-500 line-clamp-2">${course.description}</p>
+                        </div>
+
+                        <div class="pt-4 mt-4 border-t border-slate-100 space-y-3">
+                            <div class="flex justify-between text-xs font-semibold">
+                                <span class="text-slate-500">Progreso</span>
+                                <span class="${p.completed ? 'text-emerald-600' : 'text-sl-blue'} font-extrabold">${completedPct}%</span>
+                            </div>
+                            <div class="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                                <div class="bg-sl-mint h-full transition-all" style="width: ${completedPct}%"></div>
+                            </div>
+                            <button onclick="openCourseViewer('${course.id}')" class="w-full py-2.5 bg-slate-50 hover:bg-sl-blue hover:text-white text-sl-blue font-bold text-xs rounded-xl transition-all border border-blue-100 flex items-center justify-center space-x-1">
+                                <span>${p.completed ? 'Repasar Curso' : 'Continuar Módulo'}</span>
+                                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                activeContainer.innerHTML += cardHtml;
+            });
+        }
+
+        // =========================================================================
+        // CATALOG RENDER & FILTERING LOGIC
+        // =========================================================================
+
+        let currentCategoryFilter = 'all';
+
+        function renderCatalog() {
+            const grid = document.getElementById('catalog-grid');
+            grid.innerHTML = '';
+
+            const searchTerm = document.getElementById('catalog-search').value.toLowerCase();
+
+            COURSES_DATA.forEach(course => {
+                // Category Filter
+                if (currentCategoryFilter !== 'all' && course.category !== currentCategoryFilter) return;
+
+                // Search Filter
+                if (searchTerm && !course.title.toLowerCase().includes(searchTerm) && !course.description.toLowerCase().includes(searchTerm)) return;
+
+                const isEnrolled = state.progress[course.id] !== undefined;
+                const isCompleted = isEnrolled && state.progress[course.id].completed;
+
+                const card = `
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-start">
+                                <span class="text-xs font-bold uppercase px-3 py-1 rounded-full border ${course.badgeBg}">${course.categoryLabel}</span>
+                                <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-layer-group mr-1"></i>${course.level}</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900 leading-snug">${course.title}</h3>
+                                <p class="text-xs text-slate-500 mt-2 leading-relaxed">${course.description}</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+                            <div class="text-xs text-slate-500">
+                                <i class="fa-regular fa-clock text-sl-blue mr-1"></i> ${course.hours} Horas
+                            </div>
+                            ${
+                                isCompleted ?
+                                `<button onclick="openCourseViewer('${course.id}')" class="px-4 py-2 bg-emerald-50 text-emerald-600 font-bold text-xs rounded-xl border border-emerald-200 flex items-center space-x-1">
+                                    <i class="fa-solid fa-circle-check"></i> <span>Completado</span>
+                                 </button>` :
+                                isEnrolled ?
+                                `<button onclick="openCourseViewer('${course.id}')" class="px-4 py-2 bg-sl-blue hover:bg-sl-navy text-white font-bold text-xs rounded-xl transition-all shadow">
+                                    Continuar
+                                 </button>` :
+                                `<button onclick="enrollAndOpen('${course.id}')" class="px-4 py-2 bg-slate-900 hover:bg-sl-blue text-white font-bold text-xs rounded-xl transition-all shadow">
+                                    Inscribirme
+                                 </button>`
+                            }
+                        </div>
+                    </div>
+                `;
+                grid.innerHTML += card;
+            });
+        }
+
+        function filterCategory(cat) {
+            currentCategoryFilter = cat;
+            document.querySelectorAll('.cat-pill').forEach(btn => {
+                btn.classList.remove('bg-sl-blue', 'text-white');
+                btn.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+            });
+            event.currentTarget.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+            event.currentTarget.classList.add('bg-sl-blue', 'text-white');
+            renderCatalog();
+        }
+
+        function filterCatalog() {
+            renderCatalog();
+        }
+
+        function enrollAndOpen(courseId) {
+            if (!state.progress[courseId]) {
+                state.progress[courseId] = { currentLessonIndex: 0, completed: false, score: 0 };
+                saveState();
+            }
+            openCourseViewer(courseId);
+        }
+
+        // =========================================================================
+        // COURSE PLAYER LOGIC
+        // =========================================================================
+
+        function openCourseViewer(courseId) {
+            state.activeCourseId = courseId;
+            if (!state.progress[courseId]) {
+                state.progress[courseId] = { currentLessonIndex: 0, completed: false, score: 0 };
+                saveState();
+            }
+
+            state.activeLessonIndex = state.progress[courseId].currentLessonIndex || 0;
+            navigateTo('course-player');
+            renderPlayerContent();
+        }
+
+        function renderPlayerContent() {
+            const course = COURSES_DATA.find(c => c.id === state.activeCourseId);
+            if (!course) return;
+
+            document.getElementById('player-course-category').textContent = course.categoryLabel;
+            
+            const currentLesson = course.lessons[state.activeLessonIndex];
+            document.getElementById('player-lesson-badge').textContent = `Módulo 1 • Lección ${state.activeLessonIndex + 1} de ${course.lessons.length}`;
+            document.getElementById('player-lesson-title').textContent = currentLesson.title;
+            document.getElementById('player-lesson-content').innerHTML = `
+                <p class="text-slate-700 font-medium">${currentLesson.content}</p>
+                <p class="text-xs text-slate-500 pt-2">Esta lección forma parte de la norma de capacitación continua de Saint Luke's Hospitals.</p>
+            `;
+
+            // Render Playlist
+            const playlistContainer = document.getElementById('player-playlist');
+            playlistContainer.innerHTML = '';
+
+            course.lessons.forEach((l, idx) => {
+                const isActive = idx === state.activeLessonIndex;
+                const isPassed = idx < state.activeLessonIndex || state.progress[course.id].completed;
+
+                playlistContainer.innerHTML += `
+                    <div onclick="selectLesson(${idx})" class="p-3 rounded-xl border ${isActive ? 'bg-blue-50 border-sl-blue' : 'bg-slate-50 border-slate-100 hover:bg-slate-100'} transition-all cursor-pointer flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded-full ${isPassed ? 'bg-emerald-500 text-white' : isActive ? 'bg-sl-blue text-white' : 'bg-slate-200 text-slate-500'} flex items-center justify-center text-xs font-bold">
+                                ${isPassed ? '<i class="fa-solid fa-check"></i>' : idx + 1}
+                            </div>
+                            <span class="text-xs font-semibold ${isActive ? 'text-sl-blue' : 'text-slate-700'}">${l.title}</span>
+                        </div>
+                        <span class="text-[10px] text-slate-400 font-medium">${l.duration}</span>
+                    </div>
+                `;
+            });
+
+            // Progress percent
+            const total = course.lessons.length;
+            const pct = state.progress[course.id].completed ? 100 : Math.round(((state.activeLessonIndex + 1) / total) * 100);
+            document.getElementById('player-progress-percentage').textContent = `${pct}% Completado`;
+            document.getElementById('player-course-progress-bar').style.width = `${pct}%`;
+
+            // Button States
+            const btnPrev = document.getElementById('btn-prev-lesson');
+            const btnNext = document.getElementById('btn-next-lesson');
+            const btnQuiz = document.getElementById('btn-start-quiz');
+
+            if (state.activeLessonIndex === 0) {
+                btnPrev.classList.add('opacity-50', 'pointer-events-none');
+            } else {
+                btnPrev.classList.remove('opacity-50', 'pointer-events-none');
+            }
+
+            if (state.activeLessonIndex === total - 1) {
+                btnNext.classList.add('hidden');
+                btnQuiz.classList.remove('hidden');
+            } else {
+                btnNext.classList.remove('hidden');
+                btnQuiz.classList.add('hidden');
+            }
+        }
+
+        function selectLesson(idx) {
+            state.activeLessonIndex = idx;
+            state.progress[state.activeCourseId].currentLessonIndex = idx;
+            saveState();
+            renderPlayerContent();
+        }
+
+        function prevLesson() {
+            if (state.activeLessonIndex > 0) {
+                selectLesson(state.activeLessonIndex - 1);
+            }
+        }
+
+        function nextLesson() {
+            const course = COURSES_DATA.find(c => c.id === state.activeCourseId);
+            if (state.activeLessonIndex < course.lessons.length - 1) {
+                selectLesson(state.activeLessonIndex + 1);
+            }
+        }
+
+        function playLessonVideo() {
+            const bar = document.getElementById('video-progress-bar');
+            bar.style.width = '0%';
+            setTimeout(() => bar.style.width = '100%', 100);
+        }
+
+        // =========================================================================
+        // QUIZ & EVALUATION LOGIC
+        // =========================================================================
+
+        function startCourseQuiz() {
+            const course = COURSES_DATA.find(c => c.id === state.activeCourseId);
+            if (!course || !course.quiz) return;
+
+            state.activeQuizIndex = 0;
+            state.quizUserAnswers = new Array(course.quiz.length).fill(null);
+            state.quizSubmitted = false;
+            
+            document.getElementById('quiz-course-title').textContent = course.title;
+            document.getElementById('quiz-container').classList.remove('hidden');
+            document.getElementById('quiz-results-card').classList.add('hidden');
+
+            navigateTo('quiz');
+            renderQuizQuestion();
+            startQuizTimer();
+        }
+
+        function startQuizTimer() {
+            clearInterval(state.quizTimerInterval);
+            let duration = 600; // 10 mins
+            const timerDisplay = document.getElementById('quiz-timer');
+
+            state.quizTimerInterval = setInterval(() => {
+                const mins = Math.floor(duration / 60);
+                const secs = duration % 60;
+                timerDisplay.textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+                if (--duration < 0) {
+                    clearInterval(state.quizTimerInterval);
+                    submitQuiz();
+                }
+            }, 1000);
+        }
+
+        function renderQuizQuestion() {
+            const course = COURSES_DATA.find(c => c.id === state.activeCourseId);
+            const q = course.quiz[state.activeQuizIndex];
+
+            document.getElementById('quiz-question-counter').textContent = `Pregunta ${state.activeQuizIndex + 1} de ${course.quiz.length}`;
+            document.getElementById('quiz-question-text').textContent = q.question;
+            document.getElementById('quiz-step-progress').style.width = `${((state.activeQuizIndex + 1) / course.quiz.length) * 100}%`;
+
+            const optionsContainer = document.getElementById('quiz-options-list');
+            optionsContainer.innerHTML = '';
+
+            q.options.forEach((opt, optIdx) => {
+                const isSelected = state.quizUserAnswers[state.activeQuizIndex] === optIdx;
+                optionsContainer.innerHTML += `
+                    <button onclick="selectQuizOption(${optIdx})" class="w-full text-left p-4 rounded-xl border ${isSelected ? 'border-sl-blue bg-blue-50 ring-2 ring-sl-blue/20' : 'border-slate-200 hover:bg-slate-50'} transition-all flex items-center justify-between">
+                        <span class="text-sm font-semibold ${isSelected ? 'text-sl-blue' : 'text-slate-700'}">${opt}</span>
+                        <div class="w-5 h-5 rounded-full border ${isSelected ? 'border-sl-blue bg-sl-blue text-white' : 'border-slate-300'} flex items-center justify-center text-xs">
+                            ${isSelected ? '<i class="fa-solid fa-check"></i>' : ''}
+                        </div>
+                    </button>
+                `;
+            });
+
+            // Button States
+            const btnPrev = document.getElementById('btn-quiz-prev');
+            const btnNext = document.getElementById('btn-quiz-next');
+            const btnSubmit = document.getElementById('btn-quiz-submit');
+
+            btnPrev.style.visibility = state.activeQuizIndex === 0 ? 'hidden' : 'visible';
+
+            if (state.activeQuizIndex === course.quiz.length - 1) {
+                btnNext.classList.add('hidden');
+                btnSubmit.classList.remove('hidden');
+            } else {
+                btnNext.classList.remove('hidden');
+                btnSubmit.classList.add('hidden');
+            }
+        }
+
+        function selectQuizOption(optIndex) {
+            state.quizUserAnswers[state.activeQuizIndex] = optIndex;
+            renderQuizQuestion();
+        }
+
+        function prevQuizQuestion() {
+            if (state.activeQuizIndex > 0) {
+                state.activeQuizIndex--;
+                renderQuizQuestion();
+            }
+        }
+
+        function nextQuizQuestion() {
+            const course = COURSES_DATA.find(c => c.id === state.activeCourseId);
+            if (state.activeQuizIndex < course.quiz.length - 1) {
+                state.activeQuizIndex++;
+                renderQuizQuestion();
+            }
+        }
+
+        function submitQuiz() {
+            if (state.quizSubmitted) return;
+            state.quizSubmitted = true;
+            clearInterval(state.quizTimerInterval);
+            const course = COURSES_DATA.find(c => c.id === state.activeCourseId);
+            
+            let correctCount = 0;
+            course.quiz.forEach((q, idx) => {
+                if (state.quizUserAnswers[idx] === q.answer) {
+                    correctCount++;
+                }
+            });
+
+            const score = Math.round((correctCount / course.quiz.length) * 100);
+            const isPassed = score >= 80;
+
+            // Save Progress
+            state.progress[state.activeCourseId] = {
+                currentLessonIndex: course.lessons.length - 1,
+                completed: isPassed,
+                score: score
+            };
+            saveState();
+
+            // Registrar el resultado en Google Sheets al finalizar cada intento.
+            registrarEvaluacion(
+                state.user.name,
+                state.user.employeeNumber || '',
+                course.title,
+                score,
+                isPassed ? 'Aprobado' : 'No Aprobado'
+            );
+
+            // Display Results Card
+            document.getElementById('quiz-container').classList.add('hidden');
+            const resCard = document.getElementById('quiz-results-card');
+            resCard.classList.remove('hidden');
+
+            document.getElementById('quiz-final-score').textContent = `${score}%`;
+            
+            if (isPassed) {
+                document.getElementById('quiz-result-icon').className = 'w-20 h-20 mx-auto rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-4xl';
+                document.getElementById('quiz-result-icon').innerHTML = '<i class="fa-solid fa-trophy"></i>';
+                document.getElementById('quiz-result-title').textContent = '¡Evaluación Aprobada!';
+                document.getElementById('quiz-result-subtitle').textContent = 'Acreditación completada con éxito. Tu diploma oficial ya está disponible.';
+                document.getElementById('quiz-final-status').textContent = 'Aprobado';
+                document.getElementById('quiz-final-status').className = 'text-sm font-bold text-emerald-600 uppercase';
+                document.getElementById('btn-view-certificate-action').classList.remove('hidden');
+            } else {
+                document.getElementById('quiz-result-icon').className = 'w-20 h-20 mx-auto rounded-full bg-red-100 text-red-600 flex items-center justify-center text-4xl';
+                document.getElementById('quiz-result-icon').innerHTML = '<i class="fa-solid fa-xmark"></i>';
+                document.getElementById('quiz-result-title').textContent = 'Puntaje Insuficiente';
+                document.getElementById('quiz-result-subtitle').textContent = 'Se requiere un mínimo de 80% de aciertos. Por favor repasa las lecciones e intenta de nuevo.';
+                document.getElementById('quiz-final-status').textContent = 'No Aprobado';
+                document.getElementById('quiz-final-status').className = 'text-sm font-bold text-red-600 uppercase';
+                document.getElementById('btn-view-certificate-action').classList.add('hidden');
+            }
+        }
+
+        // =========================================================================
+        // CERTIFICATES & DIPLOMAS LOGIC
+        // =========================================================================
+
+        function renderCertificates() {
+            const list = document.getElementById('certificates-list');
+            list.innerHTML = '';
+
+            let hasCerts = false;
+
+            Object.keys(state.progress).forEach(cid => {
+                if (state.progress[cid].completed) {
+                    hasCerts = true;
+                    const course = COURSES_DATA.find(c => c.id === cid);
+                    
+                    list.innerHTML += `
+                        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all space-y-4">
+                            <div class="flex items-center justify-between">
+                                <span class="bg-sl-gold/10 text-sl-gold font-bold text-xs px-2.5 py-1 rounded-md uppercase border border-sl-gold/20">Acreditado</span>
+                                <i class="fa-solid fa-certificate text-sl-gold text-xl"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-base leading-snug">${course.title}</h3>
+                            <p class="text-xs text-slate-500">Calificación obtenida: <span class="font-bold text-emerald-600">${state.progress[cid].score}%</span></p>
+                            
+                            <button onclick="previewCertificate('${cid}')" class="w-full py-2.5 bg-sl-blue hover:bg-sl-navy text-white font-bold text-xs rounded-xl transition-all shadow flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-eye"></i>
+                                <span>Ver Constancia Oficial</span>
+                            </button>
+                        </div>
+                    `;
+                }
+            });
+
+            if (!hasCerts) {
+                list.innerHTML = `
+                    <div class="col-span-full bg-white rounded-2xl p-8 border border-slate-200 text-center space-y-3">
+                        <i class="fa-solid fa-award text-4xl text-slate-300"></i>
+                        <h3 class="font-bold text-slate-700">No tienes certificados emitidos aún</h3>
+                        <p class="text-xs text-slate-500">Completa y aprueba las evaluaciones finales de tus cursos para generar tus constancias con acreditación hospitalaria.</p>
+                        <button onclick="navigateTo('catalog')" class="px-4 py-2 bg-sl-blue text-white font-bold text-xs rounded-xl shadow">Explorar Catálogo</button>
+                    </div>
+                `;
+            }
+        }
+
+        function previewCertificate(courseId) {
+            const course = COURSES_DATA.find(c => c.id === courseId);
+            if (!course) return;
+
+            document.getElementById('certificate-preview-wrapper').classList.remove('hidden');
+            prepararCertificado(
+                state.user.name,
+                state.user.employeeNumber || 'Sin asignar',
+                course.title
+            );
+
+            // Scroll down smoothly
+            document.getElementById('certificate-preview-wrapper').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function prepararCertificado(nombreAlumno, idEmpleado, nombreCurso) {
+            document.getElementById('cert-nombre-usuario').innerText = nombreAlumno;
+            document.getElementById('cert-id-usuario').innerText = idEmpleado;
+            document.getElementById('cert-nombre-curso').innerText = nombreCurso;
+
+            const hoy = new Date();
+            const fechaTexto = hoy.toLocaleDateString('es-MX', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            });
+            document.getElementById('cert-fecha').innerText = fechaTexto;
+        }
+
+        function imprimirCertificado() {
+            window.print();
+        }
+
+        function printCertificate() {
+            imprimirCertificado();
+        }
+
+        // =========================================================================
+        // APP INITIALIZATION
+        // =========================================================================
+
+        window.onload = function() {
+            initStorage();
+            navigateTo('dashboard');
+        };
+    </script>
 </body>
 </html>
