@@ -20,13 +20,12 @@ jobs:
       - name: Descargar proyecto
         uses: actions/checkout@v4
 
-      - name: Preparar Python y FFmpeg
+      - name: Preparar Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: pip
 
-      - name: Instalar motor gratuito Kokoro
+      - name: Instalar motor gratuito Kokoro y FFmpeg
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg espeak-ng
