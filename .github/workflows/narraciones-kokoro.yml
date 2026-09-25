@@ -9,6 +9,10 @@ on:
       - .github/workflows/narraciones-kokoro.yml
       - "*.vtt"
 
+concurrency:
+  group: narraciones-kokoro
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
