@@ -13,7 +13,7 @@ import soundfile as sf
 from kokoro import KPipeline
 
 ROOT = Path(__file__).resolve().parents[1]
-VIDEO_DIR = ROOT / "videos-cce"
+VIDEO_DIR = ROOT
 PREVIEW_DIR = ROOT / "narraciones-kokoro"
 VOICE = "ef_dora"
 SAMPLE_RATE = 24000
