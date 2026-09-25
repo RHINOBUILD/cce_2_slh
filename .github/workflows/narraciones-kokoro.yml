@@ -1,0 +1,53 @@
+name: Generar narraciones institucionales
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/generar_narraciones_kokoro.py
+      - .github/workflows/narraciones-kokoro.yml
+      - "*.vtt"
+
+permissions:
+  contents: write
+
+jobs:
+  narrar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Descargar proyecto
+        uses: actions/checkout@v4
+
+      - name: Preparar Python y FFmpeg
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Instalar motor gratuito Kokoro
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg espeak-ng
+          python -m pip install --upgrade pip
+          python -m pip install "kokoro==0.9.4" "misaki[es]" soundfile numpy
+
+      - name: Generar e integrar las cinco narraciones
+        run: python scripts/generar_narraciones_kokoro.py
+
+      - name: Validar archivos multimedia
+        run: |
+          for video in videos-cce/*.mp4; do
+            ffmpeg -v error -i "$video" -f null -
+            ffprobe -v error -select_streams a:0 -show_entries stream=codec_name -of csv=p=0 "$video" | grep -q aac
+          done
+
+      - name: Publicar videos narrados
+        run: |
+          git config user.name "CCE Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add videos-cce/*.mp4 narraciones-kokoro/*.mp3
+          git diff --cached --quiet && exit 0
+          git commit -m "Integra narraciones naturales gratuitas con Kokoro [skip ci]"
+          git push
