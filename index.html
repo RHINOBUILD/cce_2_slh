@@ -345,6 +345,56 @@
     .form-grid{display:grid;gap:1rem}
     .pin-reveal{font-family:var(--serif);font-size:2rem;font-weight:700;letter-spacing:.2em;color:var(--ink)}
 
+    /* Editor de cursos */
+    .ed-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:1rem;margin-bottom:1.2rem}
+    .ed-head h2{font-family:var(--serif);font-size:1.6rem;font-weight:600}
+    .ed-section{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);margin-bottom:1.2rem}
+    .ed-section>header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.1rem 1.3rem;border-bottom:1px solid var(--line-soft)}
+    .ed-section>header h3{font-size:1.05rem}
+    .ed-section>header p{color:var(--muted);font-size:.85rem;margin-top:.15rem}
+    .ed-body{padding:1.3rem;display:grid;gap:1rem}
+    .ed-grid{display:grid;gap:1rem}
+    .field small{display:block;color:var(--muted);font-size:.8rem;margin-top:.35rem}
+    .textarea{width:100%;border:1px solid var(--line);border-radius:var(--r);padding:.75rem .9rem;background:#fff;font:inherit;font-size:1rem;resize:vertical;min-height:90px}
+    .textarea:focus{outline:none;border-color:var(--sky);box-shadow:0 0 0 3px rgba(0,114,206,.18)}
+    .input:disabled{background:var(--paper);color:var(--muted)}
+    .invalid{border-color:var(--bad)!important;box-shadow:0 0 0 3px rgba(180,35,24,.14)!important}
+    .check{display:flex;gap:.65rem;align-items:flex-start;cursor:pointer;font-size:.95rem}
+    .check input{width:18px;height:18px;margin-top:.15rem;accent-color:var(--blue);flex:none}
+    .check small{display:block;color:var(--muted);font-size:.8rem}
+    .company-list{display:flex;flex-wrap:wrap;gap:.5rem}
+    .company-list label{display:inline-flex;gap:.45rem;align-items:center;border:1px solid var(--line);border-radius:999px;padding:.35rem .8rem;font-size:.88rem;cursor:pointer}
+    .company-list input{accent-color:var(--blue)}
+    .assign-note{background:var(--sky-soft);color:var(--blue);border-radius:var(--r);padding:.7rem .9rem;font-size:.88rem}
+    .item{border:1px solid var(--line);border-radius:var(--r);padding:1rem;display:grid;gap:.9rem;background:#FBFCFD}
+    .item-head{display:flex;justify-content:space-between;align-items:center;gap:.6rem}
+    .item-head strong{color:var(--ink)}
+    .item-tools{display:flex;gap:.3rem}
+    .item-tools .icon-btn{width:34px;height:34px}
+    .icon-btn:disabled{opacity:.35;cursor:not-allowed}
+    .icon-btn.danger{color:var(--bad)}
+    .seg{display:inline-flex;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff}
+    .seg button{border:0;background:none;padding:.5rem .9rem;font-weight:600;font-size:.88rem;color:var(--muted);cursor:pointer;display:inline-flex;gap:.45rem;align-items:center}
+    .seg button[aria-pressed="true"]{background:var(--ink);color:#fff}
+    .video-status{font-size:.83rem;margin-top:.35rem;display:flex;gap:.4rem;align-items:center}
+    .video-status.ok{color:var(--ok)} .video-status.bad{color:var(--warn)} .video-status.wait{color:var(--muted)}
+    .opt-row{display:grid;grid-template-columns:auto auto 1fr auto;gap:.55rem;align-items:center}
+    .opt-row input[type=radio]{width:20px;height:20px;accent-color:var(--ok);margin:0}
+    .opt-row .k{width:1.8rem;height:1.8rem;border-radius:50%;background:#EEF2F5;display:grid;place-items:center;font-weight:700;font-size:.8rem;color:var(--muted)}
+    .opt-row.correct .k{background:var(--ok);color:#fff}
+    .opt-row.correct .input{border-color:#9BD3B4;background:#F3FBF6}
+    .add-row{border:1.5px dashed var(--line);background:none;border-radius:var(--r);padding:.75rem;font-weight:600;color:var(--blue);cursor:pointer;width:100%}
+    .add-row:hover{border-color:var(--blue);background:var(--sky-soft)}
+    .ed-bar{position:sticky;bottom:calc(64px + env(safe-area-inset-bottom));z-index:30;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:0 -6px 24px rgba(0,43,73,.08);padding:.85rem 1rem;display:flex;flex-wrap:wrap;gap:.7rem;align-items:center;justify-content:space-between;margin-top:.5rem}
+    .ed-bar .msg{font-size:.88rem;color:var(--muted)}
+    .ed-bar .msg.bad{color:var(--bad)}
+    .ed-errors{margin:0 0 1rem;padding:.9rem 1rem .9rem 2.2rem;background:var(--bad-soft);color:var(--bad);border-radius:var(--r);font-size:.9rem}
+    .ed-errors li+li{margin-top:.25rem}
+    .ed-errors button{all:unset;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+    .preview-banner{background:var(--warn-soft);color:var(--warn);border-radius:var(--r);padding:.8rem 1rem;margin-bottom:1rem;font-size:.92rem;display:flex;gap:.6rem;align-items:flex-start}
+    @media (min-width:640px){.ed-grid.two{grid-template-columns:1fr 1fr}.ed-grid.three{grid-template-columns:2fr 1fr 1fr}}
+    @media (min-width:900px){.ed-bar{bottom:16px}}
+
     /* Modal y avisos */
     .modal{position:fixed;inset:0;z-index:90;background:rgba(0,20,35,.5);display:grid;place-items:center;padding:1.25rem}
     .modal-card{background:#fff;border-radius:var(--r-lg);max-width:620px;width:100%;max-height:86vh;overflow-y:auto;padding:1.8rem}
@@ -713,7 +763,15 @@
 
   /* ============ Rutas ============ */
   const cache = { catalog: null };
-  window.addEventListener('hashchange', () => { if (session.token) route(); });
+  let lastHash = location.hash;
+  window.addEventListener('hashchange', () => {
+    if (!session.token) return;
+    if (typeof ed !== 'undefined' && ed.dirty) {
+      if (!confirm('Tienes cambios sin guardar en el curso. ¿Salir sin guardar?')) { history.replaceState(null, '', lastHash || '#/admin'); return; }
+      ed.dirty = false;
+    }
+    lastHash = location.hash; route();
+  });
   function route() {
     const [, name = 'inicio', arg = ''] = location.hash.split('/');
     stopMedia();
@@ -853,6 +911,7 @@
         <div style="display:flex;flex-wrap:wrap;gap:.45rem"><span class="chip chip-req">${esc(c.area)}</span><span class="chip chip-req">${fmtHours(c.hours)}</span>${c.required ? '<span class="chip chip-req">Obligatorio</span>' : ''}<span id="course-status-chip">${statusChip(c.status)}</span></div>
         <h1>${esc(c.title)}</h1><p>${esc(c.description)}</p>
       </div>
+      ${c.active === false ? '<div class="preview-banner"><i class="fa-solid fa-eye" style="margin-top:.2rem"></i><span>Vista previa: este curso está inactivo y los colaboradores no lo ven. Actívalo desde Administración → Cursos.</span></div>' : ''}
       ${c.status === 'APROBADO' ? `<div class="alert alert-ok" style="margin-bottom:1.2rem"><i class="fa-solid fa-award" style="margin-top:.2rem"></i><span>Acreditaste este curso con ${c.bestScore}%. Puedes repasar el contenido cuando quieras. <a href="#/constancia/${encodeURIComponent(c.certificate)}">Ver constancia</a></span></div>` : ''}
       <div class="course-grid">
         <div>
@@ -1155,16 +1214,22 @@
     if (session.user.role !== 'ADMIN') { location.hash = '#/inicio'; return; }
     el.innerHTML = `<div class="page-head"><div><h1>Administración</h1><p>Cumplimiento del personal, asignaciones y control de constancias. Datos en tiempo real de la hoja maestra.</p></div><button class="btn btn-ghost" id="adm-export"><i class="fa-solid fa-file-csv"></i> Exportar reporte</button></div>
       <div class="tabs" role="tablist">
-        ${[['resumen', 'Resumen'], ['personal', 'Personal'], ['asignar', 'Asignar curso']].map(([k, l]) => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${adminTab === k}">${l}</button>`).join('')}
+        ${[['resumen', 'Resumen'], ['personal', 'Personal'], ['cursos', 'Cursos'], ['asignar', 'Asignar curso']].map(([k, l]) => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${adminTab === k}">${l}</button>`).join('')}
       </div><div id="adm-body"></div>`;
-    $$('[data-tab]', el).forEach(t => t.onclick = () => { adminTab = t.dataset.tab; $$('[data-tab]', el).forEach(x => x.setAttribute('aria-selected', x === t)); drawAdmin(); });
+    $$('[data-tab]', el).forEach(t => t.onclick = () => { if (ed.dirty && !confirm(LEAVE_MSG)) return; ed.dirty = false; adminTab = t.dataset.tab; $$('[data-tab]', el).forEach(x => x.setAttribute('aria-selected', x === t)); drawAdmin(); });
     $('#adm-export').onclick = exportReport;
     drawAdmin();
   }
   async function drawAdmin() {
     const body = $('#adm-body'); body.innerHTML = loading();
+    body.onclick = body.oninput = body.onchange = null;
     try {
-      if (adminTab === 'resumen') { adminData = await api('adminSummary'); drawSummary(body); }
+      if (adminTab === 'cursos') {
+        body.onclick = e => editorClick(e, body);
+        body.oninput = body.onchange = editorInput;
+        await drawCoursesAdmin(body);
+      }
+      else if (adminTab === 'resumen') { adminData = await api('adminSummary'); drawSummary(body); }
       else if (adminTab === 'personal') drawPeople(body);
       else { if (!adminData) adminData = await api('adminSummary'); drawAssign(body); }
     } catch (ex) { errorBlock(body, ex, drawAdmin); }
@@ -1214,6 +1279,328 @@
     $('#adm-q').addEventListener('input', () => { clearTimeout(t); t = setTimeout(load, 300); });
     load();
   }
+  /* ============ Editor de cursos ============ */
+  const ed = { list: [], areas: [], companies: [], course: null, original: null, isNew: false, dirty: false, idTouched: false, q: '' };
+  const LEAVE_MSG = 'Tienes cambios sin guardar en el curso. ¿Salir sin guardar?';
+  window.addEventListener('beforeunload', e => { if (ed.dirty) { e.preventDefault(); e.returnValue = ''; } });
+  const slug = t => String(t || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40);
+  const fmtSecs = s => { s = Math.round(s); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')} min`; };
+  const clone = o => JSON.parse(JSON.stringify(o));
+
+  async function drawCoursesAdmin(body) {
+    body.innerHTML = loading();
+    const r = await api('adminCourses');
+    Object.assign(ed, { list: r.courses, areas: r.areas, companies: r.companies });
+    drawCourseList(body);
+  }
+  function drawCourseList(body) {
+    ed.course = null; ed.dirty = false;
+    body.innerHTML = `
+      <div class="ed-head"><div><h2>Cursos</h2><p class="small muted" style="margin-top:.3rem">Crea, edita o desactiva cursos. Los cambios se ven en la plataforma en cuanto los guardas.</p></div>
+        <button class="btn btn-primary" data-act="new-course"><i class="fa-solid fa-plus"></i> Nuevo curso</button></div>
+      <div class="search" style="margin-bottom:1rem"><i class="fa-solid fa-magnifying-glass"></i><label class="sr-only" for="ed-q">Buscar curso</label><input class="input" id="ed-q" placeholder="Buscar por título, clave o área" value="${esc(ed.q)}"></div>
+      <div class="ledger" id="ed-list"></div>`;
+    const draw = () => {
+      const q = ed.q.toLowerCase();
+      const list = ed.list.filter(c => !q || (c.title + ' ' + c.id + ' ' + c.area).toLowerCase().includes(q));
+      $('#ed-list', body).innerHTML = list.length ? list.map(c => `<div class="row">
+        <div><div class="row-title">${esc(c.title)}</div>
+          <div class="row-meta"><span>${esc(c.area || 'Sin área')}</span><span>${fmtHours(c.hours)}</span><span>${c.lessons.length} ${c.lessons.length === 1 ? 'módulo' : 'módulos'}</span><span>${c.quiz.length} ${c.quiz.length === 1 ? 'pregunta' : 'preguntas'}</span>${c.required ? '<span>Obligatorio</span>' : ''}${c.companies.length ? `<span>Solo ${esc(c.companies.join(', '))}</span>` : ''}<span class="tiny">Clave: ${esc(c.id)}</span></div></div>
+        <div class="row-side">
+          <span class="chip ${c.active ? 'st-APROBADO' : 'st-PENDIENTE'}">${c.active ? 'Activo' : 'Inactivo'}</span>
+          <a class="btn btn-ghost btn-sm" href="#/curso/${encodeURIComponent(c.id)}" title="Ver como colaborador"><i class="fa-regular fa-eye"></i><span class="sr-only">Vista previa</span></a>
+          <button class="btn btn-ghost btn-sm" data-act="toggle-course" data-id="${esc(c.id)}">${c.active ? 'Desactivar' : 'Activar'}</button>
+          <button class="btn btn-primary btn-sm" data-act="edit-course" data-id="${esc(c.id)}">Editar</button>
+        </div></div>`).join('') : '<div class="empty"><i class="fa-solid fa-magnifying-glass"></i><strong>No hay cursos con ese criterio</strong></div>';
+    };
+    draw();
+    $('#ed-q', body).addEventListener('input', e => { ed.q = e.target.value; draw(); });
+  }
+
+  function newCourse() {
+    const maxOrder = ed.list.reduce((m, c) => Math.max(m, c.order || 0), 0);
+    return {
+      id: '', title: '', description: '', area: '', hours: 1, order: maxOrder + 1, required: false, active: true, companies: [],
+      lessons: [{ titulo: '', duracion: '', texto: '', segundosMinimos: 30 }],
+      quiz: [{ pregunta: '', opciones: ['', '', ''], correcta: null }]
+    };
+  }
+  function openEditor(body, id) {
+    if (id) {
+      const c = ed.list.find(x => x.id === id);
+      ed.course = clone({ ...c, lessons: c.lessons.map(l => ({ ...l })), quiz: c.quiz.map(q => ({ ...q, opciones: [...q.opciones] })) });
+      ed.isNew = false; ed.idTouched = true;
+    } else { ed.course = newCourse(); ed.isNew = true; ed.idTouched = false; }
+    ed.original = JSON.stringify(ed.course);
+    ed.dirty = false;
+    drawEditor(body);
+    window.scrollTo(0, 0);
+  }
+  function markDirty() { ed.dirty = JSON.stringify(ed.course) !== ed.original; const m = $('#ed-msg'); if (m) { m.className = 'msg'; m.textContent = ed.dirty ? 'Cambios sin guardar' : 'Sin cambios'; } }
+
+  function assignmentText(c) {
+    const who = c.companies.length ? ` de ${c.companies.join(', ')}` : '';
+    if (!c.active) return 'Curso inactivo: los colaboradores no lo ven.';
+    if (c.required) return `Se asigna automáticamente a todo el personal${who}.`;
+    if (c.area) return `Se asigna automáticamente al personal del área "${c.area}"${who}. El resto puede tomarlo desde el catálogo.`;
+    return `Visible en el catálogo${who}; asígnalo manualmente desde "Asignar curso".`;
+  }
+
+  function lessonCard(l, i, n) {
+    const isVideo = l._type ? l._type === 'video' : !!l.video;
+    return `<div class="item" data-lesson-card="${i}">
+      <div class="item-head"><strong>Módulo ${i + 1}</strong>
+        <div class="item-tools">
+          <button class="icon-btn" data-act="up-lesson" data-i="${i}" ${i === 0 ? 'disabled' : ''} aria-label="Subir módulo"><i class="fa-solid fa-arrow-up"></i></button>
+          <button class="icon-btn" data-act="down-lesson" data-i="${i}" ${i === n - 1 ? 'disabled' : ''} aria-label="Bajar módulo"><i class="fa-solid fa-arrow-down"></i></button>
+          <button class="icon-btn danger" data-act="del-lesson" data-i="${i}" ${n === 1 ? 'disabled' : ''} aria-label="Eliminar módulo"><i class="fa-solid fa-trash"></i></button>
+        </div></div>
+      <label class="field"><span>Título del módulo</span><input class="input" data-scope="lesson" data-i="${i}" data-f="titulo" value="${esc(l.titulo)}" maxlength="160"></label>
+      <div><span class="small" style="font-weight:600;color:var(--ink);display:block;margin-bottom:.4rem">Tipo de contenido</span>
+        <div class="seg" role="group"><button type="button" data-act="type-lesson" data-i="${i}" data-v="lectura" aria-pressed="${!isVideo}"><i class="fa-solid fa-book-open"></i> Lectura</button><button type="button" data-act="type-lesson" data-i="${i}" data-v="video" aria-pressed="${isVideo}"><i class="fa-solid fa-play"></i> Video</button></div></div>
+      ${isVideo ? `<label class="field"><span>Archivo de video</span><input class="input" data-scope="lesson" data-i="${i}" data-f="video" value="${esc(l.video || '')}" placeholder="nombre-del-video.mp4  o  https://…/video.mp4">
+        <small>Sube el .mp4 a la carpeta principal del repositorio en GitHub y escribe aquí su nombre exacto. No funcionan enlaces de Drive ni YouTube.</small>
+        <div class="video-status" id="vs-${i}"></div></label>` : ''}
+      <label class="field"><span>${isVideo ? 'Texto de apoyo (opcional)' : 'Contenido del módulo'}</span><textarea class="textarea" data-scope="lesson" data-i="${i}" data-f="texto" rows="${isVideo ? 3 : 6}" maxlength="6000">${esc(l.texto || '')}</textarea>
+        ${isVideo ? '' : '<small>Separa los párrafos con un salto de línea.</small>'}</label>
+      <div class="ed-grid two">
+        <label class="field"><span>Duración que se muestra</span><input class="input" data-scope="lesson" data-i="${i}" data-f="duracion" value="${esc(l.duracion || '')}" placeholder="${isVideo ? 'Se calcula al verificar el video' : 'Ej. 10 min'}" maxlength="30"></label>
+        <label class="field"><span>Tiempo mínimo para avanzar (segundos)</span><input class="input" type="number" min="0" max="7200" step="1" data-scope="lesson" data-i="${i}" data-f="segundosMinimos" value="${Number(l.segundosMinimos) || 0}">
+          <small>${isVideo ? 'Se ajusta solo al 90% de la duración del video.' : 'El botón para avanzar se habilita después de este tiempo.'}</small></label>
+      </div></div>`;
+  }
+  function questionCard(q, i, n) {
+    return `<div class="item" data-q-card="${i}">
+      <div class="item-head"><strong>Pregunta ${i + 1}</strong>
+        <div class="item-tools">
+          <button class="icon-btn" data-act="up-q" data-i="${i}" ${i === 0 ? 'disabled' : ''} aria-label="Subir pregunta"><i class="fa-solid fa-arrow-up"></i></button>
+          <button class="icon-btn" data-act="down-q" data-i="${i}" ${i === n - 1 ? 'disabled' : ''} aria-label="Bajar pregunta"><i class="fa-solid fa-arrow-down"></i></button>
+          <button class="icon-btn danger" data-act="del-q" data-i="${i}" ${n === 1 ? 'disabled' : ''} aria-label="Eliminar pregunta"><i class="fa-solid fa-trash"></i></button>
+        </div></div>
+      <label class="field"><span>Enunciado</span><textarea class="textarea" style="min-height:64px" rows="2" data-scope="quiz" data-i="${i}" data-f="pregunta" maxlength="600">${esc(q.pregunta)}</textarea></label>
+      <fieldset style="border:0;padding:0;margin:0;display:grid;gap:.55rem">
+        <legend class="small" style="font-weight:600;color:var(--ink);margin-bottom:.45rem">Opciones <span class="muted" style="font-weight:400">(marca la respuesta correcta)</span></legend>
+        ${q.opciones.map((o, k) => `<div class="opt-row ${q.correcta === k ? 'correct' : ''}">
+          <input type="radio" name="correct-${i}" data-scope="correct" data-i="${i}" data-k="${k}" ${q.correcta === k ? 'checked' : ''} aria-label="Opción ${String.fromCharCode(65 + k)} es la correcta">
+          <span class="k">${String.fromCharCode(65 + k)}</span>
+          <input class="input" data-scope="opt" data-i="${i}" data-k="${k}" value="${esc(o)}" maxlength="300" aria-label="Texto de la opción ${String.fromCharCode(65 + k)}">
+          <button class="icon-btn" data-act="del-opt" data-i="${i}" data-k="${k}" ${q.opciones.length <= 2 ? 'disabled' : ''} aria-label="Quitar opción ${String.fromCharCode(65 + k)}"><i class="fa-solid fa-xmark"></i></button>
+        </div>`).join('')}
+        ${q.opciones.length < 6 ? `<button class="add-row" data-act="add-opt" data-i="${i}" style="padding:.5rem"><i class="fa-solid fa-plus"></i> Agregar opción</button>` : ''}
+      </fieldset></div>`;
+  }
+
+  function drawEditor(body) {
+    const c = ed.course, y = window.scrollY;
+    const companies = [...new Set([...ed.companies, ...c.companies])];
+    body.innerHTML = `
+      <button class="back" data-act="cancel"><i class="fa-solid fa-arrow-left"></i> Todos los cursos</button>
+      <div class="ed-head"><div><h2>${ed.isNew ? 'Nuevo curso' : esc(c.title || 'Editar curso')}</h2>${ed.isNew ? '' : `<p class="small muted" style="margin-top:.3rem">Clave ${esc(c.id)}</p>`}</div>
+        ${ed.isNew ? '' : `<a class="btn btn-ghost btn-sm" href="#/curso/${encodeURIComponent(c.id)}"><i class="fa-regular fa-eye"></i> Ver como colaborador</a>`}</div>
+      <div id="ed-errors"></div>
+      <datalist id="dl-areas">${ed.areas.map(a => `<option value="${esc(a)}">`).join('')}</datalist>
+
+      <section class="ed-section"><header><div><h3>Datos generales</h3><p>Aparecen en el catálogo y en la constancia.</p></div></header>
+        <div class="ed-body">
+          <div class="ed-grid two">
+            <label class="field"><span>Título del curso</span><input class="input" data-scope="course" data-f="title" value="${esc(c.title)}" maxlength="160" placeholder="Ej. Lavado quirúrgico de manos"></label>
+            <label class="field"><span>Clave</span><input class="input" data-scope="course" data-f="id" value="${esc(c.id)}" maxlength="40" ${ed.isNew ? '' : 'disabled'} placeholder="lavado-quirurgico">
+              <small>${ed.isNew ? 'Se genera del título. Solo minúsculas, números y guiones; no se puede cambiar después.' : 'La clave no se puede cambiar porque une el curso con avances y constancias.'}</small></label>
+          </div>
+          <label class="field"><span>Descripción breve</span><textarea class="textarea" style="min-height:64px" rows="2" data-scope="course" data-f="description" maxlength="600" placeholder="Qué aprenderá el colaborador">${esc(c.description)}</textarea></label>
+          <div class="ed-grid three">
+            <label class="field"><span>Área</span><input class="input" list="dl-areas" data-scope="course" data-f="area" value="${esc(c.area)}" maxlength="80" placeholder="Ej. Enfermería"><small>Escríbela igual que en la hoja USUARIOS para asignarlo por área.</small></label>
+            <label class="field"><span>Duración (horas)</span><input class="input" type="number" min="0.25" step="0.25" data-scope="course" data-f="hours" value="${c.hours}"><small>Aparece en la constancia.</small></label>
+            <label class="field"><span>Orden en el catálogo</span><input class="input" type="number" min="1" step="1" data-scope="course" data-f="order" value="${c.order}"></label>
+          </div>
+          <div class="ed-grid two">
+            <label class="check"><input type="checkbox" data-scope="course" data-f="required" ${c.required ? 'checked' : ''}><span><strong>Obligatorio</strong><small>Se asigna a todo el personal de las empresas seleccionadas.</small></span></label>
+            <label class="check"><input type="checkbox" data-scope="course" data-f="active" ${c.active ? 'checked' : ''}><span><strong>Activo</strong><small>Desmárcalo para ocultarlo mientras lo preparas.</small></span></label>
+          </div>
+          <div><span class="small" style="font-weight:600;color:var(--ink);display:block;margin-bottom:.5rem">Empresas</span>
+            <div class="company-list">${companies.map(x => `<label><input type="checkbox" data-scope="company" value="${esc(x)}" ${c.companies.includes(x) ? 'checked' : ''}>${esc(x)}</label>`).join('') || '<span class="small muted">Llena la columna EMPRESA en USUARIOS para poder limitar cursos por empresa.</span>'}</div>
+            <small class="muted" style="display:block;margin-top:.4rem;font-size:.8rem">Si no marcas ninguna, el curso aplica a todas.</small></div>
+          <p class="assign-note" id="ed-assign"><i class="fa-solid fa-circle-info"></i> ${esc(assignmentText(c))}</p>
+        </div></section>
+
+      <section class="ed-section"><header><div><h3>Módulos</h3><p>Se estudian en orden. Cada uno puede ser una lectura o un video.</p></div><span class="chip chip-req">${c.lessons.length}</span></header>
+        <div class="ed-body">${c.lessons.map((l, i) => lessonCard(l, i, c.lessons.length)).join('')}
+          ${c.lessons.length < 40 ? '<button class="add-row" data-act="add-lesson"><i class="fa-solid fa-plus"></i> Agregar módulo</button>' : ''}</div></section>
+
+      <section class="ed-section"><header><div><h3>Evaluación</h3><p>Se presenta al terminar los módulos. Las preguntas y opciones aparecen en orden aleatorio. Recomendado: 5 preguntas o más.</p></div><span class="chip chip-req">${c.quiz.length}</span></header>
+        <div class="ed-body">${c.quiz.map((q, i) => questionCard(q, i, c.quiz.length)).join('')}
+          ${c.quiz.length < 50 ? '<button class="add-row" data-act="add-q"><i class="fa-solid fa-plus"></i> Agregar pregunta</button>' : ''}</div></section>
+
+      <div class="ed-bar"><span class="msg" id="ed-msg">${ed.dirty ? 'Cambios sin guardar' : ed.isNew ? 'Curso nuevo' : 'Sin cambios'}</span>
+        <div style="display:flex;gap:.6rem"><button class="btn btn-ghost" data-act="cancel">Cancelar</button><button class="btn btn-primary" data-act="save" id="ed-save"><i class="fa-solid fa-floppy-disk"></i> Guardar curso</button></div></div>`;
+    window.scrollTo(0, y);
+    c.lessons.forEach((l, i) => { if ((l._type ? l._type === 'video' : !!l.video) && l.video) probeVideo(i, false); });
+  }
+
+  function probeVideo(i, apply = true) {
+    const l = ed.course.lessons[i], box = $('#vs-' + i);
+    if (!box || !l || !l.video) { if (box) box.innerHTML = ''; return; }
+    const src = l.video.trim();
+    if (!/\.mp4(\?|$)/i.test(src)) { box.className = 'video-status bad'; box.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Debe ser un archivo .mp4.'; return; }
+    box.className = 'video-status wait'; box.innerHTML = '<span class="spinner" style="width:14px;height:14px;border-width:2px"></span> Verificando video…';
+    const v = document.createElement('video'); v.preload = 'metadata'; v.muted = true;
+    const token = (l._probe = (l._probe || 0) + 1);
+    const done = () => { v.removeAttribute('src'); v.load(); };
+    v.onloadedmetadata = () => {
+      if (token !== l._probe) return done();
+      const d = v.duration;
+      box.className = 'video-status ok'; box.innerHTML = `<i class="fa-solid fa-circle-check"></i> Video encontrado: ${fmtSecs(d)}`;
+      if (apply && isFinite(d)) {
+        l.duracion = fmtSecs(d); l.segundosMinimos = Math.floor(d * 0.9);
+        const card = $(`[data-lesson-card="${i}"]`);
+        if (card) { $('[data-f="duracion"]', card).value = l.duracion; $('[data-f="segundosMinimos"]', card).value = l.segundosMinimos; }
+        markDirty();
+      }
+      done();
+    };
+    v.onerror = async () => {
+      if (token !== l._probe) return;
+      let exists = null;
+      try { const r = await fetch(v.src, { method: 'HEAD', cache: 'no-store' }); exists = r.ok; } catch { exists = null; }
+      if (token !== l._probe) return;
+      if (exists) { box.className = 'video-status bad'; box.innerHTML = '<i class="fa-solid fa-circle-info"></i> El archivo existe, pero este navegador no pudo leer su duración. Escribe la duración y el tiempo mínimo a mano.'; }
+      else { box.className = 'video-status bad'; box.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> No se encontró el video. Revisa el nombre o súbelo al repositorio; puedes guardar y verificar después.'; }
+    };
+    v.src = new URL(src, location.href).href;
+  }
+
+  function editorInput(e) {
+    const t = e.target, sc = t.dataset.scope; if (!sc || !ed.course) return;
+    const c = ed.course, i = Number(t.dataset.i), k = Number(t.dataset.k), f = t.dataset.f;
+    t.classList.remove('invalid');
+    if (sc === 'course') {
+      if (t.type === 'checkbox') c[f] = t.checked;
+      else if (f === 'hours' || f === 'order') c[f] = t.value === '' ? '' : Number(t.value);
+      else if (f === 'id') { c.id = t.value.toLowerCase(); ed.idTouched = true; }
+      else c[f] = t.value;
+      if (f === 'title' && ed.isNew && !ed.idTouched) { c.id = slug(t.value); const idIn = $('[data-f="id"]'); if (idIn) idIn.value = c.id; }
+      if (['required', 'active', 'area'].includes(f)) $('#ed-assign').innerHTML = `<i class="fa-solid fa-circle-info"></i> ${esc(assignmentText(c))}`;
+    } else if (sc === 'company') {
+      c.companies = $$('[data-scope="company"]').filter(x => x.checked).map(x => x.value);
+      $('#ed-assign').innerHTML = `<i class="fa-solid fa-circle-info"></i> ${esc(assignmentText(c))}`;
+    } else if (sc === 'lesson') {
+      const l = c.lessons[i];
+      l[f] = f === 'segundosMinimos' ? Number(t.value) || 0 : t.value;
+      if (f === 'video') { delete l.subtitulos; clearTimeout(l._t); l._t = setTimeout(() => probeVideo(i), 700); }
+    } else if (sc === 'quiz') c.quiz[i][f] = t.value;
+    else if (sc === 'opt') c.quiz[i].opciones[k] = t.value;
+    else if (sc === 'correct') {
+      c.quiz[i].correcta = k;
+      $$(`[data-q-card="${i}"] .opt-row`).forEach((row, idx) => row.classList.toggle('correct', idx === k));
+    }
+    markDirty();
+  }
+
+  function editorErrors() {
+    const c = ed.course, errs = [];
+    const add = (msg, sel) => errs.push({ msg, sel });
+    if ((c.title || '').trim().length < 3) add('Escribe el título del curso.', '[data-f="title"]');
+    if (ed.isNew && !/^[a-z0-9][a-z0-9-]{1,39}$/.test(c.id || '')) add('La clave debe tener de 2 a 40 caracteres: minúsculas, números y guiones.', '[data-f="id"]');
+    if (ed.isNew && ed.list.some(x => x.id === c.id)) add(`Ya existe un curso con la clave "${c.id}".`, '[data-f="id"]');
+    if (!(Number(c.hours) > 0)) add('Indica la duración en horas.', '[data-f="hours"]');
+    c.lessons.forEach((l, i) => {
+      const card = `[data-lesson-card="${i}"] `, isVideo = l._type ? l._type === 'video' : !!l.video;
+      if (!(l.titulo || '').trim()) add(`Módulo ${i + 1}: escribe el título.`, card + '[data-f="titulo"]');
+      if (isVideo && !(l.video || '').trim()) add(`Módulo ${i + 1}: escribe el nombre del video.`, card + '[data-f="video"]');
+      if (isVideo && l.video && !/\.mp4(\?|$)/i.test(l.video.trim())) add(`Módulo ${i + 1}: el video debe ser un archivo .mp4.`, card + '[data-f="video"]');
+      if (!isVideo && !(l.texto || '').trim()) add(`Módulo ${i + 1}: escribe el contenido.`, card + '[data-f="texto"]');
+    });
+    c.quiz.forEach((q, i) => {
+      const card = `[data-q-card="${i}"] `;
+      if (!(q.pregunta || '').trim()) add(`Pregunta ${i + 1}: escribe el enunciado.`, card + '[data-f="pregunta"]');
+      q.opciones.forEach((o, k) => { if (!(o || '').trim()) add(`Pregunta ${i + 1}: la opción ${String.fromCharCode(65 + k)} está vacía.`, card + `[data-scope="opt"][data-k="${k}"]`); });
+      const norm = q.opciones.map(o => (o || '').trim().toLowerCase()).filter(Boolean);
+      if (new Set(norm).size !== norm.length) add(`Pregunta ${i + 1}: hay opciones repetidas.`, card + '[data-scope="opt"]');
+      if (q.correcta === null || q.correcta === undefined || q.correcta >= q.opciones.length) add(`Pregunta ${i + 1}: marca la respuesta correcta.`, card + '[data-scope="correct"]');
+    });
+    return errs;
+  }
+  function showErrors(errs) {
+    $$('.invalid').forEach(x => x.classList.remove('invalid'));
+    const box = $('#ed-errors');
+    if (!errs.length) { box.innerHTML = ''; return; }
+    errs.forEach(e => $$(e.sel).forEach(x => x.classList.add('invalid')));
+    box.innerHTML = `<ul class="ed-errors" role="alert">${errs.slice(0, 8).map((e, n) => `<li><button data-err="${n}">${esc(e.msg)}</button></li>`).join('')}${errs.length > 8 ? `<li>…y ${errs.length - 8} más.</li>` : ''}</ul>`;
+    $$('[data-err]', box).forEach(b => b.onclick = () => { const el = $(errs[Number(b.dataset.err)].sel); if (el) { el.scrollIntoView({ block: 'center', behavior: 'smooth' }); el.focus({ preventScroll: true }); } });
+    const m = $('#ed-msg'); m.className = 'msg bad'; m.textContent = `Revisa ${errs.length === 1 ? '1 campo' : errs.length + ' campos'} antes de guardar.`;
+    box.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  }
+  async function saveCourse(body) {
+    const errs = editorErrors(); showErrors(errs); if (errs.length) return;
+    const c = ed.course, btn = $('#ed-save');
+    const payload = {
+      id: c.id, title: c.title.trim(), description: (c.description || '').trim(), area: (c.area || '').trim(), hours: Number(c.hours), order: Number(c.order) || 999,
+      required: !!c.required, active: !!c.active, companies: c.companies,
+      lessons: c.lessons.map(l => {
+        const isVideo = l._type ? l._type === 'video' : !!l.video;
+        const o = { titulo: l.titulo.trim(), duracion: (l.duracion || '').trim(), texto: (l.texto || '').trim(), segundosMinimos: Number(l.segundosMinimos) || 0 };
+        if (isVideo) { o.video = l.video.trim(); if (l.subtitulos) o.subtitulos = l.subtitulos; }
+        return o;
+      }),
+      quiz: c.quiz.map(q => ({ pregunta: q.pregunta.trim(), opciones: q.opciones.map(o => o.trim()), correcta: q.correcta }))
+    };
+    btn.disabled = true; btn.innerHTML = '<span class="spinner" style="width:16px;height:16px;border-width:2px"></span> Guardando…';
+    try {
+      await api('adminSaveCourse', { course: payload, isNew: ed.isNew });
+      ed.dirty = false; cache.catalog = null;
+      toast(ed.isNew ? 'Curso creado.' : 'Curso guardado.', 'ok');
+      ed.q = ''; await drawCoursesAdmin(body);
+    } catch (ex) {
+      const m = $('#ed-msg'); if (m) { m.className = 'msg bad'; m.textContent = ex.message; }
+      toast(ex.message, 'bad'); btn.disabled = false; btn.innerHTML = '<i class="fa-solid fa-floppy-disk"></i> Guardar curso';
+    }
+  }
+
+  function editorClick(e, body) {
+    const b = e.target.closest('[data-act]'); if (!b || !body.contains(b)) return;
+    const act = b.dataset.act, i = Number(b.dataset.i), k = Number(b.dataset.k), c = ed.course;
+    const move = (arr, from, to) => { const [x] = arr.splice(from, 1); arr.splice(to, 0, x); };
+    switch (act) {
+      case 'new-course': return openEditor(body);
+      case 'edit-course': return openEditor(body, b.dataset.id);
+      case 'toggle-course': {
+        const course = ed.list.find(x => x.id === b.dataset.id), next = !course.active;
+        if (!next && !confirm(`¿Desactivar "${course.title}"? Los colaboradores dejarán de verlo; su avance y constancias se conservan.`)) return;
+        b.disabled = true;
+        api('adminSetCourseActive', { courseId: course.id, active: next })
+          .then(() => { course.active = next; cache.catalog = null; toast(next ? 'Curso activado.' : 'Curso desactivado.', 'ok'); drawCourseList(body); })
+          .catch(ex => { toast(ex.message, 'bad'); b.disabled = false; });
+        return;
+      }
+      case 'cancel': if (ed.dirty && !confirm(LEAVE_MSG)) return; return drawCourseList(body);
+      case 'save': return saveCourse(body);
+      case 'add-lesson': c.lessons.push({ titulo: '', duracion: '', texto: '', segundosMinimos: 30 }); break;
+      case 'del-lesson': if (!confirm(`¿Eliminar el módulo ${i + 1}?`)) return; c.lessons.splice(i, 1); break;
+      case 'up-lesson': move(c.lessons, i, i - 1); break;
+      case 'down-lesson': move(c.lessons, i, i + 1); break;
+      case 'type-lesson': {
+        const l = c.lessons[i]; l._type = b.dataset.v;
+        if (b.dataset.v === 'lectura') { delete l.video; delete l.subtitulos; if (!l.segundosMinimos) l.segundosMinimos = 30; }
+        break;
+      }
+      case 'add-q': c.quiz.push({ pregunta: '', opciones: ['', '', ''], correcta: null }); break;
+      case 'del-q': if (!confirm(`¿Eliminar la pregunta ${i + 1}?`)) return; c.quiz.splice(i, 1); break;
+      case 'up-q': move(c.quiz, i, i - 1); break;
+      case 'down-q': move(c.quiz, i, i + 1); break;
+      case 'add-opt': c.quiz[i].opciones.push(''); break;
+      case 'del-opt': {
+        const q = c.quiz[i]; q.opciones.splice(k, 1);
+        if (q.correcta === k) q.correcta = null; else if (q.correcta > k) q.correcta--;
+        break;
+      }
+      default: return;
+    }
+    markDirty(); drawEditor(body);
+    if (act === 'add-lesson') $(`[data-lesson-card="${c.lessons.length - 1}"] [data-f="titulo"]`)?.focus();
+    if (act === 'add-q') $(`[data-q-card="${c.quiz.length - 1}"] [data-f="pregunta"]`)?.focus();
+    if (act === 'add-opt') $(`[data-q-card="${i}"] [data-scope="opt"][data-k="${c.quiz[i].opciones.length - 1}"]`)?.focus();
+  }
+
   function closeOverlay() { $('#overlay-root').innerHTML = ''; }
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('#overlay-root').innerHTML) closeOverlay(); });
   async function openUser(emp) {

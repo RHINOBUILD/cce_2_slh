@@ -93,7 +93,10 @@ function route_(b) {
     adminResetPin: function () { requireAdmin_(s.user); return adminResetPin_(s.user, b.employeeNumber); },
     adminRevoke: function () { requireAdmin_(s.user); return adminRevoke_(s.user, b.folio, b.reason); },
     adminAssign: function () { requireAdmin_(s.user); return adminAssign_(s.user, b); },
-    adminReport: function () { requireAdmin_(s.user); return adminReport_(); }
+    adminReport: function () { requireAdmin_(s.user); return adminReport_(); },
+    adminCourses: function () { requireAdmin_(s.user); return adminCourses_(); },
+    adminSaveCourse: function () { requireAdmin_(s.user); return adminSaveCourse_(s.user, b.course, b.isNew); },
+    adminSetCourseActive: function () { requireAdmin_(s.user); return adminSetCourseActive_(s.user, b.courseId, b.active); }
   };
   if (!actions[b.action]) throw publicError_('Acción no reconocida.');
   return actions[b.action]();
@@ -260,20 +263,25 @@ function hashPin_(pin, salt) {
 
 /* ===================== Cursos y asignaciones ===================== */
 
-function allCourses_() {
-  return table_('CURSOS').rows.filter(function (r) { return r.ID && isYes_(r.ACTIVO); }).map(function (r) {
+function allCourses_(includeInactive) {
+  return table_('CURSOS').rows.filter(function (r) { return String(r.ID || '').trim() && (includeInactive || isYes_(r.ACTIVO)); }).map(function (r) {
     return {
       id: String(r.ID).trim(), title: String(r.TITULO), area: String(r.AREA), hours: Number(r.HORAS) || 0,
       required: isYes_(r.OBLIGATORIO), companies: splitList_(r.EMPRESAS), order: Number(r.ORDEN) || 999,
-      description: String(r.DESCRIPCION || ''), lessons: parseJson_(r.LECCIONES_JSON, []), quiz: parseJson_(r.EVALUACION_JSON, [])
+      description: String(r.DESCRIPCION || ''), lessons: parseJson_(r.LECCIONES_JSON, []), quiz: parseJson_(r.EVALUACION_JSON, []),
+      active: isYes_(r.ACTIVO)
     };
   }).sort(function (a, b) { return a.order - b.order; });
 }
 
-function findCourse_(id) {
-  var c = allCourses_().filter(function (x) { return x.id === String(id); })[0];
+function findCourse_(id, includeInactive) {
+  var c = allCourses_(includeInactive).filter(function (x) { return x.id === String(id); })[0];
   if (!c) throw publicError_('El curso no existe o no está activo.');
   return c;
+}
+
+function quizSig_(course) {
+  return Utilities.base64Encode(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, JSON.stringify(course.quiz), Utilities.Charset.UTF_8)).slice(0, 16);
 }
 
 function courseVisible_(course, user) {
@@ -376,7 +384,8 @@ function catalog_(user) {
 }
 
 function courseDetail_(user, courseId) {
-  var c = findCourse_(courseId);
+  var isAdmin = String(user.ROL).toUpperCase() === 'ADMIN';
+  var c = findCourse_(courseId, isAdmin);
   if (!courseVisible_(c, user)) throw publicError_('Este curso no está disponible para tu empresa.');
   var emp = cleanEmp_(user.NUMERO_EMPLEADO);
   var prog = progressMap_(emp)[c.id];
@@ -391,6 +400,7 @@ function courseDetail_(user, courseId) {
     };
   });
   summary.completedLessons = prog ? prog.lessons : [];
+  summary.active = c.active;
   summary.minScore = cfgNum_('CALIFICACION_MINIMA', 80);
   return { ok: true, course: summary };
 }
@@ -460,7 +470,7 @@ function startQuiz_(user, courseId) {
   var qOrder = shuffle_(c.quiz.map(function (_, i) { return i; }));
   var map = qOrder.map(function (qi) { return { q: qi, opts: shuffle_(c.quiz[qi].opciones.map(function (_, j) { return j; })) }; });
   var attemptId = randomToken_();
-  CacheService.getScriptCache().put('qz_' + attemptId, JSON.stringify({ emp: emp, course: c.id, map: map }), 7200);
+  CacheService.getScriptCache().put('qz_' + attemptId, JSON.stringify({ emp: emp, course: c.id, map: map, sig: quizSig_(c) }), 7200);
   return {
     ok: true, attemptId: attemptId, minScore: cfgNum_('CALIFICACION_MINIMA', 80),
     questions: map.map(function (m) {
@@ -478,6 +488,7 @@ function submitQuiz_(user, attemptId, answers) {
   cache.remove('qz_' + attemptId);
 
   var c = findCourse_(att.course);
+  if (att.sig && att.sig !== quizSig_(c)) throw publicError_('La evaluación de este curso se actualizó. Iníciala de nuevo.', 'QUIZ_EXPIRED');
   if (!Array.isArray(answers) || answers.length !== att.map.length) throw publicError_('Responde todas las preguntas.');
   var correct = 0;
   att.map.forEach(function (m, i) {
@@ -734,6 +745,107 @@ function adminAssign_(admin, b) {
     });
   });
   log_(admin.NUMERO_EMPLEADO, 'ASIGNACION', type + ':' + value + ' → ' + course.id);
+  return { ok: true };
+}
+
+/* ---------- Editor de cursos ---------- */
+
+function adminCourses_() {
+  var courses = allCourses_(true).map(function (c) {
+    return {
+      id: c.id, title: c.title, area: c.area, hours: c.hours, required: c.required, companies: c.companies, order: c.order,
+      description: c.description, active: c.active, lessons: c.lessons, quiz: c.quiz
+    };
+  });
+  var areas = {}, companies = {};
+  var add = function (map, v) { v = String(v || '').trim(); if (v && !map[normalize_(v)]) map[normalize_(v)] = v; };
+  courses.forEach(function (c) { add(areas, c.area); c.companies.forEach(function (x) { add(companies, x); }); });
+  table_('USUARIOS').rows.forEach(function (u) { add(areas, u.AREA); add(companies, u.EMPRESA); });
+  var values = function (m) { return Object.keys(m).map(function (k) { return m[k]; }).sort(); };
+  return { ok: true, courses: courses, areas: values(areas), companies: values(companies) };
+}
+
+function cleanText_(v, max) { return String(v == null ? '' : v).replace(/\s+$/g, '').replace(/^\s+/g, '').slice(0, max || 2000); }
+
+function validateCourse_(c) {
+  if (!c || typeof c !== 'object') throw publicError_('Datos del curso no válidos.');
+  var id = String(c.id || '').trim().toLowerCase();
+  if (!/^[a-z0-9][a-z0-9-]{1,39}$/.test(id)) throw publicError_('La clave del curso debe tener de 2 a 40 caracteres: letras minúsculas, números y guiones.');
+  var title = cleanText_(c.title, 160);
+  if (title.length < 3) throw publicError_('Escribe el título del curso.');
+  var hours = Number(c.hours);
+  if (!(hours > 0 && hours <= 200)) throw publicError_('Indica la duración en horas (por ejemplo 1 o 0.5).');
+  if (!Array.isArray(c.lessons) || !c.lessons.length) throw publicError_('Agrega al menos un módulo.');
+  if (c.lessons.length > 40) throw publicError_('El curso no puede tener más de 40 módulos.');
+  var lessons = c.lessons.map(function (l, i) {
+    var n = 'Módulo ' + (i + 1) + ': ';
+    var t = cleanText_(l.titulo, 160), text = cleanText_(l.texto, 6000), video = cleanText_(l.video, 500);
+    if (!t) throw publicError_(n + 'escribe el título.');
+    if (!text && !video) throw publicError_(n + 'agrega el texto o un video.');
+    if (video && !/^(https:\/\/[^\s"'<>]+|[A-Za-z0-9._\/-]+)\.mp4(\?[^\s"'<>]*)?$/i.test(video)) {
+      throw publicError_(n + 'el video debe ser un archivo .mp4 del repositorio (ej. curso.mp4) o una dirección https que termine en .mp4.');
+    }
+    var min = Math.round(Number(l.segundosMinimos) || 0);
+    if (min < 0 || min > 7200) throw publicError_(n + 'el tiempo mínimo debe estar entre 0 y 7200 segundos.');
+    var out = { titulo: t, duracion: cleanText_(l.duracion, 30) || (video ? 'Video' : 'Lectura'), texto: text, segundosMinimos: min };
+    if (video) {
+      out.video = video;
+      if (Array.isArray(l.subtitulos) && l.subtitulos.length) out.subtitulos = l.subtitulos.filter(function (x) {
+        return Array.isArray(x) && x.length === 3 && isFinite(x[0]) && isFinite(x[1]);
+      }).map(function (x) { return [Number(x[0]), Number(x[1]), cleanText_(x[2], 400)]; });
+    }
+    return out;
+  });
+  if (!Array.isArray(c.quiz) || !c.quiz.length) throw publicError_('Agrega al menos una pregunta a la evaluación.');
+  if (c.quiz.length > 50) throw publicError_('La evaluación no puede tener más de 50 preguntas.');
+  var quiz = c.quiz.map(function (q, i) {
+    var n = 'Pregunta ' + (i + 1) + ': ';
+    var text = cleanText_(q.pregunta, 600);
+    if (!text) throw publicError_(n + 'escribe el enunciado.');
+    if (!Array.isArray(q.opciones) || q.opciones.length < 2 || q.opciones.length > 6) throw publicError_(n + 'debe tener de 2 a 6 opciones.');
+    var opts = q.opciones.map(function (o, k) {
+      var t = cleanText_(o, 300);
+      if (!t) throw publicError_(n + 'la opción ' + String.fromCharCode(65 + k) + ' está vacía.');
+      return t;
+    });
+    var seen = {};
+    opts.forEach(function (o) { var k = normalize_(o); if (seen[k]) throw publicError_(n + 'hay opciones repetidas.'); seen[k] = 1; });
+    var correct = Number(q.correcta);
+    if (!(correct >= 0 && correct < opts.length && Math.floor(correct) === correct)) throw publicError_(n + 'marca la respuesta correcta.');
+    return { pregunta: text, opciones: opts, correcta: correct };
+  });
+  var lessonsJson = JSON.stringify(lessons), quizJson = JSON.stringify(quiz);
+  if (lessonsJson.length > 49000) throw publicError_('El contenido de los módulos es demasiado largo para una celda. Divide el curso o reduce el texto.');
+  if (quizJson.length > 49000) throw publicError_('La evaluación es demasiado larga para una celda. Reduce el número de preguntas.');
+  return {
+    ID: id, TITULO: title, AREA: cleanText_(c.area, 80), HORAS: hours, OBLIGATORIO: c.required ? 'SI' : 'NO',
+    EMPRESAS: (Array.isArray(c.companies) ? c.companies : splitList_(c.companies)).map(function (x) { return cleanText_(x, 80); }).filter(String).join(', '),
+    ACTIVO: c.active === false ? 'NO' : 'SI', ORDEN: Math.max(1, Math.round(Number(c.order) || 999)),
+    DESCRIPCION: cleanText_(c.description, 600), LECCIONES_JSON: lessonsJson, EVALUACION_JSON: quizJson
+  };
+}
+
+function adminSaveCourse_(admin, course, isNew) {
+  var values = validateCourse_(course);
+  withLock_(function () {
+    var t = table_('CURSOS', true);
+    var row = t.find(function (r) { return String(r.ID || '').trim().toLowerCase() === values.ID; });
+    if (isNew && row) throw publicError_('Ya existe un curso con la clave "' + values.ID + '". Elige otra.');
+    if (!isNew && !row) throw publicError_('El curso que intentas editar ya no existe.');
+    if (row) t.update(row, values); else t.append(values);
+  });
+  log_(admin.NUMERO_EMPLEADO, isNew ? 'CURSO_CREADO' : 'CURSO_EDITADO', values.ID);
+  return { ok: true, id: values.ID };
+}
+
+function adminSetCourseActive_(admin, courseId, active) {
+  withLock_(function () {
+    var t = table_('CURSOS', true);
+    var row = t.find(function (r) { return String(r.ID || '').trim() === String(courseId); });
+    if (!row) throw publicError_('Curso no encontrado.');
+    t.update(row, { ACTIVO: active ? 'SI' : 'NO' });
+  });
+  log_(admin.NUMERO_EMPLEADO, active ? 'CURSO_ACTIVADO' : 'CURSO_DESACTIVADO', courseId);
   return { ok: true };
 }
 

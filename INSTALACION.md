@@ -45,6 +45,9 @@ Para un PIN olvidado: Administración → Personal → colaborador → **Generar
 
 ## 4. Cursos y asignaciones
 
+**Editor de cursos:** Administración → **Cursos**. Ahí se crean, editan, activan y desactivan cursos con formularios (datos generales, módulos de lectura o video, y evaluación con respuesta correcta). Los cambios se ven al guardar. Los videos .mp4 se suben a la carpeta principal del repositorio y en el editor se escribe su nombre.
+
+
 - **CURSOS**: un curso por fila. `LECCIONES_JSON` y `EVALUACION_JSON` guardan el contenido; las respuestas correctas nunca salen al navegador. `EMPRESAS` (opcional, separadas por coma) limita el curso a ciertas empresas; vacío = todas.
 - Se asignan solos: los cursos con `OBLIGATORIO = SI` y los del área del colaborador (`ASIGNAR_POR_AREA`).
 - **ASIGNACIONES**: asignaciones adicionales con fecha límite, también desde Administración → Asignar curso. `TIPO` puede ser `EMPLEADO`, `AREA`, `PUESTO`, `EMPRESA` o `TODOS`.
