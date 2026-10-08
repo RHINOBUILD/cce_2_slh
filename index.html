@@ -296,6 +296,7 @@
     .certificate .for{font-size:15px;color:var(--muted);margin-top:10px}
     .certificate .course{font-size:22px;font-weight:700;color:var(--ink);margin:6px auto 0;max-width:780px;line-height:1.25}
     .certificate .facts{font-size:13px;color:var(--muted);margin-top:8px}
+    .certificate .route-detail{font-size:11.5px;color:var(--text);margin:8px auto 0;max-width:800px;line-height:1.5}
     .certificate .bottom{display:grid;grid-template-columns:1fr 120px 1fr;gap:40px;align-items:end;padding-top:10px}
     .certificate .sign{text-align:center;font-size:13px;line-height:1.35}
     .certificate .sign .sig{height:110px;display:flex;align-items:flex-end;justify-content:center}
@@ -345,6 +346,144 @@
     .form-grid{display:grid;gap:1rem}
     .pin-reveal{font-family:var(--serif);font-size:2rem;font-weight:700;letter-spacing:.2em;color:var(--ink)}
 
+    /* Tarjetas de curso y ruta */
+    a.plain{color:inherit;text-decoration:none}
+    a.plain:hover{text-decoration:underline;text-underline-offset:3px}
+    .cards{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+    .cards-routes{grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
+    .cc{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;text-decoration:none;color:inherit;transition:border-color .15s,box-shadow .15s}
+    .cc:hover{border-color:#9FB4C6;box-shadow:var(--shadow)}
+    .cc-band{height:92px;display:grid;place-items:center;position:relative;overflow:hidden}
+    .cc-band i{font-size:2.1rem;color:#fff;opacity:.95}
+    .cc-band::after{content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;border-radius:50%;border:18px solid rgba(255,255,255,.12)}
+    .cc-band img{width:100%;height:100%;object-fit:cover}
+    .cc-band.v1::after{right:auto;left:-40px;top:auto;bottom:-50px}
+    .cc-band.v2::after{right:20%;top:-70px;width:150px;height:150px}
+    .cc-band.v3::after{right:-20px;top:auto;bottom:-60px;width:140px;height:140px;border-width:22px}
+    .cc-body{padding:1rem 1.1rem .4rem;flex:1}
+    .cc-tags{display:flex;flex-wrap:wrap;gap:.35rem .6rem;align-items:center;margin-bottom:.45rem}
+    .cc-cat{font-size:.78rem;font-weight:700}
+    .cc-level{font-size:.75rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:.05rem .5rem}
+    .cc h3{font-size:1.02rem;line-height:1.35}
+    .cc p{color:var(--muted);font-size:.86rem;margin-top:.35rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .cc-foot{display:flex;justify-content:space-between;align-items:center;gap:.5rem;padding:.75rem 1.1rem;border-top:1px solid var(--line-soft);font-size:.8rem;color:var(--muted)}
+    .cc-state{font-weight:600;color:var(--blue);white-space:nowrap}
+    .cc-state.ok{color:#8a6a2e}
+    .cc-state.muted{color:var(--muted);font-weight:500}
+    .cc-meta{white-space:nowrap}
+    .rc{display:flex;flex-direction:column;gap:.55rem;background:#fff;border:1px solid var(--line);border-top:4px solid var(--ink);border-radius:var(--r-lg);padding:1.2rem 1.25rem;text-decoration:none;color:inherit;transition:border-color .15s,box-shadow .15s}
+    .rc:hover{box-shadow:var(--shadow);border-color:#9FB4C6;border-top-color:var(--ink)}
+    .rc-top{display:flex;justify-content:space-between;align-items:center;gap:.5rem}
+    .rc-kicker{font-size:.78rem;font-weight:700;color:var(--blue);display:inline-flex;gap:.4rem;align-items:center}
+    .rc h3{font-family:var(--serif);font-size:1.3rem;font-weight:600}
+    .rc p{color:var(--muted);font-size:.9rem}
+    .rc-steps{display:flex;gap:4px;margin-top:.3rem}
+    .rc-steps i{flex:1;height:8px;border-radius:3px;background:#DCE4EB}
+    .rc-steps i.APROBADO{background:var(--gold)} .rc-steps i.EVALUACION{background:#E07B39} .rc-steps i.EN_CURSO{background:var(--sky)}
+    .rc-foot{display:flex;justify-content:space-between;font-size:.82rem;color:var(--muted)}
+    .rc-cats{display:flex;flex-wrap:wrap;gap:.3rem .9rem;font-size:.78rem;font-weight:600}
+    .row-icon{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;color:#fff;flex:none;font-size:.95rem}
+    .done-list{display:flex;flex-wrap:wrap;gap:.5rem}
+    .done-list a{display:inline-flex;gap:.5rem;align-items:center;background:#fff;border:1px solid var(--line);border-radius:999px;padding:.45rem .9rem;font-size:.86rem;color:var(--ink);text-decoration:none;font-weight:600}
+    .done-list a i{color:var(--gold)}
+    .done-list a:hover{border-color:var(--gold)}
+    .tab-count{display:inline-block;margin-left:.35rem;font-size:.75rem;background:#EEF2F5;color:var(--muted);border-radius:999px;padding:.05rem .5rem}
+    .cat-areas{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.6rem;margin-bottom:1rem}
+    .area-tile{display:flex;gap:.7rem;align-items:center;text-align:left;border:1px solid var(--line);background:#fff;border-radius:var(--r);padding:.6rem .7rem;cursor:pointer;font-weight:600;font-size:.88rem;color:var(--ink)}
+    .area-tile i{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;color:#fff;flex:none}
+    .area-tile small{display:block;font-weight:500;color:var(--muted);font-size:.75rem}
+    .area-tile[aria-pressed="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink);background:#F7FAFC}
+
+    /* Ficha del curso */
+    .ficha-hero{background:var(--ink);color:#fff;border-radius:var(--r-lg);overflow:hidden;position:relative;margin-bottom:1.6rem}
+    .ficha-hero::before{content:"";position:absolute;inset:0 auto 0 0;width:8px;background:var(--cat)}
+    .ficha-hero-in{display:grid;gap:1.2rem;padding:1.8rem 1.6rem 1.8rem 2rem}
+    .ficha-icon{width:72px;height:72px;border-radius:18px;background:var(--cat);display:grid;place-items:center;font-size:2rem;overflow:hidden}
+    .ficha-icon img{width:100%;height:100%;object-fit:cover}
+    .ficha-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.6rem}
+    .ficha-tags span{font-size:.78rem;font-weight:600;border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:.15rem .6rem;color:#DCEAF5}
+    .ficha-hero h1{font-family:var(--serif);color:#fff;font-weight:600;font-size:clamp(1.7rem,3.6vw,2.4rem)}
+    .ficha-hero p{color:#C9DCEB;margin-top:.5rem;max-width:64ch}
+    .ficha-grid{display:grid;gap:1.4rem}
+    .ficha-sec{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:1.3rem 1.4rem;margin-bottom:1rem}
+    .ficha-sec h2{font-family:var(--serif);font-size:1.3rem;font-weight:600;margin-bottom:.8rem}
+    .ficha-sec>p{color:var(--text)}
+    .objectives{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+    .objectives li{display:grid;grid-template-columns:1.4rem 1fr;gap:.5rem}
+    .objectives i{color:var(--ok);margin-top:.25rem}
+    .syllabus h3{font-size:.95rem;margin:1rem 0 .4rem;display:flex;gap:.6rem;align-items:baseline}
+    .syllabus h3:first-child{margin-top:0}
+    .syllabus h3 span{font-size:.75rem;font-weight:700;color:var(--muted);min-width:4.2rem}
+    .syllabus ol{list-style:none;margin:0;padding:0;border:1px solid var(--line-soft);border-radius:var(--r);overflow:hidden}
+    .syllabus li{display:grid;grid-template-columns:1.6rem 1fr auto;gap:.6rem;align-items:center;padding:.65rem .85rem;font-size:.92rem}
+    .syllabus li+li{border-top:1px solid var(--line-soft)}
+    .syllabus li i{color:var(--blue)}
+    .syllabus li.done i{color:var(--ok)}
+    .syllabus li small{color:var(--muted);font-size:.8rem;text-align:right}
+    .route-links{display:flex;flex-wrap:wrap;gap:.5rem}
+    .route-links a{display:inline-flex;gap:.5rem;align-items:center;border:1px solid var(--line);border-radius:999px;padding:.45rem .9rem;text-decoration:none;font-weight:600;font-size:.88rem}
+    .route-links a:hover{border-color:var(--blue)}
+    .facts{display:grid;grid-template-columns:auto 1fr;gap:.6rem 1rem;margin:1.3rem 0 0;font-size:.88rem;border-top:1px solid var(--line-soft);padding-top:1.1rem}
+    .facts dt{color:var(--muted);display:flex;gap:.5rem;align-items:center}
+    .facts dt i{width:1rem;text-align:center}
+    .facts dd{margin:0;font-weight:600;color:var(--ink);text-align:right}
+
+    /* Ruta */
+    .route-hero{background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:1.8rem;margin-bottom:1.4rem}
+    .route-hero h1{font-family:var(--serif);color:#fff;font-weight:600;font-size:clamp(1.8rem,3.8vw,2.5rem);margin-top:.5rem}
+    .route-hero>p{color:#C9DCEB;margin-top:.5rem;max-width:64ch}
+    .route-meter{margin-top:1.4rem;display:grid;gap:.6rem;max-width:620px}
+    .route-meter .meter-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;color:#B9D0E3;font-size:.9rem}
+    .route-meter .pct{font-family:var(--serif);font-size:2.2rem;font-weight:600;color:#fff;line-height:1}
+    .route-steps{list-style:none;margin:0;padding:0;position:relative}
+    .route-steps::before{content:"";position:absolute;left:19px;top:20px;bottom:20px;width:2px;background:var(--line)}
+    .route-steps li{display:grid;grid-template-columns:40px 1fr;gap:.9rem;position:relative;margin-bottom:.9rem}
+    .rs-num{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#fff;border:2px solid var(--line);font-weight:700;color:var(--muted);z-index:1}
+    .route-steps li.APROBADO .rs-num{background:var(--gold);border-color:var(--gold);color:#fff}
+    .route-steps li.current .rs-num{border-color:var(--blue);color:var(--blue)}
+    .rs-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:1rem 1.1rem;display:grid;gap:.8rem}
+    .route-steps li.current .rs-card{border-color:var(--blue);box-shadow:0 0 0 1px var(--blue)}
+    .rs-card h3{font-size:1.02rem;margin:.25rem 0 .2rem}
+    .rs-side{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+
+    /* Reproductor: temas, materiales y práctica */
+    .topic-head{font-size:.8rem;font-weight:700;color:var(--ink);padding:.7rem 1.2rem .3rem;border-top:1px solid var(--line-soft);display:flex;gap:.5rem}
+    .topic-head span{color:var(--muted);font-weight:600}
+    .media.media-short{aspect-ratio:auto;min-height:150px}
+    .materials{margin-top:1.4rem;display:grid;gap:.5rem;max-width:620px}
+    .materials h3{font-size:.95rem;margin-bottom:.2rem}
+    .materials a{display:flex;gap:.7rem;align-items:center;border:1px solid var(--line);border-radius:var(--r);padding:.7rem .9rem;text-decoration:none;color:var(--ink);font-weight:600;font-size:.92rem;background:#fff}
+    .materials a:hover{border-color:var(--blue)}
+    .materials a i:first-child{color:var(--bad);font-size:1.1rem}
+    .practice{display:grid;gap:1rem;margin-top:1.2rem}
+    .pq{border:1px solid var(--line);border-radius:var(--r);padding:1rem;margin:0;background:#fff}
+    .pq legend{font-weight:600;color:var(--ink);padding:0 .3rem;display:flex;gap:.5rem}
+    .pq legend span{width:1.5rem;height:1.5rem;border-radius:50%;background:var(--sky-soft);color:var(--blue);display:grid;place-items:center;font-size:.75rem;flex:none}
+    .pq-opt{display:flex;gap:.6rem;align-items:center;padding:.5rem .4rem;border-radius:var(--r-sm);cursor:pointer}
+    .pq-opt:hover{background:var(--paper)}
+    .pq-opt input{width:18px;height:18px;accent-color:var(--blue);margin:0}
+    .pq.ok{border-color:#9BD3B4;background:#F6FCF8}
+    .pq.bad{border-color:#F1B8B2;background:#FFF8F7}
+    .pq-fb{font-size:.88rem;margin-top:.5rem}
+    .pq.ok .pq-fb{color:var(--ok)} .pq.bad .pq-fb{color:var(--bad)}
+
+    @media (max-width:639px){
+      .cat-areas{display:flex;overflow-x:auto;gap:.5rem;padding-bottom:.4rem;scrollbar-width:thin}
+      .area-tile{flex:none;padding:.5rem .7rem}
+      .area-tile i{width:28px;height:28px;border-radius:7px;font-size:.85rem}
+      .area-tile span{white-space:nowrap}
+    }
+    @media (max-width:899px){ .ficha-aside{order:-1} }
+    @media (min-width:640px){
+      .ficha-hero-in{grid-template-columns:auto 1fr;align-items:center}
+      .rs-card{grid-template-columns:1fr auto;align-items:center}
+    }
+    @media (min-width:900px){
+      .ficha-grid{grid-template-columns:1fr 330px;align-items:start}
+      .ficha-grid>div{grid-column:1;grid-row:1}
+      .ficha-aside{position:sticky;top:88px;grid-column:2;grid-row:1}
+    }
+
     /* Editor de cursos */
     .ed-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:1rem;margin-bottom:1.2rem}
     .ed-head h2{font-family:var(--serif);font-size:1.6rem;font-weight:600}
@@ -391,6 +530,13 @@
     .ed-errors{margin:0 0 1rem;padding:.9rem 1rem .9rem 2.2rem;background:var(--bad-soft);color:var(--bad);border-radius:var(--r);font-size:.9rem}
     .ed-errors li+li{margin-top:.25rem}
     .ed-errors button{all:unset;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+    .mat-row{display:grid;grid-template-columns:1fr;gap:.5rem;padding:.6rem;border:1px solid var(--line-soft);border-radius:var(--r);background:#fff}
+    .materials-ed,.practice-ed{display:grid;gap:.6rem;border-top:1px dashed var(--line);padding-top:.9rem}
+    .route-ed-list{list-style:none;margin:0;padding:0;display:grid;gap:.5rem}
+    .route-ed-list li{display:grid;grid-template-columns:auto auto 1fr auto;gap:.7rem;align-items:center;border:1px solid var(--line);border-radius:var(--r);padding:.6rem .7rem;background:#fff}
+    .rel-t strong{display:block;color:var(--ink);font-size:.93rem;line-height:1.3}
+    .rel-t small{color:var(--muted);font-size:.8rem}
+    @media (min-width:640px){.mat-row{grid-template-columns:1fr 1.4fr auto;align-items:center;padding:0;border:0;background:none}}
     .preview-banner{background:var(--warn-soft);color:var(--warn);border-radius:var(--r);padding:.8rem 1rem;margin-bottom:1rem;font-size:.92rem;display:flex;gap:.6rem;align-items:flex-start}
     @media (min-width:640px){.ed-grid.two{grid-template-columns:1fr 1fr}.ed-grid.three{grid-template-columns:2fr 1fr 1fr}}
     @media (min-width:900px){.ed-bar{bottom:16px}}
@@ -594,8 +740,8 @@
       <div class="wrap">
         <a class="brand" href="#/inicio" aria-label="Inicio"><span class="logo-chip logo-chip-sm"><img src="assets/cce-marca-blanco.svg" alt="CCE, Centro de Capacitación y Enseñanza"></span></a>
         <nav class="mainnav" aria-label="Principal">
-          <a class="navlink" href="#/inicio" data-nav="inicio"><i class="fa-solid fa-house"></i>Inicio</a>
-          <a class="navlink" href="#/cursos" data-nav="cursos"><i class="fa-solid fa-book-open"></i>Cursos</a>
+          <a class="navlink" href="#/inicio" data-nav="inicio"><i class="fa-solid fa-house"></i>Mi aprendizaje</a>
+          <a class="navlink" href="#/cursos" data-nav="cursos"><i class="fa-solid fa-book-open"></i>Catálogo</a>
           <a class="navlink" href="#/constancias" data-nav="constancias"><i class="fa-solid fa-award"></i>Constancias</a>
           <a class="navlink" href="#/admin" data-nav="admin" data-admin hidden><i class="fa-solid fa-chart-column"></i>Administración</a>
         </nav>
@@ -606,14 +752,16 @@
       </div>
     </header>
     <nav class="tabbar" aria-label="Principal">
-      <a class="navlink" href="#/inicio" data-nav="inicio"><i class="fa-solid fa-house"></i>Inicio</a>
-      <a class="navlink" href="#/cursos" data-nav="cursos"><i class="fa-solid fa-book-open"></i>Cursos</a>
+      <a class="navlink" href="#/inicio" data-nav="inicio"><i class="fa-solid fa-house"></i>Aprendizaje</a>
+      <a class="navlink" href="#/cursos" data-nav="cursos"><i class="fa-solid fa-book-open"></i>Catálogo</a>
       <a class="navlink" href="#/constancias" data-nav="constancias"><i class="fa-solid fa-award"></i>Constancias</a>
       <a class="navlink" href="#/perfil" data-nav="perfil" data-tab-profile><i class="fa-solid fa-user"></i>Perfil</a>
     </nav>
     <main class="wrap" id="main">
       <section class="view" id="view-inicio" hidden></section>
       <section class="view" id="view-cursos" hidden></section>
+      <section class="view" id="view-ficha" hidden></section>
+      <section class="view" id="view-ruta" hidden></section>
       <section class="view" id="view-curso" hidden></section>
       <section class="view" id="view-evaluacion" hidden></section>
       <section class="view" id="view-constancias" hidden></section>
@@ -773,13 +921,14 @@
     lastHash = location.hash; route();
   });
   function route() {
-    const [, name = 'inicio', arg = ''] = location.hash.split('/');
+    let [, name = 'inicio', arg = ''] = location.hash.split('/');
+    name = name.split('?')[0]; arg = arg.split('?')[0];
     stopMedia();
-    const views = { inicio: renderHome, cursos: renderCatalog, curso: renderCourse, evaluacion: renderQuiz, constancias: renderCertificates, constancia: renderCertificate, perfil: renderProfile, admin: renderAdmin };
+    const views = { inicio: renderHome, cursos: renderCatalog, curso: renderFicha, aprender: renderPlayer, ruta: renderRoute, evaluacion: renderQuiz, constancias: renderCertificates, constancia: renderCertificate, perfil: renderProfile, admin: renderAdmin };
     const fn = views[name] || renderHome;
-    const viewId = { curso: 'curso', evaluacion: 'evaluacion', constancia: 'certificate' }[name] || (views[name] ? name : 'inicio');
+    const viewId = { curso: 'ficha', aprender: 'curso', evaluacion: 'evaluacion', constancia: 'certificate' }[name] || (views[name] ? name : 'inicio');
     $$('#main .view').forEach(v => v.hidden = v.id !== 'view-' + viewId);
-    const navKey = { curso: 'cursos', evaluacion: 'cursos', constancia: 'constancias' }[name] || name;
+    const navKey = { curso: 'cursos', aprender: 'cursos', ruta: 'cursos', evaluacion: 'cursos', constancia: 'constancias' }[name] || name;
     $$('[data-nav]').forEach(a => { if (a.dataset.nav === navKey) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
     window.scrollTo(0, 0);
     fn(decodeURIComponent(arg));
@@ -793,7 +942,81 @@
     $('button', el).onclick = retry;
   }
 
-  /* ============ Inicio ============ */
+  /* ============ Categorías ============ */
+  const CATS = {
+    'calidad y seguridad': ['fa-shield-heart', '#0B5FA5'], 'enfermeria': ['fa-user-nurse', '#0E7C86'], 'area medica': ['fa-stethoscope', '#3949AB'],
+    'admision y recepcion': ['fa-id-card', '#6D4FA3'], 'farmacia': ['fa-pills', '#B4433A'], 'laboratorio': ['fa-flask', '#7B3FA0'],
+    'prehospitalaria': ['fa-truck-medical', '#C2410C'], 'seguridad e higiene': ['fa-helmet-safety', '#9A6A00'], 'capital humano': ['fa-people-group', '#0F766E'],
+    'administracion': ['fa-briefcase', '#475569']
+  };
+  const FALLBACK = ['#0B5FA5', '#0E7C86', '#6D4FA3', '#B4433A', '#9A6A00', '#3949AB', '#0F766E', '#475569'];
+  const norm = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').trim().toLowerCase();
+  function catOf(area) {
+    const k = norm(area);
+    if (CATS[k]) return { icon: CATS[k][0], color: CATS[k][1] };
+    let h = 0; for (const ch of k) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+    return { icon: 'fa-book-medical', color: FALLBACK[h % FALLBACK.length] };
+  }
+  const TYPE_ICON = { video: 'fa-play', lectura: 'fa-book-open', practica: 'fa-pen-to-square' };
+  const TYPE_LABEL = { video: 'Video', lectura: 'Lectura', practica: 'Práctica' };
+  const plural = (n, a, b) => `${n} ${n === 1 ? a : b}`;
+
+  /* ============ Tarjetas ============ */
+  function isOverdue(c) { return c.status !== 'APROBADO' && c.dueDate && new Date(c.dueDate) < new Date(); }
+  function courseCard(c) {
+    const cat = catOf(c.area);
+    const band = c.image
+      ? `<div class="cc-band" style="background:${cat.color}"><img src="${esc(c.image)}" alt="" loading="lazy"></div>`
+      : `<div class="cc-band v${[...c.id].reduce((h, ch) => (h + ch.charCodeAt(0)) % 4, 0)}" style="background:${cat.color}"><i class="fa-solid ${cat.icon}" aria-hidden="true"></i></div>`;
+    const foot = c.status === 'APROBADO' ? `<span class="cc-state ok"><i class="fa-solid fa-award"></i> Acreditado</span>`
+      : c.status === 'PENDIENTE' ? `<span class="cc-state${c.assigned ? '' : ' muted'}">${c.assigned ? 'Asignado' : 'Disponible'}</span>`
+        : `<span class="cc-state"><span class="bar" style="width:70px;display:inline-block;vertical-align:middle"><i style="width:${c.progress}%"></i></span> ${c.status === 'EVALUACION' ? 'Evaluación pendiente' : c.progress + '%'}</span>`;
+    return `<a class="cc" href="#/curso/${encodeURIComponent(c.id)}">
+      ${band}
+      <div class="cc-body">
+        <div class="cc-tags"><span class="cc-cat" style="color:${cat.color}">${esc(c.area || 'General')}</span>${c.level ? `<span class="cc-level">${esc(c.level)}</span>` : ''}${isOverdue(c) ? '<span class="chip chip-overdue">Vencido</span>' : ''}</div>
+        <h3>${esc(c.title)}</h3>
+        <p>${esc(c.description)}</p>
+      </div>
+      <div class="cc-foot"><span class="cc-meta"><i class="fa-regular fa-clock"></i> ${fmtHours(c.hours)}</span>${foot}</div>
+    </a>`;
+  }
+  function routeCard(r, courses) {
+    const items = r.courseIds.map(id => courses.find(c => c.id === id)).filter(Boolean);
+    const cats = [...new Set(items.map(c => c.area))].slice(0, 4);
+    return `<a class="rc" href="#/ruta/${encodeURIComponent(r.id)}">
+      <div class="rc-top">
+        <span class="rc-kicker"><i class="fa-solid fa-route"></i> Ruta de aprendizaje</span>
+        ${r.status === 'APROBADO' ? '<span class="chip st-APROBADO"><i class="fa-solid fa-award"></i> Acreditada</span>' : r.assigned ? '<span class="chip chip-req">Asignada</span>' : ''}
+      </div>
+      <h3>${esc(r.title)}</h3>
+      <p>${esc(r.description)}</p>
+      <div class="rc-steps" aria-hidden="true">${items.map(c => `<i class="${c.status}" title="${esc(c.title)}"></i>`).join('')}</div>
+      <div class="rc-foot"><span>${plural(r.courseCount, 'curso', 'cursos')} · ${fmtHours(r.hours)}</span><span>${r.approved} de ${r.courseCount} acreditados</span></div>
+      <div class="rc-cats">${cats.map(a => { const k = catOf(a); return `<span style="color:${k.color}"><i class="fa-solid ${k.icon}"></i> ${esc(a)}</span>`; }).join('')}</div>
+    </a>`;
+  }
+  function courseRow(c) {
+    const st = STATUS[c.status] || STATUS.PENDIENTE, cat = catOf(c.area);
+    const btn = c.status === 'APROBADO'
+      ? `<a class="btn btn-ghost btn-sm" href="#/constancia/${encodeURIComponent(c.certificate)}"><i class="fa-solid fa-award" style="color:var(--gold)"></i> Constancia</a>`
+      : `<a class="btn ${c.status === 'EVALUACION' ? 'btn-gold' : 'btn-primary'} btn-sm" href="${c.status === 'EVALUACION' ? '#/evaluacion/' : c.status === 'PENDIENTE' ? '#/curso/' : '#/aprender/'}${encodeURIComponent(c.id)}">${esc(st.action)}</a>`;
+    return `<div class="row">
+      <div style="display:flex;gap:.9rem;align-items:flex-start">
+        <span class="row-icon" style="background:${cat.color}"><i class="fa-solid ${cat.icon}"></i></span>
+        <div><div class="row-title"><a href="#/curso/${encodeURIComponent(c.id)}" class="plain">${esc(c.title)}</a></div>
+        <div class="row-meta"><span>${esc(c.area)}</span><span><i class="fa-regular fa-clock"></i>${fmtHours(c.hours)}</span>
+          ${c.dueDate && c.status !== 'APROBADO' ? `<span><i class="fa-regular fa-calendar"></i>Fecha límite ${fmtDate(c.dueDate, false)}</span>` : ''}</div></div>
+      </div>
+      <div class="row-side">
+        ${isOverdue(c) ? '<span class="chip chip-overdue">Vencido</span>' : ''}
+        ${statusChip(c.status)}
+        ${c.status === 'EN_CURSO' ? `<div class="bar" style="width:80px" aria-label="Avance ${c.progress}%"><i style="width:${c.progress}%"></i></div>` : ''}
+        ${btn}
+      </div></div>`;
+  }
+
+  /* ============ Mi aprendizaje ============ */
   function sortAssigned(list) {
     const rank = { EVALUACION: 0, EN_CURSO: 1, PENDIENTE: 2, APROBADO: 3 };
     return list.slice().sort((a, b) => {
@@ -803,39 +1026,20 @@
       return (rank[a.status] - rank[b.status]) || (b.required - a.required);
     });
   }
-  function isOverdue(c) { return c.status !== 'APROBADO' && c.dueDate && new Date(c.dueDate) < new Date(); }
-  function courseRow(c, opts = {}) {
-    const st = STATUS[c.status] || STATUS.PENDIENTE;
-    const btn = c.status === 'APROBADO'
-      ? `<a class="btn btn-ghost btn-sm" href="#/constancia/${encodeURIComponent(c.certificate)}"><i class="fa-solid fa-award" style="color:var(--gold)"></i> Constancia</a>`
-      : `<a class="btn ${c.status === 'EVALUACION' ? 'btn-gold' : 'btn-primary'} btn-sm" href="#/curso/${encodeURIComponent(c.id)}">${esc(st.action)}</a>`;
-    return `<div class="row">
-      <div>
-        <div class="row-title"><button onclick="location.hash='#/curso/${encodeURIComponent(c.id)}'">${esc(c.title)}</button></div>
-        <div class="row-meta">
-          <span>${esc(c.area)}</span><span><i class="fa-regular fa-clock"></i>${fmtHours(c.hours)}</span>
-          <span>${c.lessonCount} ${c.lessonCount === 1 ? 'módulo' : 'módulos'}</span>
-          ${c.dueDate && c.status !== 'APROBADO' ? `<span><i class="fa-regular fa-calendar"></i>Fecha límite ${fmtDate(c.dueDate, false)}</span>` : ''}
-        </div>
-      </div>
-      <div class="row-side">
-        ${isOverdue(c) ? '<span class="chip chip-overdue">Vencido</span>' : ''}
-        ${opts.showAssigned && c.assigned ? '<span class="chip chip-req">Asignado</span>' : ''}
-        ${statusChip(c.status)}
-        ${c.status === 'EN_CURSO' ? `<div class="bar" style="width:80px" aria-label="Avance ${c.progress}%"><i style="width:${c.progress}%"></i></div>` : ''}
-        ${btn}
-      </div>
-    </div>`;
-  }
   async function renderHome() {
     const el = $('#view-inicio'); el.innerHTML = loading();
     let data;
     try { data = await getCatalog(true); } catch (ex) { return errorBlock(el, ex, renderHome); }
     const u = session.user, s = data.stats;
     const assigned = sortAssigned(data.courses.filter(c => c.assigned));
-    const pending = assigned.filter(c => c.status !== 'APROBADO');
-    const next = pending[0];
+    const pendingAssigned = assigned.filter(c => c.status !== 'APROBADO');
+    const inProgress = data.courses.filter(c => c.status === 'EN_CURSO' || c.status === 'EVALUACION').sort((a, b) => b.progress - a.progress);
+    let myRoutes = data.routes.filter(r => r.assigned || r.status !== 'PENDIENTE'), suggestedRoutes = false;
+    if (!myRoutes.length) { myRoutes = data.routes.filter(r => r.courseIds.some(id => (data.courses.find(c => c.id === id) || {}).assigned)).slice(0, 2); suggestedRoutes = true; }
+    const recommended = (data.recommended || []).map(id => data.courses.find(c => c.id === id)).filter(Boolean).slice(0, 3);
+    const done = data.courses.filter(c => c.status === 'APROBADO');
     const strip = assigned.map(c => `<i class="${c.status}" title="${esc(c.title)}: ${esc(STATUS[c.status].label)}"></i>`).join('') || '<i></i>';
+    const next = inProgress[0] || pendingAssigned[0];
     el.innerHTML = `
       <div class="record">
         <div>
@@ -854,64 +1058,195 @@
           <div><strong>${s.certificates}</strong><span>Constancias vigentes</span></div>
         </div>
       </div>
-      ${s.overdue ? `<div class="alert alert-bad" style="margin-top:1.2rem"><i class="fa-solid fa-circle-exclamation" style="margin-top:.2rem"></i><span>Tienes ${s.overdue} ${s.overdue === 1 ? 'curso con fecha límite vencida' : 'cursos con fecha límite vencida'}. Complétalos lo antes posible.</span></div>` : ''}
+      ${s.overdue ? `<div class="alert alert-bad" style="margin-top:1.2rem"><i class="fa-solid fa-circle-exclamation" style="margin-top:.2rem"></i><span>Tienes ${plural(s.overdue, 'curso con fecha límite vencida', 'cursos con fecha límite vencida')}. Complétalos lo antes posible.</span></div>` : ''}
       ${next ? `<div class="next">
-        <div><p class="label">Tu siguiente paso</p><h2>${esc(next.title)}</h2>
-          <div class="meta">${statusChip(next.status)}${isOverdue(next) ? '<span class="chip chip-overdue">Vencido</span>' : ''}<span class="chip chip-req">${fmtHours(next.hours)}</span>${next.required ? '<span class="chip chip-req">Obligatorio</span>' : ''}</div></div>
-        <a class="btn ${next.status === 'EVALUACION' ? 'btn-gold' : 'btn-primary'}" href="#/curso/${encodeURIComponent(next.id)}">${esc(STATUS[next.status].action)}</a>
-      </div>` : `<div class="next" style="border-left-color:var(--gold)"><div><p class="label">Expediente al día</p><h2>Acreditaste todos tus cursos asignados</h2><p class="muted" style="margin-top:.4rem">Puedes consultar el catálogo para seguir aprendiendo.</p></div><a class="btn btn-ghost" href="#/cursos">Ver catálogo</a></div>`}
-      <div class="section-title"><h2>Cursos asignados</h2><a class="small" href="#/cursos">Ver catálogo completo</a></div>
-      <div class="ledger">${assigned.length ? assigned.map(c => courseRow(c)).join('') : '<div class="empty"><i class="fa-regular fa-folder-open"></i><strong>Sin cursos asignados por ahora</strong><p>Cuando Capital Humano te asigne un curso aparecerá aquí.</p></div>'}</div>`;
+        <div><p class="label">${inProgress.includes(next) ? 'Continúa donde te quedaste' : 'Tu siguiente paso'}</p><h2>${esc(next.title)}</h2>
+          <div class="meta">${statusChip(next.status)}${isOverdue(next) ? '<span class="chip chip-overdue">Vencido</span>' : ''}<span class="chip chip-req">${fmtHours(next.hours)}</span>${next.status === 'EN_CURSO' ? `<span class="chip chip-req">${next.progress}% avanzado</span>` : ''}</div></div>
+        <a class="btn ${next.status === 'EVALUACION' ? 'btn-gold' : 'btn-primary'}" href="${next.status === 'EVALUACION' ? '#/evaluacion/' : next.status === 'PENDIENTE' ? '#/curso/' : '#/aprender/'}${encodeURIComponent(next.id)}">${esc(STATUS[next.status].action)}</a>
+      </div>` : `<div class="next" style="border-left-color:var(--gold)"><div><p class="label">Expediente al día</p><h2>Acreditaste todos tus cursos asignados</h2><p class="muted" style="margin-top:.4rem">Explora el catálogo para seguir aprendiendo.</p></div><a class="btn btn-ghost" href="#/cursos">Explorar catálogo</a></div>`}
+
+      ${inProgress.length > 1 ? `<div class="section-title"><h2>En curso</h2></div><div class="cards">${inProgress.slice(0, 3).map(courseCard).join('')}</div>` : ''}
+
+      ${myRoutes.length ? `<div class="section-title"><h2>${suggestedRoutes ? 'Rutas que incluyen tus cursos' : 'Mis rutas de aprendizaje'}</h2><a class="small" href="#/cursos?rutas">Ver todas las rutas</a></div>
+        ${suggestedRoutes ? '<p class="small muted" style="margin:-.4rem 0 1rem">Al acreditar todos sus cursos obtienes también la constancia de la ruta.</p>' : ''}
+        <div class="cards cards-routes">${myRoutes.map(r => routeCard(r, data.courses)).join('')}</div>` : ''}
+
+      <div class="section-title"><h2>Cursos asignados</h2><span class="small muted">${pendingAssigned.length ? plural(pendingAssigned.length, 'pendiente', 'pendientes') : 'Todo al día'}</span></div>
+      <div class="ledger">${assigned.length ? assigned.map(courseRow).join('') : '<div class="empty"><i class="fa-regular fa-folder-open"></i><strong>Sin cursos asignados por ahora</strong><p>Cuando Capital Humano te asigne un curso aparecerá aquí.</p></div>'}</div>
+
+      ${recommended.length ? `<div class="section-title"><h2>Recomendados para ti</h2><a class="small" href="#/cursos">Explorar catálogo</a></div>
+        <p class="small muted" style="margin:-.4rem 0 1rem">Según tu área y los cursos que ya iniciaste.</p>
+        <div class="cards">${recommended.map(courseCard).join('')}</div>` : ''}
+
+      ${done.length ? `<div class="section-title"><h2>Terminados</h2><a class="small" href="#/constancias">Ver constancias</a></div>
+        <div class="done-list">${done.map(c => `<a href="#/constancia/${encodeURIComponent(c.certificate)}"><i class="fa-solid fa-award"></i>${esc(c.title)}</a>`).join('')}</div>` : ''}`;
   }
 
   /* ============ Catálogo ============ */
-  const catalogState = { area: 'Todas', q: '', only: false };
+  const catalogState = { tab: 'cursos', area: 'Todas', q: '', only: false };
   async function renderCatalog() {
     const el = $('#view-cursos'); el.innerHTML = loading();
+    if (location.hash.includes('?rutas')) catalogState.tab = 'rutas';
     let data;
     try { data = await getCatalog(); } catch (ex) { return errorBlock(el, ex, renderCatalog); }
-    const areas = ['Todas', ...new Set(data.courses.map(c => c.area))];
+    const areas = [...new Set(data.courses.map(c => c.area).filter(Boolean))];
     el.innerHTML = `
-      <div class="page-head"><div><h1>Catálogo de cursos</h1><p>Cursos clínicos, operativos y administrativos del grupo. Los marcados como asignados forman parte de tu cumplimiento.</p></div></div>
-      <div class="toolbar">
-        <div class="search"><i class="fa-solid fa-magnifying-glass"></i><label class="sr-only" for="cat-q">Buscar curso</label><input class="input" id="cat-q" placeholder="Buscar por nombre o tema" value="${esc(catalogState.q)}"></div>
-        <div class="chips" role="group" aria-label="Filtrar por área">
-          <button class="chip-filter" data-only aria-pressed="${catalogState.only}"><i class="fa-solid fa-thumbtack"></i> Solo asignados</button>
-          ${areas.map(a => `<button class="chip-filter" data-area="${esc(a)}" aria-pressed="${a === catalogState.area}">${esc(a)}</button>`).join('')}
-        </div>
+      <div class="page-head"><div><h1>Catálogo</h1><p>Elige una ruta para formarte en un puesto completo, o toma cursos individuales. Cada curso acreditado genera una constancia verificable.</p></div></div>
+      <div class="tabs" role="tablist" style="margin-bottom:1.2rem">
+        <button class="tab" role="tab" data-ctab="cursos" aria-selected="${catalogState.tab === 'cursos'}">Cursos <span class="tab-count">${data.courses.length}</span></button>
+        <button class="tab" role="tab" data-ctab="rutas" aria-selected="${catalogState.tab === 'rutas'}">Rutas de aprendizaje <span class="tab-count">${data.routes.length}</span></button>
       </div>
-      <div class="ledger" id="cat-list"></div>`;
-    const draw = () => {
-      const q = catalogState.q.toLowerCase();
-      const list = data.courses.filter(c => (catalogState.area === 'Todas' || c.area === catalogState.area) && (!catalogState.only || c.assigned) && (!q || (c.title + ' ' + c.description + ' ' + c.area).toLowerCase().includes(q)));
-      $('#cat-list').innerHTML = list.length ? list.map(c => courseRow(c, { showAssigned: true })).join('') : '<div class="empty"><i class="fa-solid fa-magnifying-glass"></i><strong>No hay cursos con ese criterio</strong><p>Prueba con otra palabra o selecciona otra área.</p></div>';
+      <div id="cat-body"></div>`;
+    const drawCourses = () => {
+      const body = $('#cat-body');
+      body.innerHTML = `
+        <div class="cat-areas" role="group" aria-label="Filtrar por categoría">
+          <button class="area-tile" data-area="Todas" aria-pressed="${catalogState.area === 'Todas'}"><i class="fa-solid fa-layer-group" style="background:var(--ink)"></i><span>Todas<small>${plural(data.courses.length, 'curso', 'cursos')}</small></span></button>
+          ${areas.map(a => { const k = catOf(a), n = data.courses.filter(c => c.area === a).length; return `<button class="area-tile" data-area="${esc(a)}" aria-pressed="${catalogState.area === a}"><i class="fa-solid ${k.icon}" style="background:${k.color}"></i><span>${esc(a)}<small>${plural(n, 'curso', 'cursos')}</small></span></button>`; }).join('')}
+        </div>
+        <div class="toolbar" style="grid-template-columns:1fr auto;align-items:center">
+          <div class="search"><i class="fa-solid fa-magnifying-glass"></i><label class="sr-only" for="cat-q">Buscar curso</label><input class="input" id="cat-q" placeholder="Buscar por nombre o tema" value="${esc(catalogState.q)}"></div>
+          <button class="chip-filter" data-only aria-pressed="${catalogState.only}"><i class="fa-solid fa-thumbtack"></i> Solo asignados</button>
+        </div>
+        <div class="cards" id="cat-list"></div>`;
+      const draw = () => {
+        const q = norm(catalogState.q);
+        const list = data.courses.filter(c => (catalogState.area === 'Todas' || c.area === catalogState.area) && (!catalogState.only || c.assigned) && (!q || norm(c.title + ' ' + c.description + ' ' + c.area).includes(q)));
+        $('#cat-list').innerHTML = list.length ? list.map(courseCard).join('') : '<div class="panel empty" style="grid-column:1/-1"><i class="fa-solid fa-magnifying-glass"></i><strong>No hay cursos con ese criterio</strong><p>Prueba con otra palabra o elige otra categoría.</p></div>';
+      };
+      draw();
+      $('#cat-q').addEventListener('input', e => { catalogState.q = e.target.value; draw(); });
+      $$('[data-area]', body).forEach(b => b.onclick = () => { catalogState.area = b.dataset.area; $$('[data-area]', body).forEach(x => x.setAttribute('aria-pressed', x === b)); draw(); });
+      $('[data-only]', body).onclick = e => { catalogState.only = !catalogState.only; e.currentTarget.setAttribute('aria-pressed', catalogState.only); draw(); };
     };
+    const drawRoutes = () => {
+      $('#cat-body').innerHTML = data.routes.length
+        ? `<div class="cards cards-routes">${data.routes.map(r => routeCard(r, data.courses)).join('')}</div>`
+        : '<div class="panel empty"><i class="fa-solid fa-route"></i><strong>Aún no hay rutas publicadas</strong><p>Capital Humano las agregará próximamente.</p></div>';
+    };
+    const draw = () => (catalogState.tab === 'rutas' ? drawRoutes : drawCourses)();
+    $$('[data-ctab]', el).forEach(t => t.onclick = () => { catalogState.tab = t.dataset.ctab; $$('[data-ctab]', el).forEach(x => x.setAttribute('aria-selected', x === t)); draw(); });
     draw();
-    $('#cat-q').addEventListener('input', e => { catalogState.q = e.target.value; draw(); });
-    $$('[data-area]', el).forEach(b => b.onclick = () => { catalogState.area = b.dataset.area; $$('[data-area]', el).forEach(x => x.setAttribute('aria-pressed', x === b)); draw(); });
-    $('[data-only]', el).onclick = e => { catalogState.only = !catalogState.only; e.currentTarget.setAttribute('aria-pressed', catalogState.only); draw(); };
   }
 
-  /* ============ Curso ============ */
+  /* ============ Ficha del curso ============ */
+  function topicGroups(lessons) {
+    const groups = [];
+    lessons.forEach(l => {
+      const t = l.topic || '';
+      if (!groups.length || groups[groups.length - 1].topic !== t) groups.push({ topic: t, lessons: [] });
+      groups[groups.length - 1].lessons.push(l);
+    });
+    return groups;
+  }
+  function courseCta(c) {
+    if (c.status === 'APROBADO') return `<a class="btn btn-primary btn-block" href="#/constancia/${encodeURIComponent(c.certificate)}"><i class="fa-solid fa-award"></i> Ver constancia</a><a class="btn btn-ghost btn-block" style="margin-top:.6rem" href="#/aprender/${encodeURIComponent(c.id)}">Repasar contenido</a>`;
+    if (c.status === 'EVALUACION') return `<a class="btn btn-gold btn-block" href="#/evaluacion/${encodeURIComponent(c.id)}"><i class="fa-solid fa-clipboard-check"></i> Presentar evaluación</a><a class="btn btn-ghost btn-block" style="margin-top:.6rem" href="#/aprender/${encodeURIComponent(c.id)}">Repasar contenido</a>`;
+    return `<a class="btn btn-primary btn-block" href="#/aprender/${encodeURIComponent(c.id)}">${c.status === 'EN_CURSO' ? '<i class="fa-solid fa-play"></i> Continuar curso' : '<i class="fa-solid fa-play"></i> Iniciar curso'}</a>`;
+  }
+  async function renderFicha(id) {
+    const el = $('#view-ficha'); el.innerHTML = loading();
+    let c;
+    try { c = (await api('course', { courseId: id })).course; } catch (ex) { return errorBlock(el, ex, () => renderFicha(id)); }
+    const cat = catOf(c.area), groups = topicGroups(c.lessons);
+    const counts = ['video', 'lectura', 'practica'].map(t => [t, c.lessons.filter(l => l.type === t).length]).filter(x => x[1]);
+    el.innerHTML = `
+      <a class="back" href="#/cursos"><i class="fa-solid fa-arrow-left"></i> Catálogo</a>
+      ${c.active === false ? '<div class="preview-banner"><i class="fa-solid fa-eye" style="margin-top:.2rem"></i><span>Vista previa: este curso está inactivo y los colaboradores no lo ven. Actívalo desde Administración → Cursos.</span></div>' : ''}
+      <header class="ficha-hero" style="--cat:${cat.color}">
+        <div class="ficha-hero-in">
+          <div class="ficha-icon">${c.image ? `<img src="${esc(c.image)}" alt="">` : `<i class="fa-solid ${cat.icon}"></i>`}</div>
+          <div>
+            <div class="ficha-tags"><span>${esc(c.area || 'General')}</span>${c.level ? `<span>${esc(c.level)}</span>` : ''}${c.required ? '<span>Obligatorio</span>' : ''}${c.assigned && c.status !== 'APROBADO' ? '<span>Asignado a ti</span>' : ''}</div>
+            <h1>${esc(c.title)}</h1>
+            <p>${esc(c.description)}</p>
+          </div>
+        </div>
+      </header>
+      <div class="ficha-grid">
+        <div>
+          ${c.objectives && c.objectives.length ? `<section class="ficha-sec"><h2>Lo que aprenderás</h2><ul class="objectives">${c.objectives.map(o => `<li><i class="fa-solid fa-check"></i><span>${esc(o)}</span></li>`).join('')}</ul></section>` : ''}
+          ${c.audience ? `<section class="ficha-sec"><h2>A quién va dirigido</h2><p>${esc(c.audience)}</p></section>` : ''}
+          <section class="ficha-sec"><h2>Temario</h2>
+            <p class="small muted" style="margin:-.3rem 0 1rem">${plural(c.lessons.length, 'módulo', 'módulos')}${counts.length ? ': ' + counts.map(([t, n]) => `${n} ${TYPE_LABEL[t].toLowerCase()}${n > 1 ? 's' : ''}`).join(', ') : ''}, y una evaluación final de ${plural(c.questionCount, 'pregunta', 'preguntas')}.</p>
+            <div class="syllabus">${groups.map((g, gi) => `
+              ${g.topic ? `<h3><span>Tema ${gi + 1}</span>${esc(g.topic)}</h3>` : ''}
+              <ol>${g.lessons.map(l => `<li class="${l.done ? 'done' : ''}"><i class="fa-solid ${l.done ? 'fa-circle-check' : TYPE_ICON[l.type]}"></i><span>${esc(l.title)}</span><small>${TYPE_LABEL[l.type]}${l.duration ? ', ' + esc(l.duration) : ''}</small></li>`).join('')}</ol>`).join('')}
+              <h3><span>Final</span>Evaluación</h3>
+              <ol><li class="${c.status === 'APROBADO' ? 'done' : ''}"><i class="fa-solid ${c.status === 'APROBADO' ? 'fa-circle-check' : 'fa-clipboard-check'}"></i><span>Evaluación final</span><small>${plural(c.questionCount, 'pregunta', 'preguntas')}, mínimo ${c.minScore}%</small></li></ol>
+            </div>
+          </section>
+          ${c.routes && c.routes.length ? `<section class="ficha-sec"><h2>Forma parte de</h2><div class="route-links">${c.routes.map(r => `<a href="#/ruta/${encodeURIComponent(r.id)}"><i class="fa-solid fa-route"></i>${esc(r.title)}</a>`).join('')}</div></section>` : ''}
+        </div>
+        <aside class="panel panel-pad ficha-aside">
+          ${c.status !== 'PENDIENTE' ? `<div style="display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:.5rem"><strong style="color:var(--ink)">Tu avance</strong><span>${c.status === 'APROBADO' ? '100' : c.progress}%</span></div><div class="bar" style="max-width:none;margin-bottom:1.2rem"><i style="width:${c.status === 'APROBADO' ? 100 : c.progress}%"></i></div>` : ''}
+          ${courseCta(c)}
+          <dl class="facts">
+            <dt><i class="fa-regular fa-clock"></i> Duración</dt><dd>${fmtHours(c.hours)}</dd>
+            <dt><i class="fa-solid fa-layer-group"></i> Módulos</dt><dd>${c.lessons.length}</dd>
+            ${c.level ? `<dt><i class="fa-solid fa-signal"></i> Nivel</dt><dd>${esc(c.level)}</dd>` : ''}
+            <dt><i class="fa-solid fa-clipboard-check"></i> Para acreditar</dt><dd>${c.minScore}% en la evaluación</dd>
+            <dt><i class="fa-solid fa-award"></i> Constancia</dt><dd>Verificable con QR</dd>
+            ${c.dueDate && c.status !== 'APROBADO' ? `<dt><i class="fa-regular fa-calendar"></i> Fecha límite</dt><dd>${fmtDate(c.dueDate)}</dd>` : ''}
+            ${c.status === 'APROBADO' ? `<dt><i class="fa-solid fa-star"></i> Calificación</dt><dd>${c.bestScore}%</dd>` : ''}
+          </dl>
+        </aside>
+      </div>`;
+  }
+
+  /* ============ Ruta ============ */
+  async function renderRoute(id) {
+    const el = $('#view-ruta'); el.innerHTML = loading();
+    let r;
+    try { r = (await api('route', { routeId: id })).route; } catch (ex) { return errorBlock(el, ex, () => renderRoute(id)); }
+    const nextIdx = r.courses.findIndex(c => c.status !== 'APROBADO');
+    el.innerHTML = `
+      <a class="back" href="#/cursos?rutas"><i class="fa-solid fa-arrow-left"></i> Rutas de aprendizaje</a>
+      <header class="route-hero">
+        <span class="rc-kicker" style="color:#9CC9EE"><i class="fa-solid fa-route"></i> Ruta de aprendizaje</span>
+        <h1>${esc(r.title)}</h1>
+        <p>${esc(r.description)}</p>
+        <div class="route-meter">
+          <div class="meter-top"><span class="pct">${r.progress}%</span><span>${r.approved} de ${r.courseCount} cursos acreditados · ${fmtHours(r.hours)} en total</span></div>
+          <div class="strip on-dark">${r.courses.map(c => `<i class="${c.status}" title="${esc(c.title)}"></i>`).join('')}</div>
+        </div>
+        ${r.dueDate && r.status !== 'APROBADO' ? `<p class="small" style="color:#C9DCEB;margin-top:1rem"><i class="fa-regular fa-calendar"></i> Fecha límite: ${fmtDate(r.dueDate)}</p>` : ''}
+      </header>
+      ${r.status === 'APROBADO' && r.certificate ? `<div class="next" style="border-left-color:var(--gold);margin-bottom:1.6rem"><div><p class="label">Ruta acreditada</p><h2>Obtuviste la constancia de la ruta</h2><p class="muted" style="margin-top:.3rem">Incluye todos los cursos y las horas acumuladas.</p></div><a class="btn btn-primary" href="#/constancia/${encodeURIComponent(r.certificate)}"><i class="fa-solid fa-award"></i> Ver constancia de ruta</a></div>`
+        : `<p class="small muted" style="margin:0 0 1.2rem"><i class="fa-solid fa-circle-info"></i> Acredita todos los cursos para obtener la constancia de la ruta, además de la constancia de cada curso.</p>`}
+      <ol class="route-steps">
+        ${r.courses.map((c, i) => { const cat = catOf(c.area); return `<li class="${c.status}${i === nextIdx ? ' current' : ''}">
+          <span class="rs-num">${c.status === 'APROBADO' ? '<i class="fa-solid fa-check"></i>' : i + 1}</span>
+          <div class="rs-card">
+            <div class="rs-main"><span class="cc-cat" style="color:${cat.color}"><i class="fa-solid ${cat.icon}"></i> ${esc(c.area)}</span>
+              <h3><a class="plain" href="#/curso/${encodeURIComponent(c.id)}">${esc(c.title)}</a></h3>
+              <p class="small muted">${esc(c.description)}</p>
+              <div class="row-meta" style="margin-top:.5rem"><span><i class="fa-regular fa-clock"></i>${fmtHours(c.hours)}</span><span>${plural(c.lessonCount, 'módulo', 'módulos')}</span></div></div>
+            <div class="rs-side">${statusChip(c.status)}${c.status === 'APROBADO' ? `<a class="btn btn-ghost btn-sm" href="#/constancia/${encodeURIComponent(c.certificate)}">Constancia</a>` : `<a class="btn ${i === nextIdx ? 'btn-primary' : 'btn-ghost'} btn-sm" href="#/curso/${encodeURIComponent(c.id)}">${c.status === 'PENDIENTE' ? 'Ver curso' : esc(STATUS[c.status].action)}</a>`}</div>
+          </div></li>`; }).join('')}
+      </ol>`;
+  }
+
+  /* ============ Reproductor del curso ============ */
   const player = { course: null, lesson: 0, timer: null, video: null };
   function stopMedia() {
     clearInterval(player.timer); player.timer = null;
     if (player.video) { player.video.pause(); player.video = null; }
   }
-  async function renderCourse(id) {
+  async function renderPlayer(id) {
     const el = $('#view-curso'); el.innerHTML = loading();
     try { player.course = (await api('course', { courseId: id })).course; }
-    catch (ex) { return errorBlock(el, ex, () => renderCourse(id)); }
+    catch (ex) { return errorBlock(el, ex, () => renderPlayer(id)); }
     const c = player.course;
     const firstOpen = c.lessons.findIndex(l => !l.done);
     player.lesson = firstOpen < 0 ? 0 : firstOpen;
     el.innerHTML = `
-      <a class="back" href="#/cursos"><i class="fa-solid fa-arrow-left"></i> Catálogo</a>
-      <div class="course-head" style="margin-bottom:1.4rem">
-        <div style="display:flex;flex-wrap:wrap;gap:.45rem"><span class="chip chip-req">${esc(c.area)}</span><span class="chip chip-req">${fmtHours(c.hours)}</span>${c.required ? '<span class="chip chip-req">Obligatorio</span>' : ''}<span id="course-status-chip">${statusChip(c.status)}</span></div>
-        <h1>${esc(c.title)}</h1><p>${esc(c.description)}</p>
+      <a class="back" href="#/curso/${encodeURIComponent(c.id)}"><i class="fa-solid fa-arrow-left"></i> Información del curso</a>
+      <div class="course-head" style="margin-bottom:1.2rem">
+        <div style="display:flex;flex-wrap:wrap;gap:.45rem"><span class="chip chip-req">${esc(c.area)}</span><span class="chip chip-req">${fmtHours(c.hours)}</span><span id="course-status-chip">${statusChip(c.status)}</span></div>
+        <h1>${esc(c.title)}</h1>
       </div>
-      ${c.active === false ? '<div class="preview-banner"><i class="fa-solid fa-eye" style="margin-top:.2rem"></i><span>Vista previa: este curso está inactivo y los colaboradores no lo ven. Actívalo desde Administración → Cursos.</span></div>' : ''}
+      ${c.active === false ? '<div class="preview-banner"><i class="fa-solid fa-eye" style="margin-top:.2rem"></i><span>Vista previa de un curso inactivo.</span></div>' : ''}
       ${c.status === 'APROBADO' ? `<div class="alert alert-ok" style="margin-bottom:1.2rem"><i class="fa-solid fa-award" style="margin-top:.2rem"></i><span>Acreditaste este curso con ${c.bestScore}%. Puedes repasar el contenido cuando quieras. <a href="#/constancia/${encodeURIComponent(c.certificate)}">Ver constancia</a></span></div>` : ''}
       <div class="course-grid">
         <div>
@@ -920,10 +1255,10 @@
         </div>
         <aside class="panel course-aside">
           <div class="panel-pad" style="padding-bottom:.9rem">
-            <div style="display:flex;justify-content:space-between;font-size:.9rem"><strong style="color:var(--ink)">Avance del curso</strong><span id="c-progress-label"></span></div>
+            <div style="display:flex;justify-content:space-between;font-size:.9rem"><strong style="color:var(--ink)">Temario</strong><span id="c-progress-label"></span></div>
             <div class="bar" style="max-width:none;margin-top:.55rem"><i id="c-progress-bar"></i></div>
           </div>
-          <ol class="modules" id="module-list"></ol>
+          <div id="module-list"></div>
           <div class="quiz-cta" id="quiz-cta"></div>
         </aside>
       </div>`;
@@ -932,38 +1267,53 @@
   function lessonUnlocked(i) { return player.course.lessons.slice(0, i).every(l => l.done); }
   function drawModules() {
     const c = player.course, done = c.lessons.filter(l => l.done).length, pct = Math.round(done / c.lessons.length * 100);
-    $('#c-progress-label').textContent = pct + '%';
+    $('#c-progress-label').textContent = `${done} de ${c.lessons.length}`;
     $('#c-progress-bar').style.width = pct + '%';
-    $('#module-list').innerHTML = c.lessons.map((l, i) => {
-      const open = lessonUnlocked(i);
-      return `<li class="${l.done ? 'done' : ''}"><button data-lesson="${i}" ${open ? '' : 'disabled'} ${i === player.lesson ? 'aria-current="step"' : ''}>
-        <span class="dot">${l.done ? '<i class="fa-solid fa-check"></i>' : open ? i + 1 : '<i class="fa-solid fa-lock"></i>'}</span>
-        <span><span class="t">${esc(l.title)}</span><br><span class="d">${l.video ? '<i class="fa-solid fa-play"></i> Video' : '<i class="fa-solid fa-book-open"></i> Lectura'}, ${esc(l.duration)}</span></span>
-      </button></li>`;
-    }).join('');
-    $$('#module-list [data-lesson]').forEach(b => b.onclick = () => { player.lesson = Number(b.dataset.lesson); drawLesson(); });
+    $('#module-list').innerHTML = topicGroups(c.lessons).map((g, gi) => `
+      ${g.topic ? `<p class="topic-head"><span>Tema ${gi + 1}</span>${esc(g.topic)}</p>` : ''}
+      <ol class="modules">${g.lessons.map(l => {
+        const i = l.index, open = lessonUnlocked(i);
+        return `<li class="${l.done ? 'done' : ''}"><button data-lesson="${i}" ${open ? '' : 'disabled'} ${i === player.lesson ? 'aria-current="step"' : ''}>
+          <span class="dot">${l.done ? '<i class="fa-solid fa-check"></i>' : open ? i + 1 : '<i class="fa-solid fa-lock"></i>'}</span>
+          <span><span class="t">${esc(l.title)}</span><br><span class="d"><i class="fa-solid ${TYPE_ICON[l.type]}"></i> ${TYPE_LABEL[l.type]}${l.duration ? ', ' + esc(l.duration) : ''}</span></span>
+        </button></li>`;
+      }).join('')}</ol>`).join('');
+    $$('#module-list [data-lesson]').forEach(b => b.onclick = () => { player.lesson = Number(b.dataset.lesson); drawLesson(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
     const allDone = done === c.lessons.length;
     $('#quiz-cta').innerHTML = c.status === 'APROBADO'
       ? `<a class="btn btn-ghost btn-block" href="#/constancia/${encodeURIComponent(c.certificate)}"><i class="fa-solid fa-award" style="color:var(--gold)"></i> Ver constancia</a>`
       : `<a class="btn btn-gold btn-block ${allDone ? '' : 'disabled'}" ${allDone ? `href="#/evaluacion/${encodeURIComponent(c.id)}"` : 'aria-disabled="true" style="opacity:.45;pointer-events:none"'}><i class="fa-solid fa-clipboard-check"></i> Presentar evaluación</a>
-         <p class="tiny muted" style="margin-top:.6rem;text-align:center">${allDone ? `${c.questionCount} preguntas; necesitas ${c.minScore}% para acreditar.` : 'Se habilita al completar todos los módulos.'}</p>`;
+         <p class="tiny muted" style="margin-top:.6rem;text-align:center">${allDone ? `${plural(c.questionCount, 'pregunta', 'preguntas')}; necesitas ${c.minScore}% para acreditar.` : 'Se habilita al completar todos los módulos.'}</p>`;
+  }
+  function materialsBlock(l) {
+    if (!l.materials || !l.materials.length) return '';
+    const icon = u => /\.pdf(\?|$)/i.test(u) ? 'fa-file-pdf' : /\.(docx?|odt)(\?|$)/i.test(u) ? 'fa-file-word' : /\.(xlsx?|csv)(\?|$)/i.test(u) ? 'fa-file-excel' : /\.(pptx?)(\?|$)/i.test(u) ? 'fa-file-powerpoint' : 'fa-link';
+    return `<div class="materials"><h3>Material de apoyo</h3>${l.materials.map(m => `<a href="${esc(m.url)}" target="_blank" rel="noopener"><i class="fa-solid ${icon(m.url)}"></i><span>${esc(m.nombre)}</span><i class="fa-solid fa-arrow-up-right-from-square" style="margin-left:auto;font-size:.8rem"></i></a>`).join('')}</div>`;
   }
   function drawLesson() {
     stopMedia();
     const c = player.course, i = player.lesson, l = c.lessons[i];
     drawModules();
     const media = $('#lesson-media');
-    if (l.video) {
+    media.classList.toggle('media-short', l.type === 'practica');
+    if (l.type === 'video') {
       media.innerHTML = `<video id="lesson-video" controls playsinline preload="metadata" controlslist="nodownload noplaybackrate" disablepictureinpicture><source src="${esc(l.video)}" type="video/mp4">Tu navegador no puede reproducir este video.</video>${l.captions ? '<div class="caption" id="lesson-caption" hidden></div>' : ''}`;
       wireVideo($('#lesson-video'), l);
+    } else if (l.type === 'practica') {
+      media.innerHTML = `<div class="reading"><div><i class="fa-solid fa-pen-to-square"></i><strong>${esc(l.title)}</strong><p class="small" style="margin-top:.3rem">Práctica sin calificación: responde correctamente para avanzar.</p></div></div>`;
     } else {
-      media.innerHTML = `<div class="reading"><div><i class="fa-solid fa-book-open-reader"></i><strong>${esc(l.title)}</strong><p class="small" style="margin-top:.3rem">Lectura del módulo, ${esc(l.duration)}</p></div></div>`;
+      media.innerHTML = `<div class="reading"><div><i class="fa-solid fa-book-open-reader"></i><strong>${esc(l.title)}</strong><p class="small" style="margin-top:.3rem">Lectura del módulo${l.duration ? ', ' + esc(l.duration) : ''}</p></div></div>`;
     }
     const last = i === c.lessons.length - 1;
     $('#lesson-body').innerHTML = `
-      <p class="kicker">Módulo ${i + 1} de ${c.lessons.length}</p>
+      <p class="kicker">${l.topic ? esc(l.topic) + ' · ' : ''}Módulo ${i + 1} de ${c.lessons.length}</p>
       <h2>${esc(l.title)}</h2>
-      <div class="text">${String(l.text || '').split('\n').map(p => `<p style="margin-top:.6rem">${esc(p)}</p>`).join('')}</div>
+      ${l.text ? `<div class="text">${String(l.text).split('\n').map(p => `<p style="margin-top:.6rem">${esc(p)}</p>`).join('')}</div>` : ''}
+      ${l.type === 'practica' ? `<div class="practice" id="practice">${l.practice.map((q, k) => `
+        <fieldset class="pq" data-pq="${k}"><legend><span>${k + 1}</span>${esc(q.text)}</legend>
+          ${q.options.map((o, j) => `<label class="pq-opt"><input type="radio" name="pq-${k}" value="${j}" ${l.done ? 'disabled' : ''}><span>${esc(o)}</span></label>`).join('')}
+          <p class="pq-fb" hidden></p></fieldset>`).join('')}</div>` : ''}
+      ${materialsBlock(l)}
       <div class="lesson-actions">
         <button class="btn btn-ghost" id="prev-lesson" ${i === 0 ? 'disabled' : ''}><i class="fa-solid fa-arrow-left"></i> Anterior</button>
         <div style="display:flex;gap:.7rem;align-items:center;flex-wrap:wrap;justify-content:flex-end">
@@ -973,15 +1323,24 @@
       </div>`;
     $('#prev-lesson').onclick = () => { player.lesson--; drawLesson(); };
     const next = $('#lesson-next'), hint = $('#lesson-hint');
-    const goNext = () => { if (!last) { player.lesson++; drawLesson(); } else document.querySelector('#quiz-cta a')?.focus(); };
+    const goNext = () => { if (!last) { player.lesson++; drawLesson(); window.scrollTo({ top: 0, behavior: 'smooth' }); } else document.querySelector('#quiz-cta a')?.focus(); };
     if (l.done) {
       next.textContent = last ? 'Módulos completos' : 'Siguiente módulo';
       next.disabled = last; next.onclick = goNext;
-      hint.textContent = '';
+      hint.textContent = l.type === 'practica' ? 'Práctica completada.' : '';
+      return;
+    }
+    if (l.type === 'practica') {
+      next.innerHTML = '<i class="fa-solid fa-check-double"></i> Revisar respuestas';
+      const update = () => { next.disabled = l.practice.some((_, k) => !$(`input[name="pq-${k}"]:checked`)); };
+      update();
+      $('#practice').addEventListener('change', update);
+      next.onclick = () => checkPractice(i);
+      hint.textContent = 'Responde todas las preguntas.';
       return;
     }
     api('startLesson', { courseId: c.id, lesson: i }).catch(ex => toast(ex.message, 'bad'));
-    if (l.video) {
+    if (l.type === 'video') {
       next.textContent = 'Marcar como visto'; next.disabled = true;
       hint.textContent = 'Reproduce el video completo para continuar.';
     } else {
@@ -995,6 +1354,37 @@
       hint.textContent = '';
     }
     next.onclick = () => completeLesson(i);
+  }
+  async function checkPractice(i) {
+    const c = player.course, l = c.lessons[i], btn = $('#lesson-next');
+    const answers = l.practice.map((_, k) => Number($(`input[name="pq-${k}"]:checked`).value));
+    btn.disabled = true;
+    let r;
+    try { r = await api('checkPractice', { courseId: c.id, lesson: i, answers }); }
+    catch (ex) { toast(ex.message, 'bad'); btn.disabled = false; return; }
+    r.results.forEach((res, k) => {
+      const fs = $(`[data-pq="${k}"]`), fb = $('.pq-fb', fs);
+      fs.classList.toggle('ok', res.correct); fs.classList.toggle('bad', !res.correct);
+      fb.hidden = false;
+      fb.innerHTML = res.correct ? `<i class="fa-solid fa-circle-check"></i> Correcto.${res.explanation ? ' ' + esc(res.explanation) : ''}` : '<i class="fa-solid fa-circle-xmark"></i> No es correcto. Revisa el contenido y vuelve a intentarlo.';
+      if (res.correct) $$('input', fs).forEach(x => x.disabled = true);
+    });
+    if (r.passed) {
+      c.lessons.forEach((x, k) => { x.done = r.completedLessons.includes(k); });
+      cache.catalog = null;
+      const allDone = c.lessons.every(x => x.done);
+      if (allDone) { c.status = 'EVALUACION'; $('#course-status-chip').innerHTML = statusChip('EVALUACION'); }
+      else if (c.status === 'PENDIENTE') { c.status = 'EN_CURSO'; $('#course-status-chip').innerHTML = statusChip('EN_CURSO'); }
+      toast(allDone ? 'Práctica completada. Ya puedes presentar la evaluación.' : 'Práctica completada.', 'ok');
+      drawModules();
+      const last = i === c.lessons.length - 1;
+      btn.disabled = last; btn.textContent = last ? 'Módulos completos' : 'Siguiente módulo';
+      btn.onclick = () => { player.lesson = i + 1; drawLesson(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+      $('#lesson-hint').textContent = '';
+    } else {
+      btn.disabled = false; btn.innerHTML = '<i class="fa-solid fa-rotate"></i> Revisar de nuevo';
+      $('#lesson-hint').textContent = `${r.results.filter(x => x.correct).length} de ${r.results.length} correctas.`;
+    }
   }
   function wireVideo(video, l) {
     player.video = video;
@@ -1026,8 +1416,8 @@
       cache.catalog = null;
       const allDone = c.lessons.every(l => l.done);
       if (allDone) { c.status = 'EVALUACION'; $('#course-status-chip').innerHTML = statusChip('EVALUACION'); toast('Completaste todos los módulos. Ya puedes presentar la evaluación.', 'ok'); }
-      else toast('Módulo completado.', 'ok');
-      if (!allDone && i < c.lessons.length - 1) { player.lesson = i + 1; drawLesson(); }
+      else { if (c.status === 'PENDIENTE') { c.status = 'EN_CURSO'; $('#course-status-chip').innerHTML = statusChip('EN_CURSO'); } toast('Módulo completado.', 'ok'); }
+      if (!allDone && i < c.lessons.length - 1) { player.lesson = i + 1; drawLesson(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
       else { drawLesson(); }
     } catch (ex) {
       toast(ex.message, 'bad');
@@ -1093,6 +1483,7 @@
       <h2>${r.passed ? 'Evaluación acreditada' : 'Aún no alcanzas la calificación mínima'}</h2>
       <p>${r.correct} de ${r.total} respuestas correctas. ${r.passed ? (r.newCertificate ? 'Tu constancia ya está disponible.' : 'Tu constancia vigente se conserva.') : `Se requiere ${r.minScore}%. Repasa los módulos y vuelve a intentarlo.`}</p>
       ${r.folio ? `<p class="tiny">Folio ${esc(r.folio)}</p>` : ''}
+      ${(r.routeCertificates || []).map(x => `<div class="next" style="border-left-color:var(--gold);text-align:left;margin-top:1.4rem"><div><p class="label">Ruta completada</p><h2>${esc(x.title)}</h2><p class="muted" style="margin-top:.3rem">Acreditaste todos los cursos de la ruta y obtuviste su constancia.</p></div><a class="btn btn-gold" href="#/constancia/${encodeURIComponent(x.folio)}"><i class="fa-solid fa-route"></i> Constancia de ruta</a></div>`).join('')}
       <div class="actions">
         <a class="btn btn-ghost" href="#/curso/${encodeURIComponent(quiz.courseId)}">Volver al curso</a>
         ${r.passed ? `<a class="btn btn-primary" href="#/constancia/${encodeURIComponent(r.folio)}"><i class="fa-solid fa-award"></i> Ver constancia</a>` : `<button class="btn btn-primary" id="retry">Intentar de nuevo</button>`}
@@ -1107,9 +1498,9 @@
     try { r = await api('certificates'); } catch (ex) { return errorBlock(el, ex, renderCertificates); }
     el.innerHTML = `<div class="page-head"><div><h1>Mis constancias</h1><p>Se emiten al acreditar una evaluación. Cada una tiene folio y un código QR que cualquier persona puede verificar.</p></div></div>
       <div class="ledger">${r.certificates.length ? r.certificates.map(c => `<div class="row">
-        <div><div class="row-title">${esc(c.course)}</div>
-          <div class="row-meta"><span>Folio ${esc(c.folio)}</span><span>Emitida el ${fmtDate(c.issuedAt, false)}</span>${c.expiresAt ? `<span>Vigente hasta ${fmtDate(c.expiresAt, false)}</span>` : ''}<span>Calificación ${c.score}%</span></div></div>
-        <div class="row-side">${certChip(c.status)}${c.status === 'VIGENTE' ? `<a class="btn btn-primary btn-sm" href="#/constancia/${encodeURIComponent(c.folio)}">Ver y descargar</a>` : c.status === 'VENCIDA' ? `<a class="btn btn-ghost btn-sm" href="#/curso/${encodeURIComponent(c.courseId)}">Renovar</a>` : ''}</div>
+        <div><div class="row-title">${c.type === 'RUTA' ? '<span class="chip st-EN_CURSO" style="margin-right:.4rem"><i class="fa-solid fa-route"></i> Ruta</span>' : ''}${esc(c.course)}</div>
+          <div class="row-meta"><span>Folio ${esc(c.folio)}</span><span>Emitida el ${fmtDate(c.issuedAt, false)}</span>${c.expiresAt ? `<span>Vigente hasta ${fmtDate(c.expiresAt, false)}</span>` : ''}<span>${c.type === 'RUTA' ? 'Promedio' : 'Calificación'} ${c.score}%</span>${c.type === 'RUTA' ? `<span>${fmtHours(c.hours)}</span>` : ''}</div></div>
+        <div class="row-side">${certChip(c.status)}${c.status === 'VIGENTE' ? `<a class="btn btn-primary btn-sm" href="#/constancia/${encodeURIComponent(c.folio)}">Ver y descargar</a>` : c.status === 'VENCIDA' && c.type !== 'RUTA' ? `<a class="btn btn-ghost btn-sm" href="#/curso/${encodeURIComponent(c.courseId)}">Renovar</a>` : ''}</div>
       </div>`).join('') : '<div class="empty"><i class="fa-solid fa-award"></i><strong>Todavía no tienes constancias</strong><p>Acredita un curso para obtener la primera.</p><a class="btn btn-primary" style="margin-top:1rem" href="#/inicio">Ver mis cursos</a></div>'}</div>`;
   }
   function companyLogo(company) {
@@ -1141,9 +1532,10 @@
           <p class="grant">Se otorga la presente a</p>
           <p class="name">${esc(c.name)}</p>
           <p class="emp">Número de empleado ${esc(c.employeeNumber)}</p>
-          <p class="for">por haber concluido y acreditado satisfactoriamente el curso</p>
+          <p class="for">por haber concluido y acreditado satisfactoriamente ${c.type === 'RUTA' ? 'la ruta de capacitación' : 'el curso'}</p>
           <p class="course">${esc(c.course)}</p>
-          <p class="facts">Duración: ${fmtHours(c.hours)} &nbsp;|&nbsp; Calificación: ${c.score}% &nbsp;|&nbsp; ${fmtDate(c.issuedAt)}${c.expiresAt ? ` &nbsp;|&nbsp; Vigente hasta ${fmtDate(c.expiresAt)}` : ''}</p>
+          ${c.type === 'RUTA' && c.detail && c.detail.length ? `<p class="route-detail">${c.detail.map(esc).join(' &nbsp;·&nbsp; ')}</p>` : ''}
+          <p class="facts">${c.type === 'RUTA' ? 'Duración total' : 'Duración'}: ${fmtHours(c.hours)} &nbsp;|&nbsp; ${c.type === 'RUTA' ? 'Promedio' : 'Calificación'}: ${c.score}% &nbsp;|&nbsp; ${fmtDate(c.issuedAt)}${c.expiresAt ? ` &nbsp;|&nbsp; Vigente hasta ${fmtDate(c.expiresAt)}` : ''}</p>
         </div>
         <div class="bottom">
           ${signBlock(c.signers[0])}
@@ -1214,7 +1606,7 @@
     if (session.user.role !== 'ADMIN') { location.hash = '#/inicio'; return; }
     el.innerHTML = `<div class="page-head"><div><h1>Administración</h1><p>Cumplimiento del personal, asignaciones y control de constancias. Datos en tiempo real de la hoja maestra.</p></div><button class="btn btn-ghost" id="adm-export"><i class="fa-solid fa-file-csv"></i> Exportar reporte</button></div>
       <div class="tabs" role="tablist">
-        ${[['resumen', 'Resumen'], ['personal', 'Personal'], ['cursos', 'Cursos'], ['asignar', 'Asignar curso']].map(([k, l]) => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${adminTab === k}">${l}</button>`).join('')}
+        ${[['resumen', 'Resumen'], ['personal', 'Personal'], ['cursos', 'Cursos'], ['rutas', 'Rutas'], ['asignar', 'Asignar']].map(([k, l]) => `<button class="tab" role="tab" data-tab="${k}" aria-selected="${adminTab === k}">${l}</button>`).join('')}
       </div><div id="adm-body"></div>`;
     $$('[data-tab]', el).forEach(t => t.onclick = () => { if (ed.dirty && !confirm(LEAVE_MSG)) return; ed.dirty = false; adminTab = t.dataset.tab; $$('[data-tab]', el).forEach(x => x.setAttribute('aria-selected', x === t)); drawAdmin(); });
     $('#adm-export').onclick = exportReport;
@@ -1228,6 +1620,11 @@
         body.onclick = e => editorClick(e, body);
         body.oninput = body.onchange = editorInput;
         await drawCoursesAdmin(body);
+      }
+      else if (adminTab === 'rutas') {
+        body.onclick = e => routeClick(e, body);
+        body.oninput = body.onchange = routeInput;
+        await drawRoutesAdmin(body);
       }
       else if (adminTab === 'resumen') { adminData = await api('adminSummary'); drawSummary(body); }
       else if (adminTab === 'personal') drawPeople(body);
@@ -1321,7 +1718,8 @@
     const maxOrder = ed.list.reduce((m, c) => Math.max(m, c.order || 0), 0);
     return {
       id: '', title: '', description: '', area: '', hours: 1, order: maxOrder + 1, required: false, active: true, companies: [],
-      lessons: [{ titulo: '', duracion: '', texto: '', segundosMinimos: 30 }],
+      objectives: [], audience: '', level: '', image: '',
+      lessons: [{ tipo: 'lectura', tema: '', titulo: '', duracion: '', texto: '', segundosMinimos: 30, materiales: [] }],
       quiz: [{ pregunta: '', opciones: ['', '', ''], correcta: null }]
     };
   }
@@ -1346,8 +1744,10 @@
     return `Visible en el catálogo${who}; asígnalo manualmente desde "Asignar curso".`;
   }
 
+  const lt = l => l.tipo === 'practica' ? 'practica' : l.tipo === 'video' || (!l.tipo && l.video) ? 'video' : 'lectura';
   function lessonCard(l, i, n) {
-    const isVideo = l._type ? l._type === 'video' : !!l.video;
+    const type = lt(l), isVideo = type === 'video', isPractice = type === 'practica';
+    const mats = l.materiales || [], pq = l.preguntas || [];
     return `<div class="item" data-lesson-card="${i}">
       <div class="item-head"><strong>Módulo ${i + 1}</strong>
         <div class="item-tools">
@@ -1355,19 +1755,47 @@
           <button class="icon-btn" data-act="down-lesson" data-i="${i}" ${i === n - 1 ? 'disabled' : ''} aria-label="Bajar módulo"><i class="fa-solid fa-arrow-down"></i></button>
           <button class="icon-btn danger" data-act="del-lesson" data-i="${i}" ${n === 1 ? 'disabled' : ''} aria-label="Eliminar módulo"><i class="fa-solid fa-trash"></i></button>
         </div></div>
-      <label class="field"><span>Título del módulo</span><input class="input" data-scope="lesson" data-i="${i}" data-f="titulo" value="${esc(l.titulo)}" maxlength="160"></label>
+      <div class="ed-grid two">
+        <label class="field"><span>Título del módulo</span><input class="input" data-scope="lesson" data-i="${i}" data-f="titulo" value="${esc(l.titulo)}" maxlength="160"></label>
+        <label class="field"><span>Tema <span class="muted" style="font-weight:400">(opcional)</span></span><input class="input" list="dl-topics" data-scope="lesson" data-i="${i}" data-f="tema" value="${esc(l.tema || '')}" maxlength="80" placeholder="Agrupa módulos en el temario"></label>
+      </div>
       <div><span class="small" style="font-weight:600;color:var(--ink);display:block;margin-bottom:.4rem">Tipo de contenido</span>
-        <div class="seg" role="group"><button type="button" data-act="type-lesson" data-i="${i}" data-v="lectura" aria-pressed="${!isVideo}"><i class="fa-solid fa-book-open"></i> Lectura</button><button type="button" data-act="type-lesson" data-i="${i}" data-v="video" aria-pressed="${isVideo}"><i class="fa-solid fa-play"></i> Video</button></div></div>
+        <div class="seg" role="group">
+          <button type="button" data-act="type-lesson" data-i="${i}" data-v="lectura" aria-pressed="${type === 'lectura'}"><i class="fa-solid fa-book-open"></i> Lectura</button>
+          <button type="button" data-act="type-lesson" data-i="${i}" data-v="video" aria-pressed="${isVideo}"><i class="fa-solid fa-play"></i> Video</button>
+          <button type="button" data-act="type-lesson" data-i="${i}" data-v="practica" aria-pressed="${isPractice}"><i class="fa-solid fa-pen-to-square"></i> Práctica</button>
+        </div></div>
       ${isVideo ? `<label class="field"><span>Archivo de video</span><input class="input" data-scope="lesson" data-i="${i}" data-f="video" value="${esc(l.video || '')}" placeholder="nombre-del-video.mp4  o  https://…/video.mp4">
         <small>Sube el .mp4 a la carpeta principal del repositorio en GitHub y escribe aquí su nombre exacto. No funcionan enlaces de Drive ni YouTube.</small>
         <div class="video-status" id="vs-${i}"></div></label>` : ''}
-      <label class="field"><span>${isVideo ? 'Texto de apoyo (opcional)' : 'Contenido del módulo'}</span><textarea class="textarea" data-scope="lesson" data-i="${i}" data-f="texto" rows="${isVideo ? 3 : 6}" maxlength="6000">${esc(l.texto || '')}</textarea>
-        ${isVideo ? '' : '<small>Separa los párrafos con un salto de línea.</small>'}</label>
+      <label class="field"><span>${isVideo ? 'Texto de apoyo (opcional)' : isPractice ? 'Instrucciones (opcional)' : 'Contenido del módulo'}</span><textarea class="textarea" data-scope="lesson" data-i="${i}" data-f="texto" rows="${type === 'lectura' ? 6 : 2}" maxlength="6000" ${type === 'lectura' ? '' : 'style="min-height:60px"'}>${esc(l.texto || '')}</textarea>
+        ${type === 'lectura' ? '<small>Separa los párrafos con un salto de línea.</small>' : ''}</label>
+      ${isPractice ? `<div class="practice-ed"><p class="small" style="font-weight:600;color:var(--ink)">Preguntas de práctica <span class="muted" style="font-weight:400">(no cuentan para la calificación; el colaborador repite hasta acertar todas)</span></p>
+        ${pq.map((q, k) => `<div class="item" style="background:#fff" data-pq-card="${i}-${k}">
+          <div class="item-head"><strong class="small">Pregunta ${k + 1}</strong><button class="icon-btn danger" data-act="del-pq" data-i="${i}" data-k="${k}" ${pq.length === 1 ? 'disabled' : ''} aria-label="Eliminar pregunta de práctica"><i class="fa-solid fa-trash"></i></button></div>
+          <input class="input" data-scope="pq" data-i="${i}" data-k="${k}" data-f="pregunta" value="${esc(q.pregunta || '')}" placeholder="Enunciado" maxlength="600" aria-label="Enunciado">
+          ${q.opciones.map((o, j) => `<div class="opt-row ${q.correcta === j ? 'correct' : ''}">
+            <input type="radio" name="pqc-${i}-${k}" data-scope="pq-correct" data-i="${i}" data-k="${k}" data-j="${j}" ${q.correcta === j ? 'checked' : ''} aria-label="Opción ${String.fromCharCode(65 + j)} correcta">
+            <span class="k">${String.fromCharCode(65 + j)}</span>
+            <input class="input" data-scope="pq-opt" data-i="${i}" data-k="${k}" data-j="${j}" value="${esc(o)}" maxlength="300" aria-label="Opción ${String.fromCharCode(65 + j)}">
+            <button class="icon-btn" data-act="del-pq-opt" data-i="${i}" data-k="${k}" data-j="${j}" ${q.opciones.length <= 2 ? 'disabled' : ''} aria-label="Quitar opción"><i class="fa-solid fa-xmark"></i></button></div>`).join('')}
+          ${q.opciones.length < 6 ? `<button class="add-row" data-act="add-pq-opt" data-i="${i}" data-k="${k}" style="padding:.45rem"><i class="fa-solid fa-plus"></i> Agregar opción</button>` : ''}
+          <input class="input" data-scope="pq" data-i="${i}" data-k="${k}" data-f="explicacion" value="${esc(q.explicacion || '')}" placeholder="Explicación que verá al acertar (opcional)" maxlength="400" aria-label="Explicación">
+        </div>`).join('')}
+        ${pq.length < 10 ? `<button class="add-row" data-act="add-pq" data-i="${i}"><i class="fa-solid fa-plus"></i> Agregar pregunta de práctica</button>` : ''}</div>` : `
       <div class="ed-grid two">
         <label class="field"><span>Duración que se muestra</span><input class="input" data-scope="lesson" data-i="${i}" data-f="duracion" value="${esc(l.duracion || '')}" placeholder="${isVideo ? 'Se calcula al verificar el video' : 'Ej. 10 min'}" maxlength="30"></label>
         <label class="field"><span>Tiempo mínimo para avanzar (segundos)</span><input class="input" type="number" min="0" max="7200" step="1" data-scope="lesson" data-i="${i}" data-f="segundosMinimos" value="${Number(l.segundosMinimos) || 0}">
           <small>${isVideo ? 'Se ajusta solo al 90% de la duración del video.' : 'El botón para avanzar se habilita después de este tiempo.'}</small></label>
-      </div></div>`;
+      </div>`}
+      <div class="materials-ed"><p class="small" style="font-weight:600;color:var(--ink)">Material de apoyo <span class="muted" style="font-weight:400">(opcional: PDF, documentos o enlaces)</span></p>
+        ${mats.map((m, k) => `<div class="mat-row" data-mat="${i}-${k}">
+          <input class="input" data-scope="mat" data-i="${i}" data-k="${k}" data-f="nombre" value="${esc(m.nombre || '')}" placeholder="Nombre, ej. Guía de bolsillo (PDF)" maxlength="120" aria-label="Nombre del material">
+          <input class="input" data-scope="mat" data-i="${i}" data-k="${k}" data-f="url" value="${esc(m.url || '')}" placeholder="https://… o archivo.pdf del repositorio" maxlength="600" aria-label="Enlace del material">
+          <button class="icon-btn danger" data-act="del-mat" data-i="${i}" data-k="${k}" aria-label="Quitar material"><i class="fa-solid fa-xmark"></i></button></div>`).join('')}
+        ${mats.length < 10 ? `<button class="add-row" data-act="add-mat" data-i="${i}" style="padding:.5rem"><i class="fa-solid fa-paperclip"></i> Agregar material</button>` : ''}
+        <small class="muted" style="font-size:.8rem">Para PDF de Google Drive, compártelo como "Cualquier persona con el enlace" y pega el enlace.</small></div>
+    </div>`;
   }
   function questionCard(q, i, n) {
     return `<div class="item" data-q-card="${i}">
@@ -1399,6 +1827,7 @@
         ${ed.isNew ? '' : `<a class="btn btn-ghost btn-sm" href="#/curso/${encodeURIComponent(c.id)}"><i class="fa-regular fa-eye"></i> Ver como colaborador</a>`}</div>
       <div id="ed-errors"></div>
       <datalist id="dl-areas">${ed.areas.map(a => `<option value="${esc(a)}">`).join('')}</datalist>
+      <datalist id="dl-topics">${[...new Set(c.lessons.map(l => l.tema).filter(Boolean))].map(t => `<option value="${esc(t)}">`).join('')}</datalist>
 
       <section class="ed-section"><header><div><h3>Datos generales</h3><p>Aparecen en el catálogo y en la constancia.</p></div></header>
         <div class="ed-body">
@@ -1408,6 +1837,12 @@
               <small>${ed.isNew ? 'Se genera del título. Solo minúsculas, números y guiones; no se puede cambiar después.' : 'La clave no se puede cambiar porque une el curso con avances y constancias.'}</small></label>
           </div>
           <label class="field"><span>Descripción breve</span><textarea class="textarea" style="min-height:64px" rows="2" data-scope="course" data-f="description" maxlength="600" placeholder="Qué aprenderá el colaborador">${esc(c.description)}</textarea></label>
+          <label class="field"><span>Lo que aprenderás <span class="muted" style="font-weight:400">(un objetivo por renglón)</span></span><textarea class="textarea" style="min-height:84px" rows="3" data-scope="course" data-f="objectives" maxlength="2500" placeholder="Ej. Identificar los cinco momentos de la higiene de manos">${esc((c.objectives || []).join('\n'))}</textarea><small>Aparecen como lista en la ficha del curso.</small></label>
+          <div class="ed-grid two">
+            <label class="field"><span>A quién va dirigido</span><input class="input" data-scope="course" data-f="audience" value="${esc(c.audience || '')}" maxlength="300" placeholder="Ej. Personal de enfermería y técnicos"></label>
+            <label class="field"><span>Nivel</span><select class="select" data-scope="course" data-f="level"><option value="">Sin nivel</option>${['Básico', 'Intermedio', 'Avanzado'].map(v => `<option ${c.level === v ? 'selected' : ''}>${v}</option>`).join('')}</select></label>
+          </div>
+          <label class="field"><span>Imagen de portada <span class="muted" style="font-weight:400">(opcional)</span></span><input class="input" data-scope="course" data-f="image" value="${esc(c.image || '')}" maxlength="600" placeholder="https://… o archivo .jpg/.png del repositorio"><small>Si la dejas vacía, la tarjeta usa el color e ícono de la categoría.</small></label>
           <div class="ed-grid three">
             <label class="field"><span>Área</span><input class="input" list="dl-areas" data-scope="course" data-f="area" value="${esc(c.area)}" maxlength="80" placeholder="Ej. Enfermería"><small>Escríbela igual que en la hoja USUARIOS para asignarlo por área.</small></label>
             <label class="field"><span>Duración (horas)</span><input class="input" type="number" min="0.25" step="0.25" data-scope="course" data-f="hours" value="${c.hours}"><small>Aparece en la constancia.</small></label>
@@ -1434,7 +1869,7 @@
       <div class="ed-bar"><span class="msg" id="ed-msg">${ed.dirty ? 'Cambios sin guardar' : ed.isNew ? 'Curso nuevo' : 'Sin cambios'}</span>
         <div style="display:flex;gap:.6rem"><button class="btn btn-ghost" data-act="cancel">Cancelar</button><button class="btn btn-primary" data-act="save" id="ed-save"><i class="fa-solid fa-floppy-disk"></i> Guardar curso</button></div></div>`;
     window.scrollTo(0, y);
-    c.lessons.forEach((l, i) => { if ((l._type ? l._type === 'video' : !!l.video) && l.video) probeVideo(i, false); });
+    c.lessons.forEach((l, i) => { if (lt(l) === 'video' && l.video) probeVideo(i, false); });
   }
 
   function probeVideo(i, apply = true) {
@@ -1477,6 +1912,7 @@
       if (t.type === 'checkbox') c[f] = t.checked;
       else if (f === 'hours' || f === 'order') c[f] = t.value === '' ? '' : Number(t.value);
       else if (f === 'id') { c.id = t.value.toLowerCase(); ed.idTouched = true; }
+      else if (f === 'objectives') c.objectives = t.value.split('\n');
       else c[f] = t.value;
       if (f === 'title' && ed.isNew && !ed.idTouched) { c.id = slug(t.value); const idIn = $('[data-f="id"]'); if (idIn) idIn.value = c.id; }
       if (['required', 'active', 'area'].includes(f)) $('#ed-assign').innerHTML = `<i class="fa-solid fa-circle-info"></i> ${esc(assignmentText(c))}`;
@@ -1487,7 +1923,14 @@
       const l = c.lessons[i];
       l[f] = f === 'segundosMinimos' ? Number(t.value) || 0 : t.value;
       if (f === 'video') { delete l.subtitulos; clearTimeout(l._t); l._t = setTimeout(() => probeVideo(i), 700); }
-    } else if (sc === 'quiz') c.quiz[i][f] = t.value;
+    } else if (sc === 'pq') c.lessons[i].preguntas[k][f] = t.value;
+    else if (sc === 'pq-opt') c.lessons[i].preguntas[k].opciones[Number(t.dataset.j)] = t.value;
+    else if (sc === 'pq-correct') {
+      const j = Number(t.dataset.j); c.lessons[i].preguntas[k].correcta = j;
+      $$(`[data-pq-card="${i}-${k}"] .opt-row`).forEach((row, idx) => row.classList.toggle('correct', idx === j));
+    }
+    else if (sc === 'mat') c.lessons[i].materiales[k][f] = t.value;
+    else if (sc === 'quiz') c.quiz[i][f] = t.value;
     else if (sc === 'opt') c.quiz[i].opciones[k] = t.value;
     else if (sc === 'correct') {
       c.quiz[i].correcta = k;
@@ -1504,11 +1947,21 @@
     if (ed.isNew && ed.list.some(x => x.id === c.id)) add(`Ya existe un curso con la clave "${c.id}".`, '[data-f="id"]');
     if (!(Number(c.hours) > 0)) add('Indica la duración en horas.', '[data-f="hours"]');
     c.lessons.forEach((l, i) => {
-      const card = `[data-lesson-card="${i}"] `, isVideo = l._type ? l._type === 'video' : !!l.video;
+      const card = `[data-lesson-card="${i}"] `, type = lt(l), isVideo = type === 'video';
       if (!(l.titulo || '').trim()) add(`Módulo ${i + 1}: escribe el título.`, card + '[data-f="titulo"]');
       if (isVideo && !(l.video || '').trim()) add(`Módulo ${i + 1}: escribe el nombre del video.`, card + '[data-f="video"]');
       if (isVideo && l.video && !/\.mp4(\?|$)/i.test(l.video.trim())) add(`Módulo ${i + 1}: el video debe ser un archivo .mp4.`, card + '[data-f="video"]');
-      if (!isVideo && !(l.texto || '').trim()) add(`Módulo ${i + 1}: escribe el contenido.`, card + '[data-f="texto"]');
+      if (type === 'lectura' && !(l.texto || '').trim()) add(`Módulo ${i + 1}: escribe el contenido.`, card + '[data-f="texto"]');
+      (l.materiales || []).forEach((m, k) => {
+        if (!(m.nombre || '').trim()) add(`Módulo ${i + 1}: escribe el nombre del material ${k + 1}.`, `[data-mat="${i}-${k}"] [data-f="nombre"]`);
+        if (!/^(https:\/\/\S+|[A-Za-z0-9._\/-]+\.[A-Za-z0-9]{2,5})$/.test((m.url || '').trim())) add(`Módulo ${i + 1}: el enlace del material ${k + 1} debe empezar con https://.`, `[data-mat="${i}-${k}"] [data-f="url"]`);
+      });
+      if (type === 'practica') (l.preguntas || []).forEach((q, k) => {
+        const pc = `[data-pq-card="${i}-${k}"] `, n = `Módulo ${i + 1}, práctica ${k + 1}`;
+        if (!(q.pregunta || '').trim()) add(`${n}: escribe el enunciado.`, pc + '[data-f="pregunta"]');
+        q.opciones.forEach((o, j) => { if (!(o || '').trim()) add(`${n}: la opción ${String.fromCharCode(65 + j)} está vacía.`, pc + `[data-scope="pq-opt"][data-j="${j}"]`); });
+        if (q.correcta === null || q.correcta === undefined || q.correcta >= q.opciones.length) add(`${n}: marca la respuesta correcta.`, pc + '[data-scope="pq-correct"]');
+      });
     });
     c.quiz.forEach((q, i) => {
       const card = `[data-q-card="${i}"] `;
@@ -1536,10 +1989,13 @@
     const payload = {
       id: c.id, title: c.title.trim(), description: (c.description || '').trim(), area: (c.area || '').trim(), hours: Number(c.hours), order: Number(c.order) || 999,
       required: !!c.required, active: !!c.active, companies: c.companies,
+      objectives: (c.objectives || []).map(x => x.trim()).filter(Boolean), audience: (c.audience || '').trim(), level: c.level || '', image: (c.image || '').trim(),
       lessons: c.lessons.map(l => {
-        const isVideo = l._type ? l._type === 'video' : !!l.video;
-        const o = { titulo: l.titulo.trim(), duracion: (l.duracion || '').trim(), texto: (l.texto || '').trim(), segundosMinimos: Number(l.segundosMinimos) || 0 };
-        if (isVideo) { o.video = l.video.trim(); if (l.subtitulos) o.subtitulos = l.subtitulos; }
+        const type = lt(l);
+        const o = { tipo: type, tema: (l.tema || '').trim(), titulo: l.titulo.trim(), duracion: (l.duracion || '').trim(), texto: (l.texto || '').trim(), segundosMinimos: Number(l.segundosMinimos) || 0,
+          materiales: (l.materiales || []).map(m => ({ nombre: (m.nombre || '').trim(), url: (m.url || '').trim() })) };
+        if (type === 'video') { o.video = l.video.trim(); if (l.subtitulos) o.subtitulos = l.subtitulos; }
+        if (type === 'practica') o.preguntas = (l.preguntas || []).map(q => ({ pregunta: (q.pregunta || '').trim(), opciones: q.opciones.map(x => x.trim()), correcta: q.correcta, explicacion: (q.explicacion || '').trim() }));
         return o;
       }),
       quiz: c.quiz.map(q => ({ pregunta: q.pregunta.trim(), opciones: q.opciones.map(o => o.trim()), correcta: q.correcta }))
@@ -1574,13 +2030,25 @@
       }
       case 'cancel': if (ed.dirty && !confirm(LEAVE_MSG)) return; return drawCourseList(body);
       case 'save': return saveCourse(body);
-      case 'add-lesson': c.lessons.push({ titulo: '', duracion: '', texto: '', segundosMinimos: 30 }); break;
+      case 'add-lesson': c.lessons.push({ tipo: 'lectura', tema: (c.lessons[c.lessons.length - 1] || {}).tema || '', titulo: '', duracion: '', texto: '', segundosMinimos: 30, materiales: [] }); break;
+      case 'add-mat': (c.lessons[i].materiales = c.lessons[i].materiales || []).push({ nombre: '', url: '' }); break;
+      case 'del-mat': c.lessons[i].materiales.splice(k, 1); break;
+      case 'add-pq': c.lessons[i].preguntas.push({ pregunta: '', opciones: ['', ''], correcta: null, explicacion: '' }); break;
+      case 'del-pq': c.lessons[i].preguntas.splice(k, 1); break;
+      case 'add-pq-opt': c.lessons[i].preguntas[k].opciones.push(''); break;
+      case 'del-pq-opt': {
+        const q = c.lessons[i].preguntas[k], j = Number(b.dataset.j); q.opciones.splice(j, 1);
+        if (q.correcta === j) q.correcta = null; else if (q.correcta > j) q.correcta--;
+        break;
+      }
       case 'del-lesson': if (!confirm(`¿Eliminar el módulo ${i + 1}?`)) return; c.lessons.splice(i, 1); break;
       case 'up-lesson': move(c.lessons, i, i - 1); break;
       case 'down-lesson': move(c.lessons, i, i + 1); break;
       case 'type-lesson': {
-        const l = c.lessons[i]; l._type = b.dataset.v;
-        if (b.dataset.v === 'lectura') { delete l.video; delete l.subtitulos; if (!l.segundosMinimos) l.segundosMinimos = 30; }
+        const l = c.lessons[i], v = b.dataset.v; l.tipo = v;
+        if (v !== 'video') { delete l.video; delete l.subtitulos; }
+        if (v === 'lectura' && !l.segundosMinimos) l.segundosMinimos = 30;
+        if (v === 'practica') { l.segundosMinimos = 0; if (!l.preguntas || !l.preguntas.length) l.preguntas = [{ pregunta: '', opciones: ['', ''], correcta: null, explicacion: '' }]; }
         break;
       }
       case 'add-q': c.quiz.push({ pregunta: '', opciones: ['', '', ''], correcta: null }); break;
@@ -1599,6 +2067,162 @@
     if (act === 'add-lesson') $(`[data-lesson-card="${c.lessons.length - 1}"] [data-f="titulo"]`)?.focus();
     if (act === 'add-q') $(`[data-q-card="${c.quiz.length - 1}"] [data-f="pregunta"]`)?.focus();
     if (act === 'add-opt') $(`[data-q-card="${i}"] [data-scope="opt"][data-k="${c.quiz[i].opciones.length - 1}"]`)?.focus();
+  }
+
+  /* ============ Editor de rutas ============ */
+  const re = { data: null, route: null, isNew: false, original: '', idTouched: false };
+  async function drawRoutesAdmin(body) {
+    body.innerHTML = loading();
+    re.data = await api('adminRoutes');
+    drawRouteList(body);
+  }
+  function drawRouteList(body) {
+    re.route = null; ed.dirty = false;
+    const byId = id => re.data.courses.find(c => c.id === id);
+    body.innerHTML = `
+      <div class="ed-head"><div><h2>Rutas de aprendizaje</h2><p class="small muted" style="margin-top:.3rem">Agrupa cursos por puesto o área. Al acreditar todos los cursos de una ruta, el colaborador recibe una constancia de ruta.</p></div>
+        <button class="btn btn-primary" data-ract="new"><i class="fa-solid fa-plus"></i> Nueva ruta</button></div>
+      <div class="ledger">${re.data.routes.length ? re.data.routes.map(r => `<div class="row">
+        <div><div class="row-title">${esc(r.title)}</div>
+          <div class="row-meta"><span>${plural(r.courses.length, 'curso', 'cursos')}</span><span>${fmtHours(r.courses.reduce((n, id) => n + ((byId(id) || {}).hours || 0), 0))}</span>
+            ${r.puestos.length || r.areas.length ? `<span><i class="fa-solid fa-user-check"></i> Se asigna a: ${esc([...r.puestos, ...r.areas].join(', '))}</span>` : '<span>Sin asignación automática</span>'}
+            ${r.companies.length ? `<span>Solo ${esc(r.companies.join(', '))}</span>` : ''}<span class="tiny">Clave: ${esc(r.id)}</span></div></div>
+        <div class="row-side">
+          <span class="chip ${r.active ? 'st-APROBADO' : 'st-PENDIENTE'}">${r.active ? 'Activa' : 'Inactiva'}</span>
+          ${r.active ? `<a class="btn btn-ghost btn-sm" href="#/ruta/${encodeURIComponent(r.id)}" title="Ver como colaborador"><i class="fa-regular fa-eye"></i><span class="sr-only">Vista previa</span></a>` : ''}
+          <button class="btn btn-ghost btn-sm" data-ract="toggle" data-id="${esc(r.id)}">${r.active ? 'Desactivar' : 'Activar'}</button>
+          <button class="btn btn-primary btn-sm" data-ract="edit" data-id="${esc(r.id)}">Editar</button>
+        </div></div>`).join('') : '<div class="empty"><i class="fa-solid fa-route"></i><strong>Aún no hay rutas</strong><p>Crea la primera con el botón "Nueva ruta".</p></div>'}</div>`;
+  }
+  function openRouteEditor(body, id) {
+    if (id) { re.route = clone(re.data.routes.find(r => r.id === id)); re.isNew = false; re.idTouched = true; }
+    else {
+      const maxOrder = re.data.routes.reduce((m, r) => Math.max(m, r.order || 0), 0);
+      re.route = { id: '', title: '', description: '', courses: [], puestos: [], areas: [], companies: [], active: true, order: maxOrder + 1 };
+      re.isNew = true; re.idTouched = false;
+    }
+    re.original = JSON.stringify(re.route); ed.dirty = false;
+    drawRouteEditor(body); window.scrollTo(0, 0);
+  }
+  function routeDirty() { ed.dirty = JSON.stringify(re.route) !== re.original; const m = $('#re-msg'); if (m) { m.className = 'msg'; m.textContent = ed.dirty ? 'Cambios sin guardar' : 'Sin cambios'; } }
+  function chipChecks(name, options, selected) {
+    const all = [...new Set([...options, ...selected])];
+    return all.length ? `<div class="company-list">${all.map(x => `<label><input type="checkbox" data-rscope="${name}" value="${esc(x)}" ${selected.includes(x) ? 'checked' : ''}>${esc(x)}</label>`).join('')}</div>`
+      : '<span class="small muted">No hay valores registrados en la hoja USUARIOS.</span>';
+  }
+  function routeAssignText(r) {
+    if (!r.active) return 'Ruta inactiva: los colaboradores no la ven.';
+    const who = [...r.puestos.map(p => `el puesto "${p}"`), ...r.areas.map(a => `el área "${a}"`)];
+    const emp = r.companies.length ? ` de ${r.companies.join(', ')}` : '';
+    return who.length ? `Se asigna automáticamente al personal con ${who.join(' o ')}${emp}, junto con todos sus cursos.` : `Visible en el catálogo${emp}. Para asignarla a alguien usa "Asignar curso" o marca puestos o áreas.`;
+  }
+  function drawRouteEditor(body) {
+    const r = re.route, y = window.scrollY, d = re.data;
+    const byId = id => d.courses.find(c => c.id === id);
+    const available = d.courses.filter(c => !r.courses.includes(c.id));
+    const hours = r.courses.reduce((n, id) => n + ((byId(id) || {}).hours || 0), 0);
+    body.innerHTML = `
+      <button class="back" data-ract="cancel"><i class="fa-solid fa-arrow-left"></i> Todas las rutas</button>
+      <div class="ed-head"><div><h2>${re.isNew ? 'Nueva ruta' : esc(r.title || 'Editar ruta')}</h2>${re.isNew ? '' : `<p class="small muted" style="margin-top:.3rem">Clave ${esc(r.id)}</p>`}</div></div>
+      <div id="re-errors"></div>
+      <section class="ed-section"><header><div><h3>Datos de la ruta</h3><p>El nombre aparece en el catálogo y en la constancia de ruta.</p></div></header>
+        <div class="ed-body">
+          <div class="ed-grid two">
+            <label class="field"><span>Nombre de la ruta</span><input class="input" data-rf="title" value="${esc(r.title)}" maxlength="160" placeholder="Ej. Enfermería quirúrgica"></label>
+            <label class="field"><span>Clave</span><input class="input" data-rf="id" value="${esc(r.id)}" maxlength="40" ${re.isNew ? '' : 'disabled'}><small>${re.isNew ? 'Se genera del nombre; no se puede cambiar después.' : 'La clave une la ruta con sus constancias.'}</small></label>
+          </div>
+          <label class="field"><span>Descripción</span><textarea class="textarea" style="min-height:64px" rows="2" data-rf="description" maxlength="600" placeholder="Para quién es y qué logrará">${esc(r.description)}</textarea></label>
+          <div class="ed-grid two">
+            <label class="field"><span>Orden en el catálogo</span><input class="input" type="number" min="1" step="1" data-rf="order" value="${r.order}"></label>
+            <label class="check" style="align-self:end"><input type="checkbox" data-rf="active" ${r.active ? 'checked' : ''}><span><strong>Activa</strong><small>Desmárcala para ocultarla mientras la preparas.</small></span></label>
+          </div>
+        </div></section>
+      <section class="ed-section"><header><div><h3>Cursos de la ruta</h3><p>Se recomiendan en este orden. ${plural(r.courses.length, 'curso', 'cursos')}, ${fmtHours(hours)} en total.</p></div></header>
+        <div class="ed-body">
+          ${r.courses.length ? `<ol class="route-ed-list">${r.courses.map((id, i) => { const c = byId(id) || { title: id, area: '', hours: 0 }, k = catOf(c.area); return `<li>
+            <span class="rs-num" style="width:32px;height:32px;font-size:.85rem">${i + 1}</span>
+            <span class="row-icon" style="background:${k.color}"><i class="fa-solid ${k.icon}"></i></span>
+            <span class="rel-t"><strong>${esc(c.title)}</strong><small>${esc(c.area)} · ${fmtHours(c.hours)}${c.active === false ? ' · inactivo' : ''}</small></span>
+            <span class="item-tools">
+              <button class="icon-btn" data-ract="up" data-i="${i}" ${i === 0 ? 'disabled' : ''} aria-label="Subir"><i class="fa-solid fa-arrow-up"></i></button>
+              <button class="icon-btn" data-ract="down" data-i="${i}" ${i === r.courses.length - 1 ? 'disabled' : ''} aria-label="Bajar"><i class="fa-solid fa-arrow-down"></i></button>
+              <button class="icon-btn danger" data-ract="remove" data-i="${i}" aria-label="Quitar de la ruta"><i class="fa-solid fa-xmark"></i></button>
+            </span></li>`; }).join('')}</ol>` : '<p class="small muted">Todavía no hay cursos en la ruta.</p>'}
+          ${available.length ? `<div style="display:flex;gap:.6rem;flex-wrap:wrap"><label class="sr-only" for="re-add">Curso para agregar</label><select class="select" id="re-add" style="flex:1;min-width:220px">${available.map(c => `<option value="${esc(c.id)}">${esc(c.title)}${c.active ? '' : ' (inactivo)'}</option>`).join('')}</select>
+            <button class="btn btn-ghost" data-ract="add"><i class="fa-solid fa-plus"></i> Agregar a la ruta</button></div>` : ''}
+        </div></section>
+      <section class="ed-section"><header><div><h3>Asignación automática</h3><p>Opcional. Marca puestos o áreas para asignar la ruta, con todos sus cursos, a ese personal.</p></div></header>
+        <div class="ed-body">
+          <div><span class="small" style="font-weight:600;color:var(--ink);display:block;margin-bottom:.5rem">Puestos</span>${chipChecks('puestos', d.puestos, r.puestos)}</div>
+          <div><span class="small" style="font-weight:600;color:var(--ink);display:block;margin-bottom:.5rem">Áreas</span>${chipChecks('areas', d.areas, r.areas)}</div>
+          <div><span class="small" style="font-weight:600;color:var(--ink);display:block;margin-bottom:.5rem">Empresas</span>${chipChecks('companies', d.companies, r.companies)}<small class="muted" style="display:block;margin-top:.4rem;font-size:.8rem">Si no marcas ninguna, la ruta aplica a todas.</small></div>
+          <p class="assign-note" id="re-assign"><i class="fa-solid fa-circle-info"></i> ${esc(routeAssignText(r))}</p>
+        </div></section>
+      <div class="ed-bar"><span class="msg" id="re-msg">${ed.dirty ? 'Cambios sin guardar' : re.isNew ? 'Ruta nueva' : 'Sin cambios'}</span>
+        <div style="display:flex;gap:.6rem"><button class="btn btn-ghost" data-ract="cancel">Cancelar</button><button class="btn btn-primary" data-ract="save" id="re-save"><i class="fa-solid fa-floppy-disk"></i> Guardar ruta</button></div></div>`;
+    window.scrollTo(0, y);
+  }
+  function routeInput(e) {
+    const t = e.target, r = re.route; if (!r) return;
+    t.classList.remove('invalid');
+    if (t.dataset.rf) {
+      const f = t.dataset.rf;
+      if (t.type === 'checkbox') r[f] = t.checked;
+      else if (f === 'order') r.order = Number(t.value) || '';
+      else if (f === 'id') { r.id = t.value.toLowerCase(); re.idTouched = true; }
+      else r[f] = t.value;
+      if (f === 'title' && re.isNew && !re.idTouched) { r.id = slug(t.value); const x = $('[data-rf="id"]'); if (x) x.value = r.id; }
+    } else if (t.dataset.rscope) {
+      const k = t.dataset.rscope;
+      r[k] = $$(`[data-rscope="${k}"]`).filter(x => x.checked).map(x => x.value);
+    } else return;
+    const n = $('#re-assign'); if (n) n.innerHTML = `<i class="fa-solid fa-circle-info"></i> ${esc(routeAssignText(r))}`;
+    routeDirty();
+  }
+  async function routeClick(e, body) {
+    const b = e.target.closest('[data-ract]'); if (!b || !body.contains(b)) return;
+    const act = b.dataset.ract, i = Number(b.dataset.i), r = re.route;
+    const move = (from, to) => { const [x] = r.courses.splice(from, 1); r.courses.splice(to, 0, x); };
+    switch (act) {
+      case 'new': return openRouteEditor(body);
+      case 'edit': return openRouteEditor(body, b.dataset.id);
+      case 'toggle': {
+        const x = re.data.routes.find(y => y.id === b.dataset.id), next = !x.active;
+        if (!next && !confirm(`¿Desactivar la ruta "${x.title}"? Las constancias de ruta ya emitidas se conservan.`)) return;
+        b.disabled = true;
+        try { await api('adminSetRouteActive', { routeId: x.id, active: next }); x.active = next; cache.catalog = null; toast(next ? 'Ruta activada.' : 'Ruta desactivada.', 'ok'); drawRouteList(body); }
+        catch (ex) { toast(ex.message, 'bad'); b.disabled = false; }
+        return;
+      }
+      case 'cancel': if (ed.dirty && !confirm(LEAVE_MSG)) return; return drawRouteList(body);
+      case 'add': { const v = $('#re-add').value; if (v) r.courses.push(v); break; }
+      case 'up': move(i, i - 1); break;
+      case 'down': move(i, i + 1); break;
+      case 'remove': r.courses.splice(i, 1); break;
+      case 'save': {
+        const errs = [];
+        if ((r.title || '').trim().length < 3) errs.push(['Escribe el nombre de la ruta.', '[data-rf="title"]']);
+        if (re.isNew && !/^[a-z0-9][a-z0-9-]{1,39}$/.test(r.id || '')) errs.push(['La clave debe tener de 2 a 40 caracteres: minúsculas, números y guiones.', '[data-rf="id"]']);
+        if (re.isNew && re.data.routes.some(x => x.id === r.id)) errs.push([`Ya existe una ruta con la clave "${r.id}".`, '[data-rf="id"]']);
+        if (!r.courses.length) errs.push(['Agrega al menos un curso a la ruta.', '#re-add']);
+        $$('.invalid').forEach(x => x.classList.remove('invalid'));
+        errs.forEach(([, sel]) => $(sel)?.classList.add('invalid'));
+        $('#re-errors').innerHTML = errs.length ? `<ul class="ed-errors" role="alert">${errs.map(x => `<li>${esc(x[0])}</li>`).join('')}</ul>` : '';
+        if (errs.length) { $('#re-errors').scrollIntoView({ block: 'start', behavior: 'smooth' }); return; }
+        b.disabled = true; b.innerHTML = '<span class="spinner" style="width:16px;height:16px;border-width:2px"></span> Guardando…';
+        try {
+          await api('adminSaveRoute', { route: { ...r, title: r.title.trim(), description: (r.description || '').trim() }, isNew: re.isNew });
+          ed.dirty = false; cache.catalog = null; toast(re.isNew ? 'Ruta creada.' : 'Ruta guardada.', 'ok');
+          await drawRoutesAdmin(body);
+        } catch (ex) {
+          toast(ex.message, 'bad'); const m = $('#re-msg'); if (m) { m.className = 'msg bad'; m.textContent = ex.message; }
+          b.disabled = false; b.innerHTML = '<i class="fa-solid fa-floppy-disk"></i> Guardar ruta';
+        }
+        return;
+      }
+      default: return;
+    }
+    routeDirty(); drawRouteEditor(body);
   }
 
   function closeOverlay() { $('#overlay-root').innerHTML = ''; }
@@ -1640,15 +2264,15 @@
   }
   function drawAssign(body) {
     body.innerHTML = `<form class="panel panel-pad" id="assign-form" style="max-width:720px" novalidate>
-      <h2>Asignar un curso</h2><p class="small muted" style="margin-top:.3rem">Los cursos obligatorios y los del área de cada colaborador ya se asignan solos. Usa esta opción para asignaciones adicionales o con fecha límite.</p>
+      <h2>Asignar un curso o una ruta</h2><p class="small muted" style="margin-top:.3rem">Los cursos obligatorios, los del área de cada colaborador y las rutas con asignación automática ya se asignan solos. Usa esta opción para asignaciones adicionales o con fecha límite. Al asignar una ruta se asignan todos sus cursos.</p>
       <div class="form-grid two" style="margin-top:1.2rem">
-        <label class="field"><span>Curso</span><select class="select" id="as-course" required>${adminData.courses.map(c => `<option value="${esc(c.id)}">${esc(c.title)}</option>`).join('')}</select></label>
+        <label class="field"><span>Curso o ruta</span><select class="select" id="as-course" required>${(adminData.routes || []).length ? `<optgroup label="Rutas de aprendizaje">${adminData.routes.map(r => `<option value="ruta:${esc(r.id)}">Ruta: ${esc(r.title)}</option>`).join('')}</optgroup>` : ''}<optgroup label="Cursos">${adminData.courses.map(c => `<option value="${esc(c.id)}">${esc(c.title)}</option>`).join('')}</optgroup></select></label>
         <label class="field"><span>Asignar a</span><select class="select" id="as-type"><option value="EMPLEADO">Un colaborador</option><option value="AREA">Un área</option><option value="PUESTO">Un puesto</option><option value="EMPRESA">Una empresa</option><option value="TODOS">Todo el personal</option></select></label>
         <label class="field" id="as-value-wrap"><span id="as-value-label">Número de empleado</span><input class="input" id="as-value"></label>
         <label class="field"><span>Fecha límite (opcional)</span><input class="input" type="date" id="as-due"></label>
       </div>
       <div class="alert alert-bad" id="as-error" role="alert" hidden style="margin-top:1rem"></div>
-      <button class="btn btn-primary" style="margin-top:1.2rem">Asignar curso</button>
+      <button class="btn btn-primary" style="margin-top:1.2rem">Asignar</button>
     </form>`;
     const labels = { EMPLEADO: 'Número de empleado', AREA: 'Nombre del área (como en la hoja USUARIOS)', PUESTO: 'Nombre del puesto', EMPRESA: 'Nombre de la empresa' };
     $('#as-type').onchange = e => { const v = e.target.value; $('#as-value-wrap').hidden = v === 'TODOS'; $('#as-value-label').textContent = labels[v] || ''; };
@@ -1657,7 +2281,7 @@
       const err = $('#as-error'); err.hidden = true;
       try {
         await api('adminAssign', { courseId: $('#as-course').value, type: $('#as-type').value, value: $('#as-value').value, dueDate: $('#as-due').value });
-        toast('Curso asignado.', 'ok'); $('#as-value').value = ''; $('#as-due').value = '';
+        toast($('#as-course').value.startsWith('ruta:') ? 'Ruta asignada.' : 'Curso asignado.', 'ok'); $('#as-value').value = ''; $('#as-due').value = '';
       } catch (ex) { err.textContent = ex.message; err.hidden = false; }
     };
   }
@@ -1694,7 +2318,7 @@
         : c.status === 'VENCIDA' ? ['var(--warn-soft)', 'var(--warn)', 'fa-clock', 'Constancia vencida', 'Fue emitida por el CCE, pero su vigencia terminó.']
           : ['var(--bad-soft)', 'var(--bad)', 'fa-ban', 'Constancia revocada', 'Esta constancia fue cancelada y no tiene validez.'];
       out.innerHTML = `<div class="verdict"><div class="head"><div class="icon" style="background:${look[0]};color:${look[1]}"><i class="fa-solid ${look[2]}"></i></div><div><h2 style="font-size:1.2rem">${look[3]}</h2><p class="small muted">${look[4]}</p></div></div>
-        <dl><dt>Nombre</dt><dd>${esc(c.name)}</dd><dt>Curso</dt><dd>${esc(c.course)}</dd><dt>Duración</dt><dd>${fmtHours(c.hours)}</dd><dt>Emitida</dt><dd>${fmtDate(c.issuedAt)}</dd>${c.expiresAt ? `<dt>Vigencia</dt><dd>${fmtDate(c.expiresAt)}</dd>` : ''}<dt>Folio</dt><dd>${esc(c.folio)}</dd></dl></div>`;
+        <dl><dt>Nombre</dt><dd>${esc(c.name)}</dd><dt>${c.type === 'RUTA' ? 'Ruta de capacitación' : 'Curso'}</dt><dd>${esc(c.course)}</dd><dt>Duración</dt><dd>${fmtHours(c.hours)}</dd><dt>Emitida</dt><dd>${fmtDate(c.issuedAt)}</dd>${c.expiresAt ? `<dt>Vigencia</dt><dd>${fmtDate(c.expiresAt)}</dd>` : ''}<dt>Folio</dt><dd>${esc(c.folio)}</dd></dl></div>`;
     } catch (ex) {
       out.innerHTML = `<div class="alert alert-bad" style="margin-top:1.4rem">${esc(ex.message)}</div>`;
     }

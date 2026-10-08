@@ -18,11 +18,12 @@
 
 var SHEETS = {
   USUARIOS: ['NUMERO_EMPLEADO', 'NOMBRE', 'EMPRESA', 'AREA', 'PUESTO', 'ROL', 'ACTIVO', 'CORREO', 'PIN_INICIAL', 'PIN_HASH', 'PIN_SALT', 'DEBE_CAMBIAR_PIN', 'ULTIMO_ACCESO'],
-  CURSOS: ['ID', 'TITULO', 'AREA', 'HORAS', 'OBLIGATORIO', 'EMPRESAS', 'ACTIVO', 'ORDEN', 'DESCRIPCION', 'LECCIONES_JSON', 'EVALUACION_JSON'],
+  CURSOS: ['ID', 'TITULO', 'AREA', 'HORAS', 'OBLIGATORIO', 'EMPRESAS', 'ACTIVO', 'ORDEN', 'DESCRIPCION', 'LECCIONES_JSON', 'EVALUACION_JSON', 'OBJETIVOS', 'DIRIGIDO_A', 'NIVEL', 'IMAGEN'],
+  RUTAS: ['ID', 'TITULO', 'DESCRIPCION', 'CURSOS', 'PUESTOS', 'AREAS', 'EMPRESAS', 'ACTIVO', 'ORDEN'],
   ASIGNACIONES: ['TIPO', 'VALOR', 'CURSO_ID', 'FECHA_LIMITE', 'ASIGNADO_POR', 'FECHA_ASIGNACION'],
   PROGRESO: ['NUMERO_EMPLEADO', 'CURSO_ID', 'LECCIONES', 'ESTADO', 'MEJOR_CALIFICACION', 'INTENTOS', 'ACTUALIZADO'],
   EVALUACIONES: ['FECHA', 'NUMERO_EMPLEADO', 'NOMBRE', 'CURSO_ID', 'CURSO', 'CALIFICACION', 'ESTADO', 'INTENTO', 'FOLIO'],
-  CERTIFICADOS: ['FOLIO', 'CODIGO', 'NUMERO_EMPLEADO', 'NOMBRE', 'EMPRESA', 'CURSO_ID', 'CURSO', 'HORAS', 'CALIFICACION', 'FECHA_EMISION', 'FECHA_VENCIMIENTO', 'ESTADO', 'MOTIVO_REVOCACION'],
+  CERTIFICADOS: ['FOLIO', 'CODIGO', 'NUMERO_EMPLEADO', 'NOMBRE', 'EMPRESA', 'CURSO_ID', 'CURSO', 'HORAS', 'CALIFICACION', 'FECHA_EMISION', 'FECHA_VENCIMIENTO', 'ESTADO', 'MOTIVO_REVOCACION', 'TIPO', 'DETALLE'],
   CONFIGURACION: ['CLAVE', 'VALOR', 'DESCRIPCION'],
   BITACORA: ['FECHA', 'NUMERO_EMPLEADO', 'ACCION', 'DETALLE']
 };
@@ -82,6 +83,8 @@ function route_(b) {
     course: function () { return courseDetail_(s.user, b.courseId); },
     startLesson: function () { return startLesson_(s.user, b.courseId, b.lesson); },
     completeLesson: function () { return completeLesson_(s.user, b.courseId, b.lesson); },
+    checkPractice: function () { return checkPractice_(s.user, b.courseId, b.lesson, b.answers); },
+    route: function () { return routeDetail_(s.user, b.routeId); },
     startQuiz: function () { return startQuiz_(s.user, b.courseId); },
     submitQuiz: function () { return submitQuiz_(s.user, b.attemptId, b.answers); },
     certificates: function () { return myCertificates_(s.user); },
@@ -96,7 +99,10 @@ function route_(b) {
     adminReport: function () { requireAdmin_(s.user); return adminReport_(); },
     adminCourses: function () { requireAdmin_(s.user); return adminCourses_(); },
     adminSaveCourse: function () { requireAdmin_(s.user); return adminSaveCourse_(s.user, b.course, b.isNew); },
-    adminSetCourseActive: function () { requireAdmin_(s.user); return adminSetCourseActive_(s.user, b.courseId, b.active); }
+    adminSetCourseActive: function () { requireAdmin_(s.user); return adminSetCourseActive_(s.user, b.courseId, b.active); },
+    adminRoutes: function () { requireAdmin_(s.user); return adminRoutes_(); },
+    adminSaveRoute: function () { requireAdmin_(s.user); return adminSaveRoute_(s.user, b.route, b.isNew); },
+    adminSetRouteActive: function () { requireAdmin_(s.user); return adminSetRouteActive_(s.user, b.routeId, b.active); }
   };
   if (!actions[b.action]) throw publicError_('Acción no reconocida.');
   return actions[b.action]();
@@ -269,7 +275,8 @@ function allCourses_(includeInactive) {
       id: String(r.ID).trim(), title: String(r.TITULO), area: String(r.AREA), hours: Number(r.HORAS) || 0,
       required: isYes_(r.OBLIGATORIO), companies: splitList_(r.EMPRESAS), order: Number(r.ORDEN) || 999,
       description: String(r.DESCRIPCION || ''), lessons: parseJson_(r.LECCIONES_JSON, []), quiz: parseJson_(r.EVALUACION_JSON, []),
-      active: isYes_(r.ACTIVO)
+      active: isYes_(r.ACTIVO), objectives: String(r.OBJETIVOS || '').split('\n').map(function (x) { return x.trim(); }).filter(String),
+      audience: String(r.DIRIGIDO_A || ''), level: String(r.NIVEL || ''), image: String(r.IMAGEN || '')
     };
   }).sort(function (a, b) { return a.order - b.order; });
 }
@@ -282,6 +289,48 @@ function findCourse_(id, includeInactive) {
 
 function quizSig_(course) {
   return Utilities.base64Encode(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, JSON.stringify(course.quiz), Utilities.Charset.UTF_8)).slice(0, 16);
+}
+
+function allRoutes_(includeInactive) {
+  return table_('RUTAS').rows.filter(function (r) { return String(r.ID || '').trim() && (includeInactive || isYes_(r.ACTIVO)); }).map(function (r) {
+    return {
+      id: String(r.ID).trim(), title: String(r.TITULO || ''), description: String(r.DESCRIPCION || ''),
+      courses: splitList_(r.CURSOS), puestos: splitList_(r.PUESTOS), areas: splitList_(r.AREAS), companies: splitList_(r.EMPRESAS),
+      active: isYes_(r.ACTIVO), order: Number(r.ORDEN) || 999
+    };
+  }).sort(function (a, b) { return a.order - b.order; });
+}
+
+function lessonType_(l) { return l.tipo === 'practica' ? 'practica' : (l.video ? 'video' : 'lectura'); }
+
+/** { routeId: fechaLimite|null } de las rutas asignadas al colaborador. */
+function assignedRoutes_(user, routes) {
+  var map = {};
+  routes.forEach(function (r) {
+    if (!courseVisible_(r, user)) return;
+    var byPuesto = r.puestos.some(function (x) { return normalize_(x) === normalize_(user.PUESTO); });
+    var byArea = r.areas.some(function (x) { return normalize_(x) === normalize_(user.AREA); });
+    if (byPuesto || byArea) map[r.id] = null;
+  });
+  table_('ASIGNACIONES').rows.forEach(function (a) {
+    var id = String(a.CURSO_ID || '').trim();
+    if (id.indexOf('ruta:') !== 0 || !assignmentMatches_(a, user)) return;
+    id = id.slice(5);
+    if (!routes.some(function (r) { return r.id === id && courseVisible_(r, user); })) return;
+    var due = a.FECHA_LIMITE instanceof Date ? a.FECHA_LIMITE : null;
+    if (!(id in map) || (due && (!map[id] || due < map[id]))) map[id] = due;
+  });
+  return map;
+}
+
+function assignmentMatches_(a, user) {
+  var type = String(a.TIPO || '').toUpperCase().trim(), value = normalize_(a.VALOR);
+  if (type === 'TODOS') return true;
+  if (type === 'EMPLEADO') return value === normalize_(user.NUMERO_EMPLEADO);
+  if (type === 'AREA') return value === normalize_(user.AREA);
+  if (type === 'PUESTO') return value === normalize_(user.PUESTO);
+  if (type === 'EMPRESA') return value === normalize_(user.EMPRESA);
+  return false;
 }
 
 function courseVisible_(course, user) {
@@ -298,18 +347,19 @@ function assignmentsFor_(user, courses) {
     if (!courseVisible_(c, user)) return;
     if (c.required || (byArea && normalize_(c.area) === normalize_(user.AREA))) map[c.id] = null;
   });
-  table_('ASIGNACIONES').rows.forEach(function (a) {
-    var type = String(a.TIPO || '').toUpperCase().trim(), value = normalize_(a.VALOR), match = false;
-    if (type === 'TODOS') match = true;
-    else if (type === 'EMPLEADO') match = value === normalize_(user.NUMERO_EMPLEADO);
-    else if (type === 'AREA') match = value === normalize_(user.AREA);
-    else if (type === 'PUESTO') match = value === normalize_(user.PUESTO);
-    else if (type === 'EMPRESA') match = value === normalize_(user.EMPRESA);
-    if (!match) return;
-    var id = String(a.CURSO_ID).trim();
-    var due = a.FECHA_LIMITE instanceof Date ? a.FECHA_LIMITE : null;
+  var visibleIds = {};
+  courses.forEach(function (c) { if (courseVisible_(c, user)) visibleIds[c.id] = 1; });
+  var put = function (id, due) {
+    if (!visibleIds[id]) return;
     if (!(id in map) || (due && (!map[id] || due < map[id]))) map[id] = due;
+  };
+  table_('ASIGNACIONES').rows.forEach(function (a) {
+    var id = String(a.CURSO_ID || '').trim();
+    if (id.indexOf('ruta:') === 0 || !assignmentMatches_(a, user)) return;
+    put(id, a.FECHA_LIMITE instanceof Date ? a.FECHA_LIMITE : null);
   });
+  var routes = allRoutes_(), rmap = assignedRoutes_(user, routes);
+  routes.forEach(function (r) { if (r.id in rmap) r.courses.forEach(function (id) { put(id, rmap[r.id]); }); });
   return map;
 }
 
@@ -331,9 +381,11 @@ function certificatesFor_(emp) {
     var expired = r.FECHA_VENCIMIENTO instanceof Date && r.FECHA_VENCIMIENTO < now;
     var status = String(r.ESTADO || 'VIGENTE').toUpperCase();
     if (status === 'VIGENTE' && expired) status = 'VENCIDA';
+    var cid = String(r.CURSO_ID);
     return {
-      folio: String(r.FOLIO), courseId: String(r.CURSO_ID), course: String(r.CURSO), hours: Number(r.HORAS) || 0,
-      score: Number(r.CALIFICACION) || 0, issuedAt: iso_(r.FECHA_EMISION), expiresAt: iso_(r.FECHA_VENCIMIENTO), status: status
+      folio: String(r.FOLIO), courseId: cid, course: String(r.CURSO), hours: Number(r.HORAS) || 0,
+      score: Number(r.CALIFICACION) || 0, issuedAt: iso_(r.FECHA_EMISION), expiresAt: iso_(r.FECHA_VENCIMIENTO), status: status,
+      type: cid.indexOf('ruta:') === 0 ? 'RUTA' : 'CURSO'
     };
   });
 }
@@ -354,6 +406,7 @@ function summarizeCourse_(c, assigned, prog, cert, due) {
   var done = prog ? Math.min(prog.lessons.length, c.lessons.length) : 0;
   return {
     id: c.id, title: c.title, area: c.area, hours: c.hours, required: c.required, description: c.description,
+    level: c.level, image: c.image,
     lessonCount: c.lessons.length, questionCount: c.quiz.length, assigned: assigned, dueDate: iso_(due),
     lessonsDone: done, progress: c.lessons.length ? Math.round(done / c.lessons.length * 100) : 0,
     bestScore: prog ? prog.best : 0, attempts: prog ? prog.attempts : 0,
@@ -361,8 +414,61 @@ function summarizeCourse_(c, assigned, prog, cert, due) {
   };
 }
 
+function routeSummary_(r, byId, rmap, certs) {
+  var items = r.courses.map(function (id) { return byId[id]; }).filter(Boolean);
+  var approved = items.filter(function (c) { return c.status === 'APROBADO'; }).length;
+  var started = items.some(function (c) { return c.status !== 'PENDIENTE'; });
+  var cert = validCertificate_(certs, 'ruta:' + r.id);
+  return {
+    id: r.id, title: r.title, description: r.description, courseIds: items.map(function (c) { return c.id; }),
+    courseCount: items.length, approved: approved, hours: Math.round(items.reduce(function (n, c) { return n + c.hours; }, 0) * 100) / 100,
+    progress: items.length ? Math.round(approved / items.length * 100) : 0, assigned: r.id in rmap, dueDate: iso_(rmap[r.id]),
+    status: cert || (items.length && approved === items.length) ? 'APROBADO' : started ? 'EN_CURSO' : 'PENDIENTE',
+    certificate: cert ? cert.folio : null
+  };
+}
+
+/** Emite constancias de ruta pendientes (todas las constancias de sus cursos vigentes). Devuelve las emitidas. */
+function issueRouteCertificates_(user) {
+  var emp = cleanEmp_(user.NUMERO_EMPLEADO), issued = [];
+  var routes = allRoutes_().filter(function (r) { return courseVisible_(r, user); });
+  if (!routes.length) return issued;
+  var certs = certificatesFor_(emp), courses = {};
+  allCourses_().forEach(function (c) { courses[c.id] = c; });
+  routes.forEach(function (r) {
+    var items = r.courses.map(function (id) { return courses[id]; }).filter(Boolean);
+    if (!items.length || validCertificate_(certs, 'ruta:' + r.id)) return;
+    var cs = items.map(function (c) { return validCertificate_(certs, c.id); });
+    if (cs.some(function (x) { return !x; })) return;
+    var avg = Math.round(cs.reduce(function (n, x) { return n + x.score; }, 0) / cs.length);
+    var hours = Math.round(items.reduce(function (n, c) { return n + c.hours; }, 0) * 100) / 100;
+    withLock_(function () {
+      if (validCertificate_(certificatesFor_(emp), 'ruta:' + r.id)) return;
+      var out = issueCertificate_(user, { id: 'ruta:' + r.id, title: r.title, hours: hours }, avg, 'RUTA', items.map(function (c) { return c.title; }));
+      issued.push({ folio: out.folio, title: r.title });
+    });
+  });
+  if (issued.length) TABLE_CACHE_.CERTIFICADOS = null;
+  return issued;
+}
+
+function recommend_(user, list, routes) {
+  var userArea = normalize_(user.AREA), active = {}, byId = {}, related = {};
+  list.forEach(function (c) { byId[c.id] = c; if (c.status !== 'PENDIENTE') active[normalize_(c.area)] = 1; });
+  (routes || []).forEach(function (r) {
+    var engaged = r.courses.some(function (id) { return byId[id] && (byId[id].assigned || byId[id].status !== 'PENDIENTE'); });
+    if (engaged) r.courses.forEach(function (id) { related[id] = 1; });
+  });
+  return list.filter(function (c) { return !c.assigned && c.status === 'PENDIENTE'; }).map(function (c) {
+    var a = normalize_(c.area), score = (a === userArea ? 3 : 0) + (active[a] ? 2 : 0) + (related[c.id] ? 1 : 0);
+    return { id: c.id, score: score, order: list.indexOf(c) };
+  }).filter(function (x) { return x.score > 0; }).sort(function (a, b) { return b.score - a.score || a.order - b.order; })
+    .slice(0, 6).map(function (x) { return x.id; });
+}
+
 function catalog_(user) {
   var emp = cleanEmp_(user.NUMERO_EMPLEADO);
+  issueRouteCertificates_(user);
   var courses = allCourses_().filter(function (c) { return courseVisible_(c, user); });
   var assign = assignmentsFor_(user, courses), prog = progressMap_(emp), certs = certificatesFor_(emp);
   var list = courses.map(function (c) {
@@ -371,8 +477,13 @@ function catalog_(user) {
   var assigned = list.filter(function (c) { return c.assigned; });
   var approved = assigned.filter(function (c) { return c.status === 'APROBADO'; });
   var hours = list.filter(function (c) { return c.status === 'APROBADO'; }).reduce(function (n, c) { return n + c.hours; }, 0);
+  var byId = {};
+  list.forEach(function (c) { byId[c.id] = c; });
+  var routes = allRoutes_().filter(function (r) { return courseVisible_(r, user); });
+  var rmap = assignedRoutes_(user, routes);
+  var routeList = routes.map(function (r) { return routeSummary_(r, byId, rmap, certs); }).filter(function (r) { return r.courseCount; });
   return {
-    ok: true, courses: list,
+    ok: true, courses: list, routes: routeList, recommended: recommend_(user, list, routes),
     stats: {
       assigned: assigned.length, approved: approved.length, hours: Math.round(hours * 100) / 100,
       certificates: certs.filter(function (c) { return c.status === 'VIGENTE'; }).length,
@@ -393,12 +504,18 @@ function courseDetail_(user, courseId) {
   var assign = assignmentsFor_(user, [c]);
   var summary = summarizeCourse_(c, c.id in assign, prog, cert, assign[c.id]);
   summary.lessons = c.lessons.map(function (l, i) {
+    var type = lessonType_(l);
     return {
-      index: i, title: l.titulo, duration: l.duracion, text: l.texto, video: l.video || null,
-      captions: l.subtitulos || null, minSeconds: Number(l.segundosMinimos) || 0,
+      index: i, title: l.titulo, duration: l.duracion, text: l.texto, video: type === 'video' ? l.video : null, type: type,
+      topic: String(l.tema || ''), captions: type === 'video' ? (l.subtitulos || null) : null, minSeconds: Number(l.segundosMinimos) || 0,
+      materials: Array.isArray(l.materiales) ? l.materiales : [],
+      practice: type === 'practica' ? (l.preguntas || []).map(function (q) { return { text: q.pregunta, options: q.opciones }; }) : null,
       done: !!(prog && prog.lessons.indexOf(i) >= 0)
     };
   });
+  summary.objectives = c.objectives; summary.audience = c.audience;
+  summary.routes = allRoutes_().filter(function (r) { return r.courses.indexOf(c.id) >= 0 && courseVisible_(r, user); })
+    .map(function (r) { return { id: r.id, title: r.title }; });
   summary.completedLessons = prog ? prog.lessons : [];
   summary.active = c.active;
   summary.minScore = cfgNum_('CALIFICACION_MINIMA', 80);
@@ -425,6 +542,7 @@ function completeLesson_(user, courseId, lesson) {
   for (var k = 0; k < i; k++) {
     if (done.indexOf(k) < 0) throw publicError_('Completa primero los módulos anteriores.');
   }
+  if (lessonType_(c.lessons[i]) === 'practica') throw publicError_('Responde la práctica para continuar.');
   var started = Number(CacheService.getScriptCache().get(lessonKey_(user, c.id, i)) || 0);
   var min = Number(c.lessons[i].segundosMinimos) || 0;
   var elapsed = started ? (Date.now() - started) / 1000 : 0;
@@ -437,6 +555,26 @@ function completeLesson_(user, courseId, lesson) {
   done = done.concat([i]).sort(function (a, b) { return a - b; });
   saveProgress_(emp, c.id, { LECCIONES: done.join(','), ESTADO: done.length >= c.lessons.length ? 'EVALUACION' : 'EN_CURSO' });
   return { ok: true, completedLessons: done };
+}
+
+function checkPractice_(user, courseId, lesson, answers) {
+  var c = findCourse_(courseId), i = Number(lesson), emp = cleanEmp_(user.NUMERO_EMPLEADO);
+  if (!courseVisible_(c, user)) throw publicError_('Este curso no está disponible para tu empresa.');
+  if (!(i >= 0 && i < c.lessons.length) || lessonType_(c.lessons[i]) !== 'practica') throw publicError_('Práctica no válida.');
+  var qs = c.lessons[i].preguntas || [];
+  if (!Array.isArray(answers) || answers.length !== qs.length) throw publicError_('Responde todas las preguntas de la práctica.');
+  var results = qs.map(function (q, k) {
+    var ok = Number(answers[k]) === Number(q.correcta);
+    return { correct: ok, explanation: ok ? String(q.explicacion || '') : '' };
+  });
+  var all = results.every(function (r) { return r.correct; });
+  var prog = progressMap_(emp)[c.id], done = prog ? prog.lessons : [];
+  if (all && done.indexOf(i) < 0) {
+    for (var k = 0; k < i; k++) if (done.indexOf(k) < 0) throw publicError_('Completa primero los módulos anteriores.');
+    done = done.concat([i]).sort(function (a, b) { return a - b; });
+    saveProgress_(emp, c.id, { LECCIONES: done.join(','), ESTADO: done.length >= c.lessons.length ? 'EVALUACION' : 'EN_CURSO' });
+  }
+  return { ok: true, results: results, passed: all, completedLessons: done };
 }
 
 function saveProgress_(emp, courseId, values) {
@@ -510,9 +648,10 @@ function submitQuiz_(user, attemptId, answers) {
     });
     saveProgress_(emp, c.id, { INTENTOS: attempts, MEJOR_CALIFICACION: best, ESTADO: (passed || cert) ? 'APROBADO' : 'EVALUACION' });
     log_(emp, 'EVALUACION', c.id + ' · ' + score + '%');
+    var routeCerts = passed ? issueRouteCertificates_(user) : [];
     return {
       ok: true, score: score, correct: correct, total: att.map.length, passed: passed, minScore: min,
-      attempt: attempts, folio: passed ? folio : null, newCertificate: !!issued
+      attempt: attempts, folio: passed ? folio : null, newCertificate: !!issued, routeCertificates: routeCerts
     };
   });
 }
@@ -527,7 +666,7 @@ function attemptsToday_(emp, courseId) {
 
 /* ===================== Constancias ===================== */
 
-function issueCertificate_(user, course, score) {
+function issueCertificate_(user, course, score, type, detail) {
   var next = cfgNum_('FOLIO_CONSECUTIVO', 0) + 1;
   setCfg_('FOLIO_CONSECUTIVO', next);
   var now = new Date(), months = cfgNum_('VIGENCIA_MESES_CONSTANCIA', 12), expires = '';
@@ -537,7 +676,8 @@ function issueCertificate_(user, course, score) {
   table_('CERTIFICADOS', true).append({
     FOLIO: folio, CODIGO: code, NUMERO_EMPLEADO: cleanEmp_(user.NUMERO_EMPLEADO), NOMBRE: user.NOMBRE, EMPRESA: user.EMPRESA,
     CURSO_ID: course.id, CURSO: course.title, HORAS: course.hours, CALIFICACION: score, FECHA_EMISION: now,
-    FECHA_VENCIMIENTO: expires, ESTADO: 'VIGENTE', MOTIVO_REVOCACION: ''
+    FECHA_VENCIMIENTO: expires, ESTADO: 'VIGENTE', MOTIVO_REVOCACION: '', TIPO: type || 'CURSO',
+    DETALLE: detail ? JSON.stringify(detail) : ''
   });
   log_(user.NUMERO_EMPLEADO, 'CONSTANCIA_EMITIDA', folio + ' · ' + course.id);
   return { folio: folio, code: code };
@@ -561,6 +701,7 @@ function certificate_(user, folio) {
       folio: String(row.FOLIO), code: String(row.CODIGO), name: String(row.NOMBRE), employeeNumber: cleanEmp_(row.NUMERO_EMPLEADO),
       company: String(row.EMPRESA || ''), course: String(row.CURSO), hours: Number(row.HORAS) || 0, score: Number(row.CALIFICACION) || 0,
       issuedAt: iso_(row.FECHA_EMISION), expiresAt: iso_(row.FECHA_VENCIMIENTO), status: status,
+      type: String(row.CURSO_ID).indexOf('ruta:') === 0 ? 'RUTA' : 'CURSO', detail: parseJson_(row.DETALLE, []),
       verifyUrl: String(cfg_('URL_PLATAFORMA', '')).replace(/\/?$/, '/') + '?verificar=' + encodeURIComponent(row.CODIGO),
       signers: [1, 2].map(function (n) {
         return {
@@ -585,6 +726,7 @@ function verifyCertificate_(code) {
     ok: true, found: true,
     certificate: {
       folio: String(row.FOLIO), name: String(row.NOMBRE), company: String(row.EMPRESA || ''), course: String(row.CURSO),
+      type: String(row.CURSO_ID).indexOf('ruta:') === 0 ? 'RUTA' : 'CURSO',
       hours: Number(row.HORAS) || 0, issuedAt: iso_(row.FECHA_EMISION), expiresAt: iso_(row.FECHA_VENCIMIENTO), status: certStatus_(row)
     }
   };
@@ -678,7 +820,8 @@ function adminSummary_() {
       var a = areas[k]; a.compliance = a.assigned ? Math.round(a.approved / a.assigned * 100) : 100; return a;
     }).sort(function (a, b) { return a.compliance - b.compliance; }),
     recent: recent,
-    courses: allCourses_().map(function (c) { return { id: c.id, title: c.title }; })
+    courses: allCourses_().map(function (c) { return { id: c.id, title: c.title }; }),
+    routes: allRoutes_().map(function (r) { return { id: r.id, title: r.title }; })
   };
 }
 
@@ -724,7 +867,7 @@ function adminRevoke_(admin, folio, reason) {
     var row = t.find(function (r) { return String(r.FOLIO) === String(folio); });
     if (!row) throw publicError_('Constancia no encontrada.');
     t.update(row, { ESTADO: 'REVOCADA', MOTIVO_REVOCACION: reason });
-    saveProgress_(cleanEmp_(row.NUMERO_EMPLEADO), String(row.CURSO_ID), { ESTADO: 'EVALUACION' });
+    if (String(row.CURSO_ID).indexOf('ruta:') !== 0) saveProgress_(cleanEmp_(row.NUMERO_EMPLEADO), String(row.CURSO_ID), { ESTADO: 'EVALUACION' });
     log_(admin.NUMERO_EMPLEADO, 'CONSTANCIA_REVOCADA', folio + ' · ' + reason);
     return { ok: true };
   });
@@ -735,12 +878,13 @@ function adminAssign_(admin, b) {
   if (['TODOS', 'EMPLEADO', 'AREA', 'PUESTO', 'EMPRESA'].indexOf(type) < 0) throw publicError_('Tipo de asignación no válido.');
   var value = String(b.value || '').trim();
   if (type !== 'TODOS' && !value) throw publicError_('Indica a quién se asigna el curso.');
-  var course = findCourse_(b.courseId);
+  var isRoute = String(b.courseId || '').indexOf('ruta:') === 0;
+  var course = isRoute ? findRoute_(String(b.courseId).slice(5)) : findCourse_(b.courseId);
   var due = b.dueDate ? new Date(b.dueDate + 'T23:59:59') : '';
   if (due && isNaN(due)) throw publicError_('Fecha límite no válida.');
   withLock_(function () {
     table_('ASIGNACIONES', true).append({
-      TIPO: type, VALOR: type === 'EMPLEADO' ? cleanEmp_(value) : value, CURSO_ID: course.id, FECHA_LIMITE: due,
+      TIPO: type, VALOR: type === 'EMPLEADO' ? cleanEmp_(value) : value, CURSO_ID: (isRoute ? 'ruta:' : '') + course.id, FECHA_LIMITE: due,
       ASIGNADO_POR: cleanEmp_(admin.NUMERO_EMPLEADO), FECHA_ASIGNACION: new Date()
     });
   });
@@ -754,7 +898,8 @@ function adminCourses_() {
   var courses = allCourses_(true).map(function (c) {
     return {
       id: c.id, title: c.title, area: c.area, hours: c.hours, required: c.required, companies: c.companies, order: c.order,
-      description: c.description, active: c.active, lessons: c.lessons, quiz: c.quiz
+      description: c.description, active: c.active, lessons: c.lessons, quiz: c.quiz,
+      objectives: c.objectives, audience: c.audience, level: c.level, image: c.image
     };
   });
   var areas = {}, companies = {};
@@ -779,15 +924,34 @@ function validateCourse_(c) {
   if (c.lessons.length > 40) throw publicError_('El curso no puede tener más de 40 módulos.');
   var lessons = c.lessons.map(function (l, i) {
     var n = 'Módulo ' + (i + 1) + ': ';
-    var t = cleanText_(l.titulo, 160), text = cleanText_(l.texto, 6000), video = cleanText_(l.video, 500);
+    var type = l.tipo === 'practica' ? 'practica' : l.tipo === 'video' || (!l.tipo && l.video) ? 'video' : 'lectura';
+    var t = cleanText_(l.titulo, 160), text = cleanText_(l.texto, 6000), video = type === 'video' ? cleanText_(l.video, 500) : '';
     if (!t) throw publicError_(n + 'escribe el título.');
-    if (!text && !video) throw publicError_(n + 'agrega el texto o un video.');
+    if (type === 'video' && !video) throw publicError_(n + 'escribe el nombre del video.');
+    if (type === 'lectura' && !text) throw publicError_(n + 'escribe el contenido.');
     if (video && !/^(https:\/\/[^\s"'<>]+|[A-Za-z0-9._\/-]+)\.mp4(\?[^\s"'<>]*)?$/i.test(video)) {
       throw publicError_(n + 'el video debe ser un archivo .mp4 del repositorio (ej. curso.mp4) o una dirección https que termine en .mp4.');
     }
     var min = Math.round(Number(l.segundosMinimos) || 0);
     if (min < 0 || min > 7200) throw publicError_(n + 'el tiempo mínimo debe estar entre 0 y 7200 segundos.');
-    var out = { titulo: t, duracion: cleanText_(l.duracion, 30) || (video ? 'Video' : 'Lectura'), texto: text, segundosMinimos: min };
+    var out = { tipo: type, tema: cleanText_(l.tema, 80), titulo: t, duracion: cleanText_(l.duracion, 30) || (type === 'video' ? 'Video' : type === 'practica' ? 'Práctica' : 'Lectura'), texto: text, segundosMinimos: type === 'practica' ? 0 : min };
+    var mats = Array.isArray(l.materiales) ? l.materiales : [];
+    if (mats.length > 10) throw publicError_(n + 'máximo 10 materiales de apoyo.');
+    out.materiales = mats.map(function (m, k) {
+      var nm = cleanText_(m && m.nombre, 120), url = cleanText_(m && m.url, 600);
+      if (!nm || !url) throw publicError_(n + 'el material ' + (k + 1) + ' necesita nombre y enlace.');
+      if (!/^(https:\/\/[^\s"'<>]+|[A-Za-z0-9._\/-]+\.[A-Za-z0-9]{2,5})$/.test(url)) throw publicError_(n + 'el enlace del material ' + (k + 1) + ' debe empezar con https:// o ser un archivo del repositorio.');
+      return { nombre: nm, url: url };
+    });
+    if (type === 'practica') {
+      var pq = Array.isArray(l.preguntas) ? l.preguntas : [];
+      if (!pq.length || pq.length > 10) throw publicError_(n + 'la práctica debe tener de 1 a 10 preguntas.');
+      out.preguntas = pq.map(function (q, k) {
+        var v = validateQuestion_(q, n + 'pregunta ' + (k + 1) + ': ');
+        v.explicacion = cleanText_(q.explicacion, 400);
+        return v;
+      });
+    }
     if (video) {
       out.video = video;
       if (Array.isArray(l.subtitulos) && l.subtitulos.length) out.subtitulos = l.subtitulos.filter(function (x) {
@@ -798,8 +962,27 @@ function validateCourse_(c) {
   });
   if (!Array.isArray(c.quiz) || !c.quiz.length) throw publicError_('Agrega al menos una pregunta a la evaluación.');
   if (c.quiz.length > 50) throw publicError_('La evaluación no puede tener más de 50 preguntas.');
-  var quiz = c.quiz.map(function (q, i) {
-    var n = 'Pregunta ' + (i + 1) + ': ';
+  var quiz = c.quiz.map(function (q, i) { return validateQuestion_(q, 'Pregunta ' + (i + 1) + ': '); });
+  var lessonsJson = JSON.stringify(lessons), quizJson = JSON.stringify(quiz);
+  if (lessonsJson.length > 49000) throw publicError_('El contenido de los módulos es demasiado largo para una celda. Divide el curso o reduce el texto.');
+  if (quizJson.length > 49000) throw publicError_('La evaluación es demasiado larga para una celda. Reduce el número de preguntas.');
+  var level = cleanText_(c.level, 20);
+  if (level && ['Básico', 'Intermedio', 'Avanzado'].indexOf(level) < 0) throw publicError_('El nivel debe ser Básico, Intermedio o Avanzado.');
+  var image = cleanText_(c.image, 600);
+  if (image && !/^(https:\/\/[^\s"'<>]+|[A-Za-z0-9._\/-]+\.(png|jpe?g|webp|svg))$/i.test(image)) throw publicError_('La imagen debe ser una dirección https o un archivo .png, .jpg, .webp o .svg del repositorio.');
+  var objectives = (Array.isArray(c.objectives) ? c.objectives : String(c.objectives || '').split('\n'))
+    .map(function (x) { return cleanText_(x, 240); }).filter(String).slice(0, 12);
+  return {
+    ID: id, TITULO: title, AREA: cleanText_(c.area, 80), HORAS: hours, OBLIGATORIO: c.required ? 'SI' : 'NO',
+    EMPRESAS: (Array.isArray(c.companies) ? c.companies : splitList_(c.companies)).map(function (x) { return cleanText_(x, 80); }).filter(String).join(', '),
+    ACTIVO: c.active === false ? 'NO' : 'SI', ORDEN: Math.max(1, Math.round(Number(c.order) || 999)),
+    DESCRIPCION: cleanText_(c.description, 600), LECCIONES_JSON: lessonsJson, EVALUACION_JSON: quizJson,
+    OBJETIVOS: objectives.join('\n'), DIRIGIDO_A: cleanText_(c.audience, 300), NIVEL: level, IMAGEN: image
+  };
+}
+
+function validateQuestion_(q, n) {
+    q = q || {};
     var text = cleanText_(q.pregunta, 600);
     if (!text) throw publicError_(n + 'escribe el enunciado.');
     if (!Array.isArray(q.opciones) || q.opciones.length < 2 || q.opciones.length > 6) throw publicError_(n + 'debe tener de 2 a 6 opciones.');
@@ -813,16 +996,6 @@ function validateCourse_(c) {
     var correct = Number(q.correcta);
     if (!(correct >= 0 && correct < opts.length && Math.floor(correct) === correct)) throw publicError_(n + 'marca la respuesta correcta.');
     return { pregunta: text, opciones: opts, correcta: correct };
-  });
-  var lessonsJson = JSON.stringify(lessons), quizJson = JSON.stringify(quiz);
-  if (lessonsJson.length > 49000) throw publicError_('El contenido de los módulos es demasiado largo para una celda. Divide el curso o reduce el texto.');
-  if (quizJson.length > 49000) throw publicError_('La evaluación es demasiado larga para una celda. Reduce el número de preguntas.');
-  return {
-    ID: id, TITULO: title, AREA: cleanText_(c.area, 80), HORAS: hours, OBLIGATORIO: c.required ? 'SI' : 'NO',
-    EMPRESAS: (Array.isArray(c.companies) ? c.companies : splitList_(c.companies)).map(function (x) { return cleanText_(x, 80); }).filter(String).join(', '),
-    ACTIVO: c.active === false ? 'NO' : 'SI', ORDEN: Math.max(1, Math.round(Number(c.order) || 999)),
-    DESCRIPCION: cleanText_(c.description, 600), LECCIONES_JSON: lessonsJson, EVALUACION_JSON: quizJson
-  };
 }
 
 function adminSaveCourse_(admin, course, isNew) {
@@ -846,6 +1019,84 @@ function adminSetCourseActive_(admin, courseId, active) {
     t.update(row, { ACTIVO: active ? 'SI' : 'NO' });
   });
   log_(admin.NUMERO_EMPLEADO, active ? 'CURSO_ACTIVADO' : 'CURSO_DESACTIVADO', courseId);
+  return { ok: true };
+}
+
+function findRoute_(id, includeInactive) {
+  var r = allRoutes_(includeInactive).filter(function (x) { return x.id === String(id); })[0];
+  if (!r) throw publicError_('La ruta no existe o no está activa.');
+  return r;
+}
+
+function routeDetail_(user, routeId) {
+  var r = findRoute_(routeId);
+  if (!courseVisible_(r, user)) throw publicError_('Esta ruta no está disponible para tu empresa.');
+  var cat = catalog_(user);
+  var summary = cat.routes.filter(function (x) { return x.id === r.id; })[0];
+  if (!summary) throw publicError_('Esta ruta aún no tiene cursos disponibles.');
+  var byId = {};
+  cat.courses.forEach(function (c) { byId[c.id] = c; });
+  summary.courses = summary.courseIds.map(function (id) { return byId[id]; });
+  return { ok: true, route: summary };
+}
+
+function adminRoutes_() {
+  var routes = allRoutes_(true);
+  var courses = allCourses_(true).map(function (c) { return { id: c.id, title: c.title, area: c.area, hours: c.hours, active: c.active }; });
+  var puestos = {}, areas = {}, companies = {};
+  var add = function (map, v) { v = String(v || '').trim(); if (v && !map[normalize_(v)]) map[normalize_(v)] = v; };
+  table_('USUARIOS').rows.forEach(function (u) { add(puestos, u.PUESTO); add(areas, u.AREA); add(companies, u.EMPRESA); });
+  routes.forEach(function (r) { r.puestos.forEach(function (x) { add(puestos, x); }); r.areas.forEach(function (x) { add(areas, x); }); r.companies.forEach(function (x) { add(companies, x); }); });
+  var values = function (m) { return Object.keys(m).map(function (k) { return m[k]; }).sort(); };
+  return { ok: true, routes: routes, courses: courses, puestos: values(puestos), areas: values(areas), companies: values(companies) };
+}
+
+function validateRoute_(r) {
+  if (!r || typeof r !== 'object') throw publicError_('Datos de la ruta no válidos.');
+  var id = String(r.id || '').trim().toLowerCase();
+  if (!/^[a-z0-9][a-z0-9-]{1,39}$/.test(id)) throw publicError_('La clave de la ruta debe tener de 2 a 40 caracteres: letras minúsculas, números y guiones.');
+  var title = cleanText_(r.title, 160);
+  if (title.length < 3) throw publicError_('Escribe el nombre de la ruta.');
+  var ids = (Array.isArray(r.courses) ? r.courses : []).map(function (x) { return String(x).trim(); }).filter(String);
+  if (!ids.length) throw publicError_('Agrega al menos un curso a la ruta.');
+  if (ids.length > 30) throw publicError_('La ruta no puede tener más de 30 cursos.');
+  var known = {};
+  allCourses_(true).forEach(function (c) { known[c.id] = 1; });
+  var seen = {};
+  ids.forEach(function (id) {
+    if (!known[id]) throw publicError_('El curso "' + id + '" no existe.');
+    if (seen[id]) throw publicError_('El curso "' + id + '" está repetido en la ruta.');
+    seen[id] = 1;
+  });
+  var list = function (v) { return (Array.isArray(v) ? v : splitList_(v)).map(function (x) { return cleanText_(x, 80); }).filter(String).join(', '); };
+  return {
+    ID: id, TITULO: title, DESCRIPCION: cleanText_(r.description, 600), CURSOS: ids.join(', '),
+    PUESTOS: list(r.puestos), AREAS: list(r.areas), EMPRESAS: list(r.companies),
+    ACTIVO: r.active === false ? 'NO' : 'SI', ORDEN: Math.max(1, Math.round(Number(r.order) || 999))
+  };
+}
+
+function adminSaveRoute_(admin, route, isNew) {
+  var values = validateRoute_(route);
+  withLock_(function () {
+    var t = table_('RUTAS', true);
+    var row = t.find(function (r) { return String(r.ID || '').trim().toLowerCase() === values.ID; });
+    if (isNew && row) throw publicError_('Ya existe una ruta con la clave "' + values.ID + '". Elige otra.');
+    if (!isNew && !row) throw publicError_('La ruta que intentas editar ya no existe.');
+    if (row) t.update(row, values); else t.append(values);
+  });
+  log_(admin.NUMERO_EMPLEADO, isNew ? 'RUTA_CREADA' : 'RUTA_EDITADA', values.ID);
+  return { ok: true, id: values.ID };
+}
+
+function adminSetRouteActive_(admin, routeId, active) {
+  withLock_(function () {
+    var t = table_('RUTAS', true);
+    var row = t.find(function (r) { return String(r.ID || '').trim() === String(routeId); });
+    if (!row) throw publicError_('Ruta no encontrada.');
+    t.update(row, { ACTIVO: active ? 'SI' : 'NO' });
+  });
+  log_(admin.NUMERO_EMPLEADO, active ? 'RUTA_ACTIVADA' : 'RUTA_DESACTIVADA', routeId);
   return { ok: true };
 }
 
@@ -873,8 +1124,58 @@ function spreadsheet_() {
 }
 
 /** Lee una hoja como objetos por encabezado. fresh=true ignora el caché de la petición. */
+var MIGRATED_ = {};
+/** Crea la hoja o agrega las columnas que falten según SHEETS (sin borrar datos). */
+function migrate_(name) {
+  if (MIGRATED_[name] || !SHEETS[name]) return;
+  MIGRATED_[name] = true;
+  var ss = spreadsheet_(), sh = ss.getSheetByName(name);
+  var current = sh ? sh.getRange(1, 1, 1, Math.max(sh.getLastColumn(), 1)).getValues()[0].map(function (h) { return String(h).trim().toUpperCase(); }) : [];
+  var missing = SHEETS[name].filter(function (h) { return current.indexOf(h) < 0; });
+  if (sh && !missing.length) return;
+  withLock_(function () {
+    var created = false;
+    sh = ss.getSheetByName(name);
+    if (!sh) { sh = ss.insertSheet(name); created = true; current = []; }
+    current = sh.getRange(1, 1, 1, Math.max(sh.getLastColumn(), 1)).getValues()[0].map(function (h) { return String(h).trim().toUpperCase(); });
+    var used = current.filter(String).length;
+    missing = SHEETS[name].filter(function (h) { return current.indexOf(h) < 0; });
+    if (missing.length) sh.getRange(1, used + 1, 1, missing.length).setValues([missing]);
+    sh.getRange(1, 1, 1, used + missing.length).setFontWeight('bold').setBackground('#002B49').setFontColor('#FFFFFF');
+    sh.setFrozenRows(1);
+    TABLE_CACHE_[name] = null;
+    if (name === 'RUTAS' && created && typeof CCE_ROUTES !== 'undefined') seedRoutes_(sh);
+    if (name === 'CURSOS' && missing.indexOf('OBJETIVOS') >= 0) backfillCourseMeta_();
+  });
+}
+
+function seedRoutes_(sh) {
+  TABLE_CACHE_.RUTAS = null;
+  var t = table_('RUTAS', true);
+  CCE_ROUTES.forEach(function (r) {
+    t.append({ ID: r.id, TITULO: r.titulo, DESCRIPCION: r.descripcion, CURSOS: r.cursos.join(', '), PUESTOS: '', AREAS: '', EMPRESAS: '', ACTIVO: 'SI', ORDEN: r.orden });
+  });
+}
+
+/** Llena objetivos, público y nivel de los cursos del catálogo inicial que no los tengan. */
+function backfillCourseMeta_() {
+  if (typeof CCE_CATALOG === 'undefined') return;
+  TABLE_CACHE_.CURSOS = null;
+  var t = table_('CURSOS', true);
+  CCE_CATALOG.forEach(function (c) {
+    var row = t.find(function (r) { return String(r.ID || '').trim() === c.id; });
+    if (!row) return;
+    var v = {};
+    if (!String(row.OBJETIVOS || '').trim() && c.objetivos) v.OBJETIVOS = c.objetivos.join('\n');
+    if (!String(row.DIRIGIDO_A || '').trim() && c.dirigido) v.DIRIGIDO_A = c.dirigido;
+    if (!String(row.NIVEL || '').trim() && c.nivel) v.NIVEL = c.nivel;
+    if (Object.keys(v).length) t.update(row, v);
+  });
+}
+
 function table_(name, fresh) {
   if (!fresh && TABLE_CACHE_[name]) return TABLE_CACHE_[name];
+  migrate_(name);
   var sh = spreadsheet_().getSheetByName(name);
   if (!sh) throw new Error('Falta la hoja ' + name + '. Ejecuta setup().');
   var values = sh.getDataRange().getValues();
@@ -994,7 +1295,8 @@ function setup() {
   var first = ss.getSheetByName('Hoja 1') || ss.getSheetByName('Sheet1');
   if (first && first.getLastRow() === 0 && ss.getSheets().length > 1) ss.deleteSheet(first);
 
-  TABLE_CACHE_ = {}; CONFIG_CACHE_ = null;
+  TABLE_CACHE_ = {}; CONFIG_CACHE_ = null; MIGRATED_ = {};
+  if (ss.getSheetByName('RUTAS') && ss.getSheetByName('RUTAS').getLastRow() <= 1 && typeof CCE_ROUTES !== 'undefined') seedRoutes_(ss.getSheetByName('RUTAS'));
   var conf = table_('CONFIGURACION', true);
   DEFAULT_CONFIG.forEach(function (c) {
     if (!conf.find(function (r) { return String(r.CLAVE).trim() === c[0]; })) conf.append({ CLAVE: c[0], VALOR: c[1], DESCRIPCION: c[2] });
@@ -1015,12 +1317,14 @@ function syncCatalog_(overwrite) {
     var values = {
       ID: c.id, TITULO: c.titulo, AREA: c.area, HORAS: c.horas, OBLIGATORIO: c.obligatorio ? 'SI' : 'NO', EMPRESAS: '',
       ACTIVO: 'SI', ORDEN: c.orden, DESCRIPCION: c.descripcion,
-      LECCIONES_JSON: JSON.stringify(c.lecciones), EVALUACION_JSON: JSON.stringify(c.evaluacion)
+      LECCIONES_JSON: JSON.stringify(c.lecciones), EVALUACION_JSON: JSON.stringify(c.evaluacion),
+      OBJETIVOS: (c.objetivos || []).join('\n'), DIRIGIDO_A: c.dirigido || '', NIVEL: c.nivel || '', IMAGEN: ''
     };
     var row = t.find(function (r) { return String(r.ID).trim() === c.id; });
     if (!row) t.append(values);
     else if (overwrite) t.update(row, { TITULO: values.TITULO, DESCRIPCION: values.DESCRIPCION, LECCIONES_JSON: values.LECCIONES_JSON, EVALUACION_JSON: values.EVALUACION_JSON });
   });
+  backfillCourseMeta_();
 }
 
 /** Reemplaza contenido y evaluaciones del catálogo con la versión de Catalogo.gs. */

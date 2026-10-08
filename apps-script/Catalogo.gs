@@ -105,6 +105,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 1
       }
+    ],
+    "dirigido": "Personal clínico y de apoyo que tiene contacto con pacientes.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Usar dos identificadores en todo proceso asistencial.",
+      "Confirmar la identidad con preguntas abiertas.",
+      "Detener el proceso ante cualquier discrepancia."
     ]
   },
   {
@@ -207,6 +214,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 0
       }
+    ],
+    "dirigido": "Personal que transmite información clínica o recibe órdenes verbales.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Estructurar la información clínica con SAER.",
+      "Aplicar escuchar, escribir, leer y confirmar en órdenes verbales.",
+      "Verificar que el mensaje fue comprendido."
     ]
   },
   {
@@ -309,6 +323,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 0
       }
+    ],
+    "dirigido": "Todo el personal que tiene contacto con pacientes o su entorno.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Identificar los cinco momentos de la higiene de manos.",
+      "Elegir entre solución alcoholada y agua con jabón.",
+      "Reconocer que los guantes no sustituyen la higiene de manos."
     ]
   },
   {
@@ -411,6 +432,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 0
       }
+    ],
+    "dirigido": "Personal clínico, de laboratorio, limpieza y prehospitalario.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Aplicar las precauciones estándar con toda persona atendida.",
+      "Seleccionar el EPP según el riesgo de exposición.",
+      "Desechar punzocortantes de forma segura."
     ]
   },
   {
@@ -513,6 +541,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 0
       }
+    ],
+    "dirigido": "Todo el personal que interactúa con pacientes y familiares.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Comunicar con lenguaje claro y respetuoso.",
+      "Proteger la privacidad del paciente.",
+      "Canalizar inconformidades con calma."
     ]
   },
   {
@@ -583,6 +618,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 1
       }
+    ],
+    "dirigido": "Personal de admisión, recepción y caja.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Verificar identidad y servicio solicitado.",
+      "Registrar la información completa y sin abreviaturas.",
+      "Comunicar a tiempo las condiciones del servicio."
     ]
   },
   {
@@ -653,6 +695,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 1
       }
+    ],
+    "dirigido": "Personal de enfermería, laboratorio, limpieza y quirófano.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Clasificar los residuos biológico-infecciosos.",
+      "Elegir el recipiente y color correctos.",
+      "Respetar la capacidad de llenado de los contenedores."
     ]
   },
   {
@@ -723,6 +772,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 0
       }
+    ],
+    "dirigido": "Personal de enfermería y terapia respiratoria.",
+    "nivel": "Intermedio",
+    "objetivos": [
+      "Preparar al paciente y los insumos para la punción arterial.",
+      "Tomar la muestra sin burbujas de aire.",
+      "Identificar y trasladar la muestra conforme al protocolo."
     ]
   },
   {
@@ -793,6 +849,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 1
       }
+    ],
+    "dirigido": "Personal de enfermería y técnicos que realizan electrocardiogramas.",
+    "nivel": "Intermedio",
+    "objetivos": [
+      "Preparar al paciente y la piel.",
+      "Colocar correctamente los electrodos de las 12 derivaciones.",
+      "Reconocer trazos que requieren aviso inmediato."
     ]
   },
   {
@@ -863,6 +926,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 2
       }
+    ],
+    "dirigido": "Médicos, enfermería y personal de respuesta a emergencias.",
+    "nivel": "Intermedio",
+    "objetivos": [
+      "Reconocer el paro cardiorrespiratorio.",
+      "Realizar compresiones de calidad.",
+      "Usar el desfibrilador externo automático."
     ]
   },
   {
@@ -933,6 +1003,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 0
       }
+    ],
+    "dirigido": "Personal de farmacia, enfermería y médicos.",
+    "nivel": "Intermedio",
+    "objetivos": [
+      "Identificar los medicamentos de alto riesgo.",
+      "Almacenarlos separados y con acceso restringido.",
+      "Aplicar la doble verificación independiente."
     ]
   },
   {
@@ -1003,6 +1080,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 1
       }
+    ],
+    "dirigido": "Personal que maneja sustancias químicas peligrosas.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Reconocer los pictogramas del sistema armonizado.",
+      "Consultar la hoja de datos de seguridad.",
+      "Actuar ante recipientes sin etiqueta."
     ]
   },
   {
@@ -1073,6 +1157,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 2
       }
+    ],
+    "dirigido": "Todo el personal expuesto a riesgos biológicos, químicos o físicos.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Seleccionar el equipo según la evaluación del riesgo.",
+      "Colocar y retirar el EPP sin autocontaminarse.",
+      "Desechar el equipo de un solo uso correctamente."
     ]
   },
   {
@@ -1137,6 +1228,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 1
       }
+    ],
+    "dirigido": "Personal administrativo, de almacén y de servicios.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Explicar las cinco etapas de la metodología.",
+      "Ordenar el área de trabajo con criterios visuales.",
+      "Sostener la disciplina de mejora continua."
     ]
   },
   {
@@ -1201,6 +1299,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 1
       }
+    ],
+    "dirigido": "Personal que trabaja al exterior o en áreas calurosas.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Identificar los factores de riesgo de agotamiento por calor.",
+      "Reconocer los signos de alarma.",
+      "Aplicar la respuesta inmediata."
     ]
   },
   {
@@ -1265,6 +1370,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 2
       }
+    ],
+    "dirigido": "Todo el personal, en especial recepción, telefonía y seguridad.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Registrar los datos de una amenaza telefónica.",
+      "Actuar ante un objeto sospechoso.",
+      "Seguir las rutas de evacuación indicadas."
     ]
   },
   {
@@ -1335,6 +1447,13 @@ var CCE_CATALOG = [
         ],
         "correcta": 0
       }
+    ],
+    "dirigido": "Colaboradores de nuevo ingreso.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Conocer la misión, los valores y la cultura de seguridad.",
+      "Identificar las normas de trabajo y confidencialidad.",
+      "Saber a qué área acudir para cada trámite."
     ]
   },
   {
@@ -1382,6 +1501,69 @@ var CCE_CATALOG = [
         ],
         "correcta": 1
       }
+    ],
+    "dirigido": "Médicos y personal que gestiona expedientes clínicos.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Localizar el formato de consentimiento en el expediente.",
+      "Personalizar los datos del procedimiento.",
+      "Explicar beneficios, riesgos y alternativas antes de la firma."
     ]
+  }
+];
+
+/** Rutas de aprendizaje de ejemplo. Se cargan una sola vez, al crearse la hoja RUTAS. */
+var CCE_ROUTES = [
+  {
+    "id": "nuevo-ingreso",
+    "titulo": "Inducción para nuevo ingreso",
+    "descripcion": "Los cursos básicos que todo colaborador debe acreditar en sus primeras semanas: cultura institucional y metas de seguridad del paciente.",
+    "cursos": [
+      "induccion-rh",
+      "aesp1",
+      "aesp2",
+      "aesp5",
+      "precauciones-estandar",
+      "trato-digno"
+    ],
+    "orden": 1
+  },
+  {
+    "id": "enfermeria-hospitalaria",
+    "titulo": "Enfermería hospitalaria",
+    "descripcion": "Procedimientos y controles que el personal de enfermería aplica en el día a día.",
+    "cursos": [
+      "rpbi",
+      "med-alto-riesgo",
+      "gasometria",
+      "ekg",
+      "epp"
+    ],
+    "orden": 2
+  },
+  {
+    "id": "admision-atencion",
+    "titulo": "Admisión y atención al paciente",
+    "descripcion": "Recepción, registro y comunicación con pacientes y familiares desde el primer contacto.",
+    "cursos": [
+      "acc11",
+      "aesp1",
+      "aesp2",
+      "trato-digno"
+    ],
+    "orden": 3
+  },
+  {
+    "id": "seguridad-higiene",
+    "titulo": "Seguridad e higiene en el trabajo",
+    "descripcion": "Prevención de riesgos, manejo de sustancias y respuesta ante emergencias en las instalaciones.",
+    "cursos": [
+      "nom018",
+      "epp",
+      "calor",
+      "bombas",
+      "5s"
+    ],
+    "orden": 4
   }
 ];

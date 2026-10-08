@@ -43,7 +43,14 @@ Importante: las firmas siguen existiendo en el historial de Git del repositorio 
 
 Para un PIN olvidado: Administración → Personal → colaborador → **Generar PIN temporal**, o en la hoja el menú **CCE 2.0 → Generar PIN temporal**.
 
-## 4. Cursos y asignaciones
+## 4. Cursos, rutas y asignaciones
+
+**Rutas de aprendizaje:** Administración → **Rutas**. Una ruta agrupa cursos en orden (por ejemplo, "Inducción para nuevo ingreso"). Puede asignarse sola a ciertos puestos o áreas. Al acreditar todos sus cursos, el colaborador recibe una **constancia de ruta** con el detalle de los cursos y las horas totales. Se guardan en la hoja **RUTAS**, que el sistema crea solo con cuatro rutas de ejemplo.
+
+**Ficha y contenido del curso:** cada curso puede tener objetivos ("Lo que aprenderás"), público, nivel e imagen. Los módulos pueden agruparse por **tema**, llevar **material de apoyo** (PDF o enlaces) y ser de tipo **lectura, video o práctica** (preguntas sin calificación que el colaborador repite hasta acertar).
+
+**Actualización automática de la hoja:** al usar la versión nueva, el sistema agrega solo las columnas y la hoja RUTAS que falten, y llena objetivos y público de los 18 cursos iniciales. No borra datos.
+
 
 **Editor de cursos:** Administración → **Cursos**. Ahí se crean, editan, activan y desactivan cursos con formularios (datos generales, módulos de lectura o video, y evaluación con respuesta correcta). Los cambios se ven al guardar. Los videos .mp4 se suben a la carpeta principal del repositorio y en el editor se escribe su nombre.
 
