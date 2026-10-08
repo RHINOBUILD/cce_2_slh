@@ -37,11 +37,11 @@ var DEFAULT_CONFIG = [
   ['VIGENCIA_MESES_CONSTANCIA', 12, 'Meses de vigencia de cada constancia (0 = sin vencimiento).'],
   ['FOLIO_CONSECUTIVO', 0, 'Último consecutivo de folio emitido. No editar.'],
   ['URL_PLATAFORMA', 'https://capacitacion.rhinobuild.org/', 'URL pública usada en el QR de verificación.'],
-  ['FIRMANTE_1_NOMBRE', 'Dr. Luis Enrique Espinoza', 'Nombre del primer firmante.'],
+  ['FIRMANTE_1_NOMBRE', 'Dr. Luis Enrique Espinoza Reyes', 'Nombre del primer firmante.'],
   ['FIRMANTE_1_CARGO', 'Director Médico', 'Cargo del primer firmante.'],
   ['FIRMANTE_1_FIRMA_ID', '', 'ID del archivo PNG de la firma en Google Drive.'],
-  ['FIRMANTE_2_NOMBRE', 'Dirección de Capital Humano', 'Nombre del segundo firmante.'],
-  ['FIRMANTE_2_CARGO', "Grupo Saint Luke's", 'Cargo del segundo firmante.'],
+  ['FIRMANTE_2_NOMBRE', 'Lic. Psic. Fernando Carrillo Ramírez', 'Nombre del segundo firmante.'],
+  ['FIRMANTE_2_CARGO', 'Director de Capital Humano', 'Cargo del segundo firmante.'],
   ['FIRMANTE_2_FIRMA_ID', '', 'ID del archivo PNG de la firma en Google Drive.']
 ];
 
