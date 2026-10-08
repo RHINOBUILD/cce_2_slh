@@ -105,6 +105,10 @@
     .topbar .wrap{height:72px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
     .brand{display:flex;align-items:center;gap:.85rem;text-decoration:none;color:inherit;border:0;background:none;padding:0;cursor:pointer}
     .brand img{height:44px;width:auto}
+    .logo-chip{display:inline-flex;align-items:center;background:var(--ink);border-radius:8px;padding:8px 12px}
+    .logo-chip img{height:30px;width:auto}
+    .logo-chip-sm{padding:7px 11px}
+    .logo-chip-sm img,.appbar .brand .logo-chip-sm img{height:26px}
     .brand-text{border-left:1px solid var(--line);padding-left:.85rem;line-height:1.25}
     .brand-text strong{display:block;color:var(--ink);font-size:.95rem}
     .brand-text small{color:var(--muted);font-size:.8rem}
@@ -150,13 +154,13 @@
     .auth{min-height:100vh;display:grid;background:#fff}
     .auth-side{display:none;background:var(--ink);color:#fff;padding:3rem;position:relative;overflow:hidden}
     .auth-side::after{content:"";position:absolute;left:-140px;bottom:-140px;width:420px;height:420px;border-radius:50%;border:44px solid rgba(197,160,89,.22)}
-    .auth-side img{height:96px;width:auto}
+    .auth-side img{height:150px;width:auto;align-self:flex-start}
     .auth-side h2{font-family:var(--serif);color:#fff;font-size:2.6rem;font-weight:600;max-width:14ch;margin-top:auto}
     .auth-side p{color:#C9DCEB;margin-top:1rem;max-width:42ch;position:relative;z-index:1}
     .auth-main{display:flex;align-items:center;justify-content:center;padding:2rem 1.25rem}
     .auth-card{width:100%;max-width:400px}
     .auth-card .mobile-logo{background:var(--ink);border-radius:var(--r-lg);padding:.9rem 1rem;margin-bottom:2rem;display:inline-block}
-    .auth-card .mobile-logo img{height:56px;width:auto}
+    .auth-card .mobile-logo img{height:96px;width:auto}
     .auth-card h1{font-family:var(--serif);font-size:2rem;font-weight:600;margin-top:1.4rem}
     .auth-card form{display:grid;gap:1.1rem;margin-top:1.8rem}
     .pin-rules{font-size:.85rem;color:var(--muted);margin:0;padding-left:1.1rem}
@@ -164,7 +168,6 @@
     /* ===== Aplicación ===== */
     .appbar{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
     .appbar .wrap{height:68px;display:flex;align-items:center;gap:1.25rem}
-    .appbar .brand img{height:38px}
     .mainnav{display:none;gap:.25rem;margin-left:1rem}
     .navlink{border:0;background:none;padding:.55rem .85rem;border-radius:var(--r);font-weight:600;color:var(--muted);cursor:pointer;display:inline-flex;gap:.5rem;align-items:center;text-decoration:none}
     .navlink:hover{color:var(--ink);background:var(--paper)}
@@ -403,7 +406,7 @@
     <header class="topbar">
       <div class="wrap">
         <a class="brand" href="./">
-          <span style="background:var(--ink);border-radius:8px;padding:5px 9px"><img src="assets/cce-logo-blanco.png" alt="CCE, Centro de Capacitación y Enseñanza" style="height:40px"></span>
+          <span class="logo-chip"><img src="assets/cce-marca-blanco.svg" alt="CCE, Centro de Capacitación y Enseñanza"></span>
           <span class="brand-text" style="display:none" data-md-show><strong>Centro de Capacitación y Enseñanza</strong><small>Grupo Saint Luke's</small></span>
         </a>
         <button class="btn btn-primary" data-action="open-login">Ingresar</button>
@@ -478,14 +481,14 @@
   <!-- ============ ACCESO ============ -->
   <div id="screen-login" class="auth" hidden>
     <section class="auth-side">
-      <img src="assets/cce-logo-blanco.png" alt="CCE, Centro de Capacitación y Enseñanza">
+      <img src="assets/cce-logo-blanco.svg" alt="CCE, Centro de Capacitación y Enseñanza">
       <h2>Aprender para cuidar mejor.</h2>
       <p>Capacitación, seguimiento y constancias para las empresas y profesionales del grupo.</p>
     </section>
     <section class="auth-main">
       <div class="auth-card">
         <button class="back" data-action="open-landing"><i class="fa-solid fa-arrow-left"></i> Volver</button>
-        <div class="mobile-logo"><img src="assets/cce-logo-blanco.png" alt="CCE"></div>
+        <div class="mobile-logo"><img src="assets/cce-logo-blanco.svg" alt="CCE, Centro de Capacitación y Enseñanza, Saint Luke's Hospitals"></div>
 
         <div id="login-step-credentials">
           <h1>Ingresa a tu expediente</h1>
@@ -517,7 +520,7 @@
   <!-- ============ VERIFICACIÓN PÚBLICA ============ -->
   <div id="screen-verify" class="verify-page" hidden>
     <header class="topbar"><div class="wrap">
-      <a class="brand" href="./"><span style="background:var(--ink);border-radius:8px;padding:5px 9px"><img src="assets/cce-logo-blanco.png" alt="CCE" style="height:40px"></span></a>
+      <a class="brand" href="./"><span class="logo-chip"><img src="assets/cce-marca-blanco.svg" alt="CCE, Centro de Capacitación y Enseñanza"></span></a>
       <a class="btn btn-ghost btn-sm" href="./">Ir a la plataforma</a>
     </div></header>
     <main class="verify-main">
@@ -539,7 +542,7 @@
   <div id="app" hidden>
     <header class="appbar">
       <div class="wrap">
-        <a class="brand" href="#/inicio" aria-label="Inicio"><span style="background:var(--ink);border-radius:8px;padding:4px 8px"><img src="assets/cce-logo-blanco.png" alt="CCE" style="height:34px"></span></a>
+        <a class="brand" href="#/inicio" aria-label="Inicio"><span class="logo-chip logo-chip-sm"><img src="assets/cce-marca-blanco.svg" alt="CCE, Centro de Capacitación y Enseñanza"></span></a>
         <nav class="mainnav" aria-label="Principal">
           <a class="navlink" href="#/inicio" data-nav="inicio"><i class="fa-solid fa-house"></i>Inicio</a>
           <a class="navlink" href="#/cursos" data-nav="cursos"><i class="fa-solid fa-book-open"></i>Cursos</a>
@@ -1072,7 +1075,7 @@
       ${c.status !== 'VIGENTE' ? `<div class="alert alert-warn" style="margin-bottom:1rem">Esta constancia está ${esc((CERT_STATUS[c.status] || c.status).toLowerCase())}. Solo es visible para administración.</div>` : ''}
       <p class="tiny muted no-print" style="margin-bottom:.6rem">En el diálogo de impresión elige "Guardar como PDF", orientación horizontal y activa "Gráficos de fondo".</p>
       <div class="cert-scroll"><article class="certificate" aria-label="Constancia ${esc(c.folio)}">
-        <div class="logos-row"><img src="${logo.src}" alt="${esc(logo.alt)}"><img src="assets/cce-logo-azul.png" alt="CCE, Centro de Capacitación y Enseñanza"></div>
+        <div class="logos-row"><img src="${logo.src}" alt="${esc(logo.alt)}"><img src="assets/cce-logo-azul.svg" alt="CCE, Centro de Capacitación y Enseñanza"></div>
         <div class="center">
           <p class="org">CENTRO DE CAPACITACIÓN Y ENSEÑANZA</p>
           <p class="doc">CONSTANCIA</p>
