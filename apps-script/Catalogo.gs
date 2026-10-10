@@ -672,6 +672,203 @@ var CCE_CATALOG = [
     ]
   },
   {
+    "id": "aesp3",
+    "titulo": "AESP 3: Seguridad en medicamentos de alto riesgo",
+    "area": "Calidad y Seguridad",
+    "horas": 1,
+    "obligatorio": true,
+    "descripcion": "Alertas visuales, almacenamiento, prescripción, solicitud y doble verificación de medicamentos de alto riesgo y anestésicos.",
+    "orden": 3,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "Medicamentos de alto riesgo: puntos clave",
+        "duracion": "10 min",
+        "texto": "Repaso de la sesión del 31 de agosto de 2026.\n\n• Medicamento de alto riesgo: ante un error en su manejo, tiene alta probabilidad de causar un daño grave. Se priorizan electrolitos concentrados, insulinas y anticoagulantes parenterales.\n• Alertas visuales: rojo para alto riesgo, naranja para LASA y amarillo para caducidad menor a 3 meses. La etiqueta no cubre la caducidad.\n• Almacenamiento: en orden alfabético, respetando temperatura; electrolitos concentrados solo en carros rojos.\n• Prescripción: siglas AR o LASA al final; electrolitos en gramos o miliequivalentes, nunca en ámpulas.\n• Solicitud: como máximo 20 minutos antes de administrar; traslado en contenedor con tapa roja o hielera identificada.\n• Doble verificación: una persona prepara y otra verifica. Obligatoria en alto riesgo y anestésicos; solo se omite ante riesgo inminente para la vida. Se registra en la nota de enfermería.\n• Dosis no administrada: registrar la razón en la hoja de enfermería y en el expediente.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación AESP 3",
+            "url": "presentaciones/aesp3-medicamentos-alto-riesgo.html"
+          },
+          {
+            "nombre": "Guía rápida AESP 3 (PDF)",
+            "url": "materiales/aesp3-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "¿Qué es un medicamento de alto riesgo?",
+        "opciones": [
+          "Aquel que, ante un error en su manejo, tiene alta probabilidad de causar un daño grave",
+          "Cualquier medicamento de costo elevado",
+          "Un medicamento que solo se usa en quirófano",
+          "Un medicamento con fecha de caducidad corta"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Qué grupos se priorizan en el listado institucional de alto riesgo?",
+        "opciones": [
+          "Antibióticos, analgésicos y antiácidos",
+          "Electrolitos concentrados, insulinas y anticoagulantes parenterales",
+          "Vitaminas y suplementos",
+          "Solo quimioterapias"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué color de etiqueta identifica a un medicamento de alto riesgo?",
+        "opciones": [
+          "Amarillo",
+          "Verde",
+          "Rojo",
+          "Azul"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Qué indica la etiqueta naranja?",
+        "opciones": [
+          "Medicamento refrigerado",
+          "Medicamento controlado",
+          "Medicamento caducado",
+          "Medicamento LASA, de nombre o apariencia parecida"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué indica la etiqueta amarilla?",
+        "opciones": [
+          "Caducidad menor a 3 meses",
+          "Medicamento de alto riesgo",
+          "Medicamento anestésico",
+          "Medicamento de uso pediátrico"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Al colocar una etiqueta de alerta visual, se debe cuidar que:",
+        "opciones": [
+          "Cubra todo el nombre comercial",
+          "No cubra información crítica, como la fecha de caducidad",
+          "Se coloque solo en la caja exterior",
+          "Lleve el nombre del paciente"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Cómo se almacenan los medicamentos en el área?",
+        "opciones": [
+          "Por color de empaque",
+          "Por fecha de compra",
+          "En orden alfabético de la A a la Z, respetando temperatura y refrigeración",
+          "Como lleguen del almacén"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Dónde se guardan los electrolitos concentrados?",
+        "opciones": [
+          "En el puesto de enfermería",
+          "En el cuarto del paciente",
+          "En cualquier anaquel identificado",
+          "Únicamente en los carros rojos"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué siglas se agregan al final de la prescripción de un medicamento de alto riesgo?",
+        "opciones": [
+          "AR",
+          "MAR",
+          "URG",
+          "PRN"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cómo deben prescribirse los electrolitos concentrados?",
+        "opciones": [
+          "En ámpulas",
+          "En gramos o miliequivalentes",
+          "En frascos",
+          "En cucharadas"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Con cuánta anticipación máxima se solicita un medicamento de alto riesgo?",
+        "opciones": [
+          "Al inicio del turno",
+          "Un día antes",
+          "20 minutos antes de su administración",
+          "2 horas antes"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Cómo se trasladan los electrolitos concentrados?",
+        "opciones": [
+          "En la bolsa del uniforme",
+          "En una bolsa sin identificar",
+          "Junto con los demás medicamentos del turno",
+          "En contenedores con tapa roja o hieleras identificadas"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué es la doble verificación?",
+        "opciones": [
+          "Una persona prepara el medicamento y otra lo verifica por su cuenta",
+          "La misma persona revisa dos veces",
+          "El paciente revisa su medicamento",
+          "Se revisa solo la receta dos veces"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Según la actualización del manual, la doble verificación ahora también es obligatoria para:",
+        "opciones": [
+          "Soluciones de hidratación",
+          "Medicamentos anestésicos",
+          "Vitaminas orales",
+          "Medicamentos de venta libre"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Cuándo se permite omitir la doble verificación?",
+        "opciones": [
+          "Cuando hay poco personal",
+          "Durante el turno nocturno",
+          "Solo en una urgencia con riesgo inminente para la vida del paciente",
+          "Cuando el medicamento ya se conoce bien"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Si una dosis programada no se administra, ¿qué debe hacerse?",
+        "opciones": [
+          "Administrarla en el siguiente horario sin registrar",
+          "Desecharla sin avisar",
+          "Comentarlo solo en la entrega de turno",
+          "Registrar la razón específica en la hoja de enfermería y en el expediente clínico"
+        ],
+        "correcta": 3
+      }
+    ],
+    "dirigido": "Personal de enfermería, medicación segura, farmacia y personal médico.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Identificar los medicamentos de alto riesgo y LASA con su alerta visual.",
+      "Almacenar, prescribir y solicitar estos medicamentos de forma segura.",
+      "Aplicar y registrar la doble verificación en alto riesgo y anestésicos."
+    ]
+  },
+  {
     "id": "aesp5",
     "titulo": "AESP 5: Reducción del riesgo de infecciones",
     "area": "Calidad y Seguridad",

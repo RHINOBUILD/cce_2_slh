@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AESP 3 · Seguridad en medicamentos de alto riesgo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+[hidden]{display:none!important}
+/* Layout: escenario 16:9 que se escala a la ventana; en teléfono las diapositivas fluyen a lo ancho. Paleta y tipografía de CCE 2.0. */
+:root{
+  --ink:#002B49; --blue:#004B87; --sky:#0072CE; --sky-soft:#E6F1FB;
+  --gold:#C5A059; --gold-soft:#F6EEDC; --paper:#F4F7FA; --surface:#FFFFFF;
+  --text:#1B2B3A; --muted:#5B6B7B; --line:#D5DEE6;
+  --ok:#1F7A4D; --ok-soft:#E3F2EA; --bad:#B42318; --bad-soft:#FDECEA;
+  --cover-bg:#002B49; --cover-fg:#FFFFFF; --cover-muted:#B9CBDB;
+  --chrome:#E9EEF3;
+  --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --sans:'Public Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --k:1;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ink:#DCE8F3; --blue:#8CC4F2; --sky:#5FB0EE; --sky-soft:#12324D;
+  --gold:#D9B776; --gold-soft:#3A2F1B; --paper:#0B1A27; --surface:#10243A;
+  --text:#DCE6EF; --muted:#9AAEC0; --line:#24405A;
+  --ok:#6FCF9C; --ok-soft:#123826; --bad:#F2877D; --bad-soft:#401A17;
+  --cover-bg:#061524; --cover-fg:#FFFFFF; --cover-muted:#9FB6CA; --chrome:#07121D;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ink:#DCE8F3; --blue:#8CC4F2; --sky:#5FB0EE; --sky-soft:#12324D;
+  --gold:#D9B776; --gold-soft:#3A2F1B; --paper:#0B1A27; --surface:#10243A;
+  --text:#DCE6EF; --muted:#9AAEC0; --line:#24405A;
+  --ok:#6FCF9C; --ok-soft:#123826; --bad:#F2877D; --bad-soft:#401A17;
+  --cover-bg:#061524; --cover-fg:#FFFFFF; --cover-muted:#9FB6CA; --chrome:#07121D;
+  color-scheme:dark}
+
+html,body{height:100%}
+body{margin:0;background:var(--chrome);color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+.app{height:100%;display:flex;flex-direction:column}
+.viewport{flex:1;min-height:0;display:grid;place-items:center;overflow:hidden;padding-inline:16px}
+.stage{width:1280px;height:720px;position:relative;transform-origin:center center;flex:none}
+.slide{position:absolute;inset:0;background:var(--paper);border-radius:14px;overflow:hidden;
+  box-shadow:0 1px 2px rgba(0,20,40,.08),0 18px 48px rgba(0,20,40,.14);
+  padding:calc(var(--k)*64px) calc(var(--k)*80px) calc(var(--k)*72px);
+  display:flex;flex-direction:column;gap:calc(var(--k)*28px)}
+.slide[hidden]{display:none!important}
+.slide::after{content:attr(data-foot);position:absolute;left:calc(var(--k)*80px);bottom:calc(var(--k)*26px);
+  font-size:calc(var(--k)*13px);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.slide.cover::after,.slide.close::after{content:none}
+
+/* Tipografía */
+.eyebrow{font-size:calc(var(--k)*15px);font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:0}
+h1,h2{font-family:var(--serif);color:var(--ink);margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:calc(var(--k)*64px);line-height:1.05;font-weight:700}
+h2{font-size:calc(var(--k)*46px);line-height:1.1;font-weight:600}
+p,li{font-size:calc(var(--k)*23px);line-height:1.45;margin:0}
+.lede{font-size:calc(var(--k)*26px);color:var(--muted);max-width:30em}
+.head{display:flex;flex-direction:column;gap:calc(var(--k)*10px)}
+strong{color:var(--ink);font-weight:700}
+
+/* Portada y cierre */
+.cover,.close{background:var(--cover-bg);color:var(--cover-fg);justify-content:space-between}
+.cover h1,.close h2,.cover strong,.close strong{color:var(--cover-fg)}
+.cover .marca,.close .marca{width:calc(var(--k)*150px);height:auto;color:var(--cover-fg)}
+.cover .rule{width:calc(var(--k)*96px);height:4px;background:var(--gold);border-radius:2px}
+.cover .code{font-family:var(--serif);font-size:calc(var(--k)*140px);line-height:.9;color:var(--gold);font-weight:700;margin:0}
+.cover .meta{display:flex;flex-wrap:wrap;gap:calc(var(--k)*12px) calc(var(--k)*40px);color:var(--cover-muted)}
+.cover .meta p{font-size:calc(var(--k)*18px)}
+.cover .meta strong{display:block;font-size:calc(var(--k)*20px)}
+.close .lede{color:var(--cover-muted)}
+
+/* Bloques */
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:calc(var(--k)*28px)}
+.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:calc(var(--k)*28px) calc(var(--k)*30px);display:flex;flex-direction:column;gap:calc(var(--k)*12px);min-width:0}
+.panel h3{font-family:var(--sans);font-size:calc(var(--k)*20px);letter-spacing:.06em;text-transform:uppercase;color:var(--blue);margin:0}
+.panel p,.panel li{font-size:calc(var(--k)*21px)}
+ul.ticks{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:calc(var(--k)*14px)}
+ul.ticks li{padding-left:calc(var(--k)*30px);position:relative}
+ul.ticks li::before{content:"";position:absolute;left:0;top:.55em;width:calc(var(--k)*12px);height:calc(var(--k)*12px);border-radius:50%;background:var(--gold)}
+
+/* Identificadores */
+.ids{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:calc(var(--k)*28px)}
+.id-card{background:var(--surface);border:2px solid var(--blue);border-radius:14px;padding:calc(var(--k)*30px);display:flex;flex-direction:column;gap:calc(var(--k)*14px);min-width:0}
+.id-card .n{font-family:var(--serif);font-size:calc(var(--k)*20px);color:var(--gold);font-weight:700}
+.id-card .t{font-family:var(--serif);font-size:calc(var(--k)*38px);color:var(--ink);font-weight:700;line-height:1.1}
+.sample{font-family:var(--sans);font-variant-numeric:tabular-nums;font-size:calc(var(--k)*22px);background:var(--sky-soft);color:var(--ink);border-radius:8px;padding:calc(var(--k)*10px) calc(var(--k)*14px);font-weight:600}
+.note{border-left:4px solid var(--gold);padding:calc(var(--k)*6px) 0 calc(var(--k)*6px) calc(var(--k)*20px)}
+
+/* Correcto / incorrecto */
+.say{border-radius:12px;padding:calc(var(--k)*26px) calc(var(--k)*28px);display:flex;flex-direction:column;gap:calc(var(--k)*12px);min-width:0}
+.say.yes{background:var(--ok-soft);border:1px solid var(--ok)}
+.say.no{background:var(--bad-soft);border:1px solid var(--bad)}
+.say .tag{font-size:calc(var(--k)*16px);font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.say.yes .tag{color:var(--ok)} .say.no .tag{color:var(--bad)}
+.say q{font-family:var(--serif);font-size:calc(var(--k)*30px);line-height:1.25;color:var(--ink);quotes:"“" "”"}
+
+/* Momentos críticos */
+.moments{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:calc(var(--k)*16px)}
+.moment{background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--sky);border-radius:10px;padding:calc(var(--k)*34px) calc(var(--k)*22px);min-width:0;display:flex;flex-direction:column;gap:calc(var(--k)*18px)}
+.moment svg{width:calc(var(--k)*48px);height:calc(var(--k)*48px);color:var(--blue)}
+.moment p{font-size:calc(var(--k)*24px);font-weight:600;color:var(--ink);line-height:1.3}
+.moment.key{border-top-color:var(--gold)}
+
+/* Etiquetas de ejemplo */
+.label{font-variant-numeric:tabular-nums;background:var(--surface);border:2px dashed var(--muted);border-radius:10px;padding:calc(var(--k)*18px) calc(var(--k)*22px);display:flex;flex-direction:column;gap:calc(var(--k)*6px)}
+.label .l1{font-family:var(--serif);font-size:calc(var(--k)*30px);font-weight:700;color:var(--ink)}
+.label .l2{font-size:calc(var(--k)*19px);color:var(--muted)}
+.caption{font-size:calc(var(--k)*16px);color:var(--muted)}
+
+/* Compromisos */
+table.tasks{width:100%;border-collapse:collapse;font-size:calc(var(--k)*21px)}
+.tasks th{text-align:left;font-size:calc(var(--k)*15px);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;padding:0 calc(var(--k)*16px) calc(var(--k)*12px) 0;border-bottom:2px solid var(--ink)}
+.tasks td{padding:calc(var(--k)*18px) calc(var(--k)*16px) calc(var(--k)*18px) 0;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.4}
+.tasks td:first-child{font-weight:700;color:var(--ink);white-space:nowrap}
+
+/* Barra de control */
+.bar{display:flex;align-items:center;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--chrome);color:var(--muted)}
+.bar .title{font-size:13px;font-weight:600;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar button{font:600 14px var(--sans);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;height:38px;min-width:42px;padding:0 12px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.bar button:hover{border-color:var(--blue)}
+.bar button:disabled{opacity:.4;cursor:default}
+.bar button:focus-visible,.dots button:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+.count{font-variant-numeric:tabular-nums;font-size:14px;font-weight:600;min-width:58px;text-align:center;color:var(--ink)}
+.progress{height:4px;background:var(--line)}
+.progress span{display:block;height:100%;background:var(--gold);width:0;transition:width .25s ease}
+
+/* Teléfono: diapositivas fluyen */
+.flow .viewport{display:block;overflow-y:auto;padding-block:16px}
+.flow .stage{width:100%;height:auto;transform:none!important}
+.flow .slide{position:relative;inset:auto;min-height:0;--k:.56;padding:28px 20px 48px;gap:18px}
+.flow .slide::after{left:20px;bottom:16px}
+.flow .cols,.flow .cols-3,.flow .ids{grid-template-columns:minmax(0,1fr)}
+.flow .moments{grid-template-columns:repeat(2,minmax(0,1fr))}
+.flow .moment.key{grid-column:1 / -1}
+.flow .cover .code{font-size:84px}
+.flow .tasks td:first-child{white-space:normal}
+.flow .bar .title{display:none}
+.flow .fs{display:none}
+
+
+/* AESP 2 */
+.chips{display:flex;flex-wrap:wrap;gap:calc(var(--k)*10px)}
+.chips span{background:var(--sky-soft);color:var(--ink);border-radius:999px;padding:calc(var(--k)*8px) calc(var(--k)*16px);font-size:calc(var(--k)*19px);font-weight:600}
+.chips.big span{font-size:calc(var(--k)*24px);padding:calc(var(--k)*14px) calc(var(--k)*24px);background:var(--bad-soft);border:1px solid var(--bad)}
+ol.flow4{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:calc(var(--k)*18px)}
+ol.flow4 li{background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--sky);border-radius:10px;padding:calc(var(--k)*24px);display:flex;flex-direction:column;gap:calc(var(--k)*10px);min-width:0}
+ol.flow4 li:last-child{border-top-color:var(--gold)}
+ol.flow4 .n{font-family:var(--serif);font-weight:700;font-size:calc(var(--k)*40px);color:var(--blue);line-height:1}
+ol.flow4 b{font-family:var(--serif);font-size:calc(var(--k)*30px);color:var(--ink)}
+ol.flow4 p{font-size:calc(var(--k)*20px);color:var(--muted)}
+.dialog{display:flex;flex-direction:column;gap:calc(var(--k)*14px)}
+.dialog .line{display:flex;gap:calc(var(--k)*18px);align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:calc(var(--k)*18px) calc(var(--k)*22px);max-width:88%}
+.dialog .line.me{align-self:flex-end;background:var(--sky-soft);border-color:var(--sky)}
+.dialog .who{flex:none;width:calc(var(--k)*130px);font-size:calc(var(--k)*15px);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);padding-top:.35em}
+.dialog p{font-family:var(--serif);font-size:calc(var(--k)*25px);color:var(--ink);line-height:1.3}
+.deadline{display:flex;gap:calc(var(--k)*20px)}
+.deadline div{flex:1;display:flex;align-items:baseline;gap:calc(var(--k)*14px);background:var(--gold-soft);border-radius:10px;padding:calc(var(--k)*16px) calc(var(--k)*24px)}
+.deadline .big{font-family:var(--serif);font-weight:700;font-size:calc(var(--k)*44px);color:var(--ink);font-variant-numeric:tabular-nums}
+.deadline span:last-child{font-size:calc(var(--k)*21px);color:var(--text)}
+.letters{display:grid;gap:calc(var(--k)*16px)}
+.letters.l4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.letters.l6{grid-template-columns:repeat(3,minmax(0,1fr))}
+.letters div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:calc(var(--k)*22px);display:flex;flex-direction:column;gap:calc(var(--k)*8px);min-width:0}
+.letters.l6 div{flex-direction:row;align-items:center;gap:calc(var(--k)*18px)}
+.letters .l{font-family:var(--serif);font-weight:700;font-size:calc(var(--k)*54px);line-height:1;color:var(--gold)}
+.letters b{font-size:calc(var(--k)*23px);color:var(--ink)}
+.letters p{font-size:calc(var(--k)*19px);color:var(--muted)}
+.crit{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(var(--k)*18px)}
+.crit div{background:var(--bad-soft);border:1px solid var(--bad);border-radius:12px;padding:calc(var(--k)*26px);display:flex;flex-direction:column;gap:calc(var(--k)*8px);min-width:0}
+.crit .k{font-size:calc(var(--k)*17px);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--bad)}
+.crit .v{font-family:var(--serif);font-weight:700;font-size:calc(var(--k)*34px);color:var(--ink);font-variant-numeric:tabular-nums}
+.flow ol.flow4,.flow .letters.l4,.flow .crit{grid-template-columns:repeat(2,minmax(0,1fr))}
+.flow .letters.l6{grid-template-columns:minmax(0,1fr)}
+.flow .dialog .line{max-width:100%;flex-direction:column;gap:6px}
+.flow .deadline{flex-direction:column}
+
+
+/* AESP 3 */
+.panel.defn{border-left:5px solid var(--gold)}
+.panel.defn p{font-size:calc(var(--k)*28px);line-height:1.4}
+.swatches{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(var(--k)*20px)}
+.sw{--c:#C62828;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:calc(var(--k)*26px);display:flex;flex-direction:column;gap:calc(var(--k)*10px);min-width:0}
+.sw.orange{--c:#E8730C}.sw.yellow{--c:#F2C200}
+.sw .chip-c{display:block;height:calc(var(--k)*56px);border-radius:8px;background:var(--c)}
+.sw b{font-family:var(--serif);font-size:calc(var(--k)*30px);color:var(--ink)}
+.sw p{font-size:calc(var(--k)*21px)}
+.tall{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:calc(var(--k)*40px);line-height:1.35;color:var(--ink);font-weight:700;letter-spacing:.02em}
+.deadline.single div{flex:none}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:calc(var(--k)*18px);align-items:center}
+.pair>div{background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--sky);border-radius:12px;padding:calc(var(--k)*26px);display:flex;flex-direction:column;gap:calc(var(--k)*8px);min-width:0}
+.pair>div:last-child{border-top-color:var(--gold)}
+.pair .who{font-size:calc(var(--k)*15px);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.pair b{font-family:var(--serif);font-size:calc(var(--k)*36px);color:var(--ink)}
+.pair p{font-size:calc(var(--k)*21px)}
+.pair .plus{font-family:var(--serif);font-size:calc(var(--k)*56px);color:var(--gold);font-weight:700}
+.flow .swatches{grid-template-columns:minmax(0,1fr)}
+.flow .pair{grid-template-columns:minmax(0,1fr)}
+.flow .pair .plus{text-align:center}
+
+@media (prefers-reduced-motion:no-preference){
+  .slide.enter{animation:in .28s ease-out}
+  @keyframes in{from{opacity:.4;transform:translateY(6px)}to{opacity:1;transform:none}}
+}
+</style>
+
+</head>
+<body>
+<div class="app" id="app">
+  <div class="progress" aria-hidden="true"><span id="prog"></span></div>
+  <main class="viewport" id="viewport">
+    <div class="stage" id="stage" aria-roledescription="presentación" aria-label="AESP 3 Seguridad en medicamentos de alto riesgo">
+
+      <!-- 1 -->
+      <section class="slide cover" data-title="Portada">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="29 42 512 259" role="img" aria-label="CCE, Centro de Capacitación y Enseñanza" class="marca">  <path d="M 257.8 77.3 L 252 73 L 246 69 L 239.7 65.3 L 233.3 62 L 226.8 59 L 220 56.3 L 213.2 54 L 206.2 52.1 L 199.2 50.5 L 192 49.3 L 184.9 48.5 L 177.6 48.1 L 170.4 48 L 163.2 48.3 L 156 49 L 148.9 50.1 L 141.8 51.5 L 134.8 53.3 L 127.9 55.5 L 121.1 58 L 114.5 60.9 L 108 64.2 L 101.8 67.7 L 95.7 71.6 L 89.8 75.8 L 84.1 80.3 L 78.7 85.1 L 73.6 90.1 L 68.7 95.5 L 64.1 101 L 59.8 106.8 L 55.8 112.9 L 52.1 119.1 L 48.8 125.5 L 45.8 132.1 L 43.2 138.8 L 40.9 145.7 L 38.9 152.6 L 37.4 159.7 L 36.2 166.8 L 35.4 174 L 34.9 181.2 L 34.9 188.4 L 35.2 195.6 L 35.9 202.8 L 36.9 210 L 38.4 217 L 40.2 224 L 42.3 230.9 L 44.9 237.7 L 47.8 244.3 L 51 250.8 L 54.5 257.1 L 58.4 263.2 L 62.6 269.1 L 67.1 274.7 L 71.9 280.1 L 77 285.3 L 82.3 290.1 L 87.9 294.7 L 89.1 293.2 L 84.2 288 L 79.6 282.5 L 75.5 276.8 L 71.6 270.9 L 68.2 264.9 L 65.1 258.7 L 62.4 252.4 L 60 246 L 57.9 239.6 L 56.2 233.1 L 54.9 226.6 L 53.9 220.1 L 53.2 213.6 L 52.8 207.2 L 52.8 200.7 L 53 194.4 L 53.5 188.1 L 54.3 181.9 L 55.4 175.7 L 56.8 169.7 L 58.3 163.7 L 60.2 157.9 L 62.3 152.2 L 64.6 146.6 L 67.1 141.1 L 69.9 135.8 L 72.9 130.6 L 76 125.5 L 79.4 120.6 L 83 115.8 L 86.8 111.2 L 90.7 106.7 L 94.9 102.4 L 99.2 98.3 L 103.7 94.3 L 108.4 90.5 L 113.3 86.9 L 118.3 83.5 L 123.5 80.3 L 128.9 77.3 L 134.5 74.6 L 140.1 72 L 146 69.7 L 152 67.7 L 158.1 65.9 L 164.3 64.4 L 170.7 63.2 L 177.1 62.3 L 183.7 61.8 L 190.3 61.5 L 197 61.6 L 203.8 62 L 210.5 62.7 L 217.3 63.9 L 224 65.4 L 230.7 67.3 L 237.4 69.6 L 243.9 72.2 L 250.3 75.3 L 256.6 78.8 Z" fill="#4FB3EC"/>  <path d="M187.5 271.9Q170 271.9 154.9 267.2Q139.7 262.5 128.3 252.8Q116.9 243.2 110.4 228.4Q103.8 213.7 103.8 193.7Q103.8 172.8 110.7 157.6Q117.6 142.4 129.4 132.4Q141.3 122.4 156.6 117.6Q171.9 112.8 188.9 112.8Q204.3 112.8 216.4 116Q228.5 119.2 237 124L238.1 159.9H220.2L212.4 131.4Q212.1 131.4 211.7 131.2Q203.8 127.9 194.2 127.9Q181.1 127.9 170.2 134.8Q159.2 141.7 152.7 156Q146.1 170.2 146.1 192.3Q146.1 214.4 152.4 228.7Q158.8 242.9 169.6 249.8Q180.4 256.7 193.7 256.7Q203.8 256.7 212.6 253.5Q213.5 253.1 214.4 252.8L221.6 224.8H239.7L238.3 260.6Q229.6 265.2 217.1 268.6Q204.5 271.9 187.5 271.9ZM334.2 271.9Q316.8 271.9 301.6 267.2Q286.4 262.5 275 252.8Q263.6 243.2 257.1 228.4Q250.5 213.7 250.5 193.7Q250.5 172.8 257.4 157.6Q264.3 142.4 276.2 132.4Q288 122.4 303.3 117.6Q318.6 112.8 335.6 112.8Q351 112.8 363.1 116Q375.2 119.2 383.7 124L384.8 159.9H366.9L359.1 131.4Q358.9 131.4 358.4 131.2Q350.6 127.9 340.9 127.9Q327.8 127.9 316.9 134.8Q305.9 141.7 299.4 156Q292.8 170.2 292.8 192.3Q292.8 214.4 299.2 228.7Q305.5 242.9 316.3 249.8Q327.1 256.7 340.4 256.7Q350.6 256.7 359.3 253.5Q360.2 253.1 361.1 252.8L368.3 224.8H386.4L385.1 260.6Q376.3 265.2 363.8 268.6Q351.3 271.9 334.2 271.9ZM395.6 268V253.1L414 252.1Q414 248.4 414 245V139.7Q414 136.2 414 132.8L395.6 131.6V116.9H518.7L520.3 156.7H501.9L496.4 131.6H454.7Q454.7 135.8 454.7 139.7Q454.5 151.4 454.5 162.9V182.9H479.3L482.3 165.6H497.5V215.3H482.3L479.6 198.1H454.5V221.5Q454.5 233.3 454.7 244.8Q454.7 249.1 454.7 253.3H500.7L506.5 227.1H524.9L523.3 268Z" fill="currentColor"/></svg>
+        <div class="head">
+          <p class="code">AESP 3</p>
+          <h1>Seguridad en medicamentos de alto riesgo</h1>
+          <div class="rule" aria-hidden="true"></div>
+        </div>
+        <div class="meta">
+          <p><strong>Acción Esencial para la Seguridad del Paciente n.º 3</strong>Centro de Capacitación y Enseñanza · Saint Luke's Hospitals</p>
+          <p><strong>Alma García Ortiz</strong>con la Jefa de Enfermería Margarita Aguilar</p>
+        </div>
+      </section>
+
+      <!-- 2 -->
+      <section class="slide" data-foot="AESP 3 · Objetivo" data-title="Objetivo">
+        <div class="head">
+          <p class="eyebrow">Objetivo</p>
+          <h2>Menos errores de medicación, cero daño al paciente</h2>
+          <p class="lede">Barreras de seguridad estandarizadas en cada paso: almacenar, prescribir, solicitar, preparar y administrar.</p>
+        </div>
+        <div class="panel defn">
+          <h3>Medicamento de alto riesgo</h3>
+          <p>Es aquel que, ante un error en su manejo, tiene <strong>alta probabilidad de causar un daño grave</strong> al paciente.</p>
+        </div>
+      </section>
+
+      <!-- 3 -->
+      <section class="slide" data-foot="AESP 3 · Listado institucional" data-title="Qué medicamentos">
+        <div class="head">
+          <p class="eyebrow">Listado institucional</p>
+          <h2>Los grupos que priorizamos</h2>
+          <p class="lede">El modelo MOCEBPASS permite que cada institución defina su listado.</p>
+        </div>
+        <div class="cols cols-3">
+          <div class="panel"><h3>Electrolitos concentrados</h3><p>Por ejemplo, cloruro de potasio concentrado.</p></div>
+          <div class="panel"><h3>Insulinas</h3><p>Todas sus presentaciones.</p></div>
+          <div class="panel"><h3>Anticoagulantes parenterales</h3><p>Los que se administran por vía inyectable.</p></div>
+        </div>
+        <p class="note">Las quimioterapias no forman parte del listado local porque la institución no maneja ese tipo de fármacos.</p>
+      </section>
+
+      <!-- 4 -->
+      <section class="slide" data-foot="AESP 3 · Alertas visuales" data-title="Alertas visuales">
+        <div class="head">
+          <p class="eyebrow">Alertas visuales</p>
+          <h2>Tres colores, tres mensajes</h2>
+        </div>
+        <div class="swatches">
+          <div class="sw red"><span class="chip-c" aria-hidden="true"></span><b>Rojo</b><p>Medicamento de <strong>alto riesgo</strong>.</p></div>
+          <div class="sw orange"><span class="chip-c" aria-hidden="true"></span><b>Naranja</b><p>Medicamento <strong>LASA</strong>: nombre o apariencia parecida.</p></div>
+          <div class="sw yellow"><span class="chip-c" aria-hidden="true"></span><b>Amarillo</b><p>Caducidad <strong>menor a 3 meses</strong>.</p></div>
+        </div>
+        <p class="note">La etiqueta nunca cubre información crítica, como la fecha de caducidad.</p>
+      </section>
+
+      <!-- 5 -->
+      <section class="slide" data-foot="AESP 3 · Medicamentos LASA" data-title="LASA">
+        <div class="head">
+          <p class="eyebrow">LASA · Look-Alike, Sound-Alike</p>
+          <h2>Se parecen al escribirse, al decirse o a la vista</h2>
+        </div>
+        <div class="cols">
+          <div class="panel">
+            <h3>Qué hacer</h3>
+            <ul class="ticks">
+              <li>Identificarlos con <strong>etiqueta naranja</strong>.</li>
+              <li>Consultar el <strong>listado LASA</strong> disponible en las áreas de preparación.</li>
+              <li>En los sistemas electrónicos se combinan <strong>mayúsculas y minúsculas</strong> como alerta visual.</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Así se ve en el sistema</h3>
+            <p class="tall">DOPamina<br>DOBUTamina</p>
+            <p class="caption">Ejemplo ilustrativo de escritura con mayúsculas.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6 -->
+      <section class="slide" data-foot="AESP 3 · Almacenamiento" data-title="Almacenamiento">
+        <div class="head">
+          <p class="eyebrow">Almacenamiento y resguardo</p>
+          <h2>Del almacén al anaquel, siempre identificados</h2>
+        </div>
+        <ol class="flow4">
+          <li><span class="n">1</span><b>Recibir</b><p>Revisa que traiga su alerta visual. Si falta, notifica al área responsable.</p></li>
+          <li><span class="n">2</span><b>Etiquetar</b><p>Rojo para alto riesgo, naranja para LASA.</p></li>
+          <li><span class="n">3</span><b>Ordenar</b><p>En orden alfabético, de la A a la Z.</p></li>
+          <li><span class="n">4</span><b>Conservar</b><p>Respetando temperatura y refrigeración.</p></li>
+        </ol>
+        <p class="note">Los electrolitos concentrados se guardan <strong>únicamente en los carros rojos</strong>, para urgencias.</p>
+      </section>
+
+      <!-- 7 -->
+      <section class="slide" data-foot="AESP 3 · Prescripción segura" data-title="Prescripción">
+        <div class="head">
+          <p class="eyebrow">Prescripción segura</p>
+          <h2>La indicación avisa el riesgo y usa unidades claras</h2>
+        </div>
+        <div class="cols">
+          <div class="say yes"><span class="tag">Así sí</span><q>Cloruro de potasio __ mEq IV … AR</q><p>Siglas <strong>AR</strong> al final para alto riesgo y <strong>LASA</strong> para los similares. Electrolitos en <strong>gramos o miliequivalentes</strong>.</p></div>
+          <div class="say no"><span class="tag">Así no</span><q>KCl 1 ámpula</q><p>“Ámpula” es un término ambiguo y está prohibido para electrolitos concentrados.</p></div>
+        </div>
+        <p class="caption">Ejemplo de formato; la dosis la define el médico tratante.</p>
+      </section>
+
+      <!-- 8 -->
+      <section class="slide" data-foot="AESP 3 · Solicitud y traslado" data-title="Solicitud y traslado">
+        <div class="head">
+          <p class="eyebrow">Solicitud y traslado</p>
+          <h2>Se piden justo antes de usarse</h2>
+        </div>
+        <div class="deadline single">
+          <div><span class="big">20 min</span><span>como máximo antes de la administración</span></div>
+        </div>
+        <div class="cols">
+          <div class="panel"><h3>Por qué</h3><p>Evita que queden guardados en áreas no autorizadas. No hagas solicitudes masivas ni por turno completo.</p></div>
+          <div class="panel"><h3>Cómo se trasladan</h3><p>En contenedores con <strong>tapa roja</strong> o en <strong>hieleras identificadas</strong>.</p></div>
+        </div>
+      </section>
+
+      <!-- 9 -->
+      <section class="slide" data-foot="AESP 3 · Doble verificación" data-title="Doble verificación">
+        <div class="head">
+          <p class="eyebrow">Doble verificación</p>
+          <h2>Dos personas, dos revisiones independientes</h2>
+        </div>
+        <div class="pair">
+          <div><span class="who">Persona 1</span><b>Prepara</b><p>Prepara el medicamento conforme a la indicación.</p></div>
+          <span class="plus" aria-hidden="true">+</span>
+          <div><span class="who">Persona 2</span><b>Verifica</b><p>Revisa de nuevo, por su cuenta, antes de administrar.</p></div>
+        </div>
+        <p class="note">Pueden realizarla enfermería, el personal de medicación segura y el personal médico.</p>
+      </section>
+
+      <!-- 10 -->
+      <section class="slide" data-foot="AESP 3 · Doble verificación" data-title="Cuándo aplica">
+        <div class="head">
+          <p class="eyebrow">Cuándo aplica</p>
+          <h2>Alto riesgo y, ahora también, anestésicos</h2>
+        </div>
+        <div class="cols">
+          <div class="panel"><h3>Obligatoria</h3><ul class="ticks"><li>Medicamentos de alto riesgo.</li><li><strong>Nuevo:</strong> medicamentos anestésicos, en su preparación y administración.</li></ul></div>
+          <div class="panel"><h3>Única excepción</h3><p>Una urgencia que ponga en <strong>riesgo inminente la vida</strong> del paciente.</p></div>
+        </div>
+      </section>
+
+      <!-- 11 -->
+      <section class="slide" data-foot="AESP 3 · Registro" data-title="Registro en nota de enfermería">
+        <div class="head">
+          <p class="eyebrow">Registro</p>
+          <h2>Si no está escrito, no se hizo</h2>
+        </div>
+        <div class="panel defn">
+          <h3>En la nota de enfermería</h3>
+          <p>Anota en cada administración que se realizó la <strong>doble verificación</strong> del medicamento de alto riesgo o anestésico. Así queda evidencia en el expediente.</p>
+        </div>
+      </section>
+
+      <!-- 12 -->
+      <section class="slide" data-foot="AESP 3 · Trazabilidad" data-title="Correctos y trazabilidad">
+        <div class="head">
+          <p class="eyebrow">Preparación y administración</p>
+          <h2>Correctos y trazabilidad</h2>
+        </div>
+        <div class="cols">
+          <div class="panel"><h3>Los correctos</h3><p>Aplica los correctos de <strong>preparación</strong> y los de <strong>administración</strong> en cada medicamento.</p></div>
+          <div class="panel"><h3>Tu nombre en la etiqueta</h3><p>Quien es responsable escribe su nombre en la etiqueta de la solución que se administra.</p></div>
+        </div>
+      </section>
+
+      <!-- 13 -->
+      <section class="slide" data-foot="AESP 3 · Dosis no administrada" data-title="Dosis no administrada">
+        <div class="head">
+          <p class="eyebrow">Dosis no administrada</p>
+          <h2>Si no se aplicó, se registra por qué</h2>
+        </div>
+        <div class="cols">
+          <div class="panel"><h3>Dónde</h3><p>En la <strong>hoja de enfermería</strong> y en el <strong>expediente clínico</strong>.</p></div>
+          <div class="panel"><h3>Qué</h3><p>La razón específica. Por ejemplo, el paciente pasó a cirugía o cambió el esquema de tratamiento.</p></div>
+        </div>
+      </section>
+
+      <!-- 14 -->
+      <section class="slide" data-foot="AESP 3 · Compromisos" data-title="Compromisos">
+        <div class="head">
+          <p class="eyebrow">Próximos pasos</p>
+          <h2>Compromisos de la sesión</h2>
+        </div>
+        <table class="tasks">
+          <thead><tr><th scope="col">Compromiso</th><th scope="col">Detalle</th></tr></thead>
+          <tbody>
+            <tr><td>Doble verificación de anestésicos</td><td>Aplicarla en la preparación y la administración.</td></tr>
+            <tr><td>Registro</td><td>Anotar la doble verificación en la nota de enfermería.</td></tr>
+            <tr><td>Etiquetas</td><td>Alto riesgo y LASA con su alerta visual, sin cubrir la caducidad.</td></tr>
+            <tr><td>Solicitud</td><td>Pedir los medicamentos de alto riesgo como máximo 20 minutos antes.</td></tr>
+            <tr><td>Dosis omitidas</td><td>Registrar la causa en el expediente y la hoja de enfermería.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 15 -->
+      <section class="slide close" data-title="Cierre">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="29 42 512 259" role="img" aria-label="CCE, Centro de Capacitación y Enseñanza" class="marca">  <path d="M 257.8 77.3 L 252 73 L 246 69 L 239.7 65.3 L 233.3 62 L 226.8 59 L 220 56.3 L 213.2 54 L 206.2 52.1 L 199.2 50.5 L 192 49.3 L 184.9 48.5 L 177.6 48.1 L 170.4 48 L 163.2 48.3 L 156 49 L 148.9 50.1 L 141.8 51.5 L 134.8 53.3 L 127.9 55.5 L 121.1 58 L 114.5 60.9 L 108 64.2 L 101.8 67.7 L 95.7 71.6 L 89.8 75.8 L 84.1 80.3 L 78.7 85.1 L 73.6 90.1 L 68.7 95.5 L 64.1 101 L 59.8 106.8 L 55.8 112.9 L 52.1 119.1 L 48.8 125.5 L 45.8 132.1 L 43.2 138.8 L 40.9 145.7 L 38.9 152.6 L 37.4 159.7 L 36.2 166.8 L 35.4 174 L 34.9 181.2 L 34.9 188.4 L 35.2 195.6 L 35.9 202.8 L 36.9 210 L 38.4 217 L 40.2 224 L 42.3 230.9 L 44.9 237.7 L 47.8 244.3 L 51 250.8 L 54.5 257.1 L 58.4 263.2 L 62.6 269.1 L 67.1 274.7 L 71.9 280.1 L 77 285.3 L 82.3 290.1 L 87.9 294.7 L 89.1 293.2 L 84.2 288 L 79.6 282.5 L 75.5 276.8 L 71.6 270.9 L 68.2 264.9 L 65.1 258.7 L 62.4 252.4 L 60 246 L 57.9 239.6 L 56.2 233.1 L 54.9 226.6 L 53.9 220.1 L 53.2 213.6 L 52.8 207.2 L 52.8 200.7 L 53 194.4 L 53.5 188.1 L 54.3 181.9 L 55.4 175.7 L 56.8 169.7 L 58.3 163.7 L 60.2 157.9 L 62.3 152.2 L 64.6 146.6 L 67.1 141.1 L 69.9 135.8 L 72.9 130.6 L 76 125.5 L 79.4 120.6 L 83 115.8 L 86.8 111.2 L 90.7 106.7 L 94.9 102.4 L 99.2 98.3 L 103.7 94.3 L 108.4 90.5 L 113.3 86.9 L 118.3 83.5 L 123.5 80.3 L 128.9 77.3 L 134.5 74.6 L 140.1 72 L 146 69.7 L 152 67.7 L 158.1 65.9 L 164.3 64.4 L 170.7 63.2 L 177.1 62.3 L 183.7 61.8 L 190.3 61.5 L 197 61.6 L 203.8 62 L 210.5 62.7 L 217.3 63.9 L 224 65.4 L 230.7 67.3 L 237.4 69.6 L 243.9 72.2 L 250.3 75.3 L 256.6 78.8 Z" fill="#4FB3EC"/>  <path d="M187.5 271.9Q170 271.9 154.9 267.2Q139.7 262.5 128.3 252.8Q116.9 243.2 110.4 228.4Q103.8 213.7 103.8 193.7Q103.8 172.8 110.7 157.6Q117.6 142.4 129.4 132.4Q141.3 122.4 156.6 117.6Q171.9 112.8 188.9 112.8Q204.3 112.8 216.4 116Q228.5 119.2 237 124L238.1 159.9H220.2L212.4 131.4Q212.1 131.4 211.7 131.2Q203.8 127.9 194.2 127.9Q181.1 127.9 170.2 134.8Q159.2 141.7 152.7 156Q146.1 170.2 146.1 192.3Q146.1 214.4 152.4 228.7Q158.8 242.9 169.6 249.8Q180.4 256.7 193.7 256.7Q203.8 256.7 212.6 253.5Q213.5 253.1 214.4 252.8L221.6 224.8H239.7L238.3 260.6Q229.6 265.2 217.1 268.6Q204.5 271.9 187.5 271.9ZM334.2 271.9Q316.8 271.9 301.6 267.2Q286.4 262.5 275 252.8Q263.6 243.2 257.1 228.4Q250.5 213.7 250.5 193.7Q250.5 172.8 257.4 157.6Q264.3 142.4 276.2 132.4Q288 122.4 303.3 117.6Q318.6 112.8 335.6 112.8Q351 112.8 363.1 116Q375.2 119.2 383.7 124L384.8 159.9H366.9L359.1 131.4Q358.9 131.4 358.4 131.2Q350.6 127.9 340.9 127.9Q327.8 127.9 316.9 134.8Q305.9 141.7 299.4 156Q292.8 170.2 292.8 192.3Q292.8 214.4 299.2 228.7Q305.5 242.9 316.3 249.8Q327.1 256.7 340.4 256.7Q350.6 256.7 359.3 253.5Q360.2 253.1 361.1 252.8L368.3 224.8H386.4L385.1 260.6Q376.3 265.2 363.8 268.6Q351.3 271.9 334.2 271.9ZM395.6 268V253.1L414 252.1Q414 248.4 414 245V139.7Q414 136.2 414 132.8L395.6 131.6V116.9H518.7L520.3 156.7H501.9L496.4 131.6H454.7Q454.7 135.8 454.7 139.7Q454.5 151.4 454.5 162.9V182.9H479.3L482.3 165.6H497.5V215.3H482.3L479.6 198.1H454.5V221.5Q454.5 233.3 454.7 244.8Q454.7 249.1 454.7 253.3H500.7L506.5 227.1H524.9L523.3 268Z" fill="currentColor"/></svg>
+        <div class="head">
+          <p class="eyebrow">Para recordar</p>
+          <h2>Dos personas verifican. Una etiqueta avisa. Todo queda escrito.</h2>
+        </div>
+        <ul class="ticks" style="color:var(--cover-fg)">
+          <li>Rojo: alto riesgo. Naranja: LASA. Amarillo: caduca en menos de 3 meses.</li>
+          <li>Doble verificación en alto riesgo y anestésicos.</li>
+          <li>Pide el medicamento como máximo 20 minutos antes.</li>
+        </ul>
+        <p class="lede">Continúa con la evaluación del curso.</p>
+      </section>
+
+    </div>
+  </main>
+  <nav class="bar" aria-label="Controles de la presentación">
+    <span class="title">AESP 3 · Seguridad en medicamentos de alto riesgo</span>
+    <button type="button" id="prev" aria-label="Diapositiva anterior">‹</button>
+    <span class="count" id="count" aria-live="polite">1 / 16</span>
+    <button type="button" id="next" aria-label="Diapositiva siguiente">›</button>
+    <button type="button" class="fs" id="fs" aria-label="Pantalla completa">⛶</button>
+  </nav>
+</div>
+
+<script>
+(function(){
+  var app=document.getElementById('app'), stage=document.getElementById('stage'), vp=document.getElementById('viewport');
+  var slides=[].slice.call(stage.querySelectorAll('.slide'));
+  var cur=0, prog=document.getElementById('prog'), count=document.getElementById('count');
+  var prev=document.getElementById('prev'), next=document.getElementById('next');
+  slides.forEach(function(s,i){s.setAttribute('aria-roledescription','diapositiva');s.setAttribute('aria-label',(i+1)+' de '+slides.length+': '+(s.dataset.title||''));});
+
+  function fit(){
+    var flow = vp.clientWidth < 720 || window.innerWidth < 760;
+    app.classList.toggle('flow', flow);
+    if(flow){ stage.style.transform=''; return; }
+    var w=vp.clientWidth-32, h=vp.clientHeight-24;
+    var s=Math.min(w/1280,h/720);
+    stage.style.transform='scale('+s+')';
+  }
+  function show(i,anim){
+    cur=Math.max(0,Math.min(slides.length-1,i));
+    slides.forEach(function(s,k){ s.hidden = k!==cur; s.classList.remove('enter'); });
+    if(anim){ void slides[cur].offsetWidth; slides[cur].classList.add('enter'); }
+    count.textContent=(cur+1)+' / '+slides.length;
+    prog.style.width=((cur+1)/slides.length*100)+'%';
+    prev.disabled=cur===0; next.disabled=cur===slides.length-1;
+    vp.scrollTop=0;
+    try{ history.replaceState(null,'','#s'+(cur+1)); }catch(e){}
+  }
+  prev.addEventListener('click',function(){show(cur-1,true);});
+  next.addEventListener('click',function(){show(cur+1,true);});
+  document.addEventListener('keydown',function(e){
+    if(['ArrowRight','PageDown',' '].indexOf(e.key)>-1){e.preventDefault();show(cur+1,true);}
+    else if(['ArrowLeft','PageUp'].indexOf(e.key)>-1){e.preventDefault();show(cur-1,true);}
+    else if(e.key==='Home'){show(0,true);} else if(e.key==='End'){show(slides.length-1,true);}
+  });
+  var tx=null,ty=null;
+  vp.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;ty=e.touches[0].clientY;},{passive:true});
+  vp.addEventListener('touchend',function(e){
+    if(tx===null)return; var dx=e.changedTouches[0].clientX-tx, dy=e.changedTouches[0].clientY-ty;
+    if(Math.abs(dx)>60 && Math.abs(dx)>Math.abs(dy)*1.5){ show(cur+(dx<0?1:-1),true); }
+    tx=null;
+  },{passive:true});
+  document.getElementById('fs').addEventListener('click',function(){
+    try{
+      if(document.fullscreenElement){ document.exitFullscreen(); }
+      else if(app.requestFullscreen){ var p=app.requestFullscreen(); if(p&&p.catch)p.catch(function(){}); }
+    }catch(e){}
+  });
+  window.addEventListener('resize',fit);
+  document.addEventListener('fullscreenchange',fit);
+  var m=/^#s(\d+)$/.exec(location.hash||'');
+  fit(); show(m?parseInt(m[1],10)-1:0,false);
+})();
+</script>
+
+</body>
+</html>
