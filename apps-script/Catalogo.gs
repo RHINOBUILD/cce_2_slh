@@ -61,154 +61,154 @@ var CCE_CATALOG = [
       {
         "tipo": "video",
         "titulo": "Protocolo completo y situaciones especiales",
-        "duracion": "4:08 min",
+        "duracion": "3:25 min",
         "texto": "Repaso completo de la AESP 1: dos identificadores, verificación verbal, momentos críticos, pacientes desconocidos, inconscientes, recién nacidos y fallecimientos.",
         "video": "aesp1-identificacion-protocolos.mp4",
-        "segundosMinimos": 230,
+        "segundosMinimos": 190,
         "subtitulos": [
           [
-            0.0,
-            9.9,
+            0.3,
+            6.7,
             "Bienvenida al curso de la Acción Esencial para la Seguridad del Paciente número uno: identificación correcta del paciente."
           ],
           [
-            9.9,
-            18.8,
+            7.3,
+            13.6,
             "El modelo MOCEBPASS establece los lineamientos para certificar al hospital ante el Consejo de Salubridad General."
           ],
           [
-            18.8,
-            30.2,
+            13.6,
+            21.9,
             "Es un esfuerzo multidisciplinario. Identificar al paciente es tarea de todas las áreas, no solo de enfermería o del área médica."
           ],
           [
-            30.2,
-            39.1,
+            22.6,
+            29.1,
             "El objetivo es contar con un proceso confiable que prevenga errores, eventos adversos y eventos centinela."
           ],
           [
-            39.1,
-            48.0,
+            29.1,
+            35.7,
             "Es obligatorio para todo el personal, clínico y no clínico, que tiene contacto con el paciente."
           ],
           [
-            48.0,
-            58.4,
+            36.3,
+            45.4,
             "Usa siempre dos identificadores: el nombre completo, sin abreviaturas, y la fecha de nacimiento con día, mes y año."
           ],
           [
-            58.4,
-            62.8,
+            45.4,
+            48.7,
             "Ambos datos funcionan como barreras de seguridad."
           ],
           [
-            62.8,
-            70.7,
+            49.3,
+            56.6,
             "Con pacientes internacionales el formato de fecha puede cambiar. Confirma el mes en palabras."
           ],
           [
-            70.7,
-            79.1,
+            56.6,
+            64.5,
             "Los datos iniciales pueden anotarse con lápiz. Cuando Admisión los confirme, se registran con bolígrafo."
           ],
           [
-            79.1,
-            89.5,
+            65.0,
+            72.4,
             "Al verificar, no sugieras el nombre. Pide al paciente que diga su nombre completo y su fecha de nacimiento."
           ],
           [
-            89.5,
-            95.9,
+            72.4,
+            76.7,
             "Después, compara sus respuestas con el brazalete y con el expediente."
           ],
           [
-            95.9,
-            104.3,
+            77.3,
+            81.3,
             "En recién nacidos, coloca el brazalete en la muñeca derecha y en el tobillo izquierdo."
           ],
           [
-            104.3,
-            113.2,
+            81.3,
+            85.5,
             "Si no hay identificación oficial, puede usarse el acta de nacimiento o la cartilla de vacunación."
           ],
           [
-            113.2,
-            119.6,
+            85.5,
+            88.5,
             "El brazalete se retira al egreso y nunca sale del hospital."
           ],
           [
-            119.6,
-            128.5,
+            89.0,
+            96.7,
             "Verifica la identidad antes de administrar medicamentos, transfundir, tomar muestras de laboratorio y realizar procedimientos invasivos."
           ],
           [
-            128.5,
-            135.9,
+            96.7,
+            102.9,
             "La entrega de paciente entre turnos se hace siempre dentro de la habitación."
           ],
           [
-            135.9,
-            146.8,
+            103.5,
+            117.7,
             "Nutrición, fisioterapia e intendencia también corroboran la identidad antes de actuar. Así se evitan reacciones alérgicas y errores de atención."
           ],
           [
-            146.8,
-            155.2,
+            118.3,
+            125.0,
             "Antes de un procedimiento invasivo o una cirugía, confirma que el paciente porte su brazalete."
           ],
           [
-            155.2,
-            162.1,
+            125.0,
+            130.4,
             "El equipo de trabajo valida la identidad en conjunto antes de iniciar."
           ],
           [
-            162.1,
-            171.5,
+            131.1,
+            137.3,
             "Ante un paciente desconocido, por ejemplo en un Código Naranja, asigna una secuencia: Desconocido uno, Desconocido dos."
           ],
           [
-            171.5,
-            179.4,
+            137.3,
+            142.4,
             "Usa la fecha y hora de ingreso como identificadores temporales hasta obtener sus documentos."
           ],
           [
-            179.4,
-            189.8,
+            143.1,
+            150.0,
             "Si el paciente está inconsciente o intubado, coloca su identificación en la ficha de la cabecera de la cama."
           ],
           [
-            189.8,
-            196.7,
+            150.0,
+            154.4,
             "Esa ficha es válida para la doble verificación entre médicos y enfermería."
           ],
           [
-            196.7,
-            204.6,
+            155.1,
+            160.6,
             "En caso de fallecimiento, retira el brazalete y coloca la identificación sobre el tórax."
           ],
           [
-            204.6,
-            212.0,
+            160.6,
+            165.7,
             "Debe incluir nombre completo, fecha de nacimiento, y fecha y hora de defunción."
           ],
           [
-            212.0,
-            221.4,
+            166.3,
+            177.7,
             "Todo dispositivo, sonda o solución lleva una etiqueta con fecha, hora e iniciales de quien lo instaló."
           ],
           [
-            221.4,
-            233.3,
+            178.3,
+            189.2,
             "Como compromisos, todas las áreas actualizarán sus formatos de registro, el almacén garantizará existencias de brazaletes y Admisión identificará a los visitantes."
           ],
           [
-            233.3,
-            243.7,
+            189.8,
+            201.4,
             "Recuerda: nombre completo y fecha de nacimiento, siempre, antes de actuar. Ante cualquier discrepancia, detén el proceso y aclara."
           ],
           [
-            243.7,
-            247.6,
+            201.4,
+            205.1,
             "Continúa con la evaluación del curso."
           ]
         ],
@@ -226,49 +226,164 @@ var CCE_CATALOG = [
     ],
     "evaluacion": [
       {
-        "pregunta": "¿Cuáles son dos identificadores seguros?",
+        "pregunta": "¿Cuáles son los dos identificadores obligatorios del paciente?",
         "opciones": [
           "Nombre completo y fecha de nacimiento",
-          "Número de cama y diagnóstico",
-          "Servicio y médico tratante"
+          "Nombre y número de cama",
+          "Número de expediente y número de habitación",
+          "Nombre y diagnóstico"
         ],
         "correcta": 0
       },
       {
-        "pregunta": "¿El número de cama puede usarse como identificador?",
+        "pregunta": "¿Cómo debe escribirse el nombre del paciente en sus registros e identificadores?",
         "opciones": [
-          "Sí, si el paciente está hospitalizado",
-          "Solo durante el turno nocturno",
-          "No, nunca como identificador"
+          "Solo el nombre y el primer apellido",
+          "Completo y sin abreviaturas",
+          "Con iniciales para ahorrar espacio",
+          "Como lo indique el familiar"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Cuál es la forma correcta de verificar verbalmente la identidad del paciente?",
+        "opciones": [
+          "Preguntar: «¿Usted es el señor Juan Pérez?»",
+          "Preguntar: «¿Usted es el paciente de la cama 5?»",
+          "Pedirle que diga su nombre completo y su fecha de nacimiento",
+          "Leer el brazalete sin hablar con el paciente"
         ],
         "correcta": 2
       },
       {
-        "pregunta": "¿Cómo debe confirmarse el nombre del paciente?",
+        "pregunta": "¿El número de cama o de habitación puede usarse como identificador?",
         "opciones": [
-          "Con una pregunta abierta",
-          "Leyendo únicamente la cabecera",
-          "Preguntando a otro paciente"
+          "Sí, si el paciente está dormido",
+          "Sí, durante la noche",
+          "Solo en urgencias",
+          "No, nunca identifica al paciente"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Un paciente internacional anota su fecha de nacimiento como 04/03/1985. ¿Qué debes hacer?",
+        "opciones": [
+          "Confirmar el mes en palabras con el paciente o con su documento",
+          "Registrarla como 4 de marzo, formato mexicano",
+          "Registrarla como 3 de abril, formato de Estados Unidos",
+          "Dejar la fecha en blanco hasta su egreso"
         ],
         "correcta": 0
       },
       {
-        "pregunta": "¿Cuándo debe verificarse la identidad?",
+        "pregunta": "¿Cómo se registran los datos iniciales del paciente mientras Admisión los confirma?",
         "opciones": [
-          "Solo al ingreso",
-          "Antes de cada proceso asistencial",
-          "Únicamente antes de cirugía"
+          "Siempre con bolígrafo",
+          "Con lápiz; una vez confirmados, con bolígrafo",
+          "Con marcador permanente",
+          "Solo en el sistema, nunca en papel"
         ],
         "correcta": 1
       },
       {
-        "pregunta": "Si los datos no coinciden, se debe:",
+        "pregunta": "¿Dónde se colocan los brazaletes de identificación de un recién nacido?",
         "opciones": [
-          "Continuar y corregir después",
-          "Detener el proceso y aclarar la discrepancia",
-          "Cambiar la pulsera sin verificar"
+          "Muñeca izquierda y tobillo derecho",
+          "Solo en el tobillo",
+          "Muñeca derecha y tobillo izquierdo",
+          "En la cuna, no en el bebé"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Dónde debe realizarse la entrega de paciente entre turnos?",
+        "opciones": [
+          "En la central de enfermería",
+          "Por teléfono",
+          "En el pasillo",
+          "Dentro de la habitación del paciente"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿En cuál de estos momentos es obligatorio verificar la identidad del paciente?",
+        "opciones": [
+          "Antes de una transfusión",
+          "Al limpiar el pasillo",
+          "Al reponer insumos del almacén",
+          "Al registrar la asistencia del personal"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Durante un Código Naranja llega un paciente sin documentos y sin poder responder. ¿Cómo se identifica?",
+        "opciones": [
+          "Con un nombre ficticio elegido por el personal",
+          "Como Desconocido 1, 2…, con la fecha y hora de ingreso como identificadores temporales",
+          "Solo con el número de cama",
+          "No se identifica hasta que llegue un familiar"
         ],
         "correcta": 1
+      },
+      {
+        "pregunta": "¿Cómo se identifica a un paciente inconsciente o intubado?",
+        "opciones": [
+          "Se le pregunta su nombre de todos modos",
+          "No requiere identificación",
+          "Con la ficha de identificación en la cabecera de la cama, válida para la doble verificación entre médicos y enfermería",
+          "Por su diagnóstico de ingreso"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "En caso de fallecimiento, ¿qué se hace con la identificación?",
+        "opciones": [
+          "Se deja el brazalete y no se agrega nada",
+          "Se coloca una etiqueta en el pie solo con el nombre",
+          "Se anota el número de cama en la sábana",
+          "Se retira el brazalete y se coloca la identificación sobre el tórax con nombre, fecha de nacimiento, y fecha y hora de defunción"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué pasa con el brazalete cuando el paciente egresa?",
+        "opciones": [
+          "Se retira y nunca sale del hospital",
+          "Se le entrega al paciente",
+          "Se deja puesto hasta su domicilio",
+          "Se reutiliza con el siguiente paciente"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Qué datos debe llevar la etiqueta de una sonda, catéter o solución?",
+        "opciones": [
+          "Solo el nombre del paciente",
+          "Fecha, hora e iniciales de quien la instaló",
+          "Solo la fecha de instalación",
+          "El diagnóstico del paciente"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Quién es responsable de identificar correctamente al paciente?",
+        "opciones": [
+          "Solo enfermería",
+          "Solo el personal médico",
+          "Todo el personal, clínico y no clínico, que interactúa con el paciente",
+          "Solo Admisión"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Si los datos del paciente no coinciden con el brazalete o el documento, debes:",
+        "opciones": [
+          "Continuar y corregir después",
+          "Cambiar el brazalete sin verificar",
+          "Avisar al final del turno",
+          "Detener el proceso y aclarar la discrepancia"
+        ],
+        "correcta": 3
       }
     ],
     "dirigido": "Personal clínico y de apoyo que tiene contacto con pacientes.",

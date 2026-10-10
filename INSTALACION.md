@@ -59,6 +59,7 @@ Para un PIN olvidado: Administración → Personal → colaborador → **Generar
 - Se asignan solos: los cursos con `OBLIGATORIO = SI` y los del área del colaborador (`ASIGNAR_POR_AREA`).
 - **ASIGNACIONES**: asignaciones adicionales con fecha límite, también desde Administración → Asignar curso. `TIPO` puede ser `EMPLEADO`, `AREA`, `PUESTO`, `EMPRESA` o `TODOS`.
 - Para cargar contenido nuevo desde `Catalogo.gs` sin perder avances: menú **CCE 2.0 → Actualizar catálogo**.
+- Para actualizar **un solo curso** sin tocar los demás, agrega `apps-script/ActualizarCurso.gs` al proyecto y ejecuta su función (por ejemplo `actualizarCursoAesp1`). Úsala en lugar de "Actualizar catálogo" si editaste cursos desde Administración.
 
 ## 5. Configuración (hoja CONFIGURACION)
 
