@@ -13,6 +13,21 @@ function actualizarCursoAesp1() {
   return actualizarCursoDesdeCatalogo_('aesp1');
 }
 
+/** Actualiza AESP 2: comunicación efectiva. */
+function actualizarCursoAesp2() {
+  return actualizarCursoDesdeCatalogo_('aesp2');
+}
+
+/** Agrega o actualiza AESP 3: medicamentos de alto riesgo. */
+function actualizarCursoAesp3() {
+  return actualizarCursoDesdeCatalogo_('aesp3');
+}
+
+/** Actualiza AESP 1, 2 y 3 de una sola vez. */
+function actualizarCursosAesp() {
+  return ['aesp1', 'aesp2', 'aesp3'].map(actualizarCursoDesdeCatalogo_);
+}
+
 function actualizarCursoDesdeCatalogo_(id) {
   var c = CCE_CATALOG.filter(function (x) { return x.id === id; })[0];
   if (!c) throw new Error('El curso "' + id + '" no existe en Catalogo.gs.');
