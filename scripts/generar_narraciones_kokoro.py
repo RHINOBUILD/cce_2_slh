@@ -18,7 +18,6 @@ PREVIEW_DIR = ROOT / "narraciones-kokoro"
 VOICE = "ef_dora"
 SAMPLE_RATE = 24000
 COURSES = (
-    "identificacion-correcta-paciente",
     "comunicacion-saer",
     "higiene-de-manos",
     "precauciones-estandar-epp",

@@ -15,50 +15,6 @@ var CCE_CATALOG = [
     "orden": 1,
     "lecciones": [
       {
-        "titulo": "Identificación correcta del paciente",
-        "duracion": "0:56 min",
-        "texto": "Verifica siempre dos identificadores antes de medicamentos, muestras, procedimientos, traslados y dietas. El número de cama nunca sustituye la identidad.",
-        "video": "identificacion-correcta-paciente.mp4",
-        "segundosMinimos": 50,
-        "subtitulos": [
-          [
-            0,
-            8,
-            "Identificar correctamente al paciente antes de actuar previene errores y es responsabilidad de todo el equipo."
-          ],
-          [
-            8,
-            16,
-            "Confirma dos identificadores: nombre completo y fecha de nacimiento. Pide al paciente que diga sus datos."
-          ],
-          [
-            16,
-            24,
-            "El número de cama, habitación o ubicación nunca identifica al paciente."
-          ],
-          [
-            24,
-            32,
-            "Verifica la identidad antes de medicamentos, muestras, procedimientos, dietas, transfusiones y traslados."
-          ],
-          [
-            32,
-            40,
-            "Si el paciente no puede responder, aplica el protocolo institucional y documenta la verificación."
-          ],
-          [
-            40,
-            48,
-            "Si existe una discrepancia, detén el proceso, corrige la información y comunícala al responsable."
-          ],
-          [
-            48,
-            55.9,
-            "La identificación correcta comienza antes de cada atención. Continúa con la evaluación."
-          ]
-        ]
-      },
-      {
         "tipo": "video",
         "titulo": "Protocolo completo y situaciones especiales",
         "duracion": "3:25 min",
