@@ -365,6 +365,16 @@ var CCE_CATALOG = [
         "texto": "Organiza los datos clínicos como Situación, Antecedentes, Evaluación y Recomendación. En órdenes verbales: escucha, escribe, lee y confirma.",
         "video": "comunicacion-saer.mp4",
         "segundosMinimos": 50,
+        "materiales": [
+          {
+            "nombre": "Guía rápida AESP 2 (PDF)",
+            "url": "materiales/aesp2-guia-rapida.pdf"
+          },
+          {
+            "nombre": "Presentación AESP 2",
+            "url": "presentaciones/aesp2-comunicacion-efectiva.html"
+          }
+        ],
         "subtitulos": [
           [
             0,
@@ -406,57 +416,173 @@ var CCE_CATALOG = [
     ],
     "evaluacion": [
       {
-        "pregunta": "En SAER, la S corresponde a:",
+        "pregunta": "¿Cuál es el objetivo de la AESP 2?",
         "opciones": [
-          "Situación",
-          "Seguridad",
-          "Seguimiento"
+          "Que la información entre profesionales sea correcta, oportuna y completa",
+          "Reducir el tiempo de las entregas de turno",
+          "Sustituir las órdenes escritas por órdenes verbales",
+          "Que solo los médicos den indicaciones"
         ],
         "correcta": 0
       },
       {
-        "pregunta": "Los Antecedentes incluyen:",
+        "pregunta": "¿Cuál es el orden correcto ante una orden verbal o telefónica?",
         "opciones": [
-          "Información clínica relevante",
-          "Solo el nombre del hospital",
-          "La recomendación final"
-        ],
-        "correcta": 0
-      },
-      {
-        "pregunta": "La Evaluación comunica:",
-        "opciones": [
-          "Lo que el profesional observa y valora",
-          "Únicamente datos administrativos",
-          "La firma del paciente"
-        ],
-        "correcta": 0
-      },
-      {
-        "pregunta": "La Recomendación debe expresar:",
-        "opciones": [
-          "La acción o respuesta que se necesita",
-          "El número de habitación",
-          "Solo el diagnóstico previo"
-        ],
-        "correcta": 0
-      },
-      {
-        "pregunta": "Ante una orden verbal se debe:",
-        "opciones": [
+          "Escribir, escuchar, confirmar y leer",
           "Escuchar, escribir, leer y confirmar",
-          "Memorizarla y registrarla al final",
-          "Pedir a otra persona que la interprete"
+          "Escuchar, ejecutar y escribir después",
+          "Leer, escuchar, escribir y confirmar"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿En qué momento se ejecuta una orden verbal?",
+        "opciones": [
+          "En cuanto se escucha",
+          "Al terminar el turno",
+          "Cuando el médico confirma que lo leído en voz alta es correcto",
+          "Cuando la firma el jefe de servicio"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Qué datos se registran en la bitácora de comunicación efectiva?",
+        "opciones": [
+          "Solo la indicación y la hora",
+          "El número de cama y el diagnóstico",
+          "Únicamente el nombre del médico",
+          "Fecha, hora, nombre completo y fecha de nacimiento del paciente, y nombre y cargo de quien emite la orden"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Si la orden verbal se da durante una urgencia, ¿dónde se registra?",
+        "opciones": [
+          "En el formato específico de la urgencia",
+          "En una hoja suelta",
+          "No se registra",
+          "En el chat del servicio"
         ],
         "correcta": 0
+      },
+      {
+        "pregunta": "¿Quién debe firmar la bitácora para validar una orden verbal?",
+        "opciones": [
+          "El paciente",
+          "El médico que emitió la indicación",
+          "Cualquier persona del turno",
+          "El personal de admisión"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Cuál es el plazo para firmar la bitácora?",
+        "opciones": [
+          "Una semana",
+          "Al cierre del mes",
+          "24 horas en días hábiles y 72 horas en fin de semana",
+          "48 horas siempre"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Si el médico tratante no está, ¿quién registra y firma la indicación?",
+        "opciones": [
+          "El personal de enfermería",
+          "Nadie, se espera al médico tratante",
+          "El familiar del paciente",
+          "El jefe de servicio o el médico de guardia"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Quién transcribe las indicaciones de la bitácora a la hoja de indicaciones médicas?",
+        "opciones": [
+          "El médico de guardia",
+          "El personal de archivo clínico",
+          "El paciente",
+          "El personal de laboratorio"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "En la técnica SBAR, ¿qué significa la R?",
+        "opciones": [
+          "Resultado",
+          "Recomendación",
+          "Registro",
+          "Riesgo"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué técnica se recomienda a los paramédicos para la entrega del paciente?",
+        "opciones": [
+          "ABCDE",
+          "5 correctos",
+          "SAMPLE",
+          "FAST"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "En SAMPLE, ¿qué significa la L?",
+        "opciones": [
+          "Lesiones",
+          "Laboratorios",
+          "Lugar del evento",
+          "Último alimento"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Al egreso, ¿cómo se confirma que el paciente entendió sus indicaciones?",
+        "opciones": [
+          "Pidiéndole que repita las instrucciones, el horario de medicamentos y las señales de alerta",
+          "Entregándole la receta sin explicar",
+          "Preguntando solo si tiene dudas",
+          "Explicándole únicamente al familiar"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuál de estos resultados de laboratorio es crítico y se notifica de inmediato?",
+        "opciones": [
+          "Hemoglobina de 12 g/dL",
+          "Hemoglobina menor de 6 g/dL",
+          "Plaquetas de 250,000 /µL",
+          "Leucocitos de 8,000 /µL"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Cuál de estos hallazgos de imagenología requiere aviso inmediato?",
+        "opciones": [
+          "Fractura antigua consolidada",
+          "Quiste renal simple",
+          "Tromboembolia pulmonar",
+          "Calcificación vascular leve"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Durante un paro cardíaco, ¿dónde se registran los medicamentos administrados?",
+        "opciones": [
+          "En la bitácora estándar",
+          "En las hojas de enfermería, transcritos después",
+          "No se registran",
+          "En el formato específico, que se integra al expediente"
+        ],
+        "correcta": 3
       }
     ],
     "dirigido": "Personal que transmite información clínica o recibe órdenes verbales.",
     "nivel": "Básico",
     "objetivos": [
-      "Estructurar la información clínica con SAER.",
-      "Aplicar escuchar, escribir, leer y confirmar en órdenes verbales.",
-      "Verificar que el mensaje fue comprendido."
+      "Aplicar escuchar, escribir, leer y confirmar en toda orden verbal o telefónica.",
+      "Registrar y firmar las órdenes verbales en la bitácora dentro del plazo.",
+      "Entregar pacientes con SBAR o SAMPLE.",
+      "Notificar de inmediato los resultados críticos."
     ]
   },
   {
