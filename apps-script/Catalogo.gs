@@ -360,11 +360,134 @@ var CCE_CATALOG = [
     "orden": 2,
     "lecciones": [
       {
-        "titulo": "Comunicación efectiva mediante SAER",
-        "duracion": "0:56 min",
-        "texto": "Organiza los datos clínicos como Situación, Antecedentes, Evaluación y Recomendación. En órdenes verbales: escucha, escribe, lee y confirma.",
-        "video": "comunicacion-saer.mp4",
-        "segundosMinimos": 50,
+        "tipo": "video",
+        "titulo": "Comunicación efectiva: órdenes verbales, entregas y resultados críticos",
+        "duracion": "3:39 min",
+        "texto": "Escuchar, escribir, leer y confirmar; bitácora y plazos de firma; SBAR y SAMPLE; egreso; resultados críticos y paro cardíaco.",
+        "video": "aesp2-comunicacion-efectiva.mp4",
+        "segundosMinimos": 200,
+        "subtitulos": [
+          [
+            0.3,
+            9.4,
+            "Bienvenida al curso de la Acción Esencial para la Seguridad del Paciente número dos: mejorar la comunicación efectiva."
+          ],
+          [
+            10.1,
+            15.9,
+            "El objetivo es que la información entre profesionales de la salud sea correcta, oportuna y completa."
+          ],
+          [
+            15.9,
+            22.9,
+            "Así se evitan los errores que nacen de órdenes verbales o telefónicas mal escuchadas, mal escritas o nunca confirmadas."
+          ],
+          [
+            23.6,
+            30.2,
+            "Aplica a todo el personal clínico: médicos de staff y externos, enfermería, paramédicos, laboratorio e imagenología."
+          ],
+          [
+            30.2,
+            36.5,
+            "Y a todas las áreas de atención, desde urgencias y quirófano hasta hemodiálisis y dietología."
+          ],
+          [
+            37.0,
+            44.2,
+            "Ante una orden verbal o telefónica sigue cuatro pasos: escuchar, escribir, leer y confirmar."
+          ],
+          [
+            44.2,
+            51.5,
+            "Solo cuando el médico confirma que lo leído es correcto, la indicación se ejecuta."
+          ],
+          [
+            52.0,
+            58.9,
+            "Por ejemplo: el médico da la indicación con el nombre completo y la fecha de nacimiento del paciente."
+          ],
+          [
+            58.9,
+            65.0,
+            "Enfermería la anota, la lee en voz alta y pregunta si es correcta. El médico confirma."
+          ],
+          [
+            65.5,
+            74.2,
+            "Toda orden verbal se registra en la bitácora del servicio con fecha, hora, nombre completo y fecha de nacimiento del paciente, y el nombre y cargo de quien la emite."
+          ],
+          [
+            74.2,
+            78.5,
+            "Si la indicación ocurre durante una urgencia, se usa el formato específico de esa situación."
+          ],
+          [
+            79.0,
+            84.4,
+            "El médico que dio la indicación firma la bitácora. Si no está, la registra y firma el jefe de servicio o el médico de guardia."
+          ],
+          [
+            84.4,
+            90.5,
+            "El plazo para firmar es de veinticuatro horas en días hábiles y setenta y dos en fin de semana. El médico de guardia transcribe la indicación al expediente."
+          ],
+          [
+            91.0,
+            104.5,
+            "En la transferencia de pacientes y la entrega de turno usa SBAR: situación, antecedentes, evaluación y recomendación."
+          ],
+          [
+            105.0,
+            112.9,
+            "Los paramédicos usan SAMPLE: signos y síntomas, alergias, medicamentos, padecimientos, último alimento y eventos previos."
+          ],
+          [
+            112.9,
+            120.7,
+            "En cada entrega, documenta qué estudios y documentos recibe la persona que continúa la atención."
+          ],
+          [
+            121.3,
+            132.9,
+            "Al egreso, pide al paciente que repita sus instrucciones, el horario de sus medicamentos y las señales de alerta."
+          ],
+          [
+            133.6,
+            138.5,
+            "Los resultados críticos de laboratorio se notifican de inmediato al médico responsable."
+          ],
+          [
+            138.5,
+            147.2,
+            "Por ejemplo, hemoglobina menor de seis, plaquetas menores de cincuenta mil, o leucocitos fuera del rango de mil a cuarenta mil."
+          ],
+          [
+            147.8,
+            161.7,
+            "En imagenología también se avisan de inmediato diagnósticos como evento vascular cerebral, sangrado abdominal, tromboembolia pulmonar, pericarditis, derrame pericárdico o isquemia mesentérica."
+          ],
+          [
+            162.3,
+            177.4,
+            "Durante un paro cardíaco, los medicamentos se registran en el formato específico, que se integra al expediente sin transcribirlo a las hojas de enfermería."
+          ],
+          [
+            178.1,
+            189.7,
+            "Un aviso de la Acción Esencial número cuatro: ahora cualquier miembro del equipo quirúrgico puede realizar el marcaje."
+          ],
+          [
+            190.3,
+            201.7,
+            "Como compromisos: registrar y confirmar toda orden verbal, transcribir y firmar a tiempo, y entregar pacientes con SBAR o SAMPLE."
+          ],
+          [
+            202.3,
+            218.5,
+            "Recuerda: escucha, escribe, lee y confirma. Cada orden, cada vez. Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Guía rápida AESP 2 (PDF)",
@@ -374,43 +497,6 @@ var CCE_CATALOG = [
             "nombre": "Presentación AESP 2",
             "url": "presentaciones/aesp2-comunicacion-efectiva.html"
           }
-        ],
-        "subtitulos": [
-          [
-            0,
-            8,
-            "Una comunicación clara y estructurada reduce omisiones y fortalece la seguridad del paciente."
-          ],
-          [
-            8,
-            16,
-            "Situación: identifica al paciente y explica brevemente qué ocurre en este momento."
-          ],
-          [
-            16,
-            24,
-            "Antecedentes: comparte diagnóstico, tratamiento, alergias y datos clínicos relevantes."
-          ],
-          [
-            24,
-            32,
-            "Evaluación: describe los cambios observados, los resultados y aquello que te preocupa."
-          ],
-          [
-            32,
-            40,
-            "Recomendación: expresa la acción que necesitas y confirma quién dará seguimiento."
-          ],
-          [
-            40,
-            48,
-            "En órdenes verbales o telefónicas: escucha, escribe, lee en voz alta y confirma."
-          ],
-          [
-            48,
-            55.9,
-            "Pregunta, aclara y confirma que el mensaje fue comprendido. Continúa con la evaluación."
-          ]
         ]
       }
     ],
