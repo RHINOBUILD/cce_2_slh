@@ -676,7 +676,7 @@ var CCE_CATALOG = [
     "titulo": "AESP 3: Seguridad en medicamentos de alto riesgo",
     "area": "Calidad y Seguridad",
     "horas": 1,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Alertas visuales, almacenamiento, prescripción, solicitud y doble verificación de medicamentos de alto riesgo y anestésicos.",
     "orden": 3,
     "lecciones": [
@@ -2178,6 +2178,7 @@ var CCE_ROUTES = [
     "titulo": "Enfermería hospitalaria",
     "descripcion": "Procedimientos y controles que el personal de enfermería aplica en el día a día.",
     "cursos": [
+      "aesp3",
       "rpbi",
       "med-alto-riesgo",
       "gasometria",
