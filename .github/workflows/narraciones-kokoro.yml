@@ -36,7 +36,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install "kokoro==0.9.4" "misaki[es]" soundfile numpy
 
-      - name: Generar e integrar las cinco narraciones
+      - name: Generar e integrar las narraciones
         run: python scripts/generar_narraciones_kokoro.py
 
       - name: Validar archivos multimedia

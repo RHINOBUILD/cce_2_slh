@@ -23,6 +23,7 @@ COURSES = (
     "higiene-de-manos",
     "precauciones-estandar-epp",
     "trato-digno-experiencia-paciente",
+    "aesp1-identificacion-protocolos",
 )
 
 def run(*args: str) -> None:

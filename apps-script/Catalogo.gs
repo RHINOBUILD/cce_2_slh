@@ -57,6 +57,171 @@ var CCE_CATALOG = [
             "La identificación correcta comienza antes de cada atención. Continúa con la evaluación."
           ]
         ]
+      },
+      {
+        "tipo": "video",
+        "titulo": "Protocolo completo y situaciones especiales",
+        "duracion": "4:08 min",
+        "texto": "Repaso completo de la AESP 1: dos identificadores, verificación verbal, momentos críticos, pacientes desconocidos, inconscientes, recién nacidos y fallecimientos.",
+        "video": "aesp1-identificacion-protocolos.mp4",
+        "segundosMinimos": 230,
+        "subtitulos": [
+          [
+            0.0,
+            9.9,
+            "Bienvenida al curso de la Acción Esencial para la Seguridad del Paciente número uno: identificación correcta del paciente."
+          ],
+          [
+            9.9,
+            18.8,
+            "El modelo MOCEBPASS establece los lineamientos para certificar al hospital ante el Consejo de Salubridad General."
+          ],
+          [
+            18.8,
+            30.2,
+            "Es un esfuerzo multidisciplinario. Identificar al paciente es tarea de todas las áreas, no solo de enfermería o del área médica."
+          ],
+          [
+            30.2,
+            39.1,
+            "El objetivo es contar con un proceso confiable que prevenga errores, eventos adversos y eventos centinela."
+          ],
+          [
+            39.1,
+            48.0,
+            "Es obligatorio para todo el personal, clínico y no clínico, que tiene contacto con el paciente."
+          ],
+          [
+            48.0,
+            58.4,
+            "Usa siempre dos identificadores: el nombre completo, sin abreviaturas, y la fecha de nacimiento con día, mes y año."
+          ],
+          [
+            58.4,
+            62.8,
+            "Ambos datos funcionan como barreras de seguridad."
+          ],
+          [
+            62.8,
+            70.7,
+            "Con pacientes internacionales el formato de fecha puede cambiar. Confirma el mes en palabras."
+          ],
+          [
+            70.7,
+            79.1,
+            "Los datos iniciales pueden anotarse con lápiz. Cuando Admisión los confirme, se registran con bolígrafo."
+          ],
+          [
+            79.1,
+            89.5,
+            "Al verificar, no sugieras el nombre. Pide al paciente que diga su nombre completo y su fecha de nacimiento."
+          ],
+          [
+            89.5,
+            95.9,
+            "Después, compara sus respuestas con el brazalete y con el expediente."
+          ],
+          [
+            95.9,
+            104.3,
+            "En recién nacidos, coloca el brazalete en la muñeca derecha y en el tobillo izquierdo."
+          ],
+          [
+            104.3,
+            113.2,
+            "Si no hay identificación oficial, puede usarse el acta de nacimiento o la cartilla de vacunación."
+          ],
+          [
+            113.2,
+            119.6,
+            "El brazalete se retira al egreso y nunca sale del hospital."
+          ],
+          [
+            119.6,
+            128.5,
+            "Verifica la identidad antes de administrar medicamentos, transfundir, tomar muestras de laboratorio y realizar procedimientos invasivos."
+          ],
+          [
+            128.5,
+            135.9,
+            "La entrega de paciente entre turnos se hace siempre dentro de la habitación."
+          ],
+          [
+            135.9,
+            146.8,
+            "Nutrición, fisioterapia e intendencia también corroboran la identidad antes de actuar. Así se evitan reacciones alérgicas y errores de atención."
+          ],
+          [
+            146.8,
+            155.2,
+            "Antes de un procedimiento invasivo o una cirugía, confirma que el paciente porte su brazalete."
+          ],
+          [
+            155.2,
+            162.1,
+            "El equipo de trabajo valida la identidad en conjunto antes de iniciar."
+          ],
+          [
+            162.1,
+            171.5,
+            "Ante un paciente desconocido, por ejemplo en un Código Naranja, asigna una secuencia: Desconocido uno, Desconocido dos."
+          ],
+          [
+            171.5,
+            179.4,
+            "Usa la fecha y hora de ingreso como identificadores temporales hasta obtener sus documentos."
+          ],
+          [
+            179.4,
+            189.8,
+            "Si el paciente está inconsciente o intubado, coloca su identificación en la ficha de la cabecera de la cama."
+          ],
+          [
+            189.8,
+            196.7,
+            "Esa ficha es válida para la doble verificación entre médicos y enfermería."
+          ],
+          [
+            196.7,
+            204.6,
+            "En caso de fallecimiento, retira el brazalete y coloca la identificación sobre el tórax."
+          ],
+          [
+            204.6,
+            212.0,
+            "Debe incluir nombre completo, fecha de nacimiento, y fecha y hora de defunción."
+          ],
+          [
+            212.0,
+            221.4,
+            "Todo dispositivo, sonda o solución lleva una etiqueta con fecha, hora e iniciales de quien lo instaló."
+          ],
+          [
+            221.4,
+            233.3,
+            "Como compromisos, todas las áreas actualizarán sus formatos de registro, el almacén garantizará existencias de brazaletes y Admisión identificará a los visitantes."
+          ],
+          [
+            233.3,
+            243.7,
+            "Recuerda: nombre completo y fecha de nacimiento, siempre, antes de actuar. Ante cualquier discrepancia, detén el proceso y aclara."
+          ],
+          [
+            243.7,
+            247.6,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
+        "materiales": [
+          {
+            "nombre": "Guía rápida AESP 1 (PDF)",
+            "url": "materiales/aesp1-guia-rapida.pdf"
+          },
+          {
+            "nombre": "Presentación AESP 1",
+            "url": "presentaciones/aesp1-identificacion-correcta-paciente.html"
+          }
+        ]
       }
     ],
     "evaluacion": [
