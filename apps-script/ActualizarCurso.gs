@@ -28,6 +28,13 @@ function actualizarCursosAesp() {
   return ['aesp1', 'aesp2', 'aesp3'].map(actualizarCursoDesdeCatalogo_);
 }
 
+/** Lote de octubre 2026: AESP 6, Seguridad e Higiene, RPBI, ACC.1.1, prehospitalario y farmacia. */
+function actualizarLoteOctubre() {
+  return ['aesp6', 'epp', 'huracanes', 'codigo-amarillo', 'accidentes-incidentes', 'mejora-continua-sst',
+    'rpbi', 'acc11', 'rpbi-prehospitalario', 'insumos-prehospitalarios', 'papeleria-ambulancia',
+    'notas-medicas', 'farmacia-hospitalaria'].map(actualizarCursoDesdeCatalogo_);
+}
+
 function actualizarCursoDesdeCatalogo_(id) {
   var c = CCE_CATALOG.filter(function (x) { return x.id === id; })[0];
   if (!c) throw new Error('El curso "' + id + '" no existe en Catalogo.gs.');

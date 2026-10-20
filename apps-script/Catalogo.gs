@@ -68,7 +68,7 @@ var CCE_CATALOG = [
             "Los datos iniciales pueden anotarse con lápiz. Cuando Admisión los confirme, se registran con bolígrafo."
           ],
           [
-            65.0,
+            65,
             72.4,
             "Al verificar, no sugieras el nombre. Pide al paciente que diga su nombre completo y su fecha de nacimiento."
           ],
@@ -93,7 +93,7 @@ var CCE_CATALOG = [
             "El brazalete se retira al egreso y nunca sale del hospital."
           ],
           [
-            89.0,
+            89,
             96.7,
             "Verifica la identidad antes de administrar medicamentos, transfundir, tomar muestras de laboratorio y realizar procedimientos invasivos."
           ],
@@ -109,11 +109,11 @@ var CCE_CATALOG = [
           ],
           [
             118.3,
-            125.0,
+            125,
             "Antes de un procedimiento invasivo o una cirugía, confirma que el paciente porte su brazalete."
           ],
           [
-            125.0,
+            125,
             130.4,
             "El equipo de trabajo valida la identidad en conjunto antes de iniciar."
           ],
@@ -129,11 +129,11 @@ var CCE_CATALOG = [
           ],
           [
             143.1,
-            150.0,
+            150,
             "Si el paciente está inconsciente o intubado, coloca su identificación en la ficha de la cabecera de la cama."
           ],
           [
-            150.0,
+            150,
             154.4,
             "Esa ficha es válida para la doble verificación entre médicos y enfermería."
           ],
@@ -393,7 +393,7 @@ var CCE_CATALOG = [
             "Y a todas las áreas de atención, desde urgencias y quirófano hasta hemodiálisis y dietología."
           ],
           [
-            37.0,
+            37,
             44.2,
             "Ante una orden verbal o telefónica sigue cuatro pasos: escuchar, escribir, leer y confirmar."
           ],
@@ -403,13 +403,13 @@ var CCE_CATALOG = [
             "Solo cuando el médico confirma que lo leído es correcto, la indicación se ejecuta."
           ],
           [
-            52.0,
+            52,
             58.9,
             "Por ejemplo: el médico da la indicación con el nombre completo y la fecha de nacimiento del paciente."
           ],
           [
             58.9,
-            65.0,
+            65,
             "Enfermería la anota, la lee en voz alta y pregunta si es correcta. El médico confirma."
           ],
           [
@@ -423,7 +423,7 @@ var CCE_CATALOG = [
             "Si la indicación ocurre durante una urgencia, se usa el formato específico de esa situación."
           ],
           [
-            79.0,
+            79,
             84.4,
             "El médico que dio la indicación firma la bitácora. Si no está, la registra y firma el jefe de servicio o el médico de guardia."
           ],
@@ -433,12 +433,12 @@ var CCE_CATALOG = [
             "El plazo para firmar es de veinticuatro horas en días hábiles y setenta y dos en fin de semana. El médico de guardia transcribe la indicación al expediente."
           ],
           [
-            91.0,
+            91,
             104.5,
             "En la transferencia de pacientes y la entrega de turno usa SBAR: situación, antecedentes, evaluación y recomendación."
           ],
           [
-            105.0,
+            105,
             112.9,
             "Los paramédicos usan SAMPLE: signos y síntomas, alergias, medicamentos, padecimientos, último alimento y eventos previos."
           ],
@@ -1201,75 +1201,155 @@ var CCE_CATALOG = [
     "area": "Admisión y Recepción",
     "horas": 1,
     "obligatorio": true,
-    "descripcion": "Ingreso ambulatorio y hospitalario con información completa y segura.",
+    "descripcion": "Formas de ingreso, identificación correcta, flujo de admisión a médico, documentos y egreso del paciente.",
     "orden": 6,
     "lecciones": [
       {
-        "titulo": "Recepción del paciente",
-        "duracion": "12 min",
-        "texto": "Confirma identidad, servicio solicitado, cobertura y requisitos documentales.",
-        "segundosMinimos": 20
-      },
-      {
-        "titulo": "Aceptación y registro",
-        "duracion": "15 min",
-        "texto": "Registra la información sin abreviaturas y comunica oportunamente las condiciones del servicio.",
-        "segundosMinimos": 20
+        "tipo": "lectura",
+        "titulo": "Proceso de aceptación: puntos clave",
+        "duracion": "10 min",
+        "texto": "Repaso de la sesión del 17 de abril de 2026.\n\n• Proceso crítico ante el Consejo de Salubridad General. Aplica a admisión, enfermería y personal médico.\n• Formas de ingreso: consulta externa, urgencias, hospitalización programada y procedimiento ambulatorio.\n• Dos identificadores (nombre completo y fecha de nacimiento) e identificación oficial (INE o pasaporte). El registro es un documento médico-legal.\n• En documentos de EE. UU. la fecha va mes/día/año: preguntar directamente. Con seguro, el nombre coincide con la credencial. Menores sin documentos: buscar su CURP.\n• Flujo: admisión registra y avisa a enfermería con copia de la identificación; enfermería hace doble verificación; el médico valora y hace el plan.\n• Documentos: formato de registro, aviso de privacidad, consentimiento informado si aplica; reglamento para hospitalizados.\n• Egreso: enfermería entrega la hoja de cargos a admisión, que revisa pendientes antes de la salida.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación ACC.1.1",
+            "url": "presentaciones/acc11-proceso-aceptacion.html"
+          },
+          {
+            "nombre": "Guía rápida ACC.1.1 (PDF)",
+            "url": "materiales/acc11-proceso-aceptacion-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
       {
-        "pregunta": "¿Qué debe verificarse primero?",
+        "pregunta": "¿A qué áreas aplica el proceso de aceptación?",
         "opciones": [
-          "Identidad y servicio solicitado",
-          "Habitación preferida",
-          "Forma de salida"
+          "Admisión, enfermería y personal médico",
+          "Solo admisión",
+          "Solo caja",
+          "Solo urgencias"
         ],
         "correcta": 0
       },
       {
-        "pregunta": "Al registrar los datos del paciente se debe:",
+        "pregunta": "¿Cuáles son las formas de ingreso de un paciente?",
         "opciones": [
-          "Usar abreviaturas para agilizar",
-          "Registrar la información completa y sin abreviaturas",
-          "Dejar campos vacíos y completarlos después"
+          "Solo urgencias",
+          "Consulta externa, urgencias, hospitalización programada y procedimiento ambulatorio",
+          "Solo hospitalización",
+          "Solo por cita telefónica"
         ],
         "correcta": 1
       },
       {
-        "pregunta": "Si el servicio solicitado no está disponible en la unidad:",
+        "pregunta": "¿Qué documento debe solicitar admisión al registrar al paciente?",
         "opciones": [
-          "Aceptar al paciente de todas formas",
-          "Pedirle que regrese otro día sin explicación",
-          "Informar al paciente y orientarlo o referirlo conforme al proceso"
+          "Un comprobante de domicilio",
+          "Una carta de recomendación",
+          "Una identificación oficial, como INE o pasaporte",
+          "Ninguno"
         ],
         "correcta": 2
       },
       {
-        "pregunta": "Las condiciones del servicio (costos y requisitos) se comunican:",
+        "pregunta": "¿Por qué es tan importante el registro inicial?",
         "opciones": [
-          "Oportunamente, antes de iniciar la atención programada",
-          "Únicamente al alta",
-          "Solo si el paciente las solicita"
+          "Solo por estadística",
+          "Porque lo pide el paciente",
+          "Porque se usa para publicidad",
+          "Porque es un documento médico-legal y sus errores se repiten en todo el expediente"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Un pasaporte de EE. UU. muestra la fecha 04/03/1990. ¿Qué haces?",
+        "opciones": [
+          "Preguntas directamente al paciente o familiar su fecha de nacimiento",
+          "La registras como 4 de marzo",
+          "La registras como 3 de abril",
+          "Dejas la fecha vacía"
         ],
         "correcta": 0
       },
       {
-        "pregunta": "Ante un paciente en estado de urgencia:",
+        "pregunta": "Si el paciente usa seguro, el nombre registrado debe:",
         "opciones": [
-          "Se condiciona la atención a completar el registro",
-          "Se prioriza la estabilización y el registro se completa después",
-          "Se difiere hasta confirmar la cobertura"
+          "Ser el apodo del paciente",
+          "Coincidir con la credencial del seguro",
+          "Escribirse solo con iniciales",
+          "Copiarse del brazalete"
         ],
         "correcta": 1
+      },
+      {
+        "pregunta": "Para un menor mexicano sin documentos, ¿qué puedes buscar en la página del gobierno?",
+        "opciones": [
+          "Su RFC",
+          "Su número de seguro social",
+          "Su CURP, con nombre, fecha y estado de nacimiento",
+          "Su credencial escolar"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Qué entrega admisión a enfermería al reportar el arribo?",
+        "opciones": [
+          "La hoja de cargos",
+          "El reglamento",
+          "El consentimiento firmado",
+          "Una copia de la identificación del paciente"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué hace enfermería al recibir al paciente?",
+        "opciones": [
+          "La doble verificación de sus datos y lo acompaña con el médico",
+          "El cobro del servicio",
+          "La factura",
+          "El alta"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuál de estos documentos se llena al ingreso de todo paciente?",
+        "opciones": [
+          "La hoja de egreso",
+          "El aviso de privacidad",
+          "La factura",
+          "La nota de defunción"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué se entrega a los pacientes hospitalizados?",
+        "opciones": [
+          "Un descuento",
+          "Las llaves del cuarto",
+          "El reglamento del hospital con depósitos, garantías y horarios de visita",
+          "Su expediente original"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Al egreso, ¿qué entrega enfermería a admisión?",
+        "opciones": [
+          "El brazalete",
+          "La receta",
+          "Las pertenencias",
+          "La hoja de cargos para revisar pendientes"
+        ],
+        "correcta": 3
       }
     ],
-    "dirigido": "Personal de admisión, recepción y caja.",
+    "dirigido": "Personal de admisión, recepción, caja, enfermería y médicos.",
     "nivel": "Básico",
     "objetivos": [
-      "Verificar identidad y servicio solicitado.",
-      "Registrar la información completa y sin abreviaturas.",
-      "Comunicar a tiempo las condiciones del servicio."
+      "Registrar al paciente con identificación oficial y dos identificadores.",
+      "Seguir el flujo de ingreso con doble verificación.",
+      "Completar los documentos de ingreso y el proceso de egreso."
     ]
   },
   {
@@ -1278,75 +1358,155 @@ var CCE_CATALOG = [
     "area": "Enfermería",
     "horas": 2,
     "obligatorio": true,
-    "descripcion": "Clasificación, envasado, almacenamiento y disposición segura de RPBI.",
+    "descripcion": "Identificación, envasado, almacenamiento temporal y recolección de RPBI conforme a la NOM-087.",
     "orden": 7,
     "lecciones": [
       {
-        "titulo": "Clasificación",
-        "duracion": "18 min",
-        "texto": "Identifica sangre, cultivos, patológicos, no anatómicos y punzocortantes.",
-        "segundosMinimos": 20
-      },
-      {
-        "titulo": "Envasado y ruta",
-        "duracion": "18 min",
-        "texto": "Usa el recipiente y color correspondiente; no rebases la capacidad indicada.",
-        "segundosMinimos": 20
+        "tipo": "lectura",
+        "titulo": "Manejo de RPBI: puntos clave",
+        "duracion": "10 min",
+        "texto": "Repaso de la sesión del 16 de junio de 2026.\n\n• La NOM-087-SEMARNAT-SSA1-2002 es obligatoria para todo establecimiento que genera RPBI.\n• Cuatro pasos: identificar, envasar, almacenar y recolectar.\n• Bolsa roja: material empapado de sangre o fluidos. Hermético con tapa: sangre líquida. Bolsa amarilla: patológicos. Rígido rojo: punzocortantes, sin reencapuchar.\n• Pañales, toallas femeninas y condones de pacientes sin sospecha infectocontagiosa son basura común.\n• Cerrar al 80 % y etiquetar con fecha y área de origen.\n• Almacén temporal fuera del área operativa; patológicos en congelador.\n• Recolección diaria por rutas que eviten áreas de espera; carro lavado diario con jabón.\n• Un pinchazo se reporta de inmediato a Epidemiología y a la Dirección Médica.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación RPBI",
+            "url": "presentaciones/rpbi-manejo-hospitalario.html"
+          },
+          {
+            "nombre": "Guía rápida RPBI (PDF)",
+            "url": "materiales/rpbi-manejo-hospitalario-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
       {
-        "pregunta": "¿Dónde se eliminan punzocortantes?",
+        "pregunta": "¿Qué norma regula el manejo de los RPBI?",
         "opciones": [
-          "Bolsa roja",
-          "Recipiente rígido rojo",
-          "Bolsa negra"
-        ],
-        "correcta": 1
-      },
-      {
-        "pregunta": "La sangre y sus componentes en forma líquida se envasan en:",
-        "opciones": [
-          "Bolsa negra",
-          "Recipiente hermético rojo",
-          "Bolsa amarilla"
-        ],
-        "correcta": 1
-      },
-      {
-        "pregunta": "Los residuos patológicos sólidos (tejidos, órganos) se depositan en:",
-        "opciones": [
-          "Bolsa amarilla",
-          "Bolsa negra",
-          "Recipiente rígido rojo"
+          "NOM-087-SEMARNAT-SSA1-2002",
+          "NOM-017-STPS-2008",
+          "NOM-004-SSA3-2012",
+          "NOM-220-SSA1-2016"
         ],
         "correcta": 0
       },
       {
-        "pregunta": "El recipiente de punzocortantes se llena hasta:",
+        "pregunta": "¿Cuál es el orden de los cuatro pasos del manejo de RPBI?",
         "opciones": [
-          "Su capacidad total",
-          "La mitad de su capacidad",
-          "El 80 % de su capacidad"
+          "Recolectar, envasar, identificar, almacenar",
+          "Identificar, envasar, almacenar y recolectar",
+          "Almacenar, identificar, recolectar, envasar",
+          "Envasar, recolectar, almacenar, identificar"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Una gasa empapada de sangre va en:",
+        "opciones": [
+          "Bolsa negra",
+          "Bolsa amarilla",
+          "Bolsa roja",
+          "Recipiente rígido"
         ],
         "correcta": 2
       },
       {
-        "pregunta": "Las gasas empapadas de sangre (no anatómicos) se depositan en:",
+        "pregunta": "La sangre líquida se deposita en:",
         "opciones": [
-          "Bolsa negra de basura municipal",
+          "Bolsa roja abierta",
+          "El drenaje",
+          "Bolsa negra",
+          "Recipiente hermético con tapa"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Una placenta que no está en formol va en:",
+        "opciones": [
+          "Bolsa amarilla",
           "Bolsa roja",
-          "Recipiente rígido amarillo"
+          "Recipiente rígido",
+          "Basura común"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cómo se desechan las agujas?",
+        "opciones": [
+          "Reencapuchadas en la bolsa roja",
+          "Sin reencapuchar, en el recipiente rígido rojo",
+          "En la basura común envueltas en papel",
+          "En la bolsa amarilla"
         ],
         "correcta": 1
+      },
+      {
+        "pregunta": "El pañal de un paciente sin sospecha de enfermedad infectocontagiosa es:",
+        "opciones": [
+          "RPBI en bolsa roja",
+          "RPBI en bolsa amarilla",
+          "Basura común",
+          "Punzocortante"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿A qué nivel de llenado se cierra un recipiente o bolsa de RPBI?",
+        "opciones": [
+          "100 %",
+          "Cuando ya no cierra",
+          "50 %",
+          "80 %"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué datos lleva la etiqueta del recipiente?",
+        "opciones": [
+          "Fecha y área de origen",
+          "Solo el nombre del paciente",
+          "El costo del material",
+          "Nada, no se etiqueta"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Dónde se resguardan los residuos patológicos?",
+        "opciones": [
+          "En el cuarto del paciente",
+          "En un congelador hasta su disposición final",
+          "En la central de enfermería",
+          "En la bolsa negra común"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué deben evitar las rutas de recolección interna?",
+        "opciones": [
+          "Los elevadores de servicio",
+          "El almacén temporal",
+          "Las áreas de espera y los horarios de alimentación de los pacientes",
+          "La salida del hospital"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Si sufres un pinchazo con una aguja usada, debes:",
+        "opciones": [
+          "Esperar a ver si hay síntomas",
+          "Comentarlo al final del turno",
+          "Lavarte y no decir nada",
+          "Reportarlo de inmediato a Epidemiología y a la Dirección Médica"
+        ],
+        "correcta": 3
       }
     ],
-    "dirigido": "Personal de enfermería, laboratorio, limpieza y quirófano.",
+    "dirigido": "Personal de enfermería, médicos, laboratorio, quirófano e intendencia.",
     "nivel": "Básico",
     "objetivos": [
-      "Clasificar los residuos biológico-infecciosos.",
-      "Elegir el recipiente y color correctos.",
-      "Respetar la capacidad de llenado de los contenedores."
+      "Clasificar y envasar cada tipo de RPBI en su contenedor.",
+      "Distinguir el RPBI de la basura común.",
+      "Aplicar los criterios de cierre, almacenamiento, recolección y reporte de accidentes."
     ]
   },
   {
@@ -1740,75 +1900,155 @@ var CCE_CATALOG = [
     "area": "Seguridad e Higiene",
     "horas": 1,
     "obligatorio": true,
-    "descripcion": "Selección, colocación, retiro y disposición del EPP.",
+    "descripcion": "Qué es el EPP, cómo se elige según la NOM-017-STPS-2008 y qué riesgo predomina en cada área del hospital.",
     "orden": 13,
     "lecciones": [
       {
-        "titulo": "Selección por riesgo",
-        "duracion": "12 min",
-        "texto": "El equipo se elige conforme a la evaluación del riesgo.",
-        "segundosMinimos": 20
-      },
-      {
-        "titulo": "Colocación y retiro",
-        "duracion": "12 min",
-        "texto": "Evita la autocontaminación siguiendo la secuencia institucional.",
-        "segundosMinimos": 20
+        "tipo": "lectura",
+        "titulo": "Equipo de protección personal: puntos clave",
+        "duracion": "10 min",
+        "texto": "Repaso de la sesión del 4 de septiembre de 2026.\n\n• El EPP disminuye la exposición a un riesgo específico. Complementa, no sustituye, la prevención y los controles de ingeniería.\n• Se elige por actividad, tipo de riesgo y región del cuerpo, con las tablas de la NOM-017-STPS-2008. No hay un EPP único para todo el hospital.\n• Cabeza: casco contra impacto o dieléctrico. Ojos y cara: anteojos, goggles o careta. Oídos: tapones o conchas.\n• Respiratorio: mascarilla para polvos o respirador para gases y vapores. No existe un guante universal.\n• Tronco: mandil, overol o bata. Pies: calzado ocupacional, contra impacto, dieléctrico o conductivo.\n• Riesgos por área: biológico en terapia intensiva y hemodiálisis; radiación en hemodinamia; punzocortantes en quirófano; químicos en laboratorio y limpieza.\n• El EPP se usa con intención, según la tarea; se evita la sobreutilización.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación EPP",
+            "url": "presentaciones/epp-equipo-proteccion-personal.html"
+          },
+          {
+            "nombre": "Guía rápida EPP (PDF)",
+            "url": "materiales/epp-equipo-proteccion-personal-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
       {
-        "pregunta": "El EPP debe elegirse según:",
+        "pregunta": "¿Qué es el equipo de protección personal?",
         "opciones": [
-          "Preferencia personal",
-          "Evaluación del riesgo",
-          "Color del uniforme"
-        ],
-        "correcta": 1
-      },
-      {
-        "pregunta": "Antes de colocarse el EPP se debe:",
-        "opciones": [
-          "Tocar el entorno del paciente",
-          "Retirar el gafete",
-          "Realizar higiene de manos"
-        ],
-        "correcta": 2
-      },
-      {
-        "pregunta": "El EPP desechable, después de usarse:",
-        "opciones": [
-          "Se desecha en el contenedor correspondiente",
-          "Se reutiliza con el siguiente paciente",
-          "Se guarda en el bolsillo"
+          "Elementos que usa el trabajador para disminuir su exposición a un riesgo específico",
+          "El uniforme institucional",
+          "Cualquier equipo médico del hospital",
+          "Las señales de seguridad del edificio"
         ],
         "correcta": 0
       },
       {
-        "pregunta": "Si el EPP se daña durante la atención:",
+        "pregunta": "¿Qué norma regula la selección, uso y manejo del EPP?",
         "opciones": [
-          "Se continúa hasta terminar",
-          "Se retira de forma segura y se reemplaza",
-          "Se repara con cinta"
+          "NOM-087",
+          "NOM-017-STPS-2008",
+          "NOM-004",
+          "NOM-220"
         ],
         "correcta": 1
       },
       {
-        "pregunta": "El respirador N95 está indicado ante riesgo de:",
+        "pregunta": "Respecto a los controles de ingeniería, el EPP:",
         "opciones": [
-          "Contacto con piel intacta",
-          "Exposición a ruido",
-          "Transmisión aérea"
+          "Los sustituye por completo",
+          "Los vuelve innecesarios",
+          "Los complementa; no los sustituye",
+          "No tiene relación con ellos"
         ],
         "correcta": 2
+      },
+      {
+        "pregunta": "¿Con qué criterio se elige el EPP?",
+        "opciones": [
+          "Por gusto personal",
+          "Por el color del uniforme",
+          "Por antigüedad en el puesto",
+          "Por la actividad, el tipo de riesgo y la región del cuerpo"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Para proteger ojos y cara de salpicaduras de líquidos se usa:",
+        "opciones": [
+          "Pantalla facial, careta o goggles",
+          "Tapones auditivos",
+          "Casco dieléctrico",
+          "Polainas"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Qué protección se usa contra el ruido?",
+        "opciones": [
+          "Mascarilla desechable",
+          "Tapones o conchas auditivas",
+          "Careta",
+          "Mandil"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué afirmación sobre los guantes es correcta?",
+        "opciones": [
+          "Un mismo guante protege de todo",
+          "Los guantes de nitrilo sirven para electricidad",
+          "No existe un guante universal; se elige según el riesgo",
+          "Los guantes no son EPP"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Para gases y vapores se requiere:",
+        "opciones": [
+          "Cubrebocas de tela",
+          "Mascarilla desechable para polvos",
+          "Careta",
+          "Un respirador específico para gases y vapores"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Cuál es el riesgo predominante en hemodinamia?",
+        "opciones": [
+          "Biológico y radiación ionizante",
+          "Solo ruido",
+          "Solo químicos",
+          "Caídas de altura"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuál es el riesgo predominante en CEyE?",
+        "opciones": [
+          "Radiación ionizante",
+          "Instrumental contaminado",
+          "Ruido",
+          "Temperaturas extremas"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "El calzado conductivo protege contra:",
+        "opciones": [
+          "Caída de objetos",
+          "Agua",
+          "Electricidad estática",
+          "Altas temperaturas"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Cuál es la forma correcta de usar el EPP?",
+        "opciones": [
+          "Usar todo el equipo disponible toda la jornada",
+          "No usarlo si la tarea es corta",
+          "Compartirlo entre compañeros",
+          "Elegirlo con intención según la tarea y evitar la sobreutilización"
+        ],
+        "correcta": 3
       }
     ],
     "dirigido": "Todo el personal expuesto a riesgos biológicos, químicos o físicos.",
     "nivel": "Básico",
     "objetivos": [
-      "Seleccionar el equipo según la evaluación del riesgo.",
-      "Colocar y retirar el EPP sin autocontaminarse.",
-      "Desechar el equipo de un solo uso correctamente."
+      "Explicar qué es el EPP y su lugar entre las medidas de prevención.",
+      "Elegir el equipo según actividad, riesgo y región del cuerpo.",
+      "Reconocer el riesgo predominante de cada área del hospital."
     ]
   },
   {
@@ -2154,6 +2394,1676 @@ var CCE_CATALOG = [
       "Personalizar los datos del procedimiento.",
       "Explicar beneficios, riesgos y alternativas antes de la firma."
     ]
+  },
+  {
+    "id": "aesp6",
+    "titulo": "AESP 6: Evaluar y reevaluar el riesgo de caídas",
+    "area": "Calidad y Seguridad",
+    "horas": 1,
+    "obligatorio": true,
+    "descripcion": "Evaluación inicial y reevaluación del riesgo de caídas, medidas de prevención, señalización y reporte de eventos.",
+    "orden": 3.5,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "Riesgo de caídas: puntos clave",
+        "duracion": "10 min",
+        "texto": "Repaso de la sesión del 31 de agosto de 2026.\n\n• Evaluación inicial al primer contacto, documentada en las primeras 24 horas. Reevaluación en cada cambio de turno, de estado de alerta o de servicio.\n• Alto riesgo sin escala: menores de 3 años, mayores de 65, embarazadas, inconscientes o con dificultad para caminar.\n• Medidas universales para todos: barandales elevados, cama frenada, iluminación, timbre al alcance, paso libre, piso mojado señalizado y calzado adecuado.\n• Escala de Morse (mayores de 13 años): 0-24 bajo, 25-50 medio, 51 o más alto.\n• Escala Humpty Dumpty (3 a 13 años): 7-11 bajo, 12 o más alto.\n• Imagenología: con drenajes, dependencia para moverse o sedación, el riesgo es alto.\n• Ficha en la puerta: verde bajo, amarillo medio, rojo alto.\n• Ante una caída: avisar al jefe y al médico de guardia, llenar el anexo 4 y reportar en la plataforma de calidad como cuasifalla, evento adverso o evento centinela.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación AESP 6",
+            "url": "presentaciones/aesp6-riesgo-caidas.html"
+          },
+          {
+            "nombre": "Guía rápida AESP 6 (PDF)",
+            "url": "materiales/aesp6-riesgo-caidas-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "¿A quién aplica la AESP 6?",
+        "opciones": [
+          "A todo el personal clínico y no clínico con contacto con pacientes",
+          "Solo a enfermería",
+          "Solo al personal médico",
+          "Solo a camilleros"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿En qué plazo se documenta la evaluación inicial del riesgo de caídas?",
+        "opciones": [
+          "En la primera semana",
+          "Dentro de las primeras 24 horas",
+          "Solo al egreso",
+          "Cuando el paciente lo solicite"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Cuándo es obligatorio reevaluar el riesgo de caídas?",
+        "opciones": [
+          "Solo al ingreso",
+          "Una vez por semana",
+          "En cada cambio de turno, de estado de alerta o de servicio",
+          "Únicamente si el paciente se cae"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Cuál de estos pacientes es de alto riesgo sin necesidad de aplicar una escala?",
+        "opciones": [
+          "Adulto de 40 años que camina sin ayuda",
+          "Paciente de 30 años ambulatorio",
+          "Adolescente de 15 años sin diagnóstico secundario",
+          "Paciente embarazada"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Cuál es una medida universal que se aplica a todos los pacientes?",
+        "opciones": [
+          "Mantener los barandales elevados y la cama frenada",
+          "Sujetar a todos los pacientes",
+          "Prohibir que caminen",
+          "Retirar el timbre de la habitación"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Qué escala se usa en pacientes mayores de 13 años?",
+        "opciones": [
+          "Humpty Dumpty",
+          "Morse",
+          "Glasgow",
+          "Apgar"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "En la escala de Morse, ¿qué puntaje indica riesgo alto?",
+        "opciones": [
+          "0 a 24",
+          "25 a 50",
+          "51 o más",
+          "10 o más"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Con riesgo alto en la escala de Morse, ¿qué medida es obligatoria?",
+        "opciones": [
+          "Que camine solo para fortalecerse",
+          "Dejar la cama en la posición más alta",
+          "Apagar la luz por la noche",
+          "Que permanezca acompañado por un familiar las 24 horas"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué escala se usa en pacientes pediátricos de 3 a 13 años?",
+        "opciones": [
+          "Humpty Dumpty",
+          "Morse",
+          "Braden",
+          "Norton"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "En la escala Humpty Dumpty, ¿qué puntaje indica riesgo alto?",
+        "opciones": [
+          "7 a 11",
+          "12 o más",
+          "Menos de 7",
+          "Exactamente 10"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "En imagenología, ¿cuándo se clasifica al paciente como de alto riesgo?",
+        "opciones": [
+          "Solo si es mayor de 80 años",
+          "Solo si ya se cayó antes",
+          "Si tiene drenajes o dispositivos, depende de otros para moverse o requiere sedación",
+          "Nunca, en imagenología no se evalúa"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Qué color de ficha en la puerta indica riesgo medio?",
+        "opciones": [
+          "Verde",
+          "Rojo",
+          "Azul",
+          "Amarillo"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Si un paciente se cae, ¿a quién se avisa primero?",
+        "opciones": [
+          "Al jefe inmediato y al médico de guardia",
+          "Solo a la familia",
+          "A mantenimiento",
+          "A nadie, solo se registra"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Qué formato se llena para registrar una caída?",
+        "opciones": [
+          "La hoja de cargos",
+          "El anexo 4, formato de registro de caídas",
+          "El consentimiento informado",
+          "La nota de egreso"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Una caída que provocó una fractura se reporta en la plataforma de calidad como:",
+        "opciones": [
+          "Cuasifalla",
+          "Sin daño",
+          "Evento centinela",
+          "No se reporta"
+        ],
+        "correcta": 2
+      }
+    ],
+    "dirigido": "Todo el personal clínico y no clínico con contacto con pacientes.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Evaluar y reevaluar el riesgo de caídas con la escala que corresponde.",
+      "Aplicar las medidas universales y las de cada nivel de riesgo.",
+      "Actuar y reportar correctamente ante una caída."
+    ]
+  },
+  {
+    "id": "huracanes",
+    "titulo": "Tormentas y huracanes",
+    "area": "Seguridad e Higiene",
+    "horas": 1,
+    "obligatorio": true,
+    "descripcion": "Clasificación de ciclones tropicales, preparación del hospital y protocolo de actuación durante la contingencia.",
+    "orden": 12.2,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "Tormentas y huracanes: puntos clave",
+        "duracion": "10 min",
+        "texto": "Repaso de la sesión del 26 de agosto de 2026.\n\n• Un ciclón evoluciona de depresión tropical a tormenta tropical y a huracán. Los huracanes se clasifican del 1 al 5 en la escala Saffir-Simpson, según la velocidad máxima del viento.\n• Fuentes oficiales: CONAGUA, Servicio Meteorológico Nacional, CENAPRED, Sistema de Alerta Temprana y autoridades locales.\n• Antes: revisar azoteas, desagües y canaletas, retirar objetos sueltos y revisar instalaciones eléctricas.\n• Asegurar agua potable, gases medicinales, insumos médicos, alimentos no perecederos, limpieza, y planta de emergencia con combustible.\n• Mantener libres las rutas de evacuación y reportar condiciones inseguras.\n• Durante: mantener la calma, permanecer en el área asignada, no salir sin autorización y no reparar daños eléctricos o de gas por cuenta propia.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Huracanes",
+            "url": "presentaciones/huracanes-tormentas.html"
+          },
+          {
+            "nombre": "Guía rápida Huracanes (PDF)",
+            "url": "materiales/huracanes-tormentas-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "¿Qué es un ciclón tropical?",
+        "opciones": [
+          "Un sistema de aire cálido y húmedo con vientos que giran alrededor de un centro",
+          "Un sismo en el mar",
+          "Una lluvia ligera de temporada",
+          "Un frente frío del norte"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuál es el orden de evolución de un ciclón?",
+        "opciones": [
+          "Huracán, tormenta, depresión",
+          "Depresión tropical, tormenta tropical, huracán",
+          "Tormenta, huracán, depresión",
+          "Depresión, huracán, tormenta"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿En qué se basa la escala Saffir-Simpson?",
+        "opciones": [
+          "En la cantidad de lluvia",
+          "En el tamaño del ojo del huracán",
+          "En la velocidad máxima del viento",
+          "En la temperatura del mar"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Cuántas categorías tiene la escala Saffir-Simpson?",
+        "opciones": [
+          "3",
+          "4",
+          "10",
+          "5"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Cuál es una fuente oficial de información durante un huracán?",
+        "opciones": [
+          "El Servicio Meteorológico Nacional",
+          "Un grupo de chat de vecinos",
+          "Un video viral",
+          "Comentarios en redes sociales"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Antes de la temporada, ¿qué se revisa en azoteas y exteriores?",
+        "opciones": [
+          "La pintura",
+          "Que desagües y canaletas estén libres y no haya objetos sueltos",
+          "Las plantas de ornato",
+          "Los letreros de horario"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué suministro es indispensable para la continuidad del hospital?",
+        "opciones": [
+          "Papelería decorativa",
+          "Uniformes nuevos",
+          "Agua potable, gases medicinales y combustible para la planta de emergencia",
+          "Mobiliario de oficina"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Cómo deben estar las rutas de evacuación?",
+        "opciones": [
+          "Con material almacenado",
+          "Cerradas con llave",
+          "Solo señalizadas en la entrada",
+          "Libres de obstáculos"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Si detectas un objeto que el viento podría lanzar, debes:",
+        "opciones": [
+          "Reportarlo de inmediato para que se corrija",
+          "Ignorarlo si es pequeño",
+          "Esperar a que pase el huracán",
+          "Moverlo a la azotea"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Durante la contingencia observas un daño en la instalación de gas. ¿Qué haces?",
+        "opciones": [
+          "Lo reparo yo mismo",
+          "Lo reporto al encargado y no lo manipulo",
+          "Abro todas las válvulas",
+          "Salgo del hospital sin avisar"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Durante el fenómeno, el personal debe:",
+        "opciones": [
+          "Salir a revisar los daños",
+          "Ir a su casa",
+          "Mantener la calma y permanecer en su área asignada",
+          "Cambiar de área según prefiera"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Con quién se mantiene la comunicación durante una contingencia?",
+        "opciones": [
+          "Con proveedores",
+          "Con la prensa",
+          "Con los pacientes dados de alta",
+          "Con la Unidad Interna de Protección Civil"
+        ],
+        "correcta": 3
+      }
+    ],
+    "dirigido": "Todo el personal.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Reconocer cómo se clasifican los ciclones tropicales.",
+      "Aplicar las medidas de preparación del hospital antes de un fenómeno.",
+      "Actuar de forma segura durante la contingencia."
+    ]
+  },
+  {
+    "id": "codigo-amarillo",
+    "titulo": "Código Amarillo: derrames de materiales peligrosos",
+    "area": "Seguridad e Higiene",
+    "horas": 1,
+    "obligatorio": true,
+    "descripcion": "Identificación de derrames químicos y de RPBI, kit de derrames y procedimiento de contención y limpieza.",
+    "orden": 12.3,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "Código Amarillo: puntos clave",
+        "duracion": "10 min",
+        "texto": "Repaso de la sesión del 8 de agosto de 2026.\n\n• Los códigos de seguridad están al reverso de la credencial, en el procedimiento 8 de emergencias o en la página de calidad.\n• El Código Amarillo atiende derrames de sustancias químicas y de RPBI. Responde el equipo de higiene y limpieza.\n• Químicos: pictogramas en rombo; se consulta la hoja de datos de seguridad. Biológicos: símbolo de riesgo biológico.\n• Derrame químico: activar, avisar, identificar, EPP, delimitar con conos y cordones, absorber con tapetes en S, bolsa negra, agua y jabón, reponer el kit.\n• Derrame de RPBI: activar y delimitar, guantes de carnaza para punzocortantes, sangre con hipoclorito de sodio al 6 %, desechar como RPBI, desinfectar con sales cuaternarias.\n• El kit debe estar completo; quien lo usa repone el material.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Código Amarillo",
+            "url": "presentaciones/codigo-amarillo-derrames.html"
+          },
+          {
+            "nombre": "Guía rápida Código Amarillo (PDF)",
+            "url": "materiales/codigo-amarillo-derrames-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "¿Para qué emergencia se activa el Código Amarillo?",
+        "opciones": [
+          "Derrames de sustancias químicas o de RPBI",
+          "Incendio",
+          "Amenaza de bomba",
+          "Paro cardiorrespiratorio"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Dónde puedes consultar los códigos de seguridad y sus extensiones?",
+        "opciones": [
+          "Solo con el director",
+          "Al reverso de la credencial, en el procedimiento 8 o en la página de calidad",
+          "En el periódico mural de la cafetería",
+          "En ningún lado, se memorizan"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué equipo responde al Código Amarillo?",
+        "opciones": [
+          "Mantenimiento eléctrico",
+          "Admisión",
+          "Higiene y limpieza",
+          "Recursos humanos"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Cómo identificas que un derrame es químico?",
+        "opciones": [
+          "Por el olor",
+          "Por el color del piso",
+          "Por el símbolo de riesgo biológico",
+          "Por los pictogramas en rombo del envase"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué documento indica los riesgos de la sustancia química derramada?",
+        "opciones": [
+          "La hoja de datos de seguridad",
+          "La factura del proveedor",
+          "El expediente clínico",
+          "La bitácora de visitas"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cómo se colocan los tapetes absorbentes en un derrame químico?",
+        "opciones": [
+          "En forma de cruz",
+          "En forma de “S”",
+          "Solo en el centro",
+          "No se usan tapetes"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "En un derrame químico, ¿dónde se depositan los residuos recogidos?",
+        "opciones": [
+          "En el drenaje",
+          "En una bolsa amarilla",
+          "En una bolsa negra",
+          "En el contenedor de punzocortantes"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Qué guantes son obligatorios si el derrame incluye punzocortantes?",
+        "opciones": [
+          "Guantes de látex",
+          "Guantes de nitrilo delgados",
+          "Ningún guante",
+          "Guantes de carnaza"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Con qué se inactiva la sangre en un derrame biológico?",
+        "opciones": [
+          "Hipoclorito de sodio al 6 %",
+          "Alcohol en gel",
+          "Agua caliente",
+          "Detergente de ropa"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Con qué se hace la desinfección profunda después de un derrame de RPBI?",
+        "opciones": [
+          "Solo con agua",
+          "Con sales cuaternarias y después agua y jabón",
+          "Con aromatizante",
+          "No se desinfecta"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Cuál es el primer paso ante cualquier derrame?",
+        "opciones": [
+          "Limpiar con un trapo",
+          "Esperar a que se seque",
+          "Detectarlo y activar el código",
+          "Tomar una foto para redes"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Después de usar el kit de derrames, ¿qué debes hacer?",
+        "opciones": [
+          "Guardarlo como quedó",
+          "Llevárselo a casa",
+          "Tirarlo completo",
+          "Reponer el material que se usó"
+        ],
+        "correcta": 3
+      }
+    ],
+    "dirigido": "Todo el personal; en especial higiene, limpieza, laboratorio y enfermería.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Identificar un derrame químico o biológico.",
+      "Aplicar el procedimiento de contención y limpieza que corresponde.",
+      "Mantener completo el kit de derrames."
+    ]
+  },
+  {
+    "id": "accidentes-incidentes",
+    "titulo": "Peligros, reporte e investigación de accidentes e incidentes",
+    "area": "Seguridad e Higiene",
+    "horas": 1,
+    "obligatorio": true,
+    "descripcion": "Conceptos de peligro y riesgo, Comisión Mixta, ciclo de prevención y cómo reportar e investigar accidentes e incidentes.",
+    "orden": 12.4,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "Accidentes e incidentes: puntos clave",
+        "duracion": "10 min",
+        "texto": "Repaso de la sesión del 24 de agosto de 2026.\n\n• Peligro: algo con potencial de causar daño. Riesgo: probabilidad de que lo cause.\n• Acto inseguro: acción incorrecta. Incidente: pudo causar daño y no lo hizo. Accidente: causó lesión o daño.\n• Prevención: seguir procedimientos, usar EPP, manejar herramientas correctamente, sin bromas ni operar equipo sin autorización.\n• La Comisión Mixta de Seguridad e Higiene (trabajadores y patrón) identifica causas, propone medidas y verifica con recorridos.\n• Ciclo: inspeccionar, investigar, reportar, corregir y dar seguimiento.\n• La investigación es objetiva, con entrevistas individuales, evidencia y lo antes posible.\n• Toda condición insegura se reporta de inmediato a la jefatura.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Accidentes e incidentes",
+            "url": "presentaciones/accidentes-incidentes.html"
+          },
+          {
+            "nombre": "Guía rápida Accidentes e incidentes (PDF)",
+            "url": "materiales/accidentes-incidentes-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "¿Qué es un peligro?",
+        "opciones": [
+          "Algo con el potencial de causar daño",
+          "La probabilidad de que ocurra un daño",
+          "Un accidente que ya ocurrió",
+          "Una sanción laboral"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Qué es el riesgo?",
+        "opciones": [
+          "Un objeto peligroso",
+          "La probabilidad de que un peligro cause daño",
+          "Una enfermedad de trabajo",
+          "El formato de reporte"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Un evento que pudo causar daño pero no provocó lesión es:",
+        "opciones": [
+          "Un accidente",
+          "Una enfermedad de trabajo",
+          "Un incidente",
+          "Un acto seguro"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Un evento que causó una lesión es:",
+        "opciones": [
+          "Un incidente",
+          "Un peligro",
+          "Un riesgo",
+          "Un accidente"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Operar un equipo sin autorización es un ejemplo de:",
+        "opciones": [
+          "Acto inseguro",
+          "Medida preventiva",
+          "Control de ingeniería",
+          "Incidente"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Quiénes integran la Comisión Mixta de Seguridad e Higiene?",
+        "opciones": [
+          "Solo directivos",
+          "Representantes de los trabajadores y del patrón",
+          "Solo personal de Protección Civil",
+          "Pacientes y familiares"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Cómo verifica la Comisión Mixta el cumplimiento de las medidas?",
+        "opciones": [
+          "Con encuestas a pacientes",
+          "Revisando redes sociales",
+          "Con recorridos de verificación en las instalaciones",
+          "No verifica"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Cuál es el orden del ciclo de prevención?",
+        "opciones": [
+          "Reportar, olvidar, corregir",
+          "Corregir, inspeccionar, investigar",
+          "Investigar, sancionar, cerrar",
+          "Inspeccionar, investigar, reportar, corregir y dar seguimiento"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué dato debe incluir el formato de reporte?",
+        "opciones": [
+          "Descripción de los hechos, turno, lugar y actividad",
+          "Solo el nombre del jefe",
+          "La opinión personal de quien reporta",
+          "El salario del trabajador"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cómo debe ser la información de una investigación?",
+        "opciones": [
+          "Basada en rumores",
+          "Objetiva, comprobable y sin suposiciones",
+          "Basada en la opinión del grupo",
+          "Recabada semanas después"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Por qué las entrevistas de una investigación se hacen por separado?",
+        "opciones": [
+          "Para ahorrar tiempo",
+          "Para sancionar a alguien",
+          "Para evitar sesgos",
+          "No es necesario hacerlas"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Si encuentras una aguja fuera de su contenedor, ¿qué haces?",
+        "opciones": [
+          "La dejas donde está",
+          "La tiras a la basura común",
+          "Esperas a fin de mes",
+          "La desechas con seguridad en su contenedor y reportas la condición a tu jefatura"
+        ],
+        "correcta": 3
+      }
+    ],
+    "dirigido": "Todo el personal.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Distinguir peligro, riesgo, acto inseguro, incidente y accidente.",
+      "Reportar un evento con la información completa.",
+      "Aplicar los criterios de una investigación objetiva."
+    ]
+  },
+  {
+    "id": "mejora-continua-sst",
+    "titulo": "Mejora continua del sistema de gestión de seguridad y salud en el trabajo",
+    "area": "Seguridad e Higiene",
+    "horas": 1,
+    "obligatorio": true,
+    "descripcion": "Ciclo PHVA, fuentes de mejora, acciones correctivas y preventivas, indicadores y responsabilidad compartida.",
+    "orden": 12.5,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "Mejora continua: puntos clave",
+        "duracion": "10 min",
+        "texto": "Repaso de la sesión del 9 de septiembre de 2026.\n\n• La mejora continua es un proceso permanente: identificar oportunidades, implementar acciones y evaluar resultados.\n• Ciclo PHVA: planear (peligros y objetivos), hacer (controles y capacitación), verificar (inspecciones, auditorías, indicadores) y actuar (corregir y prevenir recurrencias).\n• Fuentes de mejora: recorridos, auditorías, investigación de accidentes, sugerencias, indicadores, cambios en instalaciones y requisitos legales.\n• Acción correctiva: elimina la causa raíz después de un incidente. Acción preventiva: se anticipa a él. Siempre se verifica antes de cerrar.\n• Ante un accidente: notificar al jefe y a Seguridad e Higiene, investigar, corregir, verificar y documentar el cierre.\n• Responsabilidad compartida: trabajadores reportan, responsables de área implementan y la dirección facilita recursos.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Mejora continua",
+            "url": "presentaciones/mejora-continua-sst.html"
+          },
+          {
+            "nombre": "Guía rápida Mejora continua (PDF)",
+            "url": "materiales/mejora-continua-sst-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "¿Qué es la mejora continua?",
+        "opciones": [
+          "Un proceso permanente de identificar oportunidades, implementar acciones y evaluar resultados",
+          "Una auditoría que se hace una vez al año",
+          "Un trámite exclusivo de Seguridad e Higiene",
+          "Un castigo por incumplir"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Qué significan las siglas PHVA?",
+        "opciones": [
+          "Prevenir, Hablar, Vigilar, Avisar",
+          "Planear, Hacer, Verificar, Actuar",
+          "Proteger, Higiene, Vida, Ayuda",
+          "Pedir, Hacer, Validar, Archivar"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "En la etapa “Verificar” se realizan:",
+        "opciones": [
+          "Compras de equipo",
+          "Contrataciones",
+          "Inspecciones, auditorías y análisis de indicadores",
+          "Vacaciones del personal"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Cuál es una fuente de oportunidades de mejora?",
+        "opciones": [
+          "Los rumores",
+          "Las redes sociales",
+          "El clima",
+          "Las sugerencias del personal"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Una acción correctiva busca:",
+        "opciones": [
+          "Eliminar la causa raíz de una desviación para que no se repita",
+          "Anticipar algo que nunca ha pasado",
+          "Sancionar al responsable",
+          "Cerrar el hallazgo sin revisar"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Asegurar un estante antes de que se caiga es un ejemplo de acción:",
+        "opciones": [
+          "Correctiva",
+          "Preventiva",
+          "Disciplinaria",
+          "Administrativa"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Antes de cerrar formalmente un hallazgo se debe:",
+        "opciones": [
+          "Esperar un año",
+          "Avisar a los pacientes",
+          "Verificar que la acción funcionó y documentarlo",
+          "Borrar el registro"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Ante un accidente, ¿a quién se notifica?",
+        "opciones": [
+          "A nadie",
+          "Solo a un compañero",
+          "A recursos humanos de otra sede",
+          "Al jefe inmediato y a Seguridad e Higiene"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Cuál es un indicador de desempeño en seguridad?",
+        "opciones": [
+          "Porcentaje de acciones correctivas cerradas",
+          "Número de pacientes atendidos",
+          "Ventas de la farmacia",
+          "Temperatura ambiente"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Qué le corresponde a cada trabajador?",
+        "opciones": [
+          "Aprobar presupuestos",
+          "Reportar riesgos y condiciones inseguras",
+          "Firmar auditorías externas",
+          "Nada, es tarea de Seguridad e Higiene"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué le corresponde a la dirección?",
+        "opciones": [
+          "Hacer las inspecciones diarias",
+          "Llenar los formatos de cada área",
+          "Facilitar los recursos necesarios",
+          "Ignorar los indicadores"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Si después de aplicar una acción el problema persiste, se debe:",
+        "opciones": [
+          "Cerrar el hallazgo de todos modos",
+          "Dejar de medirlo",
+          "Culpar al área",
+          "Reiniciar el ciclo con nuevas acciones"
+        ],
+        "correcta": 3
+      }
+    ],
+    "dirigido": "Todo el personal; en especial jefes y responsables de área.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Explicar el ciclo de mejora continua (PHVA).",
+      "Distinguir acciones correctivas y preventivas.",
+      "Reportar riesgos y oportunidades de mejora."
+    ]
+  },
+  {
+    "id": "rpbi-prehospitalario",
+    "titulo": "Manejo de RPBI en el área prehospitalaria",
+    "area": "Atención Prehospitalaria",
+    "horas": 1,
+    "obligatorio": false,
+    "descripcion": "Clasificación, envasado, sellado y recolección de RPBI en consultorios y unidades prehospitalarias.",
+    "orden": 20,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "RPBI prehospitalario: puntos clave",
+        "duracion": "10 min",
+        "texto": "Repaso de la sesión del 5 de agosto de 2026.\n\n• Un RPBI es material de la atención médica con microorganismos capaces de causar enfermedad. Lo regula la NOM-087-SEMARNAT-SSA1-2002.\n• Bolsa roja: sangre y materiales saturados o que gotean. Bolsa amarilla: tejidos y partes del cuerpo.\n• Basura común: cubrebocas, guantes no saturados, frascos vacíos, botellas de solución y jeringas sin aguja contaminada.\n• Recipiente rígido rojo: solo punzocortantes (agujas sin capuchón, lancetas, bisturís).\n• Ámpulas de vidrio: recipiente blanco, separadas del rígido.\n• Retirar el rígido al 75–80 %, no comprimir bolsas, sellar con tela adhesiva todo el borde y rotular fecha y consultorio.\n• Retiro por el grupo de asesores de la salud, con reemplazo listo antes de entregar.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación RPBI prehospitalario",
+            "url": "presentaciones/rpbi-prehospitalario.html"
+          },
+          {
+            "nombre": "Guía rápida RPBI prehospitalario (PDF)",
+            "url": "materiales/rpbi-prehospitalario-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "¿Qué es un RPBI?",
+        "opciones": [
+          "Material generado en la atención médica con microorganismos capaces de causar enfermedad",
+          "Cualquier basura del consultorio",
+          "Solo los medicamentos caducados",
+          "El papel de la recepción"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Qué va en la bolsa roja?",
+        "opciones": [
+          "Botellas de solución vacías",
+          "Sangre y materiales saturados o que gotean fluidos",
+          "Agujas",
+          "Ámpulas de vidrio"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Un cubrebocas usado, sin sangre, es:",
+        "opciones": [
+          "RPBI en bolsa roja",
+          "RPBI en bolsa amarilla",
+          "Basura común",
+          "Punzocortante"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Qué puede ir dentro del recipiente rígido rojo?",
+        "opciones": [
+          "Jeringas completas y gasas",
+          "Basura del escritorio",
+          "Ámpulas de vidrio",
+          "Solo punzocortantes: agujas sin capuchón, lancetas y bisturís"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Dónde se desechan las ámpulas de vidrio no contaminadas?",
+        "opciones": [
+          "En el recipiente blanco para vidrio",
+          "En el recipiente rígido rojo",
+          "En la bolsa amarilla",
+          "En la bolsa roja"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿A qué nivel de llenado se retira el recipiente rígido?",
+        "opciones": [
+          "Al 100 %",
+          "Al 75–80 %",
+          "Al 50 %",
+          "Cuando ya no cierra"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Se pueden comprimir las bolsas de RPBI para que quepa más?",
+        "opciones": [
+          "Sí, siempre",
+          "Solo al final del turno",
+          "No, está prohibido porque se rompen y derraman",
+          "Solo si están medio llenas"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Con qué se recomienda sellar el recipiente rígido?",
+        "opciones": [
+          "Con cinta transparente solo en la entrada",
+          "Con una liga",
+          "No se sella",
+          "Con tela adhesiva cubriendo todo el borde"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué se anota sobre el recipiente sellado?",
+        "opciones": [
+          "La fecha y el nombre del consultorio",
+          "El nombre del paciente",
+          "El costo del material",
+          "Nada"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Una vez sellado un recipiente rígido:",
+        "opciones": [
+          "Se puede abrir para agregar más",
+          "No se vuelve a abrir",
+          "Se vacía y se reutiliza",
+          "Se tira en la basura común"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Antes de entregar un contenedor lleno, debes:",
+        "opciones": [
+          "Vaciarlo",
+          "Lavarlo",
+          "Tener un contenedor de reemplazo disponible",
+          "Dejarlo afuera del consultorio"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Durante tu guardia ves residuos mal separados que no generaste tú. ¿Qué haces?",
+        "opciones": [
+          "Nada, no son míos",
+          "Esperar al siguiente turno",
+          "Tirarlos todos a la basura común",
+          "Corregirlo o reportarlo"
+        ],
+        "correcta": 3
+      }
+    ],
+    "dirigido": "Médicos y personal de consultorios y unidades prehospitalarias.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Distinguir el RPBI de la basura común en el consultorio.",
+      "Usar correctamente bolsas, recipiente rígido y recipiente para vidrio.",
+      "Sellar, rotular y solicitar el retiro de los residuos."
+    ]
+  },
+  {
+    "id": "insumos-prehospitalarios",
+    "titulo": "Insumos, materiales y medicamentos en consultorios y maletas",
+    "area": "Atención Prehospitalaria",
+    "horas": 1,
+    "obligatorio": false,
+    "descripcion": "Cargos en cuenta, requisiciones, recepción, faltantes y caducados en consultorios y maletas prehospitalarias.",
+    "orden": 21,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "Insumos prehospitalarios: puntos clave",
+        "duracion": "10 min",
+        "texto": "Repaso de la sesión del 10 de abril de 2026.\n\n• Lo que no se carga en la cuenta del paciente no se resurte: el sistema solo repone lo descontado del stock.\n• Consumo interno (abatelenguas, conos óticos, cubrebocas, guantes de nitrilo) no se carga; jeringas y gasas sí.\n• Requisición en PDF con el material usado, la cuenta donde se cargó y si es para maleta o consultorio.\n• Villa del Palmar y Fiesta Americana: lunes y jueves. Resto de CSL: jueves. Límite: 9:00 a. m. del día siguiente.\n• Al recibir: cotejar material contra hoja de traspaso y traspaso contra requisición.\n• Faltantes: carta de hechos (cargado y no surtido), autorización del Dr. Vera (no cargado) o aviso a Auditoría (desfase de sistema).\n• Caducados: retirar los del mes, carta de hechos con copia al Dr. Vera y envío físico rotulado al almacén central.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Insumos prehospitalarios",
+            "url": "presentaciones/insumos-prehospitalarios.html"
+          },
+          {
+            "nombre": "Guía rápida Insumos prehospitalarios (PDF)",
+            "url": "materiales/insumos-prehospitalarios-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "¿Por qué es indispensable cargar el material en la cuenta del paciente?",
+        "opciones": [
+          "Porque el sistema solo resurte lo que se descontó del stock",
+          "Porque así lo pide el paciente",
+          "Para tener menos material",
+          "No es indispensable"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuál de estos materiales es de consumo interno y no se carga?",
+        "opciones": [
+          "Jeringas",
+          "Guantes de nitrilo",
+          "Gasas",
+          "Medicamentos inyectables"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué debe indicar la requisición además del material usado?",
+        "opciones": [
+          "El nombre del proveedor",
+          "El costo unitario",
+          "La cuenta donde se cargó y si es para maleta o consultorio",
+          "El diagnóstico del paciente"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿En qué formato se envía la requisición?",
+        "opciones": [
+          "Foto por WhatsApp",
+          "Papel por mensajería",
+          "Mensaje de voz",
+          "PDF a los correos de prehospitalario y almacén"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué días envían requisición Villa del Palmar y Fiesta Americana?",
+        "opciones": [
+          "Lunes y jueves",
+          "Solo viernes",
+          "Todos los días",
+          "Una vez al mes"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuál es el límite para el resto de consultorios de Cabo San Lucas?",
+        "opciones": [
+          "Lunes a mediodía",
+          "Viernes antes de las 9:00 a. m.",
+          "Domingo por la noche",
+          "No hay límite"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Al recibir material, ¿qué se coteja?",
+        "opciones": [
+          "Solo la factura",
+          "Solo el número de cajas",
+          "El material contra la hoja de traspaso, y la hoja de traspaso contra la requisición",
+          "Nada, se acomoda directo"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Un insumo se cargó pero no se surtió. ¿Qué haces?",
+        "opciones": [
+          "Lo compras por tu cuenta",
+          "Lo olvidas",
+          "Lo cargas otra vez",
+          "Elaboras una carta de hechos solicitando el envío"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Olvidaste cargar un insumo. ¿Qué procede?",
+        "opciones": [
+          "Pedir autorización al Dr. Vera para cargarlo en una consulta posterior y solicitarlo después",
+          "Pedirlo sin cargo",
+          "Cargarlo a cualquier paciente sin autorización",
+          "No pedirlo nunca"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "El insumo se cargó bien, pero almacén sigue mostrando existencia. ¿A quién avisas?",
+        "opciones": [
+          "Al paciente",
+          "Al Lic. Armando Hernández de Auditoría",
+          "A recepción del hotel",
+          "A nadie"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué material caducado debes retirar?",
+        "opciones": [
+          "Solo el que ya caducó hace un año",
+          "Ninguno, lo retira almacén",
+          "El que caduca en el mes en curso, e identificar el que caduca en los próximos 3 meses",
+          "Solo los medicamentos controlados"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Cómo se repone el material caducado?",
+        "opciones": [
+          "Automáticamente por sistema",
+          "Tirándolo a la basura",
+          "Pidiéndolo como nuevo sin avisar",
+          "Enviándolo físicamente al almacén, rotulado, con su carta de hechos"
+        ],
+        "correcta": 3
+      }
+    ],
+    "dirigido": "Médicos y personal de consultorios y unidades prehospitalarias.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Cargar correctamente los insumos en la cuenta del paciente.",
+      "Elaborar y enviar la requisición a tiempo.",
+      "Resolver faltantes y gestionar caducados."
+    ]
+  },
+  {
+    "id": "papeleria-ambulancia",
+    "titulo": "Papelería y cobranza de ambulancia",
+    "area": "Atención Prehospitalaria",
+    "horas": 2,
+    "obligatorio": false,
+    "descripcion": "Cortes de guardia, billing, códigos, FRAP y documentación de cuentas por cobrar internacionales.",
+    "orden": 22,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "Papelería y cobranza: puntos clave",
+        "duracion": "10 min",
+        "texto": "Repaso de las sesiones del 7 de abril y del 1 de septiembre de 2026.\n\n• La papelería es requisito de COFEPRIS y de las aseguradoras; hospital y ambulancia son entidades distintas y cada una necesita sus formatos.\n• Corte de paramédico y corte de operador deben coincidir en unidad, fecha, base y tripulación.\n• El método de pago va como título del documento. Solo coordinador, gerente o director autorizan un cobro.\n• Identificaciones válidas: licencia, INE o pasaporte. La residencia temporal no sirve para C×C internacional.\n• El folio del billing coincide con el del FRAP. Códigos sin espacios: A0425 (kilometraje, siempre) y A0398 (consumibles).\n• FRAP: ubicación con ciudad, destino con nombre completo del hospital, hora de 24 h y sin tachaduras.\n• C×C internacional: carátula con celular y correo, voucher de depósito y envío en máximo 24 horas.\n• Canadá: nunca depósito e itinerario de vuelo completo. EE. UU.: Passage y Medicare a partir de 62 años; solo firma el paciente o su representante legal.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Papelería de ambulancia",
+            "url": "presentaciones/papeleria-cobranza-ambulancia.html"
+          },
+          {
+            "nombre": "Guía rápida Papelería de ambulancia (PDF)",
+            "url": "materiales/papeleria-cobranza-ambulancia-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "¿Por qué hospital y ambulancia necesitan cada uno su juego de formatos?",
+        "opciones": [
+          "Porque son entidades distintas, con razón social propia",
+          "Porque así se ve más ordenado",
+          "Porque lo pide el paciente",
+          "No los necesitan"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Dónde se escribe el método de pago?",
+        "opciones": [
+          "Al reverso del FRAP",
+          "Como título del documento",
+          "En una nota aparte",
+          "No se escribe"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Quién puede autorizar un cobro?",
+        "opciones": [
+          "Cualquier paramédico",
+          "El paciente",
+          "El coordinador, el gerente o el director",
+          "El operador"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Cuál de estas identificaciones NO es válida para una cuenta por cobrar internacional?",
+        "opciones": [
+          "Pasaporte",
+          "Licencia de conducir",
+          "INE",
+          "Residencia temporal en México"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "El folio del billing debe coincidir con:",
+        "opciones": [
+          "El folio del FRAP",
+          "El número de la ambulancia",
+          "La fecha de nacimiento",
+          "El número de póliza"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuál es la forma correcta de escribir el código de kilometraje?",
+        "opciones": [
+          "A0 425",
+          "A0425",
+          "A-0425",
+          "a 0425"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué código corresponde a consumibles médicos?",
+        "opciones": [
+          "A0425",
+          "A0999",
+          "A0398",
+          "A0427"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Al registrar la ubicación del servicio en el FRAP, debes incluir:",
+        "opciones": [
+          "Solo el nombre de la calle",
+          "Solo el número de la ambulancia",
+          "Nada si es carretera",
+          "La dirección y la ciudad específica"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Si una sección del FRAP no aplica al caso, se debe:",
+        "opciones": [
+          "Dejar en blanco, sin tachar ni subrayar",
+          "Tachar con una línea",
+          "Escribir “N/A” en grande",
+          "Llenar con datos inventados"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Por qué se registran las pertenencias del paciente?",
+        "opciones": [
+          "Para inventario de la ambulancia",
+          "Para proteger al personal ante posibles reclamos",
+          "Para cobrarlas",
+          "No se registran"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué datos de contacto son obligatorios en la carátula de una cuenta internacional?",
+        "opciones": [
+          "Dirección del hotel",
+          "Número de habitación",
+          "Celular y correo electrónico del paciente",
+          "Nombre del agente de viajes"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿En qué plazo se envía la documentación de una cuenta internacional?",
+        "opciones": [
+          "Al cierre del mes",
+          "En una semana",
+          "Cuando haya varias acumuladas",
+          "En un máximo de 24 horas"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Con un paciente con seguro canadiense:",
+        "opciones": [
+          "Nunca se cobra depósito y se solicita su itinerario de vuelo completo",
+          "Siempre se cobra depósito",
+          "Se usa el formato Medicare",
+          "No se necesita número de caso"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿A partir de qué edad se agrega el formato Medicare, según el procedimiento interno?",
+        "opciones": [
+          "18 años",
+          "62 años",
+          "40 años",
+          "Ninguna, nunca se usa"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Quién puede firmar los formatos del seguro?",
+        "opciones": [
+          "Cualquier acompañante",
+          "El paramédico en nombre del paciente",
+          "Solo el paciente o su representante legal",
+          "El operador"
+        ],
+        "correcta": 2
+      }
+    ],
+    "dirigido": "Paramédicos, operadores y coordinadores de ambulancia.",
+    "nivel": "Intermedio",
+    "objetivos": [
+      "Llenar correctamente cortes, billing y FRAP.",
+      "Integrar el expediente de una cuenta por cobrar internacional.",
+      "Evitar los errores que retrasan el pago de las aseguradoras."
+    ]
+  },
+  {
+    "id": "notas-medicas",
+    "titulo": "Importancia de las notas médicas",
+    "area": "Atención Prehospitalaria",
+    "horas": 1,
+    "obligatorio": false,
+    "descripcion": "Nota médica conforme a la NOM-004: calidad, notas obligatorias, procedimientos, consentimiento, riesgos de trabajo y traslados.",
+    "orden": 23,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "Notas médicas: puntos clave",
+        "duracion": "10 min",
+        "texto": "Repaso de la sesión del 6 de agosto de 2026.\n\n• La nota médica es un documento clínico, administrativo y médico-legal (NOM-004).\n• Evitar copiar y pegar, machotes, signos vitales no tomados, abreviaturas no permitidas y frases como “resto normal”.\n• En cada atención: nota inicial de urgencias, receta (farmacológica y no farmacológica), datos de alarma y próxima cita.\n• Todo procedimiento, incluso una inyección, requiere valoración, nota y receta.\n• Consentimiento informado cuando el manejo lo amerite y cuando el paciente rechaza un tratamiento.\n• Riesgos de trabajo: momento, lugar exacto, actividad, mecanismo de lesión y testigos. Con estudios de imagen, se refiere al IMSS con hoja de traslado.\n• Nota de traslado: diagnóstico, resumen clínico, tratamiento, condición al traslado y transporte.\n• Notas de huéspedes: objetivas y clínicas, sin detalles de la propiedad.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Notas médicas",
+            "url": "presentaciones/notas-medicas.html"
+          },
+          {
+            "nombre": "Guía rápida Notas médicas (PDF)",
+            "url": "materiales/notas-medicas-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "Según la NOM-004, la nota médica es un documento:",
+        "opciones": [
+          "Clínico, administrativo y médico-legal",
+          "Solo administrativo",
+          "Opcional",
+          "Solo para el seguro"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuál es una práctica incorrecta al elaborar una nota?",
+        "opciones": [
+          "Registrar signos vitales reales",
+          "Copiar y pegar la nota anterior",
+          "Hacer exploración física personalizada",
+          "Usar lenguaje objetivo"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué frase debe evitarse en una nota médica?",
+        "opciones": [
+          "Edema leve en tobillo derecho",
+          "Frecuencia cardiaca de 78 por minuto",
+          "“Resto normal”",
+          "Sin deformidad aparente"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Cuántas notas iniciales de urgencias se elaboran?",
+        "opciones": [
+          "Una por día",
+          "Solo en casos graves",
+          "Una por semana",
+          "Una por cada atención brindada"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué campos de la receta deben llenarse siempre?",
+        "opciones": [
+          "Datos de alarma y próxima cita",
+          "Solo el nombre del medicamento",
+          "El costo de la consulta",
+          "Ninguno en particular"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Para aplicar una inyección se requiere:",
+        "opciones": [
+          "Solo que el paciente la pida",
+          "Valoración previa, nota médica y receta",
+          "Nada, es un procedimiento simple",
+          "Únicamente la firma del paciente"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Si el paciente rechaza el manejo propuesto, ¿qué se hace?",
+        "opciones": [
+          "No se registra",
+          "Se obliga al paciente",
+          "Se usa el formato de consentimiento para dejar constancia y se anotan las recomendaciones",
+          "Se cancela la nota"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "En un paciente que regresa a consulta, la nota debe:",
+        "opciones": [
+          "Repetir la nota anterior",
+          "Omitir el tratamiento previo",
+          "Ser más corta",
+          "Detallar su evolución y estado actual"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué dato es indispensable documentar en un riesgo de trabajo?",
+        "opciones": [
+          "El mecanismo de lesión y la ubicación exacta",
+          "El salario del colaborador",
+          "La opinión del jefe",
+          "La marca del calzado"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Un colaborador con una lesión que requiere estudios de imagen se:",
+        "opciones": [
+          "Envía a casa",
+          "Refiere al IMSS con la hoja de traslado impresa",
+          "Atiende sin nota",
+          "Cita la próxima semana"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué debe incluir una nota de traslado?",
+        "opciones": [
+          "Solo el nombre del hospital destino",
+          "Solo la firma del médico",
+          "Diagnóstico, resumen clínico, tratamiento, condición al traslado y método de transporte",
+          "El costo del traslado"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "En la nota de un huésped del hotel, debes:",
+        "opciones": [
+          "Explicar qué parte del hotel causó el accidente",
+          "Opinar sobre el mantenimiento del hotel",
+          "Omitir la exploración",
+          "Describir objetivamente síntomas y lesiones, sin detalles de la propiedad"
+        ],
+        "correcta": 3
+      }
+    ],
+    "dirigido": "Médicos de consultorios y atención prehospitalaria.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Elaborar notas médicas completas y objetivas.",
+      "Cumplir las notas, recetas y consentimientos obligatorios.",
+      "Documentar riesgos de trabajo y traslados."
+    ]
+  },
+  {
+    "id": "farmacia-hospitalaria",
+    "titulo": "Farmacia hospitalaria",
+    "area": "Farmacia",
+    "horas": 2,
+    "obligatorio": false,
+    "descripcion": "Regulación, controlados, recetas, almacenamiento, inventario, proveedores, cuadro básico, conciliación y farmacovigilancia.",
+    "orden": 11.5,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "Farmacia hospitalaria: puntos clave",
+        "duracion": "10 min",
+        "texto": "Repaso de las sesiones del 25 de mayo y del 21 de agosto de 2026.\n\n• La farmacia hospitalaria está dentro del hospital, suministra por prescripción institucional y requiere licencia sanitaria federal.\n• Grupo I: receta especial con QR de COFEPRIS. Grupo II: receta retenida y libro de control. Grupo III: hasta 3 presentaciones. V y VI sin receta.\n• Controlados: aviso de previsiones, libros autorizados, bajo llave y cada movimiento firmado por el responsable sanitario.\n• La receta lleva datos del prescriptor y del paciente, y el medicamento con nombre genérico, dosis, vía, frecuencia y duración.\n• Antimicrobianos: clasificación ATC y semáforo AWaRe (acceso, vigilancia, reserva).\n• Almacén: 15–25 °C, humedad máxima 65 %, red fría 2–8 °C, anaqueles a 20 cm de piso y techo.\n• Recepción con caducidad mayor a 12 meses; PEPS y PCPS; caducos dados de baja y dispuestos antes de un año.\n• Proveedores con documentación legal y evaluación cada 6 a 12 meses; al menos 3 cotizaciones por compra.\n• Conciliación al ingreso, cambio de área y egreso; sello de idoneidad; perfil farmacoterapéutico cada 24 h.\n• Farmacovigilancia obligatoria (NOM-220-SSA1-2016) y no punitiva.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Farmacia hospitalaria",
+            "url": "presentaciones/farmacia-hospitalaria.html"
+          },
+          {
+            "nombre": "Guía rápida Farmacia hospitalaria (PDF)",
+            "url": "materiales/farmacia-hospitalaria-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "¿Cuál es una característica de la farmacia hospitalaria?",
+        "opciones": [
+          "Suministra medicamentos por prescripción institucional, sin venta al público",
+          "Vende al público en general",
+          "Debe estar fuera del hospital",
+          "No requiere licencia sanitaria"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Qué permiso requiere la farmacia hospitalaria?",
+        "opciones": [
+          "Solo un aviso de funcionamiento",
+          "Licencia sanitaria federal",
+          "Ninguno",
+          "Un permiso municipal"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué calificación mínima se requiere en el examen anual del personal de farmacia?",
+        "opciones": [
+          "6",
+          "7",
+          "8",
+          "10"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Qué sistema de distribución permite el mayor control en la administración?",
+        "opciones": [
+          "Stock en piso",
+          "Venta directa",
+          "Caja completa",
+          "Dosis unitaria"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué receta requiere un medicamento del grupo I?",
+        "opciones": [
+          "Receta especial con código QR de COFEPRIS",
+          "Receta ordinaria",
+          "Ninguna",
+          "Receta simple sin firma"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cómo se resguardan los medicamentos controlados?",
+        "opciones": [
+          "En el anaquel general",
+          "Bajo llave, con libro de control y movimientos firmados por el responsable sanitario",
+          "En la central de enfermería",
+          "En el carro de paro sin registro"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "En la receta, ¿qué dato del medicamento es obligatorio?",
+        "opciones": [
+          "El nombre comercial",
+          "El laboratorio fabricante",
+          "El nombre genérico",
+          "El precio"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "En la clasificación AWaRe, los antimicrobianos de “Reserva” son:",
+        "opciones": [
+          "De primera línea",
+          "De venta libre",
+          "De uso veterinario",
+          "De uso hospitalario, generalmente parenterales"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué color de etiqueta identifica a los medicamentos LASA?",
+        "opciones": [
+          "Naranja",
+          "Rojo",
+          "Verde",
+          "Amarillo"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿A qué temperatura se conservan los medicamentos de red fría?",
+        "opciones": [
+          "15–25 °C",
+          "2–8 °C",
+          "Menos de 0 °C",
+          "30–35 °C"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué separación deben tener los anaqueles del piso y del techo?",
+        "opciones": [
+          "5 cm",
+          "No importa",
+          "20 cm",
+          "1 metro"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Al recibir un medicamento, ¿qué caducidad mínima debe tener?",
+        "opciones": [
+          "1 mes",
+          "3 meses",
+          "6 meses",
+          "Más de 12 meses, salvo excepciones"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué documento exiges cuando el proveedor se equivoca en la entrega?",
+        "opciones": [
+          "Una carta de cambio",
+          "Una receta",
+          "Un pagaré",
+          "Ninguno"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿En qué momentos se realiza la conciliación de medicamentos?",
+        "opciones": [
+          "Solo al egreso",
+          "Al ingreso, al cambiar de médico o área y al egreso",
+          "Una vez por semana",
+          "Solo si el paciente lo pide"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Si al validar una prescripción detectas un problema, debes:",
+        "opciones": [
+          "Sellarla de todos modos",
+          "Cambiar la dosis por tu cuenta",
+          "Avisar al médico tratante y no sellar hasta resolverlo",
+          "Ignorarlo"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Qué norma hace obligatoria la farmacovigilancia?",
+        "opciones": [
+          "NOM-087",
+          "NOM-017",
+          "NOM-004",
+          "NOM-220-SSA1-2016"
+        ],
+        "correcta": 3
+      }
+    ],
+    "dirigido": "Personal de farmacia hospitalaria, medicación segura y farmacia externa.",
+    "nivel": "Intermedio",
+    "objetivos": [
+      "Aplicar la regulación sanitaria de la farmacia hospitalaria y de los controlados.",
+      "Almacenar, recibir y controlar el inventario de medicamentos.",
+      "Participar en la conciliación, la idoneidad y la farmacovigilancia."
+    ]
   }
 ];
 
@@ -2206,10 +4116,37 @@ var CCE_ROUTES = [
     "cursos": [
       "nom018",
       "epp",
+      "accidentes-incidentes",
+      "mejora-continua-sst",
+      "codigo-amarillo",
+      "huracanes",
       "calor",
       "bombas",
       "5s"
     ],
     "orden": 4
+  },
+  {
+    "id": "atencion-prehospitalaria",
+    "titulo": "Atención prehospitalaria",
+    "descripcion": "Papelería y cobranza, notas médicas, insumos y residuos para el personal de ambulancias y consultorios prehospitalarios.",
+    "cursos": [
+      "papeleria-ambulancia",
+      "notas-medicas",
+      "insumos-prehospitalarios",
+      "rpbi-prehospitalario"
+    ],
+    "orden": 5
+  },
+  {
+    "id": "farmacia-hospitalaria",
+    "titulo": "Farmacia hospitalaria",
+    "descripcion": "Regulación, controlados, almacenamiento y medicamentos de alto riesgo para el personal de farmacia y medicación segura.",
+    "cursos": [
+      "farmacia-hospitalaria",
+      "aesp3",
+      "med-alto-riesgo"
+    ],
+    "orden": 6
   }
 ];
