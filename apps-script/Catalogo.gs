@@ -878,6 +878,7 @@ var CCE_CATALOG = [
     "orden": 3,
     "lecciones": [
       {
+        "tipo": "video",
         "titulo": "Higiene de manos: cinco momentos",
         "duracion": "0:56 min",
         "texto": "Realiza higiene de manos en los cinco momentos. Usa solución alcoholada cuando las manos no estén visiblemente sucias y agua con jabón cuando sí lo estén.",
@@ -920,60 +921,152 @@ var CCE_CATALOG = [
             "Manos limpias significan atención más segura. Continúa con la evaluación."
           ]
         ]
+      },
+      {
+        "tipo": "lectura",
+        "titulo": "Higiene de manos: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo basada en las Acciones Esenciales para la Seguridad del Paciente y la estrategia de higiene de manos de la OMS.\n\n• La higiene de manos es obligatoria para todo el personal que tiene contacto con pacientes o con su entorno.\n• Cinco momentos: antes del contacto con el paciente, antes de una tarea aséptica, después de la exposición a líquidos corporales, después del contacto con el paciente y después del contacto con su entorno.\n• Agua y jabón (40 a 60 segundos) cuando las manos están visiblemente sucias; solución alcoholada (20 a 30 segundos) en los demás casos.\n• Técnica: palmas, dorsos, espacios entre los dedos, nudillos, pulgares y yemas.\n• Los guantes no sustituyen la higiene de manos: lávate antes de ponértelos y al retirarlos, y cámbialos entre pacientes.\n• Uñas naturales, cortas y limpias; evita uñas artificiales, anillos y pulseras durante la atención.\n• Precauciones según la transmisión: estándar, contacto, gotas (> 5 micras) y vía aérea (< 5 micras, respirador N95).\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación AESP 5",
+            "url": "presentaciones/aesp5-higiene-manos.html"
+          },
+          {
+            "nombre": "Guía rápida AESP 5 (PDF)",
+            "url": "materiales/aesp5-higiene-manos-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
       {
-        "pregunta": "¿Cuántos momentos de higiene de manos se consideran?",
+        "pregunta": "¿Cuántos momentos de higiene de manos establece la OMS?",
         "opciones": [
-          "Tres",
           "Cinco",
-          "Siete"
+          "Tres",
+          "Siete",
+          "Dos"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuál de estos es uno de los cinco momentos?",
+        "opciones": [
+          "Al terminar el turno",
+          "Antes de realizar una tarea limpia o aséptica",
+          "Al entrar al comedor",
+          "Antes de checar la entrada"
         ],
         "correcta": 1
+      },
+      {
+        "pregunta": "Tocar el barandal o el monitor del paciente y salir de la habitación corresponde al momento:",
+        "opciones": [
+          "Antes del contacto con el paciente",
+          "Antes de una tarea aséptica",
+          "Después del contacto con el entorno del paciente",
+          "Ninguno, no requiere higiene"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Si las manos están visiblemente sucias se debe usar:",
+        "opciones": [
+          "Solución alcoholada",
+          "Solo una toalla seca",
+          "Únicamente guantes",
+          "Agua y jabón"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Cuánto dura la higiene de manos con agua y jabón?",
+        "opciones": [
+          "40 a 60 segundos",
+          "5 a 10 segundos",
+          "20 a 30 segundos",
+          "2 minutos"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuánto dura la fricción con solución alcoholada?",
+        "opciones": [
+          "5 segundos",
+          "20 a 30 segundos",
+          "Hasta que se acabe el producto",
+          "60 a 90 segundos"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "La solución alcoholada se aplica correctamente cuando:",
+        "opciones": [
+          "Se enjuaga con agua al terminar",
+          "Se seca con toalla de inmediato",
+          "Se frota hasta que las manos quedan secas",
+          "Se aplica solo en las palmas"
+        ],
+        "correcta": 2
       },
       {
         "pregunta": "¿Los guantes sustituyen la higiene de manos?",
         "opciones": [
           "Sí, siempre",
           "Solo en procedimientos cortos",
+          "Solo si son estériles",
           "No"
         ],
-        "correcta": 2
-      },
-      {
-        "pregunta": "La solución alcoholada se utiliza preferentemente cuando:",
-        "opciones": [
-          "Las manos no están visiblemente sucias",
-          "Hay suciedad visible",
-          "Se termina el turno"
-        ],
-        "correcta": 0
-      },
-      {
-        "pregunta": "Si las manos están visiblemente sucias se debe usar:",
-        "opciones": [
-          "Agua y jabón",
-          "Solo una toalla seca",
-          "Únicamente guantes"
-        ],
-        "correcta": 0
+        "correcta": 3
       },
       {
         "pregunta": "Después de retirar los guantes se debe:",
         "opciones": [
           "Realizar higiene de manos",
           "Tocar el expediente primero",
-          "Esperar hasta el siguiente paciente"
+          "Esperar hasta el siguiente paciente",
+          "Ponerse otros sin lavarse"
         ],
         "correcta": 0
+      },
+      {
+        "pregunta": "Al lavarte con agua y jabón, el grifo se cierra:",
+        "opciones": [
+          "Con la mano limpia",
+          "Con la toalla desechable",
+          "Con el codo mojado",
+          "Se deja abierto"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué recomendación sobre uñas es correcta?",
+        "opciones": [
+          "Las uñas artificiales son seguras si están limpias",
+          "El esmalte sustituye la higiene",
+          "Mantenerlas naturales, cortas y limpias",
+          "El largo no importa"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Las precauciones por vía aérea (tuberculosis, sarampión) requieren:",
+        "opciones": [
+          "Solo guantes",
+          "Mascarilla quirúrgica a 2 m",
+          "Ninguna medida especial",
+          "Respirador N95 y puerta cerrada"
+        ],
+        "correcta": 3
       }
     ],
     "dirigido": "Todo el personal que tiene contacto con pacientes o su entorno.",
     "nivel": "Básico",
     "objetivos": [
       "Identificar los cinco momentos de la higiene de manos.",
-      "Elegir entre solución alcoholada y agua con jabón.",
+      "Elegir entre solución alcoholada y agua con jabón y aplicar la técnica completa.",
       "Reconocer que los guantes no sustituyen la higiene de manos."
     ]
   },
@@ -987,6 +1080,7 @@ var CCE_CATALOG = [
     "orden": 4,
     "lecciones": [
       {
+        "tipo": "video",
         "titulo": "Precauciones estándar y EPP",
         "duracion": "0:56 min",
         "texto": "Aplica las precauciones estándar con toda persona. Selecciona el equipo de protección según el riesgo y retíralo evitando la autocontaminación.",
@@ -1029,6 +1123,23 @@ var CCE_CATALOG = [
             "El equipo protege cuando se selecciona, utiliza y retira correctamente. Continúa con la evaluación."
           ]
         ]
+      },
+      {
+        "tipo": "lectura",
+        "titulo": "Precauciones estándar: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo basada en las recomendaciones de la OMS y los CDC para la prevención y el control de infecciones.\n\n• Toda sangre, fluido, secreción, piel no intacta y mucosa se considera potencialmente infecciosa: las precauciones estándar se aplican con todos los pacientes.\n• Componentes: higiene de manos, EPP según riesgo, higiene respiratoria, punzocortantes, inyección segura, limpieza del equipo y del entorno, ropa y residuos.\n• El EPP se elige según el riesgo de la tarea; el exceso no protege más y aumenta la autocontaminación.\n• Colocación: higiene de manos, bata, mascarilla, lentes o careta y guantes por encima del puño.\n• Retiro: guantes, lentes o careta, bata, mascarilla e higiene de manos al final.\n• Las agujas no se reencapuchan; se desechan de inmediato en el recipiente rígido sin pasar del 80 %.\n• Ante una punción o salpicadura: lavar o enjuagar con agua abundante y reportar de inmediato al jefe y a Epidemiología.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Precauciones estándar",
+            "url": "presentaciones/precauciones-estandar.html"
+          },
+          {
+            "nombre": "Guía rápida Precauciones estándar (PDF)",
+            "url": "materiales/precauciones-estandar-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
@@ -1036,54 +1147,129 @@ var CCE_CATALOG = [
         "pregunta": "Las precauciones estándar se aplican a:",
         "opciones": [
           "Todas las personas atendidas",
-          "Solo pacientes con aislamiento",
-          "Únicamente quirófano"
+          "Solo pacientes con diagnóstico infeccioso",
+          "Solo pacientes en aislamiento",
+          "Solo en quirófano"
         ],
         "correcta": 0
       },
       {
         "pregunta": "El EPP debe seleccionarse según:",
         "opciones": [
+          "La preferencia personal",
+          "El riesgo de exposición de la tarea",
           "El color del uniforme",
-          "El riesgo de exposición",
-          "La antigüedad del personal"
+          "La disponibilidad del día"
         ],
         "correcta": 1
+      },
+      {
+        "pregunta": "¿Cuál NO es un componente de las precauciones estándar?",
+        "opciones": [
+          "Higiene respiratoria",
+          "Inyección segura",
+          "Aislar a todos los pacientes en presión negativa",
+          "Limpieza del entorno"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Ante riesgo de salpicadura a los ojos se usa:",
+        "opciones": [
+          "Solo guantes",
+          "Solo bata",
+          "Gorro",
+          "Lentes o careta"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué se coloca al final?",
+        "opciones": [
+          "Los guantes",
+          "La bata",
+          "La mascarilla",
+          "Los lentes"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Qué se retira primero?",
+        "opciones": [
+          "La mascarilla",
+          "Los guantes",
+          "La bata",
+          "Los lentes"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "La mascarilla se retira:",
+        "opciones": [
+          "Tocando el frente",
+          "Antes que los guantes",
+          "Por las cintas, al final",
+          "No se retira"
+        ],
+        "correcta": 2
       },
       {
         "pregunta": "¿Los guantes sustituyen la higiene de manos?",
         "opciones": [
           "Sí",
-          "No",
-          "Solo en urgencias"
+          "Solo si son estériles",
+          "Solo en procedimientos cortos",
+          "No"
         ],
-        "correcta": 1
+        "correcta": 3
       },
       {
         "pregunta": "Con una aguja usada se debe:",
         "opciones": [
-          "Reencapuchar con ambas manos",
-          "Desechar inmediatamente en el contenedor indicado",
-          "Dejarla sobre la charola"
+          "Desechar inmediatamente en el recipiente rígido",
+          "Reencapucharla",
+          "Dejarla en la charola",
+          "Doblarla antes de tirarla"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Usar más EPP del necesario:",
+        "opciones": [
+          "Siempre es más seguro",
+          "Desperdicia material y aumenta el riesgo de autocontaminación",
+          "Es obligatorio",
+          "No tiene efecto"
         ],
         "correcta": 1
       },
       {
-        "pregunta": "Al retirar el EPP se debe:",
+        "pregunta": "Si te pinchas con una aguja usada, lo primero es:",
         "opciones": [
-          "Evitar tocar superficies contaminadas y realizar higiene de manos",
-          "Retirarlo sin una secuencia",
-          "Conservar los guantes para otro procedimiento"
+          "Esperar a ver si aparecen síntomas",
+          "Exprimir y no decir nada",
+          "Lavar con agua y jabón y reportar de inmediato",
+          "Terminar el turno y luego avisar"
         ],
-        "correcta": 0
+        "correcta": 2
+      },
+      {
+        "pregunta": "Una medida de higiene respiratoria es:",
+        "opciones": [
+          "Toser sobre la mano",
+          "Retirar la mascarilla para hablar",
+          "Compartir el cubrebocas",
+          "Dar mascarilla al paciente que tose"
+        ],
+        "correcta": 3
       }
     ],
     "dirigido": "Personal clínico, de laboratorio, limpieza y prehospitalario.",
     "nivel": "Básico",
     "objetivos": [
-      "Aplicar las precauciones estándar con toda persona atendida.",
-      "Seleccionar el EPP según el riesgo de exposición.",
-      "Desechar punzocortantes de forma segura."
+      "Aplicar las precauciones estándar con todos los pacientes.",
+      "Seleccionar, colocar y retirar el EPP sin autocontaminarse.",
+      "Prevenir y reportar exposiciones a punzocortantes y fluidos."
     ]
   },
   {
@@ -1096,6 +1282,7 @@ var CCE_CATALOG = [
     "orden": 5,
     "lecciones": [
       {
+        "tipo": "video",
         "titulo": "Trato digno y experiencia del paciente",
         "duracion": "0:56 min",
         "texto": "Preséntate, escucha, protege la privacidad y explica con lenguaje claro. Confirma la comprensión y respeta las decisiones informadas.",
@@ -1138,61 +1325,153 @@ var CCE_CATALOG = [
             "Despídete, aclara las dudas y orienta sobre el seguimiento. Continúa con la evaluación."
           ]
         ]
+      },
+      {
+        "tipo": "lectura",
+        "titulo": "Trato digno: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo basada en la Carta de los Derechos Generales de los Pacientes y en el Manual de la Organización.\n\n• El trato digno y respetuoso es un derecho del paciente y una condición para su seguridad.\n• Diez derechos: atención adecuada, trato digno, información clara, decidir libremente, consentimiento informado, confidencialidad, segunda opinión, atención de urgencia, expediente clínico y atención a inconformidades.\n• Primer contacto: saluda, preséntate con nombre y función, llama al paciente por su nombre, escucha y explica qué sigue.\n• Usa lenguaje sencillo y confirma que te entendieron; si el paciente habla otro idioma, busca apoyo bilingüe.\n• Protege la privacidad: toca antes de entrar, cubre al paciente y no compartas datos ni imágenes fuera de la atención.\n• Respeta identidad, cultura, creencias y decisiones informadas, sin distinción.\n• Ante una inconformidad: escucha, reconoce, resuelve lo que puedas y canaliza a tu jefe o a Calidad.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Trato digno",
+            "url": "presentaciones/trato-digno.html"
+          },
+          {
+            "nombre": "Guía rápida Trato digno (PDF)",
+            "url": "materiales/trato-digno-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
       {
         "pregunta": "Al iniciar la atención se debe:",
         "opciones": [
-          "Presentarse y escuchar al paciente",
-          "Hablar solo con el acompañante",
-          "Evitar explicar el proceso"
+          "Presentarse con nombre y función, y escuchar",
+          "Ir directo al procedimiento",
+          "Pedir la credencial del seguro antes de saludar",
+          "Hablar solo con el familiar"
         ],
         "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuántos derechos reconoce la Carta de los Derechos Generales de los Pacientes?",
+        "opciones": [
+          "Cinco",
+          "Diez",
+          "Doce",
+          "Ocho"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Es un derecho del paciente:",
+        "opciones": [
+          "Elegir el horario del personal",
+          "Recibir medicamentos sin receta",
+          "Contar con facilidades para una segunda opinión",
+          "Revisar expedientes de otros pacientes"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Para confirmar la comprensión es útil:",
+        "opciones": [
+          "Preguntar solo “¿entendió?”",
+          "Repetir más rápido",
+          "Entregar un folleto sin explicar",
+          "Pedir al paciente que explique con sus palabras"
+        ],
+        "correcta": 3
       },
       {
         "pregunta": "La privacidad del paciente debe protegerse:",
         "opciones": [
           "Durante toda la atención",
-          "Solo al momento del alta",
-          "Únicamente si la solicita"
+          "Solo en quirófano",
+          "Solo si el paciente lo pide",
+          "Solo con pacientes famosos"
         ],
         "correcta": 0
       },
       {
-        "pregunta": "Para confirmar la comprensión es útil:",
+        "pregunta": "Tomar una foto de un paciente con tu celular para compartirla en un chat:",
         "opciones": [
-          "Pedir al paciente que explique con sus palabras",
-          "Repetir más rápido",
-          "Entregar documentos sin explicación"
+          "Está permitido si no se ve su cara",
+          "Viola su confidencialidad y no debe hacerse",
+          "Está bien si es para enseñar",
+          "Depende del turno"
         ],
-        "correcta": 0
+        "correcta": 1
+      },
+      {
+        "pregunta": "Si el paciente habla otro idioma que no dominas:",
+        "opciones": [
+          "Hablas más fuerte",
+          "Le pides a otro paciente que traduzca",
+          "Buscas apoyo bilingüe",
+          "Omites la explicación"
+        ],
+        "correcta": 2
       },
       {
         "pregunta": "El trato digno incluye:",
         "opciones": [
-          "Respetar cultura, decisiones y preferencias",
-          "Usar tecnicismos en todo momento",
-          "Decidir sin informar al paciente"
+          "Atender primero a quien pueda pagar más",
+          "Corregir las creencias del paciente",
+          "Decidir por el paciente",
+          "Respetar su cultura, creencias y decisiones informadas"
         ],
-        "correcta": 0
+        "correcta": 3
       },
       {
         "pregunta": "Ante una inconformidad se debe:",
         "opciones": [
           "Escuchar con calma y canalizarla",
-          "Interrumpir al paciente",
-          "Ignorarla si el servicio está ocupado"
+          "Discutir para aclarar quién tiene razón",
+          "Ignorarla",
+          "Culpar a otra área"
         ],
         "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuál es la forma correcta de contestar una llamada externa?",
+        "opciones": [
+          "“¿Bueno?”",
+          "“Saint Luke's Hospitals, buenos días, le atiende (nombre)”",
+          "“¿Qué necesita?”",
+          "“Hospital, diga”"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Comentar el caso de un paciente en el elevador con un compañero:",
+        "opciones": [
+          "Es correcto si no se dice el nombre",
+          "Ayuda a resolver dudas rápido",
+          "Debe evitarse; se comenta en privado y solo con quien participa en la atención",
+          "Está permitido entre médicos"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Respetar una decisión informada del paciente significa:",
+        "opciones": [
+          "Estar de acuerdo con ella",
+          "Insistir hasta que cambie de opinión",
+          "Retirarle la atención",
+          "Informar con claridad y aceptar lo que decida"
+        ],
+        "correcta": 3
       }
     ],
     "dirigido": "Todo el personal que interactúa con pacientes y familiares.",
     "nivel": "Básico",
     "objetivos": [
-      "Comunicar con lenguaje claro y respetuoso.",
-      "Proteger la privacidad del paciente.",
-      "Canalizar inconformidades con calma."
+      "Reconocer los derechos generales de los pacientes.",
+      "Comunicarse con respeto, claridad y confirmación de la comprensión.",
+      "Proteger la privacidad y atender inconformidades."
     ]
   },
   {
@@ -1820,34 +2099,71 @@ var CCE_CATALOG = [
     "orden": 8,
     "lecciones": [
       {
-        "titulo": "Preparación",
-        "duracion": "15 min",
-        "texto": "Verifica indicación, identidad, insumos y condiciones de oxigenoterapia.",
-        "segundosMinimos": 20
-      },
-      {
-        "titulo": "Muestra y traslado",
-        "duracion": "18 min",
-        "texto": "Evita burbujas, identifica inmediatamente y traslada conforme al protocolo.",
-        "segundosMinimos": 20
+        "tipo": "lectura",
+        "titulo": "Gasometría arterial: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo con las prácticas recomendadas para la toma de gasometría arterial. Prevalece siempre el protocolo institucional y del laboratorio.\n\n• Antes: orden médica, identificación con nombre completo y fecha de nacimiento, FiO₂ estable al menos 10 minutos, y registro de FiO₂ y temperatura.\n• Pregunta por anticoagulantes o trastornos de coagulación: requerirán más tiempo de presión.\n• Prueba de Allen antes de puncionar la radial: si el color no regresa en segundos, no punciones esa muñeca.\n• Técnica: muñeca en ligera extensión, antisepsia, bisel hacia arriba a 45°; el flujo arterial es pulsátil y llena la jeringa sin aspirar.\n• Después: presión firme al menos 5 minutos, aguja segura, sin burbujas, tapada, mezclada y etiquetada.\n• Envía de inmediato; idealmente se analiza antes de 30 minutos.\n• Errores: burbujas, exceso de heparina, muestra venosa y retraso.\n• Vigila la mano: dolor intenso, palidez, frialdad o entumecimiento se informan de inmediato.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Gasometría arterial",
+            "url": "presentaciones/gasometria-arterial.html"
+          },
+          {
+            "nombre": "Guía rápida Gasometría arterial (PDF)",
+            "url": "materiales/gasometria-arterial-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
-      {
-        "pregunta": "¿Qué debe evitarse en la muestra?",
-        "opciones": [
-          "Etiquetado",
-          "Burbujas de aire",
-          "Traslado inmediato"
-        ],
-        "correcta": 1
-      },
       {
         "pregunta": "Antes de la punción radial se valora la circulación colateral con la:",
         "opciones": [
           "Prueba de Allen",
           "Prueba de Romberg",
-          "Maniobra de Valsalva"
+          "Maniobra de Valsalva",
+          "Escala de Glasgow"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuánto tiempo debe mantenerse estable la FiO₂ antes de tomar la muestra?",
+        "opciones": [
+          "No importa",
+          "Al menos 10 minutos",
+          "1 minuto",
+          "2 horas"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "La jeringa para gasometría debe contener:",
+        "opciones": [
+          "Solución salina",
+          "Alcohol",
+          "Anticoagulante (heparina)",
+          "Nada"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Con qué ángulo se punciona la arteria radial?",
+        "opciones": [
+          "90°",
+          "10°",
+          "Paralela a la piel",
+          "Aproximadamente 45°"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Cómo se reconoce el flujo arterial?",
+        "opciones": [
+          "Es pulsátil y llena la jeringa sin aspirar",
+          "Es oscuro y lento",
+          "Requiere aspirar con fuerza",
+          "No sale sangre"
         ],
         "correcta": 0
       },
@@ -1855,36 +2171,79 @@ var CCE_CATALOG = [
         "pregunta": "Después de la punción arterial se debe:",
         "opciones": [
           "Doblar el brazo sin presionar",
-          "Dar masaje vigoroso en el sitio",
-          "Aplicar presión firme en el sitio al menos 5 minutos"
+          "Aplicar presión firme al menos 5 minutos",
+          "Dar masaje vigoroso",
+          "Colocar un torniquete"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "En un paciente con anticoagulantes, la presión en el sitio:",
+        "opciones": [
+          "No es necesaria",
+          "Debe ser de 1 minuto",
+          "Debe mantenerse más tiempo",
+          "Debe evitarse"
         ],
         "correcta": 2
       },
       {
-        "pregunta": "La jeringa para gasometría debe contener:",
+        "pregunta": "¿Qué debe evitarse en la muestra?",
         "opciones": [
-          "Solución salina",
-          "Anticoagulante (heparina)",
-          "Alcohol"
+          "El etiquetado",
+          "La mezcla",
+          "El traslado inmediato",
+          "Las burbujas de aire"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Las burbujas de aire en la muestra:",
+        "opciones": [
+          "Suben la PaO₂ y bajan la PaCO₂",
+          "No alteran el resultado",
+          "Suben el pH siempre",
+          "Mejoran la conservación"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Además de los identificadores, la etiqueta debe indicar:",
+        "opciones": [
+          "El costo del estudio",
+          "La hora de toma, la FiO₂ y la temperatura",
+          "Solo el número de cama",
+          "El nombre del laboratorista"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Una vez tomada, la muestra se debe:",
         "opciones": [
-          "Procesar lo antes posible conforme al protocolo del laboratorio",
           "Dejar varias horas a temperatura ambiente",
-          "Destapar para eliminar el aire después de horas"
+          "Destapar para eliminar el aire después",
+          "Enviar de inmediato para analizarse lo antes posible",
+          "Guardar en el congelador"
         ],
-        "correcta": 0
+        "correcta": 2
+      },
+      {
+        "pregunta": "Después de la punción el paciente refiere la mano fría, pálida y entumecida. ¿Qué haces?",
+        "opciones": [
+          "Aplicas calor y esperas",
+          "Lo registras al final del turno",
+          "Le pides que mueva la mano",
+          "Avisas de inmediato al médico"
+        ],
+        "correcta": 3
       }
     ],
     "dirigido": "Personal de enfermería y terapia respiratoria.",
     "nivel": "Intermedio",
     "objetivos": [
       "Preparar al paciente y los insumos para la punción arterial.",
-      "Tomar la muestra sin burbujas de aire.",
-      "Identificar y trasladar la muestra conforme al protocolo."
+      "Tomar la muestra sin burbujas de aire y con la técnica correcta.",
+      "Identificar, conservar y trasladar la muestra conforme al protocolo."
     ]
   },
   {
@@ -1897,25 +2256,51 @@ var CCE_CATALOG = [
     "orden": 9,
     "lecciones": [
       {
-        "titulo": "Preparación del paciente",
-        "duracion": "15 min",
-        "texto": "Explica el procedimiento, asegura privacidad y prepara la piel.",
-        "segundosMinimos": 20
-      },
-      {
-        "titulo": "Derivaciones",
-        "duracion": "20 min",
-        "texto": "Coloca correctamente electrodos periféricos y precordiales.",
-        "segundosMinimos": 20
+        "tipo": "lectura",
+        "titulo": "Electrocardiograma: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo para la toma de electrocardiogramas de 12 derivaciones. Prevalece siempre el protocolo institucional.\n\n• Dolor torácico: electrocardiograma en 10 minutos o menos desde la llegada y entrega inmediata al médico.\n• Preparación: identificar, explicar, privacidad, decúbito supino, piel limpia y seca, electrodos sobre tejido blando.\n• Extremidades: cuatro electrodos simétricos; revisa el código de color (AHA o IEC) para no invertir los brazos.\n• Precordiales: V1 y V2 en el 4.º EIC a cada lado del esternón; V4 en el 5.º EIC línea medioclavicular; V3 entre V2 y V4; V5 axilar anterior y V6 axilar media al nivel de V4.\n• Caras: inferior II, III, aVF; lateral I, aVL, V5, V6; septal V1, V2; anterior V3, V4.\n• Calibración: 25 mm/s y 10 mm/mV; cuadro chico 0.04 s, cuadro grande 0.20 s.\n• Artefactos: movimiento, interferencia, línea errante, brazos invertidos; corrige y repite.\n• Elevación del ST, ritmos muy rápidos o lentos o trazo caótico: notificar de inmediato; sin pulso, Código Azul.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación EKG",
+            "url": "presentaciones/ekg-12-derivaciones.html"
+          },
+          {
+            "nombre": "Guía rápida EKG (PDF)",
+            "url": "materiales/ekg-12-derivaciones-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
       {
         "pregunta": "¿Cuántas derivaciones registra el estudio estándar?",
         "opciones": [
+          "12",
+          "10",
+          "6",
+          "3"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Ante un paciente con dolor torácico, el electrocardiograma debe tomarse en:",
+        "opciones": [
+          "La primera hora",
+          "10 minutos o menos desde su llegada",
+          "Cuando lo valore el cardiólogo",
+          "Al día siguiente"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Cuántos electrodos se colocan para un electrocardiograma de 12 derivaciones?",
+        "opciones": [
+          "12",
           "6",
           "10",
-          "12"
+          "4"
         ],
         "correcta": 2
       },
@@ -1923,45 +2308,99 @@ var CCE_CATALOG = [
         "pregunta": "El electrodo V1 se coloca en:",
         "opciones": [
           "5.º espacio intercostal, línea medioclavicular izquierda",
-          "4.º espacio intercostal, borde esternal derecho",
-          "2.º espacio intercostal izquierdo"
+          "4.º espacio intercostal, borde esternal izquierdo",
+          "Línea axilar media",
+          "4.º espacio intercostal, borde esternal derecho"
         ],
-        "correcta": 1
+        "correcta": 3
       },
       {
         "pregunta": "El electrodo V4 se coloca en:",
         "opciones": [
           "5.º espacio intercostal, línea medioclavicular izquierda",
-          "4.º espacio intercostal, borde esternal izquierdo",
-          "Línea axilar media derecha"
+          "2.º espacio intercostal derecho",
+          "Línea axilar anterior",
+          "Sobre el esternón"
         ],
         "correcta": 0
       },
       {
+        "pregunta": "V6 se coloca en:",
+        "opciones": [
+          "El 4.º espacio intercostal derecho",
+          "La línea axilar media, al nivel de V4",
+          "Entre V2 y V4",
+          "El hombro izquierdo"
+        ],
+        "correcta": 1
+      },
+      {
         "pregunta": "La velocidad estándar del papel es:",
         "opciones": [
+          "50 mm/s",
           "10 mm/s",
-          "50 mm/min",
-          "25 mm/s"
+          "25 mm/s",
+          "5 mm/s"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Las derivaciones II, III y aVF observan la cara:",
+        "opciones": [
+          "Lateral",
+          "Anterior",
+          "Septal",
+          "Inferior"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Un cuadro grande del papel equivale a:",
+        "opciones": [
+          "0.20 segundos",
+          "0.04 segundos",
+          "1 segundo",
+          "0.10 segundos"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "La derivación I negativa y aVR positiva sugiere:",
+        "opciones": [
+          "Un infarto inferior",
+          "Electrodos de los brazos invertidos",
+          "Calibración correcta",
+          "Paciente en movimiento"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Una línea basal que sube y baja suele deberse a:",
+        "opciones": [
+          "Velocidad de 25 mm/s",
+          "Paciente en decúbito",
+          "Respiración o mal contacto del electrodo",
+          "Electrodos sobre tejido blando"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Ante un trazo con signos de alarma (p. ej., elevación del ST) se debe:",
         "opciones": [
-          "Archivar el estudio",
-          "Notificar de inmediato al médico responsable",
-          "Repetirlo al día siguiente"
+          "Esperar a que el paciente tenga dolor",
+          "Repetirlo al día siguiente",
+          "Archivarlo en el expediente",
+          "Notificar de inmediato al médico responsable"
         ],
-        "correcta": 1
+        "correcta": 3
       }
     ],
     "dirigido": "Personal de enfermería y técnicos que realizan electrocardiogramas.",
     "nivel": "Intermedio",
     "objetivos": [
-      "Preparar al paciente y la piel.",
-      "Colocar correctamente los electrodos de las 12 derivaciones.",
-      "Reconocer trazos que requieren aviso inmediato."
+      "Preparar al paciente y colocar correctamente los 10 electrodos.",
+      "Obtener un trazo calibrado y libre de artefactos.",
+      "Reconocer trazos de alarma y notificarlos de inmediato."
     ]
   },
   {
@@ -1974,71 +2413,151 @@ var CCE_CATALOG = [
     "orden": 10,
     "lecciones": [
       {
-        "titulo": "Cadena de supervivencia",
-        "duracion": "18 min",
-        "texto": "Reconoce el paro y activa de inmediato el sistema de respuesta.",
-        "segundosMinimos": 20
-      },
-      {
-        "titulo": "RCP y DEA",
-        "duracion": "25 min",
-        "texto": "Realiza compresiones de calidad y sigue las indicaciones del desfibrilador.",
-        "segundosMinimos": 20
+        "tipo": "lectura",
+        "titulo": "Soporte vital básico: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de repaso con base en las guías de la American Heart Association 2025. No sustituye la certificación con práctica en maniquí.\n\n• Secuencia: escena segura, respuesta, Código Azul y DEA, pulso y respiración en no más de 10 segundos.\n• Sin pulso o con respiración agónica: inicia compresiones de inmediato.\n• RCP de alta calidad en adulto: 100 a 120 por minuto, 5 a 6 cm, reexpansión completa y pausas menores a 10 segundos.\n• Sin vía aérea avanzada: 30:2. Con vía aérea avanzada: compresiones continuas y 1 ventilación cada 6 segundos.\n• DEA: enciéndelo, parches en piel descubierta, nadie toca durante análisis y descarga, y reanuda compresiones de inmediato.\n• Niños y lactantes: un tercio del tórax; 15:2 con dos reanimadores; lactante con talón de una mano o dos pulgares.\n• Atragantamiento (2025): 5 golpes en la espalda y 5 compresiones abdominales alternados; en lactantes, compresiones torácicas.\n• Cambia de compresor cada 2 minutos y considera naloxona ante sospecha de opioides, sin retrasar la RCP.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Soporte vital básico",
+            "url": "presentaciones/soporte-vital-basico.html"
+          },
+          {
+            "nombre": "Guía rápida Soporte vital básico (PDF)",
+            "url": "materiales/soporte-vital-basico-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
       {
-        "pregunta": "Frecuencia de compresiones en adulto:",
+        "pregunta": "Ante una persona que colapsa, lo primero es:",
         "opciones": [
-          "60–80/min",
-          "100–120/min",
-          "140–160/min"
-        ],
-        "correcta": 1
-      },
-      {
-        "pregunta": "La profundidad de las compresiones en un adulto es de:",
-        "opciones": [
-          "2 a 3 cm",
-          "Más de 8 cm",
-          "Al menos 5 cm sin exceder 6 cm"
-        ],
-        "correcta": 2
-      },
-      {
-        "pregunta": "Con un solo reanimador en adulto, la relación compresiones:ventilaciones es:",
-        "opciones": [
-          "30:2",
-          "15:2",
-          "5:1"
+          "Verificar la seguridad de la escena y si responde",
+          "Dar dos ventilaciones",
+          "Buscar una vena",
+          "Llamar a un familiar"
         ],
         "correcta": 0
       },
       {
-        "pregunta": "Al llegar el DEA se debe:",
+        "pregunta": "¿Cuánto tiempo como máximo se revisan pulso y respiración?",
         "opciones": [
-          "Esperar al médico para usarlo",
-          "Encenderlo y seguir sus indicaciones",
-          "Usarlo solo si la persona respira"
+          "30 segundos",
+          "10 segundos",
+          "1 minuto",
+          "No se revisan"
         ],
         "correcta": 1
       },
       {
-        "pregunta": "Ante una persona que colapsa, lo primero es:",
+        "pregunta": "En el hospital, ante un paro cardiorrespiratorio se activa el código:",
         "opciones": [
-          "Darle agua",
-          "Iniciar ventilaciones prolongadas",
-          "Verificar la seguridad de la escena y si responde"
+          "Rojo",
+          "Negro",
+          "Azul",
+          "Verde"
         ],
         "correcta": 2
+      },
+      {
+        "pregunta": "Frecuencia de compresiones en adulto:",
+        "opciones": [
+          "60–80/min",
+          "80–100/min",
+          "Más de 140/min",
+          "100–120/min"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "La profundidad de las compresiones en un adulto es de:",
+        "opciones": [
+          "Al menos 5 cm sin exceder 6 cm",
+          "2 a 3 cm",
+          "8 a 10 cm",
+          "La que permita el paciente"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Sin vía aérea avanzada, la relación compresiones:ventilaciones en adulto es:",
+        "opciones": [
+          "15:2",
+          "30:2",
+          "5:1",
+          "Solo compresiones"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Con vía aérea avanzada se da:",
+        "opciones": [
+          "30:2 con pausas",
+          "2 ventilaciones por minuto",
+          "Compresiones continuas y 1 ventilación cada 6 segundos",
+          "Ventilaciones lo más rápido posible"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Las interrupciones de las compresiones deben ser:",
+        "opciones": [
+          "De 30 segundos",
+          "Cada 30 compresiones por 1 minuto",
+          "Solo para revisar el pulso cada ciclo",
+          "Menores a 10 segundos"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Al llegar el DEA se debe:",
+        "opciones": [
+          "Encenderlo y seguir sus indicaciones",
+          "Esperar al médico para usarlo",
+          "Terminar 5 ciclos antes de encenderlo",
+          "Colocarlo sobre la ropa"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Inmediatamente después de una descarga:",
+        "opciones": [
+          "Se revisa el pulso por 30 segundos",
+          "Se reanudan las compresiones",
+          "Se da otra descarga",
+          "Se retira el DEA"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Con dos reanimadores, la relación en un niño es:",
+        "opciones": [
+          "30:2",
+          "5:1",
+          "15:2",
+          "10:1"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Ante un adulto consciente que se atraganta y no puede toser, las guías 2025 indican:",
+        "opciones": [
+          "Darle agua",
+          "Solo compresiones abdominales",
+          "Esperar a que pierda el estado de alerta",
+          "Alternar 5 golpes en la espalda y 5 compresiones abdominales"
+        ],
+        "correcta": 3
       }
     ],
     "dirigido": "Médicos, enfermería y personal de respuesta a emergencias.",
     "nivel": "Intermedio",
     "objetivos": [
-      "Reconocer el paro cardiorrespiratorio.",
-      "Realizar compresiones de calidad.",
-      "Usar el desfibrilador externo automático."
+      "Reconocer el paro cardiorrespiratorio y activar el Código Azul.",
+      "Realizar compresiones y ventilaciones de alta calidad.",
+      "Usar el DEA y resolver la obstrucción de la vía aérea."
     ]
   },
   {
@@ -2051,71 +2570,151 @@ var CCE_CATALOG = [
     "orden": 11,
     "lecciones": [
       {
-        "titulo": "Identificación y resguardo",
-        "duracion": "15 min",
-        "texto": "Separa, identifica y restringe los medicamentos conforme a la política.",
-        "segundosMinimos": 20
-      },
-      {
-        "titulo": "Doble verificación",
-        "duracion": "15 min",
-        "texto": "Dos profesionales verifican paciente, medicamento, dosis, vía y velocidad.",
-        "segundosMinimos": 20
+        "tipo": "lectura",
+        "titulo": "Medicamentos de alto riesgo: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo basada en la AESP 3 y en la lista de medicamentos de alto riesgo del ISMP. Prevalece la lista institucional que publica Farmacia.\n\n• Alto riesgo: ante un error, alta probabilidad de daño grave o muerte.\n• Grupos frecuentes: electrolitos concentrados, insulinas, anticoagulantes, opioides, sedantes IV, bloqueadores neuromusculares, vasoactivos y quimioterapia.\n• Etiqueta roja para alto riesgo (siglas AR) y naranja para LASA; electrolitos concentrados solo en carros rojos.\n• Prescripción: genérico, dosis en mEq, g o mg, vía, velocidad y duración; nunca ámpulas como dosis, “U” por unidades ni ceros a la derecha.\n• Doble verificación independiente: paciente, medicamento, dosis, vía, velocidad y registro de ambos profesionales.\n• Infusiones: segundo profesional revisa la bomba y se sigue la línea antes de conectar.\n• Ante la duda: detener, aclarar con quien prescribe o con Farmacia, y reportar errores y cuasi fallas.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Medicamentos de alto riesgo",
+            "url": "presentaciones/medicamentos-alto-riesgo.html"
+          },
+          {
+            "nombre": "Guía rápida Medicamentos de alto riesgo (PDF)",
+            "url": "materiales/medicamentos-alto-riesgo-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
       {
-        "pregunta": "¿Qué control se requiere?",
+        "pregunta": "Un medicamento de alto riesgo es aquel que:",
         "opciones": [
-          "Doble verificación",
-          "Entrega abierta",
-          "Sin identificación"
+          "Ante un error tiene alta probabilidad de causar daño grave o muerte",
+          "Es el más caro de la farmacia",
+          "Se usa solo en terapia intensiva",
+          "Requiere receta especial"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Es un ejemplo de medicamento de alto riesgo:",
         "opciones": [
+          "Paracetamol oral",
           "Insulina",
-          "Lágrimas artificiales",
-          "Vitamina C oral"
-        ],
-        "correcta": 0
-      },
-      {
-        "pregunta": "Los electrolitos concentrados (p. ej., cloruro de potasio) deben:",
-        "opciones": [
-          "Almacenarse sin restricción en el piso",
-          "Resguardarse separados, identificados y con acceso restringido",
-          "Mezclarse con otros medicamentos"
+          "Vitamina C",
+          "Solución salina al 0.9 % para lavado"
         ],
         "correcta": 1
       },
       {
-        "pregunta": "La doble verificación la realizan:",
+        "pregunta": "¿Qué color de etiqueta identifica a los medicamentos de alto riesgo?",
         "opciones": [
-          "Un profesional que revisa dos veces",
-          "El paciente y un familiar",
-          "Dos profesionales de forma independiente"
+          "Naranja",
+          "Verde",
+          "Rojo",
+          "Azul"
         ],
         "correcta": 2
       },
       {
-        "pregunta": "Ante una duda sobre la dosis de un medicamento de alto riesgo:",
+        "pregunta": "Los electrolitos concentrados (p. ej., cloruro de potasio) deben:",
         "opciones": [
-          "Detener y aclarar con quien prescribe o con farmacia",
-          "Administrar y consultar después",
-          "Ajustar la dosis por criterio propio"
+          "Estar en todos los botiquines de piso",
+          "Guardarse junto a las soluciones",
+          "Prepararse por cualquier persona",
+          "Resguardarse separados, identificados y con acceso restringido"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Cuál es una prescripción correcta?",
+        "opciones": [
+          "Cloruro de potasio 20 mEq en 250 mL, a pasar en 2 horas",
+          "1 ámpula de KCl",
+          "KCl lo necesario",
+          "KCl rápido"
         ],
         "correcta": 0
+      },
+      {
+        "pregunta": "¿Por qué no se escribe “5.0 mg”?",
+        "opciones": [
+          "Porque es muy largo",
+          "Porque el punto puede no verse y leerse 50 mg",
+          "Porque se debe escribir en ámpulas",
+          "Está permitido"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "La abreviatura “U” para unidades:",
+        "opciones": [
+          "Es la forma recomendada",
+          "Solo se usa en insulina",
+          "Debe evitarse; se escribe “unidades”",
+          "Significa microgramos"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "La doble verificación la realizan:",
+        "opciones": [
+          "Una persona dos veces",
+          "El paciente y su familiar",
+          "El médico por teléfono",
+          "Dos profesionales de forma independiente"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "En la doble verificación de una infusión se revisa también:",
+        "opciones": [
+          "La programación de la bomba y la línea",
+          "El color de la bolsa",
+          "El turno del compañero",
+          "Nada más que el nombre"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuándo puede omitirse la doble verificación?",
+        "opciones": [
+          "Cuando hay mucho trabajo",
+          "Solo ante riesgo inminente para la vida, documentándolo",
+          "Si el medicamento es conocido",
+          "En el turno nocturno"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Ante una duda sobre la dosis de un medicamento de alto riesgo:",
+        "opciones": [
+          "Administrar la mitad",
+          "Preguntar a otro paciente",
+          "Detener y aclarar con quien prescribe o con Farmacia",
+          "Administrar y avisar después"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Un error detectado antes de llegar al paciente:",
+        "opciones": [
+          "No se reporta",
+          "Se comenta solo en el turno",
+          "Se borra del registro",
+          "Se reporta como cuasi falla"
+        ],
+        "correcta": 3
       }
     ],
     "dirigido": "Personal de farmacia, enfermería y médicos.",
     "nivel": "Intermedio",
     "objetivos": [
-      "Identificar los medicamentos de alto riesgo.",
-      "Almacenarlos separados y con acceso restringido.",
-      "Aplicar la doble verificación independiente."
+      "Reconocer los medicamentos de alto riesgo y su identificación visual.",
+      "Prescribir y preparar sin ambigüedades.",
+      "Aplicar la doble verificación independiente y reportar errores."
     ]
   },
   {
@@ -2128,71 +2727,151 @@ var CCE_CATALOG = [
     "orden": 12,
     "lecciones": [
       {
-        "titulo": "Pictogramas",
-        "duracion": "14 min",
-        "texto": "Reconoce peligros físicos, a la salud y al ambiente.",
-        "segundosMinimos": 20
-      },
-      {
-        "titulo": "Hoja de seguridad",
-        "duracion": "16 min",
-        "texto": "Consulta medidas de prevención, respuesta y almacenamiento.",
-        "segundosMinimos": 20
+        "tipo": "lectura",
+        "titulo": "NOM-018: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo basada en la NOM-018-STPS-2015, sistema armonizado para la identificación y comunicación de peligros y riesgos por sustancias químicas peligrosas.\n\n• El sistema clasifica peligros físicos, para la salud y para el medio ambiente, y los comunica con etiquetas y hojas de datos de seguridad.\n• Nueve pictogramas en rombo con borde rojo: llama, llama sobre círculo, bomba explotando, cilindro de gas, corrosión, calavera, exclamación, peligro para la salud y medio ambiente.\n• La etiqueta incluye identificador, pictogramas, palabra de advertencia (Peligro o Atención), frases H, frases P y datos del proveedor.\n• La hoja de datos tiene 16 secciones, en español y disponible: primeros auxilios (4), derrames (6) y EPP (8) son las más consultadas.\n• Todo recipiente de trasvase se etiqueta; nunca se usan envases de alimentos o bebidas.\n• No mezclar productos: cloro con amoniaco o ácidos libera gases tóxicos.\n• Ante un derrame: Código Amarillo.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación NOM-018",
+            "url": "presentaciones/nom018-comunicacion-peligros.html"
+          },
+          {
+            "nombre": "Guía rápida NOM-018 (PDF)",
+            "url": "materiales/nom018-comunicacion-peligros-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
       {
-        "pregunta": "¿Dónde se consulta la respuesta ante exposición?",
+        "pregunta": "El sistema armonizado clasifica peligros:",
         "opciones": [
-          "Hoja de datos de seguridad",
-          "Recibo de compra",
-          "Bitácora de asistencia"
+          "Físicos, para la salud y para el medio ambiente",
+          "Solo químicos",
+          "Solo biológicos",
+          "Solo eléctricos"
         ],
         "correcta": 0
       },
       {
-        "pregunta": "El sistema armonizado clasifica peligros:",
+        "pregunta": "¿Cómo son los pictogramas del sistema armonizado?",
         "opciones": [
-          "Solo de incendio",
-          "Físicos, para la salud y para el medio ambiente",
-          "Únicamente biológicos"
+          "Círculos azules",
+          "Rombo con borde rojo y símbolo negro",
+          "Triángulos amarillos",
+          "Cuadros verdes"
         ],
         "correcta": 1
       },
       {
         "pregunta": "El pictograma de llama indica:",
         "opciones": [
-          "Peligro para el medio ambiente",
+          "Sustancia corrosiva",
           "Gas a presión",
-          "Sustancia inflamable"
+          "Sustancia inflamable",
+          "Peligro ambiental"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "El oxígeno medicinal se identifica, entre otros, con el pictograma de:",
+        "opciones": [
+          "Calavera",
+          "Medio ambiente",
+          "Corrosión",
+          "Llama sobre círculo (comburente)"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué palabra de advertencia indica el peligro más grave?",
+        "opciones": [
+          "Peligro",
+          "Atención",
+          "Cuidado",
+          "Aviso"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuántas secciones tiene la hoja de datos de seguridad?",
+        "opciones": [
+          "8",
+          "16",
+          "4",
+          "12"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Dónde se consulta la respuesta ante exposición?",
+        "opciones": [
+          "En la factura",
+          "En el inventario",
+          "En la hoja de datos de seguridad",
+          "En el reglamento interior"
         ],
         "correcta": 2
       },
       {
         "pregunta": "La hoja de datos de seguridad debe estar:",
         "opciones": [
-          "Disponible para el personal que maneja la sustancia",
-          "Guardada solo en la dirección",
-          "Disponible únicamente en inglés"
+          "En la oficina del proveedor",
+          "Solo en inglés",
+          "Guardada bajo llave",
+          "Disponible para el personal que maneja la sustancia"
         ],
-        "correcta": 0
+        "correcta": 3
       },
       {
         "pregunta": "Un recipiente sin etiqueta debe:",
         "opciones": [
-          "Usarse si el olor es reconocible",
           "No utilizarse hasta identificar y etiquetar su contenido",
-          "Vaciarse al drenaje"
+          "Usarse si huele a alcohol",
+          "Vaciarse en el drenaje",
+          "Usarse con guantes"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Al pasar una sustancia a otro recipiente se debe:",
+        "opciones": [
+          "Usar una botella de agua limpia",
+          "Etiquetarlo con su nombre y su pictograma",
+          "Dejarlo sin tapa",
+          "Mezclarla con otra para rendirla"
         ],
         "correcta": 1
+      },
+      {
+        "pregunta": "Mezclar cloro con amoniaco:",
+        "opciones": [
+          "Mejora la limpieza",
+          "Es indispensable para desinfectar",
+          "Libera gases tóxicos y no debe hacerse",
+          "No tiene efecto"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Ante un derrame de una sustancia química se activa el código:",
+        "opciones": [
+          "Azul",
+          "Negro",
+          "Rosa",
+          "Amarillo"
+        ],
+        "correcta": 3
       }
     ],
     "dirigido": "Personal que maneja sustancias químicas peligrosas.",
     "nivel": "Básico",
     "objetivos": [
-      "Reconocer los pictogramas del sistema armonizado.",
-      "Consultar la hoja de datos de seguridad.",
-      "Actuar ante recipientes sin etiqueta."
+      "Reconocer los nueve pictogramas y la palabra de advertencia.",
+      "Localizar en la hoja de datos de seguridad la información de respuesta.",
+      "Etiquetar, almacenar y manejar sustancias de forma segura."
     ]
   },
   {
@@ -2505,65 +3184,151 @@ var CCE_CATALOG = [
     "orden": 14,
     "lecciones": [
       {
-        "titulo": "Las cinco etapas",
-        "duracion": "15 min",
-        "texto": "Clasificar, ordenar, limpiar, estandarizar y mantener la disciplina.",
-        "segundosMinimos": 20
+        "tipo": "lectura",
+        "titulo": "Metodología 5S: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo sobre la metodología 5S aplicada a áreas hospitalarias, administrativas y de almacén.\n\n• Un área ordenada reduce accidentes, tiempos de búsqueda, errores y mermas.\n• Seiri · Clasificar: separa lo necesario de lo innecesario; tarjeta roja a lo dañado o caducado.\n• Seiton · Ordenar: un lugar identificado para cada cosa; lo de uso diario más cerca; primero en caducar, primero en salir.\n• Seiso · Limpiar: limpiar es inspeccionar; corrige o reporta la causa de la suciedad.\n• Seiketsu · Estandarizar: fotos del estándar, marcas en piso, listas de verificación y rutinas.\n• Shitsuke · Disciplina: recorridos periódicos, retroalimentación y hábito.\n• Nunca acumules materiales en pasillos ni en rutas de evacuación.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación 5S",
+            "url": "presentaciones/metodologia-5s.html"
+          },
+          {
+            "nombre": "Guía rápida 5S (PDF)",
+            "url": "materiales/metodologia-5s-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
       {
-        "pregunta": "¿Cuál es el objetivo principal?",
+        "pregunta": "¿Cuál es el objetivo principal de las 5S?",
         "opciones": [
-          "Acumular materiales",
           "Mantener espacios seguros y eficientes",
-          "Cambiar horarios"
+          "Reducir personal",
+          "Comprar más mobiliario",
+          "Cambiar de oficina cada año"
         ],
-        "correcta": 1
+        "correcta": 0
       },
       {
         "pregunta": "La primera S (Seiri) significa:",
         "opciones": [
-          "Clasificar",
           "Limpiar",
+          "Clasificar",
+          "Ordenar",
           "Disciplina"
         ],
-        "correcta": 0
+        "correcta": 1
+      },
+      {
+        "pregunta": "La tarjeta roja se usa para:",
+        "opciones": [
+          "Premiar al mejor empleado",
+          "Señalar una ruta de evacuación",
+          "Marcar lo innecesario, dañado o caducado",
+          "Identificar medicamentos de alto riesgo"
+        ],
+        "correcta": 2
       },
       {
         "pregunta": "\"Un lugar para cada cosa y cada cosa en su lugar\" corresponde a:",
         "opciones": [
           "Clasificar (Seiri)",
-          "Ordenar (Seiton)",
-          "Estandarizar (Seiketsu)"
+          "Limpiar (Seiso)",
+          "Disciplina (Shitsuke)",
+          "Ordenar (Seiton)"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Al ordenar, lo que se usa a diario debe estar:",
+        "opciones": [
+          "Más cerca del lugar de uso",
+          "En la bodega",
+          "En el piso",
+          "Bajo llave en otra área"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "\"Primero en caducar, primero en salir\" ayuda a:",
+        "opciones": [
+          "Gastar más",
+          "Evitar mermas por caducidad",
+          "Ocultar faltantes",
+          "Ordenar alfabéticamente"
         ],
         "correcta": 1
       },
       {
-        "pregunta": "Estandarizar implica:",
+        "pregunta": "En la tercera S, limpiar también significa:",
         "opciones": [
-          "Comprar material nuevo",
-          "Cambiar de área de trabajo",
-          "Establecer normas visuales y rutinas para mantener lo logrado"
+          "Tirar todo",
+          "Pintar el área",
+          "Inspeccionar y detectar fallas",
+          "Mover los muebles"
         ],
         "correcta": 2
       },
       {
+        "pregunta": "Estandarizar implica:",
+        "opciones": [
+          "Cambiar las reglas cada semana",
+          "Que cada quien ordene a su manera",
+          "Eliminar las listas de verificación",
+          "Establecer normas visuales y rutinas para mantener lo logrado"
+        ],
+        "correcta": 3
+      },
+      {
         "pregunta": "La quinta S (Shitsuke) se refiere a:",
         "opciones": [
-          "Seguridad del paciente",
           "Disciplina y mejora sostenida",
-          "Sustitución de equipo"
+          "Comprar insumos",
+          "Clasificar documentos",
+          "Limpiar ventanas"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Una foto del área “como debe estar” es un ejemplo de:",
+        "opciones": [
+          "Clasificar",
+          "Estandarizar",
+          "Limpiar",
+          "Desechar"
         ],
         "correcta": 1
+      },
+      {
+        "pregunta": "Las cajas almacenadas en un pasillo de evacuación:",
+        "opciones": [
+          "Son aceptables si son pocas",
+          "Ayudan a ahorrar espacio",
+          "Deben retirarse de inmediato",
+          "Se dejan hasta fin de mes"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Al limpiar encuentras un cable dañado. ¿Qué haces?",
+        "opciones": [
+          "Lo cubres con cinta y sigues",
+          "Lo ignoras",
+          "Lo desconectas y lo guardas",
+          "Lo reportas para su reparación"
+        ],
+        "correcta": 3
       }
     ],
     "dirigido": "Personal administrativo, de almacén y de servicios.",
     "nivel": "Básico",
     "objetivos": [
-      "Explicar las cinco etapas de la metodología.",
-      "Ordenar el área de trabajo con criterios visuales.",
-      "Sostener la disciplina de mejora continua."
+      "Describir las cinco etapas de la metodología.",
+      "Aplicar clasificación, orden y limpieza en el área propia.",
+      "Mantener lo logrado con estándares visuales y disciplina."
     ]
   },
   {
@@ -2576,28 +3341,41 @@ var CCE_CATALOG = [
     "orden": 15,
     "lecciones": [
       {
-        "titulo": "Prevención y respuesta",
-        "duracion": "15 min",
-        "texto": "Hidrátate, reconoce signos y traslada a la persona a un sitio fresco.",
-        "segundosMinimos": 20
+        "tipo": "lectura",
+        "titulo": "Enfermedades por calor: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo basada en la NOM-015-STPS-2001 (condiciones térmicas elevadas) y en recomendaciones de salud ocupacional.\n\n• Mayor riesgo: patrulla de playa, ambulancias, seguridad, mantenimiento, cocina y lavandería.\n• Factores: sol directo, humedad, esfuerzo, ropa o EPP pesado, poca agua y falta de aclimatación.\n• Personal de nuevo ingreso o que regresa de vacaciones: exposición gradual durante la primera semana.\n• Prevención: un vaso de agua cada 15 a 20 minutos en trabajo intenso, pausas a la sombra, ropa ligera y trabajo en pareja.\n• Agotamiento: sudoración intensa, debilidad, mareo, náusea; lugar fresco, aflojar ropa y sorbos de agua.\n• Golpe de calor: confusión, desmayo o convulsiones y piel muy caliente; es una urgencia médica.\n• Ante golpe de calor: pedir atención inmediata y enfriar (agua fría, hielo en cuello, axilas e ingles); no dar líquidos si está confundido.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Enfermedades por calor",
+            "url": "presentaciones/prevencion-calor.html"
+          },
+          {
+            "nombre": "Guía rápida Enfermedades por calor (PDF)",
+            "url": "materiales/prevencion-calor-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
       {
-        "pregunta": "Ante signos de agotamiento debe:",
+        "pregunta": "Ante signos de agotamiento por calor se debe:",
         "opciones": [
-          "Continuar trabajando",
           "Trasladar a lugar fresco e hidratar",
-          "Administrar café"
+          "Seguir trabajando más despacio",
+          "Dar una bebida alcohólica",
+          "Cubrir con una cobija"
         ],
-        "correcta": 1
+        "correcta": 0
       },
       {
-        "pregunta": "Son signos de alarma de agotamiento por calor:",
+        "pregunta": "Son signos de agotamiento por calor:",
         "opciones": [
-          "Apetito aumentado y somnolencia leve",
+          "Piel seca y fría sin síntomas",
           "Sudoración intensa, mareo y debilidad",
-          "Manos frías sin otros síntomas"
+          "Hambre y sueño",
+          "Tos y estornudos"
         ],
         "correcta": 1
       },
@@ -2605,36 +3383,109 @@ var CCE_CATALOG = [
         "pregunta": "Una medida preventiva es:",
         "opciones": [
           "Esperar a tener sed para beber",
-          "Usar ropa oscura y gruesa",
-          "Hidratarse con frecuencia y hacer pausas en zonas frescas"
+          "Trabajar solo para concentrarse",
+          "Hidratarse con frecuencia y hacer pausas en zonas frescas",
+          "Usar ropa oscura y gruesa"
         ],
         "correcta": 2
+      },
+      {
+        "pregunta": "En trabajo intenso con calor se recomienda beber:",
+        "opciones": [
+          "Solo al final del turno",
+          "Un litro de golpe al inicio",
+          "Bebidas energéticas",
+          "Un vaso de agua cada 15 a 20 minutos"
+        ],
+        "correcta": 3
       },
       {
         "pregunta": "Si la persona presenta confusión o pérdida del estado de alerta:",
         "opciones": [
           "Es una urgencia: activar atención médica inmediata",
-          "Darle de beber aunque no pueda tragar",
-          "Dejarla descansar sola"
+          "Debe descansar y esperar",
+          "Se le da agua aunque no pueda tragar",
+          "Se le pide que siga trabajando"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Ante un golpe de calor, mientras llega la ayuda:",
+        "opciones": [
+          "Se abriga a la persona",
+          "Se enfría de inmediato con agua fría y compresas",
+          "Se le da café",
+          "Se le deja sola para que descanse"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Dónde se colocan compresas frías o hielo para enfriar más rápido?",
+        "opciones": [
+          "En los pies",
+          "En la espalda baja",
+          "En cuello, axilas e ingles",
+          "En las manos"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "A una persona confundida o inconsciente por calor:",
+        "opciones": [
+          "Se le dan líquidos abundantes",
+          "Se le da una bebida azucarada",
+          "Se le obliga a caminar",
+          "No se le dan líquidos por boca"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Quién es más vulnerable al calor?",
+        "opciones": [
+          "El personal de nuevo ingreso aún no aclimatado",
+          "Quien trabaja en oficinas con clima",
+          "Quien trabaja de noche en interiores",
+          "Nadie en particular"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Tiene mayor riesgo el personal que:",
         "opciones": [
-          "Trabaja en oficina climatizada",
+          "Trabaja en oficina con aire acondicionado",
           "Trabaja al exterior en las horas de mayor temperatura",
+          "Trabaja en archivo",
           "Trabaja en turno nocturno en interiores"
         ],
         "correcta": 1
+      },
+      {
+        "pregunta": "Trabajar en pareja en ambientes calurosos sirve para:",
+        "opciones": [
+          "Terminar más rápido",
+          "Compartir el agua",
+          "Que un compañero detecte síntomas que tú no notas",
+          "Evitar las pausas"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Qué norma regula las condiciones térmicas elevadas en el trabajo?",
+        "opciones": [
+          "NOM-087",
+          "NOM-004",
+          "NOM-018",
+          "NOM-015-STPS-2001"
+        ],
+        "correcta": 3
       }
     ],
     "dirigido": "Personal que trabaja al exterior o en áreas calurosas.",
     "nivel": "Básico",
     "objetivos": [
-      "Identificar los factores de riesgo de agotamiento por calor.",
-      "Reconocer los signos de alarma.",
-      "Aplicar la respuesta inmediata."
+      "Identificar los factores de riesgo por calor en su puesto.",
+      "Reconocer los signos de agotamiento y de golpe de calor.",
+      "Aplicar las medidas de prevención y de respuesta inmediata."
     ]
   },
   {
@@ -2647,19 +3498,41 @@ var CCE_CATALOG = [
     "orden": 16,
     "lecciones": [
       {
-        "titulo": "Recepción y notificación",
-        "duracion": "15 min",
-        "texto": "Mantén la calma, registra datos y activa el protocolo sin difundir rumores.",
-        "segundosMinimos": 20
+        "tipo": "lectura",
+        "titulo": "Código Negro: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo basada en los códigos de emergencia del Manual de la Organización 2026 y en prácticas de protección civil.\n\n• Código Negro: amenaza de bomba u objeto sospechoso, por cualquier medio. Toda amenaza se toma en serio.\n• Llamada: no cuelgues, prolonga la conversación, anota palabras exactas, hora y número, y pide a un compañero que avise.\n• Pregunta cuándo, dónde, cómo es, qué la haría explotar, por qué y quién llama; observa voz y ruidos de fondo.\n• Objeto sospechoso: no tocar, mover, abrir ni cubrir; alejarse, impedir el paso y avisar desde un teléfono fijo lejano; evitar radios y celulares cerca.\n• Amenaza escrita o por correo: manipular lo mínimo, no borrar ni reenviar, y avisar.\n• Evacuar solo por instrucción de la brigada, por las rutas indicadas y sin regresar hasta autorización.\n• No difundir la amenaza en redes ni chats. Extensiones: SJC 201 y 204; CSL 101 y 106; externo 911.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Código Negro",
+            "url": "presentaciones/codigo-negro-amenaza-bomba.html"
+          },
+          {
+            "nombre": "Guía rápida Código Negro (PDF)",
+            "url": "materiales/codigo-negro-amenaza-bomba-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
       {
-        "pregunta": "¿Qué debe hacerse primero?",
+        "pregunta": "¿Qué código institucional corresponde a una amenaza de bomba?",
         "opciones": [
-          "Difundir en redes",
-          "Registrar datos y activar protocolo",
-          "Manipular objetos sospechosos"
+          "Código Negro",
+          "Código Rojo",
+          "Código Verde",
+          "Código Plata"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Qué debe hacerse primero al recibir la amenaza?",
+        "opciones": [
+          "Colgar y salir del edificio",
+          "Registrar datos y activar el protocolo",
+          "Publicarlo en el chat del área",
+          "Buscar el objeto por tu cuenta"
         ],
         "correcta": 1
       },
@@ -2668,44 +3541,108 @@ var CCE_CATALOG = [
         "opciones": [
           "Colgar de inmediato",
           "Discutir con quien llama",
-          "Mantener la calma, prolongar la llamada y anotar detalles"
+          "Mantener la calma, prolongar la llamada y anotar detalles",
+          "Transferirla a cualquier extensión"
         ],
         "correcta": 2
+      },
+      {
+        "pregunta": "¿Qué conviene anotar de la llamada?",
+        "opciones": [
+          "Solo la hora",
+          "Nada, basta con recordarlo",
+          "Solo si la voz era de hombre o mujer",
+          "Palabras exactas, hora, número, voz y ruidos de fondo"
+        ],
+        "correcta": 3
       },
       {
         "pregunta": "Ante un objeto sospechoso:",
         "opciones": [
           "No tocarlo, alejarse y dar aviso",
-          "Tocarlo para verificar",
-          "Moverlo a otro sitio"
+          "Abrirlo para revisarlo",
+          "Moverlo a un lugar seguro",
+          "Cubrirlo con una manta"
         ],
         "correcta": 0
       },
       {
         "pregunta": "El uso de radios y celulares cerca de un objeto sospechoso:",
         "opciones": [
-          "Se recomienda",
+          "Es recomendable para avisar más rápido",
           "Debe evitarse",
-          "Es indistinto"
+          "No tiene importancia",
+          "Solo se permite a Seguridad"
         ],
         "correcta": 1
       },
       {
-        "pregunta": "La evacuación se realiza:",
+        "pregunta": "Si la amenaza llega por correo electrónico:",
         "opciones": [
-          "Por el elevador",
-          "Cada quien como pueda",
-          "Por las rutas que indique la brigada"
+          "Se borra para no alarmar",
+          "Se reenvía a todo el personal",
+          "Se conserva sin borrar ni reenviar y se avisa",
+          "Se responde al remitente"
         ],
         "correcta": 2
+      },
+      {
+        "pregunta": "La evacuación se realiza:",
+        "opciones": [
+          "Por la salida más cercana a tu casa",
+          "Cuando cada quien lo decida",
+          "Solo si hay humo",
+          "Por las rutas que indique la brigada"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Después de evacuar, se puede regresar al edificio:",
+        "opciones": [
+          "Cuando la autoridad lo autorice",
+          "A los 10 minutos",
+          "Cuando el jefe de área quiera",
+          "En cuanto pase el susto"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Compartir la amenaza en redes sociales:",
+        "opciones": [
+          "Ayuda a que todos se enteren",
+          "No debe hacerse: genera pánico y rumores",
+          "Es obligatorio",
+          "Solo si se omite el nombre del hospital"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "En San José del Cabo, la extensión general es:",
+        "opciones": [
+          "101",
+          "106",
+          "201",
+          "204"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Para avisar de un objeto sospechoso conviene usar:",
+        "opciones": [
+          "El radio junto al objeto",
+          "El celular al lado del objeto",
+          "Un mensaje en redes sociales",
+          "Un teléfono fijo alejado del objeto"
+        ],
+        "correcta": 3
       }
     ],
     "dirigido": "Todo el personal, en especial recepción, telefonía y seguridad.",
     "nivel": "Básico",
     "objetivos": [
-      "Registrar los datos de una amenaza telefónica.",
-      "Actuar ante un objeto sospechoso.",
-      "Seguir las rutas de evacuación indicadas."
+      "Recibir y registrar una amenaza de bomba.",
+      "Actuar ante un objeto sospechoso sin poner en riesgo a nadie.",
+      "Activar el Código Negro y seguir las instrucciones de evacuación."
     ]
   },
   {
@@ -2718,34 +3655,111 @@ var CCE_CATALOG = [
     "orden": 17,
     "lecciones": [
       {
-        "titulo": "Nuestra cultura",
-        "duracion": "15 min",
-        "texto": "Conoce misión, valores y compromiso con la seguridad del paciente.",
-        "segundosMinimos": 20
-      },
-      {
-        "titulo": "Normas de trabajo",
-        "duracion": "20 min",
-        "texto": "Revisa asistencia, confidencialidad, imagen y canales de atención.",
-        "segundosMinimos": 20
+        "tipo": "lectura",
+        "titulo": "Inducción: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo basada en el Manual de la Organización 2026 de la Dirección de Capital Humano.\n\n• Más de 20 años de servicio: 4 hospitales, clínica Loreto, 8 walk-in, 58 ambulancias y 39 especialidades, con urgencias 24/7.\n• Misión: conocimientos médicos de excelencia, servicio con alto nivel ético y tecnología avanzada para una atención integral.\n• Visión: ser el mejor hospital con servicios médicos turísticos de nivel internacional y alta responsabilidad humana.\n• Valores: ética profesional, responsabilidad y compasión; código de ética de nueve compromisos.\n• Tu contrato y tu Reglamento Interior corresponden a la razón social que te contrató.\n• Prestaciones de ley y superiores: consulta gratuita 24/7 para ti y tu familia directa y 40 % de descuento en servicios.\n• Reglamento: 15 minutos antes, checador, uniforme completo y gafete visible; teléfono con nombre del hospital o área y tu nombre.\n• Vacaciones según la LFT (12 días al primer año); periodo institucional del 1 de junio al 30 de octubre.\n• Códigos de emergencia: Azul paro, Rojo fuego, Verde evacuación, Negro bomba, entre otros.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Inducción",
+            "url": "presentaciones/induccion-institucional.html"
+          },
+          {
+            "nombre": "Guía rápida Inducción (PDF)",
+            "url": "materiales/induccion-institucional-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
       {
-        "pregunta": "La seguridad del paciente corresponde a:",
+        "pregunta": "¿Cuáles son los tres valores institucionales?",
         "opciones": [
-          "Solo Calidad",
-          "Todo el personal",
-          "Solo personal clínico"
+          "Ética profesional, responsabilidad y compasión",
+          "Puntualidad, orden y limpieza",
+          "Rapidez, eficiencia y ahorro",
+          "Lealtad, silencio y obediencia"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Nuestra visión es ser el mejor hospital con:",
+        "opciones": [
+          "Los precios más bajos",
+          "Servicios médicos turísticos de nivel internacional y alta responsabilidad humana",
+          "Más sucursales que la competencia",
+          "Solo atención a extranjeros"
         ],
         "correcta": 1
       },
       {
-        "pregunta": "La información de pacientes y colaboradores es:",
+        "pregunta": "¿Con cuántas ambulancias cuenta el grupo según el Manual de la Organización?",
         "opciones": [
-          "Confidencial y de uso exclusivamente laboral",
-          "Pública",
-          "Apta para compartirse en redes sociales"
+          "8",
+          "39",
+          "58",
+          "4"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Tu contrato y tu Reglamento Interior corresponden a:",
+        "opciones": [
+          "El hospital más cercano a tu casa",
+          "La sede donde hiciste la entrevista",
+          "Cualquier empresa del grupo",
+          "La razón social que te contrató"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Con cuánto tiempo de anticipación debes llegar a tu turno?",
+        "opciones": [
+          "15 minutos",
+          "Justo a la hora",
+          "5 minutos",
+          "1 hora"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "El gafete institucional debe:",
+        "opciones": [
+          "Guardarse durante la jornada",
+          "Portarse visible durante la jornada",
+          "Prestarse a otros colaboradores",
+          "Usarse solo en la entrada"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Cómo se contesta una llamada interna?",
+        "opciones": [
+          "“¿Bueno?”",
+          "“¿Quién habla?”",
+          "“Departamento de (área), le atiende (nombre)”",
+          "“Diga”"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Qué prestación es superior a la ley?",
+        "opciones": [
+          "Aguinaldo",
+          "IMSS",
+          "Prima vacacional",
+          "Consulta gratuita 24/7 para ti y tu familia directa"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Cuántos días de vacaciones corresponden al cumplir un año de servicio?",
+        "opciones": [
+          "12",
+          "6",
+          "20",
+          "15"
         ],
         "correcta": 0
       },
@@ -2754,35 +3768,38 @@ var CCE_CATALOG = [
         "opciones": [
           "Seguridad",
           "Capital Humano",
-          "Mantenimiento"
+          "Mantenimiento",
+          "Farmacia"
         ],
         "correcta": 1
       },
       {
-        "pregunta": "El gafete institucional debe:",
+        "pregunta": "El Código Rojo significa:",
         "opciones": [
-          "Guardarse durante la jornada",
-          "Prestarse a otros colaboradores",
-          "Portarse visible durante la jornada"
+          "Paro cardiorrespiratorio",
+          "Evacuación",
+          "Alerta de fuego",
+          "Amenaza de bomba"
         ],
         "correcta": 2
       },
       {
-        "pregunta": "Los incidentes y eventos adversos:",
+        "pregunta": "La información de pacientes y colaboradores es:",
         "opciones": [
-          "Se reportan por los canales institucionales",
-          "Se ocultan para evitar sanciones",
-          "Solo se comentan con compañeros"
+          "Pública",
+          "Apta para compartirse en redes sociales",
+          "De libre consulta para cualquiera",
+          "Confidencial y de uso exclusivamente laboral"
         ],
-        "correcta": 0
+        "correcta": 3
       }
     ],
     "dirigido": "Colaboradores de nuevo ingreso.",
     "nivel": "Básico",
     "objetivos": [
-      "Conocer la misión, los valores y la cultura de seguridad.",
-      "Identificar las normas de trabajo y confidencialidad.",
-      "Saber a qué área acudir para cada trámite."
+      "Conocer la misión, la visión, los valores y el código de ética.",
+      "Identificar las normas de trabajo, prestaciones y derechos al ingresar.",
+      "Reconocer los códigos de emergencia y a qué área acudir para cada trámite."
     ]
   },
   {
@@ -2795,11 +3812,29 @@ var CCE_CATALOG = [
     "orden": 18,
     "lecciones": [
       {
+        "tipo": "video",
         "titulo": "Gestión de consentimientos informados",
         "duracion": "3:10 min",
         "texto": "Aprende a localizar el formato correspondiente, seleccionar al médico tratante, completar los datos del procedimiento y obtener la autorización del paciente.",
         "video": "consentimientos-informados-sistema-clinico.mp4",
         "segundosMinimos": 171
+      },
+      {
+        "tipo": "lectura",
+        "titulo": "Consentimiento informado: requisitos",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo basada en la NOM-004-SSA3-2012 del expediente clínico, complementaria al video del sistema.\n\n• La carta de consentimiento bajo información acepta un procedimiento después de recibir información de riesgos y beneficios; es un derecho del paciente.\n• Se requiere como mínimo en ingreso hospitalario, cirugía mayor, anestesia general o regional, salpingoclasia y vasectomía, donación y trasplante, investigación, necropsia, procedimientos de alto riesgo y procedimientos que impliquen mutilación.\n• Contenido: establecimiento y título, lugar y fecha, acto autorizado, riesgos y beneficios, autorización para contingencias, y nombre y firma del paciente o representante, del médico y de dos testigos.\n• En el sistema: Cartas y consentimientos, médico tratante, datos del procedimiento, explicación, impresión y firmas.\n• Si el procedimiento no aparece, se usa el consentimiento informado general.\n• Antes de la firma: explicar qué, beneficios, riesgos y alternativas, y confirmar que entendió.\n• El rechazo o la revocación se documentan; en una urgencia sin posibilidad de obtenerlo, se actúa y se deja constancia.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Consentimiento informado",
+            "url": "presentaciones/consentimiento-informado.html"
+          },
+          {
+            "nombre": "Guía rápida Consentimiento informado (PDF)",
+            "url": "materiales/consentimiento-informado-guia-rapida.pdf"
+          }
+        ]
       }
     ],
     "evaluacion": [
@@ -2807,36 +3842,129 @@ var CCE_CATALOG = [
         "pregunta": "¿Dónde se localizan los consentimientos dentro del expediente?",
         "opciones": [
           "En Cartas y consentimientos",
+          "En Signos vitales",
           "En Facturación",
-          "En Agenda médica"
+          "En Agenda"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Si el procedimiento no aparece en la lista, ¿qué debe utilizarse?",
         "opciones": [
-          "Una nota libre sin formato",
+          "Ningún formato",
           "El consentimiento informado general",
-          "Un formato de otro paciente"
+          "El formato de otro procedimiento parecido",
+          "Una nota en la receta"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Antes de obtener la firma del paciente se debe:",
         "opciones": [
-          "Imprimir sin revisar",
+          "Entregar el formato sin explicación",
+          "Firmar en su nombre",
           "Explicar el procedimiento, beneficios, riesgos y alternativas",
-          "Solicitar únicamente el nombre"
+          "Esperar al alta"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Qué norma establece los requisitos del consentimiento informado en el expediente?",
+        "opciones": [
+          "NOM-087",
+          "NOM-018",
+          "NOM-035",
+          "NOM-004-SSA3-2012"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿En cuál de estos casos se requiere carta de consentimiento?",
+        "opciones": [
+          "Cirugía mayor",
+          "Toma de temperatura",
+          "Entrega de un folleto",
+          "Cambio de habitación"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuántos testigos firman la carta de consentimiento?",
+        "opciones": [
+          "Ninguno",
+          "Dos",
+          "Uno",
+          "Cuatro"
         ],
         "correcta": 1
+      },
+      {
+        "pregunta": "¿Quién firma como responsable de proporcionar la información?",
+        "opciones": [
+          "El cajero",
+          "El familiar",
+          "El médico que informa y recaba el consentimiento",
+          "El personal de seguridad"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Si el paciente es menor de edad, firma:",
+        "opciones": [
+          "El propio menor",
+          "Cualquier acompañante",
+          "El médico tratante",
+          "Su padre, madre, tutor o representante legal"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Si el paciente rechaza el procedimiento después de ser informado:",
+        "opciones": [
+          "Se documenta la explicación y su decisión",
+          "Se le obliga a firmar",
+          "Se omite del expediente",
+          "Se cancela su atención"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Las alternativas que se explican al paciente incluyen:",
+        "opciones": [
+          "Solo la cirugía",
+          "También la opción de no realizar el procedimiento",
+          "Únicamente las más costosas",
+          "Ninguna"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "En una urgencia con riesgo para la vida, sin posibilidad de obtener el consentimiento:",
+        "opciones": [
+          "Se espera a que llegue un familiar",
+          "Se traslada sin atender",
+          "Se actúa y se deja constancia en el expediente",
+          "Se pide la firma de cualquier persona"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "La carta debe incluir, entre otros datos:",
+        "opciones": [
+          "El costo del procedimiento",
+          "La opinión del familiar",
+          "El número de habitación",
+          "Los riesgos y beneficios esperados del acto autorizado"
+        ],
+        "correcta": 3
       }
     ],
     "dirigido": "Médicos y personal que gestiona expedientes clínicos.",
     "nivel": "Básico",
     "objetivos": [
-      "Localizar el formato de consentimiento en el expediente.",
-      "Personalizar los datos del procedimiento.",
-      "Explicar beneficios, riesgos y alternativas antes de la firma."
+      "Identificar cuándo se requiere una carta de consentimiento informado.",
+      "Generar en el sistema un consentimiento completo y correcto.",
+      "Explicar el procedimiento y documentar casos especiales."
     ]
   },
   {
@@ -5825,6 +6953,791 @@ var CCE_CATALOG = [
       "Almacenar, recibir y controlar el inventario de medicamentos.",
       "Participar en la conciliación, la idoneidad y la farmacovigilancia."
     ]
+  },
+  {
+    "id": "aesp4",
+    "titulo": "AESP 4: Seguridad en los procedimientos",
+    "area": "Calidad y Seguridad",
+    "horas": 1,
+    "obligatorio": false,
+    "descripcion": "Marcado del sitio quirúrgico, lista de verificación de la seguridad de la cirugía y tiempo fuera en procedimientos dentro y fuera del quirófano.",
+    "orden": 3.2,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "AESP 4: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo basada en el Acuerdo por el que se declara la obligatoriedad de las Acciones Esenciales para la Seguridad del Paciente (DOF 2017, modificado en 2023).\n\n• Objetivo: paciente, procedimiento y sitio correctos. El procedimiento en sitio o paciente equivocado es un evento centinela.\n• Marcado del sitio: lo realiza el cirujano responsable antes de entrar a quirófano, en órganos bilaterales, estructuras múltiples o niveles, con participación del paciente o de un familiar.\n• Marca en diana con las iniciales del cirujano; en oftalmología, punto sobre la ceja. Marcado documental en mucosas, sitios difíciles, dental, prematuros o rechazo.\n• Entrada (antes de la inducción): identidad, sitio, procedimiento, consentimiento, equipo de anestesia, alergias, vía aérea y riesgo de sangrado.\n• Pausa quirúrgica (antes de la incisión): presentación del equipo, confirmación de paciente, procedimiento, sitio y posición, y eventos críticos esperados.\n• Salida (antes de dejar la sala): procedimiento realizado, recuento completo, muestras etiquetadas, plan de recuperación y firmas.\n• Tiempo fuera fuera de quirófano: transfusiones, hemodiálisis, biopsias, contraste, accesos vasculares, catéteres y otros procedimientos invasivos.\n• Cualquiera puede detener el procedimiento si algo no coincide.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación AESP 4",
+            "url": "presentaciones/aesp4-seguridad-procedimientos.html"
+          },
+          {
+            "nombre": "Guía rápida AESP 4 (PDF)",
+            "url": "materiales/aesp4-seguridad-procedimientos-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "¿Quién marca el sitio quirúrgico?",
+        "opciones": [
+          "El cirujano responsable del procedimiento",
+          "La enfermera circulante",
+          "El camillero",
+          "El paciente por su cuenta"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuándo se marca el sitio quirúrgico?",
+        "opciones": [
+          "Después de la incisión",
+          "Antes de que el paciente entre a quirófano",
+          "Durante la anestesia",
+          "Al terminar la cirugía"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿En qué casos se marca el sitio?",
+        "opciones": [
+          "En todas las cirugías sin excepción",
+          "Solo en cirugía estética",
+          "En órganos bilaterales, estructuras múltiples o niveles",
+          "Solo en niños"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "En cirugía oftalmológica la marca se coloca:",
+        "opciones": [
+          "Sobre el párpado cerrado",
+          "En la frente al centro",
+          "En la mano del lado correcto",
+          "Como un punto sobre la ceja del lado correcto"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "La fase de Entrada de la lista de verificación se realiza:",
+        "opciones": [
+          "Antes de la inducción anestésica",
+          "Después de la incisión",
+          "En recuperación",
+          "Al día siguiente"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "La pausa quirúrgica o tiempo fuera se realiza:",
+        "opciones": [
+          "Antes de la inducción",
+          "Inmediatamente antes de la incisión",
+          "Al cerrar la herida",
+          "En el pasillo"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "En la pausa quirúrgica, cada integrante del equipo:",
+        "opciones": [
+          "Firma sin hablar",
+          "Sale de la sala",
+          "Se presenta por su nombre y función",
+          "Revisa su celular"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Qué se confirma en la fase de Salida?",
+        "opciones": [
+          "El costo de la cirugía",
+          "La dieta del paciente",
+          "El turno siguiente",
+          "El recuento completo de instrumental, gasas y agujas"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué riesgo de sangrado en adultos exige preparar accesos y hemoderivados?",
+        "opciones": [
+          "Más de 500 mL",
+          "Más de 50 mL",
+          "Más de 5 litros",
+          "No se valora"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuál de estos procedimientos fuera del quirófano requiere tiempo fuera?",
+        "opciones": [
+          "Toma de signos vitales",
+          "Transfusión de sangre",
+          "Cambio de sábanas",
+          "Entrega de dieta"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Si durante la pausa el lado del consentimiento no coincide con el marcado:",
+        "opciones": [
+          "Se continúa y se aclara después",
+          "Se corrige el consentimiento a mano sin decir nada",
+          "Se detiene el procedimiento y se aclara",
+          "Decide el más antiguo del equipo"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "La lista de verificación debe:",
+        "opciones": [
+          "Llenarse al final de memoria",
+          "Llenarla solo el cirujano",
+          "Guardarse en el quirófano",
+          "Verificarse en voz alta en el momento, firmarse e integrarse al expediente"
+        ],
+        "correcta": 3
+      }
+    ],
+    "dirigido": "Personal de quirófano, hemodinamia, endoscopia, imagenología, hemodiálisis, urgencias y médicos que realizan procedimientos.",
+    "nivel": "Intermedio",
+    "objetivos": [
+      "Aplicar el marcado del sitio quirúrgico conforme a la AESP 4.",
+      "Completar las tres fases de la lista de verificación en el momento correcto.",
+      "Realizar el tiempo fuera en procedimientos fuera del quirófano."
+    ]
+  },
+  {
+    "id": "aesp7",
+    "titulo": "AESP 7: Registro y análisis de eventos centinela, adversos y cuasi fallas",
+    "area": "Calidad y Seguridad",
+    "horas": 1,
+    "obligatorio": true,
+    "descripcion": "Clasificación, reporte inmediato y análisis de cuasi fallas, eventos adversos y eventos centinela, con enfoque no punitivo.",
+    "orden": 3.7,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "AESP 7: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo basada en el Acuerdo de Acciones Esenciales para la Seguridad del Paciente (DOF 2017, modificado en 2023) y en el Manual de la Organización 2026.\n\n• Objetivo: aprender de lo que falló o estuvo a punto de fallar. Reportar no busca culpables.\n• Cuasi falla: no llegó al paciente gracias a una intervención oportuna.\n• Evento adverso: hecho ajeno a la enfermedad que causa daño leve o moderado por la atención.\n• Evento centinela: muerte, pérdida permanente de una función u órgano, o lesión psicológica grave.\n• Ante un evento: atiende al paciente, avisa al jefe y al médico, conserva el material involucrado y reporta de inmediato en la plataforma de Calidad.\n• El reporte describe hechos (qué, cuándo, dónde, cómo se detectó y qué se hizo), sin juicios ni culpables; el registro es anónimo.\n• Todo evento centinela lleva análisis causa raíz; el Comité de Calidad y Seguridad del Paciente define mejoras y se difunden al personal.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación AESP 7",
+            "url": "presentaciones/aesp7-registro-eventos.html"
+          },
+          {
+            "nombre": "Guía rápida AESP 7 (PDF)",
+            "url": "materiales/aesp7-registro-eventos-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "¿Cuál es el propósito de reportar un evento?",
+        "opciones": [
+          "Aprender y evitar que vuelva a ocurrir",
+          "Encontrar al culpable",
+          "Llenar un requisito administrativo",
+          "Sancionar al área"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Un error de medicación detectado antes de administrarse es:",
+        "opciones": [
+          "Un evento centinela",
+          "Una cuasi falla",
+          "Un evento adverso grave",
+          "No es un evento"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Un hecho ajeno a la enfermedad que causa daño leve o moderado por la atención es:",
+        "opciones": [
+          "Una cuasi falla",
+          "Una complicación esperada",
+          "Un evento adverso",
+          "Un evento centinela"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Un evento que causa la muerte o la pérdida permanente de una función es:",
+        "opciones": [
+          "Una cuasi falla",
+          "Un incidente menor",
+          "Un evento adverso leve",
+          "Un evento centinela"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Ante un evento, lo primero es:",
+        "opciones": [
+          "Atender y proteger al paciente",
+          "Llenar el reporte",
+          "Buscar al responsable",
+          "Tomar fotos con el celular"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuándo se reporta un evento?",
+        "opciones": [
+          "Al final del mes",
+          "De inmediato, en cuanto se identifica",
+          "Solo si el paciente se queja",
+          "Solo si hubo daño grave"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Qué se hace con el medicamento o equipo involucrado?",
+        "opciones": [
+          "Se desecha",
+          "Se devuelve al almacén",
+          "Se conserva para el análisis",
+          "Se usa con otro paciente"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Cuál es una descripción adecuada en un reporte?",
+        "opciones": [
+          "“La compañera siempre se equivoca”",
+          "“Creo que fue por flojera”",
+          "“No sé qué pasó, pero fue culpa de otro turno”",
+          "“A las 14:10 se preparó el medicamento equivocado y se detectó en la doble verificación”"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué análisis se realiza en todo evento centinela?",
+        "opciones": [
+          "Análisis causa raíz",
+          "Encuesta de satisfacción",
+          "Auditoría financiera",
+          "Ninguno"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Quién define las mejoras a partir de los eventos analizados?",
+        "opciones": [
+          "Cada trabajador por su cuenta",
+          "El Comité de Calidad y Seguridad del Paciente",
+          "El área de compras",
+          "El paciente"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "¿Cuál es un ejemplo de evento centinela?",
+        "opciones": [
+          "Retraso de 10 minutos en la dieta",
+          "Cambio de habitación",
+          "Cirugía en el sitio o paciente incorrecto",
+          "Una cuasi falla detectada a tiempo"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "El registro de eventos es:",
+        "opciones": [
+          "Público con nombre del responsable",
+          "Una sanción automática",
+          "Opcional",
+          "Anónimo y no punitivo"
+        ],
+        "correcta": 3
+      }
+    ],
+    "dirigido": "Todo el personal, clínico y no clínico.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Distinguir cuasi falla, evento adverso y evento centinela.",
+      "Actuar y reportar de inmediato ante un evento.",
+      "Describir los hechos de forma objetiva y no punitiva."
+    ]
+  },
+  {
+    "id": "aesp8",
+    "titulo": "AESP 8: Cultura de seguridad del paciente",
+    "area": "Calidad y Seguridad",
+    "horas": 1,
+    "obligatorio": true,
+    "descripcion": "Qué es la cultura de seguridad, cómo se mide cada año y qué hace cada colaborador para fortalecerla.",
+    "orden": 3.8,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "AESP 8: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo basada en el Acuerdo de Acciones Esenciales para la Seguridad del Paciente (DOF 2017, modificado en 2023).\n\n• La cultura de seguridad resulta de valores, actitudes, percepciones y conductas que determinan el compromiso de la organización con la seguridad del paciente.\n• Una organización segura reconoce el riesgo, no culpa a quien reporta, colabora entre áreas y niveles e invierte en corregir.\n• Se mide cada año, de forma anónima, con el cuestionario de la DGCES, entre médicos y enfermería de todos los turnos con contacto directo.\n• Doce dimensiones: equipo en la unidad, acciones del jefe, aprendizaje, apoyo de la dirección, percepción de seguridad, retroalimentación, franqueza, frecuencia de reporte, trabajo entre unidades, dotación, cambios de turno y respuesta no punitiva.\n• Si ves un riesgo, dilo, con respeto y con datos, sin importar el puesto.\n• Tu papel: reportar sin miedo, comunicar en las entregas de turno, aprender de los resultados y participar en la medición.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación AESP 8",
+            "url": "presentaciones/aesp8-cultura-seguridad.html"
+          },
+          {
+            "nombre": "Guía rápida AESP 8 (PDF)",
+            "url": "materiales/aesp8-cultura-seguridad-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "La cultura de seguridad es:",
+        "opciones": [
+          "El resultado de valores, actitudes y conductas que determinan el compromiso con la seguridad",
+          "Un manual que se guarda en Calidad",
+          "Un trámite anual",
+          "La lista de sanciones del hospital"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Con qué frecuencia se mide la cultura de seguridad?",
+        "opciones": [
+          "Cada cinco años",
+          "Una vez al año",
+          "Solo cuando hay un evento centinela",
+          "Nunca"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "La encuesta de cultura de seguridad es:",
+        "opciones": [
+          "Con nombre y número de empleado",
+          "Obligatoria solo para jefes",
+          "Anónima",
+          "Pública"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Cuántas dimensiones evalúa el cuestionario?",
+        "opciones": [
+          "3",
+          "5",
+          "20",
+          "12"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Una organización con cultura de seguridad ante quien reporta un error:",
+        "opciones": [
+          "No lo castiga por reportar",
+          "Lo sanciona de inmediato",
+          "Lo cambia de área",
+          "Ignora el reporte"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Es una dimensión de la cultura de seguridad:",
+        "opciones": [
+          "Ventas del mes",
+          "Cambios de turno y transiciones",
+          "Número de camas",
+          "Precio de los servicios"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Si notas un riesgo en la indicación de un médico, debes:",
+        "opciones": [
+          "Callar porque tiene más jerarquía",
+          "Comentarlo después en el pasillo",
+          "Decirlo con respeto y con datos antes de continuar",
+          "Esperar al siguiente turno"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Quiénes participan en la medición anual?",
+        "opciones": [
+          "Solo directivos",
+          "Solo pacientes",
+          "Solo el área de Calidad",
+          "Médicos y enfermería de todos los turnos con contacto directo con pacientes"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Para qué sirven los resultados de la medición?",
+        "opciones": [
+          "Para orientar acciones de mejora",
+          "Para despedir personal",
+          "Para calcular bonos individuales",
+          "No se usan"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Qué conducta fortalece la cultura de seguridad?",
+        "opciones": [
+          "Ocultar cuasi fallas",
+          "Reportar sin miedo y comunicar en la entrega de turno",
+          "Trabajar sin coordinarse con otras áreas",
+          "Evitar preguntar"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Las otras siete Acciones Esenciales:",
+        "opciones": [
+          "No dependen de la cultura",
+          "Solo aplican en quirófano",
+          "Funcionan mejor cuando el equipo se siente seguro para hablar y reportar",
+          "Sustituyen a la cultura de seguridad"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Responder la encuesta con honestidad:",
+        "opciones": [
+          "Puede perjudicarte",
+          "Es opcional y no sirve",
+          "Debe hacerse en grupo",
+          "Ayuda a mejorar porque es anónima y no evalúa personas"
+        ],
+        "correcta": 3
+      }
+    ],
+    "dirigido": "Todo el personal, clínico y no clínico.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Explicar qué es la cultura de seguridad del paciente.",
+      "Conocer cómo y cada cuánto se mide.",
+      "Practicar conductas que fortalecen la cultura de seguridad."
+    ]
+  },
+  {
+    "id": "nom035",
+    "titulo": "NOM-035-STPS-2018: factores de riesgo psicosocial",
+    "area": "Capital Humano",
+    "horas": 1,
+    "obligatorio": true,
+    "descripcion": "Factores de riesgo psicosocial, entorno organizacional favorable, acontecimientos traumáticos severos y violencia laboral.",
+    "orden": 17.5,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "NOM-035: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo basada en la NOM-035-STPS-2018, Factores de riesgo psicosocial en el trabajo: identificación, análisis y prevención.\n\n• La norma previene los factores de riesgo psicosocial y la violencia laboral, y promueve un entorno organizacional favorable.\n• Factores: condiciones inseguras, cargas excesivas, falta de control, jornadas largas o rotación nocturna, interferencia trabajo-familia, liderazgo y relaciones negativas, y violencia laboral.\n• Entorno favorable: pertenencia, capacitación, responsabilidades claras, comunicación, cargas justas, jornadas legales y reconocimiento.\n• Acontecimiento traumático severo: hecho con muerte o amenaza real a la integridad; se reporta por escrito a Capital Humano para su canalización.\n• El centro de trabajo tiene política de prevención, evalúa al menos cada 2 años y ofrece mecanismos de queja seguros y confidenciales.\n• Guía I para eventos traumáticos; Guía II o III para factores de riesgo (III en centros de más de 50 trabajadores).\n• Tú cumples las medidas, no ejerces violencia, respondes los cuestionarios, reportas y asistes a las pláticas.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación NOM-035",
+            "url": "presentaciones/nom035-riesgo-psicosocial.html"
+          },
+          {
+            "nombre": "Guía rápida NOM-035 (PDF)",
+            "url": "materiales/nom035-riesgo-psicosocial-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "¿Qué regula la NOM-035-STPS-2018?",
+        "opciones": [
+          "Los factores de riesgo psicosocial en el trabajo",
+          "El manejo de residuos biológicos",
+          "Los extintores",
+          "El expediente clínico"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cuál es un factor de riesgo psicosocial?",
+        "opciones": [
+          "Tener vacaciones",
+          "Cargas de trabajo excesivas",
+          "Recibir capacitación",
+          "Tener responsabilidades claras"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Es una característica del entorno organizacional favorable:",
+        "opciones": [
+          "Jornadas sin límite",
+          "Liderazgo autoritario",
+          "Sentido de pertenencia y reconocimiento del desempeño",
+          "Aislamiento de los trabajadores"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Un acontecimiento traumático severo es, por ejemplo:",
+        "opciones": [
+          "Un cambio de turno",
+          "Una junta larga",
+          "Una evaluación de desempeño",
+          "Una agresión violenta durante el trabajo"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Si viviste un acontecimiento traumático severo en el trabajo debes:",
+        "opciones": [
+          "Informarlo por escrito a Capital Humano",
+          "Guardarlo para ti",
+          "Comentarlo solo en redes sociales",
+          "Renunciar"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Cada cuánto debe identificarse y analizarse el riesgo psicosocial, como mínimo?",
+        "opciones": [
+          "Cada 10 años",
+          "Cada 2 años",
+          "Solo una vez",
+          "Cada mes"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "La Guía de referencia I sirve para:",
+        "opciones": [
+          "Evaluar el clima de una sola área",
+          "Calcular el salario",
+          "Identificar a quienes vivieron un acontecimiento traumático severo",
+          "Medir la productividad"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "En centros de trabajo de más de 50 trabajadores se aplica, además de la Guía I:",
+        "opciones": [
+          "Ninguna otra",
+          "La Guía II solamente",
+          "Un examen médico general",
+          "La Guía III, que incluye el entorno organizacional"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Cuál de estas conductas es violencia laboral?",
+        "opciones": [
+          "Humillar o amenazar a un compañero",
+          "Dar retroalimentación respetuosa",
+          "Asignar tareas según el puesto",
+          "Pedir puntualidad"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Los mecanismos para presentar quejas deben ser:",
+        "opciones": [
+          "Públicos con nombre",
+          "Seguros y confidenciales",
+          "Solo verbales con el jefe",
+          "Inexistentes"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Es una obligación del trabajador:",
+        "opciones": [
+          "Diseñar la política de prevención",
+          "Aplicar los cuestionarios a otros",
+          "Participar respondiendo los cuestionarios y reportar violencia",
+          "Sancionar a sus compañeros"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Reportar una situación de violencia laboral:",
+        "opciones": [
+          "Debe evitarse para no causar problemas",
+          "Solo se permite a jefes",
+          "Genera represalias automáticas",
+          "Es confidencial y no debe generar represalias"
+        ],
+        "correcta": 3
+      }
+    ],
+    "dirigido": "Todo el personal.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Identificar los factores de riesgo psicosocial y la violencia laboral.",
+      "Conocer las obligaciones del centro de trabajo y de los trabajadores.",
+      "Saber cómo reportar violencia laboral y acontecimientos traumáticos severos."
+    ]
+  },
+  {
+    "id": "incendios",
+    "titulo": "Prevención y combate de incendios (NOM-002)",
+    "area": "Seguridad e Higiene",
+    "horas": 1,
+    "obligatorio": true,
+    "descripcion": "Clases de fuego, uso del extintor, Código Rojo, evacuación y requisitos de la NOM-002-STPS-2010.",
+    "orden": 12.1,
+    "lecciones": [
+      {
+        "tipo": "lectura",
+        "titulo": "Incendios: puntos clave",
+        "duracion": "10 min",
+        "texto": "Lectura de apoyo basada en la NOM-002-STPS-2010 (prevención y protección contra incendios) y en los códigos de emergencia del Manual de la Organización.\n\n• Código Rojo: alerta de fuego. Código Verde: evacuación.\n• El fuego necesita combustible, oxígeno, calor y reacción en cadena; el oxígeno medicinal lo acelera.\n• Clases: A sólidos, B líquidos y gases inflamables, C eléctricos, D metales, K aceites de cocina.\n• Extintores: PQS ABC para A, B y C; CO₂ para B y C (equipos eléctricos); agua solo para A; químico húmedo para K.\n• RACE: rescata, alerta (Código Rojo), contén cerrando puertas, y extingue solo si es pequeño y seguro; si no, evacúa.\n• Uso del extintor: jala el seguro, apunta a la base, aprieta la palanca y barre, con la salida a tu espalda.\n• Evacuación: sin elevadores, agachado bajo el humo, pacientes primero a zona segura del mismo piso, punto de reunión.\n• NOM-002: extintores visibles, señalizados, sin obstáculos y a no más de 1.50 m; revisión mensual; mantenimiento anual; simulacros al menos una vez al año.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
+        "segundosMinimos": 60,
+        "materiales": [
+          {
+            "nombre": "Presentación Incendios",
+            "url": "presentaciones/prevencion-incendios.html"
+          },
+          {
+            "nombre": "Guía rápida Incendios (PDF)",
+            "url": "materiales/prevencion-incendios-guia-rapida.pdf"
+          }
+        ]
+      }
+    ],
+    "evaluacion": [
+      {
+        "pregunta": "¿Qué código institucional corresponde a una alerta de fuego?",
+        "opciones": [
+          "Código Rojo",
+          "Código Azul",
+          "Código Negro",
+          "Código Ámbar"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "¿Qué elementos forman el fuego?",
+        "opciones": [
+          "Agua, aire y tierra",
+          "Combustible, oxígeno, calor y reacción en cadena",
+          "Solo calor",
+          "Humo y luz"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Un fuego en un equipo eléctrico energizado es de clase:",
+        "opciones": [
+          "A",
+          "B",
+          "C",
+          "K"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Un fuego de alcohol o solventes es de clase:",
+        "opciones": [
+          "A",
+          "D",
+          "K",
+          "B"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "¿Qué extintor NO debe usarse en un fuego eléctrico?",
+        "opciones": [
+          "De agua",
+          "De CO₂",
+          "De polvo químico seco ABC",
+          "Ninguno"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "El extintor de polvo químico seco ABC sirve para fuegos:",
+        "opciones": [
+          "Solo de cocina",
+          "Clase A, B y C",
+          "Solo de metales",
+          "Solo de papel"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "En la secuencia RACE, la “A” significa:",
+        "opciones": [
+          "Apagar primero",
+          "Abrir ventanas",
+          "Alertar: activar el Código Rojo y la alarma",
+          "Abandonar sin avisar"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "Al usar el extintor, el chorro se dirige a:",
+        "opciones": [
+          "La parte alta de las llamas",
+          "El humo",
+          "El techo",
+          "La base del fuego"
+        ],
+        "correcta": 3
+      },
+      {
+        "pregunta": "Si el fuego crece o hay humo denso:",
+        "opciones": [
+          "Sales y cierras la puerta",
+          "Sigues intentando apagarlo",
+          "Abres las ventanas",
+          "Usas el elevador"
+        ],
+        "correcta": 0
+      },
+      {
+        "pregunta": "Durante un incendio, los elevadores:",
+        "opciones": [
+          "Son la vía más rápida",
+          "No deben usarse",
+          "Solo los usan los pacientes",
+          "Se usan si hay poco humo"
+        ],
+        "correcta": 1
+      },
+      {
+        "pregunta": "Según la NOM-002, los extintores se colocan a una altura máxima de:",
+        "opciones": [
+          "2.50 m",
+          "1 m",
+          "1.50 m",
+          "3 m"
+        ],
+        "correcta": 2
+      },
+      {
+        "pregunta": "¿Cada cuánto se revisan los extintores según la NOM-002?",
+        "opciones": [
+          "Cada 5 años",
+          "Solo después de usarlos",
+          "Nunca",
+          "Cada mes"
+        ],
+        "correcta": 3
+      }
+    ],
+    "dirigido": "Todo el personal.",
+    "nivel": "Básico",
+    "objetivos": [
+      "Reconocer las clases de fuego y el extintor adecuado para cada una.",
+      "Actuar ante un fuego con la secuencia RACE y usar el extintor correctamente.",
+      "Evacuar de forma segura y conocer los requisitos de la NOM-002."
+    ]
   }
 ];
 
@@ -5839,8 +7752,12 @@ var CCE_ROUTES = [
       "aesp1",
       "aesp2",
       "aesp5",
+      "aesp6",
+      "aesp7",
+      "aesp8",
       "precauciones-estandar",
-      "trato-digno"
+      "trato-digno",
+      "nom035"
     ],
     "orden": 1
   },
@@ -5850,6 +7767,7 @@ var CCE_ROUTES = [
     "descripcion": "Procedimientos y controles que el personal de enfermería aplica en el día a día.",
     "cursos": [
       "aesp3",
+      "aesp4",
       "rpbi",
       "med-alto-riesgo",
       "gasometria",
@@ -5877,13 +7795,15 @@ var CCE_ROUTES = [
     "cursos": [
       "nom018",
       "epp",
+      "incendios",
       "accidentes-incidentes",
       "mejora-continua-sst",
       "codigo-amarillo",
       "huracanes",
       "calor",
       "bombas",
-      "5s"
+      "5s",
+      "nom035"
     ],
     "orden": 4
   },

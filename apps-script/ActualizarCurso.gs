@@ -35,6 +35,12 @@ function actualizarLoteOctubre() {
     'notas-medicas', 'farmacia-hospitalaria'].map(actualizarCursoDesdeCatalogo_);
 }
 
+function actualizarLoteMaterialesYNuevos() {
+  return ['aesp5', 'precauciones-estandar', 'trato-digno', 'gasometria', 'ekg', 'bls', 'med-alto-riesgo',
+    'nom018', '5s', 'calor', 'bombas', 'induccion-rh', 'consentimientos-sistema',
+    'aesp4', 'aesp7', 'aesp8', 'nom035', 'incendios'].map(actualizarCursoDesdeCatalogo_);
+}
+
 function actualizarCursoDesdeCatalogo_(id) {
   var c = CCE_CATALOG.filter(function (x) { return x.id === id; })[0];
   if (!c) throw new Error('El curso "' + id + '" no existe en Catalogo.gs.');
