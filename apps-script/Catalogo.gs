@@ -4149,7 +4149,7 @@ var CCE_CATALOG = [
           [
             80.7,
             86.8,
-            "Verifique su correcta implementación y, finalmente, documente todo el proceso para el cierre."
+            "verifique su correcta implementación y, finalmente, documente todo el proceso para el cierre."
           ],
           [
             87.2,
