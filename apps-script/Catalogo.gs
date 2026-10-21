@@ -1525,7 +1525,7 @@ var CCE_CATALOG = [
           [
             32.7,
             35.9,
-            "mensaje y entrega a la empresa recolectora autorizada."
+            "pesaje y entrega a la empresa recolectora autorizada."
           ],
           [
             37.3,
