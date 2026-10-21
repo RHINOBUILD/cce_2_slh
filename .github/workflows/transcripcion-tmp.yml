@@ -1,0 +1,23 @@
+name: Transcripcion temporal de videos Vids
+on:
+  push:
+    branches: [transcripcion-vids-tmp]
+    paths: ["tmp-videos/**", ".github/workflows/transcripcion-tmp.yml", "tmp-videos/transcribir.py"]
+permissions:
+  contents: write
+jobs:
+  transcribir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: python -m pip install "faster-whisper==1.2.1"
+      - run: python tmp-videos/transcribir.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add tmp-videos/*.json
+          git commit -m "Transcripciones [skip ci]"
+          git push
