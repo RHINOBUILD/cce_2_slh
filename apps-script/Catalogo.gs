@@ -1205,11 +1205,139 @@ var CCE_CATALOG = [
     "orden": 6,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Proceso de aceptación: puntos clave",
-        "duracion": "10 min",
-        "texto": "Repaso de la sesión del 17 de abril de 2026.\n\n• Proceso crítico ante el Consejo de Salubridad General. Aplica a admisión, enfermería y personal médico.\n• Formas de ingreso: consulta externa, urgencias, hospitalización programada y procedimiento ambulatorio.\n• Dos identificadores (nombre completo y fecha de nacimiento) e identificación oficial (INE o pasaporte). El registro es un documento médico-legal.\n• En documentos de EE. UU. la fecha va mes/día/año: preguntar directamente. Con seguro, el nombre coincide con la credencial. Menores sin documentos: buscar su CURP.\n• Flujo: admisión registra y avisa a enfermería con copia de la identificación; enfermería hace doble verificación; el médico valora y hace el plan.\n• Documentos: formato de registro, aviso de privacidad, consentimiento informado si aplica; reglamento para hospitalizados.\n• Egreso: enfermería entrega la hoja de cargos a admisión, que revisa pendientes antes de la salida.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "ACC.1.1 · Proceso de aceptación: video del curso",
+        "duracion": "1:56 min",
+        "texto": "Formas de ingreso, identificación correcta, flujo de admisión a médico, documentos y egreso del paciente.",
+        "video": "acc11-proceso-aceptacion.mp4",
+        "segundosMinimos": 104,
+        "subtitulos": [
+          [
+            0,
+            3.8,
+            "Bienvenidos al curso sobre el proceso de aceptación para la atención,"
+          ],
+          [
+            4.3,
+            10.1,
+            "fundamental para la calidad y seguridad de nuestras unidades ambulatorias, hospitalarias y de urgencias."
+          ],
+          [
+            11.6,
+            15.1,
+            "Este es un proceso crítico ante el Consejo de Salubridad General,"
+          ],
+          [
+            15.8,
+            19.3,
+            "establece un estándar riguroso que debe seguir todo el personal de admisión,"
+          ],
+          [
+            19.6,
+            24.1,
+            "enfermería y medicina para recibir correctamente a cada paciente."
+          ],
+          [
+            24.8,
+            28.7,
+            "Independientemente de si el paciente llega por consulta externa, urgencias,"
+          ],
+          [
+            28.9,
+            31.9,
+            "hospitalización programada o servicios ambulatorios,"
+          ],
+          [
+            32.5,
+            37,
+            "todos siguen un mismo proceso unificado para garantizar una atención segura."
+          ],
+          [
+            37.5,
+            41.1,
+            "Recuerden que un mal registro inicial afecta todo el expediente."
+          ],
+          [
+            41.4,
+            46.1,
+            "Utilicen siempre dos identificadores, nombre completo y fecha de nacimiento."
+          ],
+          [
+            46.9,
+            51.1,
+            "Recuerden que este registro es un documento médico legal de alta importancia."
+          ],
+          [
+            51.3,
+            57.2,
+            "Ante casos complejos, como fechas con formato extranjero o nombres que no coinciden con seguros,"
+          ],
+          [
+            57.5,
+            59.5,
+            "verifiquen directamente con el paciente o familiar."
+          ],
+          [
+            60,
+            64.2,
+            "Mantengan notas temporales para evitar rehacer documentación innecesariamente."
+          ],
+          [
+            65,
+            67.7,
+            "El flujo de ingreso es claro, admisión registra,"
+          ],
+          [
+            68,
+            74.1,
+            "enfermería realiza la doble verificación y acompaña al paciente y finalmente el médico establece el plan clínico"
+          ],
+          [
+            74.1,
+            75.8,
+            "basándose en información precisa."
+          ],
+          [
+            77.9,
+            84.1,
+            "Al ingresar debemos completar el formato de registro, el aviso de privacidad y el consentimiento informado si hay procedimientos."
+          ],
+          [
+            84.1,
+            88.4,
+            "A los pacientes hospitalizados, entreguen siempre el reglamento del hospital."
+          ],
+          [
+            91,
+            93.7,
+            "Para el egreso, nadie debe irse con pendientes."
+          ],
+          [
+            94.2,
+            95.6,
+            "Una vez que el médico da el alta,"
+          ],
+          [
+            95.9,
+            101.1,
+            "enfermería notifica a admisión para asegurar que no existan cobros o trámites administrativos incompletos."
+          ],
+          [
+            103.8,
+            106.6,
+            "En resumen, un buen registro es la base de la seguridad."
+          ],
+          [
+            107.2,
+            112.2,
+            "Aseguren siempre la identidad del paciente, verifiquen las fechas y revisen los cargos antes del alta."
+          ],
+          [
+            112.2,
+            114.3,
+            "Pueden continuar con la evaluación."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación ACC.1.1",
@@ -1362,11 +1490,184 @@ var CCE_CATALOG = [
     "orden": 7,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Manejo de RPBI: puntos clave",
-        "duracion": "10 min",
-        "texto": "Repaso de la sesión del 16 de junio de 2026.\n\n• La NOM-087-SEMARNAT-SSA1-2002 es obligatoria para todo establecimiento que genera RPBI.\n• Cuatro pasos: identificar, envasar, almacenar y recolectar.\n• Bolsa roja: material empapado de sangre o fluidos. Hermético con tapa: sangre líquida. Bolsa amarilla: patológicos. Rígido rojo: punzocortantes, sin reencapuchar.\n• Pañales, toallas femeninas y condones de pacientes sin sospecha infectocontagiosa son basura común.\n• Cerrar al 80 % y etiquetar con fecha y área de origen.\n• Almacén temporal fuera del área operativa; patológicos en congelador.\n• Recolección diaria por rutas que eviten áreas de espera; carro lavado diario con jabón.\n• Un pinchazo se reporta de inmediato a Epidemiología y a la Dirección Médica.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "RPBI · Manejo hospitalario: video del curso",
+        "duracion": "2:57 min",
+        "texto": "Identificación, envasado, almacenamiento temporal y recolección de RPBI conforme a la NOM-087.",
+        "video": "rpbi-manejo-hospitalario.mp4",
+        "segundosMinimos": 159,
+        "subtitulos": [
+          [
+            0,
+            5.4,
+            "Bienvenidos a este curso sobre el manejo de residuos peligrosos, biológico-infecciosos,"
+          ],
+          [
+            5.5,
+            11.9,
+            "también conocidos como RPBI, basado en la normativa vigente para garantizar la seguridad de nuestras instalaciones."
+          ],
+          [
+            13.5,
+            19.5,
+            "Manejar estos residuos adecuadamente protege a todo nuestro personal, a los pacientes y al medio ambiente."
+          ],
+          [
+            20.4,
+            25.7,
+            "La norma NOM-087 es de cumplimiento obligatorio para todo establecimiento de salud,"
+          ],
+          [
+            25.7,
+            32.6,
+            "donde el personal clínico identifica y separa los residuos, mientras que el equipo de intendencia realiza el registro,"
+          ],
+          [
+            32.7,
+            35.9,
+            "mensaje y entrega a la empresa recolectora autorizada."
+          ],
+          [
+            37.3,
+            42.4,
+            "El proceso técnico consta de cuatro pasos fundamentales que inician en el punto de generación."
+          ],
+          [
+            43,
+            46.6,
+            "Identificar el tipo de residuo, envasarlo correctamente,"
+          ],
+          [
+            47,
+            52.2,
+            "almacenarlo temporalmente y finalmente realizar su recolección bajo protocolos establecidos."
+          ],
+          [
+            52.2,
+            56.1,
+            "Cada residuo requiere un recipiente específico."
+          ],
+          [
+            56.3,
+            61.1,
+            "Use bolsas rojas para materiales empapados, contenedores herméticos para sangre líquida,"
+          ],
+          [
+            61.6,
+            67.1,
+            "bolsas amarillas para patológicos y los contenedores rígidos rojos para objetos punzocortantes,"
+          ],
+          [
+            67.5,
+            69.6,
+            "los cuales nunca deben ser reencapuchados."
+          ],
+          [
+            70.3,
+            75,
+            "Es importante recordar que no todo lo que se genera en el hospital es un residuo peligroso."
+          ],
+          [
+            75.2,
+            81.2,
+            "Artículos como pañales o toallas de pacientes sin sospecha de enfermedades infectocontagiosas se consideran basura"
+          ],
+          [
+            81.2,
+            84.3,
+            "común, lo que simplifica nuestra gestión y separación."
+          ],
+          [
+            86.5,
+            90.9,
+            "Una vez que el contenedor o la bolsa alcanza el 80% de su capacidad,"
+          ],
+          [
+            91.6,
+            95.4,
+            "debe cerrarse y etiquetarse claramente con la fecha y el área de origen."
+          ],
+          [
+            96.3,
+            100,
+            "Solicite sus insumos necesarios directamente a la jefatura de intendencia."
+          ],
+          [
+            100.6,
+            104.2,
+            "El almacenamiento temporal debe ubicarse fuera del área operativa."
+          ],
+          [
+            104.6,
+            110.4,
+            "Es vital resguardar los patológicos en congelación y consultar siempre con la jefatura de intendencia sobre la"
+          ],
+          [
+            110.4,
+            113.2,
+            "situación legal de cualquier muestra antes de desecharla."
+          ],
+          [
+            114.9,
+            117.2,
+            "La recolección interna debe ser segura,"
+          ],
+          [
+            117.6,
+            124.6,
+            "utilizando rutas que eviten áreas de espera y horarios de comida de los pacientes, prefiriendo siempre el horario nocturno."
+          ],
+          [
+            124.8,
+            128.9,
+            "Además, el carro de transporte debe lavarse diariamente con jabón."
+          ],
+          [
+            129.3,
+            133.2,
+            "Todo proceso administrativo de residuos debe dejar un rastro documental."
+          ],
+          [
+            133.2,
+            137.4,
+            "Esto incluye el registro como generador, el uso de bitácoras,"
+          ],
+          [
+            137.7,
+            143.7,
+            "la elaboración del reporte anual y el seguimiento estricto de los manifiestos de entrega, transporte y recepción."
+          ],
+          [
+            145,
+            146.5,
+            "La seguridad es prioridad."
+          ],
+          [
+            146.9,
+            153.4,
+            "Cualquier exposición accidental, como un pinchazo, debe reportarse inmediatamente a Epidemiología y a la Dirección Médica."
+          ],
+          [
+            153.9,
+            159.2,
+            "Del mismo modo, reporte cualquier objeto punzocortante fuera de lugar a la Jefatura de Enfermería."
+          ],
+          [
+            160.3,
+            167.8,
+            "Recuerde siempre seguir el orden de identificar, envasar, almacenar y recolectar, mantenga cada residuo en su lugar,"
+          ],
+          [
+            168.3,
+            172.5,
+            "respete los límites de capacidad y reporte cualquier incidente de inmediato."
+          ],
+          [
+            173.1,
+            175.3,
+            "Ahora, proceda con la evaluación de este curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación RPBI",
@@ -1904,11 +2205,154 @@ var CCE_CATALOG = [
     "orden": 13,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Equipo de protección personal: puntos clave",
-        "duracion": "10 min",
-        "texto": "Repaso de la sesión del 4 de septiembre de 2026.\n\n• El EPP disminuye la exposición a un riesgo específico. Complementa, no sustituye, la prevención y los controles de ingeniería.\n• Se elige por actividad, tipo de riesgo y región del cuerpo, con las tablas de la NOM-017-STPS-2008. No hay un EPP único para todo el hospital.\n• Cabeza: casco contra impacto o dieléctrico. Ojos y cara: anteojos, goggles o careta. Oídos: tapones o conchas.\n• Respiratorio: mascarilla para polvos o respirador para gases y vapores. No existe un guante universal.\n• Tronco: mandil, overol o bata. Pies: calzado ocupacional, contra impacto, dieléctrico o conductivo.\n• Riesgos por área: biológico en terapia intensiva y hemodiálisis; radiación en hemodinamia; punzocortantes en quirófano; químicos en laboratorio y limpieza.\n• El EPP se usa con intención, según la tarea; se evita la sobreutilización.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "EPP · Equipo de protección personal: video del curso",
+        "duracion": "2:24 min",
+        "texto": "Qué es el EPP, cómo se elige según la NOM-017-STPS-2008 y qué riesgo predomina en cada área del hospital.",
+        "video": "epp-equipo-proteccion-personal.mp4",
+        "segundosMinimos": 129,
+        "subtitulos": [
+          [
+            0,
+            3.5,
+            "Bienvenidos a este curso sobre el equipo de protección personal."
+          ],
+          [
+            4.2,
+            11.5,
+            "Vamos a explorar cómo utilizar correctamente estos elementos esenciales para garantizar nuestra seguridad en el entorno hospitalario."
+          ],
+          [
+            12.6,
+            16.6,
+            "El equipo de protección personal es tu última barrera contra los riesgos."
+          ],
+          [
+            17.2,
+            20.8,
+            "Recuerda que no sustituye a otros controles de ingeniería o prevención,"
+          ],
+          [
+            21.1,
+            28.1,
+            "sino que los complementa bajo la norma oficial mexicana NOM-017-STPS-2008."
+          ],
+          [
+            29.1,
+            32.3,
+            "No existe un equipo universal para todo el hospital."
+          ],
+          [
+            32.8,
+            36,
+            "La elección adecuada debe basarse en cuatro factores clave."
+          ],
+          [
+            36.4,
+            42.3,
+            "La actividad, el tipo de riesgo, la región del cuerpo a proteger y las tablas normativas."
+          ],
+          [
+            43.2,
+            51.2,
+            "Para proteger la cabeza, ojos, cara y oídos, debemos considerar cascos de impacto o dieléctricos, goggles,"
+          ],
+          [
+            51.6,
+            57.8,
+            "caretas o protección auditiva, dependiendo siempre de la naturaleza específica de la amenaza en nuestra zona."
+          ],
+          [
+            58.3,
+            61.4,
+            "El cuidado de las vías respiratorias y las manos es crucial."
+          ],
+          [
+            62,
+            65.3,
+            "Utiliza mascarillas o respiradores adecuados según la exposición."
+          ],
+          [
+            65.9,
+            71.1,
+            "Y recuerda que no existe un guante único capaz de proteger contra todos los riesgos simultáneamente."
+          ],
+          [
+            72.2,
+            78.3,
+            "Finalmente, protegemos el tronco con batas o mandiles y seleccionamos calzado ocupacional específico."
+          ],
+          [
+            78.3,
+            84.9,
+            "Además, existen equipos especializados como arneses para alturas o indumentaria técnica para brigadistas,"
+          ],
+          [
+            85.3,
+            86.8,
+            "según cada necesidad puntual."
+          ],
+          [
+            87.7,
+            89.7,
+            "Cada área clínica tiene sus desafíos."
+          ],
+          [
+            89.9,
+            96.4,
+            "Por ejemplo, en terapia intensiva predomina el riesgo biológico, mientras que en áreas como hemodinamia o quirófano,"
+          ],
+          [
+            96.7,
+            100.9,
+            "debemos añadir protección contra radiación o material punzocortante, respectivamente."
+          ],
+          [
+            103.1,
+            106.4,
+            "El personal de apoyo también requiere protección específica,"
+          ],
+          [
+            106.5,
+            110.7,
+            "desde el manejo de muestras biológicas y químicos en laboratorios y limpieza,"
+          ],
+          [
+            111,
+            115.4,
+            "hasta los riesgos eléctricos o mecánicos que enfrenta el equipo de mantenimiento diariamente."
+          ],
+          [
+            117.5,
+            121,
+            "El uso razonado es fundamental, ni de menos ni de más."
+          ],
+          [
+            121.4,
+            123.9,
+            "El equipo debe elegirse con una intención clara."
+          ],
+          [
+            124.2,
+            130.6,
+            "La sobreutilización no garantiza mayor seguridad, sino que desgasta el material y dificulta nuestras labores."
+          ],
+          [
+            131.8,
+            136.1,
+            "En resumen, identifica siempre el riesgo antes de elegir tu equipo."
+          ],
+          [
+            136.7,
+            139.7,
+            "Prioriza y usa solo lo necesario."
+          ],
+          [
+            140.5,
+            143.9,
+            "Has terminado esta parte, puedes proceder con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación EPP",
@@ -2405,11 +2849,189 @@ var CCE_CATALOG = [
     "orden": 3.5,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Riesgo de caídas: puntos clave",
-        "duracion": "10 min",
-        "texto": "Repaso de la sesión del 31 de agosto de 2026.\n\n• Evaluación inicial al primer contacto, documentada en las primeras 24 horas. Reevaluación en cada cambio de turno, de estado de alerta o de servicio.\n• Alto riesgo sin escala: menores de 3 años, mayores de 65, embarazadas, inconscientes o con dificultad para caminar.\n• Medidas universales para todos: barandales elevados, cama frenada, iluminación, timbre al alcance, paso libre, piso mojado señalizado y calzado adecuado.\n• Escala de Morse (mayores de 13 años): 0-24 bajo, 25-50 medio, 51 o más alto.\n• Escala Humpty Dumpty (3 a 13 años): 7-11 bajo, 12 o más alto.\n• Imagenología: con drenajes, dependencia para moverse o sedación, el riesgo es alto.\n• Ficha en la puerta: verde bajo, amarillo medio, rojo alto.\n• Ante una caída: avisar al jefe y al médico de guardia, llenar el anexo 4 y reportar en la plataforma de calidad como cuasifalla, evento adverso o evento centinela.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "AESP 6 · Riesgo de caídas: video del curso",
+        "duracion": "3:06 min",
+        "texto": "Evaluación inicial y reevaluación del riesgo de caídas, medidas de prevención, señalización y reporte de eventos.",
+        "video": "aesp6-riesgo-caidas.mp4",
+        "segundosMinimos": 167,
+        "subtitulos": [
+          [
+            0,
+            5.3,
+            "Bienvenida a este repaso sobre la Acción Esencial para la Seguridad del Paciente número 6,"
+          ],
+          [
+            5.6,
+            11,
+            "centrada en cómo evaluar y reevaluar de manera efectiva el riesgo de caídas en nuestro entorno hospitalario."
+          ],
+          [
+            12,
+            17.2,
+            "Nuestro objetivo fundamental es reducir al mínimo el riesgo de daños por caídas."
+          ],
+          [
+            17.5,
+            23.9,
+            "Esta meta nos involucra a todos, tanto al personal clínico como no clínico, en cada interacción con nuestros pacientes."
+          ],
+          [
+            24.6,
+            31.1,
+            "La evaluación debe ocurrir desde el primer contacto, documentándose en enfermería dentro de las primeras 24 horas."
+          ],
+          [
+            31.7,
+            37.8,
+            "La reevaluación es obligatoria ante cambios de turno, variaciones en el estado de alerta o cambios de servicio."
+          ],
+          [
+            39.1,
+            44.3,
+            "Es importante identificar de inmediato a los pacientes con alto riesgo sin necesidad de aplicar escalas."
+          ],
+          [
+            44.4,
+            48.6,
+            "Esto incluye a menores de tres años, mayores de 65, embarazadas,"
+          ],
+          [
+            49.1,
+            53.8,
+            "personas inconscientes y quienes tienen dificultad para caminar."
+          ],
+          [
+            54.5,
+            61.9,
+            "Sin importar el riesgo, aplicamos medidas universales: barandales elevados, camas frenadas, buena iluminación,"
+          ],
+          [
+            62.4,
+            66.7,
+            "timbre al alcance, paso libre de obstáculos y calzado adecuado."
+          ],
+          [
+            67.3,
+            71.2,
+            "La educación al paciente y su familia con su firma es indispensable."
+          ],
+          [
+            71.8,
+            75.6,
+            "Para pacientes mayores de 13 años, utilizamos la escala de Morse."
+          ],
+          [
+            76,
+            83,
+            "Esta herramienta analiza seis variables clave: caídas previas, diagnóstico secundario, ayudas para la marcha,"
+          ],
+          [
+            83.1,
+            88,
+            "vía intravenosa, tipo de marcha y el estado mental del paciente."
+          ],
+          [
+            88.4,
+            91,
+            "El puntaje de Morse define nuestras acciones."
+          ],
+          [
+            91.4,
+            94.2,
+            "De 0 a 24 puntos son cuidados básicos."
+          ],
+          [
+            94.6,
+            101.7,
+            "Hasta 50 puntos aumentamos medidas de seguridad y con 51 o más el acompañamiento continuo es obligatorio."
+          ],
+          [
+            102.6,
+            108.4,
+            "En pediatría, específicamente entre los 3 y 13 años, empleamos la escala Humpty Dumpty."
+          ],
+          [
+            108.9,
+            115.2,
+            "Aquí, un puntaje de 7 a 11 indica riesgo bajo, mientras que 12 o más puntos señalan un riesgo elevado."
+          ],
+          [
+            116.8,
+            123.1,
+            "En el área de Imagenología, basta una respuesta afirmativa a las preguntas sobre dispositivos invasivos,"
+          ],
+          [
+            123.4,
+            130.6,
+            "dependencia para moverse o necesidad de sedación para clasificar al paciente como de alto riesgo y requerir traslado asistido."
+          ],
+          [
+            131.1,
+            132.8,
+            "La señalización visual es clave."
+          ],
+          [
+            133.1,
+            137.6,
+            "Una ficha verde, amarilla o roja en la puerta comunica el riesgo a todo el equipo."
+          ],
+          [
+            138.3,
+            143.1,
+            "El personal de enfermería se encarga de mantener esta información actualizada tras cada reevaluación."
+          ],
+          [
+            145.3,
+            148,
+            "Ante cualquier caída, el protocolo es claro."
+          ],
+          [
+            148.5,
+            151.7,
+            "Notifica inmediatamente al jefe y al médico de guardia."
+          ],
+          [
+            151.9,
+            153.4,
+            "Valora el estado del paciente."
+          ],
+          [
+            154.1,
+            158,
+            "Completa el formato de registro en el Anexo 4 y reporta el incidente."
+          ],
+          [
+            158.4,
+            161.6,
+            "En la plataforma de calidad, clasifica el evento según su impacto."
+          ],
+          [
+            162.1,
+            164.6,
+            "Cuasi falla si el evento no llegó a concretarse."
+          ],
+          [
+            164.6,
+            170.2,
+            "Evento adverso si hubo daño, o centinela en casos de lesiones graves o fallecimiento."
+          ],
+          [
+            171.7,
+            177.5,
+            "Recuerden, la clave es evaluar al ingreso, reevaluar ante cambios y proteger siempre."
+          ],
+          [
+            178,
+            181.4,
+            "Sigamos estas pautas para garantizar la seguridad de nuestros pacientes."
+          ],
+          [
+            182.1,
+            184.6,
+            "Ahora pueden continuar con la evaluación final del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación AESP 6",
@@ -2592,11 +3214,124 @@ var CCE_CATALOG = [
     "orden": 12.2,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Tormentas y huracanes: puntos clave",
-        "duracion": "10 min",
-        "texto": "Repaso de la sesión del 26 de agosto de 2026.\n\n• Un ciclón evoluciona de depresión tropical a tormenta tropical y a huracán. Los huracanes se clasifican del 1 al 5 en la escala Saffir-Simpson, según la velocidad máxima del viento.\n• Fuentes oficiales: CONAGUA, Servicio Meteorológico Nacional, CENAPRED, Sistema de Alerta Temprana y autoridades locales.\n• Antes: revisar azoteas, desagües y canaletas, retirar objetos sueltos y revisar instalaciones eléctricas.\n• Asegurar agua potable, gases medicinales, insumos médicos, alimentos no perecederos, limpieza, y planta de emergencia con combustible.\n• Mantener libres las rutas de evacuación y reportar condiciones inseguras.\n• Durante: mantener la calma, permanecer en el área asignada, no salir sin autorización y no reparar daños eléctricos o de gas por cuenta propia.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Tormentas y huracanes: video del curso",
+        "duracion": "1:59 min",
+        "texto": "Clasificación de ciclones tropicales, preparación del hospital y protocolo de actuación durante la contingencia.",
+        "video": "huracanes-tormentas.mp4",
+        "segundosMinimos": 106,
+        "subtitulos": [
+          [
+            0,
+            4.6,
+            "Bienvenidos a este curso sobre la prevención y el manejo de tormentas y huracanes,"
+          ],
+          [
+            4.9,
+            7.8,
+            "diseñado para garantizar la seguridad de nuestras instalaciones."
+          ],
+          [
+            8.5,
+            14.1,
+            "Un ciclón tropical es un sistema meteorológico de aire cálido y húmedo con vientos intensos."
+          ],
+          [
+            14.5,
+            20.8,
+            "Su evolución comienza como depresión tropical, se convierte en tormenta y puede alcanzar el grado de huracán."
+          ],
+          [
+            21.6,
+            27,
+            "La escala Saffir-Simpson clasifica los huracanes del 1 al 5 basándose en la velocidad de sus vientos."
+          ],
+          [
+            27.6,
+            34.9,
+            "Es importante recordar que, a mayor categoría, aumenta exponencialmente el riesgo de daños estructurales."
+          ],
+          [
+            35.2,
+            39.5,
+            "Gracias al monitoreo de fuentes oficiales como CONAGUA y el Servicio Meteorológico Nacional,"
+          ],
+          [
+            39.9,
+            41.8,
+            "podemos anticiparnos a estos fenómenos."
+          ],
+          [
+            42.2,
+            47,
+            "En Los Cabos, el seguimiento constante nos permite una preparación oportuna."
+          ],
+          [
+            47.9,
+            50.4,
+            "La prevención comienza en la infraestructura."
+          ],
+          [
+            50.4,
+            56.3,
+            "Antes de cualquier viento fuerte, debemos inspeccionar azoteas, asegurar objetos externos,"
+          ],
+          [
+            56.6,
+            61.3,
+            "limpiar desagües y verificar el estado de nuestras instalaciones eléctricas."
+          ],
+          [
+            61.6,
+            68.4,
+            "Para que el hospital siga operando ante una emergencia, es vital contar con reservas de agua, suministros médicos y alimentos."
+          ],
+          [
+            69.1,
+            72.9,
+            "Asimismo, debemos asegurar el funcionamiento de nuestra planta de emergencia."
+          ],
+          [
+            73.5,
+            80.3,
+            "La seguridad física depende de proteger los equipos contra el agua y mantener siempre libres nuestras rutas de evacuación."
+          ],
+          [
+            80.5,
+            84.8,
+            "Cualquier condición insegura detectada debe ser reportada de inmediato."
+          ],
+          [
+            85.2,
+            91.9,
+            "La organización es clave. Debemos tener claro de antemano qué personal permanece en el hospital y mantener un canal de"
+          ],
+          [
+            91.9,
+            95.4,
+            "comunicación constante con la Unidad Interna de Protección Civil."
+          ],
+          [
+            96.2,
+            99.7,
+            "Durante la contingencia, mantén la calma y permanece en tu área."
+          ],
+          [
+            100.2,
+            107.7,
+            "No intentes reparaciones eléctricas o de gas por tu cuenta y utiliza únicamente información de fuentes oficiales para evitar rumores."
+          ],
+          [
+            108.2,
+            113.8,
+            "En resumen, prepárate con antelación, mantén la calma y confía solo en información oficial."
+          ],
+          [
+            114.5,
+            117.4,
+            "Ahora, por favor, continúa con la evaluación final de este curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación Huracanes",
@@ -2749,11 +3484,144 @@ var CCE_CATALOG = [
     "orden": 12.3,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Código Amarillo: puntos clave",
-        "duracion": "10 min",
-        "texto": "Repaso de la sesión del 8 de agosto de 2026.\n\n• Los códigos de seguridad están al reverso de la credencial, en el procedimiento 8 de emergencias o en la página de calidad.\n• El Código Amarillo atiende derrames de sustancias químicas y de RPBI. Responde el equipo de higiene y limpieza.\n• Químicos: pictogramas en rombo; se consulta la hoja de datos de seguridad. Biológicos: símbolo de riesgo biológico.\n• Derrame químico: activar, avisar, identificar, EPP, delimitar con conos y cordones, absorber con tapetes en S, bolsa negra, agua y jabón, reponer el kit.\n• Derrame de RPBI: activar y delimitar, guantes de carnaza para punzocortantes, sangre con hipoclorito de sodio al 6 %, desechar como RPBI, desinfectar con sales cuaternarias.\n• El kit debe estar completo; quien lo usa repone el material.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Código Amarillo · Derrames: video del curso",
+        "duracion": "2:18 min",
+        "texto": "Identificación de derrames químicos y de RPBI, kit de derrames y procedimiento de contención y limpieza.",
+        "video": "codigo-amarillo-derrames.mp4",
+        "segundosMinimos": 124,
+        "subtitulos": [
+          [
+            0,
+            3.1,
+            "Bienvenidos a este curso sobre el Código Amarillo,"
+          ],
+          [
+            3.2,
+            9.4,
+            "donde aprenderemos la atención y manejo correcto ante derrames de materiales peligrosos dentro de nuestro entorno hospitalario."
+          ],
+          [
+            10.5,
+            15.2,
+            "Los códigos de seguridad utilizan colores para agilizar nuestra respuesta ante emergencias."
+          ],
+          [
+            15.7,
+            22.6,
+            "Podrás encontrar estos protocolos al reverso de tu credencial en el procedimiento 8 o consultando la página de calidad de tu sede."
+          ],
+          [
+            24.3,
+            32.3,
+            "El Código Amarillo se activa ante derrames de sustancias químicas como reactivos o infectantes y residuos biológico-infecciosos."
+          ],
+          [
+            33,
+            36.1,
+            "El objetivo principal es contener el derrame de forma segura,"
+          ],
+          [
+            36.3,
+            40.5,
+            "minimizando riesgos y daños mediante el equipo de higiene y limpieza."
+          ],
+          [
+            42.1,
+            44.2,
+            "Identificar el material es clave."
+          ],
+          [
+            44.5,
+            51,
+            "Los químicos se reconocen por pictogramas en forma de rombo, mientras que los biológicos llevan el símbolo de riesgo biológico."
+          ],
+          [
+            51.5,
+            56.5,
+            "Ante químicos, recuerda siempre consultar la hoja de datos de seguridad disponible en el área."
+          ],
+          [
+            57.5,
+            61.4,
+            "Para responder eficazmente, tu kit debe estar siempre completo."
+          ],
+          [
+            62,
+            66.8,
+            "Este incluye elementos de protección personal como botas, guantes, bata y lentes,"
+          ],
+          [
+            67.1,
+            73.6,
+            "además de herramientas esenciales como cordones absorbentes, bolsas para residuos y señales de advertencia."
+          ],
+          [
+            75.5,
+            78.4,
+            "Ante un derrame químico, sigue estos pasos."
+          ],
+          [
+            78.7,
+            80,
+            "Detecta y activa el código."
+          ],
+          [
+            80.7,
+            83.6,
+            "Avisa a higiene e identifica la sustancia."
+          ],
+          [
+            84.1,
+            93.2,
+            "Protégete con tu equipo. Delimita la zona, absorbe con tapetes en forma de S, limpia y finalmente repone el material utilizado."
+          ],
+          [
+            93.8,
+            97,
+            "Para derrames biológicos, activa el código y delimita el área."
+          ],
+          [
+            97.5,
+            103,
+            "Usa guantes de carnaza antipunzocortantes, inactiva la sangre con hipoclorito al 6%,"
+          ],
+          [
+            103.6,
+            109.2,
+            "desecha el residuo correctamente y realiza una desinfección profunda con sales cuaternarias."
+          ],
+          [
+            110,
+            112.3,
+            "Un kit incompleto pone en riesgo la seguridad."
+          ],
+          [
+            112.3,
+            117.3,
+            "El área de Seguridad e Higiene garantiza el suministro en zonas críticas,"
+          ],
+          [
+            117.8,
+            124.9,
+            "pero es responsabilidad de todos reponer cualquier elemento utilizado durante una emergencia para asegurar la preparación continua."
+          ],
+          [
+            125.7,
+            131,
+            "Recuerda, identifica, protégete, delimita, limpia y repón."
+          ],
+          [
+            131.6,
+            133.8,
+            "Estos pasos son fundamentales para tu seguridad."
+          ],
+          [
+            134.2,
+            136.9,
+            "Ahora estás listo para continuar con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación Código Amarillo",
@@ -2906,11 +3774,139 @@ var CCE_CATALOG = [
     "orden": 12.4,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Accidentes e incidentes: puntos clave",
-        "duracion": "10 min",
-        "texto": "Repaso de la sesión del 24 de agosto de 2026.\n\n• Peligro: algo con potencial de causar daño. Riesgo: probabilidad de que lo cause.\n• Acto inseguro: acción incorrecta. Incidente: pudo causar daño y no lo hizo. Accidente: causó lesión o daño.\n• Prevención: seguir procedimientos, usar EPP, manejar herramientas correctamente, sin bromas ni operar equipo sin autorización.\n• La Comisión Mixta de Seguridad e Higiene (trabajadores y patrón) identifica causas, propone medidas y verifica con recorridos.\n• Ciclo: inspeccionar, investigar, reportar, corregir y dar seguimiento.\n• La investigación es objetiva, con entrevistas individuales, evidencia y lo antes posible.\n• Toda condición insegura se reporta de inmediato a la jefatura.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Accidentes e incidentes: video del curso",
+        "duracion": "2:08 min",
+        "texto": "Conceptos de peligro y riesgo, Comisión Mixta, ciclo de prevención y cómo reportar e investigar accidentes e incidentes.",
+        "video": "accidentes-incidentes.mp4",
+        "segundosMinimos": 114,
+        "subtitulos": [
+          [
+            0,
+            4.1,
+            "Bienvenidos a este video sobre la importancia de identificar peligros,"
+          ],
+          [
+            4.4,
+            11.2,
+            "reportar situaciones de riesgo y realizar investigaciones exhaustivas de accidentes e incidentes en nuestro entorno de trabajo."
+          ],
+          [
+            12.1,
+            14,
+            "Es fundamental distinguir conceptos."
+          ],
+          [
+            14.1,
+            17.5,
+            "Un peligro es cualquier elemento con el potencial de causar daño,"
+          ],
+          [
+            17.7,
+            24,
+            "mientras que el riesgo es la probabilidad de que ese peligro efectivamente lo cause, como ocurre al manipular agujas."
+          ],
+          [
+            25.9,
+            31.1,
+            "Entender la diferencia entre un acto inseguro, un incidente que pudo causar daño pero no lo hizo,"
+          ],
+          [
+            31.7,
+            37.4,
+            "un accidente con lesiones y una enfermedad de trabajo es el primer paso para una gestión efectiva."
+          ],
+          [
+            38.4,
+            40.3,
+            "La prevención diaria depende de nosotros."
+          ],
+          [
+            40.8,
+            46.9,
+            "Seguir los procedimientos establecidos y usar nuestro equipo de protección personal evita convertir actos inseguros en"
+          ],
+          [
+            46.9,
+            49.4,
+            "accidentes que ponen en riesgo nuestra integridad."
+          ],
+          [
+            49.4,
+            57.3,
+            "Nuestra Comisión Mixta de Seguridad e Higiene trabaja activamente identificando causas y proponiendo mejoras mediante"
+          ],
+          [
+            57.3,
+            62.8,
+            "recorridos de verificación, asegurando un entorno más seguro para todos los trabajadores."
+          ],
+          [
+            63.3,
+            65.6,
+            "Seguir nuestro ciclo de prevención es clave."
+          ],
+          [
+            65.9,
+            70.9,
+            "Comenzamos inspeccionando para identificar riesgos, luego investigamos y reportamos,"
+          ],
+          [
+            71.3,
+            76.5,
+            "para finalmente corregir las fallas y verificar que nuestras soluciones realmente funcionen."
+          ],
+          [
+            76.5,
+            83.5,
+            "Para que un reporte sea efectivo, debemos detallar con precisión quién estuvo involucrado, qué actividades realizaba,"
+          ],
+          [
+            83.9,
+            90,
+            "dónde ocurrió y qué condiciones del entorno influyeron, proponiendo siempre medidas correctivas claras."
+          ],
+          [
+            90.3,
+            93.9,
+            "Al investigar, prioricemos siempre los hechos sobre las suposiciones."
+          ],
+          [
+            94.6,
+            101,
+            "Realicemos entrevistas individuales, documentemos con evidencia fotográfica y actuemos de forma objetiva y oportuna"
+          ],
+          [
+            101,
+            102.9,
+            "para obtener resultados veraces."
+          ],
+          [
+            104.2,
+            105.8,
+            "Tu participación es vital."
+          ],
+          [
+            106.3,
+            112.4,
+            "Si detectas una condición insegura como un mal manejo de punzocortantes, repórtalo de inmediato a tu jefatura."
+          ],
+          [
+            113,
+            117.4,
+            "Seguridad e Higiene dará el seguimiento necesario a tu reporte."
+          ],
+          [
+            117.9,
+            122.4,
+            "Recuerda que un incidente reportado hoy es la clave para evitar un accidente mañana."
+          ],
+          [
+            122.9,
+            127.2,
+            "Mantén la prevención como prioridad y continúa ahora con la evaluación de este curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación Accidentes e incidentes",
@@ -3063,11 +4059,139 @@ var CCE_CATALOG = [
     "orden": 12.5,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Mejora continua: puntos clave",
-        "duracion": "10 min",
-        "texto": "Repaso de la sesión del 9 de septiembre de 2026.\n\n• La mejora continua es un proceso permanente: identificar oportunidades, implementar acciones y evaluar resultados.\n• Ciclo PHVA: planear (peligros y objetivos), hacer (controles y capacitación), verificar (inspecciones, auditorías, indicadores) y actuar (corregir y prevenir recurrencias).\n• Fuentes de mejora: recorridos, auditorías, investigación de accidentes, sugerencias, indicadores, cambios en instalaciones y requisitos legales.\n• Acción correctiva: elimina la causa raíz después de un incidente. Acción preventiva: se anticipa a él. Siempre se verifica antes de cerrar.\n• Ante un accidente: notificar al jefe y a Seguridad e Higiene, investigar, corregir, verificar y documentar el cierre.\n• Responsabilidad compartida: trabajadores reportan, responsables de área implementan y la dirección facilita recursos.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Mejora continua en SST: video del curso",
+        "duracion": "2:06 min",
+        "texto": "Ciclo PHVA, fuentes de mejora, acciones correctivas y preventivas, indicadores y responsabilidad compartida.",
+        "video": "mejora-continua-sst.mp4",
+        "segundosMinimos": 113,
+        "subtitulos": [
+          [
+            0,
+            5.9,
+            "Bienvenidos a este curso sobre la mejora continua del sistema de gestión de seguridad y salud en el trabajo."
+          ],
+          [
+            6.5,
+            10.8,
+            "Exploraremos los pilares para mantener entornos laborales seguros y eficientes."
+          ],
+          [
+            11.3,
+            16,
+            "La mejora continua es un proceso permanente que va más allá de cumplir protocolos."
+          ],
+          [
+            16.2,
+            18.3,
+            "Se trata de identificar oportunidades,"
+          ],
+          [
+            18.6,
+            24.6,
+            "implementar acciones y evaluar resultados para prevenir accidentes y minimizar riesgos de manera constante."
+          ],
+          [
+            24.6,
+            31.5,
+            "Este proceso se estructura mediante el ciclo de planear, hacer, verificar y actuar."
+          ],
+          [
+            31.8,
+            34.4,
+            "Identificamos peligros, ejecutamos controles,"
+          ],
+          [
+            34.8,
+            39.7,
+            "supervisamos los resultados con indicadores y corregimos cualquier desviación para cerrar brechas."
+          ],
+          [
+            41.2,
+            46.5,
+            "Las oportunidades de mejora provienen de múltiples fuentes, como auditorías, recorridos,"
+          ],
+          [
+            46.8,
+            49.6,
+            "sugerencias del personal y cambios en las instalaciones."
+          ],
+          [
+            50.4,
+            56,
+            "Recuerde que cualquier condición insegura observada debe registrarse para ser corregida eficazmente."
+          ],
+          [
+            57.7,
+            63.4,
+            "Las acciones pueden ser correctivas, para eliminar la causa raíz de un incidente ocurrido, o preventivas,"
+          ],
+          [
+            63.7,
+            66.7,
+            "para anticiparnos antes de que suceda una situación de riesgo."
+          ],
+          [
+            66.8,
+            70.2,
+            "En ambos casos, documentamos y verificamos la solución."
+          ],
+          [
+            71.8,
+            74.3,
+            "Ante un accidente, el protocolo es claro."
+          ],
+          [
+            74.7,
+            80.7,
+            "Notifique de inmediato, investigue las causas, establezca las acciones correctivas necesarias,"
+          ],
+          [
+            80.7,
+            86.8,
+            "Verifique su correcta implementación y, finalmente, documente todo el proceso para el cierre."
+          ],
+          [
+            87.2,
+            91.1,
+            "Para medir el éxito de nuestras acciones, utilizamos indicadores clave."
+          ],
+          [
+            91.3,
+            97.7,
+            "Estos van desde el número de incidentes y el avance en el cierre de acciones hasta el nivel de capacitación de nuestro personal."
+          ],
+          [
+            98.9,
+            101.8,
+            "La seguridad es una responsabilidad compartida."
+          ],
+          [
+            102.3,
+            104.4,
+            "Mientras los trabajadores reportan riesgos,"
+          ],
+          [
+            104.6,
+            111.9,
+            "los responsables de área implementan los controles necesarios y la dirección facilita los recursos para garantizar el éxito del sistema."
+          ],
+          [
+            113.1,
+            118.5,
+            "Recuerde, planee, haga, verifique, actúe y vuelva a empezar."
+          ],
+          [
+            119.2,
+            122.3,
+            "Mantenga el compromiso de registrar y seguir cada hallazgo."
+          ],
+          [
+            122.7,
+            125.3,
+            "Ahora, lo invito a continuar con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación Mejora continua",
@@ -3220,11 +4344,159 @@ var CCE_CATALOG = [
     "orden": 20,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "RPBI prehospitalario: puntos clave",
-        "duracion": "10 min",
-        "texto": "Repaso de la sesión del 5 de agosto de 2026.\n\n• Un RPBI es material de la atención médica con microorganismos capaces de causar enfermedad. Lo regula la NOM-087-SEMARNAT-SSA1-2002.\n• Bolsa roja: sangre y materiales saturados o que gotean. Bolsa amarilla: tejidos y partes del cuerpo.\n• Basura común: cubrebocas, guantes no saturados, frascos vacíos, botellas de solución y jeringas sin aguja contaminada.\n• Recipiente rígido rojo: solo punzocortantes (agujas sin capuchón, lancetas, bisturís).\n• Ámpulas de vidrio: recipiente blanco, separadas del rígido.\n• Retirar el rígido al 75–80 %, no comprimir bolsas, sellar con tela adhesiva todo el borde y rotular fecha y consultorio.\n• Retiro por el grupo de asesores de la salud, con reemplazo listo antes de entregar.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "RPBI · Área prehospitalaria: video del curso",
+        "duracion": "2:27 min",
+        "texto": "Clasificación, envasado, sellado y recolección de RPBI en consultorios y unidades prehospitalarias.",
+        "video": "rpbi-prehospitalario.mp4",
+        "segundosMinimos": 132,
+        "subtitulos": [
+          [
+            0,
+            6.7,
+            "Bienvenidos a este breve entrenamiento sobre el manejo adecuado de residuos peligrosos biológico-infecciosos, o RPBI,"
+          ],
+          [
+            7.1,
+            14,
+            "dentro del entorno prehospitalario, un componente esencial para garantizar la seguridad de nuestro equipo y pacientes."
+          ],
+          [
+            14.9,
+            19.5,
+            "Recientes supervisiones han detectado errores críticos en el manejo de bolsas y recipientes."
+          ],
+          [
+            20.2,
+            27.8,
+            "Es fundamental recordar que los RPBI son residuos peligrosos capaces de causar enfermedades regulados estrictamente"
+          ],
+          [
+            27.8,
+            31,
+            "por la norma NOM-087."
+          ],
+          [
+            32.1,
+            33.5,
+            "Clasifiquemos correctamente."
+          ],
+          [
+            33.8,
+            38.2,
+            "Usamos bolsas rojas para sangre y materiales empapados o que goteen fluidos."
+          ],
+          [
+            38.8,
+            45.7,
+            "Las bolsas amarillas se reservan para tejidos o restos patológicos, aunque su uso sea poco frecuente en el consultorio."
+          ],
+          [
+            46.2,
+            50.3,
+            "La regla de oro es: si no está saturado de sangre, es basura común."
+          ],
+          [
+            50.7,
+            57.2,
+            "Artículos como cubrebocas, guantes limpios o jeringas sin aguja contaminada deben desecharse en los contenedores"
+          ],
+          [
+            57.2,
+            59.2,
+            "habituales, no como RPBI."
+          ],
+          [
+            61.6,
+            68.7,
+            "El recipiente rígido rojo es exclusivo para objetos punzocortantes, como agujas sin capuchón, lancetas y bisturís."
+          ],
+          [
+            69.4,
+            74.1,
+            "Bajo ninguna circunstancia se deben introducir jeringas completas o residuos ajenos."
+          ],
+          [
+            74.5,
+            75.5,
+            "No es un bote de basura."
+          ],
+          [
+            76.6,
+            81.4,
+            "Las ámpulas de vidrio deben depositarse únicamente en el recipiente blanco destinado para vidrio."
+          ],
+          [
+            81.4,
+            86.1,
+            "Estas no son RPBI a menos que estén contaminadas con material biológico."
+          ],
+          [
+            86.4,
+            89.5,
+            "Mantenlas separadas hasta contar con el contenedor adecuado."
+          ],
+          [
+            91.7,
+            95.9,
+            "Al llenar los contenedores, detente al alcanzar el 80% de su capacidad."
+          ],
+          [
+            96.8,
+            101.2,
+            "Sella el borde con cinta adhesiva y rotula el nombre del consultorio y la fecha."
+          ],
+          [
+            101.7,
+            104.8,
+            "Recuerda, una vez sellados, no deben abrirse."
+          ],
+          [
+            105.1,
+            109.8,
+            "Mantén la continuidad operativa solicitando retiros a través de los canales oficiales."
+          ],
+          [
+            109.8,
+            115.9,
+            "Asegúrate siempre de contar con un contenedor vacío disponible antes de entregar el lleno y notifica cualquier"
+          ],
+          [
+            115.9,
+            117.4,
+            "necesidad especial al conductor."
+          ],
+          [
+            119.5,
+            121.6,
+            "La responsabilidad es compartida."
+          ],
+          [
+            122,
+            128.1,
+            "Durante tu guardia, supervisa que el manejo de residuos sea impecable, incluso si no los generaste tú."
+          ],
+          [
+            128.7,
+            133.8,
+            "Si detectas alguna anomalía, es tu deber corregirla o reportarla de inmediato."
+          ],
+          [
+            135.1,
+            142.4,
+            "Recuerda, recipientes rígidos solo para punzocortantes, vidrio en botes blancos y siempre sella correctamente."
+          ],
+          [
+            143,
+            144.5,
+            "Has concluido esta revisión."
+          ],
+          [
+            144.8,
+            146.8,
+            "Ahora puedes continuar con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación RPBI prehospitalario",
@@ -3377,11 +4649,129 @@ var CCE_CATALOG = [
     "orden": 21,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Insumos prehospitalarios: puntos clave",
-        "duracion": "10 min",
-        "texto": "Repaso de la sesión del 10 de abril de 2026.\n\n• Lo que no se carga en la cuenta del paciente no se resurte: el sistema solo repone lo descontado del stock.\n• Consumo interno (abatelenguas, conos óticos, cubrebocas, guantes de nitrilo) no se carga; jeringas y gasas sí.\n• Requisición en PDF con el material usado, la cuenta donde se cargó y si es para maleta o consultorio.\n• Villa del Palmar y Fiesta Americana: lunes y jueves. Resto de CSL: jueves. Límite: 9:00 a. m. del día siguiente.\n• Al recibir: cotejar material contra hoja de traspaso y traspaso contra requisición.\n• Faltantes: carta de hechos (cargado y no surtido), autorización del Dr. Vera (no cargado) o aviso a Auditoría (desfase de sistema).\n• Caducados: retirar los del mes, carta de hechos con copia al Dr. Vera y envío físico rotulado al almacén central.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Insumos prehospitalarios: video del curso",
+        "duracion": "1:56 min",
+        "texto": "Cargos en cuenta, requisiciones, recepción, faltantes y caducados en consultorios y maletas prehospitalarias.",
+        "video": "insumos-prehospitalarios.mp4",
+        "segundosMinimos": 104,
+        "subtitulos": [
+          [
+            0,
+            5.2,
+            "Bienvenidos a este curso sobre la gestión de insumos, materiales y medicamentos esenciales,"
+          ],
+          [
+            5.3,
+            9,
+            "tanto en nuestros consultorios como en las maletas de atención prehospitalaria."
+          ],
+          [
+            10.6,
+            16.7,
+            "Actualmente, enfrentamos discrepancias entre los cargos en el sistema, las requisiciones y el material recibido."
+          ],
+          [
+            17.1,
+            23,
+            "Nuestro objetivo es garantizar que cada área cuente con el suministro completo para brindar atención sin contratiempos."
+          ],
+          [
+            25.3,
+            26.5,
+            "Recuerden la regla de oro."
+          ],
+          [
+            27,
+            29.3,
+            "Lo que no se carga, no se resurte."
+          ],
+          [
+            29.3,
+            34.7,
+            "Mientras que el material de consumo interno no requiere cargo, es vital registrar jeringas,"
+          ],
+          [
+            34.9,
+            37.8,
+            "gasas y todo insumo cobrable al paciente."
+          ],
+          [
+            38.2,
+            41.7,
+            "Para evitar surtidos incompletos, la requisición debe ser clara."
+          ],
+          [
+            41.9,
+            47.1,
+            "Especifiquen el material usado, la cuenta del paciente y si es para consultorio o maleta."
+          ],
+          [
+            47.7,
+            50.6,
+            "Envíen siempre el formato en PDF a los correos correspondientes."
+          ],
+          [
+            52.1,
+            59.9,
+            "Sigan nuestro calendario. Villa del Palmar y Fiesta Americana solicitan insumos los lunes y el resto de Cabo San Lucas"
+          ],
+          [
+            59.9,
+            65,
+            "los jueves. Asegúrense de enviar sus pedidos antes de las nueve de la mañana siguiente."
+          ],
+          [
+            65.7,
+            68.3,
+            "Al recibir material, realicen un doble cotejo."
+          ],
+          [
+            68.5,
+            74.3,
+            "Verifiquen que lo físico coincida con la hoja de traspaso y que ésta coincida con su requisición original."
+          ],
+          [
+            74.7,
+            78.4,
+            "Si algo falta, consulten el correo de almacén."
+          ],
+          [
+            78.7,
+            83.5,
+            "Ante cualquier faltante, actúen según el escenario: elaboren una carta de hechos,"
+          ],
+          [
+            83.9,
+            91.1,
+            "soliciten autorizaciones para cargos posteriores o notifiquen a Auditoría si el sistema marca existencias que no llegaron."
+          ],
+          [
+            91.4,
+            94.6,
+            "Para el manejo de caducados, retiren y separen el material,"
+          ],
+          [
+            95.1,
+            99.3,
+            "notifiquen mediante carta de hechos y realicen el envío físico al almacén central,"
+          ],
+          [
+            99.9,
+            103.6,
+            "asegurándose de rotular correctamente el origen de cada paquete."
+          ],
+          [
+            104.7,
+            111.3,
+            "En resumen, carguen todo lo usado, realicen sus peticiones a tiempo y verifiquen siempre lo que reciben."
+          ],
+          [
+            111.8,
+            115.1,
+            "Ahora los invito a continuar con la evaluación final de este curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación Insumos prehospitalarios",
@@ -3721,11 +5111,129 @@ var CCE_CATALOG = [
     "orden": 23,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Notas médicas: puntos clave",
-        "duracion": "10 min",
-        "texto": "Repaso de la sesión del 6 de agosto de 2026.\n\n• La nota médica es un documento clínico, administrativo y médico-legal (NOM-004).\n• Evitar copiar y pegar, machotes, signos vitales no tomados, abreviaturas no permitidas y frases como “resto normal”.\n• En cada atención: nota inicial de urgencias, receta (farmacológica y no farmacológica), datos de alarma y próxima cita.\n• Todo procedimiento, incluso una inyección, requiere valoración, nota y receta.\n• Consentimiento informado cuando el manejo lo amerite y cuando el paciente rechaza un tratamiento.\n• Riesgos de trabajo: momento, lugar exacto, actividad, mecanismo de lesión y testigos. Con estudios de imagen, se refiere al IMSS con hoja de traslado.\n• Nota de traslado: diagnóstico, resumen clínico, tratamiento, condición al traslado y transporte.\n• Notas de huéspedes: objetivas y clínicas, sin detalles de la propiedad.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Notas médicas: video del curso",
+        "duracion": "2:08 min",
+        "texto": "Nota médica conforme a la NOM-004: calidad, notas obligatorias, procedimientos, consentimiento, riesgos de trabajo y traslados.",
+        "video": "notas-medicas.mp4",
+        "segundosMinimos": 114,
+        "subtitulos": [
+          [
+            0,
+            3.5,
+            "Bienvenidos a esta sesión sobre la importancia de las notas médicas,"
+          ],
+          [
+            3.6,
+            10.1,
+            "enfocada en los lineamientos de la norma NOM-004 para el expediente clínico en nuestros consultorios."
+          ],
+          [
+            11.9,
+            19.6,
+            "La NOM-004 establece que la nota médica no es solo un registro clínico, sino también un documento administrativo y legal."
+          ],
+          [
+            20.3,
+            25.5,
+            "Es nuestra garantía de continuidad, respaldo de decisiones y protección institucional."
+          ],
+          [
+            26.3,
+            33.5,
+            "Para mejorar la calidad de nuestras notas, debemos abandonar prácticas como el copiar y pegar, o el uso de machotes genéricos."
+          ],
+          [
+            33.8,
+            37.3,
+            "Prioricemos la exploración personalizada y el lenguaje objetivo."
+          ],
+          [
+            38.9,
+            43.8,
+            "Recuerden que cada atención, por mínima que sea, exige una nota inicial y una receta completa."
+          ],
+          [
+            44.6,
+            48.6,
+            "Asegúrense siempre de incluir los datos de alarma y la fecha de la próxima cita."
+          ],
+          [
+            50.8,
+            55.1,
+            "Cualquier procedimiento, incluyendo inyecciones simples o anticonceptivos,"
+          ],
+          [
+            55.5,
+            62.7,
+            "debe contar con una valoración, su nota médica y receta, además del registro detallado de los insumos utilizados."
+          ],
+          [
+            63.4,
+            65.6,
+            "El consentimiento informado es indispensable,"
+          ],
+          [
+            66.1,
+            71.5,
+            "debe quedar por escrito siempre que el procedimiento lo amerite o cuando el paciente rechace un manejo,"
+          ],
+          [
+            71.6,
+            74.3,
+            "documentando claramente lo que se le explicó."
+          ],
+          [
+            75,
+            80,
+            "En casos de accidentes laborales, el detalle es clave para respaldar a recursos humanos."
+          ],
+          [
+            80.6,
+            87.9,
+            "Registren el momento, lugar, actividad, mecanismo de lesión y testigos, refiriendo al IMSS cuando sea necesario."
+          ],
+          [
+            89.5,
+            95.4,
+            "Para cada paciente referido a un hospital, la nota de traslado debe incluir el diagnóstico, un resumen clínico,"
+          ],
+          [
+            95.8,
+            100.7,
+            "el tratamiento otorgado, su condición actual y el método de transporte utilizado."
+          ],
+          [
+            102.1,
+            105.7,
+            "Al redactar notas sobre huéspedes, mantengamos un enfoque clínico objetivo."
+          ],
+          [
+            106.2,
+            112.2,
+            "Describamos los síntomas y lesiones sin emitir juicios sobre la propiedad que puedan generar responsabilidades legales"
+          ],
+          [
+            112.2,
+            113.2,
+            "ajenas a lo médico."
+          ],
+          [
+            114.8,
+            117.8,
+            "Para cerrar, tengan presente esta regla de oro."
+          ],
+          [
+            118.2,
+            120,
+            "Si no está escrito, no se hizo."
+          ],
+          [
+            120.6,
+            126.4,
+            "Sigamos estos lineamientos para garantizar la seguridad del paciente y ahora continúen con su evaluación."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación Notas médicas",
@@ -3878,11 +5386,264 @@ var CCE_CATALOG = [
     "orden": 11.5,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Farmacia hospitalaria: puntos clave",
-        "duracion": "10 min",
-        "texto": "Repaso de las sesiones del 25 de mayo y del 21 de agosto de 2026.\n\n• La farmacia hospitalaria está dentro del hospital, suministra por prescripción institucional y requiere licencia sanitaria federal.\n• Grupo I: receta especial con QR de COFEPRIS. Grupo II: receta retenida y libro de control. Grupo III: hasta 3 presentaciones. V y VI sin receta.\n• Controlados: aviso de previsiones, libros autorizados, bajo llave y cada movimiento firmado por el responsable sanitario.\n• La receta lleva datos del prescriptor y del paciente, y el medicamento con nombre genérico, dosis, vía, frecuencia y duración.\n• Antimicrobianos: clasificación ATC y semáforo AWaRe (acceso, vigilancia, reserva).\n• Almacén: 15–25 °C, humedad máxima 65 %, red fría 2–8 °C, anaqueles a 20 cm de piso y techo.\n• Recepción con caducidad mayor a 12 meses; PEPS y PCPS; caducos dados de baja y dispuestos antes de un año.\n• Proveedores con documentación legal y evaluación cada 6 a 12 meses; al menos 3 cotizaciones por compra.\n• Conciliación al ingreso, cambio de área y egreso; sello de idoneidad; perfil farmacoterapéutico cada 24 h.\n• Farmacovigilancia obligatoria (NOM-220-SSA1-2016) y no punitiva.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Farmacia hospitalaria: video del curso",
+        "duracion": "4:07 min",
+        "texto": "Regulación, controlados, recetas, almacenamiento, inventario, proveedores, cuadro básico, conciliación y farmacovigilancia.",
+        "video": "farmacia-hospitalaria.mp4",
+        "segundosMinimos": 222,
+        "subtitulos": [
+          [
+            0,
+            5.3,
+            "Bienvenidos a este recorrido sobre los fundamentos y la operación de la farmacia hospitalaria,"
+          ],
+          [
+            5.8,
+            10.5,
+            "una pieza clave en la seguridad y el cuidado del paciente dentro de nuestra institución."
+          ],
+          [
+            11,
+            14.3,
+            "Es importante diferenciar la farmacia hospitalaria de la externa."
+          ],
+          [
+            14.5,
+            19.6,
+            "Mientras la externa sirve al público en general, la hospitalaria opera dentro del centro médico,"
+          ],
+          [
+            20,
+            23.2,
+            "suministrando medicamentos bajo estricta prescripción institucional."
+          ],
+          [
+            25.4,
+            27.8,
+            "La normativa es el pilar de nuestra labor."
+          ],
+          [
+            27.8,
+            32.4,
+            "Desde la licencia sanitaria federal hasta la disponibilidad de la farmacopea vigente."
+          ],
+          [
+            32.8,
+            35.4,
+            "El cumplimiento riguroso es obligatorio."
+          ],
+          [
+            36.1,
+            39.3,
+            "Recuérdenlo, desconocer la norma no nos exime de ella."
+          ],
+          [
+            40.1,
+            42.6,
+            "Cada rol requiere preparación específica."
+          ],
+          [
+            42.9,
+            48.2,
+            "Nuestros químicos validan dosis e interacciones, mientras el personal auxiliar apoya en el surtido."
+          ],
+          [
+            48.8,
+            54.8,
+            "Todos, sin excepción, se capacitan anualmente para mantener los estándares más altos."
+          ],
+          [
+            54.8,
+            61.1,
+            "Optimizamos la seguridad a través de nuestros sistemas de distribución que van desde el stock en piso hasta el modelo"
+          ],
+          [
+            61.1,
+            66.5,
+            "de dosis unitaria, este último diseñado para ofrecer un control total sobre la administración."
+          ],
+          [
+            67.5,
+            71.8,
+            "La gestión de receta sigue clasificaciones precisas según el grupo del medicamento,"
+          ],
+          [
+            72.1,
+            78.3,
+            "exigiendo desde códigos QR de COFEPRIS para el grupo 1 hasta procesos simplificados para fármacos de venta libre."
+          ],
+          [
+            80.5,
+            83.8,
+            "Para los medicamentos controlados, la seguridad es absoluta."
+          ],
+          [
+            83.8,
+            87.6,
+            "Se resguardan bajo llave, se registran en libros autorizados,"
+          ],
+          [
+            87.9,
+            92.1,
+            "y cada movimiento es validado con la firma del responsable sanitario."
+          ],
+          [
+            92.4,
+            95,
+            "Una receta completa es fundamental para el surtido."
+          ],
+          [
+            95.6,
+            97.9,
+            "Debe integrar claramente los datos del prescriptor,"
+          ],
+          [
+            98.2,
+            104.4,
+            "la información del paciente y los detalles específicos del medicamento, siempre incluyendo su nombre genérico."
+          ],
+          [
+            105.2,
+            109.6,
+            "En el manejo de antimicrobianos aplicamos el semáforo AWaRe de la OMS."
+          ],
+          [
+            109.6,
+            113.5,
+            "Clasificarlos en acceso, vigilancia o reserva es vital,"
+          ],
+          [
+            114,
+            118.2,
+            "y su conocimiento es una competencia obligatoria para nuestro equipo de farmacia."
+          ],
+          [
+            118.8,
+            125.3,
+            "Para minimizar riesgos aplicamos barreras de seguridad: etiquetas rojas para medicamentos de alto riesgo,"
+          ],
+          [
+            125.5,
+            132.7,
+            "con doble verificación, y etiquetas naranjas para identificar aquellos que suenan o se ven parecidos, los llamados LASA."
+          ],
+          [
+            133,
+            139,
+            "El almacenamiento se gestiona con precisión milimétrica: controlamos temperatura y humedad constantemente,"
+          ],
+          [
+            139,
+            145.6,
+            "manteniendo los insumos en condiciones óptimas sobre anaqueles adecuados para garantizar la integridad de cada producto."
+          ],
+          [
+            146.9,
+            151.1,
+            "La gestión de inventario sigue la regla de oro: primero lo que caduca primero."
+          ],
+          [
+            151.4,
+            159,
+            "Aplicamos protocolos estrictos de PEPS y PCPS para asegurar que cada insumo cumpla su propósito antes de su vencimiento."
+          ],
+          [
+            160.4,
+            163,
+            "Comprar bien comienza con proveedores confiables."
+          ],
+          [
+            163.9,
+            167.3,
+            "Evaluamos periódicamente su documentación legal y desempeño,"
+          ],
+          [
+            167.3,
+            173.7,
+            "asegurando que cada adquisición cuente con múltiples cotizaciones y la autorización necesaria de nuestra dirección."
+          ],
+          [
+            175.3,
+            177,
+            "Nuestro cuadro básico es dinámico."
+          ],
+          [
+            177.4,
+            182.1,
+            "Se revisa anualmente para integrar medicamentos con alta frecuencia y eficacia,"
+          ],
+          [
+            182.5,
+            187.6,
+            "mientras excluimos aquellos que no registran movimiento o que han presentado riesgos para nuestros pacientes."
+          ],
+          [
+            189.2,
+            192.1,
+            "Finalmente, gestionamos cualquier error con formalidad."
+          ],
+          [
+            192.6,
+            194.6,
+            "Las discrepancias se documentan por escrito,"
+          ],
+          [
+            194.6,
+            201.3,
+            "exigiendo cartas de cambio cuando es necesario y comunicamos cualquier desabasto de forma transparente a través de los"
+          ],
+          [
+            201.3,
+            203.1,
+            "canales oficiales."
+          ],
+          [
+            203.7,
+            206.1,
+            "La seguridad del paciente es nuestra prioridad."
+          ],
+          [
+            206.4,
+            210.7,
+            "Implementamos una conciliación rigurosa al ingreso, traslados y egresos,"
+          ],
+          [
+            211,
+            217.1,
+            "validamos cada prescripción con un sello de idoneidad y actualizamos diariamente el perfil farmacoterapéutico digital"
+          ],
+          [
+            217.1,
+            218.4,
+            "para cada tratamiento."
+          ],
+          [
+            219.5,
+            225.6,
+            "La farmacovigilancia no es un castigo, sino una herramienta esencial de mejora. Cumpliendo con la norma oficial,"
+          ],
+          [
+            226.2,
+            230.1,
+            "notificamos de forma activa cualquier reacción adversa en las plataformas de COFEPRIS,"
+          ],
+          [
+            230.6,
+            233.5,
+            "para garantizar procesos seguros y no punitivos."
+          ],
+          [
+            234.1,
+            240.7,
+            "Para concluir, recuerde siempre, cada medicamento debe contar con su norma, su registro y su responsable."
+          ],
+          [
+            241.2,
+            246.6,
+            "Mantengamos el orden, la vigilancia y la seguridad para continuar con éxito la evaluación de este curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación Farmacia hospitalaria",
