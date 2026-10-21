@@ -1,0 +1,1530 @@
+[
+{
+"start": 0.0,
+"end": 3.78,
+"text": "Bienvenidos al curso sobre el proceso de aceptación para la atención,",
+"words": [
+[
+0.0,
+0.78,
+" Bienvenidos"
+],
+[
+0.78,
+0.98,
+" al"
+],
+[
+0.98,
+1.26,
+" curso"
+],
+[
+1.26,
+1.52,
+" sobre"
+],
+[
+1.52,
+1.76,
+" el"
+],
+[
+1.76,
+2.04,
+" proceso"
+],
+[
+2.04,
+2.28,
+" de"
+],
+[
+2.28,
+2.74,
+" aceptación"
+],
+[
+2.74,
+2.96,
+" para"
+],
+[
+2.96,
+3.14,
+" la"
+],
+[
+3.14,
+3.78,
+" atención,"
+]
+]
+},
+{
+"start": 4.3,
+"end": 8.22,
+"text": "fundamental para la calidad y seguridad de nuestras unidades ambulatorias,",
+"words": [
+[
+4.3,
+4.72,
+" fundamental"
+],
+[
+4.72,
+5.08,
+" para"
+],
+[
+5.08,
+5.24,
+" la"
+],
+[
+5.24,
+5.66,
+" calidad"
+],
+[
+5.66,
+5.92,
+" y"
+],
+[
+5.92,
+6.38,
+" seguridad"
+],
+[
+6.38,
+6.68,
+" de"
+],
+[
+6.68,
+6.86,
+" nuestras"
+],
+[
+6.86,
+7.38,
+" unidades"
+],
+[
+7.38,
+8.22,
+" ambulatorias,"
+]
+]
+},
+{
+"start": 8.48,
+"end": 10.08,
+"text": "hospitalarias y de urgencias.",
+"words": [
+[
+8.48,
+9.08,
+" hospitalarias"
+],
+[
+9.08,
+9.28,
+" y"
+],
+[
+9.28,
+9.44,
+" de"
+],
+[
+9.44,
+10.08,
+" urgencias."
+]
+]
+},
+{
+"start": 11.64,
+"end": 15.08,
+"text": "Este es un proceso crítico ante el Consejo de Salubridad General,",
+"words": [
+[
+11.64,
+11.86,
+" Este"
+],
+[
+11.86,
+12.06,
+" es"
+],
+[
+12.06,
+12.22,
+" un"
+],
+[
+12.22,
+12.58,
+" proceso"
+],
+[
+12.58,
+13.1,
+" crítico"
+],
+[
+13.1,
+13.3,
+" ante"
+],
+[
+13.3,
+13.52,
+" el"
+],
+[
+13.52,
+13.9,
+" Consejo"
+],
+[
+13.9,
+14.06,
+" de"
+],
+[
+14.06,
+14.58,
+" Salubridad"
+],
+[
+14.58,
+15.08,
+" General,"
+]
+]
+},
+{
+"start": 15.82,
+"end": 18.82,
+"text": "establece un estándar riguroso que debe seguir todo el personal de",
+"words": [
+[
+15.82,
+16.1,
+" establece"
+],
+[
+16.1,
+16.32,
+" un"
+],
+[
+16.32,
+16.66,
+" estándar"
+],
+[
+16.66,
+17.18,
+" riguroso"
+],
+[
+17.18,
+17.32,
+" que"
+],
+[
+17.32,
+17.48,
+" debe"
+],
+[
+17.48,
+17.82,
+" seguir"
+],
+[
+17.82,
+18.08,
+" todo"
+],
+[
+18.08,
+18.3,
+" el"
+],
+[
+18.3,
+18.58,
+" personal"
+],
+[
+18.58,
+18.82,
+" de"
+]
+]
+},
+{
+"start": 18.82,
+"end": 24.12,
+"text": "admisión, enfermería y medicina para recibir correctamente a cada paciente.",
+"words": [
+[
+18.82,
+19.26,
+" admisión,"
+],
+[
+19.56,
+20.08,
+" enfermería"
+],
+[
+20.08,
+20.22,
+" y"
+],
+[
+20.22,
+20.92,
+" medicina"
+],
+[
+20.92,
+21.3,
+" para"
+],
+[
+21.3,
+21.66,
+" recibir"
+],
+[
+21.66,
+22.36,
+" correctamente"
+],
+[
+22.36,
+22.54,
+" a"
+],
+[
+22.54,
+22.66,
+" cada"
+],
+[
+22.66,
+24.12,
+" paciente."
+]
+]
+},
+{
+"start": 24.840000000000007,
+"end": 27.72,
+"text": "Independientemente de si el paciente llega por consulta externa,",
+"words": [
+[
+24.840000000000007,
+25.44,
+" Independientemente"
+],
+[
+25.44,
+25.62,
+" de"
+],
+[
+25.62,
+25.72,
+" si"
+],
+[
+25.72,
+25.92,
+" el"
+],
+[
+25.92,
+26.24,
+" paciente"
+],
+[
+26.24,
+26.52,
+" llega"
+],
+[
+26.52,
+26.78,
+" por"
+],
+[
+26.78,
+27.26,
+" consulta"
+],
+[
+27.26,
+27.72,
+" externa,"
+]
+]
+},
+{
+"start": 27.72,
+"end": 31.88,
+"text": "urgencias, hospitalización programada o servicios ambulatorios,",
+"words": [
+[
+27.72,
+28.66,
+" urgencias,"
+],
+[
+28.92,
+29.58,
+" hospitalización"
+],
+[
+29.58,
+30.22,
+" programada"
+],
+[
+30.22,
+30.48,
+" o"
+],
+[
+30.48,
+30.96,
+" servicios"
+],
+[
+30.96,
+31.88,
+" ambulatorios,"
+]
+]
+},
+{
+"start": 32.5,
+"end": 37.0,
+"text": "todos siguen un mismo proceso unificado para garantizar una atención segura.",
+"words": [
+[
+32.5,
+32.66,
+" todos"
+],
+[
+32.66,
+33.02,
+" siguen"
+],
+[
+33.02,
+33.2,
+" un"
+],
+[
+33.2,
+33.46,
+" mismo"
+],
+[
+33.46,
+33.86,
+" proceso"
+],
+[
+33.86,
+34.48,
+" unificado"
+],
+[
+34.48,
+34.82,
+" para"
+],
+[
+34.82,
+35.42,
+" garantizar"
+],
+[
+35.42,
+35.66,
+" una"
+],
+[
+35.66,
+36.04,
+" atención"
+],
+[
+36.04,
+37.0,
+" segura."
+]
+]
+},
+{
+"start": 37.48,
+"end": 41.06,
+"text": "Recuerden que un mal registro inicial afecta todo el expediente.",
+"words": [
+[
+37.48,
+37.74,
+" Recuerden"
+],
+[
+37.74,
+37.86,
+" que"
+],
+[
+37.86,
+38.06,
+" un"
+],
+[
+38.06,
+38.24,
+" mal"
+],
+[
+38.24,
+38.7,
+" registro"
+],
+[
+38.7,
+39.1,
+" inicial"
+],
+[
+39.1,
+39.78,
+" afecta"
+],
+[
+39.78,
+40.06,
+" todo"
+],
+[
+40.06,
+40.3,
+" el"
+],
+[
+40.3,
+41.06,
+" expediente."
+]
+]
+},
+{
+"start": 41.4,
+"end": 43.54,
+"text": "Utilicen siempre dos identificadores,",
+"words": [
+[
+41.4,
+41.84,
+" Utilicen"
+],
+[
+41.84,
+42.24,
+" siempre"
+],
+[
+42.24,
+42.58,
+" dos"
+],
+[
+42.58,
+43.54,
+" identificadores,"
+]
+]
+},
+{
+"start": 43.9,
+"end": 46.06,
+"text": "nombre completo y fecha de nacimiento.",
+"words": [
+[
+43.9,
+44.18,
+" nombre"
+],
+[
+44.18,
+44.66,
+" completo"
+],
+[
+44.66,
+45.04,
+" y"
+],
+[
+45.04,
+45.34,
+" fecha"
+],
+[
+45.34,
+45.5,
+" de"
+],
+[
+45.5,
+46.06,
+" nacimiento."
+]
+]
+},
+{
+"start": 46.88,
+"end": 51.12,
+"text": "Recuerden que este registro es un documento médico legal de alta importancia.",
+"words": [
+[
+46.88,
+47.14,
+" Recuerden"
+],
+[
+47.14,
+47.3,
+" que"
+],
+[
+47.3,
+47.48,
+" este"
+],
+[
+47.48,
+47.84,
+" registro"
+],
+[
+47.84,
+48.02,
+" es"
+],
+[
+48.02,
+48.12,
+" un"
+],
+[
+48.12,
+48.7,
+" documento"
+],
+[
+48.7,
+49.06,
+" médico"
+],
+[
+49.06,
+49.44,
+" legal"
+],
+[
+49.44,
+49.88,
+" de"
+],
+[
+49.88,
+50.08,
+" alta"
+],
+[
+50.08,
+51.12,
+" importancia."
+]
+]
+},
+{
+"start": 51.34,
+"end": 55.82,
+"text": "Ante casos complejos, como fechas con formato extranjero o nombres que no",
+"words": [
+[
+51.34,
+51.58,
+" Ante"
+],
+[
+51.58,
+51.8,
+" casos"
+],
+[
+51.8,
+52.4,
+" complejos,"
+],
+[
+52.58,
+52.78,
+" como"
+],
+[
+52.78,
+53.2,
+" fechas"
+],
+[
+53.2,
+53.52,
+" con"
+],
+[
+53.52,
+53.88,
+" formato"
+],
+[
+53.88,
+54.6,
+" extranjero"
+],
+[
+54.6,
+55.02,
+" o"
+],
+[
+55.02,
+55.4,
+" nombres"
+],
+[
+55.4,
+55.62,
+" que"
+],
+[
+55.62,
+55.82,
+" no"
+]
+]
+},
+{
+"start": 55.82,
+"end": 59.54,
+"text": "coinciden con seguros, verifiquen directamente con el paciente o familiar.",
+"words": [
+[
+55.82,
+56.28,
+" coinciden"
+],
+[
+56.28,
+56.56,
+" con"
+],
+[
+56.56,
+57.16,
+" seguros,"
+],
+[
+57.46,
+57.8,
+" verifiquen"
+],
+[
+57.8,
+58.28,
+" directamente"
+],
+[
+58.28,
+58.52,
+" con"
+],
+[
+58.52,
+58.66,
+" el"
+],
+[
+58.66,
+58.98,
+" paciente"
+],
+[
+58.98,
+59.18,
+" o"
+],
+[
+59.18,
+59.54,
+" familiar."
+]
+]
+},
+{
+"start": 60.02,
+"end": 64.2,
+"text": "Mantengan notas temporales para evitar rehacer documentación innecesariamente.",
+"words": [
+[
+60.02,
+60.4,
+" Mantengan"
+],
+[
+60.4,
+60.84,
+" notas"
+],
+[
+60.84,
+61.46,
+" temporales"
+],
+[
+61.46,
+61.76,
+" para"
+],
+[
+61.76,
+62.12,
+" evitar"
+],
+[
+62.12,
+62.56,
+" rehacer"
+],
+[
+62.56,
+63.28,
+" documentación"
+],
+[
+63.28,
+64.2,
+" innecesariamente."
+]
+]
+},
+{
+"start": 64.96,
+"end": 69.42,
+"text": "El flujo de ingreso es claro, admisión registra, enfermería realiza la doble",
+"words": [
+[
+64.96,
+65.08,
+" El"
+],
+[
+65.08,
+65.48,
+" flujo"
+],
+[
+65.48,
+65.58,
+" de"
+],
+[
+65.58,
+65.84,
+" ingreso"
+],
+[
+65.84,
+66.1,
+" es"
+],
+[
+66.1,
+66.32,
+" claro,"
+],
+[
+66.72,
+67.08,
+" admisión"
+],
+[
+67.08,
+67.66,
+" registra,"
+],
+[
+68.0,
+68.5,
+" enfermería"
+],
+[
+68.5,
+68.96,
+" realiza"
+],
+[
+68.96,
+69.2,
+" la"
+],
+[
+69.2,
+69.42,
+" doble"
+]
+]
+},
+{
+"start": 69.42,
+"end": 73.76,
+"text": "verificación y acompaña al paciente y finalmente el médico establece el plan",
+"words": [
+[
+69.42,
+70.02,
+" verificación"
+],
+[
+70.02,
+70.28,
+" y"
+],
+[
+70.28,
+70.62,
+" acompaña"
+],
+[
+70.62,
+70.8,
+" al"
+],
+[
+70.8,
+71.2,
+" paciente"
+],
+[
+71.2,
+71.78,
+" y"
+],
+[
+71.78,
+72.26,
+" finalmente"
+],
+[
+72.26,
+72.48,
+" el"
+],
+[
+72.48,
+72.78,
+" médico"
+],
+[
+72.78,
+73.34,
+" establece"
+],
+[
+73.34,
+73.6,
+" el"
+],
+[
+73.6,
+73.76,
+" plan"
+]
+]
+},
+{
+"start": 73.76,
+"end": 75.84,
+"text": "clínico basándose en información precisa.",
+"words": [
+[
+73.76,
+74.14,
+" clínico"
+],
+[
+74.14,
+74.68,
+" basándose"
+],
+[
+74.68,
+74.92,
+" en"
+],
+[
+74.92,
+75.42,
+" información"
+],
+[
+75.42,
+75.84,
+" precisa."
+]
+]
+},
+{
+"start": 77.9,
+"end": 81.14,
+"text": "Al ingresar debemos completar el formato de registro, el aviso de",
+"words": [
+[
+77.9,
+78.1,
+" Al"
+],
+[
+78.1,
+78.52,
+" ingresar"
+],
+[
+78.52,
+78.9,
+" debemos"
+],
+[
+78.9,
+79.32,
+" completar"
+],
+[
+79.32,
+79.48,
+" el"
+],
+[
+79.48,
+79.8,
+" formato"
+],
+[
+79.8,
+80.1,
+" de"
+],
+[
+80.1,
+80.46,
+" registro,"
+],
+[
+80.64,
+80.7,
+" el"
+],
+[
+80.7,
+80.94,
+" aviso"
+],
+[
+80.94,
+81.14,
+" de"
+]
+]
+},
+{
+"start": 81.14,
+"end": 84.14,
+"text": "privacidad y el consentimiento informado si hay procedimientos.",
+"words": [
+[
+81.14,
+81.64,
+" privacidad"
+],
+[
+81.64,
+81.82,
+" y"
+],
+[
+81.82,
+82.04,
+" el"
+],
+[
+82.04,
+82.66,
+" consentimiento"
+],
+[
+82.66,
+83.14,
+" informado"
+],
+[
+83.14,
+83.32,
+" si"
+],
+[
+83.32,
+83.48,
+" hay"
+],
+[
+83.48,
+84.14,
+" procedimientos."
+]
+]
+},
+{
+"start": 84.14,
+"end": 88.38,
+"text": "A los pacientes hospitalizados, entreguen siempre el reglamento del hospital.",
+"words": [
+[
+84.14,
+84.76,
+" A"
+],
+[
+84.76,
+84.94,
+" los"
+],
+[
+84.94,
+85.3,
+" pacientes"
+],
+[
+85.3,
+86.2,
+" hospitalizados,"
+],
+[
+86.44,
+86.74,
+" entreguen"
+],
+[
+86.74,
+87.14,
+" siempre"
+],
+[
+87.14,
+87.38,
+" el"
+],
+[
+87.38,
+87.76,
+" reglamento"
+],
+[
+87.76,
+87.92,
+" del"
+],
+[
+87.92,
+88.38,
+" hospital."
+]
+]
+},
+{
+"start": 90.98,
+"end": 93.66,
+"text": "Para el egreso, nadie debe irse con pendientes.",
+"words": [
+[
+90.98,
+91.1,
+" Para"
+],
+[
+91.1,
+91.3,
+" el"
+],
+[
+91.3,
+91.74,
+" egreso,"
+],
+[
+92.16,
+92.3,
+" nadie"
+],
+[
+92.3,
+92.56,
+" debe"
+],
+[
+92.56,
+92.98,
+" irse"
+],
+[
+92.98,
+93.14,
+" con"
+],
+[
+93.14,
+93.66,
+" pendientes."
+]
+]
+},
+{
+"start": 94.16,
+"end": 97.56,
+"text": "Una vez que el médico da el alta, enfermería notifica a admisión",
+"words": [
+[
+94.16,
+94.34,
+" Una"
+],
+[
+94.34,
+94.48,
+" vez"
+],
+[
+94.48,
+94.62,
+" que"
+],
+[
+94.62,
+94.74,
+" el"
+],
+[
+94.74,
+94.96,
+" médico"
+],
+[
+94.96,
+95.16,
+" da"
+],
+[
+95.16,
+95.36,
+" el"
+],
+[
+95.36,
+95.6,
+" alta,"
+],
+[
+95.94,
+96.44,
+" enfermería"
+],
+[
+96.44,
+96.94,
+" notifica"
+],
+[
+96.94,
+97.12,
+" a"
+],
+[
+97.12,
+97.56,
+" admisión"
+]
+]
+},
+{
+"start": 97.56,
+"end": 101.14,
+"text": "para asegurar que no existan cobros o trámites administrativos incompletos.",
+"words": [
+[
+97.56,
+97.86,
+" para"
+],
+[
+97.86,
+98.22,
+" asegurar"
+],
+[
+98.22,
+98.36,
+" que"
+],
+[
+98.36,
+98.56,
+" no"
+],
+[
+98.56,
+98.92,
+" existan"
+],
+[
+98.92,
+99.28,
+" cobros"
+],
+[
+99.28,
+99.56,
+" o"
+],
+[
+99.56,
+100.0,
+" trámites"
+],
+[
+100.0,
+100.84,
+" administrativos"
+],
+[
+100.84,
+101.14,
+" incompletos."
+]
+]
+},
+{
+"start": 103.8,
+"end": 106.56,
+"text": "En resumen, un buen registro es la base de la seguridad.",
+"words": [
+[
+103.8,
+104.04,
+" En"
+],
+[
+104.04,
+104.44,
+" resumen,"
+],
+[
+104.7,
+104.8,
+" un"
+],
+[
+104.8,
+104.96,
+" buen"
+],
+[
+104.96,
+105.38,
+" registro"
+],
+[
+105.38,
+105.52,
+" es"
+],
+[
+105.52,
+105.66,
+" la"
+],
+[
+105.66,
+105.86,
+" base"
+],
+[
+105.86,
+106.02,
+" de"
+],
+[
+106.02,
+106.2,
+" la"
+],
+[
+106.2,
+106.56,
+" seguridad."
+]
+]
+},
+{
+"start": 107.22,
+"end": 109.14,
+"text": "Aseguren siempre la identidad del paciente,",
+"words": [
+[
+107.22,
+107.58,
+" Aseguren"
+],
+[
+107.58,
+107.92,
+" siempre"
+],
+[
+107.92,
+108.14,
+" la"
+],
+[
+108.14,
+108.48,
+" identidad"
+],
+[
+108.48,
+108.64,
+" del"
+],
+[
+108.64,
+109.14,
+" paciente,"
+]
+]
+},
+{
+"start": 109.62,
+"end": 112.22,
+"text": "verifiquen las fechas y revisen los cargos antes del alta.",
+"words": [
+[
+109.62,
+109.92,
+" verifiquen"
+],
+[
+109.92,
+110.12,
+" las"
+],
+[
+110.12,
+110.44,
+" fechas"
+],
+[
+110.44,
+110.8,
+" y"
+],
+[
+110.8,
+111.12,
+" revisen"
+],
+[
+111.12,
+111.36,
+" los"
+],
+[
+111.36,
+111.6,
+" cargos"
+],
+[
+111.6,
+111.86,
+" antes"
+],
+[
+111.86,
+112.04,
+" del"
+],
+[
+112.04,
+112.22,
+" alta."
+]
+]
+},
+{
+"start": 112.22,
+"end": 114.28,
+"text": "Pueden continuar con la evaluación.",
+"words": [
+[
+112.22,
+113.18,
+" Pueden"
+],
+[
+113.18,
+113.46,
+" continuar"
+],
+[
+113.46,
+113.64,
+" con"
+],
+[
+113.64,
+113.8,
+" la"
+],
+[
+113.8,
+114.28,
+" evaluación."
+]
+]
+}
+]

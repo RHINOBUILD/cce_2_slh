@@ -1,0 +1,3277 @@
+[
+{
+"start": 0.0,
+"end": 5.26,
+"text": "Bienvenidos a este recorrido sobre los fundamentos y la operación de la farmacia hospitalaria,",
+"words": [
+[
+0.0,
+0.92,
+" Bienvenidos"
+],
+[
+0.92,
+1.16,
+" a"
+],
+[
+1.16,
+1.3,
+" este"
+],
+[
+1.3,
+1.86,
+" recorrido"
+],
+[
+1.86,
+2.12,
+" sobre"
+],
+[
+2.12,
+2.4,
+" los"
+],
+[
+2.4,
+3.02,
+" fundamentos"
+],
+[
+3.02,
+3.22,
+" y"
+],
+[
+3.22,
+3.44,
+" la"
+],
+[
+3.44,
+3.82,
+" operación"
+],
+[
+3.82,
+3.98,
+" de"
+],
+[
+3.98,
+4.14,
+" la"
+],
+[
+4.14,
+4.58,
+" farmacia"
+],
+[
+4.58,
+5.26,
+" hospitalaria,"
+]
+]
+},
+{
+"start": 5.84,
+"end": 10.48,
+"text": "una pieza clave en la seguridad y el cuidado del paciente dentro de nuestra institución.",
+"words": [
+[
+5.84,
+6.0,
+" una"
+],
+[
+6.0,
+6.42,
+" pieza"
+],
+[
+6.42,
+6.84,
+" clave"
+],
+[
+6.84,
+7.02,
+" en"
+],
+[
+7.02,
+7.26,
+" la"
+],
+[
+7.26,
+7.6,
+" seguridad"
+],
+[
+7.6,
+7.8,
+" y"
+],
+[
+7.8,
+7.98,
+" el"
+],
+[
+7.98,
+8.22,
+" cuidado"
+],
+[
+8.22,
+8.48,
+" del"
+],
+[
+8.48,
+8.92,
+" paciente"
+],
+[
+8.92,
+9.34,
+" dentro"
+],
+[
+9.34,
+9.58,
+" de"
+],
+[
+9.58,
+9.84,
+" nuestra"
+],
+[
+9.84,
+10.48,
+" institución."
+]
+]
+},
+{
+"start": 11.04,
+"end": 15.84,
+"text": "Es importante diferenciar la farmacia hospitalaria del externa. Mientras la externa sirve al",
+"words": [
+[
+11.04,
+11.12,
+" Es"
+],
+[
+11.12,
+11.62,
+" importante"
+],
+[
+11.62,
+12.26,
+" diferenciar"
+],
+[
+12.26,
+12.38,
+" la"
+],
+[
+12.38,
+12.76,
+" farmacia"
+],
+[
+12.76,
+13.4,
+" hospitalaria"
+],
+[
+13.4,
+13.62,
+" del"
+],
+[
+13.62,
+14.28,
+" externa."
+],
+[
+14.52,
+14.82,
+" Mientras"
+],
+[
+14.82,
+15.1,
+" la"
+],
+[
+15.1,
+15.36,
+" externa"
+],
+[
+15.36,
+15.64,
+" sirve"
+],
+[
+15.64,
+15.84,
+" al"
+]
+]
+},
+{
+"start": 15.84,
+"end": 21.16,
+"text": "público en general, la hospitalaria opera dentro del centro médico, suministrando medicamentos",
+"words": [
+[
+15.84,
+16.18,
+" público"
+],
+[
+16.18,
+16.44,
+" en"
+],
+[
+16.44,
+16.8,
+" general,"
+],
+[
+17.14,
+17.36,
+" la"
+],
+[
+17.36,
+17.82,
+" hospitalaria"
+],
+[
+17.82,
+18.14,
+" opera"
+],
+[
+18.14,
+18.62,
+" dentro"
+],
+[
+18.62,
+18.86,
+" del"
+],
+[
+18.86,
+19.18,
+" centro"
+],
+[
+19.18,
+19.62,
+" médico,"
+],
+[
+20.02,
+20.54,
+" suministrando"
+],
+[
+20.54,
+21.16,
+" medicamentos"
+]
+]
+},
+{
+"start": 21.16,
+"end": 27.76,
+"text": "bajo estricta prescripción institucional. La normativa es el pilar de nuestra labor.",
+"words": [
+[
+21.16,
+21.48,
+" bajo"
+],
+[
+21.48,
+21.94,
+" estricta"
+],
+[
+21.94,
+22.48,
+" prescripción"
+],
+[
+22.48,
+23.22,
+" institucional."
+],
+[
+25.36,
+25.6,
+" La"
+],
+[
+25.6,
+26.12,
+" normativa"
+],
+[
+26.12,
+26.46,
+" es"
+],
+[
+26.46,
+26.68,
+" el"
+],
+[
+26.68,
+26.94,
+" pilar"
+],
+[
+26.94,
+27.18,
+" de"
+],
+[
+27.18,
+27.38,
+" nuestra"
+],
+[
+27.38,
+27.76,
+" labor."
+]
+]
+},
+{
+"start": 27.76,
+"end": 32.36,
+"text": "Desde la licencia sanitaria federal hasta la disponibilidad de la farmacopea vigente.",
+"words": [
+[
+27.76,
+28.3,
+" Desde"
+],
+[
+28.3,
+28.5,
+" la"
+],
+[
+28.5,
+28.9,
+" licencia"
+],
+[
+28.9,
+29.38,
+" sanitaria"
+],
+[
+29.38,
+29.74,
+" federal"
+],
+[
+29.74,
+30.16,
+" hasta"
+],
+[
+30.16,
+30.44,
+" la"
+],
+[
+30.44,
+30.96,
+" disponibilidad"
+],
+[
+30.96,
+31.16,
+" de"
+],
+[
+31.16,
+31.3,
+" la"
+],
+[
+31.3,
+31.86,
+" farmacopea"
+],
+[
+31.86,
+32.36,
+" vigente."
+]
+]
+},
+{
+"start": 32.84,
+"end": 35.42,
+"text": "El cumplimiento riguroso es obligatorio.",
+"words": [
+[
+32.84,
+32.96,
+" El"
+],
+[
+32.96,
+33.44,
+" cumplimiento"
+],
+[
+33.44,
+34.18,
+" riguroso"
+],
+[
+34.18,
+34.54,
+" es"
+],
+[
+34.54,
+35.42,
+" obligatorio."
+]
+]
+},
+{
+"start": 36.06,
+"end": 39.32,
+"text": "Recuérdenlo, desconocer la norma no nos exime de ella.",
+"words": [
+[
+36.06,
+36.72,
+" Recuérdenlo,"
+],
+[
+36.82,
+37.28,
+" desconocer"
+],
+[
+37.28,
+37.48,
+" la"
+],
+[
+37.48,
+37.9,
+" norma"
+],
+[
+37.9,
+38.1,
+" no"
+],
+[
+38.1,
+38.38,
+" nos"
+],
+[
+38.38,
+38.74,
+" exime"
+],
+[
+38.74,
+39.08,
+" de"
+],
+[
+39.08,
+39.32,
+" ella."
+]
+]
+},
+{
+"start": 40.1,
+"end": 42.62,
+"text": "Cada rol requiere preparación específica.",
+"words": [
+[
+40.1,
+40.26,
+" Cada"
+],
+[
+40.26,
+40.56,
+" rol"
+],
+[
+40.56,
+41.08,
+" requiere"
+],
+[
+41.08,
+41.6,
+" preparación"
+],
+[
+41.6,
+42.62,
+" específica."
+]
+]
+},
+{
+"start": 42.88,
+"end": 45.32,
+"text": "Nuestros químicos validan dosis e interacciones,",
+"words": [
+[
+42.88,
+43.14,
+" Nuestros"
+],
+[
+43.14,
+43.56,
+" químicos"
+],
+[
+43.56,
+44.0,
+" validan"
+],
+[
+44.0,
+44.4,
+" dosis"
+],
+[
+44.4,
+44.58,
+" e"
+],
+[
+44.58,
+45.32,
+" interacciones,"
+]
+]
+},
+{
+"start": 45.72,
+"end": 48.18,
+"text": "mientras el personal auxiliar apoya en el surtido.",
+"words": [
+[
+45.72,
+45.88,
+" mientras"
+],
+[
+45.88,
+46.18,
+" el"
+],
+[
+46.18,
+46.4,
+" personal"
+],
+[
+46.4,
+46.98,
+" auxiliar"
+],
+[
+46.98,
+47.44,
+" apoya"
+],
+[
+47.44,
+47.6,
+" en"
+],
+[
+47.6,
+47.74,
+" el"
+],
+[
+47.74,
+48.18,
+" surtido."
+]
+]
+},
+{
+"start": 48.8,
+"end": 54.76,
+"text": "Todos, sin excepción, se capacitan anualmente para mantener los estándares más altos.",
+"words": [
+[
+48.8,
+49.16,
+" Todos,"
+],
+[
+49.44,
+49.66,
+" sin"
+],
+[
+49.66,
+50.16,
+" excepción,"
+],
+[
+50.6,
+50.82,
+" se"
+],
+[
+50.82,
+51.42,
+" capacitan"
+],
+[
+51.42,
+52.08,
+" anualmente"
+],
+[
+52.08,
+52.32,
+" para"
+],
+[
+52.32,
+52.68,
+" mantener"
+],
+[
+52.68,
+52.98,
+" los"
+],
+[
+52.98,
+53.52,
+" estándares"
+],
+[
+53.52,
+53.9,
+" más"
+],
+[
+53.9,
+54.76,
+" altos."
+]
+]
+},
+{
+"start": 54.76,
+"end": 59.48,
+"text": "Optimizamos la seguridad a través de nuestros sistemas de distribución que van desde el",
+"words": [
+[
+54.76,
+55.74,
+" Optimizamos"
+],
+[
+55.74,
+55.98,
+" la"
+],
+[
+55.98,
+56.4,
+" seguridad"
+],
+[
+56.4,
+56.64,
+" a"
+],
+[
+56.64,
+56.82,
+" través"
+],
+[
+56.82,
+57.16,
+" de"
+],
+[
+57.16,
+57.32,
+" nuestros"
+],
+[
+57.32,
+57.76,
+" sistemas"
+],
+[
+57.76,
+58.1,
+" de"
+],
+[
+58.1,
+58.6,
+" distribución"
+],
+[
+58.6,
+58.82,
+" que"
+],
+[
+58.82,
+59.0,
+" van"
+],
+[
+59.0,
+59.28,
+" desde"
+],
+[
+59.28,
+59.48,
+" el"
+]
+]
+},
+{
+"start": 59.48,
+"end": 64.76,
+"text": "stock en piso hasta el modelo de dosis unitaria, este último diseñado para ofrecer un control",
+"words": [
+[
+59.48,
+59.64,
+" stock"
+],
+[
+59.64,
+59.84,
+" en"
+],
+[
+59.84,
+60.3,
+" piso"
+],
+[
+60.3,
+60.68,
+" hasta"
+],
+[
+60.68,
+60.84,
+" el"
+],
+[
+60.84,
+61.1,
+" modelo"
+],
+[
+61.1,
+61.32,
+" de"
+],
+[
+61.32,
+61.6,
+" dosis"
+],
+[
+61.6,
+62.3,
+" unitaria,"
+],
+[
+62.54,
+62.66,
+" este"
+],
+[
+62.66,
+63.04,
+" último"
+],
+[
+63.04,
+63.62,
+" diseñado"
+],
+[
+63.62,
+63.82,
+" para"
+],
+[
+63.82,
+64.2,
+" ofrecer"
+],
+[
+64.2,
+64.54,
+" un"
+],
+[
+64.54,
+64.76,
+" control"
+]
+]
+},
+{
+"start": 64.76,
+"end": 66.54,
+"text": "total sobre la administración.",
+"words": [
+[
+64.76,
+65.14,
+" total"
+],
+[
+65.14,
+65.46,
+" sobre"
+],
+[
+65.46,
+65.68,
+" la"
+],
+[
+65.68,
+66.54,
+" administración."
+]
+]
+},
+{
+"start": 67.54,
+"end": 71.8,
+"text": "La gestión de receta sigue clasificaciones precisas según el grupo del medicamento,",
+"words": [
+[
+67.54,
+67.6,
+" La"
+],
+[
+67.6,
+67.96,
+" gestión"
+],
+[
+67.96,
+68.16,
+" de"
+],
+[
+68.16,
+68.46,
+" receta"
+],
+[
+68.46,
+68.72,
+" sigue"
+],
+[
+68.72,
+69.6,
+" clasificaciones"
+],
+[
+69.6,
+70.14,
+" precisas"
+],
+[
+70.14,
+70.42,
+" según"
+],
+[
+70.42,
+70.64,
+" el"
+],
+[
+70.64,
+70.84,
+" grupo"
+],
+[
+70.84,
+71.12,
+" del"
+],
+[
+71.12,
+71.8,
+" medicamento,"
+]
+]
+},
+{
+"start": 72.12,
+"end": 76.98,
+"text": "exigiendo desde códigos QR de Cofepris para el grupo 1 hasta procesos simplificados",
+"words": [
+[
+72.12,
+72.62,
+" exigiendo"
+],
+[
+72.62,
+72.92,
+" desde"
+],
+[
+72.92,
+73.34,
+" códigos"
+],
+[
+73.34,
+73.68,
+" QR"
+],
+[
+73.68,
+73.88,
+" de"
+],
+[
+73.88,
+74.32,
+" Cofepris"
+],
+[
+74.32,
+74.58,
+" para"
+],
+[
+74.58,
+74.74,
+" el"
+],
+[
+74.74,
+74.94,
+" grupo"
+],
+[
+74.94,
+75.24,
+" 1"
+],
+[
+75.24,
+75.88,
+" hasta"
+],
+[
+75.88,
+76.36,
+" procesos"
+],
+[
+76.36,
+76.98,
+" simplificados"
+]
+]
+},
+{
+"start": 76.98,
+"end": 78.3,
+"text": "para fármacos de venta libre.",
+"words": [
+[
+76.98,
+77.22,
+" para"
+],
+[
+77.22,
+77.66,
+" fármacos"
+],
+[
+77.66,
+77.82,
+" de"
+],
+[
+77.82,
+78.08,
+" venta"
+],
+[
+78.08,
+78.3,
+" libre."
+]
+]
+},
+{
+"start": 80.46,
+"end": 83.8,
+"text": "Para los medicamentos controlados, la seguridad es absoluta.",
+"words": [
+[
+80.46,
+80.64,
+" Para"
+],
+[
+80.64,
+80.9,
+" los"
+],
+[
+80.9,
+81.48,
+" medicamentos"
+],
+[
+81.48,
+82.08,
+" controlados,"
+],
+[
+82.22,
+82.4,
+" la"
+],
+[
+82.4,
+82.76,
+" seguridad"
+],
+[
+82.76,
+83.24,
+" es"
+],
+[
+83.24,
+83.8,
+" absoluta."
+]
+]
+},
+{
+"start": 83.8,
+"end": 87.58,
+"text": "Se resguardan bajo llave, se registran en libros autorizados,",
+"words": [
+[
+83.8,
+84.32,
+" Se"
+],
+[
+84.32,
+84.82,
+" resguardan"
+],
+[
+84.82,
+85.04,
+" bajo"
+],
+[
+85.04,
+85.44,
+" llave,"
+],
+[
+85.68,
+85.92,
+" se"
+],
+[
+85.92,
+86.34,
+" registran"
+],
+[
+86.34,
+86.52,
+" en"
+],
+[
+86.52,
+86.82,
+" libros"
+],
+[
+86.82,
+87.58,
+" autorizados,"
+]
+]
+},
+{
+"start": 87.92,
+"end": 92.08,
+"text": "y cada movimiento es validado con la firma del responsable sanitario.",
+"words": [
+[
+87.92,
+87.98,
+" y"
+],
+[
+87.98,
+88.16,
+" cada"
+],
+[
+88.16,
+88.74,
+" movimiento"
+],
+[
+88.74,
+89.12,
+" es"
+],
+[
+89.12,
+89.58,
+" validado"
+],
+[
+89.58,
+89.78,
+" con"
+],
+[
+89.78,
+89.98,
+" la"
+],
+[
+89.98,
+90.22,
+" firma"
+],
+[
+90.22,
+90.42,
+" del"
+],
+[
+90.42,
+91.04,
+" responsable"
+],
+[
+91.04,
+92.08,
+" sanitario."
+]
+]
+},
+{
+"start": 92.42,
+"end": 94.8,
+"text": "Una receta completa es fundamental para el surtido.",
+"words": [
+[
+92.42,
+92.56,
+" Una"
+],
+[
+92.56,
+92.98,
+" receta"
+],
+[
+92.98,
+93.36,
+" completa"
+],
+[
+93.36,
+93.62,
+" es"
+],
+[
+93.62,
+94.3,
+" fundamental"
+],
+[
+94.3,
+94.58,
+" para"
+],
+[
+94.58,
+94.7,
+" el"
+],
+[
+94.7,
+95.04,
+" surtido."
+]
+]
+},
+{
+"start": 95.64,
+"end": 97.92,
+"text": "Debe integrar claramente los datos del prescriptor,",
+"words": [
+[
+95.64,
+95.84,
+" Debe"
+],
+[
+95.84,
+96.28,
+" integrar"
+],
+[
+96.28,
+96.7,
+" claramente"
+],
+[
+96.7,
+96.94,
+" los"
+],
+[
+96.94,
+97.12,
+" datos"
+],
+[
+97.12,
+97.36,
+" del"
+],
+[
+97.36,
+97.92,
+" prescriptor,"
+]
+]
+},
+{
+"start": 98.22,
+"end": 102.18,
+"text": "la información del paciente y los detalles específicos del medicamento,",
+"words": [
+[
+98.22,
+98.38,
+" la"
+],
+[
+98.38,
+98.8,
+" información"
+],
+[
+98.8,
+99.0,
+" del"
+],
+[
+99.0,
+99.46,
+" paciente"
+],
+[
+99.46,
+99.76,
+" y"
+],
+[
+99.76,
+100.0,
+" los"
+],
+[
+100.0,
+100.38,
+" detalles"
+],
+[
+100.38,
+101.14,
+" específicos"
+],
+[
+101.14,
+101.3,
+" del"
+],
+[
+101.3,
+102.18,
+" medicamento,"
+]
+]
+},
+{
+"start": 102.58,
+"end": 104.36,
+"text": "siempre incluyendo su nombre genérico.",
+"words": [
+[
+102.58,
+102.92,
+" siempre"
+],
+[
+102.92,
+103.38,
+" incluyendo"
+],
+[
+103.38,
+103.56,
+" su"
+],
+[
+103.56,
+103.86,
+" nombre"
+],
+[
+103.86,
+104.36,
+" genérico."
+]
+]
+},
+{
+"start": 105.2,
+"end": 109.56,
+"text": "En el manejo de antimicrobianos aplicamos el semáforo AWARE de la OMS.",
+"words": [
+[
+105.2,
+105.38,
+" En"
+],
+[
+105.38,
+105.56,
+" el"
+],
+[
+105.56,
+105.9,
+" manejo"
+],
+[
+105.9,
+106.04,
+" de"
+],
+[
+106.04,
+106.82,
+" antimicrobianos"
+],
+[
+106.82,
+107.28,
+" aplicamos"
+],
+[
+107.28,
+107.5,
+" el"
+],
+[
+107.5,
+107.98,
+" semáforo"
+],
+[
+107.98,
+108.42,
+" AWARE"
+],
+[
+108.42,
+108.68,
+" de"
+],
+[
+108.68,
+108.88,
+" la"
+],
+[
+108.88,
+109.56,
+" OMS."
+]
+]
+},
+{
+"start": 109.56,
+"end": 113.5,
+"text": "Clasificarlos en acceso, vigilancia o reserva es vital,",
+"words": [
+[
+109.56,
+110.6,
+" Clasificarlos"
+],
+[
+110.6,
+110.92,
+" en"
+],
+[
+110.92,
+111.48,
+" acceso,"
+],
+[
+111.7,
+112.26,
+" vigilancia"
+],
+[
+112.26,
+112.44,
+" o"
+],
+[
+112.44,
+112.96,
+" reserva"
+],
+[
+112.96,
+113.12,
+" es"
+],
+[
+113.12,
+113.5,
+" vital,"
+]
+]
+},
+{
+"start": 114.02,
+"end": 118.18,
+"text": "y su conocimiento es una competencia obligatoria para nuestro equipo de farmacia.",
+"words": [
+[
+114.02,
+114.08,
+" y"
+],
+[
+114.08,
+114.26,
+" su"
+],
+[
+114.26,
+114.78,
+" conocimiento"
+],
+[
+114.78,
+114.96,
+" es"
+],
+[
+114.96,
+115.2,
+" una"
+],
+[
+115.2,
+115.7,
+" competencia"
+],
+[
+115.7,
+116.44,
+" obligatoria"
+],
+[
+116.44,
+116.7,
+" para"
+],
+[
+116.7,
+117.02,
+" nuestro"
+],
+[
+117.02,
+117.28,
+" equipo"
+],
+[
+117.28,
+117.52,
+" de"
+],
+[
+117.52,
+118.18,
+" farmacia."
+]
+]
+},
+{
+"start": 118.84,
+"end": 121.94,
+"text": "Para minimizar riesgos aplicamos barreras de seguridad,",
+"words": [
+[
+118.84,
+118.98,
+" Para"
+],
+[
+118.98,
+119.62,
+" minimizar"
+],
+[
+119.62,
+120.22,
+" riesgos"
+],
+[
+120.22,
+120.84,
+" aplicamos"
+],
+[
+120.84,
+121.28,
+" barreras"
+],
+[
+121.28,
+121.56,
+" de"
+],
+[
+121.56,
+121.94,
+" seguridad,"
+]
+]
+},
+{
+"start": 122.56,
+"end": 125.28,
+"text": "etiquetas rojas para medicamentos de alto riesgo,",
+"words": [
+[
+122.56,
+123.0,
+" etiquetas"
+],
+[
+123.0,
+123.48,
+" rojas"
+],
+[
+123.48,
+123.74,
+" para"
+],
+[
+123.74,
+124.32,
+" medicamentos"
+],
+[
+124.32,
+124.54,
+" de"
+],
+[
+124.54,
+124.72,
+" alto"
+],
+[
+124.72,
+125.28,
+" riesgo,"
+]
+]
+},
+{
+"start": 125.54,
+"end": 126.58,
+"text": "con doble verificación,",
+"words": [
+[
+125.54,
+125.7,
+" con"
+],
+[
+125.7,
+125.96,
+" doble"
+],
+[
+125.96,
+126.58,
+" verificación,"
+]
+]
+},
+{
+"start": 127.08,
+"end": 130.88,
+"text": "y etiquetas naranjas para identificar aquellos que suenan o se ven parecidos,",
+"words": [
+[
+127.08,
+127.24,
+" y"
+],
+[
+127.24,
+127.68,
+" etiquetas"
+],
+[
+127.68,
+128.22,
+" naranjas"
+],
+[
+128.22,
+128.48,
+" para"
+],
+[
+128.48,
+129.04,
+" identificar"
+],
+[
+129.04,
+129.34,
+" aquellos"
+],
+[
+129.34,
+129.58,
+" que"
+],
+[
+129.58,
+129.92,
+" suenan"
+],
+[
+129.92,
+130.12,
+" o"
+],
+[
+130.12,
+130.26,
+" se"
+],
+[
+130.26,
+130.36,
+" ven"
+],
+[
+130.36,
+130.88,
+" parecidos,"
+]
+]
+},
+{
+"start": 131.36,
+"end": 132.74,
+"text": "los llamados LASA.",
+"words": [
+[
+131.36,
+131.58,
+" los"
+],
+[
+131.58,
+132.24,
+" llamados"
+],
+[
+132.24,
+132.74,
+" LASA."
+]
+]
+},
+{
+"start": 133.0,
+"end": 135.56,
+"text": "El almacenamiento se gestiona con precisión milimétrica,",
+"words": [
+[
+133.0,
+133.24,
+" El"
+],
+[
+133.24,
+133.88,
+" almacenamiento"
+],
+[
+133.88,
+134.14,
+" se"
+],
+[
+134.14,
+134.54,
+" gestiona"
+],
+[
+134.54,
+134.86,
+" con"
+],
+[
+134.86,
+135.32,
+" precisión"
+],
+[
+135.32,
+135.7,
+" milimétrica,"
+]
+]
+},
+{
+"start": 136.56,
+"end": 139.02,
+"text": "controlamos temperatura y humedad constantemente,",
+"words": [
+[
+136.56,
+136.9,
+" controlamos"
+],
+[
+136.9,
+137.48,
+" temperatura"
+],
+[
+137.48,
+137.64,
+" y"
+],
+[
+137.64,
+138.04,
+" humedad"
+],
+[
+138.04,
+139.02,
+" constantemente,"
+]
+]
+},
+{
+"start": 139.02,
+"end": 143.04,
+"text": "manteniendo los insumos en condiciones óptimas sobre anaqueles adecuados",
+"words": [
+[
+139.02,
+139.66,
+" manteniendo"
+],
+[
+139.66,
+139.94,
+" los"
+],
+[
+139.94,
+140.34,
+" insumos"
+],
+[
+140.34,
+140.52,
+" en"
+],
+[
+140.52,
+141.04,
+" condiciones"
+],
+[
+141.04,
+141.64,
+" óptimas"
+],
+[
+141.64,
+141.98,
+" sobre"
+],
+[
+141.98,
+142.48,
+" anaqueles"
+],
+[
+142.48,
+143.04,
+" adecuados"
+]
+]
+},
+{
+"start": 143.04,
+"end": 145.58,
+"text": "para garantizar la integridad de cada producto.",
+"words": [
+[
+143.04,
+143.32,
+" para"
+],
+[
+143.32,
+143.86,
+" garantizar"
+],
+[
+143.86,
+144.1,
+" la"
+],
+[
+144.1,
+144.6,
+" integridad"
+],
+[
+144.6,
+144.88,
+" de"
+],
+[
+144.88,
+145.06,
+" cada"
+],
+[
+145.06,
+145.58,
+" producto."
+]
+]
+},
+{
+"start": 146.86,
+"end": 151.1,
+"text": "La gestión de inventario sigue la regla de oro, primero lo que caduca primero.",
+"words": [
+[
+146.86,
+146.9,
+" La"
+],
+[
+146.9,
+147.26,
+" gestión"
+],
+[
+147.26,
+147.42,
+" de"
+],
+[
+147.42,
+147.86,
+" inventario"
+],
+[
+147.86,
+148.12,
+" sigue"
+],
+[
+148.12,
+148.42,
+" la"
+],
+[
+148.42,
+148.68,
+" regla"
+],
+[
+148.68,
+148.84,
+" de"
+],
+[
+148.84,
+149.16,
+" oro,"
+],
+[
+149.52,
+149.78,
+" primero"
+],
+[
+149.78,
+150.0,
+" lo"
+],
+[
+150.0,
+150.16,
+" que"
+],
+[
+150.16,
+150.44,
+" caduca"
+],
+[
+150.44,
+151.1,
+" primero."
+]
+]
+},
+{
+"start": 151.4,
+"end": 154.46,
+"text": "Aplicamos protocolos estrictos de EPEPS y PCPS",
+"words": [
+[
+151.4,
+151.9,
+" Aplicamos"
+],
+[
+151.9,
+152.44,
+" protocolos"
+],
+[
+152.44,
+152.94,
+" estrictos"
+],
+[
+152.94,
+153.2,
+" de"
+],
+[
+153.2,
+153.54,
+" EPEPS"
+],
+[
+153.54,
+153.86,
+" y"
+],
+[
+153.86,
+154.46,
+" PCPS"
+]
+]
+},
+{
+"start": 155.02,
+"end": 159.02,
+"text": "para asegurar que cada insumo cumpla su propósito antes de su vencimiento.",
+"words": [
+[
+154.8,
+155.16,
+" para"
+],
+[
+155.16,
+155.66,
+" asegurar"
+],
+[
+155.66,
+155.86,
+" que"
+],
+[
+155.86,
+156.06,
+" cada"
+],
+[
+156.06,
+156.46,
+" insumo"
+],
+[
+156.46,
+156.82,
+" cumpla"
+],
+[
+156.82,
+157.06,
+" su"
+],
+[
+157.06,
+157.64,
+" propósito"
+],
+[
+157.64,
+158.02,
+" antes"
+],
+[
+158.02,
+158.16,
+" de"
+],
+[
+158.16,
+158.28,
+" su"
+],
+[
+158.28,
+159.02,
+" vencimiento."
+]
+]
+},
+{
+"start": 160.36,
+"end": 163.02,
+"text": "Comprar bien comienza con proveedores confiables.",
+"words": [
+[
+160.36,
+160.7,
+" Comprar"
+],
+[
+160.7,
+161.08,
+" bien"
+],
+[
+161.08,
+161.66,
+" comienza"
+],
+[
+161.66,
+161.98,
+" con"
+],
+[
+161.98,
+162.44,
+" proveedores"
+],
+[
+162.44,
+163.02,
+" confiables."
+]
+]
+},
+{
+"start": 163.9,
+"end": 167.34,
+"text": "Evaluamos periódicamente su documentación legal y desempeño,",
+"words": [
+[
+163.9,
+164.42,
+" Evaluamos"
+],
+[
+164.42,
+165.14,
+" periódicamente"
+],
+[
+165.14,
+165.38,
+" su"
+],
+[
+165.38,
+165.98,
+" documentación"
+],
+[
+165.98,
+166.28,
+" legal"
+],
+[
+166.28,
+166.5,
+" y"
+],
+[
+166.5,
+167.34,
+" desempeño,"
+]
+]
+},
+{
+"start": 167.34,
+"end": 170.94,
+"text": "asegurando que cada adquisición cuente con múltiples cotizaciones",
+"words": [
+[
+167.34,
+168.02,
+" asegurando"
+],
+[
+168.02,
+168.2,
+" que"
+],
+[
+168.2,
+168.46,
+" cada"
+],
+[
+168.46,
+169.1,
+" adquisición"
+],
+[
+169.1,
+169.4,
+" cuente"
+],
+[
+169.4,
+169.7,
+" con"
+],
+[
+169.7,
+170.16,
+" múltiples"
+],
+[
+170.16,
+170.94,
+" cotizaciones"
+]
+]
+},
+{
+"start": 170.94,
+"end": 173.72,
+"text": "y la autorización necesaria de nuestra dirección.",
+"words": [
+[
+170.94,
+171.36,
+" y"
+],
+[
+171.36,
+171.58,
+" la"
+],
+[
+171.58,
+172.04,
+" autorización"
+],
+[
+172.04,
+172.56,
+" necesaria"
+],
+[
+172.56,
+172.74,
+" de"
+],
+[
+172.74,
+172.96,
+" nuestra"
+],
+[
+172.96,
+173.72,
+" dirección."
+]
+]
+},
+{
+"start": 175.28,
+"end": 177.04,
+"text": "Nuestro cuadro básico es dinámico.",
+"words": [
+[
+175.28,
+175.62,
+" Nuestro"
+],
+[
+175.62,
+175.94,
+" cuadro"
+],
+[
+175.94,
+176.34,
+" básico"
+],
+[
+176.34,
+176.56,
+" es"
+],
+[
+176.56,
+177.04,
+" dinámico."
+]
+]
+},
+{
+"start": 177.44,
+"end": 182.12,
+"text": "Se revisa anualmente para integrar medicamentos con alta frecuencia y eficacia,",
+"words": [
+[
+177.44,
+177.7,
+" Se"
+],
+[
+177.7,
+177.98,
+" revisa"
+],
+[
+177.98,
+178.52,
+" anualmente"
+],
+[
+178.52,
+178.76,
+" para"
+],
+[
+178.76,
+179.24,
+" integrar"
+],
+[
+179.24,
+179.86,
+" medicamentos"
+],
+[
+179.86,
+180.24,
+" con"
+],
+[
+180.24,
+180.54,
+" alta"
+],
+[
+180.54,
+181.1,
+" frecuencia"
+],
+[
+181.1,
+181.38,
+" y"
+],
+[
+181.38,
+182.12,
+" eficacia,"
+]
+]
+},
+{
+"start": 182.48,
+"end": 184.98,
+"text": "mientras excluimos aquellos que no registran movimiento",
+"words": [
+[
+182.48,
+182.72,
+" mientras"
+],
+[
+182.72,
+183.32,
+" excluimos"
+],
+[
+183.32,
+183.64,
+" aquellos"
+],
+[
+183.64,
+183.82,
+" que"
+],
+[
+183.82,
+184.02,
+" no"
+],
+[
+184.02,
+184.36,
+" registran"
+],
+[
+184.36,
+184.98,
+" movimiento"
+]
+]
+},
+{
+"start": 184.98,
+"end": 187.62,
+"text": "o que han presentado riesgos para nuestros pacientes.",
+"words": [
+[
+184.98,
+185.26,
+" o"
+],
+[
+185.26,
+185.42,
+" que"
+],
+[
+185.42,
+185.62,
+" han"
+],
+[
+185.62,
+186.1,
+" presentado"
+],
+[
+186.1,
+186.54,
+" riesgos"
+],
+[
+186.54,
+186.78,
+" para"
+],
+[
+186.78,
+187.08,
+" nuestros"
+],
+[
+187.08,
+187.62,
+" pacientes."
+]
+]
+},
+{
+"start": 189.2,
+"end": 192.1,
+"text": "Finalmente, gestionamos cualquier error con formalidad.",
+"words": [
+[
+189.2,
+189.84,
+" Finalmente,"
+],
+[
+190.22,
+190.64,
+" gestionamos"
+],
+[
+190.64,
+191.06,
+" cualquier"
+],
+[
+191.06,
+191.34,
+" error"
+],
+[
+191.34,
+191.66,
+" con"
+],
+[
+191.66,
+192.1,
+" formalidad."
+]
+]
+},
+{
+"start": 192.56,
+"end": 194.64,
+"text": "Las discrepancias se documentan por escrito,",
+"words": [
+[
+192.56,
+192.84,
+" Las"
+],
+[
+192.84,
+193.36,
+" discrepancias"
+],
+[
+193.36,
+193.56,
+" se"
+],
+[
+193.56,
+194.02,
+" documentan"
+],
+[
+194.02,
+194.2,
+" por"
+],
+[
+194.2,
+194.64,
+" escrito,"
+]
+]
+},
+{
+"start": 194.64,
+"end": 198.6,
+"text": "exigiendo cartas de cambio cuando es necesario y comunicamos cualquier",
+"words": [
+[
+194.64,
+195.46,
+" exigiendo"
+],
+[
+195.46,
+195.82,
+" cartas"
+],
+[
+195.82,
+195.98,
+" de"
+],
+[
+195.98,
+196.18,
+" cambio"
+],
+[
+196.18,
+196.42,
+" cuando"
+],
+[
+196.42,
+196.66,
+" es"
+],
+[
+196.66,
+197.08,
+" necesario"
+],
+[
+197.08,
+197.64,
+" y"
+],
+[
+197.64,
+198.2,
+" comunicamos"
+],
+[
+198.2,
+198.6,
+" cualquier"
+]
+]
+},
+{
+"start": 198.6,
+"end": 203.1,
+"text": "desabasto de forma transparente a través de los canales oficiales.",
+"words": [
+[
+198.6,
+199.16,
+" desabasto"
+],
+[
+199.16,
+199.32,
+" de"
+],
+[
+199.32,
+199.64,
+" forma"
+],
+[
+199.64,
+200.58,
+" transparente"
+],
+[
+200.58,
+200.76,
+" a"
+],
+[
+200.76,
+200.94,
+" través"
+],
+[
+200.94,
+201.14,
+" de"
+],
+[
+201.14,
+201.28,
+" los"
+],
+[
+201.28,
+201.62,
+" canales"
+],
+[
+201.62,
+203.1,
+" oficiales."
+]
+]
+},
+{
+"start": 203.7,
+"end": 206.14,
+"text": "La seguridad del paciente es nuestra prioridad.",
+"words": [
+[
+203.7,
+203.7,
+" La"
+],
+[
+203.7,
+204.06,
+" seguridad"
+],
+[
+204.06,
+204.32,
+" del"
+],
+[
+204.32,
+204.72,
+" paciente"
+],
+[
+204.72,
+204.98,
+" es"
+],
+[
+204.98,
+205.24,
+" nuestra"
+],
+[
+205.24,
+206.14,
+" prioridad."
+]
+]
+},
+{
+"start": 206.4,
+"end": 210.66,
+"text": "Implementamos una conciliación rigurosa al ingreso, traslados y egresos,",
+"words": [
+[
+206.4,
+206.94,
+" Implementamos"
+],
+[
+206.94,
+207.14,
+" una"
+],
+[
+207.14,
+207.72,
+" conciliación"
+],
+[
+207.72,
+208.14,
+" rigurosa"
+],
+[
+208.14,
+208.34,
+" al"
+],
+[
+208.34,
+208.8,
+" ingreso,"
+],
+[
+209.16,
+209.58,
+" traslados"
+],
+[
+209.58,
+209.8,
+" y"
+],
+[
+209.8,
+210.66,
+" egresos,"
+]
+]
+},
+{
+"start": 211.0,
+"end": 213.32,
+"text": "validamos cada prescripción con un sello de idoneidad",
+"words": [
+[
+211.0,
+211.28,
+" validamos"
+],
+[
+211.28,
+211.52,
+" cada"
+],
+[
+211.52,
+212.04,
+" prescripción"
+],
+[
+212.04,
+212.24,
+" con"
+],
+[
+212.24,
+212.4,
+" un"
+],
+[
+212.4,
+212.6,
+" sello"
+],
+[
+212.6,
+212.78,
+" de"
+],
+[
+212.78,
+213.32,
+" idoneidad"
+]
+]
+},
+{
+"start": 213.32,
+"end": 217.84,
+"text": "y actualizamos diariamente el perfil farmacoterapéutico digital para cada",
+"words": [
+[
+213.32,
+213.9,
+" y"
+],
+[
+213.9,
+214.46,
+" actualizamos"
+],
+[
+214.46,
+214.96,
+" diariamente"
+],
+[
+214.96,
+215.24,
+" el"
+],
+[
+215.24,
+215.58,
+" perfil"
+],
+[
+215.58,
+216.68,
+" farmacoterapéutico"
+],
+[
+216.68,
+217.1,
+" digital"
+],
+[
+217.1,
+217.6,
+" para"
+],
+[
+217.6,
+217.84,
+" cada"
+]
+]
+},
+{
+"start": 217.84,
+"end": 218.42,
+"text": "tratamiento.",
+"words": [
+[
+217.84,
+218.42,
+" tratamiento."
+]
+]
+},
+{
+"start": 219.52,
+"end": 223.44,
+"text": "La farmacovigilancia no es un castigo, sino una herramienta esencial de",
+"words": [
+[
+219.52,
+219.7,
+" La"
+],
+[
+219.7,
+220.58,
+" farmacovigilancia"
+],
+[
+220.58,
+220.72,
+" no"
+],
+[
+220.72,
+220.86,
+" es"
+],
+[
+220.86,
+221.02,
+" un"
+],
+[
+221.02,
+221.52,
+" castigo,"
+],
+[
+221.74,
+221.96,
+" sino"
+],
+[
+221.96,
+222.2,
+" una"
+],
+[
+222.2,
+222.74,
+" herramienta"
+],
+[
+222.74,
+223.2,
+" esencial"
+],
+[
+223.2,
+223.44,
+" de"
+]
+]
+},
+{
+"start": 223.44,
+"end": 224.14,
+"text": "mejora,",
+"words": [
+[
+223.44,
+224.14,
+" mejora,"
+]
+]
+},
+{
+"start": 224.14,
+"end": 228.74,
+"text": "Cumpliendo con la norma oficial, notificamos de forma activa cualquier reacción adversa",
+"words": [
+[
+224.14,
+224.64,
+" Cumpliendo"
+],
+[
+224.64,
+224.82,
+" con"
+],
+[
+224.82,
+224.96,
+" la"
+],
+[
+224.96,
+225.24,
+" norma"
+],
+[
+225.24,
+225.64,
+" oficial,"
+],
+[
+226.16,
+226.6,
+" notificamos"
+],
+[
+226.6,
+226.76,
+" de"
+],
+[
+226.76,
+227.0,
+" forma"
+],
+[
+227.0,
+227.54,
+" activa"
+],
+[
+227.54,
+227.9,
+" cualquier"
+],
+[
+227.9,
+228.32,
+" reacción"
+],
+[
+228.32,
+228.74,
+" adversa"
+]
+]
+},
+{
+"start": 228.74,
+"end": 233.46,
+"text": "en las plataformas de COFEPRIS, para garantizar procesos seguros y no punitivos.",
+"words": [
+[
+228.74,
+228.88,
+" en"
+],
+[
+228.88,
+229.06,
+" las"
+],
+[
+229.06,
+229.6,
+" plataformas"
+],
+[
+229.6,
+229.74,
+" de"
+],
+[
+229.74,
+230.14,
+" COFEPRIS,"
+],
+[
+230.56,
+230.74,
+" para"
+],
+[
+230.74,
+231.3,
+" garantizar"
+],
+[
+231.3,
+231.82,
+" procesos"
+],
+[
+231.82,
+232.2,
+" seguros"
+],
+[
+232.2,
+232.54,
+" y"
+],
+[
+232.54,
+232.7,
+" no"
+],
+[
+232.7,
+233.46,
+" punitivos."
+]
+]
+},
+{
+"start": 234.06,
+"end": 239.86,
+"text": "Para concluir, recuerde siempre, cada medicamento debe contar con su norma, su registro y",
+"words": [
+[
+234.06,
+234.24,
+" Para"
+],
+[
+234.24,
+234.92,
+" concluir,"
+],
+[
+235.22,
+235.5,
+" recuerde"
+],
+[
+235.5,
+235.84,
+" siempre,"
+],
+[
+236.62,
+236.74,
+" cada"
+],
+[
+236.74,
+237.36,
+" medicamento"
+],
+[
+237.36,
+237.58,
+" debe"
+],
+[
+237.58,
+237.9,
+" contar"
+],
+[
+237.9,
+238.12,
+" con"
+],
+[
+238.12,
+238.22,
+" su"
+],
+[
+238.22,
+238.8,
+" norma,"
+],
+[
+238.94,
+239.1,
+" su"
+],
+[
+239.1,
+239.64,
+" registro"
+],
+[
+239.64,
+239.86,
+" y"
+]
+]
+},
+{
+"start": 239.86,
+"end": 240.74,
+"text": "su responsable.",
+"words": [
+[
+239.86,
+240.0,
+" su"
+],
+[
+240.0,
+240.74,
+" responsable."
+]
+]
+},
+{
+"start": 241.18,
+"end": 245.64,
+"text": "Mantengamos el orden, la vigilancia y la seguridad para continuar con éxito la",
+"words": [
+[
+241.18,
+241.72,
+" Mantengamos"
+],
+[
+241.72,
+241.88,
+" el"
+],
+[
+241.88,
+242.12,
+" orden,"
+],
+[
+242.44,
+242.58,
+" la"
+],
+[
+242.58,
+243.04,
+" vigilancia"
+],
+[
+243.04,
+243.36,
+" y"
+],
+[
+243.36,
+243.58,
+" la"
+],
+[
+243.58,
+244.0,
+" seguridad"
+],
+[
+244.0,
+244.56,
+" para"
+],
+[
+244.56,
+244.9,
+" continuar"
+],
+[
+244.9,
+245.1,
+" con"
+],
+[
+245.1,
+245.44,
+" éxito"
+],
+[
+245.44,
+245.64,
+" la"
+]
+]
+},
+{
+"start": 245.64,
+"end": 246.6,
+"text": "evaluación de este curso.",
+"words": [
+[
+245.64,
+246.08,
+" evaluación"
+],
+[
+246.08,
+246.28,
+" de"
+],
+[
+246.28,
+246.36,
+" este"
+],
+[
+246.36,
+246.6,
+" curso."
+]
+]
+}
+]

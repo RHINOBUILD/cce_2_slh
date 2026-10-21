@@ -1,0 +1,1666 @@
+[
+{
+"start": 0.0,
+"end": 6.02,
+"text": "Bienvenidos a este video sobre la importancia de identificar peligros, reportar situaciones de riesgo",
+"words": [
+[
+0.0,
+0.88,
+" Bienvenidos"
+],
+[
+0.88,
+1.14,
+" a"
+],
+[
+1.14,
+1.28,
+" este"
+],
+[
+1.28,
+1.64,
+" video"
+],
+[
+1.64,
+1.9,
+" sobre"
+],
+[
+1.9,
+2.2,
+" la"
+],
+[
+2.2,
+2.7,
+" importancia"
+],
+[
+2.7,
+2.96,
+" de"
+],
+[
+2.96,
+3.42,
+" identificar"
+],
+[
+3.42,
+4.08,
+" peligros,"
+],
+[
+4.38,
+4.86,
+" reportar"
+],
+[
+4.86,
+5.38,
+" situaciones"
+],
+[
+5.38,
+5.58,
+" de"
+],
+[
+5.58,
+6.02,
+" riesgo"
+]
+]
+},
+{
+"start": 6.02,
+"end": 11.22,
+"text": "y realizar investigaciones exhaustivas de accidentes e incidentes en nuestro entorno de trabajo.",
+"words": [
+[
+6.02,
+6.38,
+" y"
+],
+[
+6.38,
+6.82,
+" realizar"
+],
+[
+6.82,
+7.6,
+" investigaciones"
+],
+[
+7.6,
+8.36,
+" exhaustivas"
+],
+[
+8.36,
+8.58,
+" de"
+],
+[
+8.58,
+9.08,
+" accidentes"
+],
+[
+9.08,
+9.26,
+" e"
+],
+[
+9.26,
+9.78,
+" incidentes"
+],
+[
+9.78,
+9.94,
+" en"
+],
+[
+9.94,
+10.2,
+" nuestro"
+],
+[
+10.2,
+10.62,
+" entorno"
+],
+[
+10.62,
+10.88,
+" de"
+],
+[
+10.88,
+11.22,
+" trabajo."
+]
+]
+},
+{
+"start": 12.1,
+"end": 17.52,
+"text": "Es fundamental distinguir conceptos. Un peligro es cualquier elemento con el potencial de causar daño,",
+"words": [
+[
+12.1,
+12.12,
+" Es"
+],
+[
+12.12,
+12.66,
+" fundamental"
+],
+[
+12.66,
+13.2,
+" distinguir"
+],
+[
+13.2,
+13.96,
+" conceptos."
+],
+[
+14.14,
+14.3,
+" Un"
+],
+[
+14.3,
+14.7,
+" peligro"
+],
+[
+14.7,
+14.98,
+" es"
+],
+[
+14.98,
+15.22,
+" cualquier"
+],
+[
+15.22,
+15.64,
+" elemento"
+],
+[
+15.64,
+15.88,
+" con"
+],
+[
+15.88,
+16.1,
+" el"
+],
+[
+16.1,
+16.44,
+" potencial"
+],
+[
+16.44,
+16.66,
+" de"
+],
+[
+16.66,
+17.1,
+" causar"
+],
+[
+17.1,
+17.52,
+" daño,"
+]
+]
+},
+{
+"start": 17.7,
+"end": 24.0,
+"text": "mientras que el riesgo es la probabilidad de que ese peligro efectivamente lo cause, como ocurre al manipular agujas.",
+"words": [
+[
+17.7,
+17.92,
+" mientras"
+],
+[
+17.92,
+18.12,
+" que"
+],
+[
+18.12,
+18.28,
+" el"
+],
+[
+18.28,
+18.62,
+" riesgo"
+],
+[
+18.62,
+18.88,
+" es"
+],
+[
+18.88,
+19.1,
+" la"
+],
+[
+19.1,
+19.72,
+" probabilidad"
+],
+[
+19.72,
+19.86,
+" de"
+],
+[
+19.86,
+20.02,
+" que"
+],
+[
+20.02,
+20.3,
+" ese"
+],
+[
+20.3,
+20.76,
+" peligro"
+],
+[
+20.76,
+21.52,
+" efectivamente"
+],
+[
+21.52,
+21.78,
+" lo"
+],
+[
+21.78,
+22.02,
+" cause,"
+],
+[
+22.32,
+22.58,
+" como"
+],
+[
+22.58,
+22.92,
+" ocurre"
+],
+[
+22.92,
+23.08,
+" al"
+],
+[
+23.08,
+23.46,
+" manipular"
+],
+[
+23.46,
+24.0,
+" agujas."
+]
+]
+},
+{
+"start": 25.860000000000003,
+"end": 30.74,
+"text": "Entender la diferencia entre un acto inseguro, un incidente que pudo causar daño pero no",
+"words": [
+[
+25.860000000000003,
+26.46,
+" Entender"
+],
+[
+26.46,
+26.6,
+" la"
+],
+[
+26.6,
+27.06,
+" diferencia"
+],
+[
+27.06,
+27.36,
+" entre"
+],
+[
+27.36,
+27.56,
+" un"
+],
+[
+27.56,
+27.84,
+" acto"
+],
+[
+27.84,
+28.54,
+" inseguro,"
+],
+[
+28.8,
+28.94,
+" un"
+],
+[
+28.94,
+29.36,
+" incidente"
+],
+[
+29.36,
+29.5,
+" que"
+],
+[
+29.5,
+29.68,
+" pudo"
+],
+[
+29.68,
+30.12,
+" causar"
+],
+[
+30.12,
+30.36,
+" daño"
+],
+[
+30.36,
+30.56,
+" pero"
+],
+[
+30.56,
+30.74,
+" no"
+]
+]
+},
+{
+"start": 30.74,
+"end": 36.6,
+"text": "lo hizo, un accidente con lesiones y una enfermedad de trabajo es el primer paso para una gestión",
+"words": [
+[
+30.74,
+30.9,
+" lo"
+],
+[
+30.9,
+31.14,
+" hizo,"
+],
+[
+31.66,
+31.82,
+" un"
+],
+[
+31.82,
+32.2,
+" accidente"
+],
+[
+32.2,
+32.38,
+" con"
+],
+[
+32.38,
+32.84,
+" lesiones"
+],
+[
+32.84,
+33.12,
+" y"
+],
+[
+33.12,
+33.38,
+" una"
+],
+[
+33.38,
+33.84,
+" enfermedad"
+],
+[
+33.84,
+34.02,
+" de"
+],
+[
+34.02,
+34.38,
+" trabajo"
+],
+[
+34.38,
+34.82,
+" es"
+],
+[
+34.82,
+35.06,
+" el"
+],
+[
+35.06,
+35.3,
+" primer"
+],
+[
+35.3,
+35.64,
+" paso"
+],
+[
+35.64,
+35.94,
+" para"
+],
+[
+35.94,
+36.2,
+" una"
+],
+[
+36.2,
+36.6,
+" gestión"
+]
+]
+},
+{
+"start": 36.6,
+"end": 37.36,
+"text": "efectiva.",
+"words": [
+[
+36.6,
+37.36,
+" efectiva."
+]
+]
+},
+{
+"start": 38.4,
+"end": 43.12,
+"text": "La prevención diaria depende de nosotros. Seguir los procedimientos establecidos y usar",
+"words": [
+[
+38.4,
+38.5,
+" La"
+],
+[
+38.5,
+38.92,
+" prevención"
+],
+[
+38.92,
+39.32,
+" diaria"
+],
+[
+39.32,
+39.66,
+" depende"
+],
+[
+39.66,
+39.88,
+" de"
+],
+[
+39.88,
+40.34,
+" nosotros."
+],
+[
+40.78,
+41.12,
+" Seguir"
+],
+[
+41.12,
+41.36,
+" los"
+],
+[
+41.36,
+41.92,
+" procedimientos"
+],
+[
+41.92,
+42.56,
+" establecidos"
+],
+[
+42.56,
+42.82,
+" y"
+],
+[
+42.82,
+43.12,
+" usar"
+]
+]
+},
+{
+"start": 43.12,
+"end": 47.62,
+"text": "nuestro equipo de protección personal evita convertir actos inseguros en accidentes que",
+"words": [
+[
+43.12,
+43.38,
+" nuestro"
+],
+[
+43.38,
+43.66,
+" equipo"
+],
+[
+43.66,
+43.92,
+" de"
+],
+[
+43.92,
+44.22,
+" protección"
+],
+[
+44.22,
+44.7,
+" personal"
+],
+[
+44.7,
+45.4,
+" evita"
+],
+[
+45.4,
+45.86,
+" convertir"
+],
+[
+45.86,
+46.16,
+" actos"
+],
+[
+46.16,
+46.68,
+" inseguros"
+],
+[
+46.68,
+46.92,
+" en"
+],
+[
+46.92,
+47.4,
+" accidentes"
+],
+[
+47.4,
+47.62,
+" que"
+]
+]
+},
+{
+"start": 47.62,
+"end": 49.4,
+"text": "ponen en riesgo nuestra integridad.",
+"words": [
+[
+47.62,
+47.9,
+" ponen"
+],
+[
+47.9,
+48.08,
+" en"
+],
+[
+48.08,
+48.42,
+" riesgo"
+],
+[
+48.42,
+48.72,
+" nuestra"
+],
+[
+48.72,
+49.4,
+" integridad."
+]
+]
+},
+{
+"start": 49.4,
+"end": 58.76,
+"text": "Nuestra Comisión Mixta de Seguridad e Higiene trabaja activamente identificando causas y proponiendo mejoras mediante recorridos de verificación,",
+"words": [
+[
+49.4,
+50.8,
+" Nuestra"
+],
+[
+50.8,
+51.24,
+" Comisión"
+],
+[
+51.24,
+51.64,
+" Mixta"
+],
+[
+51.64,
+51.78,
+" de"
+],
+[
+51.78,
+52.28,
+" Seguridad"
+],
+[
+52.28,
+52.4,
+" e"
+],
+[
+52.4,
+52.96,
+" Higiene"
+],
+[
+52.96,
+53.64,
+" trabaja"
+],
+[
+53.64,
+54.4,
+" activamente"
+],
+[
+54.4,
+55.18,
+" identificando"
+],
+[
+55.18,
+55.7,
+" causas"
+],
+[
+55.7,
+55.96,
+" y"
+],
+[
+55.96,
+56.44,
+" proponiendo"
+],
+[
+56.44,
+56.88,
+" mejoras"
+],
+[
+56.88,
+57.3,
+" mediante"
+],
+[
+57.3,
+57.8,
+" recorridos"
+],
+[
+57.8,
+58.0,
+" de"
+],
+[
+58.0,
+58.76,
+" verificación,"
+]
+]
+},
+{
+"start": 59.32,
+"end": 62.8,
+"text": "asegurando un entorno más seguro para todos los trabajadores.",
+"words": [
+[
+59.32,
+59.68,
+" asegurando"
+],
+[
+59.68,
+59.9,
+" un"
+],
+[
+59.9,
+60.36,
+" entorno"
+],
+[
+60.36,
+60.68,
+" más"
+],
+[
+60.68,
+61.02,
+" seguro"
+],
+[
+61.02,
+61.48,
+" para"
+],
+[
+61.48,
+61.78,
+" todos"
+],
+[
+61.78,
+62.04,
+" los"
+],
+[
+62.04,
+62.8,
+" trabajadores."
+]
+]
+},
+{
+"start": 63.28,
+"end": 65.56,
+"text": "Seguir nuestro ciclo de prevención es clave.",
+"words": [
+[
+63.28,
+63.6,
+" Seguir"
+],
+[
+63.6,
+63.84,
+" nuestro"
+],
+[
+63.84,
+64.22,
+" ciclo"
+],
+[
+64.22,
+64.4,
+" de"
+],
+[
+64.4,
+64.84,
+" prevención"
+],
+[
+64.84,
+65.06,
+" es"
+],
+[
+65.06,
+65.56,
+" clave."
+]
+]
+},
+{
+"start": 65.92,
+"end": 68.76,
+"text": "Comenzamos inspeccionando para identificar riesgos,",
+"words": [
+[
+65.92,
+66.4,
+" Comenzamos"
+],
+[
+66.4,
+67.14,
+" inspeccionando"
+],
+[
+67.14,
+67.4,
+" para"
+],
+[
+67.4,
+67.98,
+" identificar"
+],
+[
+67.98,
+68.76,
+" riesgos,"
+]
+]
+},
+{
+"start": 69.08,
+"end": 70.86,
+"text": "luego investigamos y reportamos,",
+"words": [
+[
+69.08,
+69.36,
+" luego"
+],
+[
+69.36,
+70.0,
+" investigamos"
+],
+[
+70.0,
+70.24,
+" y"
+],
+[
+70.24,
+70.86,
+" reportamos,"
+]
+]
+},
+{
+"start": 71.28,
+"end": 76.5,
+"text": "para finalmente corregir las fallas y verificar que nuestras soluciones realmente funcionen.",
+"words": [
+[
+71.28,
+71.48,
+" para"
+],
+[
+71.48,
+72.06,
+" finalmente"
+],
+[
+72.06,
+72.56,
+" corregir"
+],
+[
+72.56,
+72.76,
+" las"
+],
+[
+72.76,
+73.16,
+" fallas"
+],
+[
+73.16,
+73.5,
+" y"
+],
+[
+73.5,
+73.94,
+" verificar"
+],
+[
+73.94,
+74.14,
+" que"
+],
+[
+74.14,
+74.42,
+" nuestras"
+],
+[
+74.42,
+74.98,
+" soluciones"
+],
+[
+74.98,
+75.68,
+" realmente"
+],
+[
+75.68,
+76.5,
+" funcionen."
+]
+]
+},
+{
+"start": 76.5,
+"end": 81.78,
+"text": "Para que un reporte sea efectivo, debemos detallar con precisión quién estuvo involucrado,",
+"words": [
+[
+76.5,
+76.86,
+" Para"
+],
+[
+76.86,
+77.04,
+" que"
+],
+[
+77.04,
+77.26,
+" un"
+],
+[
+77.26,
+77.68,
+" reporte"
+],
+[
+77.68,
+77.86,
+" sea"
+],
+[
+77.86,
+78.64,
+" efectivo,"
+],
+[
+78.84,
+79.12,
+" debemos"
+],
+[
+79.12,
+79.58,
+" detallar"
+],
+[
+79.58,
+79.84,
+" con"
+],
+[
+79.84,
+80.44,
+" precisión"
+],
+[
+80.44,
+80.72,
+" quién"
+],
+[
+80.72,
+81.16,
+" estuvo"
+],
+[
+81.16,
+81.78,
+" involucrado,"
+]
+]
+},
+{
+"start": 82.1,
+"end": 87.18,
+"text": "qué actividades realizaba, dónde ocurrió y qué condiciones del entorno influyeron,",
+"words": [
+[
+82.1,
+82.24,
+" qué"
+],
+[
+82.24,
+82.84,
+" actividades"
+],
+[
+82.84,
+83.54,
+" realizaba,"
+],
+[
+83.88,
+84.16,
+" dónde"
+],
+[
+84.16,
+84.74,
+" ocurrió"
+],
+[
+84.74,
+85.04,
+" y"
+],
+[
+85.04,
+85.26,
+" qué"
+],
+[
+85.26,
+85.7,
+" condiciones"
+],
+[
+85.7,
+85.92,
+" del"
+],
+[
+85.92,
+86.28,
+" entorno"
+],
+[
+86.28,
+87.18,
+" influyeron,"
+]
+]
+},
+{
+"start": 87.38,
+"end": 90.04,
+"text": "proponiendo siempre medidas correctivas claras.",
+"words": [
+[
+87.38,
+87.8,
+" proponiendo"
+],
+[
+87.8,
+88.18,
+" siempre"
+],
+[
+88.18,
+88.56,
+" medidas"
+],
+[
+88.56,
+89.34,
+" correctivas"
+],
+[
+89.34,
+90.04,
+" claras."
+]
+]
+},
+{
+"start": 90.34,
+"end": 93.92,
+"text": "Al investigar, prioricemos siempre los hechos sobre las suposiciones.",
+"words": [
+[
+90.34,
+90.54,
+" Al"
+],
+[
+90.54,
+91.16,
+" investigar,"
+],
+[
+91.34,
+91.76,
+" prioricemos"
+],
+[
+91.76,
+92.14,
+" siempre"
+],
+[
+92.14,
+92.38,
+" los"
+],
+[
+92.38,
+92.62,
+" hechos"
+],
+[
+92.62,
+92.94,
+" sobre"
+],
+[
+92.94,
+93.16,
+" las"
+],
+[
+93.16,
+93.92,
+" suposiciones."
+]
+]
+},
+{
+"start": 94.6,
+"end": 98.86,
+"text": "Realicemos entrevistas individuales, documentemos con evidencia fotográfica",
+"words": [
+[
+94.6,
+95.1,
+" Realicemos"
+],
+[
+95.1,
+95.64,
+" entrevistas"
+],
+[
+95.64,
+96.56,
+" individuales,"
+],
+[
+96.92,
+97.32,
+" documentemos"
+],
+[
+97.32,
+97.54,
+" con"
+],
+[
+97.54,
+98.0,
+" evidencia"
+],
+[
+98.0,
+98.86,
+" fotográfica"
+]
+]
+},
+{
+"start": 98.86,
+"end": 102.86,
+"text": "y actuemos de forma objetiva y oportuna para obtener resultados veraces.",
+"words": [
+[
+98.86,
+99.2,
+" y"
+],
+[
+99.2,
+99.54,
+" actuemos"
+],
+[
+99.54,
+99.7,
+" de"
+],
+[
+99.7,
+99.96,
+" forma"
+],
+[
+99.96,
+100.4,
+" objetiva"
+],
+[
+100.4,
+100.56,
+" y"
+],
+[
+100.56,
+101.04,
+" oportuna"
+],
+[
+101.04,
+101.26,
+" para"
+],
+[
+101.26,
+101.7,
+" obtener"
+],
+[
+101.7,
+102.26,
+" resultados"
+],
+[
+102.26,
+102.86,
+" veraces."
+]
+]
+},
+{
+"start": 104.16,
+"end": 109.3,
+"text": "Tu participación es vital. Si detectas una condición insegura como un mal manejo de",
+"words": [
+[
+104.16,
+104.74,
+" Tu"
+],
+[
+104.74,
+105.32,
+" participación"
+],
+[
+105.32,
+105.46,
+" es"
+],
+[
+105.46,
+105.82,
+" vital."
+],
+[
+106.34,
+106.48,
+" Si"
+],
+[
+106.48,
+106.96,
+" detectas"
+],
+[
+106.96,
+107.12,
+" una"
+],
+[
+107.12,
+107.52,
+" condición"
+],
+[
+107.52,
+108.04,
+" insegura"
+],
+[
+108.04,
+108.32,
+" como"
+],
+[
+108.32,
+108.56,
+" un"
+],
+[
+108.56,
+108.72,
+" mal"
+],
+[
+108.72,
+109.14,
+" manejo"
+],
+[
+109.14,
+109.3,
+" de"
+]
+]
+},
+{
+"start": 109.3,
+"end": 114.56,
+"text": "punzocortantes, repórtalo de inmediato a tu jefatura. La seguridad e higiene dará el",
+"words": [
+[
+109.3,
+110.26,
+" punzocortantes,"
+],
+[
+110.82,
+111.12,
+" repórtalo"
+],
+[
+111.12,
+111.36,
+" de"
+],
+[
+111.36,
+111.7,
+" inmediato"
+],
+[
+111.7,
+111.82,
+" a"
+],
+[
+111.82,
+111.92,
+" tu"
+],
+[
+111.92,
+112.42,
+" jefatura."
+],
+[
+113.04,
+113.24,
+" La"
+],
+[
+113.24,
+113.66,
+" seguridad"
+],
+[
+113.66,
+113.84,
+" e"
+],
+[
+113.84,
+114.12,
+" higiene"
+],
+[
+114.12,
+114.44,
+" dará"
+],
+[
+114.44,
+114.56,
+" el"
+]
+]
+},
+{
+"start": 114.56,
+"end": 120.68,
+"text": "seguimiento necesario a tu reporte. Recuerda que un incidente reportado hoy es la clave",
+"words": [
+[
+114.56,
+115.0,
+" seguimiento"
+],
+[
+115.0,
+115.46,
+" necesario"
+],
+[
+115.46,
+115.62,
+" a"
+],
+[
+115.62,
+115.7,
+" tu"
+],
+[
+115.7,
+117.4,
+" reporte."
+],
+[
+117.86,
+118.14,
+" Recuerda"
+],
+[
+118.14,
+118.3,
+" que"
+],
+[
+118.3,
+118.52,
+" un"
+],
+[
+118.52,
+119.1,
+" incidente"
+],
+[
+119.1,
+119.54,
+" reportado"
+],
+[
+119.54,
+119.8,
+" hoy"
+],
+[
+119.8,
+120.3,
+" es"
+],
+[
+120.3,
+120.5,
+" la"
+],
+[
+120.5,
+120.68,
+" clave"
+]
+]
+},
+{
+"start": 120.68,
+"end": 125.5,
+"text": "para evitar un accidente mañana. Mantén la prevención como prioridad y continúa",
+"words": [
+[
+120.68,
+120.94,
+" para"
+],
+[
+120.94,
+121.24,
+" evitar"
+],
+[
+121.24,
+121.52,
+" un"
+],
+[
+121.52,
+121.98,
+" accidente"
+],
+[
+121.98,
+122.38,
+" mañana."
+],
+[
+122.94,
+123.14,
+" Mantén"
+],
+[
+123.14,
+123.38,
+" la"
+],
+[
+123.38,
+123.8,
+" prevención"
+],
+[
+123.8,
+124.06,
+" como"
+],
+[
+124.06,
+124.66,
+" prioridad"
+],
+[
+124.66,
+125.14,
+" y"
+],
+[
+125.14,
+125.5,
+" continúa"
+]
+]
+},
+{
+"start": 125.5,
+"end": 127.24,
+"text": "ahora con la evaluación de este curso.",
+"words": [
+[
+125.5,
+125.78,
+" ahora"
+],
+[
+125.78,
+126.0,
+" con"
+],
+[
+126.0,
+126.2,
+" la"
+],
+[
+126.2,
+126.62,
+" evaluación"
+],
+[
+126.62,
+126.88,
+" de"
+],
+[
+126.88,
+126.98,
+" este"
+],
+[
+126.98,
+127.24,
+" curso."
+]
+]
+}
+]

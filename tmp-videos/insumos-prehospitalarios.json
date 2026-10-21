@@ -1,0 +1,1594 @@
+[
+{
+"start": 0.0,
+"end": 5.22,
+"text": "Bienvenidos a este curso sobre la gestión de insumos, materiales y medicamentos esenciales,",
+"words": [
+[
+0.0,
+0.8,
+" Bienvenidos"
+],
+[
+0.8,
+1.04,
+" a"
+],
+[
+1.04,
+1.2,
+" este"
+],
+[
+1.2,
+1.5,
+" curso"
+],
+[
+1.5,
+1.76,
+" sobre"
+],
+[
+1.76,
+1.96,
+" la"
+],
+[
+1.96,
+2.26,
+" gestión"
+],
+[
+2.26,
+2.4,
+" de"
+],
+[
+2.4,
+2.92,
+" insumos,"
+],
+[
+3.2,
+3.62,
+" materiales"
+],
+[
+3.62,
+3.78,
+" y"
+],
+[
+3.78,
+4.38,
+" medicamentos"
+],
+[
+4.38,
+5.22,
+" esenciales,"
+]
+]
+},
+{
+"start": 5.32,
+"end": 9.04,
+"text": "tanto en nuestros consultorios como en las maletas de atención prehospitalaria.",
+"words": [
+[
+5.32,
+5.5,
+" tanto"
+],
+[
+5.5,
+5.66,
+" en"
+],
+[
+5.66,
+5.96,
+" nuestros"
+],
+[
+5.96,
+6.6,
+" consultorios"
+],
+[
+6.6,
+6.94,
+" como"
+],
+[
+6.94,
+7.14,
+" en"
+],
+[
+7.14,
+7.32,
+" las"
+],
+[
+7.32,
+7.66,
+" maletas"
+],
+[
+7.66,
+7.82,
+" de"
+],
+[
+7.82,
+8.16,
+" atención"
+],
+[
+8.16,
+9.04,
+" prehospitalaria."
+]
+]
+},
+{
+"start": 10.559999999999997,
+"end": 13.94,
+"text": "Actualmente, enfrentamos discrepancias entre los cargos en el sistema,",
+"words": [
+[
+10.559999999999997,
+11.12,
+" Actualmente,"
+],
+[
+11.3,
+11.74,
+" enfrentamos"
+],
+[
+11.74,
+12.46,
+" discrepancias"
+],
+[
+12.46,
+12.72,
+" entre"
+],
+[
+12.72,
+13.0,
+" los"
+],
+[
+13.0,
+13.26,
+" cargos"
+],
+[
+13.26,
+13.42,
+" en"
+],
+[
+13.42,
+13.56,
+" el"
+],
+[
+13.56,
+13.94,
+" sistema,"
+]
+]
+},
+{
+"start": 14.28,
+"end": 16.68,
+"text": "las requisiciones y el material recibido.",
+"words": [
+[
+14.28,
+14.48,
+" las"
+],
+[
+14.48,
+15.2,
+" requisiciones"
+],
+[
+15.2,
+15.54,
+" y"
+],
+[
+15.54,
+15.82,
+" el"
+],
+[
+15.82,
+16.1,
+" material"
+],
+[
+16.1,
+16.68,
+" recibido."
+]
+]
+},
+{
+"start": 17.12,
+"end": 20.7,
+"text": "Nuestro objetivo es garantizar que cada área cuente con el suministro completo",
+"words": [
+[
+17.12,
+17.34,
+" Nuestro"
+],
+[
+17.34,
+17.64,
+" objetivo"
+],
+[
+17.64,
+17.82,
+" es"
+],
+[
+17.82,
+18.36,
+" garantizar"
+],
+[
+18.36,
+18.58,
+" que"
+],
+[
+18.58,
+18.82,
+" cada"
+],
+[
+18.82,
+19.1,
+" área"
+],
+[
+19.1,
+19.38,
+" cuente"
+],
+[
+19.38,
+19.62,
+" con"
+],
+[
+19.62,
+19.76,
+" el"
+],
+[
+19.76,
+20.26,
+" suministro"
+],
+[
+20.26,
+20.7,
+" completo"
+]
+]
+},
+{
+"start": 20.7,
+"end": 23.0,
+"text": "para brindar atención sin contratiempos.",
+"words": [
+[
+20.7,
+21.26,
+" para"
+],
+[
+21.26,
+21.68,
+" brindar"
+],
+[
+21.68,
+22.1,
+" atención"
+],
+[
+22.1,
+22.44,
+" sin"
+],
+[
+22.44,
+23.0,
+" contratiempos."
+]
+]
+},
+{
+"start": 25.28,
+"end": 26.54,
+"text": "Recuerden la regla de oro.",
+"words": [
+[
+25.28,
+25.68,
+" Recuerden"
+],
+[
+25.68,
+25.86,
+" la"
+],
+[
+25.86,
+26.14,
+" regla"
+],
+[
+26.14,
+26.32,
+" de"
+],
+[
+26.32,
+26.54,
+" oro."
+]
+]
+},
+{
+"start": 27.02,
+"end": 29.34,
+"text": "Lo que no se carga, no se resurte.",
+"words": [
+[
+27.02,
+27.24,
+" Lo"
+],
+[
+27.24,
+27.34,
+" que"
+],
+[
+27.34,
+27.46,
+" no"
+],
+[
+27.46,
+27.66,
+" se"
+],
+[
+27.66,
+27.94,
+" carga,"
+],
+[
+28.4,
+28.52,
+" no"
+],
+[
+28.52,
+28.74,
+" se"
+],
+[
+28.74,
+29.34,
+" resurte."
+]
+]
+},
+{
+"start": 29.34,
+"end": 34.7,
+"text": "Mientras que el material de consumo interno no requiere cargo, es vital registrar jeringas,",
+"words": [
+[
+29.34,
+30.04,
+" Mientras"
+],
+[
+30.04,
+30.18,
+" que"
+],
+[
+30.18,
+30.38,
+" el"
+],
+[
+30.38,
+30.58,
+" material"
+],
+[
+30.58,
+30.76,
+" de"
+],
+[
+30.76,
+31.06,
+" consumo"
+],
+[
+31.06,
+31.54,
+" interno"
+],
+[
+31.54,
+31.8,
+" no"
+],
+[
+31.8,
+32.12,
+" requiere"
+],
+[
+32.12,
+32.42,
+" cargo,"
+],
+[
+32.9,
+32.98,
+" es"
+],
+[
+32.98,
+33.34,
+" vital"
+],
+[
+33.34,
+33.98,
+" registrar"
+],
+[
+33.98,
+34.7,
+" jeringas,"
+]
+]
+},
+{
+"start": 34.88,
+"end": 40.14,
+"text": "gasas y todo insumo cobrable al paciente. Para evitar surtidos incompletos, la",
+"words": [
+[
+34.88,
+35.34,
+" gasas"
+],
+[
+35.34,
+35.84,
+" y"
+],
+[
+35.84,
+36.1,
+" todo"
+],
+[
+36.1,
+36.52,
+" insumo"
+],
+[
+36.52,
+36.98,
+" cobrable"
+],
+[
+36.98,
+37.12,
+" al"
+],
+[
+37.12,
+37.76,
+" paciente."
+],
+[
+38.24,
+38.3,
+" Para"
+],
+[
+38.3,
+38.66,
+" evitar"
+],
+[
+38.66,
+39.18,
+" surtidos"
+],
+[
+39.18,
+39.84,
+" incompletos,"
+],
+[
+40.02,
+40.14,
+" la"
+]
+]
+},
+{
+"start": 40.14,
+"end": 45.2,
+"text": "requisición debe ser clara. Especifiquen el material usado, la cuenta del paciente y",
+"words": [
+[
+40.14,
+40.62,
+" requisición"
+],
+[
+40.62,
+40.82,
+" debe"
+],
+[
+40.82,
+41.12,
+" ser"
+],
+[
+41.12,
+41.66,
+" clara."
+],
+[
+41.92,
+42.48,
+" Especifiquen"
+],
+[
+42.48,
+42.68,
+" el"
+],
+[
+42.68,
+42.98,
+" material"
+],
+[
+42.98,
+43.44,
+" usado,"
+],
+[
+43.82,
+43.98,
+" la"
+],
+[
+43.98,
+44.14,
+" cuenta"
+],
+[
+44.14,
+44.36,
+" del"
+],
+[
+44.36,
+44.84,
+" paciente"
+],
+[
+44.84,
+45.2,
+" y"
+]
+]
+},
+{
+"start": 45.2,
+"end": 50.64,
+"text": "si es para consultorio o maleta. Envíen siempre el formato en pdf a los correos correspondientes.",
+"words": [
+[
+45.2,
+45.36,
+" si"
+],
+[
+45.36,
+45.52,
+" es"
+],
+[
+45.52,
+45.78,
+" para"
+],
+[
+45.78,
+46.36,
+" consultorio"
+],
+[
+46.36,
+46.56,
+" o"
+],
+[
+46.56,
+47.06,
+" maleta."
+],
+[
+47.74,
+47.9,
+" Envíen"
+],
+[
+47.9,
+48.2,
+" siempre"
+],
+[
+48.2,
+48.4,
+" el"
+],
+[
+48.4,
+48.68,
+" formato"
+],
+[
+48.68,
+48.86,
+" en"
+],
+[
+48.86,
+49.16,
+" pdf"
+],
+[
+49.16,
+49.34,
+" a"
+],
+[
+49.34,
+49.52,
+" los"
+],
+[
+49.52,
+49.84,
+" correos"
+],
+[
+49.84,
+50.64,
+" correspondientes."
+]
+]
+},
+{
+"start": 52.12,
+"end": 57.64,
+"text": "Siga nuestro calendario. Villa del Palmar y Fiesta Americana solicitan insumos los lunes y",
+"words": [
+[
+52.12,
+52.38,
+" Siga"
+],
+[
+52.38,
+52.68,
+" nuestro"
+],
+[
+52.68,
+53.72,
+" calendario."
+],
+[
+53.94,
+54.1,
+" Villa"
+],
+[
+54.1,
+54.28,
+" del"
+],
+[
+54.28,
+54.68,
+" Palmar"
+],
+[
+54.68,
+54.9,
+" y"
+],
+[
+54.9,
+55.18,
+" Fiesta"
+],
+[
+55.18,
+55.68,
+" Americana"
+],
+[
+55.68,
+56.22,
+" solicitan"
+],
+[
+56.22,
+56.9,
+" insumos"
+],
+[
+56.9,
+57.24,
+" los"
+],
+[
+57.24,
+57.46,
+" lunes"
+],
+[
+57.46,
+57.64,
+" y"
+]
+]
+},
+{
+"start": 57.64,
+"end": 63.42,
+"text": "el resto de Cabo San Lucas los jueves. Asegúrense de enviar sus pedidos antes",
+"words": [
+[
+57.64,
+58.76,
+" el"
+],
+[
+58.76,
+59.02,
+" resto"
+],
+[
+59.02,
+59.22,
+" de"
+],
+[
+59.22,
+59.4,
+" Cabo"
+],
+[
+59.4,
+59.54,
+" San"
+],
+[
+59.54,
+59.9,
+" Lucas"
+],
+[
+59.9,
+60.3,
+" los"
+],
+[
+60.3,
+61.32,
+" jueves."
+],
+[
+61.44,
+61.98,
+" Asegúrense"
+],
+[
+61.98,
+62.12,
+" de"
+],
+[
+62.12,
+62.32,
+" enviar"
+],
+[
+62.32,
+62.54,
+" sus"
+],
+[
+62.54,
+63.02,
+" pedidos"
+],
+[
+63.02,
+63.42,
+" antes"
+]
+]
+},
+{
+"start": 63.42,
+"end": 67.72,
+"text": "de las nueve de la mañana siguiente. Al recibir material, realicen un doble",
+"words": [
+[
+63.42,
+63.56,
+" de"
+],
+[
+63.56,
+63.74,
+" las"
+],
+[
+63.74,
+63.94,
+" nueve"
+],
+[
+63.94,
+64.06,
+" de"
+],
+[
+64.06,
+64.22,
+" la"
+],
+[
+64.22,
+64.48,
+" mañana"
+],
+[
+64.48,
+64.98,
+" siguiente."
+],
+[
+65.7,
+65.82,
+" Al"
+],
+[
+65.82,
+66.16,
+" recibir"
+],
+[
+66.16,
+66.7,
+" material,"
+],
+[
+67.0,
+67.26,
+" realicen"
+],
+[
+67.26,
+67.48,
+" un"
+],
+[
+67.48,
+67.72,
+" doble"
+]
+]
+},
+{
+"start": 67.72,
+"end": 72.16,
+"text": "cotejo. Verifiquen que lo físico coincida con la hoja de traspaso y que",
+"words": [
+[
+67.72,
+68.34,
+" cotejo."
+],
+[
+68.52,
+68.98,
+" Verifiquen"
+],
+[
+68.98,
+69.12,
+" que"
+],
+[
+69.12,
+69.3,
+" lo"
+],
+[
+69.3,
+69.82,
+" físico"
+],
+[
+69.82,
+70.32,
+" coincida"
+],
+[
+70.32,
+70.5,
+" con"
+],
+[
+70.5,
+70.62,
+" la"
+],
+[
+70.62,
+70.82,
+" hoja"
+],
+[
+70.82,
+71.02,
+" de"
+],
+[
+71.02,
+71.58,
+" traspaso"
+],
+[
+71.58,
+71.96,
+" y"
+],
+[
+71.96,
+72.16,
+" que"
+]
+]
+},
+{
+"start": 72.16,
+"end": 76.46,
+"text": "ésta coincida con su requisición original. Si algo falta, consulten el",
+"words": [
+[
+72.16,
+72.4,
+" ésta"
+],
+[
+72.4,
+72.84,
+" coincida"
+],
+[
+72.84,
+73.06,
+" con"
+],
+[
+73.06,
+73.26,
+" su"
+],
+[
+73.26,
+73.84,
+" requisición"
+],
+[
+73.84,
+74.32,
+" original."
+],
+[
+74.72,
+74.88,
+" Si"
+],
+[
+74.88,
+75.12,
+" algo"
+],
+[
+75.12,
+75.48,
+" falta,"
+],
+[
+76.0,
+76.32,
+" consulten"
+],
+[
+76.32,
+76.46,
+" el"
+]
+]
+},
+{
+"start": 76.46,
+"end": 81.74,
+"text": "correo de almacén. Ante cualquier faltante, actúen según el escenario,",
+"words": [
+[
+76.46,
+76.82,
+" correo"
+],
+[
+76.82,
+76.96,
+" de"
+],
+[
+76.96,
+78.36,
+" almacén."
+],
+[
+78.66,
+78.96,
+" Ante"
+],
+[
+78.96,
+79.24,
+" cualquier"
+],
+[
+79.24,
+79.88,
+" faltante,"
+],
+[
+80.34,
+80.56,
+" actúen"
+],
+[
+80.56,
+80.82,
+" según"
+],
+[
+80.82,
+81.06,
+" el"
+],
+[
+81.06,
+81.74,
+" escenario,"
+]
+]
+},
+{
+"start": 82.04,
+"end": 85.66,
+"text": "elaboren una carta de hechos, soliciten autorizaciones para cargos",
+"words": [
+[
+82.04,
+82.38,
+" elaboren"
+],
+[
+82.38,
+82.6,
+" una"
+],
+[
+82.6,
+82.88,
+" carta"
+],
+[
+82.88,
+83.14,
+" de"
+],
+[
+83.14,
+83.5,
+" hechos,"
+],
+[
+83.88,
+84.28,
+" soliciten"
+],
+[
+84.28,
+85.02,
+" autorizaciones"
+],
+[
+85.02,
+85.34,
+" para"
+],
+[
+85.34,
+85.66,
+" cargos"
+]
+]
+},
+{
+"start": 85.66,
+"end": 90.28,
+"text": "posteriores o notifiquen a auditorías y al sistema marca existencias que no",
+"words": [
+[
+85.66,
+86.46,
+" posteriores"
+],
+[
+86.46,
+86.9,
+" o"
+],
+[
+86.9,
+87.42,
+" notifiquen"
+],
+[
+87.42,
+87.6,
+" a"
+],
+[
+87.6,
+88.12,
+" auditorías"
+],
+[
+88.12,
+88.26,
+" y"
+],
+[
+88.26,
+88.4,
+" al"
+],
+[
+88.4,
+88.7,
+" sistema"
+],
+[
+88.7,
+89.06,
+" marca"
+],
+[
+89.06,
+89.8,
+" existencias"
+],
+[
+89.8,
+90.06,
+" que"
+],
+[
+90.06,
+90.28,
+" no"
+]
+]
+},
+{
+"start": 90.28,
+"end": 95.52,
+"text": "llegaron. Para el manejo de caducados, retiren y separan el material, notifiquen",
+"words": [
+[
+90.28,
+91.14,
+" llegaron."
+],
+[
+91.44,
+91.54,
+" Para"
+],
+[
+91.54,
+91.7,
+" el"
+],
+[
+91.7,
+91.98,
+" manejo"
+],
+[
+91.98,
+92.16,
+" de"
+],
+[
+92.16,
+92.86,
+" caducados,"
+],
+[
+93.26,
+93.44,
+" retiren"
+],
+[
+93.44,
+93.68,
+" y"
+],
+[
+93.68,
+93.96,
+" separan"
+],
+[
+93.96,
+94.22,
+" el"
+],
+[
+94.22,
+94.56,
+" material,"
+],
+[
+95.06,
+95.52,
+" notifiquen"
+]
+]
+},
+{
+"start": 95.52,
+"end": 99.26,
+"text": "mediante carta de hechos y realicen el envío físico al almacén central,",
+"words": [
+[
+95.52,
+95.96,
+" mediante"
+],
+[
+95.96,
+96.2,
+" carta"
+],
+[
+96.2,
+96.42,
+" de"
+],
+[
+96.42,
+96.7,
+" hechos"
+],
+[
+96.7,
+97.06,
+" y"
+],
+[
+97.06,
+97.5,
+" realicen"
+],
+[
+97.5,
+97.68,
+" el"
+],
+[
+97.68,
+97.92,
+" envío"
+],
+[
+97.92,
+98.36,
+" físico"
+],
+[
+98.36,
+98.54,
+" al"
+],
+[
+98.54,
+98.88,
+" almacén"
+],
+[
+98.88,
+99.26,
+" central,"
+]
+]
+},
+{
+"start": 99.88,
+"end": 103.62,
+"text": "asegurándose de rotular correctamente el origen de cada paquete.",
+"words": [
+[
+99.88,
+100.44,
+" asegurándose"
+],
+[
+100.44,
+100.64,
+" de"
+],
+[
+100.64,
+101.0,
+" rotular"
+],
+[
+101.0,
+101.68,
+" correctamente"
+],
+[
+101.68,
+101.88,
+" el"
+],
+[
+101.88,
+102.22,
+" origen"
+],
+[
+102.22,
+102.42,
+" de"
+],
+[
+102.42,
+102.58,
+" cada"
+],
+[
+102.58,
+103.62,
+" paquete."
+]
+]
+},
+{
+"start": 104.72,
+"end": 109.38,
+"text": "En resumen, carguen todo lo usado, realicen sus peticiones a tiempo y",
+"words": [
+[
+104.72,
+104.88,
+" En"
+],
+[
+104.88,
+105.32,
+" resumen,"
+],
+[
+105.78,
+106.06,
+" carguen"
+],
+[
+106.06,
+106.32,
+" todo"
+],
+[
+106.32,
+106.48,
+" lo"
+],
+[
+106.48,
+107.0,
+" usado,"
+],
+[
+107.44,
+107.72,
+" realicen"
+],
+[
+107.72,
+107.94,
+" sus"
+],
+[
+107.94,
+108.4,
+" peticiones"
+],
+[
+108.4,
+108.64,
+" a"
+],
+[
+108.64,
+108.9,
+" tiempo"
+],
+[
+108.9,
+109.38,
+" y"
+]
+]
+},
+{
+"start": 109.38,
+"end": 113.78,
+"text": "verifiquen siempre lo que reciben. Ahora los invito a continuar con la",
+"words": [
+[
+109.38,
+109.98,
+" verifiquen"
+],
+[
+109.98,
+110.28,
+" siempre"
+],
+[
+110.28,
+110.46,
+" lo"
+],
+[
+110.46,
+110.7,
+" que"
+],
+[
+110.7,
+111.28,
+" reciben."
+],
+[
+111.76,
+112.06,
+" Ahora"
+],
+[
+112.06,
+112.68,
+" los"
+],
+[
+112.68,
+112.94,
+" invito"
+],
+[
+112.94,
+113.12,
+" a"
+],
+[
+113.12,
+113.4,
+" continuar"
+],
+[
+113.4,
+113.62,
+" con"
+],
+[
+113.62,
+113.78,
+" la"
+]
+]
+},
+{
+"start": 113.78,
+"end": 115.14,
+"text": "evaluación final de este curso.",
+"words": [
+[
+113.78,
+114.22,
+" evaluación"
+],
+[
+114.22,
+114.52,
+" final"
+],
+[
+114.52,
+114.76,
+" de"
+],
+[
+114.76,
+114.88,
+" este"
+],
+[
+114.88,
+115.14,
+" curso."
+]
+]
+}
+]
