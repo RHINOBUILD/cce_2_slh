@@ -879,55 +879,108 @@ var CCE_CATALOG = [
     "lecciones": [
       {
         "tipo": "video",
-        "titulo": "Higiene de manos: cinco momentos",
-        "duracion": "0:56 min",
-        "texto": "Realiza higiene de manos en los cinco momentos. Usa solución alcoholada cuando las manos no estén visiblemente sucias y agua con jabón cuando sí lo estén.",
-        "video": "higiene-de-manos.mp4",
-        "segundosMinimos": 50,
+        "titulo": "AESP 5 · Higiene de manos: video del curso",
+        "duracion": "1:33 min",
+        "texto": "Higiene de manos y medidas para prevenir infecciones asociadas a la atención.",
+        "video": "aesp5-higiene-manos.mp4",
+        "segundosMinimos": 83,
         "subtitulos": [
           [
-            0,
-            8,
-            "La higiene de manos protege al paciente, al personal y a toda la comunidad."
+            0.5,
+            5.1,
+            "Bienvenida al curso de la Acción Esencial para la Seguridad del Paciente número 5:"
           ],
           [
-            8,
-            16,
-            "Recuerda los cinco momentos: antes del contacto y de una tarea aséptica; después de fluidos, del paciente y de su entorno."
+            5.4,
+            8.4,
+            "reducción del riesgo de infecciones asociadas a la atención."
           ],
           [
-            16,
-            24,
-            "Utiliza solución alcoholada cuando las manos no estén visiblemente sucias y frótalas hasta que se sequen."
+            9.3,
+            12.8,
+            "Las manos son el principal vehículo de transmisión dentro del hospital."
           ],
           [
-            24,
-            32,
-            "Usa agua y jabón cuando exista suciedad visible y después de utilizar el sanitario."
+            13.2,
+            19.2,
+            "Por eso la higiene de manos es obligatoria para todo el personal que tiene contacto con pacientes o con su entorno,"
           ],
           [
-            32,
-            40,
-            "Los guantes no sustituyen la higiene. Limpia tus manos antes de colocarlos y después de retirarlos."
+            19.5,
+            21,
+            "en todos los turnos y servicios."
           ],
           [
-            40,
-            48,
-            "Detente, identifica el momento y realiza la técnica completa en cada atención."
+            21.5,
+            26.8,
+            "Realiza higiene de manos en los cinco momentos de la OMS: antes del contacto con el paciente,"
           ],
           [
-            48,
-            55.9,
-            "Manos limpias significan atención más segura. Continúa con la evaluación."
+            26.8,
+            31.3,
+            "antes de una tarea aséptica, después de la exposición a líquidos corporales,"
+          ],
+          [
+            31.6,
+            35.6,
+            "después del contacto con el paciente y después del contacto con su entorno,"
+          ],
+          [
+            35.9,
+            41.9,
+            "usa agua y jabón de 40 a 60 segundos cuando las manos estén visiblemente sucias."
+          ],
+          [
+            42.6,
+            48.1,
+            "En los demás casos, usa solución alcoholada de 20 a 30 segundos hasta que las manos queden"
+          ],
+          [
+            48.1,
+            56.4,
+            "secas. Frota cada superficie en orden: palmas, dorsos, espacios entre los dedos, nudillos, pulgares y yemas."
+          ],
+          [
+            57.1,
+            61.5,
+            "Si usaste agua, seca con toalla desechable y cierra el grifo con ella."
+          ],
+          [
+            62.2,
+            64.6,
+            "Los guantes no sustituyen la higiene de manos."
+          ],
+          [
+            65.5,
+            70.3,
+            "Lávate antes de ponértelos y en cuanto te los quites, y cámbialos entre un paciente y otro."
+          ],
+          [
+            71.1,
+            72.6,
+            "Mantén las uñas naturales,"
+          ],
+          [
+            72.8,
+            79,
+            "cortas y limpias. Además de la higiene de manos, aplica las precauciones según la forma de transmisión,"
+          ],
+          [
+            79.5,
+            85.6,
+            "estándar con todos los pacientes y de contacto, por gotas o por vía aérea cuando se indiquen."
+          ],
+          [
+            86.1,
+            90.1,
+            "Recuerda, cinco momentos, técnica completa y sin excepciones."
+          ],
+          [
+            91,
+            92.7,
+            "Continúa con la evaluación del curso."
           ]
-        ]
-      },
-      {
-        "tipo": "lectura",
-        "titulo": "Higiene de manos: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo basada en las Acciones Esenciales para la Seguridad del Paciente y la estrategia de higiene de manos de la OMS.\n\n• La higiene de manos es obligatoria para todo el personal que tiene contacto con pacientes o con su entorno.\n• Cinco momentos: antes del contacto con el paciente, antes de una tarea aséptica, después de la exposición a líquidos corporales, después del contacto con el paciente y después del contacto con su entorno.\n• Agua y jabón (40 a 60 segundos) cuando las manos están visiblemente sucias; solución alcoholada (20 a 30 segundos) en los demás casos.\n• Técnica: palmas, dorsos, espacios entre los dedos, nudillos, pulgares y yemas.\n• Los guantes no sustituyen la higiene de manos: lávate antes de ponértelos y al retirarlos, y cámbialos entre pacientes.\n• Uñas naturales, cortas y limpias; evita uñas artificiales, anillos y pulseras durante la atención.\n• Precauciones según la transmisión: estándar, contacto, gotas (> 5 micras) y vía aérea (< 5 micras, respirador N95).\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        ],
         "materiales": [
           {
             "nombre": "Presentación AESP 5",
@@ -1081,55 +1134,113 @@ var CCE_CATALOG = [
     "lecciones": [
       {
         "tipo": "video",
-        "titulo": "Precauciones estándar y EPP",
-        "duracion": "0:56 min",
-        "texto": "Aplica las precauciones estándar con toda persona. Selecciona el equipo de protección según el riesgo y retíralo evitando la autocontaminación.",
-        "video": "precauciones-estandar-epp.mp4",
-        "segundosMinimos": 50,
+        "titulo": "Precauciones estándar · EPP: video del curso",
+        "duracion": "1:32 min",
+        "texto": "Medidas básicas para prevenir exposiciones y cortar cadenas de transmisión.",
+        "video": "precauciones-estandar.mp4",
+        "segundosMinimos": 82,
         "subtitulos": [
           [
-            0,
-            8,
-            "Las precauciones estándar se aplican a todos los pacientes, independientemente de su diagnóstico."
+            0.8,
+            5.8,
+            "Bienvenida al curso de precauciones estándar y uso seguro del equipo de protección personal."
           ],
           [
-            8,
-            16,
-            "Antes del contacto, evalúa el riesgo de exposición a sangre, fluidos y material contaminado."
+            6.2,
+            13,
+            "Toda sangre, fluido corporal, secreción, piel no intacta y mucosa se considera potencialmente infecciosa."
           ],
           [
-            16,
-            24,
-            "Selecciona guantes, bata, mascarilla y protección ocular de acuerdo con el riesgo esperado."
+            13.4,
+            18.6,
+            "Por eso las precauciones estándar se aplican con cada paciente, sin importar su diagnóstico."
           ],
           [
-            24,
-            32,
-            "Realiza higiene de manos, revisa el equipo y colócalo en el orden institucional."
+            19.2,
+            21.6,
+            "Son ocho medidas que siempre van juntas."
           ],
           [
-            32,
-            40,
-            "Al retirarlo, evita tocar superficies contaminadas y finaliza con higiene de manos."
+            21.6,
+            28.7,
+            "Higiene de manos, equipo de protección según el riesgo, higiene respiratoria, manejo seguro de punzocortantes,"
           ],
           [
-            40,
-            48,
-            "No reencapuches agujas. Deséchalas inmediatamente en el recipiente rígido correspondiente."
+            29,
+            35.6,
+            "inyección segura, limpieza del equipo, limpieza del entorno y manejo correcto de ropa y residuos."
           ],
           [
-            48,
-            55.9,
-            "El equipo protege cuando se selecciona, utiliza y retira correctamente. Continúa con la evaluación."
+            35.9,
+            42.1,
+            "El riesgo de la tarea decide el equipo, guantes ante sangre o fluidos, bata ante salpicaduras a la ropa,"
+          ],
+          [
+            42.5,
+            44.6,
+            "mascarilla y lentes ante salpicaduras a la cara."
+          ],
+          [
+            45.1,
+            47.8,
+            "Usar más equipo del necesario no te protege más."
+          ],
+          [
+            47.8,
+            53.6,
+            "Para colocarte el equipo, haz higiene de manos y después ponte la bata, la mascarilla,"
+          ],
+          [
+            53.8,
+            58.2,
+            "los lentes o la careta y al final, los guantes por encima del puño de la bata."
+          ],
+          [
+            58.7,
+            61.5,
+            "Al retirarlo, lo más contaminado sale primero."
+          ],
+          [
+            61.9,
+            64.1,
+            "Guantes, lentes, bata y mascarilla."
+          ],
+          [
+            65.2,
+            67,
+            "Termina siempre con higiene de manos."
+          ],
+          [
+            67.8,
+            69.1,
+            "Nunca reencapuches agujas."
+          ],
+          [
+            70.2,
+            73.2,
+            "Deséchalas de inmediato en el recipiente rígido."
+          ],
+          [
+            73.7,
+            81.7,
+            "Si te pinchas o te salpicas, lava la zona, enjuaga la mucosa con agua abundante y reporta de inmediato a tu jefe y a Epidemiología."
+          ],
+          [
+            82.8,
+            85.4,
+            "Recuerda, cada paciente, cada vez."
+          ],
+          [
+            86,
+            90,
+            "Evalúa el riesgo, elige el equipo y retíralo sin contaminarte."
+          ],
+          [
+            90.3,
+            91.9,
+            "Continúa con la evaluación del curso."
           ]
-        ]
-      },
-      {
-        "tipo": "lectura",
-        "titulo": "Precauciones estándar: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo basada en las recomendaciones de la OMS y los CDC para la prevención y el control de infecciones.\n\n• Toda sangre, fluido, secreción, piel no intacta y mucosa se considera potencialmente infecciosa: las precauciones estándar se aplican con todos los pacientes.\n• Componentes: higiene de manos, EPP según riesgo, higiene respiratoria, punzocortantes, inyección segura, limpieza del equipo y del entorno, ropa y residuos.\n• El EPP se elige según el riesgo de la tarea; el exceso no protege más y aumenta la autocontaminación.\n• Colocación: higiene de manos, bata, mascarilla, lentes o careta y guantes por encima del puño.\n• Retiro: guantes, lentes o careta, bata, mascarilla e higiene de manos al final.\n• Las agujas no se reencapuchan; se desechan de inmediato en el recipiente rígido sin pasar del 80 %.\n• Ante una punción o salpicadura: lavar o enjuagar con agua abundante y reportar de inmediato al jefe y a Epidemiología.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        ],
         "materiales": [
           {
             "nombre": "Presentación Precauciones estándar",
@@ -1283,55 +1394,93 @@ var CCE_CATALOG = [
     "lecciones": [
       {
         "tipo": "video",
-        "titulo": "Trato digno y experiencia del paciente",
-        "duracion": "0:56 min",
-        "texto": "Preséntate, escucha, protege la privacidad y explica con lenguaje claro. Confirma la comprensión y respeta las decisiones informadas.",
-        "video": "trato-digno-experiencia-paciente.mp4",
-        "segundosMinimos": 50,
+        "titulo": "Trato digno: video del curso",
+        "duracion": "1:26 min",
+        "texto": "Comunicación respetuosa, privacidad, escucha y participación del paciente.",
+        "video": "trato-digno.mp4",
+        "segundosMinimos": 77,
         "subtitulos": [
           [
-            0,
+            0.9,
+            4.6,
+            "Bienvenida al curso de trato digno y experiencia del paciente."
+          ],
+          [
+            5.2,
             8,
-            "Cada interacción cuenta. Un trato humano genera confianza y fortalece la seguridad del paciente."
+            "Cada interacción construye o rompe la confianza."
           ],
           [
-            8,
-            16,
-            "Preséntate, explica tu función, escucha sin interrumpir y confirma lo que comprendiste."
+            8.8,
+            16.1,
+            "Un paciente que confía pregunta, avisa y sigue las indicaciones, y el trato digno es un derecho de toda persona que atendemos."
           ],
           [
-            16,
-            24,
-            "Protege las conversaciones, documentos, imágenes y datos clínicos del paciente."
+            16.9,
+            23.2,
+            "La Carta de los Derechos Generales de los Pacientes reconoce 10 derechos, entre ellos recibir un trato digno,"
           ],
           [
-            24,
-            32,
-            "Utiliza lenguaje sencillo, informa los próximos pasos y verifica la comprensión."
+            23.5,
+            29.5,
+            "información clara, decidir libremente, la confidencialidad y ser atendido cuando se inconforme."
           ],
           [
-            32,
+            30.4,
+            35.6,
+            "En el primer contacto, saluda con un tono cálido, preséntate con tu nombre y tu función,"
+          ],
+          [
+            36.1,
+            39.2,
+            "escucha sin interrumpir y explica qué harás y qué sigue."
+          ],
+          [
             40,
-            "Respeta la identidad, cultura, creencias, discapacidad y decisiones informadas de cada persona."
+            46.1,
+            "Usa un lenguaje sencillo y confirma la comprensión pidiendo al paciente que explique con sus palabras lo que entendió."
           ],
           [
-            40,
-            48,
-            "Ante una inconformidad, escucha, conserva la calma, reconoce la preocupación y canaliza una solución."
+            46.8,
+            49.6,
+            "Si habla otro idioma, busca apoyo bilingüe."
           ],
           [
-            48,
-            55.9,
-            "Despídete, aclara las dudas y orienta sobre el seguimiento. Continúa con la evaluación."
+            50,
+            57.4,
+            "Protege la privacidad: toca antes de entrar, cubre al paciente y comenta los casos solo con quien participa en la atención."
+          ],
+          [
+            58.3,
+            61.2,
+            "Nunca compartas datos ni imágenes en redes sociales."
+          ],
+          [
+            62.1,
+            68.3,
+            "Respeta la identidad, la cultura, las creencias y las decisiones informadas de cada persona, sin distinción."
+          ],
+          [
+            69,
+            73.1,
+            "Ante una inconformidad, escucha con calma, reconoce la molestia,"
+          ],
+          [
+            73.4,
+            76.8,
+            "resuelve lo que esté en tus manos y canaliza a tu jefe o a Calidad."
+          ],
+          [
+            77.6,
+            83.4,
+            "Recuerda, preséntate, escucha, explica con claridad y protege la privacidad."
+          ],
+          [
+            84.1,
+            85.7,
+            "Continúa con la evaluación del curso."
           ]
-        ]
-      },
-      {
-        "tipo": "lectura",
-        "titulo": "Trato digno: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo basada en la Carta de los Derechos Generales de los Pacientes y en el Manual de la Organización.\n\n• El trato digno y respetuoso es un derecho del paciente y una condición para su seguridad.\n• Diez derechos: atención adecuada, trato digno, información clara, decidir libremente, consentimiento informado, confidencialidad, segunda opinión, atención de urgencia, expediente clínico y atención a inconformidades.\n• Primer contacto: saluda, preséntate con nombre y función, llama al paciente por su nombre, escucha y explica qué sigue.\n• Usa lenguaje sencillo y confirma que te entendieron; si el paciente habla otro idioma, busca apoyo bilingüe.\n• Protege la privacidad: toca antes de entrar, cubre al paciente y no compartas datos ni imágenes fuera de la atención.\n• Respeta identidad, cultura, creencias y decisiones informadas, sin distinción.\n• Ante una inconformidad: escucha, reconoce, resuelve lo que puedas y canaliza a tu jefe o a Calidad.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        ],
         "materiales": [
           {
             "nombre": "Presentación Trato digno",
@@ -2256,11 +2405,119 @@ var CCE_CATALOG = [
     "orden": 9,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Electrocardiograma: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo para la toma de electrocardiogramas de 12 derivaciones. Prevalece siempre el protocolo institucional.\n\n• Dolor torácico: electrocardiograma en 10 minutos o menos desde la llegada y entrega inmediata al médico.\n• Preparación: identificar, explicar, privacidad, decúbito supino, piel limpia y seca, electrodos sobre tejido blando.\n• Extremidades: cuatro electrodos simétricos; revisa el código de color (AHA o IEC) para no invertir los brazos.\n• Precordiales: V1 y V2 en el 4.º EIC a cada lado del esternón; V4 en el 5.º EIC línea medioclavicular; V3 entre V2 y V4; V5 axilar anterior y V6 axilar media al nivel de V4.\n• Caras: inferior II, III, aVF; lateral I, aVL, V5, V6; septal V1, V2; anterior V3, V4.\n• Calibración: 25 mm/s y 10 mm/mV; cuadro chico 0.04 s, cuadro grande 0.20 s.\n• Artefactos: movimiento, interferencia, línea errante, brazos invertidos; corrige y repite.\n• Elevación del ST, ritmos muy rápidos o lentos o trazo caótico: notificar de inmediato; sin pulso, Código Azul.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Electrocardiograma 12D: video del curso",
+        "duracion": "1:40 min",
+        "texto": "Colocación de electrodos, adquisición y detección de trazos críticos.",
+        "video": "ekg-12-derivaciones.mp4",
+        "segundosMinimos": 89,
+        "subtitulos": [
+          [
+            0.9,
+            4.5,
+            "Bienvenida al curso de electrocardiograma de 12 derivaciones."
+          ],
+          [
+            5.2,
+            7.3,
+            "Ante un paciente con dolor torácico,"
+          ],
+          [
+            7.5,
+            13,
+            "el electrocardiograma se toma en los primeros 10 minutos desde su llegada y se entrega de inmediato al médico."
+          ],
+          [
+            13.4,
+            16.6,
+            "Se repite si el dolor o el estado del paciente cambian."
+          ],
+          [
+            16.9,
+            18.5,
+            "Un buen trazo empieza en la piel."
+          ],
+          [
+            19.4,
+            23.9,
+            "Identifica al paciente, explica el procedimiento, cuida su privacidad,"
+          ],
+          [
+            24.2,
+            28.1,
+            "colócalo en decúbito supino y relajado y asegura una piel limpia y"
+          ],
+          [
+            28.1,
+            33.1,
+            "seca. Coloca los cuatro electrodos de las extremidades de forma simétrica."
+          ],
+          [
+            33.7,
+            38.7,
+            "Revisa el código de color de tu equipo, porque el error más común es invertir los brazos."
+          ],
+          [
+            39,
+            42.4,
+            "Para las precordiales, cuenta los espacios intercostales."
+          ],
+          [
+            43,
+            47.6,
+            "V1 y V2 van en el cuarto espacio a cada lado del esternón."
+          ],
+          [
+            48.4,
+            51.9,
+            "V4 va en el quinto espacio, en la línea medioclavicular."
+          ],
+          [
+            52.7,
+            56.8,
+            "V3 queda entre ambos y V5 y V6 al nivel de V4."
+          ],
+          [
+            56.8,
+            64.1,
+            "Las 12 derivaciones miran distintas caras del corazón, inferior, lateral, septal y anterior."
+          ],
+          [
+            64.9,
+            71.1,
+            "Verifica la calibración estándar, 25 milímetros por segundo y 10 milímetros por milivoltio."
+          ],
+          [
+            71.3,
+            77.8,
+            "Si hay movimiento, interferencia, línea basal errante o brazos invertidos, corrige y repite el trazo."
+          ],
+          [
+            78.1,
+            80.8,
+            "Tú no interpretas pero sí reconoces y notificas."
+          ],
+          [
+            80.8,
+            88,
+            "Ante una elevación del segmento ST, un ritmo muy rápido o muy lento, o un trazo caótico, avisa de inmediato."
+          ],
+          [
+            88.7,
+            91.7,
+            "Si el paciente no responde, activa el Código Azul."
+          ],
+          [
+            93.2,
+            96.9,
+            "Recuerda, electrodos en su lugar, trazo limpio y entrega inmediata."
+          ],
+          [
+            98.2,
+            99.8,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación EKG",
@@ -2413,11 +2670,109 @@ var CCE_CATALOG = [
     "orden": 10,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Soporte vital básico: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de repaso con base en las guías de la American Heart Association 2025. No sustituye la certificación con práctica en maniquí.\n\n• Secuencia: escena segura, respuesta, Código Azul y DEA, pulso y respiración en no más de 10 segundos.\n• Sin pulso o con respiración agónica: inicia compresiones de inmediato.\n• RCP de alta calidad en adulto: 100 a 120 por minuto, 5 a 6 cm, reexpansión completa y pausas menores a 10 segundos.\n• Sin vía aérea avanzada: 30:2. Con vía aérea avanzada: compresiones continuas y 1 ventilación cada 6 segundos.\n• DEA: enciéndelo, parches en piel descubierta, nadie toca durante análisis y descarga, y reanuda compresiones de inmediato.\n• Niños y lactantes: un tercio del tórax; 15:2 con dos reanimadores; lactante con talón de una mano o dos pulgares.\n• Atragantamiento (2025): 5 golpes en la espalda y 5 compresiones abdominales alternados; en lactantes, compresiones torácicas.\n• Cambia de compresor cada 2 minutos y considera naloxona ante sospecha de opioides, sin retrasar la RCP.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Soporte vital básico: video del curso",
+        "duracion": "1:39 min",
+        "texto": "Reconocimiento del paro, RCP de calidad y uso del DEA.",
+        "video": "soporte-vital-basico.mp4",
+        "segundosMinimos": 89,
+        "subtitulos": [
+          [
+            0.9,
+            4.6,
+            "Bienvenida al repaso de soporte vital básico para personal de salud,"
+          ],
+          [
+            5.1,
+            9.1,
+            "con base en las guías de la Asociación Americana del Corazón de 2025."
+          ],
+          [
+            9.9,
+            14,
+            "La cadena de supervivencia empieza con reconocer el paro y activar la respuesta."
+          ],
+          [
+            14.8,
+            19,
+            "Cada eslabón que se retrasa reduce la posibilidad de sobrevivir."
+          ],
+          [
+            19.2,
+            26.5,
+            "Verifica que la escena sea segura, comprueba si la persona responde, activa el Código Azul y pide el desfibrilador."
+          ],
+          [
+            26.9,
+            30.5,
+            "Revisa pulso y respiración a la vez, en no más de 10 segundos."
+          ],
+          [
+            31.2,
+            38.9,
+            "Si no hay pulso, inicia compresiones de alta calidad, de 100 a 120 por minuto, de 5 a 6 centímetros de profundidad,"
+          ],
+          [
+            39.3,
+            42.5,
+            "con reexpansión completa y pausas menores a 10 segundos."
+          ],
+          [
+            43.1,
+            47.6,
+            "Sin vía aérea avanzada, alterna 30 compresiones con 2 ventilaciones."
+          ],
+          [
+            47.9,
+            53.1,
+            "Con vía aérea avanzada, da compresiones continuas y una ventilación cada 6 segundos,"
+          ],
+          [
+            53.2,
+            58.9,
+            "sin hiperventilar. En cuanto llegue el desfibrilador, enciéndelo y sigue sus indicaciones."
+          ],
+          [
+            59.8,
+            65.3,
+            "Nadie toca al paciente durante el análisis ni la descarga, y las compresiones se reanudan de inmediato."
+          ],
+          [
+            66,
+            69.9,
+            "En niños y lactantes, comprime un tercio del diámetro del tórax."
+          ],
+          [
+            70.3,
+            73.4,
+            "Con dos reanimadores, la relación es 15 a 2."
+          ],
+          [
+            74.1,
+            77.2,
+            "En lactantes usa el talón de una mano, o los dos pulgares."
+          ],
+          [
+            77.2,
+            85,
+            "Ante un atragantamiento en adultos y niños, alterna cinco golpes en la espalda con cinco compresiones abdominales."
+          ],
+          [
+            85.4,
+            89.3,
+            "Si la persona pierde el estado de alerta, inicia la reanimación."
+          ],
+          [
+            90,
+            96.7,
+            "Recuerda, reconoce, activa el Código Azul, comprime fuerte y rápido y usa el desfibrilador."
+          ],
+          [
+            97.2,
+            98.9,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación Soporte vital básico",
@@ -2570,11 +2925,119 @@ var CCE_CATALOG = [
     "orden": 11,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Medicamentos de alto riesgo: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo basada en la AESP 3 y en la lista de medicamentos de alto riesgo del ISMP. Prevalece la lista institucional que publica Farmacia.\n\n• Alto riesgo: ante un error, alta probabilidad de daño grave o muerte.\n• Grupos frecuentes: electrolitos concentrados, insulinas, anticoagulantes, opioides, sedantes IV, bloqueadores neuromusculares, vasoactivos y quimioterapia.\n• Etiqueta roja para alto riesgo (siglas AR) y naranja para LASA; electrolitos concentrados solo en carros rojos.\n• Prescripción: genérico, dosis en mEq, g o mg, vía, velocidad y duración; nunca ámpulas como dosis, “U” por unidades ni ceros a la derecha.\n• Doble verificación independiente: paciente, medicamento, dosis, vía, velocidad y registro de ambos profesionales.\n• Infusiones: segundo profesional revisa la bomba y se sigue la línea antes de conectar.\n• Ante la duda: detener, aclarar con quien prescribe o con Farmacia, y reportar errores y cuasi fallas.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Medicamentos de alto riesgo: video del curso",
+        "duracion": "1:37 min",
+        "texto": "Identificación, almacenamiento y doble verificación de medicamentos de alto riesgo.",
+        "video": "medicamentos-alto-riesgo.mp4",
+        "segundosMinimos": 87,
+        "subtitulos": [
+          [
+            0.9,
+            3.8,
+            "Bienvenida al curso de medicamentos de alto riesgo."
+          ],
+          [
+            4,
+            5.1,
+            "Barreras contra el error."
+          ],
+          [
+            5.9,
+            10.4,
+            "Un medicamento de alto riesgo no se equivoca más que otros, pero cuando hay un error,"
+          ],
+          [
+            10.8,
+            13.6,
+            "la probabilidad de daño grave o muerte es mucho mayor."
+          ],
+          [
+            14.4,
+            17.4,
+            "Por eso cada paso lleva barreras adicionales."
+          ],
+          [
+            17.6,
+            24.5,
+            "Los grupos más frecuentes son los electrolitos concentrados, las insulinas, los anticoagulantes, los opioides,"
+          ],
+          [
+            24.8,
+            30.5,
+            "los sedantes intravenosos, los bloqueadores neuromusculares, los vasoactivos y la quimioterapia."
+          ],
+          [
+            31.1,
+            33,
+            "La lista vigente la publica Farmacia."
+          ],
+          [
+            34,
+            35.4,
+            "Se identifican a simple vista."
+          ],
+          [
+            35.8,
+            40.8,
+            "Etiqueta roja para alto riesgo y naranja para los medicamentos que se ven o suenan parecido."
+          ],
+          [
+            41.7,
+            45.2,
+            "Los electrolitos concentrados solo se resguardan en los carros rojos."
+          ],
+          [
+            45.4,
+            53.5,
+            "Prescribe sin ambigüedad. Nombre genérico, dosis en miliequivalentes, gramos o miligramos, vía, velocidad y duración."
+          ],
+          [
+            53.5,
+            59.2,
+            "Nunca indiques ámpulas como dosis, ni la letra U por unidades, ni ceros a la derecha."
+          ],
+          [
+            60.1,
+            66.5,
+            "Antes de administrar, dos profesionales verifican por separado el paciente, el medicamento, la dosis, la vía,"
+          ],
+          [
+            66.7,
+            68.9,
+            "la velocidad y el registro."
+          ],
+          [
+            69.2,
+            71.6,
+            "Solo se omite ante riesgo inminente para la vida."
+          ],
+          [
+            72,
+            78.2,
+            "En las infusiones, un segundo profesional revisa la programación de la bomba y la línea se sigue desde el paciente"
+          ],
+          [
+            78.2,
+            79.7,
+            "hasta la bolsa antes de conectar."
+          ],
+          [
+            79.7,
+            87.5,
+            "Ante cualquier duda, detén la administración, aclara con quien prescribe o con Farmacia y reporta los errores y las cuasi fallas."
+          ],
+          [
+            88.4,
+            94.5,
+            "Recuerda, identifica, prescribe sin ambigüedad, verifica dos veces y detente ante la duda."
+          ],
+          [
+            95.4,
+            97,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación Medicamentos de alto riesgo",
@@ -2727,11 +3190,109 @@ var CCE_CATALOG = [
     "orden": 12,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "NOM-018: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo basada en la NOM-018-STPS-2015, sistema armonizado para la identificación y comunicación de peligros y riesgos por sustancias químicas peligrosas.\n\n• El sistema clasifica peligros físicos, para la salud y para el medio ambiente, y los comunica con etiquetas y hojas de datos de seguridad.\n• Nueve pictogramas en rombo con borde rojo: llama, llama sobre círculo, bomba explotando, cilindro de gas, corrosión, calavera, exclamación, peligro para la salud y medio ambiente.\n• La etiqueta incluye identificador, pictogramas, palabra de advertencia (Peligro o Atención), frases H, frases P y datos del proveedor.\n• La hoja de datos tiene 16 secciones, en español y disponible: primeros auxilios (4), derrames (6) y EPP (8) son las más consultadas.\n• Todo recipiente de trasvase se etiqueta; nunca se usan envases de alimentos o bebidas.\n• No mezclar productos: cloro con amoniaco o ácidos libera gases tóxicos.\n• Ante un derrame: Código Amarillo.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "NOM-018 · Comunicación de peligros: video del curso",
+        "duracion": "1:37 min",
+        "texto": "Pictogramas, hojas de datos de seguridad y comunicación de peligros.",
+        "video": "nom018-comunicacion-peligros.mp4",
+        "segundosMinimos": 87,
+        "subtitulos": [
+          [
+            0.9,
+            7.9,
+            "Bienvenida al curso de la NOM-018, sistema armonizado de comunicación de peligros por sustancias químicas."
+          ],
+          [
+            8.3,
+            12.9,
+            "Este sistema clasifica los peligros físicos, para la salud y para el ambiente,"
+          ],
+          [
+            13.3,
+            17.1,
+            "y los comunica con etiquetas y hojas de datos iguales en todo el mundo."
+          ],
+          [
+            17.4,
+            23.8,
+            "En el hospital aplica al alcohol, al cloro, a los desinfectantes, al formol, a los reactivos y al"
+          ],
+          [
+            23.8,
+            29.3,
+            "oxígeno. Hay nueve pictogramas, un rombo con borde rojo y un símbolo negro."
+          ],
+          [
+            30.3,
+            32.6,
+            "Por ejemplo, la llama indica inflamable,"
+          ],
+          [
+            33,
+            38.1,
+            "la llama sobre un círculo indica comburente y la calavera indica toxicidad aguda grave."
+          ],
+          [
+            38.6,
+            45,
+            "Toda etiqueta muestra el nombre del producto, los pictogramas, la palabra de advertencia, las indicaciones de peligro,"
+          ],
+          [
+            45.3,
+            48,
+            "los consejos de prudencia y los datos del proveedor."
+          ],
+          [
+            48.5,
+            50.1,
+            "Peligro es más grave que Atención."
+          ],
+          [
+            50.1,
+            56.3,
+            "La hoja de datos de seguridad tiene 16 secciones y debe estar en español y al alcance."
+          ],
+          [
+            57.2,
+            62.7,
+            "Ahí encuentras primeros auxilios, qué hacer ante un derrame y qué equipo de protección usar."
+          ],
+          [
+            63.5,
+            66.7,
+            "Si pasas una sustancia a otro recipiente, etiquétalo."
+          ],
+          [
+            67.5,
+            72.9,
+            "Nunca uses envases de alimentos o bebidas y nunca mezcles cloro con amoníaco o con ácidos."
+          ],
+          [
+            73.7,
+            78.8,
+            "El centro de trabajo proporciona las hojas, la señalización y la capacitación."
+          ],
+          [
+            78.8,
+            85,
+            "Tú lees la etiqueta, usas el equipo indicado y reportas los envases sin etiqueta."
+          ],
+          [
+            85.3,
+            88.1,
+            "Ante un derrame, activa el Código Amarillo."
+          ],
+          [
+            88.9,
+            94.4,
+            "Recuerda, mira el pictograma, lee la palabra de advertencia y consulta la hoja de datos."
+          ],
+          [
+            95.3,
+            97,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación NOM-018",
@@ -3184,11 +3745,84 @@ var CCE_CATALOG = [
     "orden": 14,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Metodología 5S: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo sobre la metodología 5S aplicada a áreas hospitalarias, administrativas y de almacén.\n\n• Un área ordenada reduce accidentes, tiempos de búsqueda, errores y mermas.\n• Seiri · Clasificar: separa lo necesario de lo innecesario; tarjeta roja a lo dañado o caducado.\n• Seiton · Ordenar: un lugar identificado para cada cosa; lo de uso diario más cerca; primero en caducar, primero en salir.\n• Seiso · Limpiar: limpiar es inspeccionar; corrige o reporta la causa de la suciedad.\n• Seiketsu · Estandarizar: fotos del estándar, marcas en piso, listas de verificación y rutinas.\n• Shitsuke · Disciplina: recorridos periódicos, retroalimentación y hábito.\n• Nunca acumules materiales en pasillos ni en rutas de evacuación.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Metodología 5S: video del curso",
+        "duracion": "1:10 min",
+        "texto": "Orden, limpieza, estandarización y disciplina en el lugar de trabajo.",
+        "video": "metodologia-5s.mp4",
+        "segundosMinimos": 63,
+        "subtitulos": [
+          [
+            0.9,
+            4.7,
+            "Bienvenida al curso de metodología 5S en el lugar de trabajo."
+          ],
+          [
+            5.6,
+            10.2,
+            "Un área ordenada es más segura, hay menos tropiezos, se pierde menos tiempo,"
+          ],
+          [
+            10.5,
+            14.8,
+            "se cometen menos errores y se detectan a tiempo los faltantes y las caducidades."
+          ],
+          [
+            15.7,
+            24,
+            "Las 5S son cinco palabras japonesas: clasificar, ordenar, limpiar, estandarizar y mantener la disciplina."
+          ],
+          [
+            24.3,
+            30,
+            "Clasificar es separar lo necesario de lo que no lo es. Marca con tarjeta roja lo innecesario,"
+          ],
+          [
+            30.2,
+            34.1,
+            "lo dañado o lo caducado y decide con tu jefe qué hacer con ello."
+          ],
+          [
+            34.8,
+            37.9,
+            "Ordenar es tener un lugar identificado para cada cosa."
+          ],
+          [
+            38.7,
+            42.5,
+            "Lo de uso diario va más cerca y lo que caduca primero va al frente."
+          ],
+          [
+            43.3,
+            45.4,
+            "Limpiar también es inspeccionar."
+          ],
+          [
+            46,
+            52.3,
+            "Mientras limpias, revisa fugas, cables dañados o mobiliario roto y corrige o reporta la causa."
+          ],
+          [
+            53.3,
+            58.8,
+            "Estandarizar y mantener la disciplina convierte lo logrado en hábito, con fotos del área como debe estar,"
+          ],
+          [
+            59.3,
+            62,
+            "listas de verificación y recorridos periódicos."
+          ],
+          [
+            62.8,
+            67.9,
+            "Recuerda, clasifica, ordena, limpia, estandariza y mantén el hábito."
+          ],
+          [
+            68.5,
+            70.2,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación 5S",
@@ -3341,11 +3975,104 @@ var CCE_CATALOG = [
     "orden": 15,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Enfermedades por calor: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo basada en la NOM-015-STPS-2001 (condiciones térmicas elevadas) y en recomendaciones de salud ocupacional.\n\n• Mayor riesgo: patrulla de playa, ambulancias, seguridad, mantenimiento, cocina y lavandería.\n• Factores: sol directo, humedad, esfuerzo, ropa o EPP pesado, poca agua y falta de aclimatación.\n• Personal de nuevo ingreso o que regresa de vacaciones: exposición gradual durante la primera semana.\n• Prevención: un vaso de agua cada 15 a 20 minutos en trabajo intenso, pausas a la sombra, ropa ligera y trabajo en pareja.\n• Agotamiento: sudoración intensa, debilidad, mareo, náusea; lugar fresco, aflojar ropa y sorbos de agua.\n• Golpe de calor: confusión, desmayo o convulsiones y piel muy caliente; es una urgencia médica.\n• Ante golpe de calor: pedir atención inmediata y enfriar (agua fría, hielo en cuello, axilas e ingles); no dar líquidos si está confundido.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Enfermedades por calor: video del curso",
+        "duracion": "1:23 min",
+        "texto": "Factores de riesgo, signos de alarma y respuesta inmediata.",
+        "video": "prevencion-calor.mp4",
+        "segundosMinimos": 74,
+        "subtitulos": [
+          [
+            0.8,
+            4.1,
+            "Bienvenida al curso de prevención de enfermedades por calor."
+          ],
+          [
+            4.8,
+            11.3,
+            "En nuestras sedes el calor es un riesgo de trabajo, sobre todo para la patrulla de playa, ambulancias, seguridad,"
+          ],
+          [
+            11.8,
+            13.6,
+            "mantenimiento, cocina y lavandería."
+          ],
+          [
+            14.4,
+            18.9,
+            "El riesgo aumenta con el sol, la humedad, el esfuerzo y el equipo pesado."
+          ],
+          [
+            19.4,
+            22,
+            "El cuerpo necesita días para adaptarse al calor."
+          ],
+          [
+            22.9,
+            29.4,
+            "El personal de nuevo ingreso y quien regresa de vacaciones o incapacidad debe aumentar su exposición de forma gradual."
+          ],
+          [
+            30,
+            36.3,
+            "Bebe agua antes de tener sed, alrededor de un vaso cada 15 a 20 minutos en trabajo intenso."
+          ],
+          [
+            36.5,
+            40.4,
+            "Haz pausas a la sombra, usa ropa ligera y trabaja en pareja."
+          ],
+          [
+            40.7,
+            43.5,
+            "Reconoce los síntomas: los calambres son leves."
+          ],
+          [
+            43.8,
+            48,
+            "El agotamiento causa sudoración intensa, debilidad, mareo y náusea."
+          ],
+          [
+            48.3,
+            52.3,
+            "Y el golpe de calor, con confusión o desmayo, es una emergencia."
+          ],
+          [
+            52.6,
+            55.5,
+            "Ante agotamiento por calor, detén la actividad."
+          ],
+          [
+            55.5,
+            61.7,
+            "Lleva a la persona a un lugar fresco, afloja su ropa y dale sorbos de agua si está alerta."
+          ],
+          [
+            62,
+            64.6,
+            "Si no mejora, busca atención médica."
+          ],
+          [
+            65.1,
+            70.8,
+            "Ante un golpe de calor, pide atención médica inmediata y enfría a la persona mientras llega la ayuda."
+          ],
+          [
+            71.6,
+            74.5,
+            "No le des líquido si está confundida o inconsciente."
+          ],
+          [
+            75.6,
+            80.6,
+            "Recuerda, hidrátate antes de tener sed, haz pausas y vigila a tus compañeros."
+          ],
+          [
+            81.1,
+            82.9,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación Enfermedades por calor",
@@ -3498,11 +4225,104 @@ var CCE_CATALOG = [
     "orden": 16,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Código Negro: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo basada en los códigos de emergencia del Manual de la Organización 2026 y en prácticas de protección civil.\n\n• Código Negro: amenaza de bomba u objeto sospechoso, por cualquier medio. Toda amenaza se toma en serio.\n• Llamada: no cuelgues, prolonga la conversación, anota palabras exactas, hora y número, y pide a un compañero que avise.\n• Pregunta cuándo, dónde, cómo es, qué la haría explotar, por qué y quién llama; observa voz y ruidos de fondo.\n• Objeto sospechoso: no tocar, mover, abrir ni cubrir; alejarse, impedir el paso y avisar desde un teléfono fijo lejano; evitar radios y celulares cerca.\n• Amenaza escrita o por correo: manipular lo mínimo, no borrar ni reenviar, y avisar.\n• Evacuar solo por instrucción de la brigada, por las rutas indicadas y sin regresar hasta autorización.\n• No difundir la amenaza en redes ni chats. Extensiones: SJC 201 y 204; CSL 101 y 106; externo 911.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Código Negro · Amenaza de bomba: video del curso",
+        "duracion": "1:27 min",
+        "texto": "Recepción de la amenaza, aviso, evacuación y preservación de información.",
+        "video": "codigo-negro-amenaza-bomba.mp4",
+        "segundosMinimos": 78,
+        "subtitulos": [
+          [
+            0.9,
+            5,
+            "Bienvenida al curso del protocolo ante amenaza de bomba, el Código Negro."
+          ],
+          [
+            5.7,
+            10.9,
+            "El Código Negro se activa ante una amenaza de bomba o el hallazgo de un objeto sospechoso."
+          ],
+          [
+            11.7,
+            16.8,
+            "Toda amenaza se toma en serio, llegue por teléfono, por escrito, por correo o en persona."
+          ],
+          [
+            17.6,
+            20.9,
+            "Si recibes la llamada, mantén la calma y no cuelgues."
+          ],
+          [
+            21.2,
+            28.5,
+            "Prolonga la conversación, anota las palabras exactas, la hora y el número, y haz una seña a un compañero para que avise."
+          ],
+          [
+            29.2,
+            35.9,
+            "Pregunta cuándo va a explotar, dónde está, cómo es, qué la haría explotar, por qué la colocaron y quién llama."
+          ],
+          [
+            36.7,
+            38.8,
+            "Observa la voz y los ruidos de fondo."
+          ],
+          [
+            39.5,
+            44.2,
+            "Ante un objeto sospechoso, no lo toques, no lo muevas y no lo cubras."
+          ],
+          [
+            45.1,
+            51.3,
+            "Aléjate, impide que otros se acerquen y avisa a Seguridad desde un teléfono fijo lejano."
+          ],
+          [
+            51.6,
+            53.6,
+            "Evita usar radios y celulares cerca."
+          ],
+          [
+            53.6,
+            58.5,
+            "Si la amenaza llega por escrito o por correo, manipúlala lo mínimo."
+          ],
+          [
+            58.9,
+            61.5,
+            "No la borres ni la reenvíes y avisa de inmediato."
+          ],
+          [
+            62.1,
+            65.3,
+            "Si se ordena evacuar, sigue las instrucciones de la brigada,"
+          ],
+          [
+            65.7,
+            70.6,
+            "apoya el traslado de los pacientes según el plan y no regreses hasta que la autoridad lo autorice."
+          ],
+          [
+            71.4,
+            74.1,
+            "Da tu informe solo a Seguridad y a la autoridad."
+          ],
+          [
+            74.7,
+            78.2,
+            "No compartas la amenaza en redes sociales ni difundas rumores."
+          ],
+          [
+            79.2,
+            84.6,
+            "Recuerda, mantén la calma, registra, avisa y no toques nada sospechoso."
+          ],
+          [
+            85.3,
+            87,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación Código Negro",
@@ -3655,11 +4475,149 @@ var CCE_CATALOG = [
     "orden": 17,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Inducción: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo basada en el Manual de la Organización 2026 de la Dirección de Capital Humano.\n\n• Más de 20 años de servicio: 4 hospitales, clínica Loreto, 8 walk-in, 58 ambulancias y 39 especialidades, con urgencias 24/7.\n• Misión: conocimientos médicos de excelencia, servicio con alto nivel ético y tecnología avanzada para una atención integral.\n• Visión: ser el mejor hospital con servicios médicos turísticos de nivel internacional y alta responsabilidad humana.\n• Valores: ética profesional, responsabilidad y compasión; código de ética de nueve compromisos.\n• Tu contrato y tu Reglamento Interior corresponden a la razón social que te contrató.\n• Prestaciones de ley y superiores: consulta gratuita 24/7 para ti y tu familia directa y 40 % de descuento en servicios.\n• Reglamento: 15 minutos antes, checador, uniforme completo y gafete visible; teléfono con nombre del hospital o área y tu nombre.\n• Vacaciones según la LFT (12 días al primer año); periodo institucional del 1 de junio al 30 de octubre.\n• Códigos de emergencia: Azul paro, Rojo fuego, Verde evacuación, Negro bomba, entre otros.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Inducción institucional: video del curso",
+        "duracion": "2:21 min",
+        "texto": "Cultura, normativas, seguridad, prestaciones y responsabilidades.",
+        "video": "induccion-institucional.mp4",
+        "segundosMinimos": 127,
+        "subtitulos": [
+          [
+            0.8,
+            2.8,
+            "Bienvenido a Saint Luke's Hospitals."
+          ],
+          [
+            3.1,
+            5.4,
+            "Este es tu curso de inducción institucional."
+          ],
+          [
+            5.8,
+            12,
+            "Tenemos más de 20 años brindando servicios médicos a la comunidad local y a turistas nacionales y extranjeros."
+          ],
+          [
+            12.8,
+            20,
+            "Hoy contamos con cuatro hospitales, una clínica en Loreto, ocho walk-in, 58 ambulancias y 39 especialidades."
+          ],
+          [
+            21.3,
+            28,
+            "Nuestra misión es buscar constantemente conocimientos médicos de excelencia y brindar un servicio de alto nivel ético."
+          ],
+          [
+            28,
+            35.5,
+            "Nuestra visión es ser el mejor hospital con servicios médicos turísticos de nivel internacional y alta responsabilidad humana."
+          ],
+          [
+            35.7,
+            41.4,
+            "Tres valores guían nuestra conducta: ética profesional, responsabilidad y compasión."
+          ],
+          [
+            42.1,
+            47.5,
+            "Nuestro código de ética incluye nueve compromisos, entre ellos respetar la decisión del paciente,"
+          ],
+          [
+            48,
+            51.9,
+            "no realizar procedimientos innecesarios y capacitarnos de forma continua."
+          ],
+          [
+            52.7,
+            59.3,
+            "Nos organizamos bajo una dirección con nueve áreas, desde Capital Humano y el área médica hasta ambulancias,"
+          ],
+          [
+            59.5,
+            60.9,
+            "infraestructura y contraloría."
+          ],
+          [
+            61.6,
+            66.9,
+            "Estamos en Baja California Sur y Nayarit con ambulancias también en Puerto Vallarta y Quintana Roo."
+          ],
+          [
+            67.6,
+            71,
+            "Tu contrato corresponde a la razón social que te contrató."
+          ],
+          [
+            71.6,
+            77.5,
+            "Desde tu primer día tienes derecho a conocer tus condiciones laborales, recibir un recorrido, gafete,"
+          ],
+          [
+            77.9,
+            83.4,
+            "uniforme y locker, firmar tu perfil de puesto y contar con una persona que te acompañe."
+          ],
+          [
+            83.6,
+            85.3,
+            "Además de las prestaciones de ley,"
+          ],
+          [
+            85.8,
+            93.4,
+            "cuentas con consulta gratuita las 24 horas para ti y tu familia directa y un 40% de descuento en servicios médicos."
+          ],
+          [
+            93.6,
+            97.2,
+            "Llega 15 minutos antes. Registra tu entrada en el checador."
+          ],
+          [
+            97.6,
+            103.1,
+            "Porta tu uniforme limpio y tu gafete visible durante toda la jornada. Ahora nos representas."
+          ],
+          [
+            103.5,
+            107.6,
+            "Contesta el teléfono con el nombre del hospital o del departamento y tu nombre."
+          ],
+          [
+            108.5,
+            114.6,
+            "Los ajustes de sueldo y bonos se basan en tu desempeño, actitud, puntualidad y orden del área."
+          ],
+          [
+            115.2,
+            121,
+            "Las vacaciones se otorgan conforme a la Ley Federal del Trabajo a partir de 12 días al cumplir un año."
+          ],
+          [
+            121.8,
+            125.5,
+            "El período institucional va del 1 de junio al 30 de octubre."
+          ],
+          [
+            125.7,
+            130.6,
+            "Conoce los códigos de emergencia de tu hospital, como el azul para paro cardiorrespiratorio,"
+          ],
+          [
+            130.9,
+            135.8,
+            "el rojo para fuego y el verde para evacuación y las extensiones para activarlos."
+          ],
+          [
+            136.5,
+            138.5,
+            "Bienvenido a la familia Saint Luke's."
+          ],
+          [
+            139.5,
+            141.3,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación Inducción",
@@ -3820,11 +4778,99 @@ var CCE_CATALOG = [
         "segundosMinimos": 171
       },
       {
-        "tipo": "lectura",
-        "titulo": "Consentimiento informado: requisitos",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo basada en la NOM-004-SSA3-2012 del expediente clínico, complementaria al video del sistema.\n\n• La carta de consentimiento bajo información acepta un procedimiento después de recibir información de riesgos y beneficios; es un derecho del paciente.\n• Se requiere como mínimo en ingreso hospitalario, cirugía mayor, anestesia general o regional, salpingoclasia y vasectomía, donación y trasplante, investigación, necropsia, procedimientos de alto riesgo y procedimientos que impliquen mutilación.\n• Contenido: establecimiento y título, lugar y fecha, acto autorizado, riesgos y beneficios, autorización para contingencias, y nombre y firma del paciente o representante, del médico y de dos testigos.\n• En el sistema: Cartas y consentimientos, médico tratante, datos del procedimiento, explicación, impresión y firmas.\n• Si el procedimiento no aparece, se usa el consentimiento informado general.\n• Antes de la firma: explicar qué, beneficios, riesgos y alternativas, y confirmar que entendió.\n• El rechazo o la revocación se documentan; en una urgencia sin posibilidad de obtenerlo, se actúa y se deja constancia.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Consentimiento informado: video del curso",
+        "duracion": "1:35 min",
+        "texto": "Selección, personalización, explicación e impresión segura de consentimientos informados desde el expediente clínico.",
+        "video": "consentimiento-informado.mp4",
+        "segundosMinimos": 85,
+        "subtitulos": [
+          [
+            0,
+            3.2,
+            "Bienvenida al curso de Consentimiento Informado."
+          ],
+          [
+            3.4,
+            7.8,
+            "Requisitos de la NOM-004 y su uso en el sistema clínico."
+          ],
+          [
+            8.4,
+            13.2,
+            "El consentimiento informado es un proceso de información, no solo una firma."
+          ],
+          [
+            13.4,
+            18.3,
+            "Con él, el paciente acepta un procedimiento después de conocer sus riesgos y beneficios."
+          ],
+          [
+            18.8,
+            24.7,
+            "Se requiere como mínimo al ingreso hospitalario, en cirugía mayor, en anestesia general o regional,"
+          ],
+          [
+            25.3,
+            32.8,
+            "en procedimientos de alto riesgo, en métodos definitivos de planificación, en donación y trasplante y en investigación clínica."
+          ],
+          [
+            33.6,
+            40.2,
+            "El documento debe incluir el establecimiento, el lugar y la fecha, el acto autorizado, los riesgos y beneficios,"
+          ],
+          [
+            40.5,
+            46.7,
+            "la autorización para atender contingencias y el nombre y la firma del paciente, del médico y de dos testigos."
+          ],
+          [
+            47.4,
+            53.7,
+            "En el sistema, localiza el formato en Cartas y consentimientos, selecciona al médico tratante,"
+          ],
+          [
+            54.2,
+            59.3,
+            "completa los datos del procedimiento, explica, imprime y recaba las firmas."
+          ],
+          [
+            59.5,
+            63.1,
+            "Si el procedimiento no aparece, usa el consentimiento general."
+          ],
+          [
+            63.5,
+            70.4,
+            "Antes de la firma, explica qué se hará, los beneficios, los riesgos y las alternativas, incluida la de no hacerlo,"
+          ],
+          [
+            70.8,
+            72.6,
+            "y confirma que el paciente entendió."
+          ],
+          [
+            73.3,
+            76.7,
+            "Si el paciente no puede firmar, lo hace su representante."
+          ],
+          [
+            77.4,
+            85.2,
+            "Si rechaza el procedimiento, documenta la explicación y su decisión."
+          ],
+          [
+            86.8,
+            92.2,
+            "Recuerda, informa, confirma que entendió, completa todos los datos y recaba las firmas."
+          ],
+          [
+            93.2,
+            94.9,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación Consentimiento informado",
@@ -6964,11 +8010,124 @@ var CCE_CATALOG = [
     "orden": 3.2,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "AESP 4: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo basada en el Acuerdo por el que se declara la obligatoriedad de las Acciones Esenciales para la Seguridad del Paciente (DOF 2017, modificado en 2023).\n\n• Objetivo: paciente, procedimiento y sitio correctos. El procedimiento en sitio o paciente equivocado es un evento centinela.\n• Marcado del sitio: lo realiza el cirujano responsable antes de entrar a quirófano, en órganos bilaterales, estructuras múltiples o niveles, con participación del paciente o de un familiar.\n• Marca en diana con las iniciales del cirujano; en oftalmología, punto sobre la ceja. Marcado documental en mucosas, sitios difíciles, dental, prematuros o rechazo.\n• Entrada (antes de la inducción): identidad, sitio, procedimiento, consentimiento, equipo de anestesia, alergias, vía aérea y riesgo de sangrado.\n• Pausa quirúrgica (antes de la incisión): presentación del equipo, confirmación de paciente, procedimiento, sitio y posición, y eventos críticos esperados.\n• Salida (antes de dejar la sala): procedimiento realizado, recuento completo, muestras etiquetadas, plan de recuperación y firmas.\n• Tiempo fuera fuera de quirófano: transfusiones, hemodiálisis, biopsias, contraste, accesos vasculares, catéteres y otros procedimientos invasivos.\n• Cualquiera puede detener el procedimiento si algo no coincide.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "AESP 4 · Seguridad en los procedimientos: video del curso",
+        "duracion": "1:50 min",
+        "texto": "Marcado del sitio quirúrgico, lista de verificación de la seguridad de la cirugía y tiempo fuera en procedimientos dentro y fuera del quirófano.",
+        "video": "aesp4-seguridad-procedimientos.mp4",
+        "segundosMinimos": 98,
+        "subtitulos": [
+          [
+            0,
+            6.8,
+            "Bienvenida al curso de la Acción Esencial para la Seguridad del Paciente número 4: seguridad en los procedimientos."
+          ],
+          [
+            7.7,
+            12.3,
+            "El objetivo es garantizar el paciente, el procedimiento y el sitio correctos."
+          ],
+          [
+            12.6,
+            19.1,
+            "Operar en el sitio equivocado es un evento centinela prevenible y tres barreras lo evitan: el marcado del sitio,"
+          ],
+          [
+            19.5,
+            21.8,
+            "la lista de verificación y el tiempo fuera."
+          ],
+          [
+            22.5,
+            27.8,
+            "El cirujano responsable marca el sitio antes de entrar a quirófano, en órganos bilaterales,"
+          ],
+          [
+            28.2,
+            32.4,
+            "estructuras múltiples o niveles, con la participación del paciente o de un familiar."
+          ],
+          [
+            33.2,
+            36.8,
+            "Usa una diana con sus iniciales resistente a la antisepsia."
+          ],
+          [
+            37.4,
+            42.1,
+            "La primera fase de la lista, la entrada, se realiza antes de la inducción anestésica."
+          ],
+          [
+            42.9,
+            50.2,
+            "El equipo confirma identidad, sitio, procedimiento y consentimiento, y anestesiología revisa equipo, alergias,"
+          ],
+          [
+            50.5,
+            52.3,
+            "vía aérea y riesgo de sangrado."
+          ],
+          [
+            53,
+            55.8,
+            "La pausa quirúrgica se hace justo antes de la incisión."
+          ],
+          [
+            56.3,
+            63,
+            "Todos se presentan, confirman paciente, procedimiento, sitio y posición, y anticipan los pasos críticos,"
+          ],
+          [
+            63.2,
+            65.1,
+            "la duración y el sangrado esperado."
+          ],
+          [
+            65.8,
+            69,
+            "La salida se realiza antes de que el paciente deje la sala."
+          ],
+          [
+            69.5,
+            77.3,
+            "Se confirma el procedimiento realizado, el recuento completo de instrumental, gasas y agujas, y el etiquetado de las muestras."
+          ],
+          [
+            77.6,
+            78.7,
+            "Todos firman la lista."
+          ],
+          [
+            79.6,
+            86.1,
+            "El tiempo fuera también se realiza fuera del quirófano, justo antes de transfusiones, hemodiálisis, biopsias,"
+          ],
+          [
+            86.5,
+            91,
+            "estudios con contraste, colocación de catéteres y otros procedimientos invasivos."
+          ],
+          [
+            91.5,
+            96.2,
+            "Cualquier integrante del equipo puede detener el procedimiento si algo no coincide."
+          ],
+          [
+            96.8,
+            100.8,
+            "La lista se verifica en voz alta y en el momento, nunca de memoria al final."
+          ],
+          [
+            101.7,
+            107,
+            "Recuerda, marca, verifica en tres fases y haz el tiempo fuera, siempre en voz alta."
+          ],
+          [
+            107.9,
+            109.6,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación AESP 4",
@@ -7121,11 +8280,99 @@ var CCE_CATALOG = [
     "orden": 3.7,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "AESP 7: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo basada en el Acuerdo de Acciones Esenciales para la Seguridad del Paciente (DOF 2017, modificado en 2023) y en el Manual de la Organización 2026.\n\n• Objetivo: aprender de lo que falló o estuvo a punto de fallar. Reportar no busca culpables.\n• Cuasi falla: no llegó al paciente gracias a una intervención oportuna.\n• Evento adverso: hecho ajeno a la enfermedad que causa daño leve o moderado por la atención.\n• Evento centinela: muerte, pérdida permanente de una función u órgano, o lesión psicológica grave.\n• Ante un evento: atiende al paciente, avisa al jefe y al médico, conserva el material involucrado y reporta de inmediato en la plataforma de Calidad.\n• El reporte describe hechos (qué, cuándo, dónde, cómo se detectó y qué se hizo), sin juicios ni culpables; el registro es anónimo.\n• Todo evento centinela lleva análisis causa raíz; el Comité de Calidad y Seguridad del Paciente define mejoras y se difunden al personal.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "AESP 7 · Registro de eventos adversos: video del curso",
+        "duracion": "1:30 min",
+        "texto": "Clasificación, reporte inmediato y análisis de cuasi fallas, eventos adversos y eventos centinela, con enfoque no punitivo.",
+        "video": "aesp7-registro-eventos.mp4",
+        "segundosMinimos": 81,
+        "subtitulos": [
+          [
+            0,
+            7.7,
+            "Bienvenida al curso de la Acción Esencial para la Seguridad del Paciente número 7: registro y análisis de eventos adversos."
+          ],
+          [
+            8,
+            13.8,
+            "Registramos lo que falló o estuvo a punto de fallar para aprender y corregir los procesos."
+          ],
+          [
+            14.1,
+            17.5,
+            "Reportar no busca culpables, busca que no vuelva a ocurrir."
+          ],
+          [
+            18.1,
+            24.4,
+            "Hay tres tipos de evento. La cuasi falla no llegó al paciente gracias a una intervención oportuna."
+          ],
+          [
+            24.7,
+            27.4,
+            "El evento adverso causa un daño leve o moderado."
+          ],
+          [
+            27.4,
+            34.3,
+            "Y el evento centinela causa la muerte, la pérdida permanente de una función o una lesión psicológica grave."
+          ],
+          [
+            35.2,
+            39.5,
+            "Algunos eventos siempre se registran y se analizan, como la muerte imprevista,"
+          ],
+          [
+            39.9,
+            45.5,
+            "la cirugía en el sitio o el paciente incorrecto, la muerte materna o la entrega de un menor equivocado."
+          ],
+          [
+            46.2,
+            49.9,
+            "Ante un evento, primero atiende y protege al paciente."
+          ],
+          [
+            50.4,
+            52.4,
+            "Después avisa a tu jefe y al médico,"
+          ],
+          [
+            52.9,
+            58,
+            "conserva el medicamento o el equipo involucrado y reporta de inmediato en la plataforma de Calidad."
+          ],
+          [
+            58.6,
+            64.3,
+            "Describe los hechos, qué pasó, cuándo, dónde, cómo se detectó y qué se hizo."
+          ],
+          [
+            65.1,
+            70.6,
+            "Evita juicios, suposiciones y señalar culpables. El registro es anónimo."
+          ],
+          [
+            71,
+            73.4,
+            "Calidad recibe y clasifica tu reporte."
+          ],
+          [
+            73.7,
+            80.2,
+            "Todo evento centinela se analiza para encontrar su causa raíz y el Comité de Calidad y Seguridad del Paciente define las"
+          ],
+          [
+            80.2,
+            87.8,
+            "mejoras. Recuerda, atiende, avisa, conserva y reporta de inmediato sin buscar culpables."
+          ],
+          [
+            88.5,
+            90.3,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación AESP 7",
@@ -7278,11 +8525,89 @@ var CCE_CATALOG = [
     "orden": 3.8,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "AESP 8: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo basada en el Acuerdo de Acciones Esenciales para la Seguridad del Paciente (DOF 2017, modificado en 2023).\n\n• La cultura de seguridad resulta de valores, actitudes, percepciones y conductas que determinan el compromiso de la organización con la seguridad del paciente.\n• Una organización segura reconoce el riesgo, no culpa a quien reporta, colabora entre áreas y niveles e invierte en corregir.\n• Se mide cada año, de forma anónima, con el cuestionario de la DGCES, entre médicos y enfermería de todos los turnos con contacto directo.\n• Doce dimensiones: equipo en la unidad, acciones del jefe, aprendizaje, apoyo de la dirección, percepción de seguridad, retroalimentación, franqueza, frecuencia de reporte, trabajo entre unidades, dotación, cambios de turno y respuesta no punitiva.\n• Si ves un riesgo, dilo, con respeto y con datos, sin importar el puesto.\n• Tu papel: reportar sin miedo, comunicar en las entregas de turno, aprender de los resultados y participar en la medición.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "AESP 8 · Cultura de seguridad: video del curso",
+        "duracion": "1:20 min",
+        "texto": "Qué es la cultura de seguridad, cómo se mide cada año y qué hace cada colaborador para fortalecerla.",
+        "video": "aesp8-cultura-seguridad.mp4",
+        "segundosMinimos": 72,
+        "subtitulos": [
+          [
+            0,
+            6.8,
+            "Bienvenida al curso de la Acción Esencial para la Seguridad del Paciente número 8: cultura de seguridad del paciente."
+          ],
+          [
+            7.3,
+            14,
+            "La cultura de seguridad es el resultado de los valores, actitudes y conductas de las personas y los equipos."
+          ],
+          [
+            14.8,
+            19.8,
+            "Las otras siete acciones funcionan solo si el equipo cree en ellas y se siente seguro para hablar."
+          ],
+          [
+            20.5,
+            25.8,
+            "Una organización segura reconoce que la atención es de alto riesgo, no culpa a quien reporta,"
+          ],
+          [
+            25.8,
+            29.8,
+            "colabora entre áreas y niveles e invierte para corregir lo que falla."
+          ],
+          [
+            30.2,
+            34.5,
+            "La cultura de seguridad se mide una vez al año, de forma anónima,"
+          ],
+          [
+            34.9,
+            40.9,
+            "con el cuestionario de la Dirección General de Calidad, entre médicos y enfermería de todos los turnos."
+          ],
+          [
+            41.2,
+            46.9,
+            "El cuestionario evalúa 12 dimensiones, como el trabajo en equipo, las acciones del jefe,"
+          ],
+          [
+            47.2,
+            51.8,
+            "la comunicación sobre errores, los cambios de turno y la respuesta no punitiva."
+          ],
+          [
+            51.8,
+            59,
+            "Si ves un riesgo, dilo. Habla con respeto y con datos, sin importar el puesto de quien escucha."
+          ],
+          [
+            59.4,
+            62,
+            "El silencio ante un riesgo también es una decisión."
+          ],
+          [
+            62.4,
+            66.1,
+            "Tu papel es reportar sin miedo, hacer entregas de turno completas,"
+          ],
+          [
+            66.6,
+            70.9,
+            "aprender de los resultados y participar con honestidad en la medición anual."
+          ],
+          [
+            71.7,
+            77.7,
+            "Recuerda, una cultura segura reconoce el riesgo, no culpa, colabora y mejora."
+          ],
+          [
+            78.3,
+            79.9,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación AESP 8",
@@ -7435,11 +8760,114 @@ var CCE_CATALOG = [
     "orden": 17.5,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "NOM-035: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo basada en la NOM-035-STPS-2018, Factores de riesgo psicosocial en el trabajo: identificación, análisis y prevención.\n\n• La norma previene los factores de riesgo psicosocial y la violencia laboral, y promueve un entorno organizacional favorable.\n• Factores: condiciones inseguras, cargas excesivas, falta de control, jornadas largas o rotación nocturna, interferencia trabajo-familia, liderazgo y relaciones negativas, y violencia laboral.\n• Entorno favorable: pertenencia, capacitación, responsabilidades claras, comunicación, cargas justas, jornadas legales y reconocimiento.\n• Acontecimiento traumático severo: hecho con muerte o amenaza real a la integridad; se reporta por escrito a Capital Humano para su canalización.\n• El centro de trabajo tiene política de prevención, evalúa al menos cada 2 años y ofrece mecanismos de queja seguros y confidenciales.\n• Guía I para eventos traumáticos; Guía II o III para factores de riesgo (III en centros de más de 50 trabajadores).\n• Tú cumples las medidas, no ejerces violencia, respondes los cuestionarios, reportas y asistes a las pláticas.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "NOM-035 · Riesgo psicosocial: video del curso",
+        "duracion": "1:41 min",
+        "texto": "Factores de riesgo psicosocial, entorno organizacional favorable, acontecimientos traumáticos severos y violencia laboral.",
+        "video": "nom035-riesgo-psicosocial.mp4",
+        "segundosMinimos": 90,
+        "subtitulos": [
+          [
+            0,
+            5.8,
+            "Bienvenida al curso de la NOM-035, factores de riesgo psicosocial en el trabajo."
+          ],
+          [
+            6.6,
+            12.5,
+            "Esta norma busca prevenir los factores de riesgo psicosocial y la violencia laboral y promover un entorno"
+          ],
+          [
+            12.5,
+            19.7,
+            "organizacional favorable. En un hospital, la carga emocional y los turnos hacen que este tema sea especialmente importante."
+          ],
+          [
+            20.5,
+            26.6,
+            "Los factores de riesgo psicosocial incluyen condiciones inseguras, cargas excesivas, falta de control,"
+          ],
+          [
+            27,
+            32.3,
+            "jornadas largas, interferencia con la familia, liderazgo negativo y violencia laboral."
+          ],
+          [
+            32.4,
+            39.7,
+            "Un entorno favorable promueve el sentido de pertenencia, la capacitación, responsabilidades claras, la comunicación,"
+          ],
+          [
+            40,
+            42.7,
+            "cargas justas y el reconocimiento del desempeño."
+          ],
+          [
+            43.2,
+            49.5,
+            "Si viviste un acontecimiento traumático severo en el trabajo, como una agresión violenta o un accidente grave,"
+          ],
+          [
+            50.1,
+            53.7,
+            "repórtalo por escrito a Capital Humano para que se te canalice a atención."
+          ],
+          [
+            54.6,
+            57.3,
+            "El centro de trabajo tiene una política de prevención,"
+          ],
+          [
+            57.8,
+            62.7,
+            "identifica los riesgos al menos cada dos años y ofrece mecanismos de queja confidenciales."
+          ],
+          [
+            63.2,
+            67,
+            "Tú cumples las medidas, respondes los cuestionarios y reportas."
+          ],
+          [
+            67.6,
+            71,
+            "La Guía I identifica a quienes vivieron un evento traumático."
+          ],
+          [
+            71.9,
+            75.2,
+            "Las Guías II o III evalúan los factores de riesgo."
+          ],
+          [
+            75.5,
+            77.8,
+            "Responder con honestidad ayuda a mejorar."
+          ],
+          [
+            78.5,
+            84.3,
+            "Los gritos, Las humillaciones, las amenazas o el aislamiento son violencia laboral."
+          ],
+          [
+            84.8,
+            91.6,
+            "Repórtala por el canal de Capital Humano o a la Comisión de Seguridad e Higiene, de forma confidencial y sin represalias."
+          ],
+          [
+            92.3,
+            95.2,
+            "Recuerda, un entorno sano se construye entre todos."
+          ],
+          [
+            96.1,
+            98.6,
+            "Participa, respeta y reporta."
+          ],
+          [
+            99.1,
+            100.8,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación NOM-035",
@@ -7592,11 +9020,114 @@ var CCE_CATALOG = [
     "orden": 12.1,
     "lecciones": [
       {
-        "tipo": "lectura",
-        "titulo": "Incendios: puntos clave",
-        "duracion": "10 min",
-        "texto": "Lectura de apoyo basada en la NOM-002-STPS-2010 (prevención y protección contra incendios) y en los códigos de emergencia del Manual de la Organización.\n\n• Código Rojo: alerta de fuego. Código Verde: evacuación.\n• El fuego necesita combustible, oxígeno, calor y reacción en cadena; el oxígeno medicinal lo acelera.\n• Clases: A sólidos, B líquidos y gases inflamables, C eléctricos, D metales, K aceites de cocina.\n• Extintores: PQS ABC para A, B y C; CO₂ para B y C (equipos eléctricos); agua solo para A; químico húmedo para K.\n• RACE: rescata, alerta (Código Rojo), contén cerrando puertas, y extingue solo si es pequeño y seguro; si no, evacúa.\n• Uso del extintor: jala el seguro, apunta a la base, aprieta la palanca y barre, con la salida a tu espalda.\n• Evacuación: sin elevadores, agachado bajo el humo, pacientes primero a zona segura del mismo piso, punto de reunión.\n• NOM-002: extintores visibles, señalizados, sin obstáculos y a no más de 1.50 m; revisión mensual; mantenimiento anual; simulacros al menos una vez al año.\n\nRevisa la presentación y la guía rápida antes de la evaluación.",
-        "segundosMinimos": 60,
+        "tipo": "video",
+        "titulo": "Código Rojo · Incendios: video del curso",
+        "duracion": "1:36 min",
+        "texto": "Clases de fuego, uso del extintor, Código Rojo, evacuación y requisitos de la NOM-002-STPS-2010.",
+        "video": "prevencion-incendios.mp4",
+        "segundosMinimos": 86,
+        "subtitulos": [
+          [
+            0.8,
+            4.2,
+            "Bienvenida al curso de prevención y combate de incendios."
+          ],
+          [
+            4.9,
+            8.3,
+            "El Código Rojo es la alerta de fuego en nuestros hospitales."
+          ],
+          [
+            8.7,
+            13.5,
+            "El fuego necesita combustible, oxígeno, calor y una reacción en cadena."
+          ],
+          [
+            14.2,
+            20.9,
+            "Si quitas uno, se apaga. En el hospital, el oxígeno medicinal hace que el fuego crezca más rápido."
+          ],
+          [
+            21.7,
+            28.2,
+            "Hay cinco clases de fuego, A para sólidos, B para líquidos y gases inflamables, C para equipos eléctricos,"
+          ],
+          [
+            28.5,
+            31.2,
+            "D para metales y K para aceites de cocina."
+          ],
+          [
+            31.7,
+            36.1,
+            "El extintor de polvo químico seco sirve para fuegos A, B y C."
+          ],
+          [
+            36.8,
+            40.6,
+            "El de dióxido de carbono es ideal en equipos eléctricos."
+          ],
+          [
+            40.8,
+            43.2,
+            "El agua solo sirve en fuegos de clase A."
+          ],
+          [
+            43.6,
+            50.2,
+            "Si descubres un fuego, sigue la regla RACE: rescata a quien esté en peligro, Alerta con el Código Rojo."
+          ],
+          [
+            50.6,
+            54.2,
+            "Contén cerrando puertas y extingue solo si es pequeño y seguro."
+          ],
+          [
+            54.6,
+            58.8,
+            "Para usar el extintor, jala el seguro, apunta a la base del fuego,"
+          ],
+          [
+            59.4,
+            63,
+            "aprieta la palanca y barre de lado a lado con la salida a tu espalda."
+          ],
+          [
+            63.5,
+            65.3,
+            "Al evacuar, sigue a la brigada."
+          ],
+          [
+            65.7,
+            70,
+            "No uses elevadores. Agáchate bajo el humo y repórtate en el punto de reunión."
+          ],
+          [
+            70.8,
+            74.4,
+            "Los pacientes se trasladan primero a una zona segura del mismo piso."
+          ],
+          [
+            74.4,
+            83.9,
+            "La NOM-002 pide extintores visibles, señalizados y sin obstáculos, revisión mensual, mantenimiento anual y simulacros."
+          ],
+          [
+            84.5,
+            87.3,
+            "Reporta cualquier extintor descargado u obstruido."
+          ],
+          [
+            88,
+            93.3,
+            "Recuerda, rescata, alerta con el Código Rojo, contén y solo extingue si es seguro."
+          ],
+          [
+            94.2,
+            95.9,
+            "Continúa con la evaluación del curso."
+          ]
+        ],
         "materiales": [
           {
             "nombre": "Presentación Incendios",

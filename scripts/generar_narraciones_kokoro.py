@@ -17,11 +17,9 @@ VIDEO_DIR = ROOT
 PREVIEW_DIR = ROOT / "narraciones-kokoro"
 VOICE = "ef_dora"
 SAMPLE_RATE = 24000
-COURSES = (
-    "higiene-de-manos",
-    "precauciones-estandar-epp",
-    "trato-digno-experiencia-paciente",
-)
+# Los cursos con video de Google Vids ya no usan narración automática.
+# Agrega aquí un video solo si debe narrarse con Kokoro.
+COURSES: tuple[str, ...] = ()
 
 def run(*args: str) -> None:
     subprocess.run(args, check=True)
