@@ -1,0 +1,1302 @@
+[
+{
+"start": 0.0,
+"end": 5.82,
+"text": "Bienvenida al curso de la NOM-035, factores de riesgo psicosocial en el trabajo.",
+"words": [
+[
+0.0,
+0.94,
+" Bienvenida"
+],
+[
+0.94,
+1.12,
+" al"
+],
+[
+1.12,
+1.42,
+" curso"
+],
+[
+1.42,
+1.62,
+" de"
+],
+[
+1.62,
+1.78,
+" la"
+],
+[
+1.78,
+2.0,
+" NOM"
+],
+[
+2.0,
+3.18,
+"-035,"
+],
+[
+3.68,
+4.0,
+" factores"
+],
+[
+4.0,
+4.14,
+" de"
+],
+[
+4.14,
+4.5,
+" riesgo"
+],
+[
+4.5,
+5.1,
+" psicosocial"
+],
+[
+5.1,
+5.26,
+" en"
+],
+[
+5.26,
+5.44,
+" el"
+],
+[
+5.44,
+5.82,
+" trabajo."
+]
+]
+},
+{
+"start": 6.56,
+"end": 11.12,
+"text": "Esta norma busca prevenir los factores de riesgo psicosocial y la violencia laboral",
+"words": [
+[
+6.56,
+6.74,
+" Esta"
+],
+[
+6.74,
+7.08,
+" norma"
+],
+[
+7.08,
+7.36,
+" busca"
+],
+[
+7.36,
+7.84,
+" prevenir"
+],
+[
+7.84,
+8.08,
+" los"
+],
+[
+8.08,
+8.48,
+" factores"
+],
+[
+8.48,
+8.64,
+" de"
+],
+[
+8.64,
+9.0,
+" riesgo"
+],
+[
+9.0,
+9.7,
+" psicosocial"
+],
+[
+9.7,
+9.98,
+" y"
+],
+[
+9.98,
+10.14,
+" la"
+],
+[
+10.14,
+10.54,
+" violencia"
+],
+[
+10.54,
+11.12,
+" laboral"
+]
+]
+},
+{
+"start": 11.12,
+"end": 13.74,
+"text": "y promover un entorno organizacional favorable.",
+"words": [
+[
+11.12,
+11.46,
+" y"
+],
+[
+11.46,
+11.84,
+" promover"
+],
+[
+11.84,
+12.1,
+" un"
+],
+[
+12.1,
+12.46,
+" entorno"
+],
+[
+12.46,
+13.18,
+" organizacional"
+],
+[
+13.18,
+13.74,
+" favorable."
+]
+]
+},
+{
+"start": 14.64,
+"end": 19.74,
+"text": "En un hospital, la carga emocional y los turnos hacen que este tema sea especialmente importante.",
+"words": [
+[
+14.64,
+14.82,
+" En"
+],
+[
+14.82,
+15.0,
+" un"
+],
+[
+15.0,
+15.46,
+" hospital,"
+],
+[
+15.8,
+15.92,
+" la"
+],
+[
+15.92,
+16.14,
+" carga"
+],
+[
+16.14,
+16.58,
+" emocional"
+],
+[
+16.58,
+16.74,
+" y"
+],
+[
+16.74,
+16.96,
+" los"
+],
+[
+16.96,
+17.32,
+" turnos"
+],
+[
+17.32,
+17.54,
+" hacen"
+],
+[
+17.54,
+17.78,
+" que"
+],
+[
+17.78,
+17.96,
+" este"
+],
+[
+17.96,
+18.22,
+" tema"
+],
+[
+18.22,
+18.48,
+" sea"
+],
+[
+18.48,
+19.04,
+" especialmente"
+],
+[
+19.04,
+19.74,
+" importante."
+]
+]
+},
+{
+"start": 20.48,
+"end": 25.0,
+"text": "Los factores de riesgo psicosocial incluyen condiciones inseguras, cargas excesivas,",
+"words": [
+[
+20.48,
+20.7,
+" Los"
+],
+[
+20.7,
+21.14,
+" factores"
+],
+[
+21.14,
+21.28,
+" de"
+],
+[
+21.28,
+21.64,
+" riesgo"
+],
+[
+21.64,
+22.4,
+" psicosocial"
+],
+[
+22.4,
+22.92,
+" incluyen"
+],
+[
+22.92,
+23.44,
+" condiciones"
+],
+[
+23.44,
+24.28,
+" inseguras,"
+],
+[
+24.52,
+24.84,
+" cargas"
+],
+[
+24.84,
+25.18,
+" excesivas,"
+]
+]
+},
+{
+"start": 25.18,
+"end": 29.36,
+"text": "falta de control, jornadas largas, interferencia con la familia,",
+"words": [
+[
+25.18,
+25.96,
+" falta"
+],
+[
+25.96,
+26.22,
+" de"
+],
+[
+26.22,
+26.64,
+" control,"
+],
+[
+27.04,
+27.4,
+" jornadas"
+],
+[
+27.4,
+27.94,
+" largas,"
+],
+[
+28.26,
+28.64,
+" interferencia"
+],
+[
+28.64,
+28.84,
+" con"
+],
+[
+28.84,
+29.0,
+" la"
+],
+[
+29.0,
+29.36,
+" familia,"
+]
+]
+},
+{
+"start": 29.78,
+"end": 34.76,
+"text": "liderazgo negativo y violencia laboral. Un entorno favorable promueve el sentido de",
+"words": [
+[
+29.78,
+30.1,
+" liderazgo"
+],
+[
+30.1,
+30.58,
+" negativo"
+],
+[
+30.58,
+30.76,
+" y"
+],
+[
+30.76,
+31.18,
+" violencia"
+],
+[
+31.18,
+32.26,
+" laboral."
+],
+[
+32.44,
+32.58,
+" Un"
+],
+[
+32.58,
+32.98,
+" entorno"
+],
+[
+32.98,
+33.58,
+" favorable"
+],
+[
+33.58,
+34.04,
+" promueve"
+],
+[
+34.04,
+34.16,
+" el"
+],
+[
+34.16,
+34.48,
+" sentido"
+],
+[
+34.48,
+34.76,
+" de"
+]
+]
+},
+{
+"start": 34.76,
+"end": 41.0,
+"text": "pertenencia, la capacitación, responsabilidades claras, la comunicación, cargas justas y el",
+"words": [
+[
+34.76,
+35.42,
+" pertenencia,"
+],
+[
+35.84,
+36.02,
+" la"
+],
+[
+36.02,
+36.86,
+" capacitación,"
+],
+[
+37.36,
+38.08,
+" responsabilidades"
+],
+[
+38.08,
+38.52,
+" claras,"
+],
+[
+38.72,
+38.96,
+" la"
+],
+[
+38.96,
+39.74,
+" comunicación,"
+],
+[
+40.0,
+40.22,
+" cargas"
+],
+[
+40.22,
+40.62,
+" justas"
+],
+[
+40.62,
+40.78,
+" y"
+],
+[
+40.78,
+41.0,
+" el"
+]
+]
+},
+{
+"start": 41.0,
+"end": 46.2,
+"text": "reconocimiento del desempeño. Si viviste un acontecimiento traumático severo en el",
+"words": [
+[
+41.0,
+41.64,
+" reconocimiento"
+],
+[
+41.64,
+41.88,
+" del"
+],
+[
+41.88,
+42.74,
+" desempeño."
+],
+[
+43.2,
+43.36,
+" Si"
+],
+[
+43.36,
+43.76,
+" viviste"
+],
+[
+43.76,
+43.96,
+" un"
+],
+[
+43.96,
+44.74,
+" acontecimiento"
+],
+[
+44.74,
+45.38,
+" traumático"
+],
+[
+45.38,
+45.82,
+" severo"
+],
+[
+45.82,
+45.96,
+" en"
+],
+[
+45.96,
+46.2,
+" el"
+]
+]
+},
+{
+"start": 46.2,
+"end": 50.94,
+"text": "trabajo, como una agresión violenta o un accidente grave, repórtalo por escrito",
+"words": [
+[
+46.2,
+46.56,
+" trabajo,"
+],
+[
+46.9,
+47.08,
+" como"
+],
+[
+47.08,
+47.38,
+" una"
+],
+[
+47.38,
+47.78,
+" agresión"
+],
+[
+47.78,
+48.28,
+" violenta"
+],
+[
+48.28,
+48.48,
+" o"
+],
+[
+48.48,
+48.64,
+" un"
+],
+[
+48.64,
+49.16,
+" accidente"
+],
+[
+49.16,
+49.46,
+" grave,"
+],
+[
+50.14,
+50.44,
+" repórtalo"
+],
+[
+50.44,
+50.72,
+" por"
+],
+[
+50.72,
+50.94,
+" escrito"
+]
+]
+},
+{
+"start": 50.94,
+"end": 55.96,
+"text": "capital humano para que se te canalice a atención. El Centro de Trabajo tiene una",
+"words": [
+[
+50.94,
+51.44,
+" capital"
+],
+[
+51.44,
+51.82,
+" humano"
+],
+[
+51.82,
+52.12,
+" para"
+],
+[
+52.12,
+52.24,
+" que"
+],
+[
+52.24,
+52.36,
+" se"
+],
+[
+52.36,
+52.5,
+" te"
+],
+[
+52.5,
+52.98,
+" canalice"
+],
+[
+52.98,
+53.18,
+" a"
+],
+[
+53.18,
+53.66,
+" atención."
+],
+[
+54.56,
+54.6,
+" El"
+],
+[
+54.6,
+54.98,
+" Centro"
+],
+[
+54.98,
+55.12,
+" de"
+],
+[
+55.12,
+55.52,
+" Trabajo"
+],
+[
+55.52,
+55.72,
+" tiene"
+],
+[
+55.72,
+55.96,
+" una"
+]
+]
+},
+{
+"start": 55.96,
+"end": 61.1,
+"text": "política de prevención, identifica los riesgos al menos cada dos años y ofrece mecanismos",
+"words": [
+[
+55.96,
+56.4,
+" política"
+],
+[
+56.4,
+56.72,
+" de"
+],
+[
+56.72,
+57.28,
+" prevención,"
+],
+[
+57.78,
+58.1,
+" identifica"
+],
+[
+58.1,
+58.3,
+" los"
+],
+[
+58.3,
+58.64,
+" riesgos"
+],
+[
+58.64,
+58.82,
+" al"
+],
+[
+58.82,
+59.08,
+" menos"
+],
+[
+59.08,
+59.36,
+" cada"
+],
+[
+59.36,
+59.58,
+" dos"
+],
+[
+59.58,
+59.88,
+" años"
+],
+[
+59.88,
+60.16,
+" y"
+],
+[
+60.16,
+60.48,
+" ofrece"
+],
+[
+60.48,
+61.1,
+" mecanismos"
+]
+]
+},
+{
+"start": 61.1,
+"end": 66.96,
+"text": "de queja confidenciales. Tú cumples las medidas, respondes los cuestionarios y reportas.",
+"words": [
+[
+61.1,
+61.26,
+" de"
+],
+[
+61.26,
+61.56,
+" queja"
+],
+[
+61.56,
+62.66,
+" confidenciales."
+],
+[
+63.16,
+63.3,
+" Tú"
+],
+[
+63.3,
+63.64,
+" cumples"
+],
+[
+63.64,
+63.92,
+" las"
+],
+[
+63.92,
+64.38,
+" medidas,"
+],
+[
+64.78,
+65.1,
+" respondes"
+],
+[
+65.1,
+65.28,
+" los"
+],
+[
+65.28,
+66.02,
+" cuestionarios"
+],
+[
+66.02,
+66.28,
+" y"
+],
+[
+66.28,
+66.96,
+" reportas."
+]
+]
+},
+{
+"start": 67.62,
+"end": 73.08,
+"text": "La guía 1 identifica a quienes vivieron un evento traumático. Las guías 2 o 3",
+"words": [
+[
+67.62,
+67.82,
+" La"
+],
+[
+67.82,
+68.06,
+" guía"
+],
+[
+68.06,
+68.26,
+" 1"
+],
+[
+68.26,
+68.88,
+" identifica"
+],
+[
+68.88,
+69.1,
+" a"
+],
+[
+69.1,
+69.3,
+" quienes"
+],
+[
+69.3,
+69.72,
+" vivieron"
+],
+[
+69.72,
+69.94,
+" un"
+],
+[
+69.94,
+70.24,
+" evento"
+],
+[
+70.24,
+71.0,
+" traumático."
+],
+[
+71.9,
+72.08,
+" Las"
+],
+[
+72.08,
+72.36,
+" guías"
+],
+[
+72.36,
+72.66,
+" 2"
+],
+[
+72.66,
+72.72,
+" o"
+],
+[
+72.72,
+73.08,
+" 3"
+]
+]
+},
+{
+"start": 73.08,
+"end": 79.22,
+"text": "evalúan los factores de riesgo. Responder con honestidad ayuda a mejorar. Los gritos,",
+"words": [
+[
+73.08,
+73.54,
+" evalúan"
+],
+[
+73.54,
+73.76,
+" los"
+],
+[
+73.76,
+74.1,
+" factores"
+],
+[
+74.1,
+74.3,
+" de"
+],
+[
+74.3,
+75.22,
+" riesgo."
+],
+[
+75.5,
+76.02,
+" Responder"
+],
+[
+76.02,
+76.26,
+" con"
+],
+[
+76.26,
+76.88,
+" honestidad"
+],
+[
+76.88,
+77.24,
+" ayuda"
+],
+[
+77.24,
+77.44,
+" a"
+],
+[
+77.44,
+77.78,
+" mejorar."
+],
+[
+78.46,
+78.72,
+" Los"
+],
+[
+78.72,
+79.22,
+" gritos,"
+]
+]
+},
+{
+"start": 79.22,
+"end": 84.28,
+"text": "Las humillaciones, las amenazas o el aislamiento son violencia laboral.",
+"words": [
+[
+79.22,
+79.66,
+" Las"
+],
+[
+79.66,
+80.48,
+" humillaciones,"
+],
+[
+80.9,
+81.0,
+" las"
+],
+[
+81.0,
+81.56,
+" amenazas"
+],
+[
+81.56,
+81.68,
+" o"
+],
+[
+81.68,
+81.82,
+" el"
+],
+[
+81.82,
+82.42,
+" aislamiento"
+],
+[
+82.42,
+82.7,
+" son"
+],
+[
+82.7,
+83.24,
+" violencia"
+],
+[
+83.24,
+84.28,
+" laboral."
+]
+]
+},
+{
+"start": 84.84,
+"end": 91.64,
+"text": "Repórtala por el Canal de Capital Humano o a la Comisión de Seguridad e Higiene, de forma confidencial y sin represalias.",
+"words": [
+[
+84.84,
+85.2,
+" Repórtala"
+],
+[
+85.2,
+85.42,
+" por"
+],
+[
+85.42,
+85.56,
+" el"
+],
+[
+85.56,
+85.78,
+" Canal"
+],
+[
+85.78,
+85.98,
+" de"
+],
+[
+85.98,
+86.3,
+" Capital"
+],
+[
+86.3,
+86.78,
+" Humano"
+],
+[
+86.78,
+87.0,
+" o"
+],
+[
+87.0,
+87.14,
+" a"
+],
+[
+87.14,
+87.28,
+" la"
+],
+[
+87.28,
+87.6,
+" Comisión"
+],
+[
+87.6,
+87.9,
+" de"
+],
+[
+87.9,
+88.24,
+" Seguridad"
+],
+[
+88.24,
+88.36,
+" e"
+],
+[
+88.36,
+88.78,
+" Higiene,"
+],
+[
+89.14,
+89.24,
+" de"
+],
+[
+89.24,
+89.58,
+" forma"
+],
+[
+89.58,
+90.24,
+" confidencial"
+],
+[
+90.24,
+90.48,
+" y"
+],
+[
+90.48,
+90.64,
+" sin"
+],
+[
+90.64,
+91.64,
+" represalias."
+]
+]
+},
+{
+"start": 92.28,
+"end": 95.24,
+"text": "Recuerda, un entorno sano se construye entre todos.",
+"words": [
+[
+92.28,
+92.78,
+" Recuerda,"
+],
+[
+93.0,
+93.2,
+" un"
+],
+[
+93.2,
+93.58,
+" entorno"
+],
+[
+93.58,
+93.84,
+" sano"
+],
+[
+93.84,
+94.08,
+" se"
+],
+[
+94.08,
+94.56,
+" construye"
+],
+[
+94.56,
+94.86,
+" entre"
+],
+[
+94.86,
+95.24,
+" todos."
+]
+]
+},
+{
+"start": 96.14,
+"end": 98.58,
+"text": "Participa, respeta y reporta.",
+"words": [
+[
+96.14,
+96.78,
+" Participa,"
+],
+[
+97.12,
+97.36,
+" respeta"
+],
+[
+97.36,
+97.64,
+" y"
+],
+[
+97.64,
+98.58,
+" reporta."
+]
+]
+},
+{
+"start": 99.06,
+"end": 100.8,
+"text": "Continúa con la evaluación del curso.",
+"words": [
+[
+99.06,
+99.38,
+" Continúa"
+],
+[
+99.38,
+99.6,
+" con"
+],
+[
+99.6,
+99.78,
+" la"
+],
+[
+99.78,
+100.28,
+" evaluación"
+],
+[
+100.28,
+100.5,
+" del"
+],
+[
+100.5,
+100.8,
+" curso."
+]
+]
+}
+]

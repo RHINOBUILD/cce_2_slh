@@ -1,0 +1,1158 @@
+[
+{
+"start": 0.9199999999999986,
+"end": 8.04,
+"text": "Bienvenida al curso de Trato Digno y Experiencia del Paciente. Cada interacción construye o rompe la confianza.",
+"words": [
+[
+0.9199999999999986,
+1.52,
+" Bienvenida"
+],
+[
+1.52,
+1.7,
+" al"
+],
+[
+1.7,
+2.02,
+" curso"
+],
+[
+2.02,
+2.32,
+" de"
+],
+[
+2.32,
+2.58,
+" Trato"
+],
+[
+2.58,
+2.92,
+" Digno"
+],
+[
+2.92,
+3.1,
+" y"
+],
+[
+3.1,
+3.68,
+" Experiencia"
+],
+[
+3.68,
+3.9,
+" del"
+],
+[
+3.9,
+4.58,
+" Paciente."
+],
+[
+5.2,
+5.42,
+" Cada"
+],
+[
+5.42,
+6.02,
+" interacción"
+],
+[
+6.02,
+6.64,
+" construye"
+],
+[
+6.64,
+6.9,
+" o"
+],
+[
+6.9,
+7.14,
+" rompe"
+],
+[
+7.14,
+7.38,
+" la"
+],
+[
+7.38,
+8.04,
+" confianza."
+]
+]
+},
+{
+"start": 8.8,
+"end": 16.06,
+"text": "Un paciente que confía pregunta, avisa y sigue las indicaciones, y el trato digno es un derecho de toda persona que atendemos.",
+"words": [
+[
+8.8,
+8.98,
+" Un"
+],
+[
+8.98,
+9.38,
+" paciente"
+],
+[
+9.38,
+9.66,
+" que"
+],
+[
+9.66,
+9.96,
+" confía"
+],
+[
+9.96,
+10.52,
+" pregunta,"
+],
+[
+10.9,
+11.18,
+" avisa"
+],
+[
+11.18,
+11.44,
+" y"
+],
+[
+11.44,
+11.68,
+" sigue"
+],
+[
+11.68,
+11.98,
+" las"
+],
+[
+11.98,
+12.64,
+" indicaciones,"
+],
+[
+12.84,
+12.98,
+" y"
+],
+[
+12.98,
+13.16,
+" el"
+],
+[
+13.16,
+13.38,
+" trato"
+],
+[
+13.38,
+13.74,
+" digno"
+],
+[
+13.74,
+14.02,
+" es"
+],
+[
+14.02,
+14.2,
+" un"
+],
+[
+14.2,
+14.42,
+" derecho"
+],
+[
+14.42,
+14.74,
+" de"
+],
+[
+14.74,
+14.86,
+" toda"
+],
+[
+14.86,
+15.28,
+" persona"
+],
+[
+15.28,
+15.52,
+" que"
+],
+[
+15.52,
+16.06,
+" atendemos."
+]
+]
+},
+{
+"start": 16.9,
+"end": 24.46,
+"text": "La Carta de los Derechos Generales de los pacientes reconoce 10 derechos, entre ellos recibir un trato digno, información clara,",
+"words": [
+[
+16.9,
+17.1,
+" La"
+],
+[
+17.1,
+17.42,
+" Carta"
+],
+[
+17.42,
+17.58,
+" de"
+],
+[
+17.58,
+17.74,
+" los"
+],
+[
+17.74,
+18.04,
+" Derechos"
+],
+[
+18.04,
+18.56,
+" Generales"
+],
+[
+18.56,
+18.66,
+" de"
+],
+[
+18.66,
+18.86,
+" los"
+],
+[
+18.86,
+19.38,
+" pacientes"
+],
+[
+19.38,
+20.04,
+" reconoce"
+],
+[
+20.04,
+20.28,
+" 10"
+],
+[
+20.28,
+20.78,
+" derechos,"
+],
+[
+21.18,
+21.42,
+" entre"
+],
+[
+21.42,
+21.74,
+" ellos"
+],
+[
+21.74,
+22.14,
+" recibir"
+],
+[
+22.14,
+22.38,
+" un"
+],
+[
+22.38,
+22.66,
+" trato"
+],
+[
+22.66,
+23.22,
+" digno,"
+],
+[
+23.5,
+23.94,
+" información"
+],
+[
+23.94,
+24.46,
+" clara,"
+]
+]
+},
+{
+"start": 24.46,
+"end": 29.52,
+"text": "decidir libremente, la confidencialidad y ser atendido cuando se inconforme.",
+"words": [
+[
+24.46,
+25.22,
+" decidir"
+],
+[
+25.22,
+25.9,
+" libremente,"
+],
+[
+26.28,
+26.64,
+" la"
+],
+[
+26.64,
+27.44,
+" confidencialidad"
+],
+[
+27.44,
+27.78,
+" y"
+],
+[
+27.78,
+27.96,
+" ser"
+],
+[
+27.96,
+28.44,
+" atendido"
+],
+[
+28.44,
+28.68,
+" cuando"
+],
+[
+28.68,
+28.88,
+" se"
+],
+[
+28.88,
+29.52,
+" inconforme."
+]
+]
+},
+{
+"start": 30.44,
+"end": 33.58,
+"text": "En el primer contacto, saluda con un tono cálido,",
+"words": [
+[
+30.44,
+30.48,
+" En"
+],
+[
+30.48,
+30.72,
+" el"
+],
+[
+30.72,
+31.0,
+" primer"
+],
+[
+31.0,
+31.96,
+" contacto,"
+],
+[
+32.06,
+32.28,
+" saluda"
+],
+[
+32.28,
+32.52,
+" con"
+],
+[
+32.52,
+32.72,
+" un"
+],
+[
+32.72,
+32.98,
+" tono"
+],
+[
+32.98,
+33.58,
+" cálido,"
+]
+]
+},
+{
+"start": 33.92,
+"end": 35.58,
+"text": "preséntate con tu nombre y tu función,",
+"words": [
+[
+33.92,
+34.26,
+" preséntate"
+],
+[
+34.26,
+34.5,
+" con"
+],
+[
+34.5,
+34.64,
+" tu"
+],
+[
+34.64,
+34.84,
+" nombre"
+],
+[
+34.84,
+34.98,
+" y"
+],
+[
+34.98,
+35.18,
+" tu"
+],
+[
+35.18,
+35.58,
+" función,"
+]
+]
+},
+{
+"start": 36.1,
+"end": 39.22,
+"text": "escucha sin interrumpir y explica qué harás y qué sigue.",
+"words": [
+[
+36.1,
+36.36,
+" escucha"
+],
+[
+36.36,
+36.56,
+" sin"
+],
+[
+36.56,
+37.24,
+" interrumpir"
+],
+[
+37.24,
+37.74,
+" y"
+],
+[
+37.74,
+38.06,
+" explica"
+],
+[
+38.06,
+38.26,
+" qué"
+],
+[
+38.26,
+38.6,
+" harás"
+],
+[
+38.6,
+38.74,
+" y"
+],
+[
+38.74,
+38.96,
+" qué"
+],
+[
+38.96,
+39.22,
+" sigue."
+]
+]
+},
+{
+"start": 39.96,
+"end": 42.66,
+"text": "Usa un lenguaje sencillo y confirma la comprensión",
+"words": [
+[
+39.96,
+40.14,
+" Usa"
+],
+[
+40.14,
+40.28,
+" un"
+],
+[
+40.28,
+40.72,
+" lenguaje"
+],
+[
+40.72,
+41.26,
+" sencillo"
+],
+[
+41.26,
+41.44,
+" y"
+],
+[
+41.44,
+41.9,
+" confirma"
+],
+[
+41.9,
+42.14,
+" la"
+],
+[
+42.14,
+42.66,
+" comprensión"
+]
+]
+},
+{
+"start": 42.66,
+"end": 46.08,
+"text": "pidiendo al paciente que explique con sus palabras lo que entendió.",
+"words": [
+[
+42.66,
+43.08,
+" pidiendo"
+],
+[
+43.08,
+43.24,
+" al"
+],
+[
+43.24,
+43.68,
+" paciente"
+],
+[
+43.68,
+44.16,
+" que"
+],
+[
+44.16,
+44.38,
+" explique"
+],
+[
+44.38,
+44.58,
+" con"
+],
+[
+44.58,
+44.82,
+" sus"
+],
+[
+44.82,
+45.18,
+" palabras"
+],
+[
+45.18,
+45.4,
+" lo"
+],
+[
+45.4,
+45.64,
+" que"
+],
+[
+45.64,
+46.08,
+" entendió."
+]
+]
+},
+{
+"start": 46.76,
+"end": 49.64,
+"text": "Si habla otro idioma, busca apoyo bilingüe,",
+"words": [
+[
+46.76,
+46.96,
+" Si"
+],
+[
+46.96,
+47.16,
+" habla"
+],
+[
+47.16,
+47.44,
+" otro"
+],
+[
+47.44,
+48.08,
+" idioma,"
+],
+[
+48.38,
+48.52,
+" busca"
+],
+[
+48.52,
+48.9,
+" apoyo"
+],
+[
+48.9,
+49.64,
+" bilingüe,"
+]
+]
+},
+{
+"start": 49.98,
+"end": 52.88,
+"text": "protege la privacidad, toca antes de entrar,",
+"words": [
+[
+49.98,
+50.28,
+" protege"
+],
+[
+50.28,
+50.48,
+" la"
+],
+[
+50.48,
+51.42,
+" privacidad,"
+],
+[
+51.76,
+51.96,
+" toca"
+],
+[
+51.96,
+52.3,
+" antes"
+],
+[
+52.3,
+52.56,
+" de"
+],
+[
+52.56,
+52.88,
+" entrar,"
+]
+]
+},
+{
+"start": 52.88,
+"end": 57.42,
+"text": "Cubre al paciente y comenta los casos solo con quien participa en la atención.",
+"words": [
+[
+52.88,
+53.38,
+" Cubre"
+],
+[
+53.38,
+53.54,
+" al"
+],
+[
+53.54,
+54.12,
+" paciente"
+],
+[
+54.12,
+54.54,
+" y"
+],
+[
+54.54,
+54.84,
+" comenta"
+],
+[
+54.84,
+55.1,
+" los"
+],
+[
+55.1,
+55.4,
+" casos"
+],
+[
+55.4,
+55.72,
+" solo"
+],
+[
+55.72,
+55.9,
+" con"
+],
+[
+55.9,
+56.08,
+" quien"
+],
+[
+56.08,
+56.7,
+" participa"
+],
+[
+56.7,
+56.8,
+" en"
+],
+[
+56.8,
+56.92,
+" la"
+],
+[
+56.92,
+57.42,
+" atención."
+]
+]
+},
+{
+"start": 58.3,
+"end": 61.18,
+"text": "Nunca compartas datos ni imágenes en redes sociales.",
+"words": [
+[
+58.3,
+58.6,
+" Nunca"
+],
+[
+58.6,
+59.14,
+" compartas"
+],
+[
+59.14,
+59.46,
+" datos"
+],
+[
+59.46,
+59.68,
+" ni"
+],
+[
+59.68,
+60.14,
+" imágenes"
+],
+[
+60.14,
+60.32,
+" en"
+],
+[
+60.32,
+60.54,
+" redes"
+],
+[
+60.54,
+61.18,
+" sociales."
+]
+]
+},
+{
+"start": 62.06,
+"end": 68.3,
+"text": "Respeta la identidad, la cultura, las creencias y las decisiones informadas de cada persona, sin distinción.",
+"words": [
+[
+62.06,
+62.34,
+" Respeta"
+],
+[
+62.34,
+62.48,
+" la"
+],
+[
+62.48,
+63.1,
+" identidad,"
+],
+[
+63.3,
+63.46,
+" la"
+],
+[
+63.46,
+63.88,
+" cultura,"
+],
+[
+64.22,
+64.44,
+" las"
+],
+[
+64.44,
+64.82,
+" creencias"
+],
+[
+64.82,
+64.98,
+" y"
+],
+[
+64.98,
+65.24,
+" las"
+],
+[
+65.24,
+65.72,
+" decisiones"
+],
+[
+65.72,
+66.24,
+" informadas"
+],
+[
+66.24,
+66.44,
+" de"
+],
+[
+66.44,
+66.6,
+" cada"
+],
+[
+66.6,
+67.16,
+" persona,"
+],
+[
+67.38,
+67.62,
+" sin"
+],
+[
+67.62,
+68.3,
+" distinción."
+]
+]
+},
+{
+"start": 69.0,
+"end": 73.06,
+"text": "Ante una inconformidad, escucha con calma, reconoce la molestia,",
+"words": [
+[
+69.0,
+69.24,
+" Ante"
+],
+[
+69.24,
+69.42,
+" una"
+],
+[
+69.42,
+70.22,
+" inconformidad,"
+],
+[
+70.54,
+70.78,
+" escucha"
+],
+[
+70.78,
+71.08,
+" con"
+],
+[
+71.08,
+71.52,
+" calma,"
+],
+[
+71.96,
+72.24,
+" reconoce"
+],
+[
+72.24,
+72.42,
+" la"
+],
+[
+72.42,
+73.06,
+" molestia,"
+]
+]
+},
+{
+"start": 73.44,
+"end": 76.8,
+"text": "resuelve lo que esté en tus manos y canaliza a tu jefe o a calidad.",
+"words": [
+[
+73.44,
+73.72,
+" resuelve"
+],
+[
+73.72,
+73.86,
+" lo"
+],
+[
+73.86,
+73.98,
+" que"
+],
+[
+73.98,
+74.1,
+" esté"
+],
+[
+74.1,
+74.2,
+" en"
+],
+[
+74.2,
+74.4,
+" tus"
+],
+[
+74.4,
+74.7,
+" manos"
+],
+[
+74.7,
+74.96,
+" y"
+],
+[
+74.96,
+75.48,
+" canaliza"
+],
+[
+75.48,
+75.66,
+" a"
+],
+[
+75.66,
+75.76,
+" tu"
+],
+[
+75.76,
+76.1,
+" jefe"
+],
+[
+76.1,
+76.28,
+" o"
+],
+[
+76.28,
+76.42,
+" a"
+],
+[
+76.42,
+76.8,
+" calidad."
+]
+]
+},
+{
+"start": 77.6,
+"end": 83.42,
+"text": "Recuerda, preséntate, escucha, explica con claridad y protege la privacidad.",
+"words": [
+[
+77.6,
+78.32,
+" Recuerda,"
+],
+[
+78.58,
+79.18,
+" preséntate,"
+],
+[
+79.7,
+80.26,
+" escucha,"
+],
+[
+80.74,
+80.94,
+" explica"
+],
+[
+80.94,
+81.26,
+" con"
+],
+[
+81.26,
+81.66,
+" claridad"
+],
+[
+81.66,
+82.02,
+" y"
+],
+[
+82.02,
+82.38,
+" protege"
+],
+[
+82.38,
+82.58,
+" la"
+],
+[
+82.58,
+83.42,
+" privacidad."
+]
+]
+},
+{
+"start": 84.08,
+"end": 85.66,
+"text": "Continúa con la evaluación del curso.",
+"words": [
+[
+84.08,
+84.4,
+" Continúa"
+],
+[
+84.4,
+84.6,
+" con"
+],
+[
+84.6,
+84.76,
+" la"
+],
+[
+84.76,
+85.16,
+" evaluación"
+],
+[
+85.16,
+85.36,
+" del"
+],
+[
+85.36,
+85.66,
+" curso."
+]
+]
+}
+]

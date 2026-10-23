@@ -1,0 +1,1322 @@
+[
+{
+"start": 0.94,
+"end": 7.92,
+"text": "Bienvenida al curso de la NOM-018, Sistema Harmonizado de Comunicación de Peligros por Sustancias Químicas.",
+"words": [
+[
+0.94,
+1.46,
+" Bienvenida"
+],
+[
+1.46,
+1.66,
+" al"
+],
+[
+1.66,
+1.96,
+" curso"
+],
+[
+1.96,
+2.16,
+" de"
+],
+[
+2.16,
+2.34,
+" la"
+],
+[
+2.34,
+2.52,
+" NOM"
+],
+[
+2.52,
+3.52,
+"-018,"
+],
+[
+3.9,
+4.16,
+" Sistema"
+],
+[
+4.16,
+4.8,
+" Harmonizado"
+],
+[
+4.8,
+5.06,
+" de"
+],
+[
+5.06,
+5.66,
+" Comunicación"
+],
+[
+5.66,
+5.88,
+" de"
+],
+[
+5.88,
+6.28,
+" Peligros"
+],
+[
+6.28,
+6.46,
+" por"
+],
+[
+6.46,
+7.06,
+" Sustancias"
+],
+[
+7.06,
+7.92,
+" Químicas."
+]
+]
+},
+{
+"start": 8.32,
+"end": 12.88,
+"text": "Este sistema clasifica los peligros físicos, para la salud y para el ambiente,",
+"words": [
+[
+8.32,
+8.62,
+" Este"
+],
+[
+8.62,
+9.1,
+" sistema"
+],
+[
+9.1,
+9.68,
+" clasifica"
+],
+[
+9.68,
+9.94,
+" los"
+],
+[
+9.94,
+10.34,
+" peligros"
+],
+[
+10.34,
+10.96,
+" físicos,"
+],
+[
+11.16,
+11.4,
+" para"
+],
+[
+11.4,
+11.6,
+" la"
+],
+[
+11.6,
+11.92,
+" salud"
+],
+[
+11.92,
+12.12,
+" y"
+],
+[
+12.12,
+12.34,
+" para"
+],
+[
+12.34,
+12.5,
+" el"
+],
+[
+12.5,
+12.88,
+" ambiente,"
+]
+]
+},
+{
+"start": 13.28,
+"end": 17.1,
+"text": "y los comunica con etiquetas y hojas de datos iguales en todo el mundo.",
+"words": [
+[
+13.28,
+13.38,
+" y"
+],
+[
+13.38,
+13.66,
+" los"
+],
+[
+13.66,
+14.06,
+" comunica"
+],
+[
+14.06,
+14.3,
+" con"
+],
+[
+14.3,
+14.82,
+" etiquetas"
+],
+[
+14.82,
+14.98,
+" y"
+],
+[
+14.98,
+15.26,
+" hojas"
+],
+[
+15.26,
+15.42,
+" de"
+],
+[
+15.42,
+15.68,
+" datos"
+],
+[
+15.68,
+16.24,
+" iguales"
+],
+[
+16.24,
+16.46,
+" en"
+],
+[
+16.46,
+16.66,
+" todo"
+],
+[
+16.66,
+16.84,
+" el"
+],
+[
+16.84,
+17.1,
+" mundo."
+]
+]
+},
+{
+"start": 17.4,
+"end": 24.96,
+"text": "En el hospital aplica al alcohol, al cloro, a los desinfectantes, al formol, a los reactivos y al oxígeno.",
+"words": [
+[
+17.4,
+17.6,
+" En"
+],
+[
+17.6,
+17.72,
+" el"
+],
+[
+17.72,
+18.06,
+" hospital"
+],
+[
+18.06,
+18.52,
+" aplica"
+],
+[
+18.52,
+18.76,
+" al"
+],
+[
+18.76,
+19.04,
+" alcohol,"
+],
+[
+19.42,
+19.68,
+" al"
+],
+[
+19.68,
+19.98,
+" cloro,"
+],
+[
+20.22,
+20.34,
+" a"
+],
+[
+20.34,
+20.48,
+" los"
+],
+[
+20.48,
+21.34,
+" desinfectantes,"
+],
+[
+21.68,
+21.9,
+" al"
+],
+[
+21.9,
+22.38,
+" formol,"
+],
+[
+22.58,
+22.7,
+" a"
+],
+[
+22.7,
+22.88,
+" los"
+],
+[
+22.88,
+23.46,
+" reactivos"
+],
+[
+23.46,
+23.66,
+" y"
+],
+[
+23.66,
+23.84,
+" al"
+],
+[
+23.84,
+24.96,
+" oxígeno."
+]
+]
+},
+{
+"start": 24.96,
+"end": 29.34,
+"text": "Hay nueve pictogramas, un rombo con borde rojo y un símbolo negro.",
+"words": [
+[
+24.96,
+25.28,
+" Hay"
+],
+[
+25.28,
+25.66,
+" nueve"
+],
+[
+25.66,
+26.58,
+" pictogramas,"
+],
+[
+26.68,
+26.94,
+" un"
+],
+[
+26.94,
+27.24,
+" rombo"
+],
+[
+27.24,
+27.48,
+" con"
+],
+[
+27.48,
+27.7,
+" borde"
+],
+[
+27.7,
+28.14,
+" rojo"
+],
+[
+28.14,
+28.4,
+" y"
+],
+[
+28.4,
+28.62,
+" un"
+],
+[
+28.62,
+28.98,
+" símbolo"
+],
+[
+28.98,
+29.34,
+" negro."
+]
+]
+},
+{
+"start": 30.26,
+"end": 35.28,
+"text": "Por ejemplo, la llama indica inflamable, la llama sobre un círculo indica comburente",
+"words": [
+[
+30.26,
+30.34,
+" Por"
+],
+[
+30.34,
+30.86,
+" ejemplo,"
+],
+[
+31.22,
+31.3,
+" la"
+],
+[
+31.3,
+31.54,
+" llama"
+],
+[
+31.54,
+31.94,
+" indica"
+],
+[
+31.94,
+32.62,
+" inflamable,"
+],
+[
+33.0,
+33.14,
+" la"
+],
+[
+33.14,
+33.36,
+" llama"
+],
+[
+33.36,
+33.62,
+" sobre"
+],
+[
+33.62,
+33.88,
+" un"
+],
+[
+33.88,
+34.24,
+" círculo"
+],
+[
+34.24,
+34.62,
+" indica"
+],
+[
+34.62,
+35.28,
+" comburente"
+]
+]
+},
+{
+"start": 35.28,
+"end": 38.06,
+"text": "y la calavera indica toxicidad aguda grave.",
+"words": [
+[
+35.28,
+35.54,
+" y"
+],
+[
+35.54,
+35.76,
+" la"
+],
+[
+35.76,
+36.18,
+" calavera"
+],
+[
+36.18,
+36.52,
+" indica"
+],
+[
+36.52,
+37.32,
+" toxicidad"
+],
+[
+37.32,
+37.7,
+" aguda"
+],
+[
+37.7,
+38.06,
+" grave."
+]
+]
+},
+{
+"start": 38.64,
+"end": 42.16,
+"text": "Toda etiqueta muestra el nombre del producto, los pictogramas,",
+"words": [
+[
+38.64,
+38.9,
+" Toda"
+],
+[
+38.9,
+39.4,
+" etiqueta"
+],
+[
+39.4,
+39.72,
+" muestra"
+],
+[
+39.72,
+39.88,
+" el"
+],
+[
+39.88,
+40.06,
+" nombre"
+],
+[
+40.06,
+40.32,
+" del"
+],
+[
+40.32,
+40.72,
+" producto,"
+],
+[
+41.08,
+41.28,
+" los"
+],
+[
+41.28,
+42.16,
+" pictogramas,"
+]
+]
+},
+{
+"start": 42.42,
+"end": 45.0,
+"text": "la palabra de advertencia, las indicaciones de peligro,",
+"words": [
+[
+42.42,
+42.56,
+" la"
+],
+[
+42.56,
+42.84,
+" palabra"
+],
+[
+42.84,
+43.06,
+" de"
+],
+[
+43.06,
+43.56,
+" advertencia,"
+],
+[
+43.72,
+43.88,
+" las"
+],
+[
+43.88,
+44.32,
+" indicaciones"
+],
+[
+44.32,
+44.58,
+" de"
+],
+[
+44.58,
+45.0,
+" peligro,"
+]
+]
+},
+{
+"start": 45.3,
+"end": 48.04,
+"text": "los consejos de prudencia y los datos del proveedor.",
+"words": [
+[
+45.3,
+45.52,
+" los"
+],
+[
+45.52,
+45.9,
+" consejos"
+],
+[
+45.9,
+46.12,
+" de"
+],
+[
+46.12,
+46.6,
+" prudencia"
+],
+[
+46.6,
+46.84,
+" y"
+],
+[
+46.84,
+47.1,
+" los"
+],
+[
+47.1,
+47.3,
+" datos"
+],
+[
+47.3,
+47.58,
+" del"
+],
+[
+47.58,
+48.04,
+" proveedor."
+]
+]
+},
+{
+"start": 48.46,
+"end": 50.1,
+"text": "Peligro es más grave que atención.",
+"words": [
+[
+48.46,
+48.82,
+" Peligro"
+],
+[
+48.82,
+48.98,
+" es"
+],
+[
+48.98,
+49.18,
+" más"
+],
+[
+49.18,
+49.4,
+" grave"
+],
+[
+49.4,
+49.6,
+" que"
+],
+[
+49.6,
+50.1,
+" atención."
+]
+]
+},
+{
+"start": 50.1,
+"end": 56.300000000000004,
+"text": "La hoja de datos de seguridad tiene 16 secciones y debe estar en español y al alcance.",
+"words": [
+[
+50.1,
+51.0,
+" La"
+],
+[
+51.0,
+51.32,
+" hoja"
+],
+[
+51.32,
+51.48,
+" de"
+],
+[
+51.48,
+51.72,
+" datos"
+],
+[
+51.72,
+52.0,
+" de"
+],
+[
+52.0,
+52.44,
+" seguridad"
+],
+[
+52.44,
+52.92,
+" tiene"
+],
+[
+52.92,
+53.48,
+" 16"
+],
+[
+53.48,
+54.0,
+" secciones"
+],
+[
+54.0,
+54.38,
+" y"
+],
+[
+54.38,
+54.62,
+" debe"
+],
+[
+54.62,
+54.86,
+" estar"
+],
+[
+54.86,
+55.12,
+" en"
+],
+[
+55.12,
+55.44,
+" español"
+],
+[
+55.44,
+55.58,
+" y"
+],
+[
+55.58,
+55.78,
+" al"
+],
+[
+55.78,
+56.300000000000004,
+" alcance."
+]
+]
+},
+{
+"start": 57.18,
+"end": 62.7,
+"text": "Ahí encuentras primeros auxilios, qué hacer ante un derrame y qué equipo de protección usar.",
+"words": [
+[
+57.18,
+57.38,
+" Ahí"
+],
+[
+57.38,
+57.96,
+" encuentras"
+],
+[
+57.96,
+58.48,
+" primeros"
+],
+[
+58.48,
+59.18,
+" auxilios,"
+],
+[
+59.3,
+59.48,
+" qué"
+],
+[
+59.48,
+59.8,
+" hacer"
+],
+[
+59.8,
+60.04,
+" ante"
+],
+[
+60.04,
+60.3,
+" un"
+],
+[
+60.3,
+60.76,
+" derrame"
+],
+[
+60.76,
+61.18,
+" y"
+],
+[
+61.18,
+61.38,
+" qué"
+],
+[
+61.38,
+61.68,
+" equipo"
+],
+[
+61.68,
+62.0,
+" de"
+],
+[
+62.0,
+62.32,
+" protección"
+],
+[
+62.32,
+62.7,
+" usar."
+]
+]
+},
+{
+"start": 63.46,
+"end": 66.72,
+"text": "Si pasas una sustancia a otro recipiente, etiquétalo.",
+"words": [
+[
+63.46,
+63.64,
+" Si"
+],
+[
+63.64,
+64.06,
+" pasas"
+],
+[
+64.06,
+64.24,
+" una"
+],
+[
+64.24,
+64.76,
+" sustancia"
+],
+[
+64.76,
+65.02,
+" a"
+],
+[
+65.02,
+65.2,
+" otro"
+],
+[
+65.2,
+65.92,
+" recipiente,"
+],
+[
+66.24,
+66.72,
+" etiquétalo."
+]
+]
+},
+{
+"start": 67.54,
+"end": 72.86,
+"text": "Nunca uses envases de alimentos o bebidas y nunca mezcles cloro con amoníaco o con ácidos.",
+"words": [
+[
+67.54,
+67.92,
+" Nunca"
+],
+[
+67.92,
+68.18,
+" uses"
+],
+[
+68.18,
+68.6,
+" envases"
+],
+[
+68.6,
+68.8,
+" de"
+],
+[
+68.8,
+69.18,
+" alimentos"
+],
+[
+69.18,
+69.4,
+" o"
+],
+[
+69.4,
+69.94,
+" bebidas"
+],
+[
+69.94,
+70.26,
+" y"
+],
+[
+70.26,
+70.6,
+" nunca"
+],
+[
+70.6,
+70.96,
+" mezcles"
+],
+[
+70.96,
+71.3,
+" cloro"
+],
+[
+71.3,
+71.52,
+" con"
+],
+[
+71.52,
+72.08,
+" amoníaco"
+],
+[
+72.08,
+72.28,
+" o"
+],
+[
+72.28,
+72.48,
+" con"
+],
+[
+72.48,
+72.86,
+" ácidos."
+]
+]
+},
+{
+"start": 73.74,
+"end": 78.84,
+"text": "El Centro de Trabajo proporciona las hojas, la señalización y la capacitación.",
+"words": [
+[
+73.74,
+73.94,
+" El"
+],
+[
+73.94,
+74.28,
+" Centro"
+],
+[
+74.28,
+74.46,
+" de"
+],
+[
+74.46,
+74.9,
+" Trabajo"
+],
+[
+74.9,
+75.56,
+" proporciona"
+],
+[
+75.56,
+75.86,
+" las"
+],
+[
+75.86,
+76.3,
+" hojas,"
+],
+[
+76.58,
+76.76,
+" la"
+],
+[
+76.76,
+77.5,
+" señalización"
+],
+[
+77.5,
+77.88,
+" y"
+],
+[
+77.88,
+78.16,
+" la"
+],
+[
+78.16,
+78.84,
+" capacitación."
+]
+]
+},
+{
+"start": 78.84,
+"end": 85.04,
+"text": "Tú lees la etiqueta, usas el equipo indicado y reportas los envases sin etiqueta.",
+"words": [
+[
+78.84,
+79.68,
+" Tú"
+],
+[
+79.68,
+79.98,
+" lees"
+],
+[
+79.98,
+80.16,
+" la"
+],
+[
+80.16,
+80.8,
+" etiqueta,"
+],
+[
+81.16,
+81.36,
+" usas"
+],
+[
+81.36,
+81.52,
+" el"
+],
+[
+81.52,
+81.8,
+" equipo"
+],
+[
+81.8,
+82.36,
+" indicado"
+],
+[
+82.36,
+82.7,
+" y"
+],
+[
+82.7,
+83.18,
+" reportas"
+],
+[
+83.18,
+83.4,
+" los"
+],
+[
+83.4,
+83.72,
+" envases"
+],
+[
+83.72,
+83.98,
+" sin"
+],
+[
+83.98,
+85.04,
+" etiqueta."
+]
+]
+},
+{
+"start": 85.34,
+"end": 88.06,
+"text": "Ante un derrame, activa el código amarillo.",
+"words": [
+[
+85.34,
+85.58,
+" Ante"
+],
+[
+85.58,
+85.74,
+" un"
+],
+[
+85.74,
+86.32,
+" derrame,"
+],
+[
+86.7,
+86.92,
+" activa"
+],
+[
+86.92,
+87.08,
+" el"
+],
+[
+87.08,
+87.34,
+" código"
+],
+[
+87.34,
+88.06,
+" amarillo."
+]
+]
+},
+{
+"start": 88.92,
+"end": 94.38,
+"text": "Recuerda, mira el pictograma, lee la palabra de advertencia y consulta la hoja de datos.",
+"words": [
+[
+88.92,
+89.52,
+" Recuerda,"
+],
+[
+89.88,
+89.96,
+" mira"
+],
+[
+89.96,
+90.12,
+" el"
+],
+[
+90.12,
+91.02,
+" pictograma,"
+],
+[
+91.22,
+91.3,
+" lee"
+],
+[
+91.3,
+91.5,
+" la"
+],
+[
+91.5,
+91.82,
+" palabra"
+],
+[
+91.82,
+92.04,
+" de"
+],
+[
+92.04,
+92.62,
+" advertencia"
+],
+[
+92.62,
+93.02,
+" y"
+],
+[
+93.02,
+93.5,
+" consulta"
+],
+[
+93.5,
+93.6,
+" la"
+],
+[
+93.6,
+93.86,
+" hoja"
+],
+[
+93.86,
+94.02,
+" de"
+],
+[
+94.02,
+94.38,
+" datos."
+]
+]
+},
+{
+"start": 95.3,
+"end": 96.96,
+"text": "Continúa con la evaluación del curso.",
+"words": [
+[
+95.3,
+95.68,
+" Continúa"
+],
+[
+95.68,
+95.88,
+" con"
+],
+[
+95.88,
+96.04,
+" la"
+],
+[
+96.04,
+96.48,
+" evaluación"
+],
+[
+96.48,
+96.66,
+" del"
+],
+[
+96.66,
+96.96,
+" curso."
+]
+]
+}
+]

@@ -1,0 +1,1181 @@
+[
+{
+"start": 0.0,
+"end": 3.16,
+"text": "Bienvenida al curso de Consentimiento Informado.",
+"words": [
+[
+0.0,
+0.88,
+" Bienvenida"
+],
+[
+0.88,
+1.04,
+" al"
+],
+[
+1.04,
+1.32,
+" curso"
+],
+[
+1.32,
+1.62,
+" de"
+],
+[
+1.62,
+2.24,
+" Consentimiento"
+],
+[
+2.24,
+3.16,
+" Informado."
+]
+]
+},
+{
+"start": 3.42,
+"end": 7.84,
+"text": "Requisitos de la NOM-004 y su uso en el sistema clínico.",
+"words": [
+[
+3.42,
+3.94,
+" Requisitos"
+],
+[
+3.94,
+4.08,
+" de"
+],
+[
+4.08,
+4.26,
+" la"
+],
+[
+4.26,
+4.56,
+" NOM"
+],
+[
+4.56,
+5.88,
+"-004"
+],
+[
+5.88,
+6.14,
+" y"
+],
+[
+6.14,
+6.3,
+" su"
+],
+[
+6.3,
+6.5,
+" uso"
+],
+[
+6.5,
+6.7,
+" en"
+],
+[
+6.7,
+6.78,
+" el"
+],
+[
+6.78,
+7.18,
+" sistema"
+],
+[
+7.18,
+7.84,
+" clínico."
+]
+]
+},
+{
+"start": 8.42,
+"end": 13.22,
+"text": "El consentimiento informado es un proceso de información, no solo una firma.",
+"words": [
+[
+8.42,
+8.66,
+" El"
+],
+[
+8.66,
+9.36,
+" consentimiento"
+],
+[
+9.36,
+9.86,
+" informado"
+],
+[
+9.86,
+10.04,
+" es"
+],
+[
+10.04,
+10.3,
+" un"
+],
+[
+10.3,
+10.58,
+" proceso"
+],
+[
+10.58,
+10.88,
+" de"
+],
+[
+10.88,
+11.34,
+" información,"
+],
+[
+11.66,
+11.82,
+" no"
+],
+[
+11.82,
+12.04,
+" solo"
+],
+[
+12.04,
+12.36,
+" una"
+],
+[
+12.36,
+13.22,
+" firma."
+]
+]
+},
+{
+"start": 13.38,
+"end": 18.34,
+"text": "Con él, el paciente acepta un procedimiento después de conocer sus riesgos y beneficios.",
+"words": [
+[
+13.38,
+13.62,
+" Con"
+],
+[
+13.62,
+13.8,
+" él,"
+],
+[
+14.22,
+14.34,
+" el"
+],
+[
+14.34,
+14.74,
+" paciente"
+],
+[
+14.74,
+15.1,
+" acepta"
+],
+[
+15.1,
+15.34,
+" un"
+],
+[
+15.34,
+15.9,
+" procedimiento"
+],
+[
+15.9,
+16.26,
+" después"
+],
+[
+16.26,
+16.52,
+" de"
+],
+[
+16.52,
+16.82,
+" conocer"
+],
+[
+16.82,
+17.02,
+" sus"
+],
+[
+17.02,
+17.38,
+" riesgos"
+],
+[
+17.38,
+17.58,
+" y"
+],
+[
+17.58,
+18.34,
+" beneficios."
+]
+]
+},
+{
+"start": 18.84,
+"end": 22.64,
+"text": "Se requiere como mínimo al ingreso hospitalario, en cirugía mayor,",
+"words": [
+[
+18.84,
+19.12,
+" Se"
+],
+[
+19.12,
+19.42,
+" requiere"
+],
+[
+19.42,
+19.72,
+" como"
+],
+[
+19.72,
+20.06,
+" mínimo"
+],
+[
+20.06,
+20.32,
+" al"
+],
+[
+20.32,
+20.6,
+" ingreso"
+],
+[
+20.6,
+21.36,
+" hospitalario,"
+],
+[
+21.68,
+21.86,
+" en"
+],
+[
+21.86,
+22.3,
+" cirugía"
+],
+[
+22.3,
+22.64,
+" mayor,"
+]
+]
+},
+{
+"start": 23.14,
+"end": 26.94,
+"text": "en anestesia general o regional, en procedimientos de alto riesgo,",
+"words": [
+[
+23.14,
+23.28,
+" en"
+],
+[
+23.28,
+23.76,
+" anestesia"
+],
+[
+23.76,
+24.1,
+" general"
+],
+[
+24.1,
+24.34,
+" o"
+],
+[
+24.34,
+24.7,
+" regional,"
+],
+[
+25.28,
+25.46,
+" en"
+],
+[
+25.46,
+26.06,
+" procedimientos"
+],
+[
+26.06,
+26.3,
+" de"
+],
+[
+26.3,
+26.48,
+" alto"
+],
+[
+26.48,
+26.94,
+" riesgo,"
+]
+]
+},
+{
+"start": 26.94,
+"end": 32.84,
+"text": "en métodos definitivos de planificación, en donación y trasplante y en investigación clínica.",
+"words": [
+[
+26.94,
+27.52,
+" en"
+],
+[
+27.52,
+28.04,
+" métodos"
+],
+[
+28.04,
+28.6,
+" definitivos"
+],
+[
+28.6,
+28.8,
+" de"
+],
+[
+28.8,
+29.46,
+" planificación,"
+],
+[
+29.98,
+30.12,
+" en"
+],
+[
+30.12,
+30.44,
+" donación"
+],
+[
+30.44,
+30.64,
+" y"
+],
+[
+30.64,
+31.3,
+" trasplante"
+],
+[
+31.3,
+31.62,
+" y"
+],
+[
+31.62,
+31.88,
+" en"
+],
+[
+31.88,
+32.3,
+" investigación"
+],
+[
+32.3,
+32.84,
+" clínica."
+]
+]
+},
+{
+"start": 33.62,
+"end": 38.56,
+"text": "El documento debe incluir el establecimiento, el lugar y la fecha, el acto autorizado,",
+"words": [
+[
+33.62,
+33.7,
+" El"
+],
+[
+33.7,
+34.28,
+" documento"
+],
+[
+34.28,
+34.46,
+" debe"
+],
+[
+34.46,
+34.86,
+" incluir"
+],
+[
+34.86,
+35.1,
+" el"
+],
+[
+35.1,
+35.88,
+" establecimiento,"
+],
+[
+36.22,
+36.32,
+" el"
+],
+[
+36.32,
+36.52,
+" lugar"
+],
+[
+36.52,
+36.66,
+" y"
+],
+[
+36.66,
+36.88,
+" la"
+],
+[
+36.88,
+37.2,
+" fecha,"
+],
+[
+37.58,
+37.7,
+" el"
+],
+[
+37.7,
+37.94,
+" acto"
+],
+[
+37.94,
+38.56,
+" autorizado,"
+]
+]
+},
+{
+"start": 38.96,
+"end": 44.0,
+"text": "los riesgos y beneficios, la autorización para atender contingencias y el nombre y la firma",
+"words": [
+[
+38.96,
+39.1,
+" los"
+],
+[
+39.1,
+39.4,
+" riesgos"
+],
+[
+39.4,
+39.6,
+" y"
+],
+[
+39.6,
+40.22,
+" beneficios,"
+],
+[
+40.48,
+40.66,
+" la"
+],
+[
+40.66,
+41.18,
+" autorización"
+],
+[
+41.18,
+41.46,
+" para"
+],
+[
+41.46,
+41.86,
+" atender"
+],
+[
+41.86,
+42.7,
+" contingencias"
+],
+[
+42.7,
+43.12,
+" y"
+],
+[
+43.12,
+43.28,
+" el"
+],
+[
+43.28,
+43.44,
+" nombre"
+],
+[
+43.44,
+43.6,
+" y"
+],
+[
+43.6,
+43.8,
+" la"
+],
+[
+43.8,
+44.0,
+" firma"
+]
+]
+},
+{
+"start": 44.0,
+"end": 50.42,
+"text": "del paciente, del médico y de dos testigos. En el sistema, localiza el formato en cartas",
+"words": [
+[
+44.0,
+44.2,
+" del"
+],
+[
+44.2,
+44.68,
+" paciente,"
+],
+[
+45.04,
+45.18,
+" del"
+],
+[
+45.18,
+45.56,
+" médico"
+],
+[
+45.56,
+45.8,
+" y"
+],
+[
+45.8,
+45.98,
+" de"
+],
+[
+45.98,
+46.14,
+" dos"
+],
+[
+46.14,
+46.74,
+" testigos."
+],
+[
+47.38,
+47.64,
+" En"
+],
+[
+47.64,
+47.84,
+" el"
+],
+[
+47.84,
+48.36,
+" sistema,"
+],
+[
+48.84,
+49.22,
+" localiza"
+],
+[
+49.22,
+49.48,
+" el"
+],
+[
+49.48,
+49.8,
+" formato"
+],
+[
+49.8,
+50.06,
+" en"
+],
+[
+50.06,
+50.42,
+" cartas"
+]
+]
+},
+{
+"start": 50.42,
+"end": 55.16,
+"text": "y consentimientos, selecciona al médico tratante, completa los datos del procedimiento,",
+"words": [
+[
+50.42,
+50.58,
+" y"
+],
+[
+50.58,
+51.52,
+" consentimientos,"
+],
+[
+52.0,
+52.42,
+" selecciona"
+],
+[
+52.42,
+52.62,
+" al"
+],
+[
+52.62,
+53.0,
+" médico"
+],
+[
+53.0,
+53.72,
+" tratante,"
+],
+[
+54.18,
+54.32,
+" completa"
+],
+[
+54.32,
+54.6,
+" los"
+],
+[
+54.6,
+54.8,
+" datos"
+],
+[
+54.8,
+55.06,
+" del"
+],
+[
+55.06,
+55.38,
+" procedimiento,"
+]
+]
+},
+{
+"start": 56.36,
+"end": 62.6,
+"text": "explica, imprime y recaba las firmas. Si el procedimiento no aparece, usa el consentimiento",
+"words": [
+[
+56.36,
+56.92,
+" explica,"
+],
+[
+57.3,
+57.56,
+" imprime"
+],
+[
+57.56,
+57.74,
+" y"
+],
+[
+57.74,
+58.04,
+" recaba"
+],
+[
+58.04,
+58.34,
+" las"
+],
+[
+58.34,
+59.28,
+" firmas."
+],
+[
+59.48,
+59.58,
+" Si"
+],
+[
+59.58,
+59.8,
+" el"
+],
+[
+59.8,
+60.36,
+" procedimiento"
+],
+[
+60.36,
+60.64,
+" no"
+],
+[
+60.64,
+61.04,
+" aparece,"
+],
+[
+61.6,
+61.68,
+" usa"
+],
+[
+61.68,
+61.94,
+" el"
+],
+[
+61.94,
+62.6,
+" consentimiento"
+]
+]
+},
+{
+"start": 62.6,
+"end": 68.78,
+"text": "general. Antes de la firma, explica qué se hará, los beneficios, los riesgos y las alternativas,",
+"words": [
+[
+62.6,
+63.06,
+" general."
+],
+[
+63.48,
+63.74,
+" Antes"
+],
+[
+63.74,
+63.92,
+" de"
+],
+[
+63.92,
+64.1,
+" la"
+],
+[
+64.1,
+64.62,
+" firma,"
+],
+[
+64.88,
+65.16,
+" explica"
+],
+[
+65.16,
+65.34,
+" qué"
+],
+[
+65.34,
+65.52,
+" se"
+],
+[
+65.52,
+65.84,
+" hará,"
+],
+[
+66.0,
+66.24,
+" los"
+],
+[
+66.24,
+67.0,
+" beneficios,"
+],
+[
+67.32,
+67.42,
+" los"
+],
+[
+67.42,
+67.78,
+" riesgos"
+],
+[
+67.78,
+67.9,
+" y"
+],
+[
+67.9,
+68.16,
+" las"
+],
+[
+68.16,
+68.78,
+" alternativas,"
+]
+]
+},
+{
+"start": 69.34,
+"end": 74.54,
+"text": "incluida la de no hacerlo, y confirma que el paciente entendió. Si el paciente no puede",
+"words": [
+[
+69.34,
+69.6,
+" incluida"
+],
+[
+69.6,
+69.74,
+" la"
+],
+[
+69.74,
+69.9,
+" de"
+],
+[
+69.9,
+70.12,
+" no"
+],
+[
+70.12,
+70.44,
+" hacerlo,"
+],
+[
+70.82,
+71.06,
+" y"
+],
+[
+71.06,
+71.36,
+" confirma"
+],
+[
+71.36,
+71.5,
+" que"
+],
+[
+71.5,
+71.68,
+" el"
+],
+[
+71.68,
+72.08,
+" paciente"
+],
+[
+72.08,
+72.6,
+" entendió."
+],
+[
+73.3,
+73.46,
+" Si"
+],
+[
+73.46,
+73.66,
+" el"
+],
+[
+73.66,
+74.08,
+" paciente"
+],
+[
+74.08,
+74.32,
+" no"
+],
+[
+74.32,
+74.54,
+" puede"
+]
+]
+},
+{
+"start": 74.54,
+"end": 85.18,
+"text": "firmar, lo hace su representante. Si rechaza el procedimiento, documenta la explicación y su",
+"words": [
+[
+74.54,
+75.22,
+" firmar,"
+],
+[
+75.32,
+75.46,
+" lo"
+],
+[
+75.46,
+75.62,
+" hace"
+],
+[
+75.62,
+75.86,
+" su"
+],
+[
+75.86,
+76.68,
+" representante."
+],
+[
+77.42,
+77.64,
+" Si"
+],
+[
+77.64,
+77.96,
+" rechaza"
+],
+[
+77.96,
+78.2,
+" el"
+],
+[
+78.2,
+78.86,
+" procedimiento,"
+],
+[
+79.16,
+79.46,
+" documenta"
+],
+[
+79.46,
+79.76,
+" la"
+],
+[
+79.76,
+80.18,
+" explicación"
+],
+[
+80.18,
+84.24,
+" y"
+],
+[
+84.24,
+85.18,
+" su"
+]
+]
+},
+{
+"start": 86.76,
+"end": 92.06,
+"text": "Recuerda, informa, confirma que entendió, completa todos los datos y recaba las firmas.",
+"words": [
+[
+86.76,
+87.34,
+" Recuerda,"
+],
+[
+87.76,
+88.26,
+" informa,"
+],
+[
+88.42,
+88.74,
+" confirma"
+],
+[
+88.74,
+88.98,
+" que"
+],
+[
+88.98,
+89.56,
+" entendió,"
+],
+[
+89.96,
+90.16,
+" completa"
+],
+[
+90.16,
+90.5,
+" todos"
+],
+[
+90.5,
+90.72,
+" los"
+],
+[
+90.72,
+90.94,
+" datos"
+],
+[
+90.94,
+91.32,
+" y"
+],
+[
+91.32,
+91.62,
+" recaba"
+],
+[
+91.62,
+91.86,
+" las"
+],
+[
+91.86,
+92.15,
+" firmas."
+]
+]
+},
+{
+"start": 93.16,
+"end": 94.88,
+"text": "Continúa con la evaluación del curso.",
+"words": [
+[
+93.16,
+93.54,
+" Continúa"
+],
+[
+93.54,
+93.76,
+" con"
+],
+[
+93.76,
+93.92,
+" la"
+],
+[
+93.92,
+94.38,
+" evaluación"
+],
+[
+94.38,
+94.6,
+" del"
+],
+[
+94.6,
+94.88,
+" curso."
+]
+]
+}
+]

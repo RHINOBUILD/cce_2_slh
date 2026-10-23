@@ -1,0 +1,1307 @@
+[
+{
+"start": 0.8600000000000012,
+"end": 5.08,
+"text": "Bienvenida al curso de medicamentos de alto riesgo. Barreras contra el error.",
+"words": [
+[
+0.8600000000000012,
+1.42,
+" Bienvenida"
+],
+[
+1.42,
+1.6,
+" al"
+],
+[
+1.6,
+1.94,
+" curso"
+],
+[
+1.94,
+2.16,
+" de"
+],
+[
+2.16,
+2.78,
+" medicamentos"
+],
+[
+2.78,
+3.02,
+" de"
+],
+[
+3.02,
+3.22,
+" alto"
+],
+[
+3.22,
+3.84,
+" riesgo."
+],
+[
+3.96,
+4.42,
+" Barreras"
+],
+[
+4.42,
+4.7,
+" contra"
+],
+[
+4.7,
+4.84,
+" el"
+],
+[
+4.84,
+5.08,
+" error."
+]
+]
+},
+{
+"start": 5.88,
+"end": 10.42,
+"text": "Un medicamento de alto riesgo no se equivoca más que otros, pero cuando hay un error,",
+"words": [
+[
+5.88,
+6.04,
+" Un"
+],
+[
+6.04,
+6.66,
+" medicamento"
+],
+[
+6.66,
+6.92,
+" de"
+],
+[
+6.92,
+7.08,
+" alto"
+],
+[
+7.08,
+7.52,
+" riesgo"
+],
+[
+7.52,
+7.7,
+" no"
+],
+[
+7.7,
+7.88,
+" se"
+],
+[
+7.88,
+8.22,
+" equivoca"
+],
+[
+8.22,
+8.46,
+" más"
+],
+[
+8.46,
+8.64,
+" que"
+],
+[
+8.64,
+8.94,
+" otros,"
+],
+[
+9.3,
+9.44,
+" pero"
+],
+[
+9.44,
+9.72,
+" cuando"
+],
+[
+9.72,
+9.92,
+" hay"
+],
+[
+9.92,
+10.1,
+" un"
+],
+[
+10.1,
+10.42,
+" error,"
+]
+]
+},
+{
+"start": 10.84,
+"end": 15.7,
+"text": "la probabilidad de daño grave o muerte es mucho mayor. Por eso cada paso lleva",
+"words": [
+[
+10.84,
+11.0,
+" la"
+],
+[
+11.0,
+11.6,
+" probabilidad"
+],
+[
+11.6,
+11.78,
+" de"
+],
+[
+11.78,
+12.04,
+" daño"
+],
+[
+12.04,
+12.26,
+" grave"
+],
+[
+12.26,
+12.48,
+" o"
+],
+[
+12.48,
+12.74,
+" muerte"
+],
+[
+12.74,
+13.02,
+" es"
+],
+[
+13.02,
+13.26,
+" mucho"
+],
+[
+13.26,
+13.64,
+" mayor."
+],
+[
+14.38,
+14.6,
+" Por"
+],
+[
+14.6,
+14.82,
+" eso"
+],
+[
+14.82,
+15.08,
+" cada"
+],
+[
+15.08,
+15.42,
+" paso"
+],
+[
+15.42,
+15.7,
+" lleva"
+]
+]
+},
+{
+"start": 15.7,
+"end": 20.76,
+"text": "barreras adicionales. Los grupos más frecuentes son los electrolitos concentrados,",
+"words": [
+[
+15.7,
+16.2,
+" barreras"
+],
+[
+16.2,
+17.36,
+" adicionales."
+],
+[
+17.62,
+17.84,
+" Los"
+],
+[
+17.84,
+18.16,
+" grupos"
+],
+[
+18.16,
+18.48,
+" más"
+],
+[
+18.48,
+18.94,
+" frecuentes"
+],
+[
+18.94,
+19.16,
+" son"
+],
+[
+19.16,
+19.38,
+" los"
+],
+[
+19.38,
+19.98,
+" electrolitos"
+],
+[
+19.98,
+20.76,
+" concentrados,"
+]
+]
+},
+{
+"start": 21.16,
+"end": 26.18,
+"text": "las insulinas, los anticoagulantes, los opioides, los sedantes intravenosos,",
+"words": [
+[
+21.16,
+21.38,
+" las"
+],
+[
+21.38,
+22.0,
+" insulinas,"
+],
+[
+22.24,
+22.5,
+" los"
+],
+[
+22.5,
+23.4,
+" anticoagulantes,"
+],
+[
+23.7,
+23.88,
+" los"
+],
+[
+23.88,
+24.46,
+" opioides,"
+],
+[
+24.84,
+24.98,
+" los"
+],
+[
+24.98,
+25.38,
+" sedantes"
+],
+[
+25.38,
+26.18,
+" intravenosos,"
+]
+]
+},
+{
+"start": 26.18,
+"end": 30.52,
+"text": "los bloqueadores neuromusculares, los vasoactivos y la quimioterapia.",
+"words": [
+[
+26.18,
+26.66,
+" los"
+],
+[
+26.66,
+27.26,
+" bloqueadores"
+],
+[
+27.26,
+28.26,
+" neuromusculares,"
+],
+[
+28.5,
+28.66,
+" los"
+],
+[
+28.66,
+29.22,
+" vasoactivos"
+],
+[
+29.22,
+29.36,
+" y"
+],
+[
+29.36,
+29.52,
+" la"
+],
+[
+29.52,
+30.52,
+" quimioterapia."
+]
+]
+},
+{
+"start": 31.06,
+"end": 33.04,
+"text": "La lista vigente la publica Farmacia.",
+"words": [
+[
+31.06,
+31.14,
+" La"
+],
+[
+31.14,
+31.42,
+" lista"
+],
+[
+31.42,
+31.86,
+" vigente"
+],
+[
+31.86,
+32.06,
+" la"
+],
+[
+32.06,
+32.46,
+" publica"
+],
+[
+32.46,
+33.04,
+" Farmacia."
+]
+]
+},
+{
+"start": 33.96,
+"end": 35.42,
+"text": "Se identifican a simple vista.",
+"words": [
+[
+33.96,
+33.98,
+" Se"
+],
+[
+33.98,
+34.62,
+" identifican"
+],
+[
+34.62,
+34.86,
+" a"
+],
+[
+34.86,
+35.06,
+" simple"
+],
+[
+35.06,
+35.42,
+" vista."
+]
+]
+},
+{
+"start": 35.82,
+"end": 40.8,
+"text": "Etiqueta roja para alto riesgo y naranja para los medicamentos que se ven o suenan parecido.",
+"words": [
+[
+35.82,
+36.32,
+" Etiqueta"
+],
+[
+36.32,
+36.66,
+" roja"
+],
+[
+36.66,
+36.9,
+" para"
+],
+[
+36.9,
+37.16,
+" alto"
+],
+[
+37.16,
+37.52,
+" riesgo"
+],
+[
+37.52,
+37.64,
+" y"
+],
+[
+37.64,
+38.02,
+" naranja"
+],
+[
+38.02,
+38.26,
+" para"
+],
+[
+38.26,
+38.5,
+" los"
+],
+[
+38.5,
+39.1,
+" medicamentos"
+],
+[
+39.1,
+39.3,
+" que"
+],
+[
+39.3,
+39.48,
+" se"
+],
+[
+39.48,
+39.64,
+" ven"
+],
+[
+39.64,
+39.9,
+" o"
+],
+[
+39.9,
+40.26,
+" suenan"
+],
+[
+40.26,
+40.8,
+" parecido."
+]
+]
+},
+{
+"start": 41.72,
+"end": 45.2,
+"text": "Los electrolitos concentrados solo se resguardan en los carros rojos.",
+"words": [
+[
+41.72,
+41.84,
+" Los"
+],
+[
+41.84,
+42.54,
+" electrolitos"
+],
+[
+42.54,
+43.18,
+" concentrados"
+],
+[
+43.18,
+43.4,
+" solo"
+],
+[
+43.4,
+43.62,
+" se"
+],
+[
+43.62,
+44.1,
+" resguardan"
+],
+[
+44.1,
+44.24,
+" en"
+],
+[
+44.24,
+44.44,
+" los"
+],
+[
+44.44,
+44.7,
+" carros"
+],
+[
+44.7,
+45.2,
+" rojos."
+]
+]
+},
+{
+"start": 45.42,
+"end": 47.0,
+"text": "Prescribe sin ambigüedad.",
+"words": [
+[
+45.42,
+45.9,
+" Prescribe"
+],
+[
+45.9,
+46.12,
+" sin"
+],
+[
+46.12,
+47.0,
+" ambigüedad."
+]
+]
+},
+{
+"start": 47.22,
+"end": 51.38,
+"text": "Nombre genérico, dosis en miliequivalentes, gramos o miligramos,",
+"words": [
+[
+47.22,
+47.6,
+" Nombre"
+],
+[
+47.6,
+48.18,
+" genérico,"
+],
+[
+48.58,
+48.94,
+" dosis"
+],
+[
+48.94,
+49.1,
+" en"
+],
+[
+49.1,
+50.02,
+" miliequivalentes,"
+],
+[
+50.26,
+50.52,
+" gramos"
+],
+[
+50.52,
+50.7,
+" o"
+],
+[
+50.7,
+51.38,
+" miligramos,"
+]
+]
+},
+{
+"start": 51.78,
+"end": 53.5,
+"text": "vía, velocidad y duración.",
+"words": [
+[
+51.78,
+52.06,
+" vía,"
+],
+[
+52.22,
+52.64,
+" velocidad"
+],
+[
+52.64,
+52.88,
+" y"
+],
+[
+52.88,
+53.5,
+" duración."
+]
+]
+},
+{
+"start": 53.5,
+"end": 59.2,
+"text": "Nunca indique zámpulas como dosis, ni la letra U por unidades, ni ceros a la derecha.",
+"words": [
+[
+53.5,
+54.58,
+" Nunca"
+],
+[
+54.58,
+54.92,
+" indique"
+],
+[
+54.92,
+55.38,
+" zámpulas"
+],
+[
+55.38,
+55.68,
+" como"
+],
+[
+55.68,
+56.26,
+" dosis,"
+],
+[
+56.38,
+56.52,
+" ni"
+],
+[
+56.52,
+56.64,
+" la"
+],
+[
+56.64,
+56.92,
+" letra"
+],
+[
+56.92,
+57.06,
+" U"
+],
+[
+57.06,
+57.22,
+" por"
+],
+[
+57.22,
+57.8,
+" unidades,"
+],
+[
+58.12,
+58.3,
+" ni"
+],
+[
+58.3,
+58.58,
+" ceros"
+],
+[
+58.58,
+58.68,
+" a"
+],
+[
+58.68,
+58.86,
+" la"
+],
+[
+58.86,
+59.2,
+" derecha."
+]
+]
+},
+{
+"start": 60.12,
+"end": 68.86,
+"text": "Antes de administrar, dos profesionales verifican por separado el paciente, el medicamento, la dosis, la vía, la velocidad y el registro.",
+"words": [
+[
+60.12,
+60.26,
+" Antes"
+],
+[
+60.26,
+60.46,
+" de"
+],
+[
+60.46,
+61.12,
+" administrar,"
+],
+[
+61.3,
+61.6,
+" dos"
+],
+[
+61.6,
+62.22,
+" profesionales"
+],
+[
+62.22,
+62.74,
+" verifican"
+],
+[
+62.74,
+63.02,
+" por"
+],
+[
+63.02,
+63.38,
+" separado"
+],
+[
+63.38,
+63.52,
+" el"
+],
+[
+63.52,
+64.0,
+" paciente,"
+],
+[
+64.3,
+64.48,
+" el"
+],
+[
+64.48,
+65.04,
+" medicamento,"
+],
+[
+65.36,
+65.5,
+" la"
+],
+[
+65.5,
+66.0,
+" dosis,"
+],
+[
+66.12,
+66.28,
+" la"
+],
+[
+66.28,
+66.54,
+" vía,"
+],
+[
+66.74,
+66.88,
+" la"
+],
+[
+66.88,
+67.34,
+" velocidad"
+],
+[
+67.34,
+67.6,
+" y"
+],
+[
+67.6,
+67.84,
+" el"
+],
+[
+67.84,
+68.86,
+" registro."
+]
+]
+},
+{
+"start": 69.2,
+"end": 71.6,
+"text": "Solo se omite ante riesgo inminente para la vida.",
+"words": [
+[
+69.2,
+69.48,
+" Solo"
+],
+[
+69.48,
+69.7,
+" se"
+],
+[
+69.7,
+69.96,
+" omite"
+],
+[
+69.96,
+70.24,
+" ante"
+],
+[
+70.24,
+70.54,
+" riesgo"
+],
+[
+70.54,
+71.0,
+" inminente"
+],
+[
+71.0,
+71.24,
+" para"
+],
+[
+71.24,
+71.42,
+" la"
+],
+[
+71.42,
+71.6,
+" vida."
+]
+]
+},
+{
+"start": 72.04,
+"end": 79.5,
+"text": "En las infusiones, un segundo profesional revisa la programación de la bomba y la línea se sigue desde el paciente hasta la bolsa antes de conectar.",
+"words": [
+[
+72.04,
+72.1,
+" En"
+],
+[
+72.1,
+72.36,
+" las"
+],
+[
+72.36,
+73.06,
+" infusiones,"
+],
+[
+73.32,
+73.4,
+" un"
+],
+[
+73.4,
+73.82,
+" segundo"
+],
+[
+73.82,
+74.4,
+" profesional"
+],
+[
+74.4,
+74.82,
+" revisa"
+],
+[
+74.82,
+75.14,
+" la"
+],
+[
+75.14,
+75.54,
+" programación"
+],
+[
+75.54,
+75.7,
+" de"
+],
+[
+75.7,
+75.82,
+" la"
+],
+[
+75.82,
+76.2,
+" bomba"
+],
+[
+76.2,
+76.48,
+" y"
+],
+[
+76.48,
+76.66,
+" la"
+],
+[
+76.66,
+76.86,
+" línea"
+],
+[
+76.86,
+77.14,
+" se"
+],
+[
+77.14,
+77.3,
+" sigue"
+],
+[
+77.3,
+77.58,
+" desde"
+],
+[
+77.58,
+77.78,
+" el"
+],
+[
+77.78,
+78.16,
+" paciente"
+],
+[
+78.16,
+78.38,
+" hasta"
+],
+[
+78.38,
+78.58,
+" la"
+],
+[
+78.58,
+78.94,
+" bolsa"
+],
+[
+78.94,
+79.2,
+" antes"
+],
+[
+79.2,
+79.46,
+" de"
+],
+[
+79.46,
+79.74,
+" conectar."
+]
+]
+},
+{
+"start": 79.74,
+"end": 85.5,
+"text": "Ante cualquier duda, detén la administración, aclara con quien prescribe o con farmacia y",
+"words": [
+[
+79.74,
+80.72,
+" Ante"
+],
+[
+80.72,
+80.96,
+" cualquier"
+],
+[
+80.96,
+81.32,
+" duda,"
+],
+[
+81.66,
+81.82,
+" detén"
+],
+[
+81.82,
+82.02,
+" la"
+],
+[
+82.02,
+82.78,
+" administración,"
+],
+[
+83.16,
+83.38,
+" aclara"
+],
+[
+83.38,
+83.68,
+" con"
+],
+[
+83.68,
+83.82,
+" quien"
+],
+[
+83.82,
+84.28,
+" prescribe"
+],
+[
+84.28,
+84.48,
+" o"
+],
+[
+84.48,
+84.66,
+" con"
+],
+[
+84.66,
+85.14,
+" farmacia"
+],
+[
+85.14,
+85.5,
+" y"
+]
+]
+},
+{
+"start": 85.5,
+"end": 91.7,
+"text": "reporta los errores y las cuasifallas. Recuerda, identifica, prescribe sin ambigüedad,",
+"words": [
+[
+85.5,
+85.9,
+" reporta"
+],
+[
+85.9,
+86.12,
+" los"
+],
+[
+86.12,
+86.48,
+" errores"
+],
+[
+86.48,
+86.6,
+" y"
+],
+[
+86.6,
+86.8,
+" las"
+],
+[
+86.8,
+87.54,
+" cuasifallas."
+],
+[
+88.44,
+88.96,
+" Recuerda,"
+],
+[
+89.32,
+89.84,
+" identifica,"
+],
+[
+90.38,
+90.64,
+" prescribe"
+],
+[
+90.64,
+90.88,
+" sin"
+],
+[
+90.88,
+91.7,
+" ambigüedad,"
+]
+]
+},
+{
+"start": 92.08,
+"end": 97.04,
+"text": "verifica dos veces y detente ante la duda. Continúa con la evaluación del curso.",
+"words": [
+[
+92.08,
+92.38,
+" verifica"
+],
+[
+92.38,
+92.64,
+" dos"
+],
+[
+92.64,
+92.96,
+" veces"
+],
+[
+92.96,
+93.36,
+" y"
+],
+[
+93.36,
+93.72,
+" detente"
+],
+[
+93.72,
+93.94,
+" ante"
+],
+[
+93.94,
+94.16,
+" la"
+],
+[
+94.16,
+94.46,
+" duda."
+],
+[
+95.36,
+95.68,
+" Continúa"
+],
+[
+95.68,
+95.9,
+" con"
+],
+[
+95.9,
+96.08,
+" la"
+],
+[
+96.08,
+96.52,
+" evaluación"
+],
+[
+96.52,
+96.72,
+" del"
+],
+[
+96.72,
+97.04,
+" curso."
+]
+]
+}
+]

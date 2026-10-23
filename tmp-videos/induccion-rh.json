@@ -1,0 +1,1912 @@
+[
+{
+"start": 0.8200000000000003,
+"end": 12.0,
+"text": "Bienvenido a Saint Luke's Hospitals. Este es tu curso de inducción institucional. Tenemos más de 20 años brindando servicios médicos a la comunidad local y a turistas nacionales y extranjeros.",
+"words": [
+[
+0.8200000000000003,
+1.5,
+" Bienvenido"
+],
+[
+1.5,
+1.64,
+" a"
+],
+[
+1.64,
+1.9,
+" Saint"
+],
+[
+1.9,
+2.36,
+" Luke's"
+],
+[
+2.36,
+2.76,
+" Hospitals."
+],
+[
+3.1,
+3.26,
+" Este"
+],
+[
+3.26,
+3.46,
+" es"
+],
+[
+3.46,
+3.66,
+" tu"
+],
+[
+3.66,
+4.0,
+" curso"
+],
+[
+4.0,
+4.18,
+" de"
+],
+[
+4.18,
+4.68,
+" inducción"
+],
+[
+4.68,
+5.44,
+" institucional."
+],
+[
+5.8,
+5.98,
+" Tenemos"
+],
+[
+5.98,
+6.32,
+" más"
+],
+[
+6.32,
+6.48,
+" de"
+],
+[
+6.48,
+6.72,
+" 20"
+],
+[
+6.72,
+7.08,
+" años"
+],
+[
+7.08,
+7.6,
+" brindando"
+],
+[
+7.6,
+8.08,
+" servicios"
+],
+[
+8.08,
+8.5,
+" médicos"
+],
+[
+8.5,
+8.68,
+" a"
+],
+[
+8.68,
+8.84,
+" la"
+],
+[
+8.84,
+9.26,
+" comunidad"
+],
+[
+9.26,
+9.66,
+" local"
+],
+[
+9.66,
+9.96,
+" y"
+],
+[
+9.96,
+10.12,
+" a"
+],
+[
+10.12,
+10.5,
+" turistas"
+],
+[
+10.5,
+11.16,
+" nacionales"
+],
+[
+11.16,
+11.38,
+" y"
+],
+[
+11.38,
+12.0,
+" extranjeros."
+]
+]
+},
+{
+"start": 12.78,
+"end": 20.0,
+"text": "Hoy contamos con cuatro hospitales, una clínica en Loreto, ocho walk-in, 58 ambulancias y 39 especialidades.",
+"words": [
+[
+12.78,
+12.98,
+" Hoy"
+],
+[
+12.98,
+13.48,
+" contamos"
+],
+[
+13.48,
+13.72,
+" con"
+],
+[
+13.72,
+14.02,
+" cuatro"
+],
+[
+14.02,
+14.82,
+" hospitales,"
+],
+[
+14.98,
+15.2,
+" una"
+],
+[
+15.2,
+15.54,
+" clínica"
+],
+[
+15.54,
+15.66,
+" en"
+],
+[
+15.66,
+16.16,
+" Loreto,"
+],
+[
+16.48,
+16.82,
+" ocho"
+],
+[
+16.82,
+17.04,
+" walk"
+],
+[
+17.04,
+17.18,
+"-in,"
+],
+[
+17.5,
+18.08,
+" 58"
+],
+[
+18.08,
+18.76,
+" ambulancias"
+],
+[
+18.76,
+19.0,
+" y"
+],
+[
+19.0,
+19.62,
+" 39"
+],
+[
+19.62,
+20.0,
+" especialidades."
+]
+]
+},
+{
+"start": 21.34,
+"end": 27.98,
+"text": "Nuestra misión es buscar constantemente conocimientos médicos de excelencia y brindar un servicio de alto nivel ético.",
+"words": [
+[
+21.34,
+21.66,
+" Nuestra"
+],
+[
+21.66,
+22.08,
+" misión"
+],
+[
+22.08,
+22.18,
+" es"
+],
+[
+22.18,
+22.84,
+" buscar"
+],
+[
+22.84,
+23.66,
+" constantemente"
+],
+[
+23.66,
+24.36,
+" conocimientos"
+],
+[
+24.36,
+24.78,
+" médicos"
+],
+[
+24.78,
+25.04,
+" de"
+],
+[
+25.04,
+25.48,
+" excelencia"
+],
+[
+25.48,
+25.66,
+" y"
+],
+[
+25.66,
+26.04,
+" brindar"
+],
+[
+26.04,
+26.24,
+" un"
+],
+[
+26.24,
+26.6,
+" servicio"
+],
+[
+26.6,
+26.84,
+" de"
+],
+[
+26.84,
+27.02,
+" alto"
+],
+[
+27.02,
+27.26,
+" nivel"
+],
+[
+27.26,
+27.98,
+" ético."
+]
+]
+},
+{
+"start": 27.98,
+"end": 32.5,
+"text": "Nuestra visión es ser el mejor hospital con servicios médicos turísticos de",
+"words": [
+[
+27.98,
+29.06,
+" Nuestra"
+],
+[
+29.06,
+29.44,
+" visión"
+],
+[
+29.44,
+29.52,
+" es"
+],
+[
+29.52,
+29.72,
+" ser"
+],
+[
+29.72,
+29.88,
+" el"
+],
+[
+29.88,
+30.12,
+" mejor"
+],
+[
+30.12,
+30.56,
+" hospital"
+],
+[
+30.56,
+30.82,
+" con"
+],
+[
+30.82,
+31.34,
+" servicios"
+],
+[
+31.34,
+31.8,
+" médicos"
+],
+[
+31.8,
+32.34,
+" turísticos"
+],
+[
+32.34,
+32.5,
+" de"
+]
+]
+},
+{
+"start": 32.5,
+"end": 36.28,
+"text": "nivel internacional y alta responsabilidad humana. Tres valores",
+"words": [
+[
+32.5,
+32.8,
+" nivel"
+],
+[
+32.8,
+33.44,
+" internacional"
+],
+[
+33.44,
+33.84,
+" y"
+],
+[
+33.84,
+34.06,
+" alta"
+],
+[
+34.06,
+34.88,
+" responsabilidad"
+],
+[
+34.88,
+35.5,
+" humana."
+],
+[
+35.68,
+35.9,
+" Tres"
+],
+[
+35.9,
+36.28,
+" valores"
+]
+]
+},
+{
+"start": 36.28,
+"end": 41.44,
+"text": "guían nuestra conducta, ética profesional, responsabilidad y compasión.",
+"words": [
+[
+36.28,
+36.68,
+" guían"
+],
+[
+36.68,
+37.06,
+" nuestra"
+],
+[
+37.06,
+37.92,
+" conducta,"
+],
+[
+38.04,
+38.38,
+" ética"
+],
+[
+38.38,
+39.14,
+" profesional,"
+],
+[
+39.72,
+40.56,
+" responsabilidad"
+],
+[
+40.56,
+40.84,
+" y"
+],
+[
+40.84,
+41.44,
+" compasión."
+]
+]
+},
+{
+"start": 42.1,
+"end": 46.46,
+"text": "Nuestro código de ética incluye nueve compromisos, entre ellos respetar la",
+"words": [
+[
+42.1,
+42.48,
+" Nuestro"
+],
+[
+42.48,
+42.78,
+" código"
+],
+[
+42.78,
+43.04,
+" de"
+],
+[
+43.04,
+43.32,
+" ética"
+],
+[
+43.32,
+43.82,
+" incluye"
+],
+[
+43.82,
+44.3,
+" nueve"
+],
+[
+44.3,
+45.18,
+" compromisos,"
+],
+[
+45.26,
+45.48,
+" entre"
+],
+[
+45.48,
+45.76,
+" ellos"
+],
+[
+45.76,
+46.28,
+" respetar"
+],
+[
+46.28,
+46.46,
+" la"
+]
+]
+},
+{
+"start": 46.46,
+"end": 50.36,
+"text": "decisión del paciente, no realizar procedimientos innecesarios y",
+"words": [
+[
+46.46,
+46.8,
+" decisión"
+],
+[
+46.8,
+47.0,
+" del"
+],
+[
+47.0,
+47.54,
+" paciente,"
+],
+[
+47.98,
+48.22,
+" no"
+],
+[
+48.22,
+48.6,
+" realizar"
+],
+[
+48.6,
+49.3,
+" procedimientos"
+],
+[
+49.3,
+50.06,
+" innecesarios"
+],
+[
+50.06,
+50.36,
+" y"
+]
+]
+},
+{
+"start": 50.36,
+"end": 54.5,
+"text": "capacitarnos de forma continua. Nos organizamos bajo una dirección",
+"words": [
+[
+50.36,
+50.96,
+" capacitarnos"
+],
+[
+50.96,
+51.16,
+" de"
+],
+[
+51.16,
+51.44,
+" forma"
+],
+[
+51.44,
+51.9,
+" continua."
+],
+[
+52.7,
+52.98,
+" Nos"
+],
+[
+52.98,
+53.6,
+" organizamos"
+],
+[
+53.6,
+53.86,
+" bajo"
+],
+[
+53.86,
+54.1,
+" una"
+],
+[
+54.1,
+54.5,
+" dirección"
+]
+]
+},
+{
+"start": 54.5,
+"end": 59.3,
+"text": "con nueve áreas, desde capital humano y el área médica hasta ambulancias,",
+"words": [
+[
+54.5,
+55.06,
+" con"
+],
+[
+55.06,
+55.5,
+" nueve"
+],
+[
+55.5,
+55.88,
+" áreas,"
+],
+[
+56.16,
+56.34,
+" desde"
+],
+[
+56.34,
+56.78,
+" capital"
+],
+[
+56.78,
+57.16,
+" humano"
+],
+[
+57.16,
+57.44,
+" y"
+],
+[
+57.44,
+57.56,
+" el"
+],
+[
+57.56,
+57.74,
+" área"
+],
+[
+57.74,
+58.36,
+" médica"
+],
+[
+58.36,
+58.64,
+" hasta"
+],
+[
+58.64,
+59.3,
+" ambulancias,"
+]
+]
+},
+{
+"start": 59.5,
+"end": 64.72,
+"text": "infraestructura y contraloría. Estamos en Baja California Sur y Nayarit con ambulancias",
+"words": [
+[
+59.5,
+60.02,
+" infraestructura"
+],
+[
+60.02,
+60.28,
+" y"
+],
+[
+60.28,
+60.94,
+" contraloría."
+],
+[
+61.6,
+61.84,
+" Estamos"
+],
+[
+61.84,
+62.1,
+" en"
+],
+[
+62.1,
+62.38,
+" Baja"
+],
+[
+62.38,
+62.86,
+" California"
+],
+[
+62.86,
+63.18,
+" Sur"
+],
+[
+63.18,
+63.3,
+" y"
+],
+[
+63.3,
+63.84,
+" Nayarit"
+],
+[
+63.84,
+64.2,
+" con"
+],
+[
+64.2,
+64.72,
+" ambulancias"
+]
+]
+},
+{
+"start": 64.72,
+"end": 69.96,
+"text": "también en Puerto Vallarta y Quintana Roo. Tu contrato corresponde a la razón social que",
+"words": [
+[
+64.72,
+65.14,
+" también"
+],
+[
+65.14,
+65.4,
+" en"
+],
+[
+65.4,
+65.68,
+" Puerto"
+],
+[
+65.68,
+66.08,
+" Vallarta"
+],
+[
+66.08,
+66.2,
+" y"
+],
+[
+66.2,
+66.66,
+" Quintana"
+],
+[
+66.66,
+66.92,
+" Roo."
+],
+[
+67.62,
+67.84,
+" Tu"
+],
+[
+67.84,
+68.32,
+" contrato"
+],
+[
+68.32,
+68.9,
+" corresponde"
+],
+[
+68.9,
+69.0,
+" a"
+],
+[
+69.0,
+69.16,
+" la"
+],
+[
+69.16,
+69.4,
+" razón"
+],
+[
+69.4,
+69.78,
+" social"
+],
+[
+69.78,
+69.96,
+" que"
+]
+]
+},
+{
+"start": 69.96,
+"end": 74.58,
+"text": "te contrató. Desde tu primer día tienes derecho a conocer tus condiciones laborales,",
+"words": [
+[
+69.96,
+70.28,
+" te"
+],
+[
+70.28,
+71.0,
+" contrató."
+],
+[
+71.56,
+71.78,
+" Desde"
+],
+[
+71.78,
+72.06,
+" tu"
+],
+[
+72.06,
+72.34,
+" primer"
+],
+[
+72.34,
+72.6,
+" día"
+],
+[
+72.6,
+72.92,
+" tienes"
+],
+[
+72.92,
+73.28,
+" derecho"
+],
+[
+73.28,
+73.48,
+" a"
+],
+[
+73.48,
+73.74,
+" conocer"
+],
+[
+73.74,
+73.98,
+" tus"
+],
+[
+73.98,
+74.5,
+" condiciones"
+],
+[
+74.5,
+74.8,
+" laborales,"
+]
+]
+},
+{
+"start": 75.64,
+"end": 81.08,
+"text": "recibir un recorrido, gafete, uniforme y locker, firmar tu perfil de puesto y contar",
+"words": [
+[
+75.64,
+75.86,
+" recibir"
+],
+[
+75.86,
+76.1,
+" un"
+],
+[
+76.1,
+76.74,
+" recorrido,"
+],
+[
+77.02,
+77.5,
+" gafete,"
+],
+[
+77.86,
+78.22,
+" uniforme"
+],
+[
+78.22,
+78.36,
+" y"
+],
+[
+78.36,
+78.72,
+" locker,"
+],
+[
+79.12,
+79.48,
+" firmar"
+],
+[
+79.48,
+79.68,
+" tu"
+],
+[
+79.68,
+79.98,
+" perfil"
+],
+[
+79.98,
+80.18,
+" de"
+],
+[
+80.18,
+80.44,
+" puesto"
+],
+[
+80.44,
+80.74,
+" y"
+],
+[
+80.74,
+81.08,
+" contar"
+]
+]
+},
+{
+"start": 81.08,
+"end": 86.68,
+"text": "con una persona que te acompañe. Además de las prestaciones de ley, cuentas con consulta",
+"words": [
+[
+81.08,
+81.24,
+" con"
+],
+[
+81.24,
+81.48,
+" una"
+],
+[
+81.48,
+81.88,
+" persona"
+],
+[
+81.88,
+82.04,
+" que"
+],
+[
+82.04,
+82.4,
+" te"
+],
+[
+82.4,
+83.36,
+" acompañe."
+],
+[
+83.62,
+83.86,
+" Además"
+],
+[
+83.86,
+84.04,
+" de"
+],
+[
+84.04,
+84.28,
+" las"
+],
+[
+84.28,
+84.78,
+" prestaciones"
+],
+[
+84.78,
+84.98,
+" de"
+],
+[
+84.98,
+85.32,
+" ley,"
+],
+[
+85.78,
+85.92,
+" cuentas"
+],
+[
+85.92,
+86.16,
+" con"
+],
+[
+86.16,
+86.68,
+" consulta"
+]
+]
+},
+{
+"start": 86.68,
+"end": 92.56,
+"text": "gratuita las 24 horas para ti y tu familia directa y un 40% de descuento en servicios",
+"words": [
+[
+86.68,
+87.12,
+" gratuita"
+],
+[
+87.12,
+87.3,
+" las"
+],
+[
+87.3,
+87.9,
+" 24"
+],
+[
+87.9,
+88.26,
+" horas"
+],
+[
+88.26,
+88.6,
+" para"
+],
+[
+88.6,
+88.74,
+" ti"
+],
+[
+88.74,
+88.82,
+" y"
+],
+[
+88.82,
+88.98,
+" tu"
+],
+[
+88.98,
+89.36,
+" familia"
+],
+[
+89.36,
+90.0,
+" directa"
+],
+[
+90.0,
+90.36,
+" y"
+],
+[
+90.36,
+90.52,
+" un"
+],
+[
+90.52,
+90.9,
+" 40"
+],
+[
+90.9,
+91.36,
+"%"
+],
+[
+91.36,
+91.64,
+" de"
+],
+[
+91.64,
+92.0,
+" descuento"
+],
+[
+92.0,
+92.24,
+" en"
+],
+[
+92.24,
+92.56,
+" servicios"
+]
+]
+},
+{
+"start": 92.56,
+"end": 98.38,
+"text": "médicos. Llega 15 minutos antes. Registra tu entrada en el checador. Porta tu uniforme",
+"words": [
+[
+92.56,
+93.36,
+" médicos."
+],
+[
+93.58,
+93.9,
+" Llega"
+],
+[
+93.9,
+94.22,
+" 15"
+],
+[
+94.22,
+94.68,
+" minutos"
+],
+[
+94.68,
+95.24,
+" antes."
+],
+[
+95.44,
+95.9,
+" Registra"
+],
+[
+95.9,
+96.12,
+" tu"
+],
+[
+96.12,
+96.4,
+" entrada"
+],
+[
+96.4,
+96.56,
+" en"
+],
+[
+96.56,
+96.68,
+" el"
+],
+[
+96.68,
+97.2,
+" checador."
+],
+[
+97.56,
+97.72,
+" Porta"
+],
+[
+97.72,
+97.86,
+" tu"
+],
+[
+97.86,
+98.38,
+" uniforme"
+]
+]
+},
+{
+"start": 98.38,
+"end": 103.9,
+"text": "limpio y tu gafete visible durante toda la jornada. Ahora nos representas. Contesta",
+"words": [
+[
+98.38,
+98.68,
+" limpio"
+],
+[
+98.68,
+98.82,
+" y"
+],
+[
+98.82,
+98.96,
+" tu"
+],
+[
+98.96,
+99.28,
+" gafete"
+],
+[
+99.28,
+99.74,
+" visible"
+],
+[
+99.74,
+100.1,
+" durante"
+],
+[
+100.1,
+100.44,
+" toda"
+],
+[
+100.44,
+100.64,
+" la"
+],
+[
+100.64,
+101.32,
+" jornada."
+],
+[
+101.66,
+101.84,
+" Ahora"
+],
+[
+101.84,
+102.1,
+" nos"
+],
+[
+102.1,
+103.12,
+" representas."
+],
+[
+103.48,
+103.9,
+" Contesta"
+]
+]
+},
+{
+"start": 103.9,
+"end": 109.24,
+"text": "el teléfono con el nombre del hospital o del departamento y tu nombre. Los ajustes",
+"words": [
+[
+103.9,
+104.12,
+" el"
+],
+[
+104.12,
+104.56,
+" teléfono"
+],
+[
+104.56,
+104.76,
+" con"
+],
+[
+104.76,
+104.9,
+" el"
+],
+[
+104.9,
+105.12,
+" nombre"
+],
+[
+105.12,
+105.28,
+" del"
+],
+[
+105.28,
+105.8,
+" hospital"
+],
+[
+105.8,
+106.12,
+" o"
+],
+[
+106.12,
+106.3,
+" del"
+],
+[
+106.3,
+106.94,
+" departamento"
+],
+[
+106.94,
+107.1,
+" y"
+],
+[
+107.1,
+107.26,
+" tu"
+],
+[
+107.26,
+107.58,
+" nombre."
+],
+[
+108.5,
+108.78,
+" Los"
+],
+[
+108.78,
+109.24,
+" ajustes"
+]
+]
+},
+{
+"start": 109.24,
+"end": 114.56,
+"text": "sueldo y bonos se basan en tu desempeño, actitud, puntualidad y orden del área.",
+"words": [
+[
+109.24,
+109.7,
+" sueldo"
+],
+[
+109.7,
+109.86,
+" y"
+],
+[
+109.86,
+110.22,
+" bonos"
+],
+[
+110.22,
+110.44,
+" se"
+],
+[
+110.44,
+110.76,
+" basan"
+],
+[
+110.76,
+110.88,
+" en"
+],
+[
+110.88,
+111.04,
+" tu"
+],
+[
+111.04,
+111.76,
+" desempeño,"
+],
+[
+111.98,
+112.48,
+" actitud,"
+],
+[
+112.78,
+113.46,
+" puntualidad"
+],
+[
+113.46,
+113.78,
+" y"
+],
+[
+113.78,
+114.06,
+" orden"
+],
+[
+114.06,
+114.3,
+" del"
+],
+[
+114.3,
+114.56,
+" área."
+]
+]
+},
+{
+"start": 115.24,
+"end": 121.0,
+"text": "Las vacaciones se otorgan conforme a la Ley Federal del Trabajo a partir de 12 días al cumplir un año.",
+"words": [
+[
+115.24,
+115.48,
+" Las"
+],
+[
+115.48,
+115.96,
+" vacaciones"
+],
+[
+115.96,
+116.2,
+" se"
+],
+[
+116.2,
+116.56,
+" otorgan"
+],
+[
+116.56,
+117.06,
+" conforme"
+],
+[
+117.06,
+117.2,
+" a"
+],
+[
+117.2,
+117.3,
+" la"
+],
+[
+117.3,
+117.48,
+" Ley"
+],
+[
+117.48,
+117.82,
+" Federal"
+],
+[
+117.82,
+118.06,
+" del"
+],
+[
+118.06,
+118.68,
+" Trabajo"
+],
+[
+118.68,
+118.96,
+" a"
+],
+[
+118.96,
+119.26,
+" partir"
+],
+[
+119.26,
+119.46,
+" de"
+],
+[
+119.46,
+119.72,
+" 12"
+],
+[
+119.72,
+120.0,
+" días"
+],
+[
+120.0,
+120.18,
+" al"
+],
+[
+120.18,
+120.56,
+" cumplir"
+],
+[
+120.56,
+120.76,
+" un"
+],
+[
+120.76,
+121.0,
+" año."
+]
+]
+},
+{
+"start": 121.76,
+"end": 127.32,
+"text": "El período institucional va del 1 de junio al 30 de octubre. Conoce los códigos de emergencia",
+"words": [
+[
+121.76,
+121.98,
+" El"
+],
+[
+121.98,
+122.3,
+" período"
+],
+[
+122.3,
+123.08,
+" institucional"
+],
+[
+123.08,
+123.24,
+" va"
+],
+[
+123.24,
+123.44,
+" del"
+],
+[
+123.44,
+123.76,
+" 1"
+],
+[
+123.76,
+123.98,
+" de"
+],
+[
+123.98,
+124.28,
+" junio"
+],
+[
+124.28,
+124.46,
+" al"
+],
+[
+124.46,
+124.82,
+" 30"
+],
+[
+124.82,
+125.04,
+" de"
+],
+[
+125.04,
+125.52,
+" octubre."
+],
+[
+125.74,
+126.04,
+" Conoce"
+],
+[
+126.04,
+126.26,
+" los"
+],
+[
+126.26,
+126.6,
+" códigos"
+],
+[
+126.6,
+126.78,
+" de"
+],
+[
+126.78,
+127.32,
+" emergencia"
+]
+]
+},
+{
+"start": 127.32,
+"end": 132.24,
+"text": "de tu hospital, como el azul para paro cardiorrespiratorio, el rojo para fuego y",
+"words": [
+[
+127.32,
+127.48,
+" de"
+],
+[
+127.48,
+127.58,
+" tu"
+],
+[
+127.58,
+128.12,
+" hospital,"
+],
+[
+128.52,
+128.64,
+" como"
+],
+[
+128.64,
+128.82,
+" el"
+],
+[
+128.82,
+129.04,
+" azul"
+],
+[
+129.04,
+129.34,
+" para"
+],
+[
+129.34,
+129.66,
+" paro"
+],
+[
+129.66,
+130.62,
+" cardiorrespiratorio,"
+],
+[
+130.92,
+131.1,
+" el"
+],
+[
+131.1,
+131.36,
+" rojo"
+],
+[
+131.36,
+131.64,
+" para"
+],
+[
+131.64,
+131.92,
+" fuego"
+],
+[
+131.92,
+132.24,
+" y"
+]
+]
+},
+{
+"start": 132.24,
+"end": 138.0,
+"text": "el verde para evacuación y las extensiones para activarlos. Bienvenido a la familia Saint",
+"words": [
+[
+132.24,
+132.4,
+" el"
+],
+[
+132.4,
+132.62,
+" verde"
+],
+[
+132.62,
+132.88,
+" para"
+],
+[
+132.88,
+133.46,
+" evacuación"
+],
+[
+133.46,
+134.0,
+" y"
+],
+[
+134.0,
+134.32,
+" las"
+],
+[
+134.32,
+134.88,
+" extensiones"
+],
+[
+134.88,
+135.18,
+" para"
+],
+[
+135.18,
+135.76,
+" activarlos."
+],
+[
+136.48,
+137.04,
+" Bienvenido"
+],
+[
+137.04,
+137.16,
+" a"
+],
+[
+137.16,
+137.32,
+" la"
+],
+[
+137.32,
+137.7,
+" familia"
+],
+[
+137.7,
+138.0,
+" Saint"
+]
+]
+},
+{
+"start": 138.0,
+"end": 141.3,
+"text": "siglo. Continúa con la evaluación del curso.",
+"words": [
+[
+138.0,
+138.48,
+" siglo."
+],
+[
+139.54,
+139.94,
+" Continúa"
+],
+[
+139.94,
+140.16,
+" con"
+],
+[
+140.16,
+140.34,
+" la"
+],
+[
+140.34,
+140.82,
+" evaluación"
+],
+[
+140.82,
+141.0,
+" del"
+],
+[
+141.0,
+141.3,
+" curso."
+]
+]
+}
+]

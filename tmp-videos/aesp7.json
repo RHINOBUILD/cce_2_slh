@@ -1,0 +1,1276 @@
+[
+{
+"start": 0.0,
+"end": 7.68,
+"text": "Bienvenida al curso de la acción esencial para la seguridad del paciente número 7, registro y análisis de eventos adversos.",
+"words": [
+[
+0.0,
+0.92,
+" Bienvenida"
+],
+[
+0.92,
+1.1,
+" al"
+],
+[
+1.1,
+1.4,
+" curso"
+],
+[
+1.4,
+1.56,
+" de"
+],
+[
+1.56,
+1.72,
+" la"
+],
+[
+1.72,
+1.94,
+" acción"
+],
+[
+1.94,
+2.38,
+" esencial"
+],
+[
+2.38,
+2.62,
+" para"
+],
+[
+2.62,
+2.86,
+" la"
+],
+[
+2.86,
+3.14,
+" seguridad"
+],
+[
+3.14,
+3.38,
+" del"
+],
+[
+3.38,
+3.78,
+" paciente"
+],
+[
+3.78,
+4.12,
+" número"
+],
+[
+4.12,
+4.66,
+" 7,"
+],
+[
+4.98,
+5.34,
+" registro"
+],
+[
+5.34,
+5.5,
+" y"
+],
+[
+5.5,
+5.92,
+" análisis"
+],
+[
+5.92,
+6.12,
+" de"
+],
+[
+6.12,
+6.56,
+" eventos"
+],
+[
+6.56,
+7.68,
+" adversos."
+]
+]
+},
+{
+"start": 8.0,
+"end": 13.82,
+"text": "Registramos lo que falló o estuvo a punto de fallar para aprender y corregir los procesos.",
+"words": [
+[
+8.0,
+8.54,
+" Registramos"
+],
+[
+8.54,
+8.74,
+" lo"
+],
+[
+8.74,
+8.92,
+" que"
+],
+[
+8.92,
+9.3,
+" falló"
+],
+[
+9.3,
+9.54,
+" o"
+],
+[
+9.54,
+9.86,
+" estuvo"
+],
+[
+9.86,
+9.98,
+" a"
+],
+[
+9.98,
+10.22,
+" punto"
+],
+[
+10.22,
+10.46,
+" de"
+],
+[
+10.46,
+10.92,
+" fallar"
+],
+[
+10.92,
+11.3,
+" para"
+],
+[
+11.3,
+11.68,
+" aprender"
+],
+[
+11.68,
+11.92,
+" y"
+],
+[
+11.92,
+12.34,
+" corregir"
+],
+[
+12.34,
+12.62,
+" los"
+],
+[
+12.62,
+13.82,
+" procesos."
+]
+]
+},
+{
+"start": 14.12,
+"end": 17.5,
+"text": "Reportar no busca culpables, busca que no vuelva a ocurrir.",
+"words": [
+[
+14.12,
+14.6,
+" Reportar"
+],
+[
+14.6,
+14.74,
+" no"
+],
+[
+14.74,
+15.02,
+" busca"
+],
+[
+15.02,
+15.74,
+" culpables,"
+],
+[
+15.96,
+16.24,
+" busca"
+],
+[
+16.24,
+16.48,
+" que"
+],
+[
+16.48,
+16.68,
+" no"
+],
+[
+16.68,
+16.94,
+" vuelva"
+],
+[
+16.94,
+17.04,
+" a"
+],
+[
+17.04,
+17.5,
+" ocurrir."
+]
+]
+},
+{
+"start": 18.06,
+"end": 19.28,
+"text": "Hay tres tipos de evento.",
+"words": [
+[
+18.06,
+18.24,
+" Hay"
+],
+[
+18.24,
+18.46,
+" tres"
+],
+[
+18.46,
+18.78,
+" tipos"
+],
+[
+18.78,
+18.98,
+" de"
+],
+[
+18.98,
+19.28,
+" evento."
+]
+]
+},
+{
+"start": 20.1,
+"end": 24.36,
+"text": "La quasi falla no llegó al paciente gracias a una intervención oportuna.",
+"words": [
+[
+20.1,
+20.3,
+" La"
+],
+[
+20.3,
+20.58,
+" quasi"
+],
+[
+20.58,
+20.94,
+" falla"
+],
+[
+20.94,
+21.16,
+" no"
+],
+[
+21.16,
+21.36,
+" llegó"
+],
+[
+21.36,
+21.56,
+" al"
+],
+[
+21.56,
+21.98,
+" paciente"
+],
+[
+21.98,
+22.34,
+" gracias"
+],
+[
+22.34,
+22.62,
+" a"
+],
+[
+22.62,
+22.84,
+" una"
+],
+[
+22.84,
+23.34,
+" intervención"
+],
+[
+23.34,
+24.36,
+" oportuna."
+]
+]
+},
+{
+"start": 24.7,
+"end": 27.4,
+"text": "El evento adverso causa un daño leve o moderado.",
+"words": [
+[
+24.7,
+24.9,
+" El"
+],
+[
+24.9,
+25.2,
+" evento"
+],
+[
+25.2,
+25.7,
+" adverso"
+],
+[
+25.7,
+26.0,
+" causa"
+],
+[
+26.0,
+26.22,
+" un"
+],
+[
+26.22,
+26.44,
+" daño"
+],
+[
+26.44,
+26.66,
+" leve"
+],
+[
+26.66,
+26.9,
+" o"
+],
+[
+26.9,
+27.4,
+" moderado."
+]
+]
+},
+{
+"start": 27.4,
+"end": 33.32,
+"text": "Y el evento centinela causa la muerte, la pérdida permanente de una función o una lesión",
+"words": [
+[
+27.4,
+28.28,
+" Y"
+],
+[
+28.28,
+28.46,
+" el"
+],
+[
+28.46,
+28.74,
+" evento"
+],
+[
+28.74,
+29.38,
+" centinela"
+],
+[
+29.38,
+29.7,
+" causa"
+],
+[
+29.7,
+29.94,
+" la"
+],
+[
+29.94,
+30.28,
+" muerte,"
+],
+[
+30.66,
+30.8,
+" la"
+],
+[
+30.8,
+31.14,
+" pérdida"
+],
+[
+31.14,
+31.72,
+" permanente"
+],
+[
+31.72,
+31.9,
+" de"
+],
+[
+31.9,
+32.12,
+" una"
+],
+[
+32.12,
+32.5,
+" función"
+],
+[
+32.5,
+32.8,
+" o"
+],
+[
+32.8,
+32.98,
+" una"
+],
+[
+32.98,
+33.32,
+" lesión"
+]
+]
+},
+{
+"start": 33.32,
+"end": 34.32,
+"text": "psicológica grave.",
+"words": [
+[
+33.32,
+33.96,
+" psicológica"
+],
+[
+33.96,
+34.32,
+" grave."
+]
+]
+},
+{
+"start": 35.24,
+"end": 40.42,
+"text": "Algunos eventos siempre se registran y se analizan, como la muerte imprevista, la cirugía",
+"words": [
+[
+35.24,
+35.56,
+" Algunos"
+],
+[
+35.56,
+36.0,
+" eventos"
+],
+[
+36.0,
+36.32,
+" siempre"
+],
+[
+36.32,
+36.58,
+" se"
+],
+[
+36.58,
+37.04,
+" registran"
+],
+[
+37.04,
+37.14,
+" y"
+],
+[
+37.14,
+37.38,
+" se"
+],
+[
+37.38,
+38.08,
+" analizan,"
+],
+[
+38.2,
+38.34,
+" como"
+],
+[
+38.34,
+38.54,
+" la"
+],
+[
+38.54,
+38.78,
+" muerte"
+],
+[
+38.78,
+39.46,
+" imprevista,"
+],
+[
+39.86,
+40.04,
+" la"
+],
+[
+40.04,
+40.42,
+" cirugía"
+]
+]
+},
+{
+"start": 40.42,
+"end": 44.74,
+"text": "en el sitio o el paciente incorrecto, la muerte materna o la entrega de un menor",
+"words": [
+[
+40.42,
+40.6,
+" en"
+],
+[
+40.6,
+40.76,
+" el"
+],
+[
+40.76,
+40.98,
+" sitio"
+],
+[
+40.98,
+41.16,
+" o"
+],
+[
+41.16,
+41.3,
+" el"
+],
+[
+41.3,
+41.66,
+" paciente"
+],
+[
+41.66,
+42.52,
+" incorrecto,"
+],
+[
+42.74,
+42.88,
+" la"
+],
+[
+42.88,
+43.16,
+" muerte"
+],
+[
+43.16,
+43.64,
+" materna"
+],
+[
+43.64,
+43.78,
+" o"
+],
+[
+43.78,
+44.04,
+" la"
+],
+[
+44.04,
+44.28,
+" entrega"
+],
+[
+44.28,
+44.38,
+" de"
+],
+[
+44.38,
+44.54,
+" un"
+],
+[
+44.54,
+44.74,
+" menor"
+]
+]
+},
+{
+"start": 44.74,
+"end": 45.52,
+"text": "equivocado.",
+"words": [
+[
+44.74,
+45.52,
+" equivocado."
+]
+]
+},
+{
+"start": 46.2,
+"end": 49.9,
+"text": "Ante un evento, primero atiende y protege al paciente.",
+"words": [
+[
+46.2,
+46.46,
+" Ante"
+],
+[
+46.46,
+46.66,
+" un"
+],
+[
+46.66,
+47.08,
+" evento,"
+],
+[
+47.54,
+47.78,
+" primero"
+],
+[
+47.78,
+48.16,
+" atiende"
+],
+[
+48.16,
+48.46,
+" y"
+],
+[
+48.46,
+48.72,
+" protege"
+],
+[
+48.72,
+48.88,
+" al"
+],
+[
+48.88,
+49.9,
+" paciente."
+]
+]
+},
+{
+"start": 50.42,
+"end": 55.1,
+"text": "Después avisa a tu jefe y al médico, conserva el medicamento o el equipo involucrado",
+"words": [
+[
+50.42,
+50.8,
+" Después"
+],
+[
+50.8,
+51.16,
+" avisa"
+],
+[
+51.16,
+51.28,
+" a"
+],
+[
+51.28,
+51.42,
+" tu"
+],
+[
+51.42,
+51.72,
+" jefe"
+],
+[
+51.72,
+51.84,
+" y"
+],
+[
+51.84,
+51.98,
+" al"
+],
+[
+51.98,
+52.38,
+" médico,"
+],
+[
+52.9,
+53.18,
+" conserva"
+],
+[
+53.18,
+53.36,
+" el"
+],
+[
+53.36,
+53.86,
+" medicamento"
+],
+[
+53.86,
+54.04,
+" o"
+],
+[
+54.04,
+54.22,
+" el"
+],
+[
+54.22,
+54.42,
+" equipo"
+],
+[
+54.42,
+55.1,
+" involucrado"
+]
+]
+},
+{
+"start": 55.1,
+"end": 57.96,
+"text": "y reporta de inmediato en la plataforma de calidad.",
+"words": [
+[
+55.1,
+55.68,
+" y"
+],
+[
+55.68,
+56.02,
+" reporta"
+],
+[
+56.02,
+56.22,
+" de"
+],
+[
+56.22,
+56.62,
+" inmediato"
+],
+[
+56.62,
+56.76,
+" en"
+],
+[
+56.76,
+56.92,
+" la"
+],
+[
+56.92,
+57.34,
+" plataforma"
+],
+[
+57.34,
+57.6,
+" de"
+],
+[
+57.6,
+57.96,
+" calidad."
+]
+]
+},
+{
+"start": 58.64,
+"end": 64.28,
+"text": "Describe los hechos, qué pasó, cuándo, dónde, cómo se detectó y qué se hizo.",
+"words": [
+[
+58.64,
+59.06,
+" Describe"
+],
+[
+59.06,
+59.34,
+" los"
+],
+[
+59.34,
+59.72,
+" hechos,"
+],
+[
+60.02,
+60.14,
+" qué"
+],
+[
+60.14,
+60.54,
+" pasó,"
+],
+[
+60.94,
+61.66,
+" cuándo,"
+],
+[
+61.72,
+62.1,
+" dónde,"
+],
+[
+62.38,
+62.54,
+" cómo"
+],
+[
+62.54,
+62.82,
+" se"
+],
+[
+62.82,
+63.26,
+" detectó"
+],
+[
+63.26,
+63.54,
+" y"
+],
+[
+63.54,
+63.74,
+" qué"
+],
+[
+63.74,
+63.96,
+" se"
+],
+[
+63.96,
+64.28,
+" hizo."
+]
+]
+},
+{
+"start": 65.06,
+"end": 68.18,
+"text": "Evita juicios, suposiciones y señalar culpables.",
+"words": [
+[
+65.06,
+65.36,
+" Evita"
+],
+[
+65.36,
+65.92,
+" juicios,"
+],
+[
+66.22,
+66.84,
+" suposiciones"
+],
+[
+66.84,
+67.1,
+" y"
+],
+[
+67.1,
+67.52,
+" señalar"
+],
+[
+67.52,
+68.18,
+" culpables."
+]
+]
+},
+{
+"start": 68.9,
+"end": 70.58,
+"text": "El registro es anónimo.",
+"words": [
+[
+68.9,
+69.12,
+" El"
+],
+[
+69.12,
+69.56,
+" registro"
+],
+[
+69.56,
+69.86,
+" es"
+],
+[
+69.86,
+70.58,
+" anónimo."
+]
+]
+},
+{
+"start": 71.04,
+"end": 73.38,
+"text": "Calidad recibe y clasifica tu reporte.",
+"words": [
+[
+71.04,
+71.44,
+" Calidad"
+],
+[
+71.44,
+71.84,
+" recibe"
+],
+[
+71.84,
+72.02,
+" y"
+],
+[
+72.02,
+72.48,
+" clasifica"
+],
+[
+72.48,
+72.7,
+" tu"
+],
+[
+72.7,
+73.38,
+" reporte."
+]
+]
+},
+{
+"start": 73.66,
+"end": 77.04,
+"text": "Todo evento sentinela se analiza para encontrar su causa a raíz",
+"words": [
+[
+73.66,
+73.84,
+" Todo"
+],
+[
+73.84,
+74.2,
+" evento"
+],
+[
+74.2,
+74.84,
+" sentinela"
+],
+[
+74.84,
+75.06,
+" se"
+],
+[
+75.06,
+75.4,
+" analiza"
+],
+[
+75.4,
+75.64,
+" para"
+],
+[
+75.64,
+76.04,
+" encontrar"
+],
+[
+76.04,
+76.26,
+" su"
+],
+[
+76.26,
+76.56,
+" causa"
+],
+[
+76.56,
+76.72,
+" a"
+],
+[
+76.72,
+77.04,
+" raíz"
+]
+]
+},
+{
+"start": 77.04,
+"end": 81.26,
+"text": "y el Comité de Calidad y Seguridad del Paciente define las mejoras.",
+"words": [
+[
+77.04,
+77.34,
+" y"
+],
+[
+77.34,
+77.52,
+" el"
+],
+[
+77.52,
+77.82,
+" Comité"
+],
+[
+77.82,
+78.04,
+" de"
+],
+[
+78.04,
+78.34,
+" Calidad"
+],
+[
+78.34,
+78.5,
+" y"
+],
+[
+78.5,
+78.88,
+" Seguridad"
+],
+[
+78.88,
+79.08,
+" del"
+],
+[
+79.08,
+79.56,
+" Paciente"
+],
+[
+79.56,
+79.94,
+" define"
+],
+[
+79.94,
+80.22,
+" las"
+],
+[
+80.22,
+81.26,
+" mejoras."
+]
+]
+},
+{
+"start": 81.26,
+"end": 87.82,
+"text": "Recuerda, atiende, avisa, conserva y reporta de inmediato sin buscar culpables.",
+"words": [
+[
+81.26,
+82.42,
+" Recuerda,"
+],
+[
+82.82,
+83.24,
+" atiende,"
+],
+[
+83.72,
+84.18,
+" avisa,"
+],
+[
+84.6,
+85.0,
+" conserva"
+],
+[
+85.0,
+85.18,
+" y"
+],
+[
+85.18,
+85.58,
+" reporta"
+],
+[
+85.58,
+85.76,
+" de"
+],
+[
+85.76,
+86.36,
+" inmediato"
+],
+[
+86.36,
+86.6,
+" sin"
+],
+[
+86.6,
+87.0,
+" buscar"
+],
+[
+87.0,
+87.82,
+" culpables."
+]
+]
+},
+{
+"start": 88.52,
+"end": 90.3,
+"text": "Continúa con la evaluación del curso.",
+"words": [
+[
+88.52,
+88.92,
+" Continúa"
+],
+[
+88.92,
+89.14,
+" con"
+],
+[
+89.14,
+89.3,
+" la"
+],
+[
+89.3,
+89.76,
+" evaluación"
+],
+[
+89.76,
+89.96,
+" del"
+],
+[
+89.96,
+90.3,
+" curso."
+]
+]
+}
+]
