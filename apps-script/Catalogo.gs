@@ -229,19 +229,19 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Cuál es la forma correcta de verificar verbalmente la identidad del paciente?",
         "opciones": [
-          "Preguntar: «¿Usted es el señor Juan Pérez?»",
+          "Preguntar: «¿Usted es el señor Juan Pérez?» y esperar que confirme",
           "Preguntar: «¿Usted es el paciente de la cama 5?»",
           "Pedirle que diga su nombre completo y su fecha de nacimiento",
-          "Leer el brazalete sin hablar con el paciente"
+          "Leer el brazalete en voz alta sin pedirle que hable"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿El número de cama o de habitación puede usarse como identificador?",
         "opciones": [
-          "Sí, si el paciente está dormido",
-          "Sí, durante la noche",
-          "Solo en urgencias",
+          "Sí, cuando el paciente está dormido o sedado",
+          "Sí, durante el turno nocturno para no despertarlo",
+          "Solo en urgencias, mientras llega Admisión",
           "No, nunca identifica al paciente"
         ],
         "correcta": 3
@@ -250,19 +250,19 @@ var CCE_CATALOG = [
         "pregunta": "Un paciente internacional anota su fecha de nacimiento como 04/03/1985. ¿Qué debes hacer?",
         "opciones": [
           "Confirmar el mes en palabras con el paciente o con su documento",
-          "Registrarla como 4 de marzo, formato mexicano",
-          "Registrarla como 3 de abril, formato de Estados Unidos",
-          "Dejar la fecha en blanco hasta su egreso"
+          "Registrarla como 4 de marzo, por ser el formato mexicano",
+          "Registrarla como 3 de abril, por ser el formato de Estados Unidos",
+          "Dejar la fecha en blanco hasta el egreso del paciente"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Cómo se registran los datos iniciales del paciente mientras Admisión los confirma?",
         "opciones": [
-          "Siempre con bolígrafo",
+          "Siempre con bolígrafo, para que no se pueda borrar",
           "Con lápiz; una vez confirmados, con bolígrafo",
-          "Con marcador permanente",
-          "Solo en el sistema, nunca en papel"
+          "Con marcador permanente sobre el brazalete",
+          "Solo en el sistema, nunca en papel ni en el brazalete"
         ],
         "correcta": 1
       },
@@ -279,9 +279,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Dónde debe realizarse la entrega de paciente entre turnos?",
         "opciones": [
-          "En la central de enfermería",
-          "Por teléfono",
-          "En el pasillo",
+          "En la central de enfermería, revisando el expediente",
+          "Por teléfono, para no interrumpir al paciente",
+          "En el pasillo, frente a la puerta del cuarto",
           "Dentro de la habitación del paciente"
         ],
         "correcta": 3
@@ -299,30 +299,30 @@ var CCE_CATALOG = [
       {
         "pregunta": "Durante un Código Naranja llega un paciente sin documentos y sin poder responder. ¿Cómo se identifica?",
         "opciones": [
-          "Con un nombre ficticio elegido por el personal",
-          "Como Desconocido 1, 2…, con la fecha y hora de ingreso como identificadores temporales",
-          "Solo con el número de cama",
-          "No se identifica hasta que llegue un familiar"
+          "Con un nombre ficticio elegido por el personal de turno hasta que se aclare su identidad",
+          "Como Desconocido 1, 2…, con fecha y hora de ingreso como identificadores temporales",
+          "Solo con el número de cama mientras se estabiliza y llega Admisión",
+          "No se identifica hasta que llegue un familiar con sus documentos oficiales"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Cómo se identifica a un paciente inconsciente o intubado?",
         "opciones": [
-          "Se le pregunta su nombre de todos modos",
-          "No requiere identificación",
-          "Con la ficha de identificación en la cabecera de la cama, válida para la doble verificación entre médicos y enfermería",
-          "Por su diagnóstico de ingreso"
+          "Se le pregunta su nombre de todos modos y se anota lo que se entienda",
+          "No requiere identificación mientras permanezca en terapia intensiva",
+          "Con la ficha de identificación en la cabecera de la cama",
+          "Por su diagnóstico de ingreso y el número de cama asignado"
         ],
         "correcta": 2
       },
       {
         "pregunta": "En caso de fallecimiento, ¿qué se hace con la identificación?",
         "opciones": [
-          "Se deja el brazalete y no se agrega nada",
-          "Se coloca una etiqueta en el pie solo con el nombre",
-          "Se anota el número de cama en la sábana",
-          "Se retira el brazalete y se coloca la identificación sobre el tórax con nombre, fecha de nacimiento, y fecha y hora de defunción"
+          "Se deja el brazalete puesto y no se agrega ninguna otra identificación al cuerpo",
+          "Se coloca una etiqueta en el pie solo con el nombre y el número de cama que ocupaba",
+          "Se anota el número de cama y la hora del fallecimiento en la sábana que lo cubre",
+          "Se retira el brazalete y se coloca la identificación sobre el tórax con sus datos y la hora de defunción"
         ],
         "correcta": 3
       },
@@ -339,29 +339,29 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Qué datos debe llevar la etiqueta de una sonda, catéter o solución?",
         "opciones": [
-          "Solo el nombre del paciente",
+          "Solo el nombre del paciente y su número de cama",
           "Fecha, hora e iniciales de quien la instaló",
-          "Solo la fecha de instalación",
-          "El diagnóstico del paciente"
+          "Solo la fecha de instalación y el calibre",
+          "El diagnóstico del paciente y el servicio tratante"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Quién es responsable de identificar correctamente al paciente?",
         "opciones": [
-          "Solo enfermería",
-          "Solo el personal médico",
+          "Solo enfermería, porque coloca el brazalete al ingreso del paciente",
+          "Solo el personal médico que indica el tratamiento y los estudios",
           "Todo el personal, clínico y no clínico, que interactúa con el paciente",
-          "Solo Admisión"
+          "Solo Admisión, que registra los datos del paciente en el sistema"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Si los datos del paciente no coinciden con el brazalete o el documento, debes:",
         "opciones": [
-          "Continuar y corregir después",
-          "Cambiar el brazalete sin verificar",
-          "Avisar al final del turno",
+          "Continuar con el procedimiento y corregir después",
+          "Cambiar el brazalete por uno nuevo sin verificar",
+          "Avisar al final del turno durante la entrega",
           "Detener el proceso y aclarar la discrepancia"
         ],
         "correcta": 3
@@ -387,10 +387,10 @@ var CCE_CATALOG = [
       {
         "tipo": "video",
         "titulo": "Comunicación efectiva: órdenes verbales, entregas y resultados críticos",
-        "duracion": "3:39 min",
+        "duracion": "3:27 min",
         "texto": "Escuchar, escribir, leer y confirmar; bitácora y plazos de firma; SBAR y SAMPLE; egreso; resultados críticos y paro cardíaco.",
         "video": "aesp2-comunicacion-efectiva.mp4",
-        "segundosMinimos": 200,
+        "segundosMinimos": 185,
         "subtitulos": [
           [
             0.3,
@@ -524,27 +524,22 @@ var CCE_CATALOG = [
           ],
           [
             170.2,
-            177.4,
+            177.2,
             "que se integra al expediente sin transcribirlo a las hojas de enfermería."
           ],
           [
-            178.1,
-            189.7,
-            "Un aviso de la Acción Esencial número cuatro: ahora cualquier miembro del equipo quirúrgico puede realizar el marcaje."
-          ],
-          [
-            190.3,
-            195.5,
+            177.9,
+            183.1,
             "Como compromisos: registrar y confirmar toda orden verbal,"
           ],
           [
-            195.5,
-            201.7,
+            183.1,
+            189.3,
             "transcribir y firmar a tiempo, y entregar pacientes con SBAR o SAMPLE."
           ],
           [
-            202.3,
-            218.5,
+            189.9,
+            206.1,
             "Recuerda: escucha, escribe, lee y confirma. Cada orden, cada vez. Continúa con la evaluación del curso."
           ]
         ],
@@ -565,9 +560,9 @@ var CCE_CATALOG = [
         "pregunta": "¿Cuál es el objetivo de la AESP 2?",
         "opciones": [
           "Que la información entre profesionales sea correcta, oportuna y completa",
-          "Reducir el tiempo de las entregas de turno",
-          "Sustituir las órdenes escritas por órdenes verbales",
-          "Que solo los médicos den indicaciones"
+          "Reducir el tiempo que toman las entregas de turno en cada servicio",
+          "Sustituir las órdenes escritas por órdenes verbales siempre que se pueda",
+          "Que solo los médicos de base puedan dar indicaciones al personal"
         ],
         "correcta": 0
       },
@@ -584,20 +579,20 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿En qué momento se ejecuta una orden verbal?",
         "opciones": [
-          "En cuanto se escucha",
-          "Al terminar el turno",
-          "Cuando el médico confirma que lo leído en voz alta es correcto",
-          "Cuando la firma el jefe de servicio"
+          "En cuanto se escucha, para no retrasar la atención",
+          "Al terminar el turno, cuando se revisa la bitácora",
+          "Cuando el médico confirma que lo leído es correcto",
+          "Cuando la firma el jefe de servicio en la bitácora"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Qué datos se registran en la bitácora de comunicación efectiva?",
         "opciones": [
-          "Solo la indicación y la hora",
-          "El número de cama y el diagnóstico",
-          "Únicamente el nombre del médico",
-          "Fecha, hora, nombre completo y fecha de nacimiento del paciente, y nombre y cargo de quien emite la orden"
+          "Solo la indicación, la hora y el servicio donde se dio, sin datos del paciente",
+          "El número de cama, el diagnóstico y el nombre de la enfermera que la recibió",
+          "Únicamente el nombre del médico y la indicación que dio por teléfono o en persona",
+          "Fecha, hora, nombre y fecha de nacimiento del paciente, y nombre y cargo de quien emite la orden"
         ],
         "correcta": 3
       },
@@ -605,38 +600,38 @@ var CCE_CATALOG = [
         "pregunta": "Si la orden verbal se da durante una urgencia, ¿dónde se registra?",
         "opciones": [
           "En el formato específico de la urgencia",
-          "En una hoja suelta",
-          "No se registra",
-          "En el chat del servicio"
+          "En una hoja suelta que se anexa después",
+          "No se registra porque es una urgencia",
+          "En el chat del servicio para que quede constancia"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Quién debe firmar la bitácora para validar una orden verbal?",
         "opciones": [
-          "El paciente",
+          "El paciente o su familiar responsable",
           "El médico que emitió la indicación",
-          "Cualquier persona del turno",
-          "El personal de admisión"
+          "Cualquier persona del turno que esté presente",
+          "El personal de admisión al cierre del día"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Cuál es el plazo para firmar la bitácora?",
         "opciones": [
-          "Una semana",
-          "Al cierre del mes",
+          "Una semana, al revisar el expediente",
+          "Al cierre del mes, junto con las estadísticas",
           "24 horas en días hábiles y 72 horas en fin de semana",
-          "48 horas siempre"
+          "48 horas siempre, sin importar el día de la semana"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Si el médico tratante no está, ¿quién registra y firma la indicación?",
         "opciones": [
-          "El personal de enfermería",
-          "Nadie, se espera al médico tratante",
-          "El familiar del paciente",
+          "El personal de enfermería que recibió la orden",
+          "Nadie; se espera a que regrese el médico tratante",
+          "El familiar del paciente, como testigo de la orden",
           "El jefe de servicio o el médico de guardia"
         ],
         "correcta": 3
@@ -657,7 +652,7 @@ var CCE_CATALOG = [
           "Resultado",
           "Recomendación",
           "Registro",
-          "Riesgo"
+          "Respuesta"
         ],
         "correcta": 1
       },
@@ -684,10 +679,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "Al egreso, ¿cómo se confirma que el paciente entendió sus indicaciones?",
         "opciones": [
-          "Pidiéndole que repita las instrucciones, el horario de medicamentos y las señales de alerta",
-          "Entregándole la receta sin explicar",
-          "Preguntando solo si tiene dudas",
-          "Explicándole únicamente al familiar"
+          "Pidiéndole que repita sus instrucciones, horarios y señales de alerta",
+          "Entregándole la receta impresa y el resumen sin dar más explicación",
+          "Preguntándole solo si tiene alguna duda antes de retirarse del hospital",
+          "Explicándole las indicaciones únicamente al familiar que lo acompaña"
         ],
         "correcta": 0
       },
@@ -697,7 +692,7 @@ var CCE_CATALOG = [
           "Hemoglobina de 12 g/dL",
           "Hemoglobina menor de 6 g/dL",
           "Plaquetas de 250,000 /µL",
-          "Leucocitos de 8,000 /µL"
+          "Leucocitos de 8,000 /µL en adulto"
         ],
         "correcta": 1
       },
@@ -714,9 +709,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "Durante un paro cardíaco, ¿dónde se registran los medicamentos administrados?",
         "opciones": [
-          "En la bitácora estándar",
-          "En las hojas de enfermería, transcritos después",
-          "No se registran",
+          "En la bitácora estándar de comunicación efectiva",
+          "En las hojas de enfermería, transcritos después del evento",
+          "No se registran, porque se trata de una urgencia",
           "En el formato específico, que se integra al expediente"
         ],
         "correcta": 3
@@ -762,20 +757,20 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Qué es un medicamento de alto riesgo?",
         "opciones": [
-          "Aquel que, ante un error en su manejo, tiene alta probabilidad de causar un daño grave",
-          "Cualquier medicamento de costo elevado",
-          "Un medicamento que solo se usa en quirófano",
-          "Un medicamento con fecha de caducidad corta"
+          "Aquel que, ante un error en su manejo, puede causar un daño grave",
+          "Cualquier medicamento de costo elevado o de importación",
+          "Un medicamento que solo se usa en quirófano o terapia intensiva",
+          "Un medicamento con caducidad corta que debe usarse primero"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Qué grupos se priorizan en el listado institucional de alto riesgo?",
         "opciones": [
-          "Antibióticos, analgésicos y antiácidos",
+          "Antibióticos, analgésicos y antiácidos de uso frecuente",
           "Electrolitos concentrados, insulinas y anticoagulantes parenterales",
-          "Vitaminas y suplementos",
-          "Solo quimioterapias"
+          "Vitaminas, suplementos y soluciones de hidratación oral",
+          "Solo quimioterapias y medicamentos oncológicos orales"
         ],
         "correcta": 1
       },
@@ -792,9 +787,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Qué indica la etiqueta naranja?",
         "opciones": [
-          "Medicamento refrigerado",
-          "Medicamento controlado",
-          "Medicamento caducado",
+          "Medicamento que requiere refrigeración",
+          "Medicamento controlado que exige receta especial",
+          "Medicamento caducado que debe retirarse",
           "Medicamento LASA, de nombre o apariencia parecida"
         ],
         "correcta": 3
@@ -812,20 +807,20 @@ var CCE_CATALOG = [
       {
         "pregunta": "Al colocar una etiqueta de alerta visual, se debe cuidar que:",
         "opciones": [
-          "Cubra todo el nombre comercial",
+          "Cubra todo el nombre comercial para evitar confusiones",
           "No cubra información crítica, como la fecha de caducidad",
-          "Se coloque solo en la caja exterior",
-          "Lleve el nombre del paciente"
+          "Se coloque solo en la caja exterior y no en el frasco",
+          "Lleve el nombre del paciente al que se administrará"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Cómo se almacenan los medicamentos en el área?",
         "opciones": [
-          "Por color de empaque",
-          "Por fecha de compra",
-          "En orden alfabético de la A a la Z, respetando temperatura y refrigeración",
-          "Como lleguen del almacén"
+          "Por color de empaque, para encontrarlos rápido",
+          "Por fecha de compra, del más antiguo al más reciente",
+          "En orden alfabético, respetando temperatura y refrigeración",
+          "Como lleguen del almacén, en sus cajas originales"
         ],
         "correcta": 2
       },
@@ -852,29 +847,29 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Cómo deben prescribirse los electrolitos concentrados?",
         "opciones": [
-          "En ámpulas",
+          "En ámpulas o frascos completos",
           "En gramos o miliequivalentes",
-          "En frascos",
-          "En cucharadas"
+          "En mililitros del frasco",
+          "En cucharadas o gotas"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Con cuánta anticipación máxima se solicita un medicamento de alto riesgo?",
         "opciones": [
-          "Al inicio del turno",
-          "Un día antes",
+          "Al inicio del turno, junto con los demás",
+          "Un día antes, para tenerlo disponible",
           "20 minutos antes de su administración",
-          "2 horas antes"
+          "2 horas antes de la dosis programada"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Cómo se trasladan los electrolitos concentrados?",
         "opciones": [
-          "En la bolsa del uniforme",
-          "En una bolsa sin identificar",
-          "Junto con los demás medicamentos del turno",
+          "En la bolsa del uniforme de quien los traslada",
+          "En una bolsa sin identificar para mayor discreción",
+          "Junto con los demás medicamentos del turno en la charola",
           "En contenedores con tapa roja o hieleras identificadas"
         ],
         "correcta": 3
@@ -883,9 +878,9 @@ var CCE_CATALOG = [
         "pregunta": "¿Qué es la doble verificación?",
         "opciones": [
           "Una persona prepara el medicamento y otra lo verifica por su cuenta",
-          "La misma persona revisa dos veces",
-          "El paciente revisa su medicamento",
-          "Se revisa solo la receta dos veces"
+          "La misma persona revisa dos veces el medicamento antes de administrarlo",
+          "El paciente revisa su medicamento antes de que se le administre",
+          "Se revisa dos veces la receta, sin revisar el medicamento preparado"
         ],
         "correcta": 0
       },
@@ -902,20 +897,20 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Cuándo se permite omitir la doble verificación?",
         "opciones": [
-          "Cuando hay poco personal",
-          "Durante el turno nocturno",
-          "Solo en una urgencia con riesgo inminente para la vida del paciente",
-          "Cuando el medicamento ya se conoce bien"
+          "Cuando hay poco personal en el turno",
+          "Durante el turno nocturno, si no hay otro profesional",
+          "Solo en una urgencia con riesgo inminente para la vida",
+          "Cuando el medicamento ya se conoce bien en el servicio"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Si una dosis programada no se administra, ¿qué debe hacerse?",
         "opciones": [
-          "Administrarla en el siguiente horario sin registrar",
-          "Desecharla sin avisar",
-          "Comentarlo solo en la entrega de turno",
-          "Registrar la razón específica en la hoja de enfermería y en el expediente clínico"
+          "Administrarla en el siguiente horario sin dejar registro",
+          "Desecharla sin avisar para no duplicar la dosis",
+          "Comentarlo solo de forma verbal en la entrega de turno",
+          "Registrar la razón en la hoja de enfermería y en el expediente"
         ],
         "correcta": 3
       }
@@ -1067,20 +1062,20 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Cuál de estos es uno de los cinco momentos?",
         "opciones": [
-          "Al terminar el turno",
+          "Al terminar el turno, antes de salir del hospital",
           "Antes de realizar una tarea limpia o aséptica",
-          "Al entrar al comedor",
-          "Antes de checar la entrada"
+          "Al entrar al comedor del personal",
+          "Antes de checar la entrada en el reloj"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Tocar el barandal o el monitor del paciente y salir de la habitación corresponde al momento:",
         "opciones": [
-          "Antes del contacto con el paciente",
-          "Antes de una tarea aséptica",
+          "Antes del contacto con el paciente, por tocar su cama",
+          "Antes de una tarea limpia o aséptica en la habitación",
           "Después del contacto con el entorno del paciente",
-          "Ninguno, no requiere higiene"
+          "Ninguno, porque no se tuvo contacto directo con el paciente"
         ],
         "correcta": 2
       },
@@ -1117,10 +1112,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "La solución alcoholada se aplica correctamente cuando:",
         "opciones": [
-          "Se enjuaga con agua al terminar",
-          "Se seca con toalla de inmediato",
+          "Se enjuaga con agua al terminar la fricción",
+          "Se seca con toalla de inmediato para no gotear",
           "Se frota hasta que las manos quedan secas",
-          "Se aplica solo en las palmas"
+          "Se aplica solo en las palmas y los dedos"
         ],
         "correcta": 2
       },
@@ -1147,10 +1142,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "Al lavarte con agua y jabón, el grifo se cierra:",
         "opciones": [
-          "Con la mano limpia",
+          "Con la mano limpia, al terminar",
           "Con la toalla desechable",
-          "Con el codo mojado",
-          "Se deja abierto"
+          "Con el codo, aún mojado",
+          "Se deja abierto para el siguiente"
         ],
         "correcta": 1
       },
@@ -1167,9 +1162,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "Las precauciones por vía aérea (tuberculosis, sarampión) requieren:",
         "opciones": [
-          "Solo guantes",
-          "Mascarilla quirúrgica a 2 m",
-          "Ninguna medida especial",
+          "Solo guantes y bata desechable",
+          "Mascarilla quirúrgica y distancia de 2 m",
+          "Ninguna medida especial si no hay fiebre",
           "Respirador N95 y puerta cerrada"
         ],
         "correcta": 3
@@ -1332,29 +1327,29 @@ var CCE_CATALOG = [
       {
         "pregunta": "El EPP debe seleccionarse según:",
         "opciones": [
-          "La preferencia personal",
+          "La preferencia personal de quien atiende",
           "El riesgo de exposición de la tarea",
-          "El color del uniforme",
-          "La disponibilidad del día"
+          "El color del uniforme del servicio",
+          "La disponibilidad del material del día"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Cuál NO es un componente de las precauciones estándar?",
         "opciones": [
-          "Higiene respiratoria",
-          "Inyección segura",
+          "Higiene respiratoria y etiqueta de la tos",
+          "Inyección segura con material de un solo uso",
           "Aislar a todos los pacientes en presión negativa",
-          "Limpieza del entorno"
+          "Limpieza y desinfección del entorno del paciente"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Ante riesgo de salpicadura a los ojos se usa:",
         "opciones": [
-          "Solo guantes",
-          "Solo bata",
-          "Gorro",
+          "Solo guantes de nitrilo",
+          "Solo bata impermeable",
+          "Gorro y cubrebocas",
           "Lentes o careta"
         ],
         "correcta": 3
@@ -1382,10 +1377,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "La mascarilla se retira:",
         "opciones": [
-          "Tocando el frente",
-          "Antes que los guantes",
+          "Tocando el frente para retirarla rápido",
+          "Antes que los guantes, para no tocarla sucia",
           "Por las cintas, al final",
-          "No se retira"
+          "No se retira hasta terminar el turno"
         ],
         "correcta": 2
       },
@@ -1403,38 +1398,38 @@ var CCE_CATALOG = [
         "pregunta": "Con una aguja usada se debe:",
         "opciones": [
           "Desechar inmediatamente en el recipiente rígido",
-          "Reencapucharla",
-          "Dejarla en la charola",
-          "Doblarla antes de tirarla"
+          "Reencapucharla con las dos manos antes de tirarla",
+          "Dejarla en la charola para desecharla al final",
+          "Doblarla o romperla antes de tirarla a la bolsa"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Usar más EPP del necesario:",
         "opciones": [
-          "Siempre es más seguro",
+          "Siempre es más seguro, aunque se gaste más material",
           "Desperdicia material y aumenta el riesgo de autocontaminación",
-          "Es obligatorio",
-          "No tiene efecto"
+          "Es obligatorio en todos los procedimientos del hospital",
+          "No tiene ningún efecto en la seguridad del personal"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Si te pinchas con una aguja usada, lo primero es:",
         "opciones": [
-          "Esperar a ver si aparecen síntomas",
-          "Exprimir y no decir nada",
+          "Esperar a ver si aparecen síntomas en los días siguientes",
+          "Exprimir la herida y no decir nada para no preocupar a nadie",
           "Lavar con agua y jabón y reportar de inmediato",
-          "Terminar el turno y luego avisar"
+          "Terminar el turno y luego avisar al jefe inmediato"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Una medida de higiene respiratoria es:",
         "opciones": [
-          "Toser sobre la mano",
-          "Retirar la mascarilla para hablar",
-          "Compartir el cubrebocas",
+          "Toser sobre la mano y seguir trabajando",
+          "Retirar la mascarilla para hablar con claridad",
+          "Compartir el cubrebocas cuando falte material",
           "Dar mascarilla al paciente que tose"
         ],
         "correcta": 3
@@ -1587,20 +1582,20 @@ var CCE_CATALOG = [
       {
         "pregunta": "Es un derecho del paciente:",
         "opciones": [
-          "Elegir el horario del personal",
-          "Recibir medicamentos sin receta",
+          "Elegir el horario y al personal que lo atiende",
+          "Recibir medicamentos sin receta si los solicita",
           "Contar con facilidades para una segunda opinión",
-          "Revisar expedientes de otros pacientes"
+          "Revisar los expedientes de otros pacientes"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Para confirmar la comprensión es útil:",
         "opciones": [
-          "Preguntar solo “¿entendió?”",
-          "Repetir más rápido",
-          "Entregar un folleto sin explicar",
-          "Pedir al paciente que explique con sus palabras"
+          "Preguntar solo “¿entendió?” al terminar",
+          "Repetir la explicación más rápido y más fuerte",
+          "Entregar un folleto sin dar explicación",
+          "Pedir al paciente que lo explique con sus palabras"
         ],
         "correcta": 3
       },
@@ -1617,10 +1612,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "Tomar una foto de un paciente con tu celular para compartirla en un chat:",
         "opciones": [
-          "Está permitido si no se ve su cara",
+          "Está permitido si no se ve la cara del paciente",
           "Viola su confidencialidad y no debe hacerse",
-          "Está bien si es para enseñar",
-          "Depende del turno"
+          "Está bien si es para enseñar a otros compañeros",
+          "Depende del turno y de quién esté en el chat"
         ],
         "correcta": 1
       },
@@ -1637,9 +1632,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "El trato digno incluye:",
         "opciones": [
-          "Atender primero a quien pueda pagar más",
-          "Corregir las creencias del paciente",
-          "Decidir por el paciente",
+          "Atender primero a quien pueda pagar más rápido",
+          "Corregir las creencias del paciente cuando no coinciden",
+          "Decidir por el paciente lo que más le conviene",
           "Respetar su cultura, creencias y decisiones informadas"
         ],
         "correcta": 3
@@ -1657,29 +1652,29 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Cuál es la forma correcta de contestar una llamada externa?",
         "opciones": [
-          "“¿Bueno?”",
+          "“¿Bueno?, ¿con quién desea hablar? Aquí es el hospital”",
           "“Saint Luke's Hospitals, buenos días, le atiende (nombre)”",
-          "“¿Qué necesita?”",
-          "“Hospital, diga”"
+          "“¿Qué necesita? Aquí es el hospital, dígame por favor”",
+          "“Hospital, diga, ¿en qué le puedo ayudar el día de hoy?”"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Comentar el caso de un paciente en el elevador con un compañero:",
         "opciones": [
-          "Es correcto si no se dice el nombre",
-          "Ayuda a resolver dudas rápido",
-          "Debe evitarse; se comenta en privado y solo con quien participa en la atención",
-          "Está permitido entre médicos"
+          "Es correcto si no se menciona el nombre del paciente",
+          "Ayuda a resolver dudas rápido entre compañeros de turno",
+          "Debe evitarse; se comenta en privado con quien participa en la atención",
+          "Está permitido entre médicos, porque todos guardan el secreto profesional"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Respetar una decisión informada del paciente significa:",
         "opciones": [
-          "Estar de acuerdo con ella",
-          "Insistir hasta que cambie de opinión",
-          "Retirarle la atención",
+          "Estar de acuerdo con ella aunque no la comparta",
+          "Insistir hasta que cambie de opinión por su bien",
+          "Retirarle la atención si no sigue las indicaciones",
           "Informar con claridad y aceptar lo que decida"
         ],
         "correcta": 3
@@ -1858,39 +1853,39 @@ var CCE_CATALOG = [
         "pregunta": "¿A qué áreas aplica el proceso de aceptación?",
         "opciones": [
           "Admisión, enfermería y personal médico",
-          "Solo admisión",
-          "Solo caja",
-          "Solo urgencias"
+          "Solo admisión, que registra al paciente",
+          "Solo caja, al momento de cobrar",
+          "Solo urgencias, por ser la entrada principal"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Cuáles son las formas de ingreso de un paciente?",
         "opciones": [
-          "Solo urgencias",
-          "Consulta externa, urgencias, hospitalización programada y procedimiento ambulatorio",
-          "Solo hospitalización",
-          "Solo por cita telefónica"
+          "Solo urgencias, que es la única puerta de entrada al hospital",
+          "Consulta externa, urgencias, hospitalización programada y ambulatorio",
+          "Solo hospitalización, siempre con cita previa y depósito en caja",
+          "Solo por cita telefónica con el médico tratante o con su asistente"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Qué documento debe solicitar admisión al registrar al paciente?",
         "opciones": [
-          "Un comprobante de domicilio",
-          "Una carta de recomendación",
+          "Un comprobante de domicilio reciente",
+          "Una carta de recomendación de su médico",
           "Una identificación oficial, como INE o pasaporte",
-          "Ninguno"
+          "Ninguno, basta con lo que diga el paciente"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Por qué es tan importante el registro inicial?",
         "opciones": [
-          "Solo por estadística",
-          "Porque lo pide el paciente",
-          "Porque se usa para publicidad",
-          "Porque es un documento médico-legal y sus errores se repiten en todo el expediente"
+          "Solo para las estadísticas mensuales del hospital",
+          "Porque lo solicita el paciente al llegar a admisión",
+          "Porque se usa para campañas de publicidad del hospital",
+          "Porque es un documento médico-legal y sus errores se repiten"
         ],
         "correcta": 3
       },
@@ -1898,38 +1893,38 @@ var CCE_CATALOG = [
         "pregunta": "Un pasaporte de EE. UU. muestra la fecha 04/03/1990. ¿Qué haces?",
         "opciones": [
           "Preguntas directamente al paciente o familiar su fecha de nacimiento",
-          "La registras como 4 de marzo",
-          "La registras como 3 de abril",
-          "Dejas la fecha vacía"
+          "La registras como 4 de marzo, por el formato que usamos en México",
+          "La registras como 3 de abril, por ser un documento de EE. UU.",
+          "Dejas la fecha vacía hasta que el paciente sea dado de alta"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Si el paciente usa seguro, el nombre registrado debe:",
         "opciones": [
-          "Ser el apodo del paciente",
+          "Ser el apodo con el que el paciente se presenta",
           "Coincidir con la credencial del seguro",
-          "Escribirse solo con iniciales",
-          "Copiarse del brazalete"
+          "Escribirse solo con iniciales para ahorrar espacio",
+          "Copiarse del brazalete que ya tenga puesto"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Para un menor mexicano sin documentos, ¿qué puedes buscar en la página del gobierno?",
         "opciones": [
-          "Su RFC",
-          "Su número de seguro social",
+          "Su RFC con homoclave, en el portal del SAT",
+          "Su número de seguro social en el portal del IMSS",
           "Su CURP, con nombre, fecha y estado de nacimiento",
-          "Su credencial escolar"
+          "Su credencial escolar en la página de la SEP"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Qué entrega admisión a enfermería al reportar el arribo?",
         "opciones": [
-          "La hoja de cargos",
-          "El reglamento",
-          "El consentimiento firmado",
+          "La hoja de cargos con los servicios solicitados",
+          "El reglamento firmado por el paciente",
+          "El consentimiento informado ya firmado",
           "Una copia de la identificación del paciente"
         ],
         "correcta": 3
@@ -1938,38 +1933,38 @@ var CCE_CATALOG = [
         "pregunta": "¿Qué hace enfermería al recibir al paciente?",
         "opciones": [
           "La doble verificación de sus datos y lo acompaña con el médico",
-          "El cobro del servicio",
-          "La factura",
-          "El alta"
+          "El cobro del servicio antes de pasarlo con el médico",
+          "La factura del servicio con los datos fiscales",
+          "El alta administrativa y la entrega de pertenencias"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Cuál de estos documentos se llena al ingreso de todo paciente?",
         "opciones": [
-          "La hoja de egreso",
+          "La hoja de egreso con el resumen clínico",
           "El aviso de privacidad",
-          "La factura",
-          "La nota de defunción"
+          "La factura con los datos fiscales",
+          "La nota de defunción, por precaución"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Qué se entrega a los pacientes hospitalizados?",
         "opciones": [
-          "Un descuento",
-          "Las llaves del cuarto",
-          "El reglamento del hospital con depósitos, garantías y horarios de visita",
-          "Su expediente original"
+          "Un descuento por pronto pago en caja y la factura del depósito",
+          "Las llaves del cuarto y del guardarropa con su inventario",
+          "El reglamento del hospital con depósitos, garantías y visitas",
+          "Su expediente clínico original para que lo resguarde la familia"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Al egreso, ¿qué entrega enfermería a admisión?",
         "opciones": [
-          "El brazalete",
-          "La receta",
-          "Las pertenencias",
+          "El brazalete de identificación retirado",
+          "La receta de egreso firmada por el médico",
+          "Las pertenencias del paciente inventariadas",
           "La hoja de cargos para revisar pendientes"
         ],
         "correcta": 3
@@ -2188,19 +2183,19 @@ var CCE_CATALOG = [
         "pregunta": "¿Qué norma regula el manejo de los RPBI?",
         "opciones": [
           "NOM-087-SEMARNAT-SSA1-2002",
-          "NOM-017-STPS-2008",
-          "NOM-004-SSA3-2012",
-          "NOM-220-SSA1-2016"
+          "NOM-017-STPS-2008 (EPP)",
+          "NOM-004-SSA3-2012 (expediente)",
+          "NOM-045-SSA2-2005 (vigilancia)"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Cuál es el orden de los cuatro pasos del manejo de RPBI?",
         "opciones": [
-          "Recolectar, envasar, identificar, almacenar",
+          "Recolectar, envasar, identificar y almacenar",
           "Identificar, envasar, almacenar y recolectar",
-          "Almacenar, identificar, recolectar, envasar",
-          "Envasar, recolectar, almacenar, identificar"
+          "Almacenar, identificar, recolectar y envasar",
+          "Envasar, recolectar, almacenar e identificar"
         ],
         "correcta": 1
       },
@@ -2217,9 +2212,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "La sangre líquida se deposita en:",
         "opciones": [
-          "Bolsa roja abierta",
-          "El drenaje",
-          "Bolsa negra",
+          "Bolsa roja abierta para que escurra",
+          "El drenaje, con abundante agua",
+          "Bolsa negra doble, bien cerrada",
           "Recipiente hermético con tapa"
         ],
         "correcta": 3
@@ -2237,10 +2232,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Cómo se desechan las agujas?",
         "opciones": [
-          "Reencapuchadas en la bolsa roja",
+          "Reencapuchadas, dentro de la bolsa roja",
           "Sin reencapuchar, en el recipiente rígido rojo",
-          "En la basura común envueltas en papel",
-          "En la bolsa amarilla"
+          "En la basura común, envueltas en papel",
+          "En la bolsa amarilla de patológicos"
         ],
         "correcta": 1
       },
@@ -2277,30 +2272,30 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Dónde se resguardan los residuos patológicos?",
         "opciones": [
-          "En el cuarto del paciente",
+          "En el cuarto del paciente hasta su egreso",
           "En un congelador hasta su disposición final",
-          "En la central de enfermería",
-          "En la bolsa negra común"
+          "En la central de enfermería, en una caja rotulada",
+          "En la bolsa negra común del área"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Qué deben evitar las rutas de recolección interna?",
         "opciones": [
-          "Los elevadores de servicio",
-          "El almacén temporal",
-          "Las áreas de espera y los horarios de alimentación de los pacientes",
-          "La salida del hospital"
+          "Los elevadores de servicio y las escaleras de emergencia",
+          "El almacén temporal y el cuarto de limpieza",
+          "Las áreas de espera y los horarios de alimentación",
+          "La salida del hospital y el andén de carga"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Si sufres un pinchazo con una aguja usada, debes:",
         "opciones": [
-          "Esperar a ver si hay síntomas",
-          "Comentarlo al final del turno",
-          "Lavarte y no decir nada",
-          "Reportarlo de inmediato a Epidemiología y a la Dirección Médica"
+          "Esperar unos días a ver si aparecen síntomas antes de avisar",
+          "Comentarlo al final del turno con tu jefe inmediato",
+          "Lavarte la herida y no decir nada a nadie para no alarmar",
+          "Reportarlo de inmediato a Epidemiología y Dirección Médica"
         ],
         "correcta": 3
       }
@@ -2354,28 +2349,28 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Cuánto tiempo debe mantenerse estable la FiO₂ antes de tomar la muestra?",
         "opciones": [
-          "No importa",
+          "No importa el tiempo",
           "Al menos 10 minutos",
-          "1 minuto",
-          "2 horas"
+          "Basta con 1 minuto",
+          "Deben ser 2 horas exactas"
         ],
         "correcta": 1
       },
       {
         "pregunta": "La jeringa para gasometría debe contener:",
         "opciones": [
-          "Solución salina",
-          "Alcohol",
+          "Solución salina para lavar",
+          "Alcohol para esterilizar",
           "Anticoagulante (heparina)",
-          "Nada"
+          "Nada, debe ir vacía"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Con qué ángulo se punciona la arteria radial?",
         "opciones": [
-          "90°",
-          "10°",
+          "90°, perpendicular a la piel",
+          "10°, casi paralela a la piel",
           "Paralela a la piel",
           "Aproximadamente 45°"
         ],
@@ -2385,19 +2380,19 @@ var CCE_CATALOG = [
         "pregunta": "¿Cómo se reconoce el flujo arterial?",
         "opciones": [
           "Es pulsátil y llena la jeringa sin aspirar",
-          "Es oscuro y lento",
-          "Requiere aspirar con fuerza",
-          "No sale sangre"
+          "Es oscuro, lento y requiere aspirar",
+          "Requiere aspirar con fuerza para llenar",
+          "No sale sangre hasta retirar la aguja"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Después de la punción arterial se debe:",
         "opciones": [
-          "Doblar el brazo sin presionar",
+          "Doblar el brazo sin presionar el sitio",
           "Aplicar presión firme al menos 5 minutos",
-          "Dar masaje vigoroso",
-          "Colocar un torniquete"
+          "Dar masaje vigoroso para evitar el hematoma",
+          "Colocar un torniquete durante 10 minutos"
         ],
         "correcta": 1
       },
@@ -2407,7 +2402,7 @@ var CCE_CATALOG = [
           "No es necesaria",
           "Debe ser de 1 minuto",
           "Debe mantenerse más tiempo",
-          "Debe evitarse"
+          "Debe evitarse por riesgo de trombosis"
         ],
         "correcta": 2
       },
@@ -2426,18 +2421,18 @@ var CCE_CATALOG = [
         "opciones": [
           "Suben la PaO₂ y bajan la PaCO₂",
           "No alteran el resultado",
-          "Suben el pH siempre",
-          "Mejoran la conservación"
+          "Suben el pH en todos los casos",
+          "Mejoran la conservación de la muestra"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Además de los identificadores, la etiqueta debe indicar:",
         "opciones": [
-          "El costo del estudio",
+          "El costo del estudio y la forma de pago",
           "La hora de toma, la FiO₂ y la temperatura",
-          "Solo el número de cama",
-          "El nombre del laboratorista"
+          "Solo el número de cama y el servicio",
+          "El nombre del laboratorista que la procesa"
         ],
         "correcta": 1
       },
@@ -2445,9 +2440,9 @@ var CCE_CATALOG = [
         "pregunta": "Una vez tomada, la muestra se debe:",
         "opciones": [
           "Dejar varias horas a temperatura ambiente",
-          "Destapar para eliminar el aire después",
+          "Destapar para eliminar el aire después de tomarla",
           "Enviar de inmediato para analizarse lo antes posible",
-          "Guardar en el congelador"
+          "Guardar en el congelador hasta el día siguiente"
         ],
         "correcta": 2
       },
@@ -2619,10 +2614,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "Ante un paciente con dolor torácico, el electrocardiograma debe tomarse en:",
         "opciones": [
-          "La primera hora",
+          "La primera hora desde su llegada",
           "10 minutos o menos desde su llegada",
-          "Cuando lo valore el cardiólogo",
-          "Al día siguiente"
+          "Cuando lo valore el cardiólogo de guardia",
+          "Al día siguiente, en ayuno"
         ],
         "correcta": 1
       },
@@ -2650,19 +2645,19 @@ var CCE_CATALOG = [
         "pregunta": "El electrodo V4 se coloca en:",
         "opciones": [
           "5.º espacio intercostal, línea medioclavicular izquierda",
-          "2.º espacio intercostal derecho",
-          "Línea axilar anterior",
-          "Sobre el esternón"
+          "2.º espacio intercostal, borde esternal derecho",
+          "5.º espacio intercostal, línea axilar anterior derecha",
+          "Sobre el esternón, a nivel del 4.º espacio"
         ],
         "correcta": 0
       },
       {
         "pregunta": "V6 se coloca en:",
         "opciones": [
-          "El 4.º espacio intercostal derecho",
+          "El 4.º espacio intercostal, borde esternal derecho",
           "La línea axilar media, al nivel de V4",
-          "Entre V2 y V4",
-          "El hombro izquierdo"
+          "Entre V2 y V4, en el 5.º espacio",
+          "El hombro izquierdo, sobre la clavícula"
         ],
         "correcta": 1
       },
@@ -2699,29 +2694,29 @@ var CCE_CATALOG = [
       {
         "pregunta": "La derivación I negativa y aVR positiva sugiere:",
         "opciones": [
-          "Un infarto inferior",
+          "Un infarto de cara inferior",
           "Electrodos de los brazos invertidos",
-          "Calibración correcta",
-          "Paciente en movimiento"
+          "Una calibración correcta del equipo",
+          "Que el paciente se movió durante el trazo"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Una línea basal que sube y baja suele deberse a:",
         "opciones": [
-          "Velocidad de 25 mm/s",
-          "Paciente en decúbito",
+          "Una velocidad del papel de 25 mm/s",
+          "Que el paciente está en decúbito supino",
           "Respiración o mal contacto del electrodo",
-          "Electrodos sobre tejido blando"
+          "Electrodos colocados sobre tejido blando"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Ante un trazo con signos de alarma (p. ej., elevación del ST) se debe:",
         "opciones": [
-          "Esperar a que el paciente tenga dolor",
-          "Repetirlo al día siguiente",
-          "Archivarlo en el expediente",
+          "Esperar a que el paciente vuelva a tener dolor",
+          "Repetirlo al día siguiente para confirmar",
+          "Archivarlo en el expediente para la visita",
           "Notificar de inmediato al médico responsable"
         ],
         "correcta": 3
@@ -2865,9 +2860,9 @@ var CCE_CATALOG = [
         "pregunta": "Ante una persona que colapsa, lo primero es:",
         "opciones": [
           "Verificar la seguridad de la escena y si responde",
-          "Dar dos ventilaciones",
-          "Buscar una vena",
-          "Llamar a un familiar"
+          "Dar dos ventilaciones de rescate de inmediato",
+          "Buscar una vena para administrar medicamentos",
+          "Llamar a un familiar para pedir su autorización"
         ],
         "correcta": 0
       },
@@ -2905,9 +2900,9 @@ var CCE_CATALOG = [
         "pregunta": "La profundidad de las compresiones en un adulto es de:",
         "opciones": [
           "Al menos 5 cm sin exceder 6 cm",
-          "2 a 3 cm",
-          "8 a 10 cm",
-          "La que permita el paciente"
+          "Entre 2 y 3 cm",
+          "Entre 8 y 10 cm",
+          "La que permita la complexión del paciente"
         ],
         "correcta": 0
       },
@@ -2924,10 +2919,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "Con vía aérea avanzada se da:",
         "opciones": [
-          "30:2 con pausas",
-          "2 ventilaciones por minuto",
+          "30:2, con pausas para ventilar",
+          "2 ventilaciones por minuto, sin compresiones",
           "Compresiones continuas y 1 ventilación cada 6 segundos",
-          "Ventilaciones lo más rápido posible"
+          "Ventilaciones lo más rápido posible, sin pausa"
         ],
         "correcta": 2
       },
@@ -2974,9 +2969,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "Ante un adulto consciente que se atraganta y no puede toser, las guías 2025 indican:",
         "opciones": [
-          "Darle agua",
-          "Solo compresiones abdominales",
-          "Esperar a que pierda el estado de alerta",
+          "Darle agua a sorbos para que pase el objeto",
+          "Solo compresiones abdominales hasta que hable",
+          "Esperar a que pierda el estado de alerta para iniciar RCP",
           "Alternar 5 golpes en la espalda y 5 compresiones abdominales"
         ],
         "correcta": 3
@@ -3135,9 +3130,9 @@ var CCE_CATALOG = [
         "pregunta": "Un medicamento de alto riesgo es aquel que:",
         "opciones": [
           "Ante un error tiene alta probabilidad de causar daño grave o muerte",
-          "Es el más caro de la farmacia",
-          "Se usa solo en terapia intensiva",
-          "Requiere receta especial"
+          "Es el de mayor costo en el inventario de la farmacia del hospital",
+          "Se usa solo en terapia intensiva y quirófano bajo vigilancia",
+          "Requiere receta especial con código de barras para surtirse"
         ],
         "correcta": 0
       },
@@ -3164,9 +3159,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "Los electrolitos concentrados (p. ej., cloruro de potasio) deben:",
         "opciones": [
-          "Estar en todos los botiquines de piso",
-          "Guardarse junto a las soluciones",
-          "Prepararse por cualquier persona",
+          "Estar en todos los botiquines de piso para usarse rápido",
+          "Guardarse junto a las soluciones de uso general",
+          "Prepararse por cualquier persona del turno que esté disponible",
           "Resguardarse separados, identificados y con acceso restringido"
         ],
         "correcta": 3
@@ -3175,38 +3170,38 @@ var CCE_CATALOG = [
         "pregunta": "¿Cuál es una prescripción correcta?",
         "opciones": [
           "Cloruro de potasio 20 mEq en 250 mL, a pasar en 2 horas",
-          "1 ámpula de KCl",
-          "KCl lo necesario",
-          "KCl rápido"
+          "1 ámpula de KCl diluida en la solución que tenga el paciente",
+          "KCl lo necesario para corregir el potasio, según laboratorio",
+          "KCl rápido por vía intravenosa, valorar respuesta en 1 hora"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Por qué no se escribe “5.0 mg”?",
         "opciones": [
-          "Porque es muy largo",
+          "Porque ocupa demasiado espacio en la receta",
           "Porque el punto puede no verse y leerse 50 mg",
-          "Porque se debe escribir en ámpulas",
-          "Está permitido"
+          "Porque la dosis se debe escribir en ámpulas",
+          "Está permitido; es la forma más precisa"
         ],
         "correcta": 1
       },
       {
         "pregunta": "La abreviatura “U” para unidades:",
         "opciones": [
-          "Es la forma recomendada",
-          "Solo se usa en insulina",
+          "Es la forma recomendada por ser más corta",
+          "Solo se usa en la prescripción de insulina",
           "Debe evitarse; se escribe “unidades”",
-          "Significa microgramos"
+          "Significa microgramos en la receta médica"
         ],
         "correcta": 2
       },
       {
         "pregunta": "La doble verificación la realizan:",
         "opciones": [
-          "Una persona dos veces",
-          "El paciente y su familiar",
-          "El médico por teléfono",
+          "Una misma persona que revisa dos veces",
+          "El paciente y su familiar antes de aplicarla",
+          "El médico, por teléfono, con la enfermera",
           "Dos profesionales de forma independiente"
         ],
         "correcta": 3
@@ -3215,29 +3210,29 @@ var CCE_CATALOG = [
         "pregunta": "En la doble verificación de una infusión se revisa también:",
         "opciones": [
           "La programación de la bomba y la línea",
-          "El color de la bolsa",
-          "El turno del compañero",
-          "Nada más que el nombre"
+          "El color de la bolsa y de la etiqueta",
+          "El turno y el nombre del compañero",
+          "Solo el nombre del medicamento"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Cuándo puede omitirse la doble verificación?",
         "opciones": [
-          "Cuando hay mucho trabajo",
+          "Cuando hay mucho trabajo en el servicio",
           "Solo ante riesgo inminente para la vida, documentándolo",
-          "Si el medicamento es conocido",
-          "En el turno nocturno"
+          "Si el medicamento es conocido por el personal",
+          "En el turno nocturno, cuando hay menos personal"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Ante una duda sobre la dosis de un medicamento de alto riesgo:",
         "opciones": [
-          "Administrar la mitad",
-          "Preguntar a otro paciente",
+          "Administrar la mitad de la dosis y vigilar al paciente",
+          "Preguntar a otro paciente con la misma indicación",
           "Detener y aclarar con quien prescribe o con Farmacia",
-          "Administrar y avisar después"
+          "Administrar la dosis completa y avisar después al médico"
         ],
         "correcta": 2
       },
@@ -3390,19 +3385,19 @@ var CCE_CATALOG = [
         "pregunta": "El sistema armonizado clasifica peligros:",
         "opciones": [
           "Físicos, para la salud y para el medio ambiente",
-          "Solo químicos",
-          "Solo biológicos",
-          "Solo eléctricos"
+          "Solo químicos, según su concentración",
+          "Solo biológicos, según su vía de entrada",
+          "Solo eléctricos, según su voltaje y uso"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Cómo son los pictogramas del sistema armonizado?",
         "opciones": [
-          "Círculos azules",
+          "Círculos azules con un símbolo blanco",
           "Rombo con borde rojo y símbolo negro",
-          "Triángulos amarillos",
-          "Cuadros verdes"
+          "Triángulos amarillos con borde negro",
+          "Cuadros verdes con un número de riesgo"
         ],
         "correcta": 1
       },
@@ -3412,16 +3407,16 @@ var CCE_CATALOG = [
           "Sustancia corrosiva",
           "Gas a presión",
           "Sustancia inflamable",
-          "Peligro ambiental"
+          "Peligro para el ambiente"
         ],
         "correcta": 2
       },
       {
         "pregunta": "El oxígeno medicinal se identifica, entre otros, con el pictograma de:",
         "opciones": [
-          "Calavera",
-          "Medio ambiente",
-          "Corrosión",
+          "Calavera y tibias cruzadas",
+          "Pez y árbol (medio ambiente)",
+          "Corrosión sobre la mano",
           "Llama sobre círculo (comburente)"
         ],
         "correcta": 3
@@ -3449,19 +3444,19 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Dónde se consulta la respuesta ante exposición?",
         "opciones": [
-          "En la factura",
-          "En el inventario",
+          "En la factura del proveedor",
+          "En el inventario del almacén",
           "En la hoja de datos de seguridad",
-          "En el reglamento interior"
+          "En el reglamento interior de trabajo"
         ],
         "correcta": 2
       },
       {
         "pregunta": "La hoja de datos de seguridad debe estar:",
         "opciones": [
-          "En la oficina del proveedor",
-          "Solo en inglés",
-          "Guardada bajo llave",
+          "En la oficina del proveedor, para consulta",
+          "Solo en inglés, como la envía el fabricante",
+          "Guardada bajo llave en la dirección del hospital",
           "Disponible para el personal que maneja la sustancia"
         ],
         "correcta": 3
@@ -3470,39 +3465,39 @@ var CCE_CATALOG = [
         "pregunta": "Un recipiente sin etiqueta debe:",
         "opciones": [
           "No utilizarse hasta identificar y etiquetar su contenido",
-          "Usarse si huele a alcohol",
-          "Vaciarse en el drenaje",
-          "Usarse con guantes"
+          "Usarse si huele a alcohol o a algún desinfectante conocido",
+          "Vaciarse en el drenaje con abundante agua para eliminarlo",
+          "Usarse con guantes y lentes mientras se averigua qué es"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Al pasar una sustancia a otro recipiente se debe:",
         "opciones": [
-          "Usar una botella de agua limpia",
+          "Usar una botella de agua limpia y bien tapada",
           "Etiquetarlo con su nombre y su pictograma",
-          "Dejarlo sin tapa",
-          "Mezclarla con otra para rendirla"
+          "Dejarlo sin tapa para que se ventile el vapor",
+          "Mezclarla con otra sustancia para que rinda más"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Mezclar cloro con amoniaco:",
         "opciones": [
-          "Mejora la limpieza",
-          "Es indispensable para desinfectar",
+          "Mejora la limpieza de superficies muy sucias",
+          "Es indispensable para desinfectar áreas de aislamiento",
           "Libera gases tóxicos y no debe hacerse",
-          "No tiene efecto"
+          "No tiene efecto si el área está ventilada"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Ante un derrame de una sustancia química se activa el código:",
         "opciones": [
-          "Azul",
-          "Negro",
-          "Rosa",
-          "Amarillo"
+          "Código Azul",
+          "Código Negro",
+          "Código Rosa",
+          "Código Amarillo"
         ],
         "correcta": 3
       }
@@ -3694,20 +3689,20 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Qué es el equipo de protección personal?",
         "opciones": [
-          "Elementos que usa el trabajador para disminuir su exposición a un riesgo específico",
-          "El uniforme institucional",
-          "Cualquier equipo médico del hospital",
-          "Las señales de seguridad del edificio"
+          "Elementos que usa el trabajador para disminuir su exposición a un riesgo",
+          "El uniforme institucional que se entrega a cada colaborador",
+          "Cualquier equipo médico que se utiliza en la atención del paciente",
+          "Las señales de seguridad y las rutas de evacuación del edificio"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Qué norma regula la selección, uso y manejo del EPP?",
         "opciones": [
-          "NOM-087",
+          "NOM-087-SEMARNAT-SSA1-2002",
           "NOM-017-STPS-2008",
-          "NOM-004",
-          "NOM-220"
+          "NOM-004-SSA3-2012",
+          "NOM-220-SSA1-2016"
         ],
         "correcta": 1
       },
@@ -3715,7 +3710,7 @@ var CCE_CATALOG = [
         "pregunta": "Respecto a los controles de ingeniería, el EPP:",
         "opciones": [
           "Los sustituye por completo",
-          "Los vuelve innecesarios",
+          "Los vuelve innecesarios en el área",
           "Los complementa; no los sustituye",
           "No tiene relación con ellos"
         ],
@@ -3724,9 +3719,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Con qué criterio se elige el EPP?",
         "opciones": [
-          "Por gusto personal",
-          "Por el color del uniforme",
-          "Por antigüedad en el puesto",
+          "Por gusto personal y comodidad de quien lo usa",
+          "Por el color del uniforme de cada área del hospital",
+          "Por antigüedad en el puesto y tipo de contrato",
           "Por la actividad, el tipo de riesgo y la región del cuerpo"
         ],
         "correcta": 3
@@ -3735,39 +3730,39 @@ var CCE_CATALOG = [
         "pregunta": "Para proteger ojos y cara de salpicaduras de líquidos se usa:",
         "opciones": [
           "Pantalla facial, careta o goggles",
-          "Tapones auditivos",
-          "Casco dieléctrico",
-          "Polainas"
+          "Tapones u orejeras auditivas",
+          "Casco dieléctrico con barbiquejo",
+          "Polainas y botas de hule"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Qué protección se usa contra el ruido?",
         "opciones": [
-          "Mascarilla desechable",
+          "Mascarilla desechable para polvos",
           "Tapones o conchas auditivas",
-          "Careta",
-          "Mandil"
+          "Careta de policarbonato",
+          "Mandil plomado"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Qué afirmación sobre los guantes es correcta?",
         "opciones": [
-          "Un mismo guante protege de todo",
-          "Los guantes de nitrilo sirven para electricidad",
+          "Un mismo guante protege de todos los riesgos",
+          "Los guantes de nitrilo sirven para trabajos eléctricos",
           "No existe un guante universal; se elige según el riesgo",
-          "Los guantes no son EPP"
+          "Los guantes no son EPP, son material de curación"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Para gases y vapores se requiere:",
         "opciones": [
-          "Cubrebocas de tela",
+          "Cubrebocas de tela lavable",
           "Mascarilla desechable para polvos",
-          "Careta",
-          "Un respirador específico para gases y vapores"
+          "Careta de policarbonato sin filtro",
+          "Un respirador para gases y vapores"
         ],
         "correcta": 3
       },
@@ -3775,39 +3770,39 @@ var CCE_CATALOG = [
         "pregunta": "¿Cuál es el riesgo predominante en hemodinamia?",
         "opciones": [
           "Biológico y radiación ionizante",
-          "Solo ruido",
-          "Solo químicos",
-          "Caídas de altura"
+          "Solo ruido de los equipos",
+          "Solo químicos de limpieza",
+          "Caídas de altura y golpes"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Cuál es el riesgo predominante en CEyE?",
         "opciones": [
-          "Radiación ionizante",
+          "Radiación ionizante de los equipos",
           "Instrumental contaminado",
-          "Ruido",
-          "Temperaturas extremas"
+          "Ruido de los autoclaves",
+          "Temperaturas extremas bajo cero"
         ],
         "correcta": 1
       },
       {
         "pregunta": "El calzado conductivo protege contra:",
         "opciones": [
-          "Caída de objetos",
-          "Agua",
+          "Caída de objetos pesados",
+          "Agua y superficies mojadas",
           "Electricidad estática",
-          "Altas temperaturas"
+          "Altas temperaturas de hornos"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Cuál es la forma correcta de usar el EPP?",
         "opciones": [
-          "Usar todo el equipo disponible toda la jornada",
-          "No usarlo si la tarea es corta",
-          "Compartirlo entre compañeros",
-          "Elegirlo con intención según la tarea y evitar la sobreutilización"
+          "Usar todo el equipo disponible durante toda la jornada",
+          "No usarlo si la tarea es corta o se hace rápido",
+          "Compartirlo entre compañeros para que alcance",
+          "Elegirlo según la tarea y evitar la sobreutilización"
         ],
         "correcta": 3
       }
@@ -3925,8 +3920,8 @@ var CCE_CATALOG = [
         "pregunta": "¿Cuál es el objetivo principal de las 5S?",
         "opciones": [
           "Mantener espacios seguros y eficientes",
-          "Reducir personal",
-          "Comprar más mobiliario",
+          "Reducir el personal de cada área",
+          "Comprar más mobiliario y anaqueles",
           "Cambiar de oficina cada año"
         ],
         "correcta": 0
@@ -3944,8 +3939,8 @@ var CCE_CATALOG = [
       {
         "pregunta": "La tarjeta roja se usa para:",
         "opciones": [
-          "Premiar al mejor empleado",
-          "Señalar una ruta de evacuación",
+          "Premiar al colaborador más ordenado del mes",
+          "Señalar una ruta de evacuación temporal",
           "Marcar lo innecesario, dañado o caducado",
           "Identificar medicamentos de alto riesgo"
         ],
@@ -3965,8 +3960,8 @@ var CCE_CATALOG = [
         "pregunta": "Al ordenar, lo que se usa a diario debe estar:",
         "opciones": [
           "Más cerca del lugar de uso",
-          "En la bodega",
-          "En el piso",
+          "En la bodega, bien etiquetado",
+          "En el piso, junto al escritorio",
           "Bajo llave en otra área"
         ],
         "correcta": 0
@@ -3974,30 +3969,30 @@ var CCE_CATALOG = [
       {
         "pregunta": "\"Primero en caducar, primero en salir\" ayuda a:",
         "opciones": [
-          "Gastar más",
+          "Gastar los insumos más nuevos primero",
           "Evitar mermas por caducidad",
-          "Ocultar faltantes",
-          "Ordenar alfabéticamente"
+          "Ocultar faltantes en el inventario",
+          "Ordenar los insumos alfabéticamente"
         ],
         "correcta": 1
       },
       {
         "pregunta": "En la tercera S, limpiar también significa:",
         "opciones": [
-          "Tirar todo",
-          "Pintar el área",
+          "Tirar todo lo que esté en el área",
+          "Pintar el área cada seis meses",
           "Inspeccionar y detectar fallas",
-          "Mover los muebles"
+          "Mover los muebles para barrer"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Estandarizar implica:",
         "opciones": [
-          "Cambiar las reglas cada semana",
+          "Cambiar las reglas del área cada semana",
           "Que cada quien ordene a su manera",
-          "Eliminar las listas de verificación",
-          "Establecer normas visuales y rutinas para mantener lo logrado"
+          "Eliminar las listas de verificación y las fotos",
+          "Establecer normas visuales y rutinas de orden"
         ],
         "correcta": 3
       },
@@ -4005,38 +4000,38 @@ var CCE_CATALOG = [
         "pregunta": "La quinta S (Shitsuke) se refiere a:",
         "opciones": [
           "Disciplina y mejora sostenida",
-          "Comprar insumos",
-          "Clasificar documentos",
-          "Limpiar ventanas"
+          "Comprar insumos de limpieza",
+          "Clasificar documentos antiguos",
+          "Limpiar ventanas y pisos"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Una foto del área “como debe estar” es un ejemplo de:",
         "opciones": [
-          "Clasificar",
-          "Estandarizar",
-          "Limpiar",
-          "Desechar"
+          "Clasificar (Seiri)",
+          "Estandarizar (Seiketsu)",
+          "Limpiar (Seiso)",
+          "Desechar lo innecesario"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Las cajas almacenadas en un pasillo de evacuación:",
         "opciones": [
-          "Son aceptables si son pocas",
-          "Ayudan a ahorrar espacio",
+          "Son aceptables si son pocas y pequeñas",
+          "Ayudan a ahorrar espacio en la bodega",
           "Deben retirarse de inmediato",
-          "Se dejan hasta fin de mes"
+          "Se dejan hasta el inventario de fin de mes"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Al limpiar encuentras un cable dañado. ¿Qué haces?",
         "opciones": [
-          "Lo cubres con cinta y sigues",
-          "Lo ignoras",
-          "Lo desconectas y lo guardas",
+          "Lo cubres con cinta aislante y sigues",
+          "Lo ignoras porque no es tu área",
+          "Lo desconectas y lo guardas en un cajón",
           "Lo reportas para su reparación"
         ],
         "correcta": 3
@@ -4175,38 +4170,38 @@ var CCE_CATALOG = [
         "pregunta": "Ante signos de agotamiento por calor se debe:",
         "opciones": [
           "Trasladar a lugar fresco e hidratar",
-          "Seguir trabajando más despacio",
-          "Dar una bebida alcohólica",
-          "Cubrir con una cobija"
+          "Seguir trabajando, pero más despacio",
+          "Dar una bebida alcohólica fría",
+          "Cubrir con una cobija para que sude"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Son signos de agotamiento por calor:",
         "opciones": [
-          "Piel seca y fría sin síntomas",
+          "Piel seca y fría sin otros síntomas",
           "Sudoración intensa, mareo y debilidad",
-          "Hambre y sueño",
-          "Tos y estornudos"
+          "Hambre, sueño y bostezos frecuentes",
+          "Tos, estornudos y escurrimiento nasal"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Una medida preventiva es:",
         "opciones": [
-          "Esperar a tener sed para beber",
-          "Trabajar solo para concentrarse",
-          "Hidratarse con frecuencia y hacer pausas en zonas frescas",
-          "Usar ropa oscura y gruesa"
+          "Esperar a tener sed para beber agua",
+          "Trabajar solo para concentrarse mejor",
+          "Hidratarse seguido y hacer pausas en zonas frescas",
+          "Usar ropa oscura y gruesa para cubrirse del sol"
         ],
         "correcta": 2
       },
       {
         "pregunta": "En trabajo intenso con calor se recomienda beber:",
         "opciones": [
-          "Solo al final del turno",
-          "Un litro de golpe al inicio",
-          "Bebidas energéticas",
+          "Solo al final del turno, para no interrumpir",
+          "Un litro de golpe al inicio de la jornada",
+          "Bebidas energéticas o refrescos de cola",
           "Un vaso de agua cada 15 a 20 minutos"
         ],
         "correcta": 3
@@ -4215,29 +4210,29 @@ var CCE_CATALOG = [
         "pregunta": "Si la persona presenta confusión o pérdida del estado de alerta:",
         "opciones": [
           "Es una urgencia: activar atención médica inmediata",
-          "Debe descansar y esperar",
-          "Se le da agua aunque no pueda tragar",
-          "Se le pide que siga trabajando"
+          "Debe descansar a la sombra y esperar a que se le pase",
+          "Se le da agua aunque le cueste trabajo tragar",
+          "Se le pide que siga trabajando mientras se recupera"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Ante un golpe de calor, mientras llega la ayuda:",
         "opciones": [
-          "Se abriga a la persona",
-          "Se enfría de inmediato con agua fría y compresas",
-          "Se le da café",
-          "Se le deja sola para que descanse"
+          "Se abriga a la persona para evitar escalofríos",
+          "Se enfría de inmediato con agua y compresas frías",
+          "Se le da café o un refresco para reanimarla",
+          "Se le deja sola en un cuarto para que descanse"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Dónde se colocan compresas frías o hielo para enfriar más rápido?",
         "opciones": [
-          "En los pies",
-          "En la espalda baja",
+          "En los pies y las pantorrillas",
+          "En la espalda baja y el abdomen",
           "En cuello, axilas e ingles",
-          "En las manos"
+          "En las manos y los antebrazos"
         ],
         "correcta": 2
       },
@@ -4255,9 +4250,9 @@ var CCE_CATALOG = [
         "pregunta": "¿Quién es más vulnerable al calor?",
         "opciones": [
           "El personal de nuevo ingreso aún no aclimatado",
-          "Quien trabaja en oficinas con clima",
-          "Quien trabaja de noche en interiores",
-          "Nadie en particular"
+          "Quien trabaja en oficinas con aire acondicionado",
+          "Quien trabaja de noche en áreas interiores",
+          "Nadie en particular; el riesgo es igual para todos"
         ],
         "correcta": 0
       },
@@ -4265,8 +4260,8 @@ var CCE_CATALOG = [
         "pregunta": "Tiene mayor riesgo el personal que:",
         "opciones": [
           "Trabaja en oficina con aire acondicionado",
-          "Trabaja al exterior en las horas de mayor temperatura",
-          "Trabaja en archivo",
+          "Trabaja al exterior en las horas de más calor",
+          "Trabaja en archivo clínico durante el día",
           "Trabaja en turno nocturno en interiores"
         ],
         "correcta": 1
@@ -4274,19 +4269,19 @@ var CCE_CATALOG = [
       {
         "pregunta": "Trabajar en pareja en ambientes calurosos sirve para:",
         "opciones": [
-          "Terminar más rápido",
-          "Compartir el agua",
+          "Terminar la tarea más rápido y descansar antes",
+          "Compartir el agua y ahorrar en hidratación",
           "Que un compañero detecte síntomas que tú no notas",
-          "Evitar las pausas"
+          "Evitar las pausas porque uno cubre al otro"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Qué norma regula las condiciones térmicas elevadas en el trabajo?",
         "opciones": [
-          "NOM-087",
-          "NOM-004",
-          "NOM-018",
+          "NOM-087-SEMARNAT-SSA1-2002",
+          "NOM-004-SSA3-2012",
+          "NOM-018-STPS-2015",
           "NOM-015-STPS-2001"
         ],
         "correcta": 3
@@ -4434,30 +4429,30 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Qué debe hacerse primero al recibir la amenaza?",
         "opciones": [
-          "Colgar y salir del edificio",
+          "Colgar y salir del edificio de inmediato",
           "Registrar datos y activar el protocolo",
-          "Publicarlo en el chat del área",
-          "Buscar el objeto por tu cuenta"
+          "Publicarlo en el chat del área para alertar",
+          "Buscar el objeto por tu cuenta en el área"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Durante una llamada de amenaza se debe:",
         "opciones": [
-          "Colgar de inmediato",
-          "Discutir con quien llama",
-          "Mantener la calma, prolongar la llamada y anotar detalles",
-          "Transferirla a cualquier extensión"
+          "Colgar de inmediato y salir del área",
+          "Discutir con quien llama para que se identifique",
+          "Mantener la calma, prolongar la llamada y anotar",
+          "Transferirla a cualquier extensión disponible"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Qué conviene anotar de la llamada?",
         "opciones": [
-          "Solo la hora",
-          "Nada, basta con recordarlo",
-          "Solo si la voz era de hombre o mujer",
-          "Palabras exactas, hora, número, voz y ruidos de fondo"
+          "Solo la hora en que terminó la llamada",
+          "Nada; basta con recordarla y contarla después",
+          "Solo si la voz era de hombre o de mujer",
+          "Palabras exactas, hora, número, voz y ruidos"
         ],
         "correcta": 3
       },
@@ -4465,9 +4460,9 @@ var CCE_CATALOG = [
         "pregunta": "Ante un objeto sospechoso:",
         "opciones": [
           "No tocarlo, alejarse y dar aviso",
-          "Abrirlo para revisarlo",
-          "Moverlo a un lugar seguro",
-          "Cubrirlo con una manta"
+          "Abrirlo con cuidado para revisarlo",
+          "Moverlo a un lugar seguro y aislado",
+          "Cubrirlo con una manta para contenerlo"
         ],
         "correcta": 0
       },
@@ -4484,10 +4479,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "Si la amenaza llega por correo electrónico:",
         "opciones": [
-          "Se borra para no alarmar",
-          "Se reenvía a todo el personal",
+          "Se borra para no alarmar al personal",
+          "Se reenvía a todo el personal del hospital",
           "Se conserva sin borrar ni reenviar y se avisa",
-          "Se responde al remitente"
+          "Se responde al remitente para pedir datos"
         ],
         "correcta": 2
       },
@@ -4495,8 +4490,8 @@ var CCE_CATALOG = [
         "pregunta": "La evacuación se realiza:",
         "opciones": [
           "Por la salida más cercana a tu casa",
-          "Cuando cada quien lo decida",
-          "Solo si hay humo",
+          "Cuando cada quien lo decida según su área",
+          "Solo si hay humo o un ruido de explosión",
           "Por las rutas que indique la brigada"
         ],
         "correcta": 3
@@ -4505,19 +4500,19 @@ var CCE_CATALOG = [
         "pregunta": "Después de evacuar, se puede regresar al edificio:",
         "opciones": [
           "Cuando la autoridad lo autorice",
-          "A los 10 minutos",
-          "Cuando el jefe de área quiera",
-          "En cuanto pase el susto"
+          "A los 10 minutos si no pasa nada",
+          "Cuando el jefe de área lo decida",
+          "En cuanto pase el susto y haya calma"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Compartir la amenaza en redes sociales:",
         "opciones": [
-          "Ayuda a que todos se enteren",
+          "Ayuda a que todos se enteren a tiempo",
           "No debe hacerse: genera pánico y rumores",
-          "Es obligatorio",
-          "Solo si se omite el nombre del hospital"
+          "Es obligatorio para avisar a la comunidad",
+          "Se permite si se omite el nombre del hospital"
         ],
         "correcta": 1
       },
@@ -4534,9 +4529,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "Para avisar de un objeto sospechoso conviene usar:",
         "opciones": [
-          "El radio junto al objeto",
-          "El celular al lado del objeto",
-          "Un mensaje en redes sociales",
+          "El radio de Seguridad, junto al objeto",
+          "El celular, para tomar una foto del objeto",
+          "Un mensaje en el chat o en redes sociales",
           "Un teléfono fijo alejado del objeto"
         ],
         "correcta": 3
@@ -4725,19 +4720,19 @@ var CCE_CATALOG = [
         "pregunta": "¿Cuáles son los tres valores institucionales?",
         "opciones": [
           "Ética profesional, responsabilidad y compasión",
-          "Puntualidad, orden y limpieza",
-          "Rapidez, eficiencia y ahorro",
-          "Lealtad, silencio y obediencia"
+          "Puntualidad, orden y limpieza en el área",
+          "Rapidez, eficiencia y ahorro de recursos",
+          "Lealtad, discreción y obediencia al jefe"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Nuestra visión es ser el mejor hospital con:",
         "opciones": [
-          "Los precios más bajos",
+          "Los precios más bajos de la región en todos sus servicios",
           "Servicios médicos turísticos de nivel internacional y alta responsabilidad humana",
-          "Más sucursales que la competencia",
-          "Solo atención a extranjeros"
+          "Más hospitales y consultorios que cualquier otro grupo del país",
+          "Atención exclusiva para pacientes extranjeros con seguro internacional"
         ],
         "correcta": 1
       },
@@ -4774,29 +4769,29 @@ var CCE_CATALOG = [
       {
         "pregunta": "El gafete institucional debe:",
         "opciones": [
-          "Guardarse durante la jornada",
+          "Guardarse en el locker durante la jornada",
           "Portarse visible durante la jornada",
-          "Prestarse a otros colaboradores",
-          "Usarse solo en la entrada"
+          "Prestarse a otros colaboradores si lo olvidan",
+          "Usarse solo para entrar y salir del hospital"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Cómo se contesta una llamada interna?",
         "opciones": [
-          "“¿Bueno?”",
-          "“¿Quién habla?”",
+          "“¿Bueno?, ¿quién habla y con quién quiere hablar?”",
+          "“¿Quién habla y qué necesita del departamento?”",
           "“Departamento de (área), le atiende (nombre)”",
-          "“Diga”"
+          "“Diga, aquí es el hospital, lo escucho”"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Qué prestación es superior a la ley?",
         "opciones": [
-          "Aguinaldo",
-          "IMSS",
-          "Prima vacacional",
+          "Aguinaldo de 15 días de salario cada diciembre",
+          "Inscripción al IMSS desde el primer día de trabajo",
+          "Prima vacacional del 25 % sobre los días de vacaciones",
           "Consulta gratuita 24/7 para ti y tu familia directa"
         ],
         "correcta": 3
@@ -4834,9 +4829,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "La información de pacientes y colaboradores es:",
         "opciones": [
-          "Pública",
-          "Apta para compartirse en redes sociales",
-          "De libre consulta para cualquiera",
+          "Pública, porque somos un hospital abierto",
+          "Apta para compartirse en redes sociales sin nombres",
+          "De libre consulta para cualquier colaborador",
           "Confidencial y de uso exclusivamente laboral"
         ],
         "correcta": 3
@@ -4984,8 +4979,8 @@ var CCE_CATALOG = [
         "opciones": [
           "En Cartas y consentimientos",
           "En Signos vitales",
-          "En Facturación",
-          "En Agenda"
+          "En Facturación y cargos",
+          "En Agenda de citas"
         ],
         "correcta": 0
       },
@@ -5002,19 +4997,19 @@ var CCE_CATALOG = [
       {
         "pregunta": "Antes de obtener la firma del paciente se debe:",
         "opciones": [
-          "Entregar el formato sin explicación",
-          "Firmar en su nombre",
+          "Entregar el formato para que lo lea solo",
+          "Firmar en su nombre si tiene prisa",
           "Explicar el procedimiento, beneficios, riesgos y alternativas",
-          "Esperar al alta"
+          "Esperar al alta para recabar todas las firmas juntas"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Qué norma establece los requisitos del consentimiento informado en el expediente?",
         "opciones": [
-          "NOM-087",
-          "NOM-018",
-          "NOM-035",
+          "NOM-087-SEMARNAT-SSA1-2002",
+          "NOM-018-STPS-2015",
+          "NOM-035-STPS-2018",
           "NOM-004-SSA3-2012"
         ],
         "correcta": 3
@@ -5042,19 +5037,19 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Quién firma como responsable de proporcionar la información?",
         "opciones": [
-          "El cajero",
-          "El familiar",
+          "El cajero que registra el procedimiento",
+          "El familiar que acompaña al paciente",
           "El médico que informa y recaba el consentimiento",
-          "El personal de seguridad"
+          "El personal de seguridad como testigo"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Si el paciente es menor de edad, firma:",
         "opciones": [
-          "El propio menor",
-          "Cualquier acompañante",
-          "El médico tratante",
+          "El propio menor, si sabe escribir",
+          "Cualquier acompañante mayor de edad",
+          "El médico tratante en su representación",
           "Su padre, madre, tutor o representante legal"
         ],
         "correcta": 3
@@ -5063,38 +5058,38 @@ var CCE_CATALOG = [
         "pregunta": "Si el paciente rechaza el procedimiento después de ser informado:",
         "opciones": [
           "Se documenta la explicación y su decisión",
-          "Se le obliga a firmar",
-          "Se omite del expediente",
-          "Se cancela su atención"
+          "Se le insiste hasta que acepte firmar",
+          "Se omite del expediente para no afectarlo",
+          "Se cancela su atención en el hospital"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Las alternativas que se explican al paciente incluyen:",
         "opciones": [
-          "Solo la cirugía",
+          "Solo la cirugía que propone el médico",
           "También la opción de no realizar el procedimiento",
-          "Únicamente las más costosas",
-          "Ninguna"
+          "Únicamente las opciones de mayor costo",
+          "Ninguna; solo se explica el procedimiento"
         ],
         "correcta": 1
       },
       {
         "pregunta": "En una urgencia con riesgo para la vida, sin posibilidad de obtener el consentimiento:",
         "opciones": [
-          "Se espera a que llegue un familiar",
-          "Se traslada sin atender",
+          "Se espera a que llegue un familiar para firmar",
+          "Se traslada a otro hospital sin atenderlo",
           "Se actúa y se deja constancia en el expediente",
-          "Se pide la firma de cualquier persona"
+          "Se pide la firma de cualquier persona presente"
         ],
         "correcta": 2
       },
       {
         "pregunta": "La carta debe incluir, entre otros datos:",
         "opciones": [
-          "El costo del procedimiento",
-          "La opinión del familiar",
-          "El número de habitación",
+          "El costo del procedimiento y la forma de pago",
+          "La opinión del familiar sobre el tratamiento",
+          "El número de habitación y la cama asignada",
           "Los riesgos y beneficios esperados del acto autorizado"
         ],
         "correcta": 3
@@ -5323,18 +5318,18 @@ var CCE_CATALOG = [
         "pregunta": "¿A quién aplica la AESP 6?",
         "opciones": [
           "A todo el personal clínico y no clínico con contacto con pacientes",
-          "Solo a enfermería",
-          "Solo al personal médico",
-          "Solo a camilleros"
+          "Solo a enfermería, que aplica las escalas de valoración",
+          "Solo al personal médico que indica la movilización",
+          "Solo a camilleros y personal que traslada pacientes"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿En qué plazo se documenta la evaluación inicial del riesgo de caídas?",
         "opciones": [
-          "En la primera semana",
+          "En la primera semana de estancia",
           "Dentro de las primeras 24 horas",
-          "Solo al egreso",
+          "Solo al egreso, en el resumen",
           "Cuando el paciente lo solicite"
         ],
         "correcta": 1
@@ -5342,10 +5337,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Cuándo es obligatorio reevaluar el riesgo de caídas?",
         "opciones": [
-          "Solo al ingreso",
-          "Una vez por semana",
+          "Solo al ingreso, en la valoración inicial",
+          "Una vez por semana, en la revisión del expediente",
           "En cada cambio de turno, de estado de alerta o de servicio",
-          "Únicamente si el paciente se cae"
+          "Únicamente si el paciente se cae durante la estancia"
         ],
         "correcta": 2
       },
@@ -5363,9 +5358,9 @@ var CCE_CATALOG = [
         "pregunta": "¿Cuál es una medida universal que se aplica a todos los pacientes?",
         "opciones": [
           "Mantener los barandales elevados y la cama frenada",
-          "Sujetar a todos los pacientes",
-          "Prohibir que caminen",
-          "Retirar el timbre de la habitación"
+          "Sujetar a todos los pacientes durante la noche",
+          "Prohibir que caminen sin autorización médica",
+          "Retirar el timbre para que no se levanten"
         ],
         "correcta": 0
       },
@@ -5392,9 +5387,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "Con riesgo alto en la escala de Morse, ¿qué medida es obligatoria?",
         "opciones": [
-          "Que camine solo para fortalecerse",
-          "Dejar la cama en la posición más alta",
-          "Apagar la luz por la noche",
+          "Que camine solo varias veces para fortalecerse",
+          "Dejar la cama en la posición más alta para su comodidad",
+          "Apagar la luz por la noche para que descanse mejor",
           "Que permanezca acompañado por un familiar las 24 horas"
         ],
         "correcta": 3
@@ -5403,9 +5398,9 @@ var CCE_CATALOG = [
         "pregunta": "¿Qué escala se usa en pacientes pediátricos de 3 a 13 años?",
         "opciones": [
           "Humpty Dumpty",
-          "Morse",
-          "Braden",
-          "Norton"
+          "Morse modificada",
+          "Braden Q",
+          "Glasgow pediátrica"
         ],
         "correcta": 0
       },
@@ -5422,10 +5417,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "En imagenología, ¿cuándo se clasifica al paciente como de alto riesgo?",
         "opciones": [
-          "Solo si es mayor de 80 años",
-          "Solo si ya se cayó antes",
-          "Si tiene drenajes o dispositivos, depende de otros para moverse o requiere sedación",
-          "Nunca, en imagenología no se evalúa"
+          "Solo si es mayor de 80 años o vive con alguna discapacidad",
+          "Solo si ya se cayó antes en el hospital o en su casa",
+          "Si tiene dispositivos, depende de otros para moverse o requiere sedación",
+          "Nunca; en imagenología no se evalúa el riesgo de caídas"
         ],
         "correcta": 2
       },
@@ -5434,7 +5429,7 @@ var CCE_CATALOG = [
         "opciones": [
           "Verde",
           "Rojo",
-          "Azul",
+          "Azul celeste",
           "Amarillo"
         ],
         "correcta": 3
@@ -5443,27 +5438,27 @@ var CCE_CATALOG = [
         "pregunta": "Si un paciente se cae, ¿a quién se avisa primero?",
         "opciones": [
           "Al jefe inmediato y al médico de guardia",
-          "Solo a la familia",
-          "A mantenimiento",
-          "A nadie, solo se registra"
+          "Solo a la familia del paciente",
+          "A mantenimiento, para revisar la cama",
+          "A nadie; solo se registra en el formato"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Qué formato se llena para registrar una caída?",
         "opciones": [
-          "La hoja de cargos",
+          "La hoja de cargos del paciente",
           "El anexo 4, formato de registro de caídas",
-          "El consentimiento informado",
-          "La nota de egreso"
+          "El consentimiento informado firmado",
+          "La nota de egreso del médico tratante"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Una caída que provocó una fractura se reporta en la plataforma de calidad como:",
         "opciones": [
-          "Cuasifalla",
-          "Sin daño",
+          "Cuasi falla",
+          "Evento sin daño",
           "Evento centinela",
           "No se reporta"
         ],
@@ -5633,29 +5628,29 @@ var CCE_CATALOG = [
         "pregunta": "¿Qué es un ciclón tropical?",
         "opciones": [
           "Un sistema de aire cálido y húmedo con vientos que giran alrededor de un centro",
-          "Un sismo en el mar",
-          "Una lluvia ligera de temporada",
-          "Un frente frío del norte"
+          "Un sismo en el fondo del mar que provoca olas de gran altura en toda la costa",
+          "Una lluvia ligera de temporada que dura varios días seguidos sin viento fuerte",
+          "Un frente frío que baja del norte con vientos fuertes y descenso de la temperatura"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Cuál es el orden de evolución de un ciclón?",
         "opciones": [
-          "Huracán, tormenta, depresión",
+          "Huracán, tormenta tropical, depresión tropical",
           "Depresión tropical, tormenta tropical, huracán",
-          "Tormenta, huracán, depresión",
-          "Depresión, huracán, tormenta"
+          "Tormenta tropical, huracán, depresión tropical",
+          "Depresión tropical, huracán, tormenta tropical"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿En qué se basa la escala Saffir-Simpson?",
         "opciones": [
-          "En la cantidad de lluvia",
+          "En la cantidad de lluvia acumulada",
           "En el tamaño del ojo del huracán",
           "En la velocidad máxima del viento",
-          "En la temperatura del mar"
+          "En la temperatura de la superficie del mar"
         ],
         "correcta": 2
       },
@@ -5673,29 +5668,29 @@ var CCE_CATALOG = [
         "pregunta": "¿Cuál es una fuente oficial de información durante un huracán?",
         "opciones": [
           "El Servicio Meteorológico Nacional",
-          "Un grupo de chat de vecinos",
-          "Un video viral",
-          "Comentarios en redes sociales"
+          "Un grupo de chat de vecinos de la zona",
+          "Un video viral en redes sociales",
+          "Los comentarios de huéspedes y turistas"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Antes de la temporada, ¿qué se revisa en azoteas y exteriores?",
         "opciones": [
-          "La pintura",
+          "La pintura y el impermeabilizante decorativo",
           "Que desagües y canaletas estén libres y no haya objetos sueltos",
-          "Las plantas de ornato",
-          "Los letreros de horario"
+          "Las plantas de ornato y el riego del jardín de la entrada",
+          "Los letreros de horario y la señalización de estacionamiento"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Qué suministro es indispensable para la continuidad del hospital?",
         "opciones": [
-          "Papelería decorativa",
-          "Uniformes nuevos",
-          "Agua potable, gases medicinales y combustible para la planta de emergencia",
-          "Mobiliario de oficina"
+          "Papelería y material de oficina para varios meses",
+          "Uniformes nuevos y blancos para todo el personal",
+          "Agua potable, gases medicinales y combustible para la planta",
+          "Mobiliario de oficina y equipo de cómputo de repuesto"
         ],
         "correcta": 2
       },
@@ -5713,37 +5708,37 @@ var CCE_CATALOG = [
         "pregunta": "Si detectas un objeto que el viento podría lanzar, debes:",
         "opciones": [
           "Reportarlo de inmediato para que se corrija",
-          "Ignorarlo si es pequeño",
-          "Esperar a que pase el huracán",
-          "Moverlo a la azotea"
+          "Ignorarlo si es pequeño o de poco peso",
+          "Esperar a que pase el huracán para retirarlo",
+          "Moverlo a la azotea, lejos de las personas"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Durante la contingencia observas un daño en la instalación de gas. ¿Qué haces?",
         "opciones": [
-          "Lo reparo yo mismo",
+          "Lo reparo yo mismo con la herramienta del área",
           "Lo reporto al encargado y no lo manipulo",
-          "Abro todas las válvulas",
-          "Salgo del hospital sin avisar"
+          "Abro todas las válvulas para liberar la presión",
+          "Salgo del hospital sin avisar a nadie"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Durante el fenómeno, el personal debe:",
         "opciones": [
-          "Salir a revisar los daños",
-          "Ir a su casa",
+          "Salir a revisar los daños del edificio",
+          "Ir a su casa para proteger a su familia",
           "Mantener la calma y permanecer en su área asignada",
-          "Cambiar de área según prefiera"
+          "Cambiar de área según prefiera o le convenga"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Con quién se mantiene la comunicación durante una contingencia?",
         "opciones": [
-          "Con proveedores",
-          "Con la prensa",
+          "Con los proveedores de insumos",
+          "Con la prensa y los medios locales",
           "Con los pacientes dados de alta",
           "Con la Unidad Interna de Protección Civil"
         ],
@@ -5953,19 +5948,19 @@ var CCE_CATALOG = [
         "pregunta": "¿Para qué emergencia se activa el Código Amarillo?",
         "opciones": [
           "Derrames de sustancias químicas o de RPBI",
-          "Incendio",
-          "Amenaza de bomba",
-          "Paro cardiorrespiratorio"
+          "Incendio en cualquier área del hospital",
+          "Amenaza de bomba o de objeto sospechoso",
+          "Paro cardiorrespiratorio de un adulto"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Dónde puedes consultar los códigos de seguridad y sus extensiones?",
         "opciones": [
-          "Solo con el director",
+          "Solo con el director del hospital o con su asistente, por seguridad",
           "Al reverso de la credencial, en el procedimiento 8 o en la página de calidad",
-          "En el periódico mural de la cafetería",
-          "En ningún lado, se memorizan"
+          "En el periódico mural de la cafetería y en los elevadores de servicio",
+          "En ningún lado; se memorizan en la inducción del primer día de trabajo"
         ],
         "correcta": 1
       },
@@ -5982,8 +5977,8 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Cómo identificas que un derrame es químico?",
         "opciones": [
-          "Por el olor",
-          "Por el color del piso",
+          "Por el olor fuerte que despide",
+          "Por el color que deja en el piso",
           "Por el símbolo de riesgo biológico",
           "Por los pictogramas en rombo del envase"
         ],
@@ -5995,7 +5990,7 @@ var CCE_CATALOG = [
           "La hoja de datos de seguridad",
           "La factura del proveedor",
           "El expediente clínico",
-          "La bitácora de visitas"
+          "La bitácora de visitas del área"
         ],
         "correcta": 0
       },
@@ -6033,38 +6028,38 @@ var CCE_CATALOG = [
         "pregunta": "¿Con qué se inactiva la sangre en un derrame biológico?",
         "opciones": [
           "Hipoclorito de sodio al 6 %",
-          "Alcohol en gel",
-          "Agua caliente",
-          "Detergente de ropa"
+          "Alcohol en gel al 70 %",
+          "Agua caliente a presión",
+          "Detergente de ropa diluido"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Con qué se hace la desinfección profunda después de un derrame de RPBI?",
         "opciones": [
-          "Solo con agua",
+          "Solo con agua limpia y un trapo",
           "Con sales cuaternarias y después agua y jabón",
-          "Con aromatizante",
-          "No se desinfecta"
+          "Con aromatizante para eliminar el olor",
+          "No se desinfecta si ya se recogió todo"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Cuál es el primer paso ante cualquier derrame?",
         "opciones": [
-          "Limpiar con un trapo",
-          "Esperar a que se seque",
+          "Limpiar con un trapo lo más rápido posible",
+          "Esperar a que se seque para recogerlo",
           "Detectarlo y activar el código",
-          "Tomar una foto para redes"
+          "Tomar una foto para el chat del área"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Después de usar el kit de derrames, ¿qué debes hacer?",
         "opciones": [
-          "Guardarlo como quedó",
-          "Llevárselo a casa",
-          "Tirarlo completo",
+          "Guardarlo como quedó para la siguiente vez",
+          "Llevárselo a casa para tenerlo a la mano",
+          "Tirarlo completo y pedir uno nuevo",
           "Reponer el material que se usó"
         ],
         "correcta": 3
@@ -6252,10 +6247,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Qué es el riesgo?",
         "opciones": [
-          "Un objeto peligroso",
+          "Un objeto o sustancia que puede causar daño",
           "La probabilidad de que un peligro cause daño",
-          "Una enfermedad de trabajo",
-          "El formato de reporte"
+          "Una enfermedad causada por el trabajo",
+          "El formato con que se reporta un evento"
         ],
         "correcta": 1
       },
@@ -6292,29 +6287,29 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Quiénes integran la Comisión Mixta de Seguridad e Higiene?",
         "opciones": [
-          "Solo directivos",
+          "Solo directivos y jefes de área",
           "Representantes de los trabajadores y del patrón",
-          "Solo personal de Protección Civil",
-          "Pacientes y familiares"
+          "Solo personal de Protección Civil y brigadas",
+          "Pacientes, familiares y personal de Calidad"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Cómo verifica la Comisión Mixta el cumplimiento de las medidas?",
         "opciones": [
-          "Con encuestas a pacientes",
-          "Revisando redes sociales",
+          "Con encuestas de satisfacción a los pacientes",
+          "Revisando lo que se publica en redes sociales",
           "Con recorridos de verificación en las instalaciones",
-          "No verifica"
+          "No verifica; solo recibe los reportes por escrito"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Cuál es el orden del ciclo de prevención?",
         "opciones": [
-          "Reportar, olvidar, corregir",
-          "Corregir, inspeccionar, investigar",
-          "Investigar, sancionar, cerrar",
+          "Reportar, archivar el reporte y corregir cuando haya presupuesto",
+          "Corregir, inspeccionar, investigar y cerrar sin seguimiento",
+          "Investigar, sancionar al responsable y cerrar el caso",
           "Inspeccionar, investigar, reportar, corregir y dar seguimiento"
         ],
         "correcta": 3
@@ -6323,19 +6318,19 @@ var CCE_CATALOG = [
         "pregunta": "¿Qué dato debe incluir el formato de reporte?",
         "opciones": [
           "Descripción de los hechos, turno, lugar y actividad",
-          "Solo el nombre del jefe",
-          "La opinión personal de quien reporta",
-          "El salario del trabajador"
+          "Solo el nombre del jefe inmediato y su firma",
+          "La opinión personal de quien reporta sobre el culpable",
+          "El salario y la antigüedad del trabajador lesionado"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Cómo debe ser la información de una investigación?",
         "opciones": [
-          "Basada en rumores",
+          "Basada en rumores y comentarios del área",
           "Objetiva, comprobable y sin suposiciones",
-          "Basada en la opinión del grupo",
-          "Recabada semanas después"
+          "Basada en la opinión de la mayoría del grupo",
+          "Recabada semanas después, cuando haya calma"
         ],
         "correcta": 1
       },
@@ -6352,10 +6347,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "Si encuentras una aguja fuera de su contenedor, ¿qué haces?",
         "opciones": [
-          "La dejas donde está",
-          "La tiras a la basura común",
-          "Esperas a fin de mes",
-          "La desechas con seguridad en su contenedor y reportas la condición a tu jefatura"
+          "La dejas donde está para que la recoja limpieza",
+          "La tiras a la basura común con cuidado",
+          "Esperas a fin de mes para reportarla en la junta",
+          "La desechas en su contenedor y reportas la condición"
         ],
         "correcta": 3
       }
@@ -6537,10 +6532,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Qué es la mejora continua?",
         "opciones": [
-          "Un proceso permanente de identificar oportunidades, implementar acciones y evaluar resultados",
-          "Una auditoría que se hace una vez al año",
-          "Un trámite exclusivo de Seguridad e Higiene",
-          "Un castigo por incumplir"
+          "Un proceso permanente de identificar oportunidades, actuar y evaluar resultados",
+          "Una auditoría externa que se hace una vez al año para renovar certificaciones",
+          "Un trámite exclusivo del área de Seguridad e Higiene sin participación de otros",
+          "Un mecanismo para sancionar a quien incumple las medidas de seguridad"
         ],
         "correcta": 0
       },
@@ -6557,19 +6552,19 @@ var CCE_CATALOG = [
       {
         "pregunta": "En la etapa “Verificar” se realizan:",
         "opciones": [
-          "Compras de equipo",
-          "Contrataciones",
+          "Compras de equipo y de material de protección",
+          "Contrataciones de personal para cubrir vacantes",
           "Inspecciones, auditorías y análisis de indicadores",
-          "Vacaciones del personal"
+          "Programación de las vacaciones del personal"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Cuál es una fuente de oportunidades de mejora?",
         "opciones": [
-          "Los rumores",
-          "Las redes sociales",
-          "El clima",
+          "Los rumores que circulan entre el personal",
+          "Las publicaciones en redes sociales",
+          "El pronóstico del clima de la semana",
           "Las sugerencias del personal"
         ],
         "correcta": 3
@@ -6578,9 +6573,9 @@ var CCE_CATALOG = [
         "pregunta": "Una acción correctiva busca:",
         "opciones": [
           "Eliminar la causa raíz de una desviación para que no se repita",
-          "Anticipar algo que nunca ha pasado",
-          "Sancionar al responsable",
-          "Cerrar el hallazgo sin revisar"
+          "Anticipar algo que nunca ha pasado, aunque no haya indicios",
+          "Sancionar al responsable para que sirva de ejemplo al área",
+          "Cerrar el hallazgo rápido, sin revisar si funcionó la medida"
         ],
         "correcta": 0
       },
@@ -6597,19 +6592,19 @@ var CCE_CATALOG = [
       {
         "pregunta": "Antes de cerrar formalmente un hallazgo se debe:",
         "opciones": [
-          "Esperar un año",
-          "Avisar a los pacientes",
+          "Esperar un año para ver si se repite",
+          "Avisar a los pacientes y a sus familiares",
           "Verificar que la acción funcionó y documentarlo",
-          "Borrar el registro"
+          "Borrar el registro para no afectar los indicadores"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Ante un accidente, ¿a quién se notifica?",
         "opciones": [
-          "A nadie",
-          "Solo a un compañero",
-          "A recursos humanos de otra sede",
+          "A nadie, si la lesión es leve y no hubo incapacidad",
+          "Solo a un compañero de confianza que haya visto lo ocurrido",
+          "A recursos humanos de otra sede, al final de la semana",
           "Al jefe inmediato y a Seguridad e Higiene"
         ],
         "correcta": 3
@@ -6618,38 +6613,38 @@ var CCE_CATALOG = [
         "pregunta": "¿Cuál es un indicador de desempeño en seguridad?",
         "opciones": [
           "Porcentaje de acciones correctivas cerradas",
-          "Número de pacientes atendidos",
-          "Ventas de la farmacia",
-          "Temperatura ambiente"
+          "Número de pacientes atendidos en el mes",
+          "Ventas mensuales de la farmacia externa",
+          "Temperatura ambiente promedio del área"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Qué le corresponde a cada trabajador?",
         "opciones": [
-          "Aprobar presupuestos",
+          "Aprobar los presupuestos de seguridad",
           "Reportar riesgos y condiciones inseguras",
-          "Firmar auditorías externas",
-          "Nada, es tarea de Seguridad e Higiene"
+          "Firmar las auditorías externas del sistema",
+          "Nada; es tarea exclusiva de Seguridad e Higiene"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Qué le corresponde a la dirección?",
         "opciones": [
-          "Hacer las inspecciones diarias",
-          "Llenar los formatos de cada área",
+          "Hacer personalmente las inspecciones diarias",
+          "Llenar los formatos de cada área del hospital",
           "Facilitar los recursos necesarios",
-          "Ignorar los indicadores"
+          "Ignorar los indicadores si no hay accidentes"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Si después de aplicar una acción el problema persiste, se debe:",
         "opciones": [
-          "Cerrar el hallazgo de todos modos",
-          "Dejar de medirlo",
-          "Culpar al área",
+          "Cerrar el hallazgo de todos modos para no atrasarse",
+          "Dejar de medirlo porque ya se hizo lo posible",
+          "Culpar al área responsable y escalar el caso",
           "Reiniciar el ciclo con nuevas acciones"
         ],
         "correcta": 3
@@ -6842,20 +6837,20 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Qué es un RPBI?",
         "opciones": [
-          "Material generado en la atención médica con microorganismos capaces de causar enfermedad",
-          "Cualquier basura del consultorio",
-          "Solo los medicamentos caducados",
-          "El papel de la recepción"
+          "Material de la atención médica con microorganismos capaces de causar enfermedad",
+          "Cualquier basura que se genera en el consultorio durante la jornada",
+          "Solo los medicamentos caducados que se retiran de maletas y consultorios",
+          "El papel y los empaques que se desechan en la recepción del consultorio"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Qué va en la bolsa roja?",
         "opciones": [
-          "Botellas de solución vacías",
+          "Botellas de solución vacías, con sus tapas y equipos",
           "Sangre y materiales saturados o que gotean fluidos",
-          "Agujas",
-          "Ámpulas de vidrio"
+          "Agujas y lancetas usadas, sin colocarles el capuchón",
+          "Ámpulas de vidrio rotas o vacías de medicamentos"
         ],
         "correcta": 1
       },
@@ -6872,10 +6867,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Qué puede ir dentro del recipiente rígido rojo?",
         "opciones": [
-          "Jeringas completas y gasas",
-          "Basura del escritorio",
-          "Ámpulas de vidrio",
-          "Solo punzocortantes: agujas sin capuchón, lancetas y bisturís"
+          "Jeringas completas, gasas y algodones usados",
+          "Basura del escritorio y papel contaminado",
+          "Ámpulas de vidrio y frascos de medicamento",
+          "Solo punzocortantes: agujas, lancetas y bisturís"
         ],
         "correcta": 3
       },
@@ -6884,8 +6879,8 @@ var CCE_CATALOG = [
         "opciones": [
           "En el recipiente blanco para vidrio",
           "En el recipiente rígido rojo",
-          "En la bolsa amarilla",
-          "En la bolsa roja"
+          "En la bolsa amarilla de patológicos",
+          "En la bolsa roja de RPBI"
         ],
         "correcta": 0
       },
@@ -6902,10 +6897,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Se pueden comprimir las bolsas de RPBI para que quepa más?",
         "opciones": [
-          "Sí, siempre",
-          "Solo al final del turno",
-          "No, está prohibido porque se rompen y derraman",
-          "Solo si están medio llenas"
+          "Sí, siempre, para ahorrar bolsas",
+          "Solo al final del turno, con cuidado",
+          "No; está prohibido porque se rompen y derraman",
+          "Solo si están medio llenas y bien cerradas"
         ],
         "correcta": 2
       },
@@ -6923,9 +6918,9 @@ var CCE_CATALOG = [
         "pregunta": "¿Qué se anota sobre el recipiente sellado?",
         "opciones": [
           "La fecha y el nombre del consultorio",
-          "El nombre del paciente",
-          "El costo del material",
-          "Nada"
+          "El nombre del último paciente atendido",
+          "El costo del material desechado",
+          "Nada; el recipiente ya viene rotulado"
         ],
         "correcta": 0
       },
@@ -6942,10 +6937,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "Antes de entregar un contenedor lleno, debes:",
         "opciones": [
-          "Vaciarlo",
-          "Lavarlo",
+          "Vaciarlo en una bolsa roja",
+          "Lavarlo con cloro para reutilizarlo",
           "Tener un contenedor de reemplazo disponible",
-          "Dejarlo afuera del consultorio"
+          "Dejarlo afuera del consultorio para el recolector"
         ],
         "correcta": 2
       },
@@ -7118,9 +7113,9 @@ var CCE_CATALOG = [
         "pregunta": "¿Por qué es indispensable cargar el material en la cuenta del paciente?",
         "opciones": [
           "Porque el sistema solo resurte lo que se descontó del stock",
-          "Porque así lo pide el paciente",
-          "Para tener menos material",
-          "No es indispensable"
+          "Porque el paciente lo pide para su reembolso con el seguro",
+          "Para tener menos material guardado en maletas y consultorios",
+          "No es indispensable si el material se usó en una urgencia"
         ],
         "correcta": 0
       },
@@ -7137,19 +7132,19 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Qué debe indicar la requisición además del material usado?",
         "opciones": [
-          "El nombre del proveedor",
-          "El costo unitario",
+          "El nombre del proveedor y su número de pedido",
+          "El costo unitario de cada insumo solicitado",
           "La cuenta donde se cargó y si es para maleta o consultorio",
-          "El diagnóstico del paciente"
+          "El diagnóstico del paciente al que se le aplicó"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿En qué formato se envía la requisición?",
         "opciones": [
-          "Foto por WhatsApp",
-          "Papel por mensajería",
-          "Mensaje de voz",
+          "Foto de la hoja por WhatsApp al almacén",
+          "Papel original por mensajería interna",
+          "Mensaje de voz al coordinador de guardia",
           "PDF a los correos de prehospitalario y almacén"
         ],
         "correcta": 3
@@ -7167,29 +7162,29 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Cuál es el límite para el resto de consultorios de Cabo San Lucas?",
         "opciones": [
-          "Lunes a mediodía",
+          "Lunes antes del mediodía",
           "Viernes antes de las 9:00 a. m.",
-          "Domingo por la noche",
-          "No hay límite"
+          "Domingo antes de las 10:00 p. m.",
+          "No hay límite; se envía cuando se necesite"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Al recibir material, ¿qué se coteja?",
         "opciones": [
-          "Solo la factura",
-          "Solo el número de cajas",
-          "El material contra la hoja de traspaso, y la hoja de traspaso contra la requisición",
-          "Nada, se acomoda directo"
+          "Solo la factura del proveedor contra el pedido que se hizo",
+          "Solo el número de cajas contra la guía de envío del almacén",
+          "El material contra la hoja de traspaso, y esta contra la requisición",
+          "Nada; el material se acomoda directo en el consultorio al llegar"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Un insumo se cargó pero no se surtió. ¿Qué haces?",
         "opciones": [
-          "Lo compras por tu cuenta",
-          "Lo olvidas",
-          "Lo cargas otra vez",
+          "Lo compras por tu cuenta y pides reembolso",
+          "Lo olvidas, porque ya quedó registrado",
+          "Lo cargas otra vez en la misma cuenta",
           "Elaboras una carta de hechos solicitando el envío"
         ],
         "correcta": 3
@@ -7197,40 +7192,40 @@ var CCE_CATALOG = [
       {
         "pregunta": "Olvidaste cargar un insumo. ¿Qué procede?",
         "opciones": [
-          "Pedir autorización al Dr. Vera para cargarlo en una consulta posterior y solicitarlo después",
-          "Pedirlo sin cargo",
-          "Cargarlo a cualquier paciente sin autorización",
-          "No pedirlo nunca"
+          "Pedir autorización al Dr. Vera para cargarlo en una consulta posterior",
+          "Pedirlo al almacén sin cargo, explicando que se olvidó",
+          "Cargarlo a cualquier paciente del día sin pedir autorización",
+          "No pedirlo nunca y trabajar con lo que quede en la maleta"
         ],
         "correcta": 0
       },
       {
         "pregunta": "El insumo se cargó bien, pero almacén sigue mostrando existencia. ¿A quién avisas?",
         "opciones": [
-          "Al paciente",
+          "Al paciente al que se le cargó el insumo",
           "Al Lic. Armando Hernández de Auditoría",
-          "A recepción del hotel",
-          "A nadie"
+          "A la recepción del hotel donde está el consultorio",
+          "A nadie; el sistema se corrige solo al cierre"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Qué material caducado debes retirar?",
         "opciones": [
-          "Solo el que ya caducó hace un año",
-          "Ninguno, lo retira almacén",
-          "El que caduca en el mes en curso, e identificar el que caduca en los próximos 3 meses",
-          "Solo los medicamentos controlados"
+          "Solo el que ya caducó hace un año o más, para no desperdiciar",
+          "Ninguno; lo retira el almacén en su recorrido mensual por consultorios",
+          "El que caduca en el mes en curso, e identificar el de los próximos 3 meses",
+          "Solo los medicamentos controlados y los refrigerados de la maleta"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Cómo se repone el material caducado?",
         "opciones": [
-          "Automáticamente por sistema",
-          "Tirándolo a la basura",
-          "Pidiéndolo como nuevo sin avisar",
-          "Enviándolo físicamente al almacén, rotulado, con su carta de hechos"
+          "Automáticamente, porque el sistema detecta la caducidad",
+          "Tirándolo a la basura y pidiendo uno nuevo al almacén",
+          "Pidiéndolo como material nuevo sin avisar de la caducidad",
+          "Enviándolo al almacén, rotulado, con su carta de hechos"
         ],
         "correcta": 3
       }
@@ -7275,38 +7270,38 @@ var CCE_CATALOG = [
         "pregunta": "¿Por qué hospital y ambulancia necesitan cada uno su juego de formatos?",
         "opciones": [
           "Porque son entidades distintas, con razón social propia",
-          "Porque así se ve más ordenado",
-          "Porque lo pide el paciente",
-          "No los necesitan"
+          "Porque así se ve más ordenado el expediente del paciente",
+          "Porque el paciente lo pide para su aseguradora",
+          "No los necesitan; se usa un solo juego para ambos"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Dónde se escribe el método de pago?",
         "opciones": [
-          "Al reverso del FRAP",
+          "Al reverso del FRAP, con letra pequeña",
           "Como título del documento",
-          "En una nota aparte",
-          "No se escribe"
+          "En una nota aparte engrapada",
+          "No se escribe; se informa por radio"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Quién puede autorizar un cobro?",
         "opciones": [
-          "Cualquier paramédico",
-          "El paciente",
+          "Cualquier paramédico que atienda el servicio",
+          "El paciente o su acompañante",
           "El coordinador, el gerente o el director",
-          "El operador"
+          "El operador de la ambulancia"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Cuál de estas identificaciones NO es válida para una cuenta por cobrar internacional?",
         "opciones": [
-          "Pasaporte",
-          "Licencia de conducir",
-          "INE",
+          "Pasaporte vigente",
+          "Licencia de conducir extranjera",
+          "Credencial para votar (INE)",
           "Residencia temporal en México"
         ],
         "correcta": 3
@@ -7344,9 +7339,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "Al registrar la ubicación del servicio en el FRAP, debes incluir:",
         "opciones": [
-          "Solo el nombre de la calle",
-          "Solo el número de la ambulancia",
-          "Nada si es carretera",
+          "Solo el nombre de la calle o del hotel",
+          "Solo el número económico de la ambulancia",
+          "Nada, si el servicio fue en carretera",
           "La dirección y la ciudad específica"
         ],
         "correcta": 3
@@ -7355,29 +7350,29 @@ var CCE_CATALOG = [
         "pregunta": "Si una sección del FRAP no aplica al caso, se debe:",
         "opciones": [
           "Dejar en blanco, sin tachar ni subrayar",
-          "Tachar con una línea",
-          "Escribir “N/A” en grande",
-          "Llenar con datos inventados"
+          "Tachar la sección con una línea diagonal",
+          "Escribir “N/A” en grande sobre la sección",
+          "Llenarla con datos aproximados del caso"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Por qué se registran las pertenencias del paciente?",
         "opciones": [
-          "Para inventario de la ambulancia",
-          "Para proteger al personal ante posibles reclamos",
-          "Para cobrarlas",
-          "No se registran"
+          "Para el inventario de la ambulancia",
+          "Para proteger al personal ante reclamos",
+          "Para cobrarlas como parte del servicio",
+          "No se registran; son del paciente"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Qué datos de contacto son obligatorios en la carátula de una cuenta internacional?",
         "opciones": [
-          "Dirección del hotel",
-          "Número de habitación",
+          "Dirección y teléfono del hotel",
+          "Número de habitación y de reservación",
           "Celular y correo electrónico del paciente",
-          "Nombre del agente de viajes"
+          "Nombre y teléfono del agente de viajes"
         ],
         "correcta": 2
       },
@@ -7395,9 +7390,9 @@ var CCE_CATALOG = [
         "pregunta": "Con un paciente con seguro canadiense:",
         "opciones": [
           "Nunca se cobra depósito y se solicita su itinerario de vuelo completo",
-          "Siempre se cobra depósito",
-          "Se usa el formato Medicare",
-          "No se necesita número de caso"
+          "Siempre se cobra depósito antes de trasladarlo al hospital",
+          "Se usa el formato Medicare, igual que con pacientes de EE. UU.",
+          "No se necesita número de caso; basta con la póliza"
         ],
         "correcta": 0
       },
@@ -7414,10 +7409,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Quién puede firmar los formatos del seguro?",
         "opciones": [
-          "Cualquier acompañante",
+          "Cualquier acompañante mayor de edad",
           "El paramédico en nombre del paciente",
           "Solo el paciente o su representante legal",
-          "El operador"
+          "El operador, como testigo del servicio"
         ],
         "correcta": 2
       }
@@ -7585,9 +7580,9 @@ var CCE_CATALOG = [
         "pregunta": "Según la NOM-004, la nota médica es un documento:",
         "opciones": [
           "Clínico, administrativo y médico-legal",
-          "Solo administrativo",
-          "Opcional",
-          "Solo para el seguro"
+          "Solo administrativo, para el cobro",
+          "Opcional en consultas breves",
+          "Solo para el trámite del seguro"
         ],
         "correcta": 0
       },
@@ -7614,9 +7609,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Cuántas notas iniciales de urgencias se elaboran?",
         "opciones": [
-          "Una por día",
-          "Solo en casos graves",
-          "Una por semana",
+          "Una por día, aunque haya varias atenciones",
+          "Solo en casos graves que se trasladan",
+          "Una por semana por cada paciente",
           "Una por cada atención brindada"
         ],
         "correcta": 3
@@ -7634,29 +7629,29 @@ var CCE_CATALOG = [
       {
         "pregunta": "Para aplicar una inyección se requiere:",
         "opciones": [
-          "Solo que el paciente la pida",
+          "Solo que el paciente la pida y la pague",
           "Valoración previa, nota médica y receta",
-          "Nada, es un procedimiento simple",
-          "Únicamente la firma del paciente"
+          "Nada, porque es un procedimiento simple",
+          "Únicamente la firma del paciente en la hoja"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Si el paciente rechaza el manejo propuesto, ¿qué se hace?",
         "opciones": [
-          "No se registra",
-          "Se obliga al paciente",
-          "Se usa el formato de consentimiento para dejar constancia y se anotan las recomendaciones",
-          "Se cancela la nota"
+          "No se registra, porque no se le dio ningún tratamiento al paciente",
+          "Se insiste hasta que el paciente acepte el manejo y se anota que aceptó",
+          "Se deja constancia en el consentimiento y se anotan las recomendaciones",
+          "Se cancela la nota y se da de baja la consulta en el sistema"
         ],
         "correcta": 2
       },
       {
         "pregunta": "En un paciente que regresa a consulta, la nota debe:",
         "opciones": [
-          "Repetir la nota anterior",
-          "Omitir el tratamiento previo",
-          "Ser más corta",
+          "Repetir la nota anterior para ahorrar tiempo",
+          "Omitir el tratamiento previo para no confundir",
+          "Ser más corta que la nota inicial",
           "Detallar su evolución y estado actual"
         ],
         "correcta": 3
@@ -7665,29 +7660,29 @@ var CCE_CATALOG = [
         "pregunta": "¿Qué dato es indispensable documentar en un riesgo de trabajo?",
         "opciones": [
           "El mecanismo de lesión y la ubicación exacta",
-          "El salario del colaborador",
-          "La opinión del jefe",
-          "La marca del calzado"
+          "El salario y el puesto del colaborador",
+          "La opinión del jefe sobre lo ocurrido",
+          "La marca del calzado y del uniforme"
         ],
         "correcta": 0
       },
       {
         "pregunta": "Un colaborador con una lesión que requiere estudios de imagen se:",
         "opciones": [
-          "Envía a casa",
-          "Refiere al IMSS con la hoja de traslado impresa",
-          "Atiende sin nota",
-          "Cita la próxima semana"
+          "Envía a su casa con analgésico",
+          "Refiere al IMSS con la hoja de traslado",
+          "Atiende sin nota, por ser colaborador",
+          "Cita la próxima semana para revalorar"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Qué debe incluir una nota de traslado?",
         "opciones": [
-          "Solo el nombre del hospital destino",
-          "Solo la firma del médico",
-          "Diagnóstico, resumen clínico, tratamiento, condición al traslado y método de transporte",
-          "El costo del traslado"
+          "Solo el nombre del hospital destino y la hora de salida",
+          "Solo la firma del médico que refiere y su cédula",
+          "Diagnóstico, resumen clínico, tratamiento, condición y transporte",
+          "El costo del traslado y la forma de pago del paciente"
         ],
         "correcta": 2
       },
@@ -7695,9 +7690,9 @@ var CCE_CATALOG = [
         "pregunta": "En la nota de un huésped del hotel, debes:",
         "opciones": [
           "Explicar qué parte del hotel causó el accidente",
-          "Opinar sobre el mantenimiento del hotel",
-          "Omitir la exploración",
-          "Describir objetivamente síntomas y lesiones, sin detalles de la propiedad"
+          "Opinar sobre el mantenimiento de las instalaciones",
+          "Omitir la exploración si el huésped tiene prisa",
+          "Describir objetivamente síntomas y lesiones"
         ],
         "correcta": 3
       }
@@ -7995,9 +7990,9 @@ var CCE_CATALOG = [
         "pregunta": "¿Cuál es una característica de la farmacia hospitalaria?",
         "opciones": [
           "Suministra medicamentos por prescripción institucional, sin venta al público",
-          "Vende al público en general",
-          "Debe estar fuera del hospital",
-          "No requiere licencia sanitaria"
+          "Vende medicamentos al público en general con receta o sin ella",
+          "Debe estar ubicada fuera del hospital por seguridad sanitaria",
+          "No requiere licencia sanitaria porque es de uso interno"
         ],
         "correcta": 0
       },
@@ -8035,19 +8030,19 @@ var CCE_CATALOG = [
         "pregunta": "¿Qué receta requiere un medicamento del grupo I?",
         "opciones": [
           "Receta especial con código QR de COFEPRIS",
-          "Receta ordinaria",
-          "Ninguna",
-          "Receta simple sin firma"
+          "Receta ordinaria con firma del médico",
+          "Ninguna, si el paciente está hospitalizado",
+          "Receta simple sin firma, solo con sello"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Cómo se resguardan los medicamentos controlados?",
         "opciones": [
-          "En el anaquel general",
-          "Bajo llave, con libro de control y movimientos firmados por el responsable sanitario",
-          "En la central de enfermería",
-          "En el carro de paro sin registro"
+          "En el anaquel general, en orden alfabético con los demás medicamentos",
+          "Bajo llave, con libro de control firmado por el responsable sanitario",
+          "En la central de enfermería, a la mano del turno para urgencias",
+          "En el carro de paro, sin registro adicional porque ya está inventariado"
         ],
         "correcta": 1
       },
@@ -8064,9 +8059,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "En la clasificación AWaRe, los antimicrobianos de “Reserva” son:",
         "opciones": [
-          "De primera línea",
-          "De venta libre",
-          "De uso veterinario",
+          "Los de primera línea para infecciones comunes",
+          "Los de venta libre en farmacias externas",
+          "Los de uso exclusivamente veterinario",
           "De uso hospitalario, generalmente parenterales"
         ],
         "correcta": 3
@@ -8104,9 +8099,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "Al recibir un medicamento, ¿qué caducidad mínima debe tener?",
         "opciones": [
-          "1 mes",
-          "3 meses",
-          "6 meses",
+          "1 mes, como mínimo",
+          "3 meses, como mínimo",
+          "6 meses, como mínimo",
           "Más de 12 meses, salvo excepciones"
         ],
         "correcta": 3
@@ -8115,38 +8110,38 @@ var CCE_CATALOG = [
         "pregunta": "¿Qué documento exiges cuando el proveedor se equivoca en la entrega?",
         "opciones": [
           "Una carta de cambio",
-          "Una receta",
-          "Un pagaré",
-          "Ninguno"
+          "Una receta médica",
+          "Un pagaré firmado",
+          "Ninguno, se acepta"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿En qué momentos se realiza la conciliación de medicamentos?",
         "opciones": [
-          "Solo al egreso",
+          "Solo al egreso, al elaborar la receta final",
           "Al ingreso, al cambiar de médico o área y al egreso",
-          "Una vez por semana",
-          "Solo si el paciente lo pide"
+          "Una vez por semana durante la estancia",
+          "Solo si el paciente o su familiar lo pide"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Si al validar una prescripción detectas un problema, debes:",
         "opciones": [
-          "Sellarla de todos modos",
-          "Cambiar la dosis por tu cuenta",
+          "Sellarla de todos modos y avisar después al médico",
+          "Cambiar la dosis por tu cuenta y surtirla de inmediato",
           "Avisar al médico tratante y no sellar hasta resolverlo",
-          "Ignorarlo"
+          "Ignorarlo si el médico que la firmó tiene experiencia"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Qué norma hace obligatoria la farmacovigilancia?",
         "opciones": [
-          "NOM-087",
-          "NOM-017",
-          "NOM-004",
+          "NOM-087-SEMARNAT-SSA1-2002",
+          "NOM-017-STPS-2008",
+          "NOM-004-SSA3-2012",
           "NOM-220-SSA1-2016"
         ],
         "correcta": 3
@@ -8310,38 +8305,38 @@ var CCE_CATALOG = [
         "pregunta": "¿Quién marca el sitio quirúrgico?",
         "opciones": [
           "El cirujano responsable del procedimiento",
-          "La enfermera circulante",
-          "El camillero",
-          "El paciente por su cuenta"
+          "La enfermera circulante de la sala",
+          "El camillero que traslada al paciente",
+          "El paciente por su cuenta, en su cuarto"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Cuándo se marca el sitio quirúrgico?",
         "opciones": [
-          "Después de la incisión",
+          "Después de la incisión, ya con campos colocados",
           "Antes de que el paciente entre a quirófano",
-          "Durante la anestesia",
-          "Al terminar la cirugía"
+          "Durante la inducción de la anestesia",
+          "Al terminar la cirugía, para el registro"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿En qué casos se marca el sitio?",
         "opciones": [
-          "En todas las cirugías sin excepción",
-          "Solo en cirugía estética",
+          "En todas las cirugías sin ninguna excepción",
+          "Solo en cirugía estética o reconstructiva",
           "En órganos bilaterales, estructuras múltiples o niveles",
-          "Solo en niños"
+          "Solo en pacientes pediátricos que no cooperan"
         ],
         "correcta": 2
       },
       {
         "pregunta": "En cirugía oftalmológica la marca se coloca:",
         "opciones": [
-          "Sobre el párpado cerrado",
-          "En la frente al centro",
-          "En la mano del lado correcto",
+          "Sobre el párpado cerrado del ojo que se opera",
+          "En la frente, al centro, sobre la línea media",
+          "En la mano del lado correcto, en el dorso",
           "Como un punto sobre la ceja del lado correcto"
         ],
         "correcta": 3
@@ -8350,38 +8345,38 @@ var CCE_CATALOG = [
         "pregunta": "La fase de Entrada de la lista de verificación se realiza:",
         "opciones": [
           "Antes de la inducción anestésica",
-          "Después de la incisión",
-          "En recuperación",
-          "Al día siguiente"
+          "Después de la incisión de la piel",
+          "En recuperación, con el paciente despierto",
+          "Al día siguiente, en la visita médica"
         ],
         "correcta": 0
       },
       {
         "pregunta": "La pausa quirúrgica o tiempo fuera se realiza:",
         "opciones": [
-          "Antes de la inducción",
+          "Antes de la inducción anestésica",
           "Inmediatamente antes de la incisión",
-          "Al cerrar la herida",
-          "En el pasillo"
+          "Al cerrar la herida quirúrgica",
+          "En el pasillo, antes de entrar a la sala"
         ],
         "correcta": 1
       },
       {
         "pregunta": "En la pausa quirúrgica, cada integrante del equipo:",
         "opciones": [
-          "Firma sin hablar",
-          "Sale de la sala",
+          "Firma la lista sin hablar para no perder tiempo",
+          "Sale de la sala mientras habla el cirujano",
           "Se presenta por su nombre y función",
-          "Revisa su celular"
+          "Revisa su celular por si hay urgencias"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Qué se confirma en la fase de Salida?",
         "opciones": [
-          "El costo de la cirugía",
-          "La dieta del paciente",
-          "El turno siguiente",
+          "El costo de la cirugía y los insumos usados",
+          "La dieta del paciente para el resto del día",
+          "El turno siguiente y quién recibe al paciente",
           "El recuento completo de instrumental, gasas y agujas"
         ],
         "correcta": 3
@@ -8419,9 +8414,9 @@ var CCE_CATALOG = [
       {
         "pregunta": "La lista de verificación debe:",
         "opciones": [
-          "Llenarse al final de memoria",
-          "Llenarla solo el cirujano",
-          "Guardarse en el quirófano",
+          "Llenarse al final de la cirugía, de memoria, cuando el paciente ya salió de la sala",
+          "Llenarla solo el cirujano, cuando tenga tiempo, sin necesidad de leerla en voz alta",
+          "Guardarse en el quirófano para futuras auditorías, sin integrarla al expediente",
           "Verificarse en voz alta en el momento, firmarse e integrarse al expediente"
         ],
         "correcta": 3
@@ -8555,9 +8550,9 @@ var CCE_CATALOG = [
         "pregunta": "¿Cuál es el propósito de reportar un evento?",
         "opciones": [
           "Aprender y evitar que vuelva a ocurrir",
-          "Encontrar al culpable",
-          "Llenar un requisito administrativo",
-          "Sancionar al área"
+          "Encontrar al culpable del error",
+          "Cumplir un requisito administrativo",
+          "Sancionar al área donde ocurrió"
         ],
         "correcta": 0
       },
@@ -8595,38 +8590,38 @@ var CCE_CATALOG = [
         "pregunta": "Ante un evento, lo primero es:",
         "opciones": [
           "Atender y proteger al paciente",
-          "Llenar el reporte",
-          "Buscar al responsable",
-          "Tomar fotos con el celular"
+          "Llenar el reporte en la plataforma",
+          "Buscar al responsable del error",
+          "Tomar fotos con el celular como evidencia"
         ],
         "correcta": 0
       },
       {
         "pregunta": "¿Cuándo se reporta un evento?",
         "opciones": [
-          "Al final del mes",
+          "Al final del mes, en el informe del área",
           "De inmediato, en cuanto se identifica",
-          "Solo si el paciente se queja",
-          "Solo si hubo daño grave"
+          "Solo si el paciente o su familia se queja",
+          "Solo si hubo un daño grave o la muerte"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Qué se hace con el medicamento o equipo involucrado?",
         "opciones": [
-          "Se desecha",
-          "Se devuelve al almacén",
+          "Se desecha para evitar más errores",
+          "Se devuelve al almacén o a farmacia",
           "Se conserva para el análisis",
-          "Se usa con otro paciente"
+          "Se usa con otro paciente si está bien"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Cuál es una descripción adecuada en un reporte?",
         "opciones": [
-          "“La compañera siempre se equivoca”",
-          "“Creo que fue por flojera”",
-          "“No sé qué pasó, pero fue culpa de otro turno”",
+          "“La compañera de la tarde siempre se equivoca con los medicamentos del área, como hoy”",
+          "“Creo que fue por flojera del turno anterior, que no revisó nada de lo que preparó”",
+          "“No sé exactamente qué pasó, pero seguro fue culpa del otro turno o de farmacia”",
           "“A las 14:10 se preparó el medicamento equivocado y se detectó en la doble verificación”"
         ],
         "correcta": 3
@@ -8644,20 +8639,20 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Quién define las mejoras a partir de los eventos analizados?",
         "opciones": [
-          "Cada trabajador por su cuenta",
+          "Cada trabajador por su cuenta, en su área",
           "El Comité de Calidad y Seguridad del Paciente",
-          "El área de compras",
-          "El paciente"
+          "El área de compras, según el presupuesto",
+          "El paciente afectado y su familia"
         ],
         "correcta": 1
       },
       {
         "pregunta": "¿Cuál es un ejemplo de evento centinela?",
         "opciones": [
-          "Retraso de 10 minutos en la dieta",
-          "Cambio de habitación",
-          "Cirugía en el sitio o paciente incorrecto",
-          "Una cuasi falla detectada a tiempo"
+          "Un retraso de 10 minutos en la entrega de la dieta",
+          "Un cambio de habitación por mantenimiento",
+          "Cirugía en el sitio o en el paciente incorrecto",
+          "Una cuasi falla detectada a tiempo en farmacia"
         ],
         "correcta": 2
       },
@@ -8790,9 +8785,9 @@ var CCE_CATALOG = [
         "pregunta": "La cultura de seguridad es:",
         "opciones": [
           "El resultado de valores, actitudes y conductas que determinan el compromiso con la seguridad",
-          "Un manual que se guarda en Calidad",
-          "Un trámite anual",
-          "La lista de sanciones del hospital"
+          "Un manual de procedimientos que se guarda en el área de Calidad para las auditorías",
+          "Un trámite anual que se cumple al responder la encuesta de la Secretaría de Salud",
+          "La lista de sanciones que el hospital aplica a quien comete errores con pacientes"
         ],
         "correcta": 0
       },
@@ -8831,8 +8826,8 @@ var CCE_CATALOG = [
         "opciones": [
           "No lo castiga por reportar",
           "Lo sanciona de inmediato",
-          "Lo cambia de área",
-          "Ignora el reporte"
+          "Lo cambia de área sin explicación",
+          "Ignora el reporte para no alarmar"
         ],
         "correcta": 0
       },
@@ -8842,27 +8837,27 @@ var CCE_CATALOG = [
           "Ventas del mes",
           "Cambios de turno y transiciones",
           "Número de camas",
-          "Precio de los servicios"
+          "Precio de los servicios del hospital"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Si notas un riesgo en la indicación de un médico, debes:",
         "opciones": [
-          "Callar porque tiene más jerarquía",
-          "Comentarlo después en el pasillo",
+          "Callar, porque tiene más jerarquía y experiencia",
+          "Comentarlo después con un compañero en el pasillo",
           "Decirlo con respeto y con datos antes de continuar",
-          "Esperar al siguiente turno"
+          "Esperar al siguiente turno para que otro lo revise"
         ],
         "correcta": 2
       },
       {
         "pregunta": "¿Quiénes participan en la medición anual?",
         "opciones": [
-          "Solo directivos",
-          "Solo pacientes",
-          "Solo el área de Calidad",
-          "Médicos y enfermería de todos los turnos con contacto directo con pacientes"
+          "Solo directivos y jefes de servicio del hospital, en una junta",
+          "Solo pacientes y familiares que fueron atendidos durante el año",
+          "Solo el personal del área de Calidad y Seguridad del Paciente",
+          "Médicos y enfermería de todos los turnos con contacto con pacientes"
         ],
         "correcta": 3
       },
@@ -8879,29 +8874,29 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Qué conducta fortalece la cultura de seguridad?",
         "opciones": [
-          "Ocultar cuasi fallas",
+          "Ocultar las cuasi fallas para no afectar los indicadores",
           "Reportar sin miedo y comunicar en la entrega de turno",
-          "Trabajar sin coordinarse con otras áreas",
-          "Evitar preguntar"
+          "Trabajar sin coordinarse con otras áreas para avanzar más rápido",
+          "Evitar preguntar para no parecer inexperto frente al equipo"
         ],
         "correcta": 1
       },
       {
         "pregunta": "Las otras siete Acciones Esenciales:",
         "opciones": [
-          "No dependen de la cultura",
-          "Solo aplican en quirófano",
-          "Funcionan mejor cuando el equipo se siente seguro para hablar y reportar",
-          "Sustituyen a la cultura de seguridad"
+          "No dependen de la cultura; funcionan con solo seguir los protocolos",
+          "Solo aplican en quirófano y en las áreas de cuidados críticos",
+          "Funcionan mejor cuando el equipo se siente seguro para hablar",
+          "Sustituyen a la cultura de seguridad si se cumplen al cien por ciento"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Responder la encuesta con honestidad:",
         "opciones": [
-          "Puede perjudicarte",
-          "Es opcional y no sirve",
-          "Debe hacerse en grupo",
+          "Puede perjudicarte en tu evaluación de desempeño",
+          "Es opcional y los resultados no se usan para nada",
+          "Debe hacerse en grupo para dar una sola respuesta",
           "Ayuda a mejorar porque es anónima y no evalúa personas"
         ],
         "correcta": 3
@@ -9050,9 +9045,9 @@ var CCE_CATALOG = [
         "pregunta": "¿Qué regula la NOM-035-STPS-2018?",
         "opciones": [
           "Los factores de riesgo psicosocial en el trabajo",
-          "El manejo de residuos biológicos",
-          "Los extintores",
-          "El expediente clínico"
+          "El manejo de residuos biológico-infecciosos",
+          "Los extintores y la prevención de incendios",
+          "El contenido del expediente clínico"
         ],
         "correcta": 0
       },
@@ -9069,19 +9064,19 @@ var CCE_CATALOG = [
       {
         "pregunta": "Es una característica del entorno organizacional favorable:",
         "opciones": [
-          "Jornadas sin límite",
-          "Liderazgo autoritario",
+          "Jornadas sin límite cuando hay mucho trabajo",
+          "Liderazgo autoritario para mantener la disciplina",
           "Sentido de pertenencia y reconocimiento del desempeño",
-          "Aislamiento de los trabajadores"
+          "Aislamiento de los trabajadores para evitar distracciones"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Un acontecimiento traumático severo es, por ejemplo:",
         "opciones": [
-          "Un cambio de turno",
-          "Una junta larga",
-          "Una evaluación de desempeño",
+          "Un cambio de turno sin previo aviso",
+          "Una junta larga al final de la jornada",
+          "Una evaluación de desempeño desfavorable",
           "Una agresión violenta durante el trabajo"
         ],
         "correcta": 3
@@ -9090,9 +9085,9 @@ var CCE_CATALOG = [
         "pregunta": "Si viviste un acontecimiento traumático severo en el trabajo debes:",
         "opciones": [
           "Informarlo por escrito a Capital Humano",
-          "Guardarlo para ti",
-          "Comentarlo solo en redes sociales",
-          "Renunciar"
+          "Guardarlo para ti para no causar problemas",
+          "Comentarlo solo en tus redes sociales",
+          "Renunciar sin informar lo que ocurrió"
         ],
         "correcta": 0
       },
@@ -9109,19 +9104,19 @@ var CCE_CATALOG = [
       {
         "pregunta": "La Guía de referencia I sirve para:",
         "opciones": [
-          "Evaluar el clima de una sola área",
-          "Calcular el salario",
+          "Evaluar el clima laboral de una sola área del centro de trabajo",
+          "Calcular el salario y las prestaciones de cada trabajador",
           "Identificar a quienes vivieron un acontecimiento traumático severo",
-          "Medir la productividad"
+          "Medir la productividad de cada trabajador durante el año"
         ],
         "correcta": 2
       },
       {
         "pregunta": "En centros de trabajo de más de 50 trabajadores se aplica, además de la Guía I:",
         "opciones": [
-          "Ninguna otra",
-          "La Guía II solamente",
-          "Un examen médico general",
+          "Ninguna otra guía ni cuestionario",
+          "La Guía II solamente, sin entorno organizacional",
+          "Un examen médico general a cada trabajador",
           "La Guía III, que incluye el entorno organizacional"
         ],
         "correcta": 3
@@ -9130,9 +9125,9 @@ var CCE_CATALOG = [
         "pregunta": "¿Cuál de estas conductas es violencia laboral?",
         "opciones": [
           "Humillar o amenazar a un compañero",
-          "Dar retroalimentación respetuosa",
-          "Asignar tareas según el puesto",
-          "Pedir puntualidad"
+          "Dar retroalimentación respetuosa y clara",
+          "Asignar tareas de acuerdo con el puesto",
+          "Pedir puntualidad y registro de asistencia"
         ],
         "correcta": 0
       },
@@ -9149,19 +9144,19 @@ var CCE_CATALOG = [
       {
         "pregunta": "Es una obligación del trabajador:",
         "opciones": [
-          "Diseñar la política de prevención",
-          "Aplicar los cuestionarios a otros",
-          "Participar respondiendo los cuestionarios y reportar violencia",
-          "Sancionar a sus compañeros"
+          "Diseñar la política de prevención del centro de trabajo",
+          "Aplicar los cuestionarios a sus compañeros de área",
+          "Responder los cuestionarios y reportar violencia",
+          "Sancionar a los compañeros que incumplan la política"
         ],
         "correcta": 2
       },
       {
         "pregunta": "Reportar una situación de violencia laboral:",
         "opciones": [
-          "Debe evitarse para no causar problemas",
-          "Solo se permite a jefes",
-          "Genera represalias automáticas",
+          "Debe evitarse para no causar problemas en el área",
+          "Solo se permite a jefes y supervisores",
+          "Genera represalias automáticas contra quien reporta",
           "Es confidencial y no debe generar represalias"
         ],
         "correcta": 3
@@ -9319,10 +9314,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "¿Qué elementos forman el fuego?",
         "opciones": [
-          "Agua, aire y tierra",
+          "Agua, aire, tierra y luz solar",
           "Combustible, oxígeno, calor y reacción en cadena",
-          "Solo calor",
-          "Humo y luz"
+          "Solo calor, una chispa y material seco",
+          "Humo, luz, gases calientes y ceniza"
         ],
         "correcta": 1
       },
@@ -9369,10 +9364,10 @@ var CCE_CATALOG = [
       {
         "pregunta": "En la secuencia RACE, la “A” significa:",
         "opciones": [
-          "Apagar primero",
-          "Abrir ventanas",
+          "Apagar primero el fuego con lo que tengas a la mano",
+          "Abrir ventanas para ventilar el humo del área",
           "Alertar: activar el Código Rojo y la alarma",
-          "Abandonar sin avisar"
+          "Abandonar el área sin avisar para ponerte a salvo"
         ],
         "correcta": 2
       },
