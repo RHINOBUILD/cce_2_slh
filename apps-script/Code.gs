@@ -368,7 +368,7 @@ function progressMap_(emp) {
   table_('PROGRESO').rows.forEach(function (r) {
     if (cleanEmp_(r.NUMERO_EMPLEADO) !== emp) return;
     map[String(r.CURSO_ID)] = {
-      lessons: String(r.LECCIONES || '').split(',').filter(String).map(Number),
+      lessons: cellText_(r.LECCIONES).split(',').filter(String).map(Number),
       best: Number(r.MEJOR_CALIFICACION) || 0, attempts: Number(r.INTENTOS) || 0, row: r
     };
   });
@@ -771,7 +771,7 @@ function complianceRows_() {
     var assign = assignmentsFor_(u, visible);
     var items = visible.filter(function (c) { return c.id in assign; }).map(function (c) {
       var p = prog[emp + '|' + c.id], cert = certs[emp + '|' + c.id], due = assign[c.id];
-      var lessons = p ? String(p.LECCIONES || '').split(',').filter(String).length : 0;
+      var lessons = p ? cellText_(p.LECCIONES).split(',').filter(String).length : 0;
       var status = cert ? 'APROBADO' : !p ? 'PENDIENTE' : lessons >= c.lessons.length ? 'EVALUACION' : 'EN_CURSO';
       return {
         courseId: c.id, course: c.title, area: c.area, hours: c.hours, status: status, score: p ? Number(p.MEJOR_CALIFICACION) || 0 : 0,
@@ -1250,6 +1250,8 @@ function cleanEmp_(v) { return String(v == null ? '' : v).trim().replace(/\.0+$/
 function isYes_(v) { return v === true || ['SI', 'SÍ', 'TRUE', 'VERDADERO', '1', 'X', 'ACTIVO'].indexOf(String(v).trim().toUpperCase()) >= 0; }
 function normalize_(v) { return String(v == null ? '' : v).normalize('NFD').replace(/[̀-ͯ]/g, '').trim().toLowerCase(); }
 function splitList_(v) { return String(v || '').split(/[,;|]/).map(function (x) { return x.trim(); }).filter(String); }
+/** Texto de una celda sin perder el 0 (la hoja guarda "0" como número). */
+function cellText_(v) { return v === null || v === undefined ? '' : String(v); }
 function parseJson_(v, fallback) { try { return v ? JSON.parse(v) : fallback; } catch (e) { return fallback; } }
 function iso_(d) { return d instanceof Date && !isNaN(d) ? d.toISOString() : null; }
 function firstName_(n) { return String(n || '').trim().split(/\s+/)[0] || ''; }
