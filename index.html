@@ -946,7 +946,7 @@
   const CATS = {
     'calidad y seguridad': ['fa-shield-heart', '#0B5FA5'], 'enfermeria': ['fa-user-nurse', '#0E7C86'], 'area medica': ['fa-stethoscope', '#3949AB'],
     'admision y recepcion': ['fa-id-card', '#6D4FA3'], 'farmacia': ['fa-pills', '#B4433A'], 'laboratorio': ['fa-flask', '#7B3FA0'],
-    'prehospitalaria': ['fa-truck-medical', '#C2410C'], 'seguridad e higiene': ['fa-helmet-safety', '#9A6A00'], 'capital humano': ['fa-people-group', '#0F766E'],
+    'prehospitalaria': ['fa-truck-medical', '#C2410C'], 'atencion prehospitalaria': ['fa-truck-medical', '#C2410C'], 'seguridad e higiene': ['fa-helmet-safety', '#9A6A00'], 'capital humano': ['fa-people-group', '#0F766E'],
     'administracion': ['fa-briefcase', '#475569']
   };
   const FALLBACK = ['#0B5FA5', '#0E7C86', '#6D4FA3', '#B4433A', '#9A6A00', '#3949AB', '#0F766E', '#475569'];
@@ -1388,13 +1388,28 @@
   }
   function wireVideo(video, l) {
     player.video = video;
-    let maxTime = 0;
+    let maxTime = 0, track = null;
+    if (l.captions && l.captions.length) {
+      // Pista nativa para que los subtítulos también se vean en pantalla completa (el recuadro propio no aparece ahí).
+      const ts = s => { const ms = Math.round(s * 1000); return new Date(ms).toISOString().slice(11, 23); };
+      const vtt = 'WEBVTT\n\n' + l.captions.map(c => `${ts(c[0])} --> ${ts(c[1])}\n${String(c[2]).replace(/-->/g, '→')}`).join('\n\n') + '\n';
+      const el = document.createElement('track');
+      el.kind = 'captions'; el.srclang = 'es'; el.label = 'Español'; el.src = 'data:text/vtt;charset=utf-8,' + encodeURIComponent(vtt);
+      video.appendChild(el);
+      track = video.textTracks[0];
+      if (track) track.mode = 'hidden';
+      const isFull = () => document.fullscreenElement === video || document.webkitFullscreenElement === video || video.webkitDisplayingFullscreen;
+      const sync = () => { if (track && player.video === video) track.mode = isFull() ? 'showing' : 'hidden'; };
+      document.addEventListener('fullscreenchange', sync); document.addEventListener('webkitfullscreenchange', sync);
+      video.addEventListener('webkitbeginfullscreen', () => { if (track) track.mode = 'showing'; });
+      video.addEventListener('webkitendfullscreen', () => { if (track) track.mode = 'hidden'; });
+    }
     video.addEventListener('timeupdate', () => {
       if (!video.seeking && video.currentTime > maxTime && video.currentTime - maxTime < 2.5) maxTime = video.currentTime;
       const cap = $('#lesson-caption');
       if (cap && l.captions) {
         const cue = l.captions.find(c => video.currentTime >= c[0] && video.currentTime < c[1]);
-        cap.hidden = !cue; if (cue) cap.textContent = cue[2];
+        cap.hidden = !cue || (track && track.mode === 'showing'); if (cue) cap.textContent = cue[2];
       }
     });
     video.addEventListener('seeking', () => {

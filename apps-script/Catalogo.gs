@@ -12,7 +12,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Aplicación de dos identificadores durante todos los procesos asistenciales.",
-    "orden": 1,
+    "orden": 10,
     "lecciones": [
       {
         "tipo": "video",
@@ -34,8 +34,13 @@ var CCE_CATALOG = [
           ],
           [
             13.6,
+            19.3,
+            "Es un esfuerzo multidisciplinario. Identificar al paciente es tarea de todas las áreas,"
+          ],
+          [
+            19.3,
             21.9,
-            "Es un esfuerzo multidisciplinario. Identificar al paciente es tarea de todas las áreas, no solo de enfermería o del área médica."
+            "no solo de enfermería o del área médica."
           ],
           [
             22.6,
@@ -94,8 +99,13 @@ var CCE_CATALOG = [
           ],
           [
             89,
+            92.9,
+            "Verifica la identidad antes de administrar medicamentos, transfundir,"
+          ],
+          [
+            92.9,
             96.7,
-            "Verifica la identidad antes de administrar medicamentos, transfundir, tomar muestras de laboratorio y realizar procedimientos invasivos."
+            "tomar muestras de laboratorio y realizar procedimientos invasivos."
           ],
           [
             96.7,
@@ -104,8 +114,13 @@ var CCE_CATALOG = [
           ],
           [
             103.5,
+            112,
+            "Nutrición, fisioterapia e intendencia también corroboran la identidad antes de actuar."
+          ],
+          [
+            112,
             117.7,
-            "Nutrición, fisioterapia e intendencia también corroboran la identidad antes de actuar. Así se evitan reacciones alérgicas y errores de atención."
+            "Así se evitan reacciones alérgicas y errores de atención."
           ],
           [
             118.3,
@@ -154,13 +169,23 @@ var CCE_CATALOG = [
           ],
           [
             178.3,
+            183.1,
+            "Como compromisos, todas las áreas actualizarán sus formatos de registro,"
+          ],
+          [
+            183.1,
             189.2,
-            "Como compromisos, todas las áreas actualizarán sus formatos de registro, el almacén garantizará existencias de brazaletes y Admisión identificará a los visitantes."
+            "el almacén garantizará existencias de brazaletes y Admisión identificará a los visitantes."
           ],
           [
             189.8,
+            194.9,
+            "Recuerda: nombre completo y fecha de nacimiento, siempre,"
+          ],
+          [
+            194.9,
             201.4,
-            "Recuerda: nombre completo y fecha de nacimiento, siempre, antes de actuar. Ante cualquier discrepancia, detén el proceso y aclara."
+            "antes de actuar. Ante cualquier discrepancia, detén el proceso y aclara."
           ],
           [
             201.4,
@@ -357,7 +382,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Comunicación estructurada, órdenes verbales y transferencia segura de información.",
-    "orden": 2,
+    "orden": 20,
     "lecciones": [
       {
         "tipo": "video",
@@ -414,8 +439,13 @@ var CCE_CATALOG = [
           ],
           [
             65.5,
+            69.4,
+            "Toda orden verbal se registra en la bitácora del servicio con fecha, hora,"
+          ],
+          [
+            69.4,
             74.2,
-            "Toda orden verbal se registra en la bitácora del servicio con fecha, hora, nombre completo y fecha de nacimiento del paciente, y el nombre y cargo de quien la emite."
+            "nombre completo y fecha de nacimiento del paciente, y el nombre y cargo de quien la emite."
           ],
           [
             74.2,
@@ -424,13 +454,23 @@ var CCE_CATALOG = [
           ],
           [
             79,
+            81.7,
+            "El médico que dio la indicación firma la bitácora. Si no está,"
+          ],
+          [
+            81.7,
             84.4,
-            "El médico que dio la indicación firma la bitácora. Si no está, la registra y firma el jefe de servicio o el médico de guardia."
+            "la registra y firma el jefe de servicio o el médico de guardia."
           ],
           [
             84.4,
+            88.1,
+            "El plazo para firmar es de veinticuatro horas en días hábiles y setenta y dos en fin de semana."
+          ],
+          [
+            88.1,
             90.5,
-            "El plazo para firmar es de veinticuatro horas en días hábiles y setenta y dos en fin de semana. El médico de guardia transcribe la indicación al expediente."
+            "El médico de guardia transcribe la indicación al expediente."
           ],
           [
             91,
@@ -459,18 +499,33 @@ var CCE_CATALOG = [
           ],
           [
             138.5,
+            143.7,
+            "Por ejemplo, hemoglobina menor de seis, plaquetas menores de cincuenta mil,"
+          ],
+          [
+            143.7,
             147.2,
-            "Por ejemplo, hemoglobina menor de seis, plaquetas menores de cincuenta mil, o leucocitos fuera del rango de mil a cuarenta mil."
+            "o leucocitos fuera del rango de mil a cuarenta mil."
           ],
           [
             147.8,
+            154.3,
+            "En imagenología también se avisan de inmediato diagnósticos como evento vascular cerebral,"
+          ],
+          [
+            154.3,
             161.7,
-            "En imagenología también se avisan de inmediato diagnósticos como evento vascular cerebral, sangrado abdominal, tromboembolia pulmonar, pericarditis, derrame pericárdico o isquemia mesentérica."
+            "sangrado abdominal, tromboembolia pulmonar, pericarditis, derrame pericárdico o isquemia mesentérica."
           ],
           [
             162.3,
+            170.2,
+            "Durante un paro cardíaco, los medicamentos se registran en el formato específico,"
+          ],
+          [
+            170.2,
             177.4,
-            "Durante un paro cardíaco, los medicamentos se registran en el formato específico, que se integra al expediente sin transcribirlo a las hojas de enfermería."
+            "que se integra al expediente sin transcribirlo a las hojas de enfermería."
           ],
           [
             178.1,
@@ -479,8 +534,13 @@ var CCE_CATALOG = [
           ],
           [
             190.3,
+            195.5,
+            "Como compromisos: registrar y confirmar toda orden verbal,"
+          ],
+          [
+            195.5,
             201.7,
-            "Como compromisos: registrar y confirmar toda orden verbal, transcribir y firmar a tiempo, y entregar pacientes con SBAR o SAMPLE."
+            "transcribir y firmar a tiempo, y entregar pacientes con SBAR o SAMPLE."
           ],
           [
             202.3,
@@ -678,7 +738,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": false,
     "descripcion": "Alertas visuales, almacenamiento, prescripción, solicitud y doble verificación de medicamentos de alto riesgo y anestésicos.",
-    "orden": 3,
+    "orden": 30,
     "lecciones": [
       {
         "tipo": "lectura",
@@ -875,7 +935,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Higiene de manos y medidas para prevenir infecciones asociadas a la atención.",
-    "orden": 3,
+    "orden": 50,
     "lecciones": [
       {
         "tipo": "video",
@@ -1130,7 +1190,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Medidas básicas para prevenir exposiciones y cortar cadenas de transmisión.",
-    "orden": 4,
+    "orden": 90,
     "lecciones": [
       {
         "tipo": "video",
@@ -1222,8 +1282,13 @@ var CCE_CATALOG = [
           ],
           [
             73.7,
+            76.3,
+            "Si te pinchas o te salpicas, lava la zona,"
+          ],
+          [
+            76.3,
             81.7,
-            "Si te pinchas o te salpicas, lava la zona, enjuaga la mucosa con agua abundante y reporta de inmediato a tu jefe y a Epidemiología."
+            "enjuaga la mucosa con agua abundante y reporta de inmediato a tu jefe y a Epidemiología."
           ],
           [
             82.8,
@@ -1390,7 +1455,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Comunicación respetuosa, privacidad, escucha y participación del paciente.",
-    "orden": 5,
+    "orden": 100,
     "lecciones": [
       {
         "tipo": "video",
@@ -1412,8 +1477,13 @@ var CCE_CATALOG = [
           ],
           [
             8.8,
+            12.5,
+            "Un paciente que confía pregunta, avisa y sigue las indicaciones,"
+          ],
+          [
+            12.5,
             16.1,
-            "Un paciente que confía pregunta, avisa y sigue las indicaciones, y el trato digno es un derecho de toda persona que atendemos."
+            "y el trato digno es un derecho de toda persona que atendemos."
           ],
           [
             16.9,
@@ -1630,7 +1700,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Formas de ingreso, identificación correcta, flujo de admisión a médico, documentos y egreso del paciente.",
-    "orden": 6,
+    "orden": 110,
     "lecciones": [
       {
         "tipo": "video",
@@ -1727,8 +1797,13 @@ var CCE_CATALOG = [
           ],
           [
             77.9,
+            80.5,
+            "Al ingresar debemos completar el formato de registro,"
+          ],
+          [
+            80.5,
             84.1,
-            "Al ingresar debemos completar el formato de registro, el aviso de privacidad y el consentimiento informado si hay procedimientos."
+            "el aviso de privacidad y el consentimiento informado si hay procedimientos."
           ],
           [
             84.1,
@@ -1915,7 +1990,7 @@ var CCE_CATALOG = [
     "horas": 2,
     "obligatorio": true,
     "descripcion": "Identificación, envasado, almacenamiento temporal y recolección de RPBI conforme a la NOM-087.",
-    "orden": 7,
+    "orden": 120,
     "lecciones": [
       {
         "tipo": "video",
@@ -2245,7 +2320,7 @@ var CCE_CATALOG = [
     "horas": 2,
     "obligatorio": false,
     "descripcion": "Preparación, técnica, conservación y traslado de muestras de gasometría.",
-    "orden": 8,
+    "orden": 130,
     "lecciones": [
       {
         "tipo": "lectura",
@@ -2402,7 +2477,7 @@ var CCE_CATALOG = [
     "horas": 3,
     "obligatorio": false,
     "descripcion": "Colocación de electrodos, adquisición y detección de trazos críticos.",
-    "orden": 9,
+    "orden": 140,
     "lecciones": [
       {
         "tipo": "video",
@@ -2667,7 +2742,7 @@ var CCE_CATALOG = [
     "horas": 4,
     "obligatorio": false,
     "descripcion": "Reconocimiento del paro, RCP de calidad y uso del DEA.",
-    "orden": 10,
+    "orden": 150,
     "lecciones": [
       {
         "tipo": "video",
@@ -2922,7 +2997,7 @@ var CCE_CATALOG = [
     "horas": 2,
     "obligatorio": true,
     "descripcion": "Identificación, almacenamiento y doble verificación de medicamentos de alto riesgo.",
-    "orden": 11,
+    "orden": 160,
     "lecciones": [
       {
         "tipo": "video",
@@ -3024,8 +3099,13 @@ var CCE_CATALOG = [
           ],
           [
             79.7,
+            82.4,
+            "Ante cualquier duda, detén la administración,"
+          ],
+          [
+            82.4,
             87.5,
-            "Ante cualquier duda, detén la administración, aclara con quien prescribe o con Farmacia y reporta los errores y las cuasi fallas."
+            "aclara con quien prescribe o con Farmacia y reporta los errores y las cuasi fallas."
           ],
           [
             88.4,
@@ -3187,7 +3267,7 @@ var CCE_CATALOG = [
     "horas": 2,
     "obligatorio": true,
     "descripcion": "Pictogramas, hojas de datos de seguridad y comunicación de peligros.",
-    "orden": 12,
+    "orden": 180,
     "lecciones": [
       {
         "tipo": "video",
@@ -3442,7 +3522,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Qué es el EPP, cómo se elige según la NOM-017-STPS-2008 y qué riesgo predomina en cada área del hospital.",
-    "orden": 13,
+    "orden": 240,
     "lecciones": [
       {
         "tipo": "video",
@@ -3459,8 +3539,13 @@ var CCE_CATALOG = [
           ],
           [
             4.2,
+            8.1,
+            "Vamos a explorar cómo utilizar correctamente estos elementos esenciales"
+          ],
+          [
+            8.1,
             11.5,
-            "Vamos a explorar cómo utilizar correctamente estos elementos esenciales para garantizar nuestra seguridad en el entorno hospitalario."
+            "para garantizar nuestra seguridad en el entorno hospitalario."
           ],
           [
             12.6,
@@ -3742,7 +3827,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": false,
     "descripcion": "Orden, limpieza, estandarización y disciplina en el lugar de trabajo.",
-    "orden": 14,
+    "orden": 250,
     "lecciones": [
       {
         "tipo": "video",
@@ -3972,7 +4057,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": false,
     "descripcion": "Factores de riesgo, signos de alarma y respuesta inmediata.",
-    "orden": 15,
+    "orden": 260,
     "lecciones": [
       {
         "tipo": "video",
@@ -4222,7 +4307,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Recepción de la amenaza, aviso, evacuación y preservación de información.",
-    "orden": 16,
+    "orden": 270,
     "lecciones": [
       {
         "tipo": "video",
@@ -4472,7 +4557,7 @@ var CCE_CATALOG = [
     "horas": 2,
     "obligatorio": true,
     "descripcion": "Cultura, normativas, seguridad, prestaciones y responsabilidades.",
-    "orden": 17,
+    "orden": 280,
     "lecciones": [
       {
         "tipo": "video",
@@ -4509,8 +4594,13 @@ var CCE_CATALOG = [
           ],
           [
             28,
+            31.7,
+            "Nuestra visión es ser el mejor hospital con servicios médicos"
+          ],
+          [
+            31.7,
             35.5,
-            "Nuestra visión es ser el mejor hospital con servicios médicos turísticos de nivel internacional y alta responsabilidad humana."
+            "turísticos de nivel internacional y alta responsabilidad humana."
           ],
           [
             35.7,
@@ -4767,7 +4857,7 @@ var CCE_CATALOG = [
     "horas": 0.25,
     "obligatorio": false,
     "descripcion": "Selección, personalización, explicación e impresión segura de consentimientos informados desde el expediente clínico.",
-    "orden": 18,
+    "orden": 300,
     "lecciones": [
       {
         "tipo": "video",
@@ -4812,8 +4902,13 @@ var CCE_CATALOG = [
           ],
           [
             25.3,
+            29.7,
+            "en procedimientos de alto riesgo, en métodos definitivos de planificación,"
+          ],
+          [
+            29.7,
             32.8,
-            "en procedimientos de alto riesgo, en métodos definitivos de planificación, en donación y trasplante y en investigación clínica."
+            "en donación y trasplante y en investigación clínica."
           ],
           [
             33.6,
@@ -5020,7 +5115,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Evaluación inicial y reevaluación del riesgo de caídas, medidas de prevención, señalización y reporte de eventos.",
-    "orden": 3.5,
+    "orden": 60,
     "lecciones": [
       {
         "tipo": "video",
@@ -5137,8 +5232,13 @@ var CCE_CATALOG = [
           ],
           [
             123.4,
+            127.1,
+            "dependencia para moverse o necesidad de sedación para clasificar"
+          ],
+          [
+            127.1,
             130.6,
-            "dependencia para moverse o necesidad de sedación para clasificar al paciente como de alto riesgo y requerir traslado asistido."
+            "al paciente como de alto riesgo y requerir traslado asistido."
           ],
           [
             131.1,
@@ -5385,7 +5485,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Clasificación de ciclones tropicales, preparación del hospital y protocolo de actuación durante la contingencia.",
-    "orden": 12.2,
+    "orden": 200,
     "lecciones": [
       {
         "tipo": "video",
@@ -5457,8 +5557,13 @@ var CCE_CATALOG = [
           ],
           [
             61.6,
+            64.6,
+            "Para que el hospital siga operando ante una emergencia,"
+          ],
+          [
+            64.6,
             68.4,
-            "Para que el hospital siga operando ante una emergencia, es vital contar con reservas de agua, suministros médicos y alimentos."
+            "es vital contar con reservas de agua, suministros médicos y alimentos."
           ],
           [
             69.1,
@@ -5492,8 +5597,13 @@ var CCE_CATALOG = [
           ],
           [
             100.2,
+            104.1,
+            "No intentes reparaciones eléctricas o de gas por tu cuenta y utiliza"
+          ],
+          [
+            104.1,
             107.7,
-            "No intentes reparaciones eléctricas o de gas por tu cuenta y utiliza únicamente información de fuentes oficiales para evitar rumores."
+            "únicamente información de fuentes oficiales para evitar rumores."
           ],
           [
             108.2,
@@ -5655,7 +5765,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Identificación de derrames químicos y de RPBI, kit de derrames y procedimiento de contención y limpieza.",
-    "orden": 12.3,
+    "orden": 210,
     "lecciones": [
       {
         "tipo": "video",
@@ -5672,8 +5782,13 @@ var CCE_CATALOG = [
           ],
           [
             3.2,
+            6.3,
+            "donde aprenderemos la atención y manejo correcto ante derrames"
+          ],
+          [
+            6.3,
             9.4,
-            "donde aprenderemos la atención y manejo correcto ante derrames de materiales peligrosos dentro de nuestro entorno hospitalario."
+            "de materiales peligrosos dentro de nuestro entorno hospitalario."
           ],
           [
             10.5,
@@ -5682,13 +5797,23 @@ var CCE_CATALOG = [
           ],
           [
             15.7,
+            19.1,
+            "Podrás encontrar estos protocolos al reverso de tu credencial en"
+          ],
+          [
+            19.1,
             22.6,
-            "Podrás encontrar estos protocolos al reverso de tu credencial en el procedimiento 8 o consultando la página de calidad de tu sede."
+            "el procedimiento 8 o consultando la página de calidad de tu sede."
           ],
           [
             24.3,
+            28.4,
+            "El Código Amarillo se activa ante derrames de sustancias químicas"
+          ],
+          [
+            28.4,
             32.3,
-            "El Código Amarillo se activa ante derrames de sustancias químicas como reactivos o infectantes y residuos biológico-infecciosos."
+            "como reactivos o infectantes y residuos biológico-infecciosos."
           ],
           [
             33,
@@ -5707,8 +5832,13 @@ var CCE_CATALOG = [
           ],
           [
             44.5,
+            47.6,
+            "Los químicos se reconocen por pictogramas en forma de rombo,"
+          ],
+          [
+            47.6,
             51,
-            "Los químicos se reconocen por pictogramas en forma de rombo, mientras que los biológicos llevan el símbolo de riesgo biológico."
+            "mientras que los biológicos llevan el símbolo de riesgo biológico."
           ],
           [
             51.5,
@@ -5747,8 +5877,13 @@ var CCE_CATALOG = [
           ],
           [
             84.1,
+            89.7,
+            "Protégete con tu equipo. Delimita la zona, absorbe con tapetes en forma de S,"
+          ],
+          [
+            89.7,
             93.2,
-            "Protégete con tu equipo. Delimita la zona, absorbe con tapetes en forma de S, limpia y finalmente repone el material utilizado."
+            "limpia y finalmente repone el material utilizado."
           ],
           [
             93.8,
@@ -5777,8 +5912,13 @@ var CCE_CATALOG = [
           ],
           [
             117.8,
+            121.6,
+            "pero es responsabilidad de todos reponer cualquier elemento utilizado"
+          ],
+          [
+            121.6,
             124.9,
-            "pero es responsabilidad de todos reponer cualquier elemento utilizado durante una emergencia para asegurar la preparación continua."
+            "durante una emergencia para asegurar la preparación continua."
           ],
           [
             125.7,
@@ -5945,7 +6085,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Conceptos de peligro y riesgo, Comisión Mixta, ciclo de prevención y cómo reportar e investigar accidentes e incidentes.",
-    "orden": 12.4,
+    "orden": 220,
     "lecciones": [
       {
         "tipo": "video",
@@ -5962,8 +6102,13 @@ var CCE_CATALOG = [
           ],
           [
             4.4,
+            8.1,
+            "reportar situaciones de riesgo y realizar investigaciones exhaustivas"
+          ],
+          [
+            8.1,
             11.2,
-            "reportar situaciones de riesgo y realizar investigaciones exhaustivas de accidentes e incidentes en nuestro entorno de trabajo."
+            "de accidentes e incidentes en nuestro entorno de trabajo."
           ],
           [
             12.1,
@@ -6230,7 +6375,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Ciclo PHVA, fuentes de mejora, acciones correctivas y preventivas, indicadores y responsabilidad compartida.",
-    "orden": 12.5,
+    "orden": 230,
     "lecciones": [
       {
         "tipo": "video",
@@ -6332,8 +6477,13 @@ var CCE_CATALOG = [
           ],
           [
             91.3,
+            94.5,
+            "Estos van desde el número de incidentes y el avance en el cierre"
+          ],
+          [
+            94.5,
             97.7,
-            "Estos van desde el número de incidentes y el avance en el cierre de acciones hasta el nivel de capacitación de nuestro personal."
+            "de acciones hasta el nivel de capacitación de nuestro personal."
           ],
           [
             98.9,
@@ -6347,8 +6497,13 @@ var CCE_CATALOG = [
           ],
           [
             104.6,
+            108.2,
+            "los responsables de área implementan los controles necesarios y la"
+          ],
+          [
+            108.2,
             111.9,
-            "los responsables de área implementan los controles necesarios y la dirección facilita los recursos para garantizar el éxito del sistema."
+            "dirección facilita los recursos para garantizar el éxito del sistema."
           ],
           [
             113.1,
@@ -6515,7 +6670,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": false,
     "descripcion": "Clasificación, envasado, sellado y recolección de RPBI en consultorios y unidades prehospitalarias.",
-    "orden": 20,
+    "orden": 310,
     "lecciones": [
       {
         "tipo": "video",
@@ -6820,7 +6975,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": false,
     "descripcion": "Cargos en cuenta, requisiciones, recepción, faltantes y caducados en consultorios y maletas prehospitalarias.",
-    "orden": 21,
+    "orden": 320,
     "lecciones": [
       {
         "tipo": "video",
@@ -7095,7 +7250,7 @@ var CCE_CATALOG = [
     "horas": 2,
     "obligatorio": false,
     "descripcion": "Cortes de guardia, billing, códigos, FRAP y documentación de cuentas por cobrar internacionales.",
-    "orden": 22,
+    "orden": 330,
     "lecciones": [
       {
         "tipo": "lectura",
@@ -7282,7 +7437,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": false,
     "descripcion": "Nota médica conforme a la NOM-004: calidad, notas obligatorias, procedimientos, consentimiento, riesgos de trabajo y traslados.",
-    "orden": 23,
+    "orden": 340,
     "lecciones": [
       {
         "tipo": "video",
@@ -7314,8 +7469,13 @@ var CCE_CATALOG = [
           ],
           [
             26.3,
+            28.7,
+            "Para mejorar la calidad de nuestras notas,"
+          ],
+          [
+            28.7,
             33.5,
-            "Para mejorar la calidad de nuestras notas, debemos abandonar prácticas como el copiar y pegar, o el uso de machotes genéricos."
+            "debemos abandonar prácticas como el copiar y pegar, o el uso de machotes genéricos."
           ],
           [
             33.8,
@@ -7557,7 +7717,7 @@ var CCE_CATALOG = [
     "horas": 2,
     "obligatorio": false,
     "descripcion": "Regulación, controlados, recetas, almacenamiento, inventario, proveedores, cuadro básico, conciliación y farmacovigilancia.",
-    "orden": 11.5,
+    "orden": 170,
     "lecciones": [
       {
         "tipo": "video",
@@ -8007,7 +8167,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": false,
     "descripcion": "Marcado del sitio quirúrgico, lista de verificación de la seguridad de la cirugía y tiempo fuera en procedimientos dentro y fuera del quirófano.",
-    "orden": 3.2,
+    "orden": 40,
     "lecciones": [
       {
         "tipo": "video",
@@ -8089,8 +8249,13 @@ var CCE_CATALOG = [
           ],
           [
             69.5,
+            74.3,
+            "Se confirma el procedimiento realizado, el recuento completo de instrumental,"
+          ],
+          [
+            74.3,
             77.3,
-            "Se confirma el procedimiento realizado, el recuento completo de instrumental, gasas y agujas, y el etiquetado de las muestras."
+            "gasas y agujas, y el etiquetado de las muestras."
           ],
           [
             77.6,
@@ -8277,7 +8442,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Clasificación, reporte inmediato y análisis de cuasi fallas, eventos adversos y eventos centinela, con enfoque no punitivo.",
-    "orden": 3.7,
+    "orden": 70,
     "lecciones": [
       {
         "tipo": "video",
@@ -8522,7 +8687,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Qué es la cultura de seguridad, cómo se mide cada año y qué hace cada colaborador para fortalecerla.",
-    "orden": 3.8,
+    "orden": 80,
     "lecciones": [
       {
         "tipo": "video",
@@ -8757,7 +8922,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Factores de riesgo psicosocial, entorno organizacional favorable, acontecimientos traumáticos severos y violencia laboral.",
-    "orden": 17.5,
+    "orden": 290,
     "lecciones": [
       {
         "tipo": "video",
@@ -9017,7 +9182,7 @@ var CCE_CATALOG = [
     "horas": 1,
     "obligatorio": true,
     "descripcion": "Clases de fuego, uso del extintor, Código Rojo, evacuación y requisitos de la NOM-002-STPS-2010.",
-    "orden": 12.1,
+    "orden": 190,
     "lecciones": [
       {
         "tipo": "video",
