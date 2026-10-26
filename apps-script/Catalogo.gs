@@ -10,7 +10,7 @@ var CCE_CATALOG = [
     "titulo": "AESP 1: Identificación correcta del paciente",
     "area": "Calidad y Seguridad",
     "horas": 1,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Aplicación de dos identificadores durante todos los procesos asistenciales.",
     "orden": 10,
     "lecciones": [
@@ -380,7 +380,7 @@ var CCE_CATALOG = [
     "titulo": "AESP 2: Comunicación efectiva",
     "area": "Calidad y Seguridad",
     "horas": 1,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Comunicación estructurada, órdenes verbales y transferencia segura de información.",
     "orden": 20,
     "lecciones": [
@@ -928,7 +928,7 @@ var CCE_CATALOG = [
     "titulo": "AESP 5: Reducción del riesgo de infecciones",
     "area": "Calidad y Seguridad",
     "horas": 1,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Higiene de manos y medidas para prevenir infecciones asociadas a la atención.",
     "orden": 50,
     "lecciones": [
@@ -1183,7 +1183,7 @@ var CCE_CATALOG = [
     "titulo": "Precauciones estándar y uso seguro de EPP",
     "area": "Calidad y Seguridad",
     "horas": 1,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Medidas básicas para prevenir exposiciones y cortar cadenas de transmisión.",
     "orden": 90,
     "lecciones": [
@@ -1693,7 +1693,7 @@ var CCE_CATALOG = [
     "titulo": "ACC.1.1 Proceso de aceptación para la atención",
     "area": "Admisión y Recepción",
     "horas": 1,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Formas de ingreso, identificación correcta, flujo de admisión a médico, documentos y egreso del paciente.",
     "orden": 110,
     "lecciones": [
@@ -1983,7 +1983,7 @@ var CCE_CATALOG = [
     "titulo": "RPBI: manejo de residuos biológico-infecciosos",
     "area": "Enfermería",
     "horas": 2,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Identificación, envasado, almacenamiento temporal y recolección de RPBI conforme a la NOM-087.",
     "orden": 120,
     "lecciones": [
@@ -2990,7 +2990,7 @@ var CCE_CATALOG = [
     "titulo": "Medicamentos de alto riesgo",
     "area": "Farmacia",
     "horas": 2,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Identificación, almacenamiento y doble verificación de medicamentos de alto riesgo.",
     "orden": 160,
     "lecciones": [
@@ -3260,7 +3260,7 @@ var CCE_CATALOG = [
     "titulo": "NOM-018-STPS-2015: sistema armonizado",
     "area": "Seguridad e Higiene",
     "horas": 2,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Pictogramas, hojas de datos de seguridad y comunicación de peligros.",
     "orden": 180,
     "lecciones": [
@@ -3515,7 +3515,7 @@ var CCE_CATALOG = [
     "titulo": "Equipo de protección personal",
     "area": "Seguridad e Higiene",
     "horas": 1,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Qué es el EPP, cómo se elige según la NOM-017-STPS-2008 y qué riesgo predomina en cada área del hospital.",
     "orden": 240,
     "lecciones": [
@@ -5108,7 +5108,7 @@ var CCE_CATALOG = [
     "titulo": "AESP 6: Evaluar y reevaluar el riesgo de caídas",
     "area": "Calidad y Seguridad",
     "horas": 1,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Evaluación inicial y reevaluación del riesgo de caídas, medidas de prevención, señalización y reporte de eventos.",
     "orden": 60,
     "lecciones": [
@@ -5758,7 +5758,7 @@ var CCE_CATALOG = [
     "titulo": "Código Amarillo: derrames de materiales peligrosos",
     "area": "Seguridad e Higiene",
     "horas": 1,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Identificación de derrames químicos y de RPBI, kit de derrames y procedimiento de contención y limpieza.",
     "orden": 210,
     "lecciones": [
@@ -6078,7 +6078,7 @@ var CCE_CATALOG = [
     "titulo": "Peligros, reporte e investigación de accidentes e incidentes",
     "area": "Seguridad e Higiene",
     "horas": 1,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Conceptos de peligro y riesgo, Comisión Mixta, ciclo de prevención y cómo reportar e investigar accidentes e incidentes.",
     "orden": 220,
     "lecciones": [
@@ -6368,7 +6368,7 @@ var CCE_CATALOG = [
     "titulo": "Mejora continua del sistema de gestión de seguridad y salud en el trabajo",
     "area": "Seguridad e Higiene",
     "horas": 1,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Ciclo PHVA, fuentes de mejora, acciones correctivas y preventivas, indicadores y responsabilidad compartida.",
     "orden": 230,
     "lecciones": [
@@ -8435,7 +8435,7 @@ var CCE_CATALOG = [
     "titulo": "AESP 7: Registro y análisis de eventos centinela, adversos y cuasi fallas",
     "area": "Calidad y Seguridad",
     "horas": 1,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Clasificación, reporte inmediato y análisis de cuasi fallas, eventos adversos y eventos centinela, con enfoque no punitivo.",
     "orden": 70,
     "lecciones": [
@@ -8680,7 +8680,7 @@ var CCE_CATALOG = [
     "titulo": "AESP 8: Cultura de seguridad del paciente",
     "area": "Calidad y Seguridad",
     "horas": 1,
-    "obligatorio": true,
+    "obligatorio": false,
     "descripcion": "Qué es la cultura de seguridad, cómo se mide cada año y qué hace cada colaborador para fortalecerla.",
     "orden": 80,
     "lecciones": [
@@ -9501,8 +9501,11 @@ var CCE_ROUTES = [
   {
     "id": "atencion-prehospitalaria",
     "titulo": "Atención prehospitalaria",
-    "descripcion": "Papelería y cobranza, notas médicas, insumos y residuos para el personal de ambulancias y consultorios prehospitalarios.",
+    "descripcion": "Seguridad del paciente, papelería y cobranza, notas médicas, insumos y residuos para el personal de ambulancias y consultorios prehospitalarios.",
     "cursos": [
+      "aesp1",
+      "aesp5",
+      "precauciones-estandar",
       "papeleria-ambulancia",
       "notas-medicas",
       "insumos-prehospitalarios",
